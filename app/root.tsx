@@ -13,6 +13,8 @@ import Header from "./components/Header";
 import Buttons from "./components/Buttons";
 import Contributors from "./components/Contributors";
 import  List  from "./components/List";
+import NewHeader from "./components/NewHeader";
+import Footer from "./components/Footer";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -37,7 +39,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <Header />
+        <NewHeader />
         {children}
         {/* <ChatCard />
         <List />
@@ -45,6 +47,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Contributors />*/}
         <ScrollRestoration />
         <Scripts />
+        <Footer />
       </body>
     </html>
   );
