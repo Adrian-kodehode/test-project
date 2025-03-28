@@ -9,7 +9,6 @@ import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 import ChatCard from "./components/ChatCard";
-import Header from "./components/Header";
 import Buttons from "./components/Buttons";
 import Contributors from "./components/Contributors";
 import  List  from "./components/List";

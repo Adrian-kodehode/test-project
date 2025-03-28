@@ -73,15 +73,15 @@ export default function footer() {
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-        <span className="text-sm text-gray-500 sm:text-gray-500 text-center dark:text-gray-400">
+        <span className="text-sm ml-2 mb-2 text-gray-500 sm:text-gray-500 text-center dark:text-gray-400">
           @ 2025{" "}
           <a href="https://flowbite.com/" className="hover:underline">
             Flowbite™
           </a>
           . All Rights Reserved
         </span>
-        <div className="flex mt-4 sm:justifiy-center sm:mt-0">
-          <a href="#" className="text-gray-900 dark:hover:text-white">
+        <div className="flex mt-4 mr-3 sm:justifiy-center sm:mt-0">
+          <a href="#" className="text-gray-500 dark:hover:text-white">
             <svg
               className="w-4 h-4"
               aria-hidden="true"
