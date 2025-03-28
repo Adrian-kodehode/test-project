@@ -86,6 +86,8 @@ export default function NewHeader() {
               </div>
               <MenuItems
                 transition
+                modal={false}
+                anchor="bottom end"
                 className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opaity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration.75 data-leave:ease-in"
               >
                 <MenuItem>

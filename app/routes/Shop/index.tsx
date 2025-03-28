@@ -40,7 +40,7 @@ export default function Product() {
           })}
         </div>
       </div>
-      <SlideOver />
+      <SlideOver open={open} />
     </div>
   );
 }
