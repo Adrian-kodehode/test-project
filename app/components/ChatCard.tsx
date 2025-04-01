@@ -1,7 +1,7 @@
 export default function ChatCard() {
   return (
     <>
-      <div className="p-6 max-w-sm mx-auto bg-white rounded-xl flex items-center gap-x-4">
+      <div className="p-6 mt-5 max-w-sm mx-auto bg-white rounded-xl flex items-center gap-x-4">
         <div className="shrink-0">
           <img className="size-12" src="/hello-4x.gif" alt="ChitChat Logo" />
         </div>

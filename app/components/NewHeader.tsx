@@ -10,7 +10,7 @@ import {
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Navigation from "./Navigation";
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join("");
 }
 
@@ -38,7 +38,7 @@ export default function NewHeader() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
               <img
-                src="one-piece-gear-5.gif"
+                src="One Piece/one-piece-gear-5.gif"
                 alt="Your Company"
                 className="h-16 w-auto"
               />

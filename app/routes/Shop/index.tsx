@@ -2,6 +2,7 @@ import { Products } from "~/components/Products";
 import SlideOver from "~/components/Slide-over";
 import { useState } from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
+import Example from "~/components/QuickView";
 
 export default function Product() {
   const [open, setOpen] = useState(false);
@@ -20,6 +21,7 @@ export default function Product() {
           <button
             onClick={() => setOpen(true)}
             className="rounded-full bg-orange-600 p-3 text-white shadow-lg hover:bg-orange-700"
+            style={{ position: "fixed", bottom: "23rem", right: "2rem" }}
           >
             <ShoppingCartIcon className="h-7 w-7" aria-hidden="true" />
           </button>
@@ -27,7 +29,7 @@ export default function Product() {
       )}
 
       {/* Category Buttons */}
-      <div className="mx-auto max-w-5xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-70 rounded-lg shadow-lg mb-4">
+      <div className="mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-white bg-opacity-30 rounded-lg shadow-lg mb-4">
         <button
           onClick={() => setSelectedCategory("All")}
           className={`px-4 py-2 rounded-lg ${
@@ -47,7 +49,11 @@ export default function Product() {
           }`}
         >
           {" "}
-          <img src="Chainsaw-Man-Logo.png" alt="" className="h-20" />
+          <img
+            src="Chainsaw Man/Chainsaw-Man-Logo.png"
+            alt=""
+            className="h-20"
+          />
         </button>
         <button
           onClick={() => setSelectedCategory("Jujutsu Kaisen")}
@@ -57,7 +63,11 @@ export default function Product() {
             // : "bg-gray-200 text-gray-800"
           }`}
         >
-          <img src="Jujutsu-Kaisen-Logo.png" alt="" className="h-20" />
+          <img
+            src="Jujutsu Kaisen/Jujutsu-Kaisen-Logo.png"
+            alt=""
+            className="h-20"
+          />
         </button>
         <button
           onClick={() => setSelectedCategory("One Piece")}
@@ -67,7 +77,67 @@ export default function Product() {
             // : "bg-gray-200 text-gray-800"
           }`}
         >
-          <img src="One-Piece-Logo-PNG-Photo.png" alt="" className="h-36 pb-14" />
+          <img
+            src="./One Piece/One-Piece-Logo.png"
+            alt=""
+            className="h-36 pb-14"
+          />
+        </button>
+        <button
+          onClick={() => setSelectedCategory("Oshi No Ko")}
+          className={`px-4 py-2 rounded-lg ${
+            selectedCategory === "Oshi No Ko"
+            // ? "bg-orange-600 text-white"
+            // : "bg-gray-200 text-gray-800"
+          }`}
+        >
+          <img
+            src="Oshi No Ko/Oshi_no_Ko_logo.png"
+            alt=""
+            className="h-12 pt-2"
+          />
+        </button>
+        <button
+          onClick={() => setSelectedCategory("My Dressup Darling")}
+          className={`px-4 py-2 rounded-lg ${
+            selectedCategory === "My Dressup Darling"
+            // ? "bg-orange-600 text-white"
+            // : "bg-gray-200 text-gray-800"
+          }`}
+        >
+          <img
+            src="My Dressup Darling/my-dressup-darling-logo.jpg"
+            alt=""
+            className="h-20 pt-2"
+          />
+        </button>
+        <button
+          onClick={() => setSelectedCategory("Demon Slayer")}
+          className={`px-4 py-2 rounded-lg ${
+            selectedCategory === "Demon Slayer"
+            // ? "bg-orange-600 text-white"
+            // : "bg-gray-200 text-gray-800"
+          }`}
+        >
+          <img
+            src="./Demon Slayer/Demon-Slayer-Logo.png"
+            alt=""
+            className="h-20"
+          />
+        </button>
+        <button
+          onClick={() => setSelectedCategory("JoJo's Bizarre Adventure")}
+          className={`px-4 py-2 rounded-lg ${
+            selectedCategory === "JoJo's Bizarre Adventure"
+            // ? "bg-orange-600 text-white"
+            // : "bg-gray-200 text-gray-800"
+          }`}
+        >
+          <img
+            src="JoJo/JoJo's_Bizarre_Adventure_logo.png"
+            alt=""
+            className="h-20"
+          />
         </button>
       </div>
 
@@ -79,13 +149,10 @@ export default function Product() {
         <h2 className="sr-only">Products</h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {filteredProducts.map((product) => {
-            const isOnePiece = product.category === "One Piece";
-            const [name, volume] = isOnePiece
-              ? [
-                  product.name.replace(/Vol\.\d+:/, "").trim(),
-                  product.name.match(/Vol\.(\d+)/)?.[1],
-                ]
-              : product.name.split("Vol.");
+            // Extract name and volume
+            const match = product.name.match(/^(.*?)(?:Vol\.(\d+))?$/); // Match the name and volume
+            const name = match?.[1]?.trim() || ""; // Extract the name
+            const volume = match?.[2]; // Extract the volume number
 
             return (
               <a key={product.id} href={product.href} className="group">
@@ -95,7 +162,7 @@ export default function Product() {
                   className="aspect-auto w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8 text-shadow-lg"
                 />
                 <div className="mt-4 text-white font-semibold flex justify-between">
-                  <span>{name.trim()}</span>
+                  <span>{name}</span> {/* Cleaned name */}
                   {volume && (
                     <span className="text-white text-shadow-lg">
                       Vol.{volume}
@@ -110,7 +177,7 @@ export default function Product() {
           })}
         </div>
       </div>
-
+  
       {/* SlideOver Component */}
       <SlideOver open={open} setOpen={setOpen} />
     </div>
