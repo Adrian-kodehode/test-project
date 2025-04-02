@@ -1,50 +1,100 @@
-import { useState } from "react";
-import {
-  Dialog,
-  DialogBackdrop,
-  DialogPanel,
-  Radio,
-  RadioGroup,
-} from "@headlessui/react";
+import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { Products } from "~//components/Products";
+import { useState } from "react";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join("");
-}
+export default function QuickView({ open, setOpen, product }) {
+  const [selectedLanguage, setSelectedLanguage] = useState("English"); 
 
-export default function Example() {
-  const [opem, setOpem] = useState(false);
-  const [selectedColor, setSelectedColor] = useState(product.colors[0]);
-  const [selectedSize, setSelectedSize] = useState(Product.sizes);
+  if (!product) {
+    return null; 
+  }
 
   return (
-    <Dialog open={open} onClose={setOpem} className="relative z-10">
-      <DialogPanel
-        transition
-        className="fixed inset-0 hidden bg-gray-500/75 transition-opacity data-closed_opacity-0 data-enter:duration.300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in md:block"
-      />
+    <Dialog open={open} onClose={setOpen} className="relative z-10">
+      <DialogBackdrop className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+      <div className="fixed inset-0 z-10 overflow-y-auto">
+        <div className="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+          <DialogPanel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div className="sm:flex sm:items-start">
+                <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    {product.name}
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <img
+                      src={product.imageSrc}
+                      alt={product.imageAlt}
+                      className="w-full rounded-lg"
+                    />
+                    <p className="text-sm text-gray-500 mt-4">
+                      {product.description}
+                    </p>
+                    <p className="text-lg font-bold text-gray-900 mt-4">
+                      {product.price}
+                    </p>
+                    {/* Display Ratings */}
+                    <div className="mt-4 flex items-center">
+                      <div className="flex items-center">
+                        {[0, 1, 2, 3, 4].map((index) => (
+                          <StarIcon
+                            key={index}
+                            className={`h-5 w-5 ${
+                              product.rating > index
+                                ? "text-yellow-400"
+                                : "text-gray-300"
+                            }`}
+                            aria-hidden="true"
+                          />
+                        ))}
+                      </div>
+                      <p className="ml-2 text-sm text-gray-500">
+                        {product.rating} out of 5 stars
+                      </p>
+                    </div>
+                    <p className="text-sm text-gray-500 mt-1">
+                      {product.reviewCount} reviews
+                    </p>
 
-      <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-        <div className="flex min-h-full items-stretch justify-center text-center md:px-2 lg:px-4">
-          <DialogPanel
-            transition
-            className="flex w-full transform text-left text-base transition data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in md:max-w-2xl md:px-4 data-closed:md:scale-95 lg:max-w-4xl"
-          >
-            <div className="relative flex w-full items-center overflow-hidden bg-white px-4 pt-14 pb-8 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+                    {/* Language Selection */}
+                    <div className="mt-6">
+                      <label
+                        htmlFor="language"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Choose Language
+                      </label>
+                      <select
+                        id="language"
+                        name="language"
+                        value={selectedLanguage}
+                        onChange={(e) => setSelectedLanguage(e.target.value)}
+                        className="mt-1 block w-36 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      >
+                        <option value="English">English</option>
+                        <option value="Japanese">Japanese</option>
+                      </select>
+                      <p className="mt-2 text-sm text-gray-500">
+                        Selected: {selectedLanguage}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse">
               <button
                 type="button"
-                onClick={() => setOpem(false)}
-                className="absolute top-4 right-4 text-gray-400 hover:text-gray-500 sm:top-8 sm:right-6 md:top-6 md:right-6 lg:top-8 lg:right-8"
+                className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 sm:ml-3 sm:w-auto sm:text-sm"
+                onClick={() => setOpen(false)}
               >
-                <span className="sr-only">Close</span>
-                <XMarkIcon aria-hidden="true" className="size-6" />
+                Close
               </button>
-
-              <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
-                <img src={product.imageSrc} alt={Product.imageAlt} />
-              </div>
             </div>
           </DialogPanel>
         </div>

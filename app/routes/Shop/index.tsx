@@ -1,17 +1,24 @@
 import { Products } from "~/components/Products";
 import SlideOver from "~/components/Slide-over";
+import QuickView from "~/components/QuickView";
 import { useState } from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import Example from "~/components/QuickView";
 
 export default function Product() {
   const [open, setOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [quickViewOpen, setQuickViewOpen] = useState(false); // State for QuickView
+  const [selectedProduct, setSelectedProduct] = useState(null); // State for selected product
 
   const filteredProducts =
     selectedCategory === "All"
       ? Products
       : Products.filter((product) => product.category === selectedCategory);
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product); // Set the selected product
+    setQuickViewOpen(true); // Open the QuickView modal
+  };
 
   return (
     <div className="bg-[url('https://images2.alphacoders.com/114/1145884.jpg')] bg-fixed bg-no-repeat bg-cover bg-center min-h-screen">
@@ -29,10 +36,10 @@ export default function Product() {
       )}
 
       {/* Category Buttons */}
-      <div className="mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-white bg-opacity-30 rounded-lg shadow-lg mb-4">
+      <div className="mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-40 rounded-lg shadow-lg mb-4">
         <button
           onClick={() => setSelectedCategory("All")}
-          className={`px-4 py-2 rounded-lg ${
+          className={`px-4 py-2 ml-4 rounded-lg ${
             selectedCategory === "All"
               ? "bg-orange-600 text-white"
               : "bg-gray-200 text-gray-800"
@@ -42,10 +49,8 @@ export default function Product() {
         </button>
         <button
           onClick={() => setSelectedCategory("Chainsaw Man")}
-          className={`px-4 py-2 rounded-lg ${
-            selectedCategory === "Chainsaw Man"
-            // ? "bg-orange-600 text-white"
-            // : "bg-gray-200 text-gray-800"
+          className={`px-4 py--1 rounded-lg ${
+            selectedCategory === "Chainsaw Man" ? "bg-white text-white" : ""
           }`}
         >
           {" "}
@@ -57,10 +62,8 @@ export default function Product() {
         </button>
         <button
           onClick={() => setSelectedCategory("Jujutsu Kaisen")}
-          className={`px-4 py-2 rounded-lg ${
-            selectedCategory === "Jujutsu Kaisen"
-            // ? "bg-orange-600 text-white"
-            // : "bg-gray-200 text-gray-800"
+          className={`px-4 py--1 rounded-lg ${
+            selectedCategory === "Jujutsu Kaisen" ? "bg-white text-white" : ""
           }`}
         >
           <img
@@ -71,52 +74,46 @@ export default function Product() {
         </button>
         <button
           onClick={() => setSelectedCategory("One Piece")}
-          className={`px-4 py-2 rounded-lg ${
-            selectedCategory === "One Piece"
-            // ? "bg-orange-600 text-white"
-            // : "bg-gray-200 text-gray-800"
+          className={`px-4 py--1 rounded-lg ${
+            selectedCategory === "One Piece" ? "bg-white text-white" : ""
           }`}
         >
           <img
-            src="./One Piece/One-Piece-Logo.png"
+            src="./One Piece/One-Piece-Logo-PNG-Photo.png"
             alt=""
-            className="h-36 pb-14"
+            className="h-20"
           />
         </button>
         <button
           onClick={() => setSelectedCategory("Oshi No Ko")}
           className={`px-4 py-2 rounded-lg ${
-            selectedCategory === "Oshi No Ko"
-            // ? "bg-orange-600 text-white"
-            // : "bg-gray-200 text-gray-800"
+            selectedCategory === "Oshi No Ko" ? "bg-white text-white" : ""
           }`}
         >
           <img
             src="Oshi No Ko/Oshi_no_Ko_logo.png"
             alt=""
-            className="h-12 pt-2"
+            className="h-12 pb-1 pt-1"
           />
         </button>
         <button
           onClick={() => setSelectedCategory("My Dressup Darling")}
-          className={`px-4 py-2 rounded-lg ${
+          className={`px-4 py--1 w-36 rounded-lg ${
             selectedCategory === "My Dressup Darling"
-            // ? "bg-orange-600 text-white"
-            // : "bg-gray-200 text-gray-800"
+              ? "bg-white text-white"
+              : ""
           }`}
         >
           <img
             src="My Dressup Darling/my-dressup-darling-logo.jpg"
             alt=""
-            className="h-20 pt-2"
+            className="h-16 pr-2"
           />
         </button>
         <button
           onClick={() => setSelectedCategory("Demon Slayer")}
-          className={`px-4 py-2 rounded-lg ${
-            selectedCategory === "Demon Slayer"
-            // ? "bg-orange-600 text-white"
-            // : "bg-gray-200 text-gray-800"
+          className={`px-1 py--1 pt2 rounded-lg ${
+            selectedCategory === "Demon Slayer" ? "bg-white text-white" : ""
           }`}
         >
           <img
@@ -127,16 +124,16 @@ export default function Product() {
         </button>
         <button
           onClick={() => setSelectedCategory("JoJo's Bizarre Adventure")}
-          className={`px-4 py-2 rounded-lg ${
+          className={`px-4 py-1 rounded-lg ${
             selectedCategory === "JoJo's Bizarre Adventure"
-            // ? "bg-orange-600 text-white"
-            // : "bg-gray-200 text-gray-800"
+              ? "bg-white text-white"
+              : ""
           }`}
         >
           <img
             src="JoJo/JoJo's_Bizarre_Adventure_logo.png"
             alt=""
-            className="h-20"
+            className="h-16"
           />
         </button>
       </div>
@@ -155,7 +152,11 @@ export default function Product() {
             const volume = match?.[2]; // Extract the volume number
 
             return (
-              <a key={product.id} href={product.href} className="group">
+              <div
+                key={product.id}
+                onClick={() => handleProductClick(product)} // Open QuickView on click
+                className="group cursor-pointer"
+              >
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
@@ -172,12 +173,17 @@ export default function Product() {
                 <p className="mt-1 text-lg font-medium text-green-400 text-shadow-lg">
                   {product.price}
                 </p>
-              </a>
+              </div>
             );
           })}
         </div>
       </div>
-  
+
+      <QuickView
+        open={quickViewOpen}
+        setOpen={setQuickViewOpen}
+        product={selectedProduct}
+      />
       {/* SlideOver Component */}
       <SlideOver open={open} setOpen={setOpen} />
     </div>

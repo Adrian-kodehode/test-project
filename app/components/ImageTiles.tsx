@@ -24,14 +24,14 @@ export default function ImageTiles() {
                     <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                         <img
-                          src="1000.png"
+                          src="Chainsaw Man/1000.png"
                           alt=""
                           className="size-full object-cover"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="vol14.jpg"
+                          src="One Piece/onepiecevol104.jpg"
                           alt=""
                           className="size-full object-cover"
                         />
@@ -40,33 +40,33 @@ export default function ImageTiles() {
                     <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="vol19.jpg"
+                          src="JoJo/jojo69.jpg"
                           alt=""
                           className="size-full object-cover"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="asa.jpg"
+                          src="My Dressup Darling/darling2.jpg"
                           alt=""
                           className="size-full object-cover"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img src="vol18.jpg" alt="" />
+                        <img src="Jujutsu Kaisen/jjkvol8.jpg" alt="" />
                       </div>
                     </div>
                     <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="yorujpg.jpg"
+                          src="Oshi No Ko/oshinoko16.jpg"
                           alt=""
                           className="size-full object-cover"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="vol6.jpg"
+                          src="Demon Slayer/demon20.jpg"
                           alt=""
                           className="size-full object-cover"
                         />

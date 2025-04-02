@@ -132,21 +132,7 @@ const oshiNoKoTitles = [
   "",
 ];
 
-const myDressupDarling = [
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-]
+const myDressupDarling = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
 
 const demonSlayerTitles = [
   "Cruelty",
@@ -288,6 +274,8 @@ export const Products = [
     imageAlt: "Product 1",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 2,
@@ -299,6 +287,8 @@ export const Products = [
     imageAlt: "Product 2",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 3,
@@ -310,6 +300,8 @@ export const Products = [
     imageAlt: "Product 3",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 4,
@@ -321,6 +313,8 @@ export const Products = [
     imageAlt: "Product 4",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 5,
@@ -332,6 +326,8 @@ export const Products = [
     imageAlt: "Product 5",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 6,
@@ -343,6 +339,8 @@ export const Products = [
     imageAlt: "Product 6",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 7,
@@ -354,6 +352,8 @@ export const Products = [
     imageAlt: "Product 7",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 8,
@@ -365,6 +365,8 @@ export const Products = [
     imageAlt: "Product 8",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 9,
@@ -376,6 +378,8 @@ export const Products = [
     imageAlt: "Product 9",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 10,
@@ -387,6 +391,8 @@ export const Products = [
     imageAlt: "Product 10",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 11,
@@ -398,6 +404,8 @@ export const Products = [
     imageAlt: "Product 11",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 12,
@@ -409,6 +417,8 @@ export const Products = [
     imageAlt: "Product 12",
     quantity: 192,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 13,
@@ -420,6 +430,8 @@ export const Products = [
     imageAlt: "Product 13",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 14,
@@ -431,6 +443,8 @@ export const Products = [
     imageAlt: "Product 14",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 15,
@@ -442,6 +456,8 @@ export const Products = [
     imageAlt: "Product 15",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 16,
@@ -453,6 +469,8 @@ export const Products = [
     imageAlt: "Product 16",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 17,
@@ -464,6 +482,8 @@ export const Products = [
     imageAlt: "Product 17",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 18,
@@ -475,6 +495,8 @@ export const Products = [
     imageAlt: "Product 18",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 19,
@@ -486,6 +508,8 @@ export const Products = [
     imageAlt: "Product 19",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 20,
@@ -497,6 +521,8 @@ export const Products = [
     imageAlt: "Product 20",
     quantity: 1,
     category: "Chainsaw Man",
+    rating: 4.7,
+    reviewCount: 73000,
   },
   {
     id: 21,
@@ -508,6 +534,8 @@ export const Products = [
     imageAlt: "Product 21",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.8,
+    reviewCount: 49000,
   },
   {
     id: 22,
@@ -519,6 +547,8 @@ export const Products = [
     imageAlt: "Product 22",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 23,
@@ -530,6 +560,8 @@ export const Products = [
     imageAlt: "Product 23",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 24,
@@ -541,6 +573,8 @@ export const Products = [
     imageAlt: "Product 24",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 25,
@@ -552,6 +586,8 @@ export const Products = [
     imageAlt: "Product 25",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 26,
@@ -563,6 +599,8 @@ export const Products = [
     imageAlt: "Product 26",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 27,
@@ -574,6 +612,8 @@ export const Products = [
     imageAlt: "Product 27",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 28,
@@ -585,6 +625,8 @@ export const Products = [
     imageAlt: "Product 28",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 29,
@@ -596,6 +638,8 @@ export const Products = [
     imageAlt: "Product 29",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 30,
@@ -607,6 +651,8 @@ export const Products = [
     imageAlt: "Product 30",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 31,
@@ -618,6 +664,8 @@ export const Products = [
     imageAlt: "Product 31",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 32,
@@ -629,6 +677,8 @@ export const Products = [
     imageAlt: "Product 32",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 33,
@@ -640,6 +690,8 @@ export const Products = [
     imageAlt: "Product 33",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 34,
@@ -651,6 +703,8 @@ export const Products = [
     imageAlt: "Product 34",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 35,
@@ -662,6 +716,8 @@ export const Products = [
     imageAlt: "Product 35",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 36,
@@ -673,6 +729,8 @@ export const Products = [
     imageAlt: "Product 36",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 37,
@@ -684,6 +742,8 @@ export const Products = [
     imageAlt: "Product 37",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 38,
@@ -695,6 +755,8 @@ export const Products = [
     imageAlt: "Product 38",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 39,
@@ -706,6 +768,8 @@ export const Products = [
     imageAlt: "Product 39",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 40,
@@ -717,6 +781,8 @@ export const Products = [
     imageAlt: "Product 40",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 41,
@@ -728,6 +794,8 @@ export const Products = [
     imageAlt: "Product 41",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 42,
@@ -739,6 +807,8 @@ export const Products = [
     imageAlt: "Product 42",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 43,
@@ -750,6 +820,8 @@ export const Products = [
     imageAlt: "Product 43",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 44,
@@ -761,6 +833,8 @@ export const Products = [
     imageAlt: "Product 44",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 45,
@@ -772,6 +846,8 @@ export const Products = [
     imageAlt: "Product 45",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 46,
@@ -783,6 +859,8 @@ export const Products = [
     imageAlt: "Product 46",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 47,
@@ -794,6 +872,8 @@ export const Products = [
     imageAlt: "Product 47",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 48,
@@ -805,6 +885,8 @@ export const Products = [
     imageAlt: "Product 48",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 49,
@@ -816,6 +898,8 @@ export const Products = [
     imageAlt: "Product 49",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 50,
@@ -827,6 +911,8 @@ export const Products = [
     imageAlt: "Product 50",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   {
     id: 51,
@@ -838,6 +924,8 @@ export const Products = [
     imageAlt: "Product 51",
     quantity: 1,
     category: "Jujutsu Kaisen",
+    rating: 4.7,
+    reviewCount: 149000,
   },
   ...onePieceTitles.map((title, index) => ({
     id: 52 + index,
@@ -849,6 +937,8 @@ export const Products = [
     imageAlt: `One Piece Vol. ${index + 1}`,
     quantity: 1,
     category: "One Piece",
+    rating: 4.7,
+    reviewCount: 290000,
   })),
 
   ...oshiNoKoTitles.map((title, index) => ({
@@ -861,6 +951,8 @@ export const Products = [
     imageAlt: `Oshi No Ko Vol. ${index + 1}`,
     quantity: 1,
     category: "Oshi No Ko",
+    rating: 4.4,
+    reviewCount: 12000,
   })),
 
   ...demonSlayerTitles.map((title, index) => ({
@@ -873,6 +965,8 @@ export const Products = [
     imageAlt: `Demon Slayer Vol. ${index + 1}`,
     quantity: 1,
     category: "Demon Slayer",
+    rating: 4.8,
+    reviewCount: 183000,
   })),
 
   ...jojosBizarreTitles.map((title, index) => ({
@@ -885,6 +979,8 @@ export const Products = [
     imageAlt: `JoJo's Bizarre Adventure Vol. ${index + 1}`,
     quantity: 1,
     category: "JoJo's Bizarre Adventure",
+    rating: 4.7,
+    reviewCount: 42000,
   })),
 
   ...myDressupDarling.map((title, index) => ({
@@ -897,5 +993,7 @@ export const Products = [
     imageAlt: `My Dressup Darling Vol. ${index + 1}`,
     quantity: 1,
     category: "My Dressup Darling",
+    rating: 4.9,
+    reviewCount: 160053,
   })),
 ];
