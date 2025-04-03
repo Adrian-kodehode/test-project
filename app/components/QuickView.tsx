@@ -4,11 +4,17 @@ import { StarIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
 
 export default function QuickView({ open, setOpen, product }) {
-  const [selectedLanguage, setSelectedLanguage] = useState("English"); 
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
 
   if (!product) {
-    return null; 
+    return null;
   }
+
+  // Determine the image based on the selected language
+  const imageSrc =
+    selectedLanguage === "English"
+      ? product.imageSrcEnglish
+      : product.imageSrcJapanese;
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
@@ -22,19 +28,24 @@ export default function QuickView({ open, setOpen, product }) {
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
-                  >
-                    {product.name}
-                  </Dialog.Title>
+                  ></Dialog.Title>
                   <div className="mt-2">
+                    {/* Display the image based on the selected language */}
                     <img
-                      src={product.imageSrc}
+                      src={imageSrc}
                       alt={product.imageAlt}
                       className="w-full rounded-lg"
                     />
+                    <h3
+                      className="text-lg font-medium text-gray-900 mt-4
+                    "
+                    >
+                      {product.name}
+                    </h3>
                     <p className="text-sm text-gray-500 mt-4">
                       {product.description}
                     </p>
-                    <p className="text-lg font-bold text-gray-900 mt-4">
+                    <p className="text-lg font-bold text-green-500 mt-4">
                       {product.price}
                     </p>
                     {/* Display Ratings */}
@@ -73,7 +84,7 @@ export default function QuickView({ open, setOpen, product }) {
                         name="language"
                         value={selectedLanguage}
                         onChange={(e) => setSelectedLanguage(e.target.value)}
-                        className="mt-1 block w-36 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       >
                         <option value="English">English</option>
                         <option value="Japanese">Japanese</option>
@@ -81,6 +92,25 @@ export default function QuickView({ open, setOpen, product }) {
                       <p className="mt-2 text-sm text-gray-500">
                         Selected: {selectedLanguage}
                       </p>
+                    </div>
+
+                    {/* Additional Details */}
+                    <div className="mt-6">
+                      <h4 className="text-lg font-medium text-gray-900">
+                        Additional Details
+                      </h4>
+                      <ul className="mt-2 text-sm text-gray-500">
+                        <li>
+                          <strong>Chapters List:</strong> {product.chaptersList}
+                        </li>
+                        <li>
+                          <strong>Pages:</strong> {product.pages}
+                        </li>
+                        <li>
+                          <strong>Cover Character(s):</strong>{" "}
+                          {product.coverCharacters}
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>

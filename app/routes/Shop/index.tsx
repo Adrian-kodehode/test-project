@@ -158,7 +158,7 @@ export default function Product() {
                 className="group cursor-pointer"
               >
                 <img
-                  src={product.imageSrc}
+                  src={"imageSrcEnglish" in product ? product.imageSrcEnglish : product.imageSrc}
                   alt={product.imageAlt}
                   className="aspect-auto w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8 text-shadow-lg"
                 />

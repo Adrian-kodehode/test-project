@@ -44,7 +44,7 @@ export default function SlideOver({ open, setOpen }) {
                           <li key={product.id} className="flex py-6">
                             <div className="h-24 w-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
                               <img
-                                src={product.imageSrc}
+                                src={product.imageSrcEnglish}
                                 alt={product.imageAlt}
                                 className="h-full w-full object-cover"
                               />
