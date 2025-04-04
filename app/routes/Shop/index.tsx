@@ -3,6 +3,7 @@ import SlideOver from "~/components/Slide-over";
 import QuickView from "~/components/QuickView";
 import { useState } from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
+import StoreNavigation from "~/components/StoreNavigation";
 
 export default function Product() {
   const [open, setOpen] = useState(false);
@@ -22,9 +23,10 @@ export default function Product() {
 
   return (
     <div className="bg-[url('https://images2.alphacoders.com/114/1145884.jpg')] bg-fixed bg-no-repeat bg-cover bg-center min-h-screen">
+      <StoreNavigation />
       {/* Shopping Cart Button */}
       {!open && (
-        <div className="fixed bottom-4 right-4 sm:bottom-10 sm:right-10 z-20">
+        <div className="animate-pulse fixed bottom-4 right-4 sm:bottom-10 sm:right-10 z-20">
           <button
             onClick={() => setOpen(true)}
             className="rounded-full bg-orange-600 p-3 text-white shadow-lg hover:bg-orange-700"
@@ -36,7 +38,7 @@ export default function Product() {
       )}
 
       {/* Category Buttons */}
-      <div className="mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-40 rounded-lg shadow-lg mb-4">
+      <div className=" mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-40 rounded-lg shadow-lg mb-4">
         <button
           onClick={() => setSelectedCategory("All")}
           className={`px-4 py-2 ml-4 rounded-lg ${
@@ -57,7 +59,7 @@ export default function Product() {
           <img
             src="Chainsaw Man/Chainsaw-Man-Logo.png"
             alt=""
-            className="h-20"
+            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </button>
         <button
@@ -69,7 +71,7 @@ export default function Product() {
           <img
             src="Jujutsu Kaisen/Jujutsu-Kaisen-Logo.png"
             alt=""
-            className="h-20"
+            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </button>
         <button
@@ -81,7 +83,7 @@ export default function Product() {
           <img
             src="./One Piece/One-Piece-Logo-PNG-Photo.png"
             alt=""
-            className="h-20"
+            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </button>
         <button
@@ -93,7 +95,7 @@ export default function Product() {
           <img
             src="Oshi No Ko/Oshi_no_Ko_logo.png"
             alt=""
-            className="h-12 pb-1 pt-1"
+            className="h-12 pb-1 pt-1 animated hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </button>
         <button
@@ -107,7 +109,7 @@ export default function Product() {
           <img
             src="My Dressup Darling/my-dressup-darling-logo.jpg"
             alt=""
-            className="h-16 pr-2"
+            className="h-16 pr-2 animated hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </button>
         <button
@@ -119,7 +121,7 @@ export default function Product() {
           <img
             src="./Demon Slayer/Demon-Slayer-Logo.png"
             alt=""
-            className="h-20"
+            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </button>
         <button
@@ -133,7 +135,7 @@ export default function Product() {
           <img
             src="JoJo/JoJo's_Bizarre_Adventure_logo.png"
             alt=""
-            className="h-16"
+            className="h-16 animated hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </button>
       </div>
@@ -155,12 +157,16 @@ export default function Product() {
               <div
                 key={product.id}
                 onClick={() => handleProductClick(product)} // Open QuickView on click
-                className="group cursor-pointer"
+                className="group cursor-pointer animated hover:scale-105 transition-transform duration-300 ease-in-out"
               >
                 <img
-                  src={"imageSrcEnglish" in product ? product.imageSrcEnglish : product.imageSrc}
+                  src={
+                    "imageSrcEnglish" in product
+                      ? product.imageSrcEnglish
+                      : product.imageSrc
+                  }
                   alt={product.imageAlt}
-                  className="aspect-auto w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8 text-shadow-lg"
+                  className="aspect-auto w-full rounded-lg bg-gray-200 object-cover xl:aspect-7/8 text-shadow-lg"
                 />
                 <div className="mt-4 text-white font-semibold flex justify-between">
                   <span>{name}</span> {/* Cleaned name */}

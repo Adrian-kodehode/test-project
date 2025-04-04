@@ -16,6 +16,10 @@ export default function QuickView({ open, setOpen, product }) {
       ? product.imageSrcEnglish
       : product.imageSrcJapanese;
 
+  const handleAddToCart = (product) => {
+    console.log("Added to cart:", product);
+  };
+
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
       <DialogBackdrop className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
@@ -117,14 +121,23 @@ export default function QuickView({ open, setOpen, product }) {
               </div>
             </div>
 
-            <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse">
-              <button
-                type="button"
-                className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 sm:ml-3 sm:w-auto sm:text-sm"
-                onClick={() => setOpen(false)}
-              >
-                Close
-              </button>
+            <div className="mt-6">
+              <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse">
+                <button
+                  type="button"
+                  className="inline-flex w-full justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700 sm:ml-3 sm:w-auto sm:text-sm"
+                  onClick={() => handleAddToCart(product)}
+                >
+                  Add to Cart
+                </button>
+                <button
+                  type="button"
+                  className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  onClick={() => setOpen(false)}
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </DialogPanel>
         </div>

@@ -1,4 +1,18 @@
-export const myDressupDarling = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
+export const myDressupDarling = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+];
 
 export const myDressupDarlingCoverCharacters = [["Marin Kitagawa"]];
 

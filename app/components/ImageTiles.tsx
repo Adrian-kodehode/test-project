@@ -24,7 +24,7 @@ export default function ImageTiles() {
                     <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                         <img
-                          src="Chainsaw Man/1000.png"
+                          src="Chainsaw Man/cm10.jpg"
                           alt=""
                           className="size-full object-cover"
                         />
@@ -53,20 +53,20 @@ export default function ImageTiles() {
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img src="Jujutsu Kaisen/jjkvol8.jpg" alt="" />
+                        <img src="Jujutsu Kaisen/jjken22.jpg" alt="" />
                       </div>
                     </div>
                     <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="Oshi No Ko/oshinoko16.jpg"
+                          src="Oshi No Ko/oshinokojp8.jpg"
                           alt=""
                           className="size-full object-cover"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="Demon Slayer/demon20.jpg"
+                          src="Demon Slayer/demonen20.jpg"
                           alt=""
                           className="size-full object-cover"
                         />
