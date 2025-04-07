@@ -5,12 +5,13 @@ export default function ImageTiles() {
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Drenched in blood, but make it fashion
+              From Cosplay to Curses
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              This summer, survive the scorching heat and the merciless world
-              with our new collection. Stylish enough to dodge death, durable
-              enough to face devils.
+              This summer, slash through curses, cook up chaos, and cosplay your
+              way to victory. Whether you're chasing devils, hunting pirates, or
+              falling for forbidden looks, our collection brings the heat. Grit,
+              glam, and just enough gore — only the bold survive.
             </p>
           </div>
           <div>

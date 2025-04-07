@@ -4,12 +4,19 @@ import QuickView from "~/components/QuickView";
 import { useState } from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import StoreNavigation from "~/components/StoreNavigation";
+import { Products } from "~/components/Products";
 
 export default function Product() {
   const [open, setOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [quickViewOpen, setQuickViewOpen] = useState(false); // State for QuickView
-  const [selectedProduct, setSelectedProduct] = useState(null); // State for selected product
+  const [quickViewOpen, setQuickViewOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null); // Sta
+  const [cart, setCart] = useState([]);
+
+  const handleAddToCart = (product) => {
+    setCart((prevCart) => [...prevCart, product]);
+    setQuickViewOpen(false);
+  };
 
   const filteredProducts =
     selectedCategory === "All"
@@ -17,8 +24,8 @@ export default function Product() {
       : Products.filter((product) => product.category === selectedCategory);
 
   const handleProductClick = (product) => {
-    setSelectedProduct(product); // Set the selected product
-    setQuickViewOpen(true); // Open the QuickView modal
+    setSelectedProduct(product);
+    setQuickViewOpen(true);
   };
 
   return (
@@ -189,6 +196,7 @@ export default function Product() {
         open={quickViewOpen}
         setOpen={setQuickViewOpen}
         product={selectedProduct}
+        onAddToCart={handleAddToCart}
       />
       {/* SlideOver Component */}
       <SlideOver open={open} setOpen={setOpen} />

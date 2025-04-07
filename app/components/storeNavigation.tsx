@@ -19,6 +19,7 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { Link } from "@remix-run/react";
 
 import { navigation } from "./navigation";
 
@@ -307,12 +308,12 @@ export default function Example() {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="/signin" // Add this route to your routes folder
                     className="text-sm font-medium text-white hover:text-gray-200"
                   >
                     Sign in
-                  </a>
+                  </Link>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
                   <a
                     href="#"
