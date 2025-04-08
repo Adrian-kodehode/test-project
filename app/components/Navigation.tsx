@@ -7,7 +7,8 @@ export default function Navigation() {
     { name: "Projects", href: "/projects", current: true },
     { name: "Reports", href: "/reports", current: true },
     { name: "Shop", href: "/shop", current: true },
-    { name: "Profile", href: "/profile", current: true },
+    { name: "", href: "/profile", current: true },
+    {name: "", href: "/shoppingcart", current: true},
   ];
 }
 export const navigation = {
