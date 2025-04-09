@@ -316,7 +316,7 @@ export default function Example() {
                   </Link>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
                   <a
-                    href="#"
+                    href="/createaccount"
                     className="text-sm font-medium text-white hover:text-gray-300"
                   >
                     Create account
@@ -351,7 +351,10 @@ export default function Example() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <a href="/shoppingcart" className="group -m-2 flex items-center p-2">
+                  <a
+                    href="/shoppingcart"
+                    className="group -m-2 flex items-center p-2"
+                  >
                     <ShoppingBagIcon
                       aria-hidden="true"
                       className="size-6 shrink-0 text-white group-hover:text-gray-300"

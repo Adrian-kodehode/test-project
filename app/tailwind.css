@@ -1,7 +1,7 @@
 @tailwind base;
-@import "flowbite";
 @tailwind components;
 @tailwind utilities;
+@import "flowbite";
 
 
 html,

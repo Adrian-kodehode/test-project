@@ -22,7 +22,7 @@ export default function QuickView({ open, setOpen, product, onAddToCart }) {
       <div className="fixed inset-0 z-10 overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
           <DialogPanel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4"> 
+            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
               <div className="sm:flex sm:items-start">
                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                   <Dialog.Title
@@ -49,7 +49,7 @@ export default function QuickView({ open, setOpen, product, onAddToCart }) {
                       {product.price}
                     </p>
                     {/* Display Ratings */}
-                    <div className="mt-4 flex items-center">
+                    <div className="mt-4 flex items-center bg-bl">
                       <div className="flex items-center">
                         {[0, 1, 2, 3, 4].map((index) => (
                           <StarIcon
@@ -84,7 +84,7 @@ export default function QuickView({ open, setOpen, product, onAddToCart }) {
                         name="language"
                         value={selectedLanguage}
                         onChange={(e) => setSelectedLanguage(e.target.value)}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 bg-black block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       >
                         <option value="English">English</option>
                         <option value="Japanese">Japanese</option>
@@ -103,17 +103,21 @@ export default function QuickView({ open, setOpen, product, onAddToCart }) {
                         <li>
                           <strong>Chapters List:</strong>
                           <ul className="mt-2 list-disc list-inside text-gray-500">
-                            {product.chaptersList.map((chapter, index) => (
-                              <li key={index}>{chapter}</li>
-                            ))}
+                            {product.chaptersList?.length > 0 ? (
+                              product.chaptersList.map((chapter, index) => (
+                                <li key={index}>{chapter}</li>
+                              ))
+                            ) : (
+                              <li>No chapters available</li>
+                            )}
                           </ul>
                         </li>
                         <li>
-                          <strong>Pages:</strong> {product.pages}
+                          <strong>Pages:</strong> {product.pages || "N/A"}
                         </li>
                         <li>
                           <strong>Cover Character(s):</strong>{" "}
-                          {product.coverCharacters}
+                          {product.coverCharacters || "N/A"}
                         </li>
                       </ul>
                     </div>

@@ -1,3 +1,4 @@
+import { current } from "@reduxjs/toolkit";
 import { features } from "node:process";
 
 export default function Navigation() {
@@ -8,7 +9,9 @@ export default function Navigation() {
     { name: "Reports", href: "/reports", current: true },
     { name: "Shop", href: "/shop", current: true },
     { name: "", href: "/profile", current: true },
-    {name: "", href: "/shoppingcart", current: true},
+    { name: "", href: "/shoppingcart", current: true },
+    { name: "", href: "/createaccount", current: true },
+    { name: "", href: "/music", current: true },
   ];
 }
 export const navigation = {
