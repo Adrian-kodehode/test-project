@@ -22,12 +22,12 @@ export default function Image() {
             Now Denji has been reborn as some kind of weird Devil-Human hybrid.
             He is now Chainsaw Man!
           </p>
-            <a
+          <a
             href="/collection"
             className="pt-6 text-indigo-400 hover:text-indigo-600 font-medium text-lg"
-            >
+          >
             Collection
-            </a>
+          </a>
         </div>
         <div className="flex flex-wrap -m-4">
           <div className="xl:w-1/4 md:w-1/2 p-4">
