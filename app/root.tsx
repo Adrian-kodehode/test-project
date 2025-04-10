@@ -11,9 +11,10 @@ import "./tailwind.css";
 import ChatCard from "./components/ChatCard";
 import Buttons from "./components/Buttons";
 import Contributors from "./components/Contributors";
-import  List  from "./components/List";
+import List from "./components/List";
 import NewHeader from "./components/NewHeader";
 import Footer from "./components/Footer";
+import PlaybackBar from "./components/PlaybackBar";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -39,11 +40,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <NewHeader />
-        {children}
-        {/* <ChatCard />
-        <List />
-        <Buttons /> 
-        <Contributors />*/}
+        <div className="pb-24">
+          {" "}
+          {/* Add padding at the bottom to account for the playback bar */}
+          {children}
+        </div>
+        <PlaybackBar />
         <ScrollRestoration />
         <Scripts />
         <Footer />

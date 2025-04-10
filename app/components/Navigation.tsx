@@ -8,10 +8,12 @@ export default function Navigation() {
     { name: "Projects", href: "/projects", current: true },
     { name: "Reports", href: "/reports", current: true },
     { name: "Shop", href: "/shop", current: true },
+    { name: "Music", href: "/music", current: true },
+    { name: "Collection", href: "/image", current: true },
     { name: "", href: "/profile", current: true },
     { name: "", href: "/shoppingcart", current: true },
     { name: "", href: "/createaccount", current: true },
-    { name: "", href: "/music", current: true },
+    { name: "", href: "/collection", current: true },
   ];
 }
 export const navigation = {

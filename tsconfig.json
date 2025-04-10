@@ -21,11 +21,9 @@
     "allowJs": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "~/*": ["./app/*"],
-      "@/*": ["src/*"],
-      "@/ui/components/*": ["src/ui/components/*"]
+      "@/*": ["./src/*"]
     },
 
     // Vite takes care of building everything, not tsc.

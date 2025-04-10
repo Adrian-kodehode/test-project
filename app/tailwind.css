@@ -3,15 +3,27 @@
 @tailwind utilities;
 @import "flowbite";
 
-
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-spotify-black text-spotify-white min-h-screen;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-  /* .btn-primary {
-    @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-sm hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
-  } */
+.spotify-button {
+  @apply bg-spotify-green hover:bg-spotify-hover text-spotify-white font-bold py-2 px-4 rounded-full;
+}
+
+.spotify-sidebar {
+  @apply bg-spotify-black p-6;
+}
+
+.spotify-main {
+  @apply bg-gradient-to-b from-spotify-darkgray to-spotify-black;
+}
+
+.spotify-card {
+  @apply bg-spotify-darkgray hover:bg-opacity-80 transition-all duration-200 rounded-lg p-4;
+}
+
+.spotify-text-secondary {
+  @apply text-spotify-lightgray;
 }

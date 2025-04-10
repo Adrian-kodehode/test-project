@@ -1,10 +1,9 @@
-import { Products } from "~/components/Products";
-import SlideOver from "~/components/Slide-over";
-import QuickView from "~/components/QuickView";
+import { Products } from "../../components/Products";
+import SlideOver from "../../components/Slide-over";
+import QuickView from "../../components/QuickView";
 import { useState } from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import StoreNavigation from "~/components/StoreNavigation";
-import { Products } from "~/components/Products";
+import StoreNavigation from "../../components/storeNavigation";
 
 export default function Product() {
   const [open, setOpen] = useState(false);
