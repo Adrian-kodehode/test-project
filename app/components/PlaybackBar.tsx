@@ -6,6 +6,8 @@ import {
   FeatherVolume2,
   FeatherRepeat,
   FeatherShuffle,
+  FeatherPartyPopper,
+  FeatherPlayCircle,
 } from "@subframe/core";
 import IconButton from "./music/IconButton";
 
@@ -24,9 +26,7 @@ const PlaybackBar = () => {
             <span className="text-spotify-white text-sm font-medium">
               HYAENA
             </span>
-            <span className="text-spotify-lightgray text-xs">
-              UTOPIA
-            </span>
+            <span className="text-spotify-lightgray text-xs">UTOPIA</span>
           </div>
         </div>
 
@@ -48,6 +48,16 @@ const PlaybackBar = () => {
             <IconButton
               className="spotify-button w-10 h-10 flex items-center justify-center"
               icon={<FeatherPlay className="text-spotify-black" />}
+              size="small"
+              onClick={() => {}}
+            />
+            <IconButton
+              icon={<FeatherSkipForward className="text-spotify-white" />}
+              size="small"
+              onClick={() => {}}
+            />
+            <IconButton
+              icon={<FeatherRepeat className="text-spotify-white" />}
               size="small"
               onClick={() => {}}
             />

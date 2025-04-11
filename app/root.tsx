@@ -6,6 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
+import { useLocation } from "react-router-dom";
 
 import "./tailwind.css";
 import ChatCard from "./components/ChatCard";
@@ -48,12 +49,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <PlaybackBar />
         <ScrollRestoration />
         <Scripts />
-        <Footer />
       </body>
     </html>
   );
 }
 
 export default function App() {
-  return <Outlet />;
+  const location = useLocation();
+
+  return (
+    <div>
+      <Outlet />
+      {location.pathname !== "/music" && <Footer />}
+    </div>
+  );
 }

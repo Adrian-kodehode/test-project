@@ -1,19 +1,15 @@
-export default function IconButton() {
-  const IconButton = ({
-    icon,
-    size,
-    onClick,
-    className,
-  }: {
-    icon: React.ReactNode;
-    size: string;
-    onClick: () => void;
-    className?: string;
-  }) => {
-    return (
-      <button onClick={onClick} className={className}>
-        {icon}
-      </button>
-    );
-  };
+export default function IconButton({
+  icon,
+  onClick,
+  className,
+}: {
+  icon: React.ReactNode;
+  onClick: () => void;
+  className?: string;
+}) {
+  return (
+    <button onClick={onClick} className={className}>
+      {icon}
+    </button>
+  );
 }

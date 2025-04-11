@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FeatherLibrary } from "@subframe/core";
 import IconButton from "app/components/music/IconButton";
@@ -23,6 +25,83 @@ import { FeatherChevronDown } from "@subframe/core";
 import Table from "app/components/music/Table";
 import { FeatherPlusCircle } from "@subframe/core";
 import { FeatherMinusCircle } from "@subframe/core";
+
+const playlistData = [
+  { title: "HYAENA", artist: "Travis Scott", dateAdded: "28.july 2023" },
+  { title: "THANK GOD", artist: "Travis Scott", dateAdded: "28.july 2023" },
+  {
+    title: "MODERN JAM (feat. Teezo Toucdown)",
+    artist: "Travis Scott, Teezo Touchdown",
+    dateAdded: "28.july 2023",
+  },
+  { title: "MY EYES", artist: "Travis Scott", dateAdded: "28.july 2023" },
+  { title: "GOD'S COUNTRY", artist: "Travis Scott", dateAdded: "28.july 2023" },
+  { title: "SIRENS", artist: "Travis Scott", dateAdded: "28.july 2023" },
+  {
+    title: "MELTDOWN",
+    artist: "Travis Scott, Drake",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "FE!N (feat.Playboy Carti)",
+    artist: "Travis Scott, Playboy Carti",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "DELRESTO (ECHOES)(feat. Beyoncé)",
+    artist: "Travis Scott, Beyoncé",
+    dateAdded: "28.july 2023",
+  },
+  { title: "I KNOW ?", artist: "Travis Scott", dateAdded: "28.july 2023" },
+  {
+    title: "TOPIA TWINS (feat. Rob49 & 21 Savage)",
+    artist: "Travis Scott",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "CIRCUS MAXIMUS (feat. The Weekend & Swae Lee)",
+    artist: "Travis Scott, The Weekend, Swae Lee",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "PARASAIL (feat. Young Lean & Dave Chappelle)",
+    artist: "Travis Scott, Young Lean, Dave Chappelle",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "SKITZO (feat. Young Thug)",
+    artist: "Travis Scott, Young Thug",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "LOST FOREVER (feat. Westside Gunn)",
+    artist: "Travis Scott, Westside Gunn",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "LOOOVE (feat. Kid Cudi)",
+    artist: "Travis Scott, Kid Cudi",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "K-POP (feat. Bad Bunny & The Weekend)",
+    artist: "Travis Scott, Bad Bunny, The Weekend",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "TELEKINISIS (feat. SZA & Future)",
+    artist: "Travis Scott, SZA, Future",
+    dateAdded: "28.july 2023",
+  },
+  {
+    title: "TIL FURTHER NOTICE (feat. James Blake & 21 Savage)",
+    artist: "Travis Scott, James Blake, 21 Savage",
+    dateAdded: "28.july 2023",
+  },
+].map((song, index) => ({
+  ...song,
+  title: `${index + 1}. ${song.title}`,
+}));
 
 function ListDetailPageWithTree() {
   return (
@@ -107,7 +186,7 @@ function ListDetailPageWithTree() {
       </div>
       <div className="spotify-main flex-1 flex flex-col items-start gap-8 p-8">
         <div className="flex w-full items-end gap-6 mobile:flex-col mobile:items-center">
-          <div className="spotify-card h-48 w-48 flex-none shadow-xl">
+          <div className="spotify-card h-80 w-80 flex-none">
             <img className="w-full h-full object-cover" src="utopia.jpg" />
           </div>
           <div className="flex grow shrink-0 basis-0 flex-col items-start gap-6 mobile:items-center mobile:justify-start">
@@ -115,21 +194,13 @@ function ListDetailPageWithTree() {
               <span className="text-caption-bold font-caption-bold text-spotify-lightgray">
                 Playlist
               </span>
-              <span className="w-full text-heading-1 font-heading-1 text-spotify-white mobile:text-center">
+              <span className="w-full text-[6rem] font-extrabold text-spotify-white mobile:text-center">
                 UTOPIA
-              </span>
-              <span className="line-clamp-1 w-full text-body font-body text-spotify-lightgray mobile:text-center">
-                Laid-back tracks, expertly curated
               </span>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <div className="flex items-center gap-2">
-                <Avatar
-                  size="small"
-                  image="https://res.cloudinary.com/subframe/image/upload/v1711417507/shared/fychrij7dzl8wgq2zjq9.avif"
-                >
-                  A
-                </Avatar>
+                <Avatar size={32} src="trav.jpg" />
                 <span className="text-body-bold font-body-bold text-spotify-white">
                   Travis Scott
                 </span>
@@ -155,19 +226,19 @@ function ListDetailPageWithTree() {
               className="spotify-button w-14 h-14 flex items-center justify-center"
               variant="brand-primary"
               size="large"
-              icon={<FeatherPlay className="w-6 h-6" />}
+              icon={<FeatherPlay className="w-26 h-4" />}
               onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
             />
             <IconButton
               className="spotify-button w-14 h-14 flex items-center justify-center"
               variant="brand-tertiary"
-              icon={<FeatherShuffle className="w-6 h-6" />}
+              icon={<FeatherShuffle className="w-26 h-4" />}
               onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
             />
             <IconButton
               className="spotify-button w-14 h-14 flex items-center justify-center"
               variant="brand-tertiary"
-              icon={<FeatherArrowDownCircle className="w-6 h-6" />}
+              icon={<FeatherArrowDownCircle className="w-26 h-4" />}
               onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
             />
             <SubframeCore.DropdownMenu.Root>
@@ -175,7 +246,7 @@ function ListDetailPageWithTree() {
                 <IconButton
                   className="spotify-button w-14 h-14 flex items-center justify-center"
                   variant="brand-tertiary"
-                  icon={<FeatherMoreHorizontal className="w-6 h-6" />}
+                  icon={<FeatherMoreHorizontal className="w-26 h-4" />}
                   onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
                 />
               </SubframeCore.DropdownMenu.Trigger>
@@ -245,530 +316,14 @@ function ListDetailPageWithTree() {
           </div>
         </div>
         <div className="w-full">
-          <Table className="w-full">
-            <Table.HeaderRow className="border-b border-spotify-darkgray text-spotify-lightgray">
-              <Table.HeaderCell>Title</Table.HeaderCell>
-              <Table.HeaderCell>Artist</Table.HeaderCell>
-              <Table.HeaderCell>Date added</Table.HeaderCell>
-            </Table.HeaderRow>
-            <Table.Row>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center gap-2">
-                  <span className="line-clamp-1 w-8 flex-none text-body font-body text-spotify-lightgray text-center">
-                    1
-                  </span>
-                  <Avatar
-                    image="https://res.cloudinary.com/subframe/image/upload/v1723780655/uploads/302/vacffcy0kwezmeps1tbv.png"
-                    square={true}
-                  >
-                    A
-                  </Avatar>
-                  <div className="flex grow shrink-0 basis-0 flex-col items-start">
-                    <span className="whitespace-nowrap text-body-bold font-body-bold text-spotify-white">
-                      adore u
-                    </span>
-                    <span className="text-caption font-caption text-spotify-lightgray">
-                      adore u
-                    </span>
-                  </div>
-                </div>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  Fred Again...
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  1 hour ago
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center justify-end">
-                  <SubframeCore.DropdownMenu.Root>
-                    <SubframeCore.DropdownMenu.Trigger asChild={true}>
-                      <IconButton
-                        icon={<FeatherMoreHorizontal />}
-                        onClick={(
-                          event: React.MouseEvent<HTMLButtonElement>
-                        ) => {}}
-                      />
-                    </SubframeCore.DropdownMenu.Trigger>
-                    <SubframeCore.DropdownMenu.Portal>
-                      <SubframeCore.DropdownMenu.Content
-                        side="bottom"
-                        align="end"
-                        sideOffset={8}
-                        asChild={true}
-                      >
-                        <DropdownMenu>
-                          <DropdownMenu.DropdownItem icon={<FeatherShare />}>
-                            Share
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem>
-                            Favorite
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherPlusCircle />}
-                          >
-                            Add to playlist
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherMinusCircle />}
-                          >
-                            Remove
-                          </DropdownMenu.DropdownItem>
-                        </DropdownMenu>
-                      </SubframeCore.DropdownMenu.Content>
-                    </SubframeCore.DropdownMenu.Portal>
-                  </SubframeCore.DropdownMenu.Root>
-                </div>
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center gap-2">
-                  <span className="line-clamp-1 w-8 flex-none text-body font-body text-spotify-lightgray text-center">
-                    2
-                  </span>
-                  <Avatar
-                    image="https://res.cloudinary.com/subframe/image/upload/v1723780683/uploads/302/miu3qrdcodj27aeo9mu9.png"
-                    square={true}
-                  >
-                    A
-                  </Avatar>
-                  <div className="flex grow shrink-0 basis-0 flex-col items-start">
-                    <span className="whitespace-nowrap text-body-bold font-body-bold text-spotify-white">
-                      Teenage Birdsong
-                    </span>
-                    <span className="text-caption font-caption text-spotify-lightgray">
-                      Sixteen Oceans
-                    </span>
-                  </div>
-                </div>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  Four Tet
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  1 day ago
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center justify-end">
-                  <SubframeCore.DropdownMenu.Root>
-                    <SubframeCore.DropdownMenu.Trigger asChild={true}>
-                      <IconButton
-                        icon={<FeatherMoreHorizontal />}
-                        onClick={(
-                          event: React.MouseEvent<HTMLButtonElement>
-                        ) => {}}
-                      />
-                    </SubframeCore.DropdownMenu.Trigger>
-                    <SubframeCore.DropdownMenu.Portal>
-                      <SubframeCore.DropdownMenu.Content
-                        side="bottom"
-                        align="end"
-                        sideOffset={8}
-                        asChild={true}
-                      >
-                        <DropdownMenu>
-                          <DropdownMenu.DropdownItem icon={<FeatherShare />}>
-                            Share
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem>
-                            Favorite
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherPlusCircle />}
-                          >
-                            Add to playlist
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherMinusCircle />}
-                          >
-                            Remove
-                          </DropdownMenu.DropdownItem>
-                        </DropdownMenu>
-                      </SubframeCore.DropdownMenu.Content>
-                    </SubframeCore.DropdownMenu.Portal>
-                  </SubframeCore.DropdownMenu.Root>
-                </div>
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center gap-2">
-                  <span className="line-clamp-1 w-8 flex-none text-body font-body text-spotify-lightgray text-center">
-                    3
-                  </span>
-                  <Avatar
-                    image="https://res.cloudinary.com/subframe/image/upload/v1723780611/uploads/302/lbaowphtt6gfvgjr10b4.png"
-                    square={true}
-                  >
-                    A
-                  </Avatar>
-                  <div className="flex grow shrink-0 basis-0 flex-col items-start">
-                    <span className="whitespace-nowrap text-body-bold font-body-bold text-spotify-white">
-                      Curls
-                    </span>
-                    <span className="text-caption font-caption text-spotify-lightgray">
-                      Ribbons
-                    </span>
-                  </div>
-                </div>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  Bibio
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  1 day ago
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center justify-end">
-                  <SubframeCore.DropdownMenu.Root>
-                    <SubframeCore.DropdownMenu.Trigger asChild={true}>
-                      <IconButton
-                        icon={<FeatherMoreHorizontal />}
-                        onClick={(
-                          event: React.MouseEvent<HTMLButtonElement>
-                        ) => {}}
-                      />
-                    </SubframeCore.DropdownMenu.Trigger>
-                    <SubframeCore.DropdownMenu.Portal>
-                      <SubframeCore.DropdownMenu.Content
-                        side="bottom"
-                        align="end"
-                        sideOffset={8}
-                        asChild={true}
-                      >
-                        <DropdownMenu>
-                          <DropdownMenu.DropdownItem icon={<FeatherShare />}>
-                            Share
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem>
-                            Favorite
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherPlusCircle />}
-                          >
-                            Add to playlist
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherMinusCircle />}
-                          >
-                            Remove
-                          </DropdownMenu.DropdownItem>
-                        </DropdownMenu>
-                      </SubframeCore.DropdownMenu.Content>
-                    </SubframeCore.DropdownMenu.Portal>
-                  </SubframeCore.DropdownMenu.Root>
-                </div>
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center gap-2">
-                  <span className="line-clamp-1 w-8 flex-none text-body font-body text-spotify-lightgray text-center">
-                    4
-                  </span>
-                  <Avatar
-                    image="https://res.cloudinary.com/subframe/image/upload/v1723780751/uploads/302/cbaa1tfstfnmksus95et.png"
-                    square={true}
-                  >
-                    A
-                  </Avatar>
-                  <div className="flex grow shrink-0 basis-0 flex-col items-start">
-                    <span className="whitespace-nowrap text-body-bold font-body-bold text-spotify-white">
-                      Say That
-                    </span>
-                    <span className="text-caption font-caption text-spotify-lightgray">
-                      Anything in Return
-                    </span>
-                  </div>
-                </div>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  Toro y Moi
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  3 days ago
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center justify-end">
-                  <SubframeCore.DropdownMenu.Root>
-                    <SubframeCore.DropdownMenu.Trigger asChild={true}>
-                      <IconButton
-                        icon={<FeatherMoreHorizontal />}
-                        onClick={(
-                          event: React.MouseEvent<HTMLButtonElement>
-                        ) => {}}
-                      />
-                    </SubframeCore.DropdownMenu.Trigger>
-                    <SubframeCore.DropdownMenu.Portal>
-                      <SubframeCore.DropdownMenu.Content
-                        side="bottom"
-                        align="end"
-                        sideOffset={8}
-                        asChild={true}
-                      >
-                        <DropdownMenu>
-                          <DropdownMenu.DropdownItem icon={<FeatherShare />}>
-                            Share
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem>
-                            Favorite
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherPlusCircle />}
-                          >
-                            Add to playlist
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherMinusCircle />}
-                          >
-                            Remove
-                          </DropdownMenu.DropdownItem>
-                        </DropdownMenu>
-                      </SubframeCore.DropdownMenu.Content>
-                    </SubframeCore.DropdownMenu.Portal>
-                  </SubframeCore.DropdownMenu.Root>
-                </div>
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center gap-2">
-                  <span className="line-clamp-1 w-8 flex-none text-body font-body text-spotify-lightgray text-center">
-                    6
-                  </span>
-                  <Avatar
-                    image="https://res.cloudinary.com/subframe/image/upload/v1723780577/uploads/302/hhmv6ey0yajkadnmcp0a.png"
-                    square={true}
-                  >
-                    A
-                  </Avatar>
-                  <div className="flex grow shrink-0 basis-0 flex-col items-start">
-                    <span className="whitespace-nowrap text-body-bold font-body-bold text-spotify-white">
-                      We Don&#39;t Wanna Talk
-                    </span>
-                    <span className="text-caption font-caption text-spotify-lightgray">
-                      Nowhere
-                    </span>
-                  </div>
-                </div>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  Friday Pilots Club
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  5 days ago
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center justify-end">
-                  <SubframeCore.DropdownMenu.Root>
-                    <SubframeCore.DropdownMenu.Trigger asChild={true}>
-                      <IconButton
-                        icon={<FeatherMoreHorizontal />}
-                        onClick={(
-                          event: React.MouseEvent<HTMLButtonElement>
-                        ) => {}}
-                      />
-                    </SubframeCore.DropdownMenu.Trigger>
-                    <SubframeCore.DropdownMenu.Portal>
-                      <SubframeCore.DropdownMenu.Content
-                        side="bottom"
-                        align="end"
-                        sideOffset={8}
-                        asChild={true}
-                      >
-                        <DropdownMenu>
-                          <DropdownMenu.DropdownItem icon={<FeatherShare />}>
-                            Share
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem>
-                            Favorite
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherPlusCircle />}
-                          >
-                            Add to playlist
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherMinusCircle />}
-                          >
-                            Remove
-                          </DropdownMenu.DropdownItem>
-                        </DropdownMenu>
-                      </SubframeCore.DropdownMenu.Content>
-                    </SubframeCore.DropdownMenu.Portal>
-                  </SubframeCore.DropdownMenu.Root>
-                </div>
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center gap-2">
-                  <span className="line-clamp-1 w-8 flex-none text-body font-body text-spotify-lightgray text-center">
-                    7
-                  </span>
-                  <Avatar
-                    image="https://res.cloudinary.com/subframe/image/upload/v1723780719/uploads/302/lf4i2zybfw9xxl56w6ce.png"
-                    square={true}
-                  >
-                    A
-                  </Avatar>
-                  <div className="flex grow shrink-0 basis-0 flex-col items-start">
-                    <span className="whitespace-nowrap text-body-bold font-body-bold text-spotify-white">
-                      Time (You and I)
-                    </span>
-                    <span className="text-caption font-caption text-spotify-lightgray">
-                      Mordechai
-                    </span>
-                  </div>
-                </div>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  Khruangbin
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  1 week ago
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center justify-end">
-                  <SubframeCore.DropdownMenu.Root>
-                    <SubframeCore.DropdownMenu.Trigger asChild={true}>
-                      <IconButton
-                        icon={<FeatherMoreHorizontal />}
-                        onClick={(
-                          event: React.MouseEvent<HTMLButtonElement>
-                        ) => {}}
-                      />
-                    </SubframeCore.DropdownMenu.Trigger>
-                    <SubframeCore.DropdownMenu.Portal>
-                      <SubframeCore.DropdownMenu.Content
-                        side="bottom"
-                        align="end"
-                        sideOffset={8}
-                        asChild={true}
-                      >
-                        <DropdownMenu>
-                          <DropdownMenu.DropdownItem icon={<FeatherShare />}>
-                            Share
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem>
-                            Favorite
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherPlusCircle />}
-                          >
-                            Add to playlist
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherMinusCircle />}
-                          >
-                            Remove
-                          </DropdownMenu.DropdownItem>
-                        </DropdownMenu>
-                      </SubframeCore.DropdownMenu.Content>
-                    </SubframeCore.DropdownMenu.Portal>
-                  </SubframeCore.DropdownMenu.Root>
-                </div>
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center gap-2">
-                  <span className="line-clamp-1 w-8 flex-none text-body font-body text-spotify-lightgray text-center">
-                    8
-                  </span>
-                  <Avatar
-                    image="https://res.cloudinary.com/subframe/image/upload/v1723780859/uploads/302/hh4s5xjmsigiehqkb1uh.png"
-                    square={true}
-                  >
-                    A
-                  </Avatar>
-                  <div className="flex grow shrink-0 basis-0 flex-col items-start">
-                    <span className="whitespace-nowrap text-body-bold font-body-bold text-spotify-white">
-                      Awake
-                    </span>
-                    <span className="text-caption font-caption text-spotify-lightgray">
-                      Awake
-                    </span>
-                  </div>
-                </div>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  Tycho
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <span className="whitespace-nowrap text-caption font-caption text-spotify-lightgray">
-                  2 weeks ago
-                </span>
-              </Table.Cell>
-              <Table.Cell>
-                <div className="flex grow shrink-0 basis-0 items-center justify-end">
-                  <SubframeCore.DropdownMenu.Root>
-                    <SubframeCore.DropdownMenu.Trigger asChild={true}>
-                      <IconButton
-                        icon={<FeatherMoreHorizontal />}
-                        onClick={(
-                          event: React.MouseEvent<HTMLButtonElement>
-                        ) => {}}
-                      />
-                    </SubframeCore.DropdownMenu.Trigger>
-                    <SubframeCore.DropdownMenu.Portal>
-                      <SubframeCore.DropdownMenu.Content
-                        side="bottom"
-                        align="end"
-                        sideOffset={8}
-                        asChild={true}
-                      >
-                        <DropdownMenu>
-                          <DropdownMenu.DropdownItem icon={<FeatherShare />}>
-                            Share
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem>
-                            Favorite
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherPlusCircle />}
-                          >
-                            Add to playlist
-                          </DropdownMenu.DropdownItem>
-                          <DropdownMenu.DropdownItem
-                            icon={<FeatherMinusCircle />}
-                          >
-                            Remove
-                          </DropdownMenu.DropdownItem>
-                        </DropdownMenu>
-                      </SubframeCore.DropdownMenu.Content>
-                    </SubframeCore.DropdownMenu.Portal>
-                  </SubframeCore.DropdownMenu.Root>
-                </div>
-              </Table.Cell>
-            </Table.Row>
+          <Table data={playlistData}>
+            {playlistData.map((song, index) => (
+              <tr key={index}>
+                <td>{song.title}</td>
+                <td>{song.artist}</td>
+                <td>{song.dateAdded}</td>
+              </tr>
+            ))}
           </Table>
         </div>
       </div>
