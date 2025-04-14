@@ -44,7 +44,7 @@ export default function Product() {
       )}
 
       {/* Category Buttons */}
-      <div className=" mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-40 rounded-lg shadow-lg mb-4">
+      <div className=" mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-40  shadow-lg mb-4">
         <button
           onClick={() => setSelectedCategory("All")}
           className={`px-4 py-2 ml-4 rounded-lg ${

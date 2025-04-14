@@ -21,7 +21,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link } from "@remix-run/react";
 
-import { navigation } from "./navigation";
+import { navigation } from "./Navigation";
 
 export default function Example() {
   const [open, setOpen] = useState(false);

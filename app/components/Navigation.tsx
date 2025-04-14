@@ -10,10 +10,13 @@ export default function Navigation() {
     { name: "Shop", href: "/shop", current: true },
     { name: "Music", href: "/music", current: true },
     { name: "Collection", href: "/image", current: true },
+    { name: "Stocks", href: "/stocks", current: true },
     { name: "", href: "/profile", current: true },
     { name: "", href: "/shoppingcart", current: true },
     { name: "", href: "/createaccount", current: true },
     { name: "", href: "/collection", current: true },
+    { name: "", href: "/ProductOverviews", current: true },
+    { name: "", href: "/shoes", current: true },
   ];
 }
 export const navigation = {
@@ -61,8 +64,8 @@ export const navigation = {
       ],
     },
     {
-      id: "men",
-      name: "Men",
+      id: "clothing",
+      name: "Clothing",
       featured: [
         {
           name: "New Arrivals",
@@ -86,8 +89,9 @@ export const navigation = {
           items: [
             { name: "Tops", href: "#" },
             { name: "Pants", href: "#" },
+            { name: "Shoes", href: "/shoes" },
             { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
+            { name: "T-Shirts", href: "/ProductOverviews" },
             { name: "Jackets", href: "#" },
             { name: "Activewear", href: "#" },
             { name: "Browse All", href: "#" },

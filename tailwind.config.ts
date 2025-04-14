@@ -8,6 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        gridTemplateRows: {
+          "[auto,auto,1fr]": "auto auto 1fr",
+        },
         spotify: {
           green: "#1DB954",
           black: "#191414",
