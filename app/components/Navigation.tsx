@@ -11,7 +11,7 @@ export default function Navigation() {
     { name: "Music", href: "/music", current: true },
     { name: "Collection", href: "/image", current: true },
     { name: "Stocks", href: "/stocks", current: true },
-    { name: "test", href: "/test", current: true },
+    { name: "To LOVE-Ru Wiki", href: "/test", current: true },
     { name: "", href: "/profile", current: true },
     { name: "", href: "/shoppingcart", current: true },
     { name: "", href: "/createaccount", current: true },

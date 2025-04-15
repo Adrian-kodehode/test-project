@@ -45,15 +45,31 @@ export default function Product() {
 
       {/* Category Buttons */}
       <div className=" mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-40  shadow-lg mb-4">
-        <button
-          onClick={() => setSelectedCategory("All")}
-          className={`px-4 py-2 ml-4 rounded-lg ${
-            selectedCategory === "All"
-              ? "bg-orange-600 text-white"
-              : "bg-gray-200 text-gray-800"
+      <button
+          onClick={() => setSelectedCategory("To Love Ru")}
+          className={`px-4 py--1 rounded-lg ${
+            selectedCategory === "To Love-Ru" ? "bg-white text-white" : ""
           }`}
         >
-          All
+          {" "}
+          <img
+            src="To Love Ru/10265111.png"
+            alt=""
+            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+        </button>
+        <button
+          onClick={() => setSelectedCategory("To Love Ru Darkness")}
+          className={`px-4 py--1 rounded-lg ${
+            selectedCategory === "To Love-Ru Darkenss" ? "bg-white text-white" : ""
+          }`}
+        >
+          {" "}
+          <img
+            src="To Love Ru/toloveruDarkness.png"
+            alt=""
+            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
         </button>
         <button
           onClick={() => setSelectedCategory("Chainsaw Man")}
