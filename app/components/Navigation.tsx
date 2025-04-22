@@ -18,6 +18,10 @@ export default function Navigation() {
     { name: "", href: "/collection", current: true },
     { name: "", href: "/ProductOverviews", current: true },
     { name: "", href: "/shoes", current: true },
+    { name: "", href: "/jjk ", current: true },
+    { name: "", href: "/onepiece", current: true },
+    { name: "", href: "/mydressupdarling", current: true },
+    { name: "", href: "/toloveru", current: true },
   ];
 }
 export const navigation = {
