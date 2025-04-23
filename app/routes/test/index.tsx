@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "@remix-run/react";
 
 export default function ToLoveRuWiki() {
-  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [autoPlay, setAutoPlay] = useState(true);
   const images = [
-    "public/To Love Ru/670.jpg",
+    "To Love Ru/670.jpg",
     "https://images7.alphacoders.com/700/700001.png",
     "https://images6.alphacoders.com/674/thumb-1920-674018.jpg",
     "https://images7.alphacoders.com/696/696152.png",
@@ -12,7 +13,29 @@ export default function ToLoveRuWiki() {
   ];
   const currentImage = images[currentImageIndex];
 
+  // Auto-rotate images
+  useEffect(() => {
+    let intervalId: NodeJS.Timeout | null = null;
+
+    if (autoPlay) {
+      intervalId = setInterval(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 4000);
+    }
+
+    return () => {
+      if (intervalId !== null) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [autoPlay, images.length]);
+
   function handleImageChange(direction: string): void {
+    // When manually changing, pause auto-rotation temporarily
+    setAutoPlay(false);
+
     if (direction === "prev") {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -22,7 +45,32 @@ export default function ToLoveRuWiki() {
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
     }
+
+    // Resume auto-rotation after 4 seconds of inactivity
+    setTimeout(() => setAutoPlay(true), 4000);
   }
+
+  const animatedImages = (
+    <div className="relative w-full h-96">
+      <img
+        src={currentImage}
+        alt={`Slide ${currentImageIndex}`}
+        className="w-full h-full object-contain transition-opacity duration-500"
+      />
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentImageIndex(index)}
+            className={`w-3 h-3 rounded-full ${
+              index === currentImageIndex ? "bg-pink-500" : "bg-gray-300"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <div className="min-h-screen bg-pink-600">
@@ -309,21 +357,17 @@ export default function ToLoveRuWiki() {
                     Welcome
                   </div>
                   <div className="p-4 bg-white">
-                    <div className="relative flex justify-center mb-4">
+                    <div className="relative flex justify-center mb-4 overflow-hidden">
                       <button
                         onClick={() => handleImageChange("prev")}
-                        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 p-2 rounded-full hover:bg-gray-300"
+                        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 p-2 rounded-full hover:bg-gray-300 z-10"
                       >
                         &#8249;
                       </button>
-                      <img
-                        src={currentImage}
-                        alt="To LOVE-Ru Characters"
-                        className="max-w-full"
-                      />
+                      {animatedImages}
                       <button
                         onClick={() => handleImageChange("next")}
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 p-2 rounded-full hover:bg-gray-300"
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 p-2 rounded-full hover:bg-gray-300 z-10"
                       >
                         &#8250;
                       </button>
@@ -352,7 +396,7 @@ export default function ToLoveRuWiki() {
                   <div className="bg-pink-400 text-yellow-300 text-center py-2 font-extrabold">
                     Characters
                   </div>
-                  <div className="p-4 grid grid-cols-5 gap-2 bg-white">
+                  <div className="p-4 grid grid-cols-5 gap-2 bg-white border">
                     {[
                       {
                         name: "Nana",
@@ -430,16 +474,16 @@ export default function ToLoveRuWiki() {
                           "https://static.wikia.nocookie.net/to-loveru/images/e/e9/Tearju_Lunatique_TLRD_Manga.png",
                       },
                     ].map((character, index) => (
-                      <div key={index} className="text-center">
+                        <div key={index} className="relative text-center">
                         <img
                           src={character.image}
                           alt={character.name}
-                          className="w-full h-auto"
+                          className="w-full h-auto border-4 border-purple-800 rounded-lg"
                         />
-                        <div className="bg-pink-500 text-white text-sm mt-1 py-1">
-                          {character.name}
+                        <div className="absolute bottom-1 right-0.5 bg-purple-800 text-white text-xs px-1 py-1 rounded">
+                          <strong>{character.name}</strong>
                         </div>
-                      </div>
+                        </div>
                     ))}
                   </div>
                 </div>

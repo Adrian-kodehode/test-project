@@ -52,7 +52,7 @@ export default function MydressupDarling() {
           <div className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
-                src="public/My Dressup Darling/darling1.jpg"
+                src="public/My Dressup Darling/marin 1st.jpg"
                 alt="Yuji Itadori"
                 className="h-full rounded w-full object-cover object-top mb-6"
               />
@@ -62,7 +62,20 @@ export default function MydressupDarling() {
               <h2 className="text-lg text-white font-medium title-font mb-4">
                 Marin Kitagawa
               </h2>
-              <p className="leading-relaxed text-base"></p>
+              <p className="leading-relaxed text-base">
+                Marin Kitagawa is an above-average height girl with a slim
+                waistline and light skin tone. Her eyes are naturally a dark
+                brown, although she is almost always seen with dark pink color
+                contacts when she isn't cosplaying. She has long, glittery-pink
+                acrylic nails. She has smooth blonde hair with an ombré
+                transition to pinkish-red or citrus orange at the tips and
+                reaching down to her waist in the rear; her side swept bangs
+                cover a majority of her forehead and eyebrows, reaching to her
+                eyelashes; two locks of hair flow over her shoulders and end
+                around chest height. Her hairstyles include long straight hair,
+                a single ponytail, a double ponytail, a double knot on top, a
+                bun and a single top ponytail.
+              </p>
             </div>
           </div>
 
@@ -79,7 +92,13 @@ export default function MydressupDarling() {
               <h2 className="text-lg text-white font-medium title-font mb-4">
                 Wakana Gojo
               </h2>
-              <p className="leading-relaxed text-base"></p>
+              <p className="leading-relaxed text-base">
+                Wakana is quite tall for his age, standing at least 180
+                centimeters. When Marin asked him his height, he was interrupted
+                before he could finish saying, meaning that he may be taller
+                than 180cm. He has short, black hair and gray eyes, along with a
+                tiny mole on the outer lower corner of his right eye.
+              </p>
             </div>
           </div>
 

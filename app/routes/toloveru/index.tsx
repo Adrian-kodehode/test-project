@@ -47,7 +47,7 @@ export default function ToloveRu() {
             My Dress-Up Darling
           </a>
         </div>
-        
+
         <div className="flex flex-wrap -m-4">
           {/* Character cards for JJK */}
           <div className="xl:w-1/4 md:w-1/2 p-4">
@@ -58,10 +58,22 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-top mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                MAIN CHARACTER
+                CHARACTER
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Momo Belia Deviluke
+              </h2>
+              <p className="leading-relaxed text-base">
+                Momo Belia Deviluke is Nana's twin, as well as Lala's younger
+                sister. As Gid's daughter, she holds the title of "Third
+                Princess of Deviluke" as she is the youngest out of his three
+                daughters. In To Love-Ru, she used to be seen with Nana all the
+                time, but in To Love-Ru Darkness, they are not together as often
+                as before. This is because while Nana became friends with
+                Kurosaki Mea, whom she hangs out with more often, Momo becomes
+                more attached to Rito and focuses on expanding "The Harem Plan"
+                she has for him.
+              </p>
             </div>
           </div>
 
@@ -73,10 +85,18 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                CHARACTER
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Lala Satalin Deviluke
+              </h2>
+              <p className="leading-relaxed text-base">
+                Lala Satalin Deviluke (ララ･サタリン・デビルーク Rara Satarin
+                Debirūku?) is the main female protagonist of To-Love Ru Series,
+                but takes a more minor role in To-Love-Ru Darkness. The story
+                begins with Lala running away from home as she didn't want to
+                get married to any of her suitors.
+              </p>
             </div>
           </div>
 
@@ -88,10 +108,19 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                CHARACTER
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Nana Astar Deviluke
+              </h2>
+              <p className="leading-relaxed text-base">
+                Nana Astar Deviluke (ナナ・アスタ・デビルーク Nana Asuta
+                Debirūku?) is the twin of Momo and the younger sister of Lala.
+                She is the second princess of Deviluke. She has the ability to
+                talk to and understand animals. Of all the main female
+                characters, she has shown the least attraction to Rito,
+                considering him to be a "beast".
+              </p>
             </div>
           </div>
 
@@ -103,10 +132,18 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                Golden Darkness
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Konjiki no Yami
+              </h2>
+              <p className="leading-relaxed text-base">
+                Konjiki no Yami (金色の闇, Golden Darkness), mostly referred to
+                by other characters as Yami, is a major character in To Love-Ru
+                and To Love-Ru Darkness. She is a lonely assassin who is
+                initially hired by Lacospo, one of Lala's arranged suitors, to
+                kill Yuuki Rito.
+              </p>
             </div>
           </div>
 
@@ -118,10 +155,19 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                CHARACTER
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Haruna Sairenji
+              </h2>
+              <p className="leading-relaxed text-base">
+                Haruna Sairenji (西連寺 春菜 Sairenji Haruna?) is the second
+                female protagonist of To Love Ru. She is in Rito's class and is
+                the girl of his affections. Haruna has similar feelings for him,
+                having been attracted to him because of his kind, gentle nature
+                since junior high, but believes them to be unrequited and has
+                not built up the nerve to confess to him.
+              </p>
             </div>
           </div>
 
@@ -133,10 +179,20 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                CHARACTER
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Yūki Mikan
+              </h2>
+              <p className="leading-relaxed text-base">
+                Yūki Mikan is Rito's independent and reliable 12-year-old
+                sister. Mikan takes care of most of the household work while
+                their parents are away working and also watches over Celine. In
+                contrast to her brother, she is very mature and does not
+                hesitate to tease him, going as far as lying that they aren't
+                blood-related, but quickly retracting the statement and telling
+                the truth.
+              </p>
             </div>
           </div>
 
@@ -148,10 +204,16 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                CHAACTER
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Yui Kotegawa
+              </h2>
+              <p className="leading-relaxed text-base">
+                Yui Kotegawa is a secondary female protagonist, who belongs in
+                Rito's class throughout the second year. She is also the head of
+                the school disciplinary committee.
+              </p>
             </div>
           </div>
 
@@ -163,10 +225,18 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                CHARACTER
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Tearju Lunatique
+              </h2>
+              <p className="leading-relaxed text-base">
+                Tearju Lunatique (ティアーユ＝ルナティーク Tiāyu Runatīku?) is
+                Yami (Golden Darkness) and Kurosaki Mea creator, as she used her
+                own cells in order to create Yami but didn't do the same for
+                Mea. She is a genius in Universe Biotechnology and has been
+                since she was a teenager.{" "}
+              </p>
             </div>
           </div>
 
@@ -178,10 +248,19 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                Master Nemesis
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Nemesis
+              </h2>
+              <p className="leading-relaxed text-base">
+                Nemesis (ネメシス, Nemeshisu), also known as Master Nemesis, is
+                a character introduced in To LOVE-Ru Darkness. She is a
+                transformation weapon similar to Golden Darkness (Yami) and
+                Kurosaki Mea, but does not share their genetic origins. She is
+                Mea's master, whom she gives orders to and uses to observe
+                Yami's changes and recent life.
+              </p>
             </div>
           </div>
 
@@ -193,10 +272,19 @@ export default function ToloveRu() {
                 className="h-full rounded w-full object-cover object-center mb-6"
               />
               <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
-                TEACHER
+                CHARACTER
               </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4"></h2>
-              <p className="leading-relaxed text-base"></p>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Kujō Rin
+              </h2>
+              <p className="leading-relaxed text-base">
+                Kujō Rin is Tenjōin Saki's loyal and longest known friend. Rin
+                is skilled in kendo and has been a loyal bodyguard to Saki for
+                years, as her family has always served the Tenjouin family in
+                this position. The bespectacled Fujisaki Aya is weak-willed and
+                became associated with Saki after she and Rin protected her from
+                bullies when they were children.
+              </p>
             </div>
           </div>
 

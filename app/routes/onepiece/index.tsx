@@ -15,7 +15,19 @@ export default function OnePiece() {
             </h1>
             <div className="h-1 w-20 bg-blue-500 rounded"></div>
           </div>
-          <p className="pt-12 lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"></p>
+          <p className="pt-12 lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
+            24 years ago, the Pirate King, Gol D. Roger, was executed. However,
+            before his death he revealed to everyone that his treasure, the One
+            Piece, was hidden at the end of the Grand Line. This inspired people
+            to become pirates and sail toward the treasure, beginning the Great
+            Age of Pirates. Twelve years later, a young boy from the East Blue
+            named Monkey D. Luffy dreamed of finding the One Piece, but lost the
+            ability to swim after eating a Devil Fruit giving him the ability to
+            stretch his body like rubber. He was given a straw hat by the pirate
+            Shanks, who would later go on to become an Emperor, one of the four
+            most powerful pirates in the world, on the agreement that he would
+            return the hat once he became a pirate and surpassed Shanks.
+          </p>
           <a
             href="/collection"
             className="pt-6 text-blue-400 hover:text-blue-600 font-medium text-lg"

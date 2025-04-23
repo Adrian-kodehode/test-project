@@ -56,6 +56,7 @@ export default function CreateAccount() {
                 id="email"
                 type="email"
                 placeholder="Email"
+                autoComplete="email"
               />
             </div>
             <div className="mb-4 md:flex md:justify-between">
@@ -71,6 +72,7 @@ export default function CreateAccount() {
                   id="password"
                   type="password"
                   placeholder="******************"
+                  autoComplete="new-password"
                 />
                 <p className="text-xs italic text-red-500">
                   Please choose a password.
@@ -88,6 +90,7 @@ export default function CreateAccount() {
                   id="c_password"
                   type="password"
                   placeholder="******************"
+                  autoComplete="new-password"
                 />
               </div>
             </div>
