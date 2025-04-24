@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import {
   Disclosure,
   DisclosureButton,
@@ -99,12 +100,12 @@ export default function NewHeader() {
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a
-                    href="/settings"
+                  <Link
+                    to="/settings"
                     className="block px-4 py py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
                   >
                     Settings
-                  </a>
+                  </Link>
                 </MenuItem>
                 <MenuItem>
                   <a

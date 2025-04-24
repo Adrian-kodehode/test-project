@@ -45,7 +45,7 @@ export default function Product() {
 
       {/* Category Buttons */}
       <div className=" mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-40  shadow-lg mb-4">
-      <button
+        <button
           onClick={() => setSelectedCategory("To Love Ru")}
           className={`px-4 py--1 rounded-lg ${
             selectedCategory === "To Love-Ru" ? "bg-white text-white" : ""
@@ -61,7 +61,9 @@ export default function Product() {
         <button
           onClick={() => setSelectedCategory("To Love Ru Darkness")}
           className={`px-4 py--1 rounded-lg ${
-            selectedCategory === "To Love-Ru Darkenss" ? "bg-white text-white" : ""
+            selectedCategory === "To Love-Ru Darkenss"
+              ? "bg-white text-white"
+              : ""
           }`}
         >
           {" "}
@@ -106,6 +108,18 @@ export default function Product() {
             src="./One Piece/One-Piece-Logo-PNG-Photo.png"
             alt=""
             className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+        </button>
+        <button
+          onClick={() => setSelectedCategory("Kaguya-sama")}
+          className={`px-4 py-2 rounded-lg ${
+            selectedCategory === "Kaguya-sama" ? "bg-white text-white" : ""
+          }`}
+        >
+          <img
+            src="Kaguya-sama/Kaguya-Sama - Love is War TV Series.svg"
+            alt=""
+            className="h-12 pb-1 pt-1 animated hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </button>
         <button
@@ -165,7 +179,7 @@ export default function Product() {
       {/* Page Content */}
       <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12 border border-black bg-black bg-opacity-70 rounded-lg shadow-lg">
         <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl mb-4 text-shadow-lg">
-          Manga
+          {selectedCategory === "All" ? "Manga" : selectedCategory}
         </h1>
         <h2 className="sr-only">Products</h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">

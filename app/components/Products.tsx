@@ -1344,6 +1344,70 @@ const toLoveRuDarknessChapters = [
 ];
 const toLoveRuDarknessTitles = ["", "", "", "", "", "", "", ""];
 
+const loveIsWar = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+];
+
+const loveIsWarTitles = [
+  "There's No Such Thing as Unconditional Love.",
+  "A Lie Requires More Effort Than Simply Telling the Truth.",
+  "A Wise Man Took Ten Years To Know The Truth, while a Fool Took 100 Years. The Wise Man Took 100 Years to Know Love, but the Fool Already Knew It.",
+  "By Nature, Humans are Driven by Reason or Emotion. Love Entails Both.",
+  "The Essence of Love is Fear. When One Loses One's Fear, Love Loses Its Color.",
+  "The Goddess of Love Herself Loves the Chase More Than True Love.",
+  "People can Learn to Love Even if They Have Never Benn in Loved.",
+  "Reaching Out to Someone can be Scary, but Somebody Needs to Make the First Move.",
+  "If There's No Such Thing as True Love, Then All Love is Untrue...",
+  "... Nevertheless, Love Is What Makes Life Worth Living.",
+  "The Persona That People Adopt Can Transform Thire True Nature for Better or Worse",
+  "If You Know How to Live, Then You Know How to Die.",
+  '"Pure Love" Is a Fantasy.',
+  "The One to Uncover the Truth About the Origin of the Universe Will Be the Mathematician Who Never Stops Thinking. The One to Find True Love Will Also Be One Who Never Stops Thinking.',",
+  "People Don't Change. But People Can Be Changed by Other People.",
+  "Being in Love is Fun Until You Actually Start Dating. That's What People Say, Anyways...",
+  'The Word "Love" is Meaningless Until You\'ve Fallen in it.',
+  "Sometimes You Need to Lie to Avoid Having to Lie...",
+  "People Feel Ashamed When Their Values Change. That's Called Growing Pains.",
+  "Trusting Others and Asking For Help is an Advanced Life Skill.",
+  "The Desire to be Loved and the Desire to Not be Disliked Are Not the Same.",
+  "An Intelligent Decision doesn't Always turn out to be Right. Conversely a Foolish Decision doesn't Always turn out to be Wrong.",
+  "People are a mirror that reflects people, it is always a warped mirror.",
+  "",
+  "",
+  "",
+  "",
+  "",
+];
+const loveIsWarChapters = [""];
+const loveIsWarCoverCharacters = [["Kaguya Shinomiya", "Miyuki Shirogane"]];
+
 export const Products = [
   {
     id: 1,
@@ -2792,5 +2856,22 @@ export const Products = [
     reviewCount: 80000,
     chaptersList: toLoveRuDarknessChapters[index] || [],
     coverCharacters: toLoveRuDarknessCoverCharacters[index] || [],
+  })),
+
+  ...loveIsWarTitles.map((title, index) => ({
+    id: 600 + index,
+    name: `Kaguya-sama: ${title} Vol.${index + 1}`,
+    href: "#",
+    pages: "192 pages",
+    price: "$7.99",
+    imageSrcEnglish: `Kaguya-sama/loveiswar${index + 1}.jpg`,
+    imageSrcJapanese: `Kaguya-sama/loveiswarjp${index + 1}.jpg`,
+    imageAlt: `Kaguya-sama Vol. ${index + 1}`,
+    quantity: 1,
+    category: "Kaguya-sama",
+    rating: 4.8,
+    reviewCount: 200000,
+    chaptersList: loveIsWarChapters[index] || [],
+    coverCharacters: loveIsWarCoverCharacters[index] || [],
   })),
 ];
