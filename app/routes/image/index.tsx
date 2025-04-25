@@ -59,29 +59,6 @@ export default function Image() {
           <div className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
-                src="Chainsaw Man/cmbackground.jpg"
-                alt="content"
-                className="h-full rounded w-full object-cover object-top mb-6"
-              />
-              <h3 className="tracking-widest text-orange-400 text-xs font-medium title-font">
-                Control Devil
-              </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4">
-                Nayuta
-              </h2>
-              <p className="leading-relaxed text-base">
-                Nayuta (ナユタ?) is the reincarnation of the Control Devil
-                (支し配はいの悪あく魔ま Shihai no Akuma?) following Makima's
-                death.[1] To prevent her from becoming similar to her previous
-                incarnation, she was taken by Kishibe to be raised by Denji as
-                Denji's younger sister. She is a recurring character in the
-                Academy Saga.
-              </p>
-            </div>
-          </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-              <img
                 className="h-full rounded w-full object-cover object-center mb-6"
                 src="Chainsaw Man/cmfamine.jpg"
                 alt="content"
@@ -99,27 +76,31 @@ export default function Image() {
               </p>
             </div>
           </div>
+
           <div className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
-                className="h-60 rounded w-full object-cover object-center mb-6"
-                src="Chainsaw Man/cmyoru.jpg"
+                src="Chainsaw Man/cmbackground.jpg"
                 alt="content"
+                className="h-full rounded w-full object-cover object-top mb-6"
               />
               <h3 className="tracking-widest text-orange-400 text-xs font-medium title-font">
-                War Devil
+                Control Devil
               </h3>
               <h2 className="text-lg text-white font-medium title-font mb-4">
-                Yoru
+                Nayuta
               </h2>
               <p className="leading-relaxed text-base">
-                Yoru (ヨル?) is the deuteragonist of the Academy Saga. She is
-                the War Devil (戦せん争そうの悪あく魔ま Sensō no Akuma?) who
-                embodies the fear of war. She is a member of the Four Horsemen,
-                who now occupies Asa Mitaka's body as a Fiend.
+                Nayuta (ナユタ?) is the reincarnation of the Control Devil
+                (支し配はいの悪あく魔ま Shihai no Akuma?) following Makima's
+                death. To prevent her from becoming similar to her previous
+                incarnation, she was taken by Kishibe to be raised by Denji as
+                Denji's younger sister. She is a recurring character in the
+                Academy Saga.
               </p>
             </div>
           </div>
+
           <div className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
@@ -143,69 +124,25 @@ export default function Image() {
               </p>
             </div>
           </div>
+
           <div className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
-                src="Chainsaw Man/makima-manga.jpg"
+                className="h-60 rounded w-full object-cover object-center mb-6"
+                src="Chainsaw Man/cmyoru.jpg"
                 alt="content"
-                className="rounded mb-6"
               />
               <h3 className="tracking-widest text-orange-400 text-xs font-medium title-font">
-                Control Devil
+                War Devil
               </h3>
               <h2 className="text-lg text-white font-medium title-font mb-4">
-                Makima
+                Yoru
               </h2>
               <p className="leading-relaxed text-base">
-                Makima (マキマ?) is the main antagonist of the Public Safety
-                Saga. She was the Chief Cabinet Secretary's Personal Devil
-                Hunter who took Denji in as her human pet.
-                <br />
-                She is later revealed to be the Control Devil
-                (支し配はいの悪あく魔ま Shihai no Akuma?) who embodies the fear
-                of control or conquest and a member of the Four Horsemen at the
-                time. Following her death, she was reincarnated as Nayuta.
-              </p>
-            </div>
-          </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-              <img
-                src="Chainsaw Man/denji.jpg"
-                alt=""
-                className="rounded mb-6"
-              />
-              <h3 className="tracking-widest text-orange-400 text-xs font-medium title-font">
-                Chainsaw Man
-              </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4">
-                Denji
-              </h2>
-              <p className="leading-relaxed text-base">
-                Denji (デンジ?) is the titular protagonist of the Chainsaw Man
-                manga and anime series. He is the main protagonist of the Public
-                Safety Saga and the co-protagonist of the Academy Saga.
-              </p>
-            </div>
-          </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-              <img
-                src="Chainsaw Man/power.jpg"
-                alt=""
-                className="rounded mb-6"
-              />
-              <h3 className="tracking-widest text-orange-400 text-xs font-medium title-font">
-                Blood Devil
-              </h3>
-              <h2 className="text-lg text-white font-medium title-font mb-4">
-                Power
-              </h2>
-              <p className="leading-relaxed text-base">
-                Power (パワー Pawā?) is the tritagonist of the Public Safety
-                Saga. She is the Blood Fiend (血ちの魔ま人じん Chi no Majin?)
-                who embodies the fear of blood and a Public Safety Devil Hunter
-                working under Makima's special squad.
+                Yoru (ヨル?) is the deuteragonist of the Academy Saga. She is
+                the War Devil (戦せん争そうの悪あく魔ま Sensō no Akuma?) who
+                embodies the fear of war. She is a member of the Four Horsemen,
+                who now occupies Asa Mitaka's body as a Fiend.
               </p>
             </div>
           </div>
@@ -227,6 +164,77 @@ export default function Image() {
               </p>
             </div>
           </div>
+
+          <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                src="Chainsaw Man/makima-manga.jpg"
+                alt="content"
+                className="rounded mb-6 "
+              />
+              <h3 className="tracking-widest text-orange-400 text-xs font-medium title-font">
+                Control Devil
+              </h3>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Makima
+              </h2>
+              <p className="leading-relaxed text-base">
+                Makima (マキマ?) is the main antagonist of the Public Safety
+                Saga. She was the Chief Cabinet Secretary's Personal Devil
+                Hunter who took Denji in as her human pet.
+                <br />
+                She is later revealed to be the Control Devil
+                (支し配はいの悪あく魔ま Shihai no Akuma?) who embodies the fear
+                of control or conquest and a member of the Four Horsemen at the
+                time. Following her death, she was reincarnated as Nayuta.
+              </p>
+            </div>
+          </div>
+
+          
+          <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                src="Chainsaw Man/denji.jpg"
+                alt=""
+                className="rounded mb-6"
+              />
+              <h3 className="tracking-widest text-orange-400 text-xs font-medium title-font">
+                Chainsaw Man
+              </h3>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Denji
+              </h2>
+              <p className="leading-relaxed text-base">
+                Denji (デンジ?) is the titular protagonist of the Chainsaw Man
+                manga and anime series. He is the main protagonist of the Public
+                Safety Saga and the co-protagonist of the Academy Saga.
+              </p>
+            </div>
+          </div>
+
+          <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                src="Chainsaw Man/power.jpg"
+                alt=""
+                className="rounded mb-6"
+              />
+              <h3 className="tracking-widest text-orange-400 text-xs font-medium title-font">
+                Blood Devil
+              </h3>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+                Power
+              </h2>
+              <p className="leading-relaxed text-base">
+                Power (パワー Pawā?) is the tritagonist of the Public Safety
+                Saga. She is the Blood Fiend (血ちの魔ま人じん Chi no Majin?)
+                who embodies the fear of blood and a Public Safety Devil Hunter
+                working under Makima's special squad.
+              </p>
+            </div>
+          </div>
+
           <div className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img

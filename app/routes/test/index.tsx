@@ -6,10 +6,11 @@ export default function ToLoveRuWiki() {
   const [autoPlay, setAutoPlay] = useState(true);
   const images = [
     "To Love Ru/670.jpg",
-    "https://images7.alphacoders.com/700/700001.png",
-    "https://images6.alphacoders.com/674/thumb-1920-674018.jpg",
-    "https://images7.alphacoders.com/696/696152.png",
     "https://c4.wallpaperflare.com/wallpaper/353/851/796/anime-anime-girls-to-love-ru-kotegawa-yui-wallpaper-preview.jpg",
+    "https://images7.alphacoders.com/700/700001.png",
+    "To Love Ru/toloveruclass.jpg",
+    "https://images7.alphacoders.com/696/696152.png",
+    "To Love Ru/nanalalamomo.jpg",
   ];
   const currentImage = images[currentImageIndex];
 
@@ -139,6 +140,12 @@ export default function ToLoveRuWiki() {
               Others Like You Viewed
             </h3>
 
+              <div>
+                <img src="To Love Ru/nana.jpg" alt="" />
+                <p className="text-xs text-center font-medium text-purple-900 mt-1 line-clamp-2">
+                  Nana Astar Deviluke
+                </p>
+              </div>
             {/* Character list with square images */}
             <div className="divide-y divide-gray-200">
               {[
@@ -474,16 +481,72 @@ export default function ToLoveRuWiki() {
                           "https://static.wikia.nocookie.net/to-loveru/images/e/e9/Tearju_Lunatique_TLRD_Manga.png",
                       },
                     ].map((character, index) => (
-                        <div key={index} className="relative text-center">
+                      <div key={index} className="relative text-center">
                         <img
                           src={character.image}
                           alt={character.name}
                           className="w-full h-auto border-4 border-purple-800 rounded-lg"
                         />
-                        <div className="absolute bottom-1 right-0.5 bg-purple-800 text-white text-xs px-1 py-1 rounded">
+                        <div className="absolute bottom-1 right-0.5 bg-purple-800 text-white text-xl px-1 py-1 rounded">
                           <strong>{character.name}</strong>
                         </div>
-                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="border border-pink-300 rounded mt-6">
+                  <div className="bg-pink-400 text-yellow-300 text-center py-2 font-extrabold">
+                    Content
+                  </div>
+                  <div className="pt-4 grid grid-cols-4 gap-2">
+                    {[
+                      {
+                        name: "Characters",
+                        image: "To Love Ru/characters.jpg",
+                      },
+                      {
+                        name: "Manga",
+                        image: "To Love Ru/manga.jpg",
+                      },
+                      {
+                        name: "Anime",
+                        image: "To Love Ru/anime.jpg",
+                      },
+                      {
+                        name: "Music",
+                        image: "To Love Ru/music.jpg",
+                      },
+                      {
+                        name: "Video Games",
+                        image: "To Love Ru/video_games.jpg",
+                      },
+                      {
+                        name: "Artbooks",
+                        image: "To Love Ru/artbooks.jpg",
+                      },
+                      {
+                        name: "Images",
+                        image: "To Love Ru/images.jpg",
+                      },
+                      {
+                        name: "Planets and Locations",
+                        image: "To Love Ru/planets_and_locations.jpg",
+                      },
+                    ].map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="text-center p-2 rounded text-purple-800 flex flex-col items-center"
+                        style={{ maxWidth: 160 }}
+                      >
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="mb-2 w-48 h-48 rounded object-contain"
+                        />
+                        <span className="text-base">{item.name}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -552,11 +615,34 @@ export default function ToLoveRuWiki() {
                   <div className="p-4 bg-white">
                     <div className="flex justify-center">
                       <img
-                        src="https://static.wikia.nocookie.net/to-loveru/images/f/f5/TLR_CH63_Cover.png"
+                        src="To Love Ru/lalafeatured.jpg"
                         alt="Featured Image"
-                        className="max-w-full"
+                        className="max-w-full "
                       />
                     </div>
+                    <p className="text-black text-center">
+                      Lala from To LOVE-Ru Chapter 63.
+                    </p>
+                    <h3 className="text-purple-800 text-center mt-4 font-extrabold">
+                      Previous Featured Images
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="border border-pink-300 rounded">
+                  <div className="bg-pink-400 text-yellow-300 text-center py-2 font-extrabold">
+                    Featured Video
+                  </div>
+                  <div className="p-4 bg-white">
+                    <iframe
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/cc-abnvIgRs"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
                   </div>
                 </div>
               </div>
