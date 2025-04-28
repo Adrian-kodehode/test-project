@@ -52,11 +52,11 @@ export default function ToLoveRuWiki() {
   }
 
   const animatedImages = (
-    <div className="relative w-full h-96">
+    <div className="relative w-full h-full max-h-[600px]">
       <img
         src={currentImage}
         alt={`Slide ${currentImageIndex}`}
-        className="w-full h-full object-contain transition-opacity duration-500"
+        className="w-full h-full object-cover transition-opacity duration-500"
       />
       <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
@@ -140,12 +140,12 @@ export default function ToLoveRuWiki() {
               Others Like You Viewed
             </h3>
 
-              <div>
-                <img src="To Love Ru/nana.jpg" alt="" />
-                <p className="text-xs text-center font-medium text-purple-900 mt-1 line-clamp-2">
-                  Nana Astar Deviluke
-                </p>
-              </div>
+            <div>
+              <img src="To Love Ru/nana.jpg" alt="" />
+              <p className="text-xs text-center font-medium text-purple-900 mt-1 line-clamp-2">
+                Nana Astar Deviluke
+              </p>
+            </div>
             {/* Character list with square images */}
             <div className="divide-y divide-gray-200">
               {[
