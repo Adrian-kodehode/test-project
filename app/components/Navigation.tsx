@@ -13,6 +13,8 @@ export default function Navigation() {
     { name: "Dashboard", href: "/dashboard", current: true },
     { name: "To LOVE-Ru ", href: "/test", current: true },
     { name: "Discover", href: "/discover", current: true },
+    { name: "Marketplace", href: "/marketplace", current: true },
+    {name: "Video", href: "/video", current: true},
     // { name: "", href: "/profile", current: true },
     // { name: "", href: "/shoppingcart", current: true },
     // { name: "", href: "/createaccount", current: true },

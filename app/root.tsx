@@ -60,7 +60,9 @@ export default function App() {
   return (
     <div>
       <Outlet />
-      {location.pathname !== "/music" && location.pathname !== "/test" && <Footer />}
+      {location.pathname !== "/music" &&
+        location.pathname !== "/test" &&
+        location.pathname !== "/video" && <Footer />}
     </div>
   );
 }

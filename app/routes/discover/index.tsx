@@ -3,7 +3,6 @@ import { Avatar } from "app/components/discover/Avatar";
 import { FeatherVerified } from "@subframe/core";
 import { IconButton } from "app/components/discover/IconButton";
 import { FeatherLink } from "@subframe/core";
-import { FeatherTwitter } from "@subframe/core";
 import { FeatherInstagram } from "@subframe/core";
 import { FeatherLinkedin } from "@subframe/core";
 import { Tabs } from "app/components/discover/Tabs";
@@ -18,12 +17,12 @@ import { Badge } from "app/components/dashboard/Badge";
 
 function CollectionListPageWithCards() {
   return (
-    <div className="container max-w-none flex h-full w-full flex-col items-start gap-6 bg-white text-black py-12 overflow-auto">
+    <div className="container max-w-none flex h-full w-full flex-col items-start gap-6 bg-white text-black  overflow-auto">
       <div className="flex w-full flex-col items-start gap-12">
         <div className="flex w-full flex-col items-start gap-4 relative">
           <img
-            className="h-60 w-full flex-none rounded-md object-cover"
-            src="https://res.cloudinary.com/subframe/image/upload/v1723780577/uploads/302/hhmv6ey0yajkadnmcp0a.png"
+            className="h-60 w-full flex-none rounded-md object-cover "
+            src="Chainsaw Man/cmasayoru.jpg"
           />
           <div className="flex flex-col items-start gap-4 rounded-full border-2 border-solid border-default-background shadow-lg absolute left-4 -bottom-4">
             <Avatar size="x-large" image="Chainsaw Man/cmfamine.jpg">
@@ -31,7 +30,7 @@ function CollectionListPageWithCards() {
             </Avatar>
           </div>
         </div>
-        <div className="flex w-full flex-col items-start gap-6">
+        <div className="flex w-full flex-col items-start gap-6 pl-5">
           <div className="flex flex-wrap items-center gap-4">
             <div className="flex items-center gap-2">
               <span className="text-heading-1 font-heading-1 text-default-font">
@@ -118,7 +117,7 @@ function CollectionListPageWithCards() {
             />
           </TextField>
         </div>
-        <div className="w-full items-start gap-4 grid grid-cols-3 mobile:grid mobile:grid-cols-1">
+        <div className="w-full items-start gap-4 grid grid-cols-3 pl-5 mobile:grid mobile:grid-cols-1">
           <div className="flex grow shrink-0 basis-0 flex-col items-start overflow-hidden rounded-md border border-solid border-neutral-border bg-default-background shadow-sm">
             <div className="flex w-full grow shrink-0 basis-0 flex-col items-start relative">
               <img
@@ -136,14 +135,14 @@ function CollectionListPageWithCards() {
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-body-bold font-body-bold text-default-font">
-                    Sony
+                    Chainsawa Man
                   </span>
                   <FeatherStar className="text-body font-body text-default-font" />
                 </div>
                 <Badge variant="neutral">#1234</Badge>
               </div>
               <span className="line-clamp-3 text-heading-3 font-heading-3 text-default-font">
-                PS-F5 Vertical Turntable
+                Makima
               </span>
             </div>
           </div>
@@ -164,14 +163,14 @@ function CollectionListPageWithCards() {
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-body-bold font-body-bold text-default-font">
-                    Braun
+                    One Piece
                   </span>
                   <FeatherStar className="text-body font-body text-default-font" />
                 </div>
                 <Badge variant="neutral">#1846</Badge>
               </div>
               <span className="line-clamp-3 text-heading-3 font-heading-3 text-default-font">
-                Pocket Radio
+                Monkey D. Luffy
               </span>
             </div>
           </div>
@@ -192,14 +191,14 @@ function CollectionListPageWithCards() {
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-body-bold font-body-bold text-default-font">
-                    Bang &amp; Olufsen
+                    Chainsaw Man
                   </span>
                   <FeatherStar className="text-body font-body text-default-font" />
                 </div>
                 <Badge variant="neutral">#0925</Badge>
               </div>
               <span className="line-clamp-3 text-heading-3 font-heading-3 text-default-font">
-                Beogram 4000 Turntable
+                Asa Mitaka
               </span>
             </div>
           </div>
@@ -220,14 +219,14 @@ function CollectionListPageWithCards() {
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-body-bold font-body-bold text-default-font">
-                    Dieter Rams
+                    To LOVE-Ru Darkness
                   </span>
                   <FeatherStar className="text-body font-body text-default-font" />
                 </div>
                 <Badge variant="neutral">#9575</Badge>
               </div>
               <span className="line-clamp-3 text-heading-3 font-heading-3 text-default-font">
-                606 Universal Shelving System
+                Yami, Mea, Momo, Nana
               </span>
             </div>
           </div>
@@ -248,22 +247,22 @@ function CollectionListPageWithCards() {
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-body-bold font-body-bold text-default-font">
-                    Olivetti
+                    To LOVE-Ru Darkness
                   </span>
                   <FeatherStar className="text-body font-body text-default-font" />
                 </div>
                 <Badge variant="neutral">#8567</Badge>
               </div>
               <span className="line-clamp-3 text-heading-3 font-heading-3 text-default-font">
-                Valentine Typewriter
+                Golden Darkness
               </span>
             </div>
           </div>
           <div className="flex grow shrink-0 basis-0 flex-col items-start overflow-hidden rounded-md border border-solid border-neutral-border bg-default-background shadow-sm">
             <div className="flex w-full grow shrink-0 basis-0 flex-col items-start relative">
               <img
-                className="h-60 w-full flex-none border-b border-solid border-neutral-border object-cover"
-                src="https://res.cloudinary.com/subframe/image/upload/v1723780624/uploads/302/sxocuez05safdpfaztiz.png"
+                className="h-60 w-full flex-none border-b border-solid border-neutral-border object-cover object-top"
+                src="Chainsaw Man/Chapter 99 Title Page.jpg"
               />
               <IconButton
                 className="absolute left-2 top-2"
@@ -276,14 +275,14 @@ function CollectionListPageWithCards() {
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-body-bold font-body-bold text-default-font">
-                    Polaroid
+                    Chainsaw Man
                   </span>
                   <FeatherStar className="text-body font-body text-default-font" />
                 </div>
-                <Badge variant="neutral">#0533</Badge>
+                <Badge variant="neutral">#099</Badge>
               </div>
               <span className="line-clamp-3 text-heading-3 font-heading-3 text-default-font">
-                SX-70 Land Camera
+                Asa Mitaka and Yoru
               </span>
             </div>
           </div>
