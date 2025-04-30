@@ -1,10 +1,21 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function ToloveRu() {
+  const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+  };
+
   return (
-    <section className="text-gray-400">
+    <motion.section
+      initial="initial"
+      animate="animate"
+      className="text-gray-400"
+    >
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
+        <motion.div variants={fadeInUp} className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
               <img
@@ -46,11 +57,11 @@ export default function ToloveRu() {
           >
             My Dress-Up Darling
           </a>
-        </div>
+        </motion.div>
 
         <div className="flex flex-wrap -m-4">
           {/* Character cards for JJK */}
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/momo.jpg"
@@ -75,9 +86,9 @@ export default function ToloveRu() {
                 she has for him.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/lala.jpg"
@@ -98,9 +109,9 @@ export default function ToloveRu() {
                 get married to any of her suitors.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/nana.jpg"
@@ -122,9 +133,9 @@ export default function ToloveRu() {
                 considering him to be a "beast".
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/yami.jpg"
@@ -145,9 +156,9 @@ export default function ToloveRu() {
                 kill Yuuki Rito.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/haruna.jpg"
@@ -169,9 +180,9 @@ export default function ToloveRu() {
                 not built up the nerve to confess to him.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/mikan.jpg"
@@ -194,9 +205,9 @@ export default function ToloveRu() {
                 the truth.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/yui.jpg"
@@ -215,9 +226,9 @@ export default function ToloveRu() {
                 the school disciplinary committee.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/tearju.jpg"
@@ -238,9 +249,9 @@ export default function ToloveRu() {
                 since she was a teenager.{" "}
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/nemisis.jpg"
@@ -262,9 +273,9 @@ export default function ToloveRu() {
                 Yami's changes and recent life.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
               <img
                 src="/To Love Ru/rin.jpg"
@@ -286,11 +297,11 @@ export default function ToloveRu() {
                 bullies when they were children.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Add more character cards as needed */}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
