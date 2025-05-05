@@ -31,6 +31,8 @@ export const links: LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const location = useLocation();
+  
   return (
     <html lang="en">
       <head>
@@ -40,10 +42,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <NewHeader />
+        {location.pathname !== "/home" && <NewHeader />}
         <div className="pb-24">
-          {" "}
-          {/* Add padding at the bottom to account for the playback bar */}
           {children}
         </div>
         <PlaybackBar />
@@ -61,6 +61,7 @@ export default function App() {
     <div>
       <Outlet />
       {location.pathname !== "/music" &&
+        location.pathname !== "/home" &&
         location.pathname !== "/test" &&
         location.pathname !== "/video" && <Footer />}
     </div>

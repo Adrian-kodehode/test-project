@@ -329,7 +329,7 @@ function MarketplaceListDetail() {
                 </div>
               </div>
             </div>
-            <div className="flex min-w-[288px] max-w-[384px] grow shrink-0 basis-0 flex-col items-center gap-6 mobile:h-auto mobile:min-w-[288px] mobile:grow mobile:shrink-0 mobile:basis-0">
+            <div className="flex min-w-[288px] max-w-[384px] mr-5 grow shrink-0 basis-0 flex-col items-center gap-6 mobile:h-auto mobile:min-w-[288px] mobile:grow mobile:shrink-0 mobile:basis-0">
               <div className="flex w-full flex-col items-start gap-6 rounded-md border border-solid border-neutral-border bg-default-background px-6 py-6 shadow-lg">
                 <div className="flex items-end gap-1">
                   <span className="text-heading-3 font-heading-3 text-default-font">
@@ -637,7 +637,7 @@ function MarketplaceListDetail() {
               Location
             </span>
             <img
-              className="w-full flex-none"
+              className="w-2/3 flex-none"
               src="https://res.cloudinary.com/subframe/image/upload/v1711417576/shared/bsa3eonjzvhxusz9aqgr.png"
             />
             <div className="flex w-full flex-col items-start gap-2">
@@ -726,6 +726,7 @@ function MarketplaceListDetail() {
                     Response time: within an hour
                   </span>
                   <Button
+                  className="bg-white text-black hover:bg-gray-200"
                     variant="neutral-secondary"
                     onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
                   >
