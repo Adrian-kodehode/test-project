@@ -3,10 +3,7 @@ import video2 from "public/My Deer Friend Nokotan _ Opening Movie _ Shikairo Day
 
 export const HeroSection = () => {
   return (
-    <div
-      className="flex flex-col items-center mt-6
-   lg:mt-20"
-    >
+    <div className="flex flex-col items-center mt-6 lg:mt-20">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         VirtualR build tools
         <span className="bg-gradient-to-r from-[#FF0080] to-[#7928CA] text-transparent bg-clip-text">

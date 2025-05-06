@@ -4,6 +4,7 @@
 // import List from "../../components/List";
 // import ImageTiles from "../../components/ImageTiles";
 import { FeatureSection } from "app/components/home/FeatureSection";
+import { Footer } from "app/components/home/Footer";
 import { HeroSection } from "app/components/home/HeroSection";
 import Navbar from "app/components/home/Navbar";
 import { Pricing } from "app/components/home/Pricing";
@@ -25,6 +26,7 @@ export default function home() {
         <Workflow />
         <Pricing />
         <Testimonials />
+        <Footer />
       </div>
     </div>
   );

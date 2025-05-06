@@ -46,21 +46,23 @@ export default function NewHeader() {
             </div>
             <div className="hidden sm:flex flex-1 justify-center">
               <div className="flex space-x-4">
-                {navItems.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? "page" : undefined}
-                    className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-md px-3 py-2 text-xl font-medium mt-2.5"
-                    )}
-                  >
-                    {item.name}
-                  </a>
-                ))}
+                {navItems
+                  .filter((item) => item.mainTab)
+                  .map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      aria-current={item.current ? "page" : undefined}
+                      className={classNames(
+                        item.current
+                          ? "bg-gray-900 text-white"
+                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        "rounded-md px-3 py-2 text-xl font-medium mt-2.5"
+                      )}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
               </div>
             </div>
           </div>

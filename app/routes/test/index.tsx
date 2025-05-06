@@ -174,57 +174,39 @@ export default function ToLoveRuWiki() {
           backgroundAttachment: "fixed",
         }}
       >
-        {/* Fandom Header Bar */}
-        {/* <header className="bg-white border-b border-gray-200">
-          <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="92"
-                height="24"
-                viewBox="0 0 92 24"
-                className="h-6"
-              ></svg>
-            </div>
-            <div className="flex items-center">
-              <div className="relative mr-2">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="bg-gray-100 rounded-full text-sm py-1 px-4 w-64"
-                />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 absolute right-3 top-2 text-gray-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </div>
-              <button className="bg-blue-500 text-white px-3 py-1 rounded text-xs font-medium mr-2">
-                START A WIKI
-              </button>
-              <button className="bg-purple-800 text-white px-3 py-1 rounded text-xs font-medium">
-                SIGN IN
-              </button>
-            </div>
-          </div>
-        </header> */}
-
         {/* Content Area with Left Sidebar */}
         <div className="flex">
           {/* Left Sidebar Navigation - Updated to match the image */}
-          <div className="w-64 border-r border-gray-200 bg-white fixed sidebar">
+          <div className="w-64 border-r border-gray-200 bg-white fixed sidebar transition-transform duration-300">
             {/* Wiki Title */}
             <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
-              <h2 className="font-bold text-gray-800">To LOVE-Ru Wiki</h2>
+              <div className="flex items-center justify-between">
+                <h2 className="font-bold text-gray-800">To LOVE-Ru Wiki</h2>
+                <button
+                  onClick={() => {
+                    const sidebar = document.querySelector(".sidebar");
+                    const mainContent = document.querySelector(".ml-64");
+                    sidebar?.classList.toggle("-translate-x-full");
+                    mainContent?.classList.toggle("ml-0");
+                  }}
+                  className="p-2 hover:bg-gray-100 rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-gray-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
 
             {/* Others Like You Viewed Section */}
@@ -342,7 +324,7 @@ export default function ToLoveRuWiki() {
             </div>
           </div>
 
-          {/* Main Content */}
+          {/* Main Content Area */}
           <div className="ml-64 flex-1">
             {/* Wiki Logo Header */}
             <div className="h-44 bg-gradient-to-r from-pink-400 via-pink-500 to-pink-400 relative">
@@ -389,6 +371,9 @@ export default function ToLoveRuWiki() {
                   </li>
                   <li className="py-3 px-4 hover:bg-pink-600">COMMUNITY</li>
                   <li className="py-3 px-4 hover:bg-pink-600">TOOLS</li>
+                  <li className="py-3 px-4 hover:bg-pink-600">
+                    <Link to="/shop">SHOP</Link>
+                  </li>
                 </ul>
               </div>
             </nav>
@@ -455,7 +440,7 @@ export default function ToLoveRuWiki() {
                 <div className="lg:w-2/3">
                   {/* Welcome Section */}
                   <div className="border-2 border-[#DB49AC] rounded-t pt-1 pr-1 pl-1">
-                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 font-extrabold">
+                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                       Welcome
                     </div>
                     <div className="p-4 bg-white">
@@ -497,7 +482,7 @@ export default function ToLoveRuWiki() {
 
                   {/* Characters Section */}
                   <div className="border-2 border-[#DB49AC]  pt-1 pr-1 pl-1">
-                    <div className="bg-[#DB49AC] text-[#F9D910] text-center text-xl py-2 font-extrabold">
+                    <div className="bg-[#DB49AC] text-[#F9D910] text-center text-xl py-1 font-extrabold">
                       Characters
                     </div>
                     <div className="p-4 grid grid-cols-5 gap-2 bg-white border">
@@ -594,7 +579,7 @@ export default function ToLoveRuWiki() {
 
                   {/* Content */}
                   <div className="border-2 border-[#DB49AC]  pt-1 pr-1 pl-1">
-                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                       Content
                     </div>
                     <div className="pt-4 grid grid-cols-4 gap-1 justify-center justify-items-center">
@@ -650,7 +635,7 @@ export default function ToLoveRuWiki() {
 
                   {/* Forums */}
                   <div className="border-2 border-[#DB49AC] pt-1 pr-1 pl-1">
-                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                       Forums
                     </div>
                     <div className="p-4 bg-white">
@@ -668,7 +653,7 @@ export default function ToLoveRuWiki() {
 
                   {/* Blogroll */}
                   <div className="border-2 border-[#DB49AC] rounded-b pt-1 pr-1 pl-1">
-                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                       Blogroll
                     </div>
                     <h2 className="border mt-6"></h2>
@@ -828,14 +813,448 @@ export default function ToLoveRuWiki() {
                       <a href="">See more &gt;</a>
                     </div>
                   </div>
+
+                  {/* Recent Activity */}
+                  <div className="w-full pt-10">
+                    <div className="border-2 border-[#DB49AC]  pt-1 pb-1 pr-1 pl-1">
+                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
+                        Recent Activity
+                      </div>
+                      <div className="p-4 mt-3 border border-[#DB49AC] bg-white scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 h-[400px] overflow-y-auto">
+                        <div className="flex items-center justify-between mb-4"></div>
+                        <div className="text-black text-sm mb-8">
+                          Track the most recent changes to the wiki on this
+                          page.
+                        </div>
+
+                        {/* Wiki Activity Navigation */}
+                        <nav className="flex border-b border-gray-200 mb-4">
+                          <button className="text-purple-800 border-b-2 border-purple-800 px-4 py-2 text-sm font-medium">
+                            Wiki Activity
+                          </button>
+                          <button className="text-gray-500 px-4 py-2 text-sm font-medium">
+                            Social Activity
+                          </button>
+                          <button className="text-gray-500 px-4 py-2 text-sm font-medium">
+                            Image Activity
+                          </button>
+                        </nav>
+
+                        {/* Activity List */}
+                        <div className="space-y-4">
+                          <div className="text-sm text-gray-600 font-bold">
+                            4 May 2025
+                          </div>
+
+                          {/* Legend */}
+                          <div className="mt-4 p-4 bg-gray-50 text-black rounded-lg">
+                            <div className="font-medium mb-2">
+                              List of abbreviations:
+                            </div>
+                            <div className="space-y-2">
+                              <div className="flex items-start">
+                                <span className="font-bold w-8">N</span>
+                                <span className="flex-1">
+                                  This edit created a new page (also see{" "}
+                                  <Link
+                                    to="#"
+                                    className="text-purple-800 hover:underline"
+                                  >
+                                    list of new pages
+                                  </Link>
+                                  )
+                                </span>
+                              </div>
+                              <div className="flex items-start">
+                                <span className="font-bold w-8">m</span>
+                                <span className="flex-1">
+                                  This is a minor edit
+                                </span>
+                              </div>
+                              <div className="flex items-start">
+                                <span className="font-bold w-8">b</span>
+                                <span className="flex-1">
+                                  This edit was performed by a bot
+                                </span>
+                              </div>
+                              <div className="flex items-start">
+                                <span className="font-bold w-13 text-green-600">
+                                  (±123)
+                                </span>
+                                <span className="flex-1">
+                                  The page size changed by this number of bytes
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Activity Item */}
+                          <div className="flex items-start space-x-2">
+                            <div className="text-xs text-gray-500 w-16">
+                              02:22
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center space-x-1">
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Tearju Lunatique/Relationships
+                                </Link>
+                                <span className="text-gray-500">(</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  diff
+                                </Link>
+                                <span className="text-gray-500">|</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  hist
+                                </Link>
+                                <span className="text-gray-500">)</span>
+                                <span className="text-red-500">(-81)</span>
+                                <span className="text-gray-500">. .</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Crackerjack94
+                                </Link>
+                              </div>
+                              <div className="text-gray-600 text-sm">
+                                <span className="text-gray-500">(</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Message Wall
+                                </Link>
+                                <span className="text-gray-500">|</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  contribs
+                                </Link>
+                                <span className="text-gray-500">)</span>
+                                <em className="text-gray-500">
+                                  (Undo revision 46386 by Skyisfallingdown
+                                  (talk))
+                                </em>
+                                <span className="text-gray-500">(</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Tag: Undo
+                                </Link>
+                                <span className="text-gray-500">)</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="text-sm text-gray-600 font-bold">
+                            3 May 2025
+                          </div>
+
+                          {/* Activity Item */}
+                          <div className="flex items-start space-x-2">
+                            <div className="text-xs text-gray-500 w-16">
+                              23:04
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center space-x-1">
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Tearju Lunatique
+                                </Link>
+                                <span className="text-gray-500">(</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  diff
+                                </Link>
+                                <span className="text-gray-500">|</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  hist
+                                </Link>
+                                <span className="text-gray-500">)</span>
+                                <span className="text-green-500">(+28)</span>
+                                <span className="text-gray-500">. .</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Skyisfallingdown
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="text-sm text-gray-600 font-bold">
+                            2 May 2025
+                          </div>
+
+                          {/* Activity Item */}
+                          <div className="flex items-start space-x-2">
+                            <div className="text-xs text-gray-500 w-16">
+                              23:04
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center space-x-1">
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Tearju Lunatique
+                                </Link>
+                                <span className="text-gray-500">(</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  diff
+                                </Link>
+                                <span className="text-gray-500">|</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  hist
+                                </Link>
+                                <span className="text-gray-500">)</span>
+                                <span className="text-green-500">(+28)</span>
+                                <span className="text-gray-500">. .</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Skyisfallingdown
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="text-sm text-gray-600 font-bold">
+                            1 May 2025
+                          </div>
+
+                          {/* Activity Item */}
+                          <div className="flex items-start space-x-2">
+                            <div className="text-xs text-gray-500 w-16">
+                              23:04
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center space-x-1">
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Tearju Lunatique
+                                </Link>
+                                <span className="text-gray-500">(</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  diff
+                                </Link>
+                                <span className="text-gray-500">|</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  hist
+                                </Link>
+                                <span className="text-gray-500">)</span>
+                                <span className="text-green-500">(+28)</span>
+                                <span className="text-gray-500">. .</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Skyisfallingdown
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="text-sm text-gray-600 font-bold">
+                            30 April 2025
+                          </div>
+
+                          {/* Activity Item */}
+                          <div className="flex items-start space-x-2">
+                            <div className="text-xs text-gray-500 w-16">
+                              23:04
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center space-x-1">
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Tearju Lunatique
+                                </Link>
+                                <span className="text-gray-500">(</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  diff
+                                </Link>
+                                <span className="text-gray-500">|</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  hist
+                                </Link>
+                                <span className="text-gray-500">)</span>
+                                <span className="text-green-500">(+28)</span>
+                                <span className="text-gray-500">. .</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Skyisfallingdown
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="text-sm text-gray-600 font-bold">
+                            29 April 2025
+                          </div>
+
+                          {/* Activity Item */}
+                          <div className="flex items-start space-x-2">
+                            <div className="text-xs text-gray-500 w-16">
+                              23:04
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center space-x-1">
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Tearju Lunatique
+                                </Link>
+                                <span className="text-gray-500">(</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  diff
+                                </Link>
+                                <span className="text-gray-500">|</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  hist
+                                </Link>
+                                <span className="text-gray-500">)</span>
+                                <span className="text-green-500">(+28)</span>
+                                <span className="text-gray-500">. .</span>
+                                <Link
+                                  to="#"
+                                  className="text-purple-800 hover:underline"
+                                >
+                                  Skyisfallingdown
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Affiliates */}
+                  <div className="border-2 border-[#DB49AC] rounded-b pt-1 pb-1 pr-1 pl-1">
+                    <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
+                      Affiliates
+                    </div>
+                    <div className="p-4 mt-3 border border-[#DB49AC] bg-white scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 h-[400px] overflow-y-auto">
+                      <div className="grid grid-cols-3">
+                        <img src="public/To Love Ru/latest (1).jpg" alt="" />
+                        <img src="public/Site-logo.png" alt="" />
+                        <img src="public/Wiki-wordmark.png" alt="" />
+                        <img src="public/Wiki-wordmark (1).png" alt="" />
+                        <img src="public/Wiki-wordmark (2).png" alt="" />
+                        <img src="public/Wiki-wordmark (3).png" alt="" />
+                        <img src="public/Wiki-wordmark (4).png" alt="" />
+                        <img src="public/Wiki-wordmark (5).png" alt="" />
+                        <img src="public/Wiki-wordmark (6).png" alt="" />
+                        <img src="public/Wiki-wordmark (7).png" alt="" />
+                        <img src="public/Wiki-wordmark (8).png" alt="" />
+                        <img src="public/Wiki-wordmark (9).png" alt="" />
+                        <img src="public/Wiki-wordmark (10).png" alt="" />
+                        <img src="public/Wiki-wordmark (11).png" alt="" />
+                        <img src="public/Wiki-wordmark (12).png" alt="" />
+                        <img src="public/Wiki-wordmark (13).png" alt="" />
+                        <img src="public/Wiki-wordmark (14).png" alt="" />
+                        <img src="public/Wiki-wordmark (15).png" alt="" />
+                        <img src="public/Wiki-wordmark (16).png" alt="" />
+                        <img src="public/Site-logo (1).png" alt="" />
+                        <img src="public/Wiki-wordmark (17).png" alt="" />
+                        <img src="public/Wiki-wordmark (18).png" alt="" />
+                        <img src="public/Wiki-wordmark (19).png" alt="" />
+                        <img src="public/Wiki-wordmark (20).png" alt="" />
+                        <img src="public/Wiki-wordmark (21).png" alt="" />
+                        <img src="public/Wiki-wordmark (22).png" alt="" />
+                        <img src="public/Wiki-wordmark (23).png" alt="" />
+                        <img src="public/Wiki-wordmark (24).png" alt="" />
+                        <img src="public/Wiki-wordmark (25).png" alt="" />
+                        <img src="public/Wiki-wordmark (26).png" alt="" />
+                        <img src="public/Wiki-wordmark (27).png" alt="" />
+                        <img src="public/Wiki-wordmark (28).png" alt="" />
+                        <img src="public/Wiki-wordmark (29).png" alt="" />
+                        <img src="public/Wiki-wordmark (30).png" alt="" />
+                        <img src="public/Wiki-wordmark (31).png" alt="" />
+                        <img src="public/Wiki-wordmark (32).png" alt="" />
+                        <img src="public/Wiki-wordmark (33).png" alt="" />
+                        <img src="public/Wiki-wordmark (34).png" alt="" />
+                        <img src="public/Wiki-wordmark (35).png" alt="" />
+                        <img src="public/Wiki-wordmark (36).png" alt="" />
+                        <img src="public/Wiki-wordmark (37).png" alt="" />
+                        <img src="public/Wiki-wordmark (38).png" alt="" />
+                        <img src="public/Wiki-wordmark (39).png" alt="" />
+                        <img src="public/Wiki-wordmark (40).png" alt="" />
+                        <img src="public/Wiki-wordmark (41).png" alt="" />
+                        <img src="public/Wiki-wordmark (42).png" alt="" />
+                        <img src="public/Wiki-wordmark (43).png" alt="" />
+                        <img src="public/Wiki-wordmark (44).png" alt="" />
+                        <img src="public/Wiki-wordmark (45).png" alt="" />
+                        <img src="public/Wiki-wordmark (46).png" alt="" />
+                        <img src="public/Wiki-wordmark (47).png" alt="" />
+                        <img src="public/Wiki-wordmark (48).png" alt="" />
+                        <img src="public/Wiki-wordmark (49).png" alt="" />
+                        <img src="public/Wiki-wordmark (50).png" alt="" />
+                        <img src="public/Wiki-wordmark (51).png" alt="" />
+                        <img src="public/Wiki-wordmark (52).png" alt="" />
+                        <img src="public/Wiki-wordmark (53).png" alt="" />
+                        <img src="public/Wiki-wordmark (54).png" alt="" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Side Content */}
-                <div className="lg:w-1/3">
+                <div className="lg:w-1/3 lg:sticky lg:top-4 lg:self-start">
                   <div className="border-2 border-[#DB49AC] rounded">
                     {/* Latest Chapters */}
                     <div className="pt-1 pr-1 pl-1">
-                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                         Latest Chapters
                       </div>
                       <div className="p-4 bg-white">
@@ -856,7 +1275,7 @@ export default function ToLoveRuWiki() {
 
                     {/* Featured Article */}
                     <div className="pt-1 pr-1 pl-1">
-                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                         Featured Article
                       </div>
                       <div className="p-4 bg-white">
@@ -889,7 +1308,7 @@ export default function ToLoveRuWiki() {
 
                     {/* Featured Image */}
                     <div className="pt-1 pr-1 pl-1">
-                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                         Featured Image
                       </div>
                       <div className="p-4 bg-white">
@@ -911,7 +1330,7 @@ export default function ToLoveRuWiki() {
 
                     {/* Featured Video */}
                     <div className="pt-1 pr-1 pl-1">
-                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                         Featured Video
                       </div>
                       <div className="p-4 bg-white">
@@ -934,7 +1353,7 @@ export default function ToLoveRuWiki() {
 
                     {/* Poll */}
                     <div className="pt-1 pr-1 pl-1">
-                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                         Poll
                       </div>
                       <div className="p-4 bg-white">
@@ -954,7 +1373,7 @@ export default function ToLoveRuWiki() {
 
                     {/* Community */}
                     <div className="pt-1 pr-1 pl-1">
-                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                         Community
                       </div>
                       <div className="p-4 bg-white">
@@ -972,7 +1391,7 @@ export default function ToLoveRuWiki() {
 
                     {/* External Links */}
                     <div className="pt-1 pr-1 pl-1">
-                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-2 text-xl font-extrabold">
+                      <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                         External Links
                       </div>
                       <div className="p-4 bg-white">

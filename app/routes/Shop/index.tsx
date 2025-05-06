@@ -44,136 +44,208 @@ export default function Product() {
       )}
 
       {/* Category Buttons */}
-      <div className=" mx-auto max-w-max w-9xl h-28 flex justify-center space-x-4 py-4 border border-black bg-black bg-opacity-40  shadow-lg mb-4">
-        <button
-          onClick={() => setSelectedCategory("To Love Ru")}
-          className={`px-4 py--1 rounded-lg ${
-            selectedCategory === "To Love-Ru" ? "bg-white text-white" : ""
-          }`}
-        >
-          {" "}
-          <img
-            src="To Love Ru/10265111.png"
-            alt=""
-            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("To Love Ru Darkness")}
-          className={`px-4 py--1 rounded-lg ${
-            selectedCategory === "To Love-Ru Darkenss"
-              ? "bg-white text-white"
-              : ""
-          }`}
-        >
-          {" "}
-          <img
-            src="To Love Ru/toloveruDarkness.png"
-            alt=""
-            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("Chainsaw Man")}
-          className={`px-4 py--1 rounded-lg ${
-            selectedCategory === "Chainsaw Man" ? "bg-white text-white" : ""
-          }`}
-        >
-          {" "}
-          <img
-            src="Chainsaw Man/Chainsaw-Man-Logo.png"
-            alt=""
-            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("Jujutsu Kaisen")}
-          className={`px-4 py--1 rounded-lg ${
-            selectedCategory === "Jujutsu Kaisen" ? "bg-white text-white" : ""
-          }`}
-        >
-          <img
-            src="Jujutsu Kaisen/Jujutsu-Kaisen-Logo.png"
-            alt=""
-            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("One Piece")}
-          className={`px-4 py--1 rounded-lg ${
-            selectedCategory === "One Piece" ? "bg-white text-white" : ""
-          }`}
-        >
-          <img
-            src="./One Piece/One-Piece-Logo-PNG-Photo.png"
-            alt=""
-            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("Kaguya-sama")}
-          className={`px-4 py-2 rounded-lg ${
-            selectedCategory === "Kaguya-sama" ? "bg-white text-white" : ""
-          }`}
-        >
-          <img
-            src="Kaguya-sama/Kaguya-Sama - Love is War TV Series.svg"
-            alt=""
-            className="h-12 pb-1 pt-1 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("Oshi No Ko")}
-          className={`px-4 py-2 rounded-lg ${
-            selectedCategory === "Oshi No Ko" ? "bg-white text-white" : ""
-          }`}
-        >
-          <img
-            src="Oshi No Ko/Oshi_no_Ko_logo.png"
-            alt=""
-            className="h-12 pb-1 pt-1 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("My Dressup Darling")}
-          className={`px-4 py--1 w-36 rounded-lg ${
-            selectedCategory === "My Dressup Darling"
-              ? "bg-white text-white"
-              : ""
-          }`}
-        >
-          <img
-            src="My Dressup Darling/my-dressup-darling-logo.jpg"
-            alt=""
-            className="h-16 pr-2 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("Demon Slayer")}
-          className={`px-1 py--1 pt2 rounded-lg ${
-            selectedCategory === "Demon Slayer" ? "bg-white text-white" : ""
-          }`}
-        >
-          <img
-            src="./Demon Slayer/Demon-Slayer-Logo.png"
-            alt=""
-            className="h-20 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("JoJo's Bizarre Adventure")}
-          className={`px-4 py-1 rounded-lg ${
-            selectedCategory === "JoJo's Bizarre Adventure"
-              ? "bg-white text-white"
-              : ""
-          }`}
-        >
-          <img
-            src="JoJo/JoJo's_Bizarre_Adventure_logo.png"
-            alt=""
-            className="h-16 animated hover:scale-105 transition-transform duration-300 ease-in-out"
-          />
-        </button>
+      <div className="relative w-full overflow-hidden bg-black bg-opacity-40 shadow-lg mb-4">
+        <div className="flex relative w-[200%] animate-slide-right">
+          {/* First set of logos */}
+          <div className="flex w-1/2 justify-around flex-shrink-0">
+            <button
+              onClick={() => setSelectedCategory("To Love Ru")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img src="To Love Ru/10265111.png" alt="" className="h-20" />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("To Love Ru Darkness")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img
+                src="To Love Ru/toloveruDarkness.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Chainsaw Man")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img
+                src="Chainsaw Man/Chainsaw-Man-Logo.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Jujutsu Kaisen")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img
+                src="Jujutsu Kaisen/Jujutsu-Kaisen-Logo.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("One Piece")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img
+                src="./One Piece/One-Piece-Logo-PNG-Photo.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Kaguya-sama")}
+              className="px-4 py-2 rounded-lg"
+            >
+              <img
+                src="Kaguya-sama/Kaguya-Sama - Love is War TV Series.svg"
+                alt=""
+                className="h-12 pb-1 pt-1"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Oshi No Ko")}
+              className="px-4 py-2 rounded-lg"
+            >
+              <img
+                src="Oshi No Ko/Oshi_no_Ko_logo.png"
+                alt=""
+                className="h-12 pb-1 pt-1"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("My Dressup Darling")}
+              className="px-4 py--1 w-36 rounded-lg"
+            >
+              <img
+                src="My Dressup Darling/my-dressup-darling-logo.jpg"
+                alt=""
+                className="h-16 pr-2"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Demon Slayer")}
+              className="px-1 py--1 pt2 rounded-lg"
+            >
+              <img
+                src="./Demon Slayer/Demon-Slayer-Logo.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("JoJo's Bizarre Adventure")}
+              className="px-4 py-1 rounded-lg"
+            >
+              <img
+                src="JoJo/JoJo's_Bizarre_Adventure_logo.png"
+                alt=""
+                className="h-16"
+              />
+            </button>
+          </div>
+
+          {/* Duplicate set for seamless loop */}
+          <div className="flex w-1/2 justify-around flex-shrink-0">
+            <button
+              onClick={() => setSelectedCategory("To Love Ru")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img src="To Love Ru/10265111.png" alt="" className="h-20" />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("To Love Ru Darkness")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img
+                src="To Love Ru/toloveruDarkness.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Chainsaw Man")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img
+                src="Chainsaw Man/Chainsaw-Man-Logo.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Jujutsu Kaisen")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img
+                src="Jujutsu Kaisen/Jujutsu-Kaisen-Logo.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("One Piece")}
+              className="px-4 py--1 rounded-lg"
+            >
+              <img
+                src="./One Piece/One-Piece-Logo-PNG-Photo.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Kaguya-sama")}
+              className="px-4 py-2 rounded-lg"
+            >
+              <img
+                src="Kaguya-sama/Kaguya-Sama - Love is War TV Series.svg"
+                alt=""
+                className="h-12 pb-1 pt-1"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Oshi No Ko")}
+              className="px-4 py-2 rounded-lg"
+            >
+              <img
+                src="Oshi No Ko/Oshi_no_Ko_logo.png"
+                alt=""
+                className="h-12 pb-1 pt-1"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("My Dressup Darling")}
+              className="px-4 py--1 w-36 rounded-lg"
+            >
+              <img
+                src="My Dressup Darling/my-dressup-darling-logo.jpg"
+                alt=""
+                className="h-16 pr-2"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Demon Slayer")}
+              className="px-1 py--1 pt2 rounded-lg"
+            >
+              <img
+                src="./Demon Slayer/Demon-Slayer-Logo.png"
+                alt=""
+                className="h-20"
+              />
+            </button>
+            <button
+              onClick={() => setSelectedCategory("JoJo's Bizarre Adventure")}
+              className="px-4 py-1 rounded-lg"
+            >
+              <img
+                src="JoJo/JoJo's_Bizarre_Adventure_logo.png"
+                alt=""
+                className="h-16"
+              />
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Page Content */}
