@@ -3,7 +3,7 @@ export default function CreateAccount() {
     <div className="flex justify-center items-center h-screen bg-gray-400 dark:bg-gray-800">
       <div className="flex w-full max-w-screen h-screen">
         <div
-          className="hidden md:block w-1/4 h-screen bg-gray-400 dark:bg-gray-800 bg-cover bg-left bg-no-repeat rounded-l-lg"
+          className="hidden md:block w-1/4 h-screen bg-gray-400 dark:bg-gray-800 bg-cover bg-left bg-no-repeat "
           style={{ 
             backgroundImage: "url('/Chainsaw Man/makima.jpg')",
             transform: "scaleX(-1)"

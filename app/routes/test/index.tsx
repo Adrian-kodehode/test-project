@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import React, { useState, useEffect } from "react";
 import { Link } from "@remix-run/react";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
+import { shonenJumpWikis } from "app/components/shonenJumpWikis";
 
 // Add these styles at the beginning of your file
 const slideStyles = {
@@ -29,7 +30,7 @@ export default function ToLoveRuWiki() {
   const images = [
     "To Love Ru/670.jpg",
     "https://c4.wallpaperflare.com/wallpaper/353/851/796/anime-anime-girls-to-love-ru-kotegawa-yui-wallpaper-preview.jpg",
-    "https://images7.alphacoders.com/700/700001.png",
+    "To Love Ru/toloveru.jpg",
     "To Love Ru/toloveruclass.jpg",
     "https://images7.alphacoders.com/696/696152.png",
     "To Love Ru/nanalalamomo.jpg",
@@ -216,7 +217,7 @@ export default function ToLoveRuWiki() {
               </h3>
 
               <div>
-                <img src="To Love Ru/nana.jpg" alt="" />
+                <img src="To Love Ru/nana.jpg" alt=""></img>
                 <p className="text-xs text-center font-medium text-purple-900 mt-1 line-clamp-2">
                   Nana Astar Deviluke
                 </p>
@@ -1186,71 +1187,152 @@ export default function ToLoveRuWiki() {
                     </div>
                     <div className="p-4 mt-3 border border-[#DB49AC] bg-white scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 h-[400px] overflow-y-auto">
                       <div className="grid grid-cols-3">
-                        <img src="public/To Love Ru/latest (1).jpg" alt="" />
-                        <img src="public/Site-logo.png" alt="" />
-                        <img src="public/Wiki-wordmark.png" alt="" />
-                        <img src="public/Wiki-wordmark (1).png" alt="" />
-                        <img src="public/Wiki-wordmark (2).png" alt="" />
-                        <img src="public/Wiki-wordmark (3).png" alt="" />
-                        <img src="public/Wiki-wordmark (4).png" alt="" />
-                        <img src="public/Wiki-wordmark (5).png" alt="" />
-                        <img src="public/Wiki-wordmark (6).png" alt="" />
-                        <img src="public/Wiki-wordmark (7).png" alt="" />
-                        <img src="public/Wiki-wordmark (8).png" alt="" />
-                        <img src="public/Wiki-wordmark (9).png" alt="" />
-                        <img src="public/Wiki-wordmark (10).png" alt="" />
-                        <img src="public/Wiki-wordmark (11).png" alt="" />
-                        <img src="public/Wiki-wordmark (12).png" alt="" />
-                        <img src="public/Wiki-wordmark (13).png" alt="" />
-                        <img src="public/Wiki-wordmark (14).png" alt="" />
-                        <img src="public/Wiki-wordmark (15).png" alt="" />
-                        <img src="public/Wiki-wordmark (16).png" alt="" />
-                        <img src="public/Site-logo (1).png" alt="" />
-                        <img src="public/Wiki-wordmark (17).png" alt="" />
-                        <img src="public/Wiki-wordmark (18).png" alt="" />
-                        <img src="public/Wiki-wordmark (19).png" alt="" />
-                        <img src="public/Wiki-wordmark (20).png" alt="" />
-                        <img src="public/Wiki-wordmark (21).png" alt="" />
-                        <img src="public/Wiki-wordmark (22).png" alt="" />
-                        <img src="public/Wiki-wordmark (23).png" alt="" />
-                        <img src="public/Wiki-wordmark (24).png" alt="" />
-                        <img src="public/Wiki-wordmark (25).png" alt="" />
-                        <img src="public/Wiki-wordmark (26).png" alt="" />
-                        <img src="public/Wiki-wordmark (27).png" alt="" />
-                        <img src="public/Wiki-wordmark (28).png" alt="" />
-                        <img src="public/Wiki-wordmark (29).png" alt="" />
-                        <img src="public/Wiki-wordmark (30).png" alt="" />
-                        <img src="public/Wiki-wordmark (31).png" alt="" />
-                        <img src="public/Wiki-wordmark (32).png" alt="" />
-                        <img src="public/Wiki-wordmark (33).png" alt="" />
-                        <img src="public/Wiki-wordmark (34).png" alt="" />
-                        <img src="public/Wiki-wordmark (35).png" alt="" />
-                        <img src="public/Wiki-wordmark (36).png" alt="" />
-                        <img src="public/Wiki-wordmark (37).png" alt="" />
-                        <img src="public/Wiki-wordmark (38).png" alt="" />
-                        <img src="public/Wiki-wordmark (39).png" alt="" />
-                        <img src="public/Wiki-wordmark (40).png" alt="" />
-                        <img src="public/Wiki-wordmark (41).png" alt="" />
-                        <img src="public/Wiki-wordmark (42).png" alt="" />
-                        <img src="public/Wiki-wordmark (43).png" alt="" />
-                        <img src="public/Wiki-wordmark (44).png" alt="" />
-                        <img src="public/Wiki-wordmark (45).png" alt="" />
-                        <img src="public/Wiki-wordmark (46).png" alt="" />
-                        <img src="public/Wiki-wordmark (47).png" alt="" />
-                        <img src="public/Wiki-wordmark (48).png" alt="" />
-                        <img src="public/Wiki-wordmark (49).png" alt="" />
-                        <img src="public/Wiki-wordmark (50).png" alt="" />
-                        <img src="public/Wiki-wordmark (51).png" alt="" />
-                        <img src="public/Wiki-wordmark (52).png" alt="" />
-                        <img src="public/Wiki-wordmark (53).png" alt="" />
-                        <img src="public/Wiki-wordmark (54).png" alt="" />
+                        <img
+                          src="public/To Love Ru/latest (1).jpg"
+                          alt=""
+                        ></img>
+                        <img src="public/Site-logo.png" alt=""></img>
+                        <img src="public/Wiki-wordmark.png" alt=""></img>
+                        <img src="public/Wiki-wordmark (1).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (2).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (3).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (4).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (5).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (6).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (7).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (8).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (9).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (10).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (11).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (12).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (13).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (14).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (15).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (16).png" alt=""></img>
+                        <img src="public/Site-logo (1).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (17).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (18).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (19).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (20).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (21).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (22).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (23).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (24).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (25).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (26).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (27).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (28).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (29).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (30).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (31).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (32).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (33).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (34).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (35).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (36).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (37).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (38).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (39).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (40).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (41).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (42).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (43).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (44).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (45).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (46).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (47).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (48).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (49).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (50).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (51).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (52).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (53).png" alt=""></img>
+                        <img src="public/Wiki-wordmark (54).png" alt=""></img>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-center text-black">
+                      If you'd like to affiliate with us, please contact{" "}
+                      <strong className="text-[purple] ml-1">
+                        Aministrator.
+                      </strong>
+                    </div>
+                  </div>
+
+                  {/* Weekly Shonen Jump Wikis*/}
+                  <div className="mt-10 h-[60px] font-extrabold p-4 relative rounded-t-md text-[#F5F5F5] bg-gradient-to-r from-[#FD9A01] via-[#F00505] to-[#FEF001]">
+                    Weekly Shōnen Jump Wikis
+                  </div>
+                  <div className="bg-gray-50 border-l-4 border-[#abe7df] p-4">
+                    <div className="flex flex-col md:flex-row md:items-center md:space-x-6">
+                      <img
+                        src="Weekly_Shonen_Jump_Logo.png"
+                        alt="Shonen Jump Logo"
+                        className="w-auto h-32 max-xl: md:mx-0"
+                      />
+                      <div className="flex-1 mt-4 md:mt-0">
+                        <div className="flex flex-wrap justify-center md:justify-start gap-y-1 text-[purple] font-medium text-sm">
+                          {shonenJumpWikis.map((title, idx) => (
+                            <React.Fragment key={title}>
+                              {idx > 0 && (
+                                <span className="mx-1 text-gray-400">•</span>
+                              )}
+                              <a href="#" className="hover:underline">
+                                {title}
+                              </a>
+                            </React.Fragment>
+                          ))}
+                        </div>
+                        <div className="text-right mt-2">
+                          <button className="text-xs text-purple-800 font-extrabold hover:underline">
+                            [Expamd]
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-gray-50 border-l-4 border-[#B197FC] pt-6 mt-6 rounded-b-md">
+                    <div className="felx flex-col items-center">
+                      <div className="mb-4 flex justify-center items-center">
+                        <span className="text-black">
+                          Ongoing Anime Spotlights
+                        </span>
+                      </div>
+                      <div className="flex flex-col md:flex-row md:justify-center md:space-x-16 w-full">
+                        <div className="flex flex-col items-center md-6 md:mb-0">
+                          <img
+                            src="Wiki-wordmark (55).png"
+                            alt="One Piece Wiki"
+                            className="h-14 mb-2"
+                          />
+                          <span className="font-bold text-purple-900">
+                            One Piece
+                          </span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                          <img
+                            src="Wiki-wordmark (56).png"
+                            alt="Witch Watch Wiki"
+                            className="h-14 mb-2"
+                          />
+                          <span className="font-bold text-purple-900">
+                            Witch Watch
+                          </span>
+                        </div>
+                      </div>
+                      <div className="mt-8 text-center w-full">
+                        <span className="font-bold text-gray-700 text-lg">
+                          Upcoming Anime Spotlights
+                        </span>
+                        <span className="italic text-gray-500 ml-2 text-base">
+                          <a href="#"> [Click to Expand]</a>
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Side Content */}
-                <div className="lg:w-1/3 lg:sticky lg:top-4 lg:self-start">
+                <div className="lg:w-1/4  lg:top-4 lg:self-start">
                   <div className="border-2 border-[#DB49AC] rounded">
                     {/* Latest Chapters */}
                     <div className="pt-1 pr-1 pl-1">
@@ -1258,15 +1340,15 @@ export default function ToLoveRuWiki() {
                         Latest Chapters
                       </div>
                       <div className="p-4 bg-white">
-                        <p className="mb-2 text-purple-600">
+                        <p className="mb-2 text-[purple]">
                           Newest chapters of <em>To LOVE-Ru Darkness</em>:
                         </p>
-                        <p className="mb-2 text-purple-600">
+                        <p className="mb-2 text-[purple]">
                           April 2019 one-shot -{" "}
                           <strong>SB - B24 - B25 - 77</strong>
                         </p>
                         <p className="text-center mt-4">
-                          <Link to="#" className="text-purple-800">
+                          <Link to="#" className="text-[purple] ">
                             All Chapters
                           </Link>
                         </p>
@@ -1280,11 +1362,14 @@ export default function ToLoveRuWiki() {
                       </div>
                       <div className="p-4 bg-white">
                         <div className="flex justify-center mb-4">
-                          <img
-                            src="To Love Ru/mae.jpg"
-                            alt="Kurosaki Mea"
-                            className="max-w-full h-80"
-                          />
+                          <div className="w-full max-w-xs aspect-[3/4] relative">
+                            <img
+                              src="To Love Ru/mae.jpg"
+                              alt="Kurosaki Mea"
+                              className="w-full h-full object-cover rounded"
+                              style={{ maxHeight: 320 }}
+                            />
+                          </div>
                         </div>
                         <p className="text-sm text-black">
                           <strong>Kurosaki Mea</strong> is one of the main
@@ -1296,7 +1381,7 @@ export default function ToLoveRuWiki() {
                           .
                         </p>
                         <p className="text-center mt-4">
-                          <Link to="#" className="text-purple-800">
+                          <Link to="#" className="text-[purple]">
                             Read More...
                           </Link>
                         </p>
@@ -1313,16 +1398,19 @@ export default function ToLoveRuWiki() {
                       </div>
                       <div className="p-4 bg-white">
                         <div className="flex justify-center">
-                          <img
-                            src="To Love Ru/lalafeatured.jpg"
-                            alt="Featured Image"
-                            className="max-w-full"
-                          />
+                          <div className="w-full max-w-xs aspect-[3/4] relative">
+                            <img
+                              src="To Love Ru/lalafeatured.jpg"
+                              alt="Featured Image"
+                              className="w-full h-full object-cover rounded"
+                              style={{ maxHeight: 420 }}
+                            />
+                          </div>
                         </div>
                         <p className="text-black text-center">
                           Lala from To LOVE-Ru Chapter 63.
                         </p>
-                        <h3 className="text-purple-800 text-center mt-4 font-extrabold">
+                        <h3 className="text-[purple] text-center mt-4 font-extrabold">
                           Previous Featured Images
                         </h3>
                       </div>
@@ -1333,16 +1421,16 @@ export default function ToLoveRuWiki() {
                       <div className="bg-[#DB49AC] text-[#F9D910] text-center py-1 text-xl font-extrabold">
                         Featured Video
                       </div>
-                      <div className="p-4 bg-white">
+                      <div className="pt-3 bg-white">
                         <div className="relative">
                           <iframe
-                            width="100%"
-                            height="250"
                             src="https://www.youtube.com/embed/cc-abnvIgRs"
                             title="To LOVE-Ru Featured Video"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
+                            className="w-full aspect-video rounded"
+                            style={{ minHeight: 200, background: "#000" }}
                             onError={() => {
                               console.log("Video failed to load");
                             }}

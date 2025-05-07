@@ -7,13 +7,14 @@ export default function UserProfile() {
       <section className="container mx-auto px-4 py-10">
         <div className="bg-white border border-gray-300 rounded-2xl overflow-hidden shadow-md">
           {/* Cover Image */}
-          <div className="h-60">
-            <img
-              src="Jujutsu Kaisen/12-YmsluV1fMnUnv-1-1536x1122.jpg"
-              alt="Cover image"
-              className="w-full h-full object-top object-cover"
-            />
-          </div>
+            <div className="h-40">
+              <img
+                src="To Love Ru/toloveru-banner.jpg"
+                alt="Cover image"
+                className="w-full h-full object-cover object-top rounded-t-2xl"
+                style={{ objectFit: "contain" }}
+              />
+            </div>
 
           {/* Profile Content */}
           <div className="p-6">
@@ -22,7 +23,7 @@ export default function UserProfile() {
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded overflow-hidden">
                   <img
-                    src="/any-relevance-toward-the-marking.png"
+                    src="hello-4x.gif"
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />

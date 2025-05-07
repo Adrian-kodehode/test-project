@@ -299,6 +299,31 @@ export default function ToloveRu() {
             </div>
           </motion.div>
 
+          <motion.div variants={fadeInUp} className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                src="https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png"
+                alt=""
+                className="h-full rounded w-full object-cover object-center mb-6"
+              />
+              <h3 className="tracking-widest text-pink-400 text-xs font-medium title-font">
+                MAIN CHARACTER
+              </h3>
+              <h2 className="text-lg text-white font-medium title-font mb-4">
+              Yūki Rito
+              </h2>
+              <p className="leading-relaxed text-base">
+                Yūki Rito is the main male protagonist of the To Love-Ru series,
+                and its sequel, To Love-Ru Darkness. He is a normal 16-year-old
+                student of Sainan High, who has a big crush on Sairenji Haruna,
+                to whom he attempted numerous times to confess to but has met
+                failure each time. It was only by accident that he met Lala
+                Satalin Deviluke, an alien princess he accidentally became
+                engaged to.
+              </p>
+            </div>
+          </motion.div>
+
           {/* Add more character cards as needed */}
         </div>
       </div>
