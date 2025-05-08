@@ -1,20 +1,19 @@
 import React from "react";
 
-
 export default function UserProfile() {
   return (
     <div className="min-h-svh bg-gray-100">
       <section className="container mx-auto px-4 py-10">
         <div className="bg-white border border-gray-300 rounded-2xl overflow-hidden shadow-md">
           {/* Cover Image */}
-            <div className="h-40">
-              <img
-                src="To Love Ru/toloveru-banner.jpg"
-                alt="Cover image"
-                className="w-full h-full object-cover object-top rounded-t-2xl"
-                style={{ objectFit: "contain" }}
-              />
-            </div>
+          <div className="h-40">
+            <img
+              src="To Love Ru/toloveru-banner.jpg"
+              alt="Cover image"
+              className="w-full h-full object-scaldown"
+              style={{ objectFit: "contain" }}
+            />
+          </div>
 
           {/* Profile Content */}
           <div className="p-6">
@@ -30,9 +29,11 @@ export default function UserProfile() {
                 </div>
                 <div>
                   <h6 className="text-lg font-semibold text-gray-800">
-                    Emma Roberts
+                    Hatsune Miku
                   </h6>
-                  <p className="text-sm text-gray-600">emma.roberts@gmail.com</p>
+                  <p className="text-sm text-gray-600">
+                    hatsune.miku@gmail.com
+                  </p>
                 </div>
               </div>
 
@@ -80,8 +81,6 @@ export default function UserProfile() {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 }

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "@remix-run/react";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 import { shonenJumpWikis } from "app/components/shonenJumpWikis";
+import { a } from "node_modules/framer-motion/dist/types.d-DDSxwf0n";
 
 // Add these styles at the beginning of your file
 const slideStyles = {
@@ -492,88 +493,108 @@ export default function ToLoveRuWiki() {
                           name: "Nana",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/1/1a/Nana_Astar_Deviluke_TLRD_Manga.png",
+                          route: "/toloverucharacter/nana",
                         },
                         {
                           name: "Lala",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
+                          route: "/toloverucharacter/lala",
                         },
                         {
                           name: "Rito",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
+                          route: "/toloverucharacter/rito",
                         },
                         {
                           name: "Haruna",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/c/c8/Haruna_Sairenji_TLRD_Manga.png",
+                          route: "/toloverucharacter/haruna",
                         },
                         {
                           name: "Momo",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
+                          route: "/toloverucharacter/momo",
                         },
                         {
                           name: "Mikan",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/0/08/Mikan_Yuuki_TLRD_Manga.png",
+                          route: "/toloverucharacter/mikan",
                         },
                         {
                           name: "Yami",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/3/30/Yami_TLRD_Manga.png",
+                          route: "/toloverucharacter/yami",
                         },
                         {
                           name: "Mea",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/6/61/Mea_TLRD_Manga.png",
+                          route: "/toloverucharacter/mea",
                         },
                         {
                           name: "Nemesis",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/2/2b/Nemesis_TLRD_Manga.png",
+                          route: "/toloverucharacter/nemesis",
                         },
                         {
                           name: "Yui",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/1/19/Yui_Kotegawa_TLRD_Manga.png",
+                          route: "/toloverucharacter/yui",
                         },
                         {
                           name: "Run",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/d/d8/Run_Elsie_Jewelria_TLRD_Manga.png",
+                          route: "/toloverucharacter/run",
                         },
                         {
                           name: "Kyouko",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/4/46/Kyouko_Kirisaki_TLRD_Manga.png",
+                          route: "/toloverucharacter/kyouko",
                         },
                         {
                           name: "Saki",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/6/67/Saki_Tenjouin_TLRD_Manga.png",
+                          route: "/toloverucharacter/saki",
                         },
                         {
                           name: "Rin",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/5/5f/Rin_Kujou_TLRD_Manga.png",
+                          route: "/toloverucharacter/rin",
                         },
                         {
                           name: "Tearju",
                           image:
                             "https://static.wikia.nocookie.net/to-loveru/images/e/e9/Tearju_Lunatique_TLRD_Manga.png",
+                          route: "/toloverucharacter/tearju",
                         },
                       ].map((character, index) => (
-                        <div key={index} className="relative text-center">
+                        <Link
+                          key={index}
+                          to={character.route}
+                          className="relative text-center block group"
+                          style={{ textDecoration: "none" }}
+                        >
                           <img
                             src={character.image}
                             alt={character.name}
-                            className="w-full h-auto border-4 border-[purple] rounded-lg"
+                            className="w-full h-auto border-4 border-[purple] rounded-lg group-hover:opacity-80 transition"
                           />
                           <div className="absolute bottom-1 right-0.5 bg-[purple] text-white text-xl px-1 py-1 rounded">
                             <strong>{character.name}</strong>
                           </div>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -1255,6 +1276,108 @@ export default function ToLoveRuWiki() {
                       <strong className="text-[purple] ml-1">
                         Aministrator.
                       </strong>
+                    </div>
+                  </div>
+
+                  {/* Spotlight */}
+                  <div className="border border-gray-200 mt-10 mb-10 rounded-lg bg-[#faf6ff] p-4">
+                    <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+                      {/* Left Logo and Links */}
+                      <div className="flex flex-col items-center md:w-1/4">
+                        <img
+                          src="To Love Ru/Wiki.png"
+                          alt="Animanga Wiki"
+                          className="w-32 mb-2"
+                        />
+                        <div className="text-center font-bold text-[#1a1a1a] text-lg md-2">
+                          ANIMANGA WIKI
+                        </div>
+                        <div className="flex flex-col items-center space-y-1 text-[purple] font-semibold">
+                          <a href="#" className="hover:underline">
+                            Discuss
+                          </a>
+                          <a href="#" className="hover:underline">
+                            Wiki List
+                          </a>
+                          <a href="#" className="hover:underline">
+                            Spotlight Request
+                          </a>
+                        </div>
+                        {/* Center: Season and Lists */}
+                        <div className="flex-1 px-4">
+                          <div className="font-bold text-gray-800 mb-2">
+                            Spring Season 2025 Anime Wikis
+                          </div>
+                          <div className="font-semibold text-gray-700 mb-2">
+                            TV Anime
+                          </div>
+                          <li>
+                            <span className="font-bold">
+                              #Compass 2.0 Sentō Setsuri Kaiseki System
+                            </span>
+                          </li>
+                          <li>
+                            <span className="font-bold">
+                              Aharen-san wa Hakarenai Season 2
+                            </span>
+                          </li>
+                          <li>
+                            <span className="font-bold">
+                              Ballpark de Tsukamaete!
+                            </span>
+                          </li>
+                        </div>
+                        {/* Right: Spotlights */}
+                        <div className="flex flex-col items-center">
+                          <div className="text-center font-bold text-lg text-[#7c1fa0] mb-2">
+                            Anime / Manga Hub
+                            <span className="font-normal text-black">May</span>
+                            <span className="text-[purple]">Spotlighta:</span>
+                          </div>
+                          <div className="flex flex-row flex-wrap justify-center items-center gap-8 mb-4">
+                            <div className="flex flex-col items-center">
+                              <img
+                                src="To Love Ru/Site-logo (3).png"
+                                alt="Space Battleship Yamato"
+                                className="h-12 mb-1"
+                              />
+                              <span className="font-semibold text-gray-800">
+                                Space Battleship Yamato
+                              </span>
+                            </div>
+                            <div className="flex flex-col items-center">
+                              <img
+                                src="To Love Ru/Site-logo (4).png"
+                                alt="HENNEKO"
+                                className="h-12 mb-1"
+                              />
+                              <span className="font-semibold text-gray-800">
+                                HENNEKO
+                              </span>
+                            </div>
+                            <div className="flex flex-col items-center">
+                              <img
+                                src="public/To Love Ru/Wiki-wordmark (57).png"
+                                alt="Centuria"
+                                className="h-12 mb-1"
+                              />
+                              <span className="font-semibold text-gray-800">
+                                Centuria
+                              </span>
+                            </div>
+                          </div>
+                          <div className="flex flex-wrap justify-center gap-x-2 text-xs text-[purple] font-medium">
+                            <span>All</span>・<span>Action</span>・
+                            <span>Adventure</span>・<span>Comedy</span>・
+                            <span>Drama</span>・<span>Fantasy</span>・
+                            <span>Horror</span>・<span>Mecha</span>・
+                            <span>Mystery</span>・<span>Romance</span>・
+                            <span>Sci-fi</span>・<span>Slice of Life</span>・
+                            <span>Sports</span>・<span>Supernatural</span>・
+                            <span>Memes</span>・<span>Funimation</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 

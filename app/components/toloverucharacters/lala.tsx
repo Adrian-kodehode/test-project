@@ -134,7 +134,13 @@ export default function LalaCharacterPage() {
                     number: 3,
                   },
                 ].map((page, index) => (
-                  <div key={index} className="relative">
+                  <Link
+                    key={index}
+                    to={`/test/characters/${encodeURIComponent(
+                      page.name.toLowerCase().replace(/\s+/g, "-")
+                    )}`}
+                    className="relative"
+                  >
                     <div className="relative">
                       <img
                         src={page.image}
@@ -148,7 +154,7 @@ export default function LalaCharacterPage() {
                     <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
                       {page.name}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
