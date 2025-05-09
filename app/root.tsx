@@ -32,20 +32,19 @@ export const links: LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
-  
+
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/public/To Love Ru/momo.jpg" type="image/png" />
         <Meta />
         <Links />
       </head>
       <body>
         {location.pathname !== "/home" && <NewHeader />}
-        <div className="pb-24">
-          {children}
-        </div>
+        <div className="pb-24">{children}</div>
         <PlaybackBar />
         <ScrollRestoration />
         <Scripts />

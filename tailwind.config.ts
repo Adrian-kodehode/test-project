@@ -45,6 +45,11 @@ export default {
         },
       },
       fontFamily: {
+        zentry: ["Zentry", "sans-serif"],
+        general: ["general", "sans-serif"],
+        "circular-web": ["Circular-web", "sans-serif"],
+        "robert-medium": ["Robert-medium", "sans-serif"],
+        "robert-regular": ["Robert-regular", "sans-serif"],
         sans: [
           "Gotham",
           "Inter",

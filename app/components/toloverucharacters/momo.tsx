@@ -1,18 +1,19 @@
 import React from "react";
 
-export const Kyouko = () => {
+export const Momo = () => {
   return (
     <div className="bg-[#FFF4FB] flex flex-row items-start min-h-screen">
       {/* Left: Main text content */}
       <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
         <p>
-          <strong>Kirisaki Kyōko</strong> is a half-human half-Flamian (alien)
-          hybrid girl, who has the ability to create and control fire at will,
-          which she uses in her TV show. Kyouko is a famous idol, best known for
-          her role as Magical Kyouko, the fictional magical girl character and
-          star of her television series, which Lala Satalin Deviluke loves
-          watching. The producers of her show know about her alien heritage,
-          some being aliens themselves.
+          <strong>Momo Belia Deviluke</strong> is Nana's twin, as well as Lala's
+          younger sister. As Gid's daughter, she holds the title of "Third
+          Princess of Deviluke" as she is the youngest out of his three
+          daughters. In To Love-Ru, she used to be seen with Nana all the time,
+          but in To Love-Ru Darkness, they are not together as often as before.
+          This is because while Nana became friends with Kurosaki Mea, whom she
+          hangs out with more often, Momo becomes more attached to Rito and
+          focuses on expanding "The Harem Plan" she has for him.
         </p>
       </div>
       {/* Right: Info card sidebar */}
@@ -20,13 +21,13 @@ export const Kyouko = () => {
         <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
           <div className="text-center mb-4 w-full">
             <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
-              Kirisaki Kyōko
+              Momo Belia Deviluke
             </h1>
           </div>
           <div className="flex justify-center mb-4 w-full">
             <img
-              src="https://static.wikia.nocookie.net/to-loveru/images/4/46/Kyouko_Kirisaki_TLRD_Manga.png"
-              alt="Kirisaki Kyōko"
+              src="/To Love Ru/momo.jpg"
+              alt="Momo Belia Deviluke"
               className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
             />
           </div>
@@ -47,7 +48,7 @@ export const Kyouko = () => {
                     Kanji
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    霧崎 恭子
+                    モモ・ベリア・デビルーク
                   </td>
                 </tr>
                 <tr>
@@ -55,7 +56,7 @@ export const Kyouko = () => {
                     Name
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Kirisaki Kyōko
+                    Momo Belia Deviluke
                   </td>
                 </tr>
                 <tr>
@@ -63,23 +64,16 @@ export const Kyouko = () => {
                     Planet
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Earth/Flame hybrid
+                    Deviluke
                   </td>
                 </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Age
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    17
-                  </td>
-                </tr>
+
                 <tr>
                   <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                     Birthday
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    August 25
+                    August 8th
                   </td>
                 </tr>
                 <tr>
@@ -87,7 +81,7 @@ export const Kyouko = () => {
                     Zodiac Sign
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Virgo
+                    Leo
                   </td>
                 </tr>
                 <tr>
@@ -103,7 +97,7 @@ export const Kyouko = () => {
                     Height
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    162.5 cm
+                    151 cm
                   </td>
                 </tr>
                 <tr>
@@ -111,7 +105,7 @@ export const Kyouko = () => {
                     Weight
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    49.5 kg
+                    45 kg
                   </td>
                 </tr>
                 <tr>
@@ -119,7 +113,7 @@ export const Kyouko = () => {
                     Blood Type
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    O
+                    B
                   </td>
                 </tr>
                 <tr>
@@ -127,7 +121,7 @@ export const Kyouko = () => {
                     Hair Color
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Black
+                    Pink
                   </td>
                 </tr>
                 <tr>
@@ -135,7 +129,7 @@ export const Kyouko = () => {
                     Eye Color
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Light Purple
+                    Purple
                   </td>
                 </tr>
                 {/* Personal Status */}
@@ -147,13 +141,28 @@ export const Kyouko = () => {
                     Personal Status
                   </td>
                 </tr>
-
+                <tr>
+                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                    School
+                  </td>
+                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    Sainan High School
+                  </td>
+                </tr>
+                <tr>
+                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                    Class
+                  </td>
+                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    1-B
+                  </td>
+                </tr>
                 <tr>
                   <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                     Education
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Currently attending Private Madou Girl's Highschool
+                    Currently attending Sainan High School
                   </td>
                 </tr>
                 <tr>
@@ -161,11 +170,7 @@ export const Kyouko = () => {
                     Occupation
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Idol <br />
-                    Singer <br />
-                    Actress <br />
-                    Magician <br />
-                    Campaign Girl <br />
+                    Third Princess of Deviluke
                   </td>
                 </tr>
                 <tr>
@@ -173,10 +178,30 @@ export const Kyouko = () => {
                     Relatives
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Unknown
+                    Lala Satalin Deviluke (Older Sister) <br />
+                    Nana Astar Deviluke (Older Twin) <br />
+                    Gid Lucione Deviluke (Father) <br />
+                    Sephie Michaela Deviluke (Mother)
                   </td>
                 </tr>
-
+                <tr>
+                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                    Martial Status
+                  </td>
+                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    Yūki Rito (harem plan possible leader and mastermind)
+                  </td>
+                </tr>
+                <tr>
+                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                    Unusual Features
+                  </td>
+                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    - Devilukean tail <br />
+                    - Able to communicate with plants <br />
+                    - Perverted <br />
+                  </td>
+                </tr>
                 {/* First Appearance */}
                 <tr>
                   <td
@@ -188,11 +213,10 @@ export const Kyouko = () => {
                 </tr>
                 <tr>
                   <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Chapter 21 (tv character) <br />
-                    Chapter 123 (real)
+                    Manga Debut
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Chapter 35
+                    Chapter 97
                   </td>
                 </tr>
                 <tr>
@@ -200,8 +224,7 @@ export const Kyouko = () => {
                     Anime Debut
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Episode 10 from To LOVE-Ru (anime) (tv character) <br />
-                    Episode 07 from Motto To LOVE-Ru (real)
+                    Episode OVA 4
                   </td>
                 </tr>
                 {/* Voice Actors */}
@@ -218,7 +241,7 @@ export const Kyouko = () => {
                     Japanese VA
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Chiemi Chiba
+                    Aki Toyosaki
                   </td>
                 </tr>
                 <tr>
@@ -226,7 +249,7 @@ export const Kyouko = () => {
                     English VA
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Christine Auten (temporary)
+                    Natalie Rial
                   </td>
                 </tr>
                 <tr>

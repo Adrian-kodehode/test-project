@@ -27,9 +27,15 @@ function VideoPlayerWithChatTranscript() {
         <div className="flex w-full grow shrink-0 basis-0 flex-wrap items-start gap-12">
           <div className="flex grow shrink-0 basis-0 flex-col items-start gap-2">
             <div className="flex w-full flex-col items-start gap-6">
-              <img
+              <video
+                autoPlay={true}
+                controls={false}
+                loop={true}
+                muted={true}
+                playsInline={true}
+                preload="auto"
                 className="h-full w-full flex-none rounded-md object-cover"
-                src="One Piece/one-piece-gear-5.gif"
+                src="My Deer Friend Nokotan _ Opening Movie _ Shikairo Days _ It's Anime - It's Anime (1080p, h264, youtube).mp4"
               />
             </div>
             <div className="flex w-full grow shrink-0 basis-0 items-center gap-4">

@@ -2,8 +2,9 @@ import React from "react";
 
 export const Yami = () => {
   return (
-    <div className="bg-[#FFF4FB] flex justify-end">
-      <div className="text-black w-full pl-5 pt-5">
+    <div className="bg-[#FFF4FB] flex flex-row items-start min-h-screen">
+      {/* Left: Main text content */}
+      <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
         <p>
           <strong>Konjiki no Yami</strong> (金色の闇, Golden Darkness), mostly
           referred to by other characters as <strong>Yami</strong>, is a major
@@ -26,25 +27,24 @@ export const Yami = () => {
           heartless/murdering self that she once was.
         </p>
       </div>
-      <div className="w-full p-5 font-sans flex justify-center">
-        <div className="w-full max-w-3xl border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
+      {/* Right: Info card sidebar */}
+      <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
+        <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
           <div className="text-center mb-4 w-full">
-            <h1 className="text-white bg-[#DB49AC]  text-xl font-bold">
+            <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
               Konjiki no Yami / Golden Darkness
             </h1>
-            <h2 className="text-white bg-[#DB49AC] text-xl">
+            <h2 className="text-white bg-[#DB49AC] text-base p-1 ">
               (Real Name: Eve)
             </h2>
           </div>
-
           <div className="flex justify-center mb-4 w-full">
             <img
               src="/To Love Ru/yami.jpg"
               alt="Konjiki no Yami"
-              className="w-80 h-80 object-cover border-2 border-[#DB49AC] rounded"
+              className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
             />
           </div>
-
           <div className="w-full overflow-x-auto">
             <table className="min-w-full border-separate border-spacing-0">
               <tbody>
@@ -62,7 +62,7 @@ export const Yami = () => {
                     Kanji
                   </td>
                   <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    金色の闇
+                    金色の闇 (イヴ)
                   </td>
                 </tr>
                 <tr>
