@@ -1,267 +1,676 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Momo = () => {
   return (
-    <div className="bg-[#FFF4FB] flex flex-row items-start min-h-screen">
-      {/* Left: Main text content */}
-      <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-        <p>
-          <strong>Momo Belia Deviluke</strong> is Nana's twin, as well as Lala's
-          younger sister. As Gid's daughter, she holds the title of "Third
-          Princess of Deviluke" as she is the youngest out of his three
-          daughters. In To Love-Ru, she used to be seen with Nana all the time,
-          but in To Love-Ru Darkness, they are not together as often as before.
-          This is because while Nana became friends with Kurosaki Mea, whom she
-          hangs out with more often, Momo becomes more attached to Rito and
-          focuses on expanding "The Harem Plan" she has for him.
-        </p>
-      </div>
-      {/* Right: Info card sidebar */}
-      <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
-        <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-          <div className="text-center mb-4 w-full">
-            <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
-              Momo Belia Deviluke
-            </h1>
-          </div>
-          <div className="flex justify-center mb-4 w-full">
+    <div className="ml-64 flex-1">
+      {/* Wiki Logo Header */}
+      <div className="h-44 bg-gradient-to-r from-pink-400 via-pink-500 to-pink-400 relative">
+        <div className="absolute inset-0 overflow-hidden">
+          <img
+            src="https://images7.alphacoders.com/700/700001.png"
+            alt="To Love-Ru Background"
+            className="w-full h-full object-cover opacity-80"
+          />
+        </div>
+        <div className="container mx-auto px-4 h-full flex items-center relative z-10">
+          <a href="/test">
             <img
-              src="/To Love Ru/momo.jpg"
-              alt="Momo Belia Deviluke"
-              className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+              src="To Love Ru/Site-logo (2).png"
+              alt="To LOVE-Ru Wiki"
+              className="h-20"
             />
-          </div>
-          <div className="w-full overflow-x-auto">
-            <table className="min-w-full border-separate border-spacing-0">
-              <tbody>
-                {/* Characteristics */}
-                <tr>
-                  <td
-                    colSpan={2}
-                    className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                  >
-                    Characteristics
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 w-1/3 border border-[#9C2E7A] ">
-                    Kanji
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    モモ・ベリア・デビルーク
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Name
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Momo Belia Deviluke
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Planet
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Deviluke
-                  </td>
-                </tr>
+          </a>
+        </div>
+      </div>
 
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Birthday
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    August 8th
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Zodiac Sign
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Leo
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Gender
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Female
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Height
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    151 cm
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Weight
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    45 kg
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Blood Type
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    B
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Hair Color
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Pink
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Eye Color
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Purple
-                  </td>
-                </tr>
-                {/* Personal Status */}
-                <tr>
-                  <td
-                    colSpan={2}
-                    className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                  >
-                    Personal Status
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    School
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Sainan High School
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Class
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    1-B
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Education
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Currently attending Sainan High School
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Occupation
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Third Princess of Deviluke
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Relatives
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Lala Satalin Deviluke (Older Sister) <br />
-                    Nana Astar Deviluke (Older Twin) <br />
-                    Gid Lucione Deviluke (Father) <br />
-                    Sephie Michaela Deviluke (Mother)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Martial Status
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Yūki Rito (harem plan possible leader and mastermind)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Unusual Features
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    - Devilukean tail <br />
-                    - Able to communicate with plants <br />
-                    - Perverted <br />
-                  </td>
-                </tr>
-                {/* First Appearance */}
-                <tr>
-                  <td
-                    colSpan={2}
-                    className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                  >
-                    First Appearance
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Manga Debut
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Chapter 97
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Anime Debut
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Episode OVA 4
-                  </td>
-                </tr>
-                {/* Voice Actors */}
-                <tr>
-                  <td
-                    colSpan={2}
-                    className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                  >
-                    Voice Actors
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    Japanese VA
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Aki Toyosaki
-                  </td>
-                </tr>
-                <tr>
-                  <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                    English VA
-                  </td>
-                  <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                    Natalie Rial
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    colSpan={2}
-                    className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                  >
-                    Gallery
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      {/* Wiki Navigation */}
+      <nav className="bg-[#DB49AC] text-white shadow">
+        <div className="container mx-auto px-4">
+          <ul className="flex">
+            <li className="py-3 px-4 hover:bg-pink-600 flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+                />
+              </svg>
+              EXPLORE
+            </li>
+            <li className="py-3 px-4 hover:bg-pink-600">MEDIA</li>
+            <li className="py-3 px-4 hover:bg-pink-600">
+              <Link to="/toloveru">CHARACTERS</Link>
+            </li>
+            <li className="py-3 px-4 hover:bg-pink-600">COMMUNITY</li>
+            <li className="py-3 px-4 hover:bg-pink-600">TOOLS</li>
+            <li className="py-3 px-4 hover:bg-pink-600">
+              <Link to="/shop">SHOP</Link>
+            </li>
+            <li className="py-3 px-4 hover:bg-pink-600">
+              <Link to="/video">VIDEO</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div className="bg-[#FFF4FB] flex flex-row items-start justify-center min-h-screen">
+        <div className="w-64 border-r border-gray-200 bg-white text-center fixed left-0 top-0 h-full sidebar transition-transform duration-300">
+          {/* Wiki Title */}
+          <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
+            <div className="flex items-center justify-between">
+              <h2 className="font-bold text-gray-800">To LOVE-Ru Wiki</h2>
+              <button
+                onClick={() => {
+                  const sidebar = document.querySelector(".sidebar");
+                  const mainContent = document.querySelector(".ml-64");
+                  sidebar?.classList.toggle("-translate-x-full");
+                  mainContent?.classList.toggle("ml-0");
+                }}
+                className="p-2 hover:bg-gray-100 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Others Like You Viewed Section */}
+          <div className="p-0">
+            <h3 className="text-sm font-bold py-2 px-4 text-purple-900 border-b border-gray-200">
+              Others Like You Viewed
+            </h3>
+
+            <div>
+              <a href="/nana">
+                <img src="To Love Ru/nana.jpg" alt=""></img>
+              </a>
+              <p className="text-xs text-center font-medium text-purple-900 mt-1 line-clamp-2">
+                Nana Astar Deviluke
+              </p>
+            </div>
+            {/* Character list with square images */}
+            <div className="divide-y divide-gray-200">
+              {[
+                {
+                  name: "Kotegawa Yui",
+                  image:
+                    "https://static.wikia.nocookie.net/to-loveru/images/1/19/Yui_Kotegawa_TLRD_Manga.png",
+                  route: "/yui",
+                },
+                {
+                  name: "Yūki Mikan",
+                  image:
+                    "https://static.wikia.nocookie.net/to-loveru/images/0/08/Mikan_Yuuki_TLRD_Manga.png",
+                  route: "/mikan",
+                },
+                {
+                  name: "Tearju Lunatique",
+                  image:
+                    "https://static.wikia.nocookie.net/to-loveru/images/e/e9/Tearju_Lunatique_TLRD_Manga.png",
+                  route: "/tearju",
+                },
+                {
+                  name: "Lala Satalin Deviluke",
+                  image: "To Love Ru/lala.jpg",
+                  route: "/lala",
+                },
+                {
+                  name: "Sairenji Haruna",
+                  image:
+                    "https://static.wikia.nocookie.net/to-loveru/images/c/c8/Haruna_Sairenji_TLRD_Manga.png",
+                  route: "/haruna",
+                },
+              ].map((character, index) => (
+                <a
+                  key={index}
+                  href={character.route}
+                  className="flex items-center py-2 px-4 hover:bg-gray-50 transition-colors"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="w-12 h-12 mr-3 flex-shrink-0 bg-pink-100 rounded overflow-hidden">
+                    {character.image ? (
+                      <img
+                        src={character.image}
+                        alt={character.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-pink-200 flex items-center justify-center">
+                        <span className="text-pink-500 font-medium text-xs">
+                          {character.name.split(" ")[0][0]}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <span className="font-medium text-sm text-purple-900">
+                    {character.name}
+                  </span>
+                </a>
+              ))}
+            </div>
+
+            {/* Top Pages this Week */}
+            <h3 className="text-sm font-bold py-2 px-4 mt-2 text-purple-900 border-t border-b border-gray-200">
+              Top Pages this Week
+            </h3>
+
+            <div className="p-2">
+              <div className="grid grid-cols-2 gap-2">
+                {[
+                  {
+                    name: "Lala Satalin Deviluke",
+                    image:
+                      "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
+                    number: 1,
+                  },
+                  {
+                    name: "Yuki Rito",
+                    image:
+                      "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
+                    number: 2,
+                  },
+                  {
+                    name: "Momo Deviluke",
+                    image:
+                      "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
+                    number: 3,
+                  },
+                ].map((page, index) => (
+                  <div key={index} className="relative">
+                    <div className="relative">
+                      <img
+                        src={page.image}
+                        alt={page.name}
+                        className="w-full aspect-square object-cover"
+                      />
+                      <div className="absolute top-0 left-0 bg-purple-800 text-white w-5 h-5 flex items-center justify-center text-xs">
+                        {page.number}
+                      </div>
+                    </div>
+                    <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
+                      {page.name}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Left: Main text content */}
+        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+          <p>
+            <strong>Momo Belia Deviluke</strong> is Nana's twin, as well as
+            Lala's younger sister. As Gid's daughter, she holds the title of
+            "Third Princess of Deviluke" as she is the youngest out of his three
+            daughters. In To Love-Ru, she used to be seen with Nana all the
+            time, but in To Love-Ru Darkness, they are not together as often as
+            before. This is because while Nana became friends with Kurosaki Mea,
+            whom she hangs out with more often, Momo becomes more attached to
+            Rito and focuses on expanding "The Harem Plan" she has for him.
+          </p>
+          <nav className="w-44 mt-5 bg-white text-center border rounded mb-6">
+            <div className="flex items-center justify-between px-3 py-2 border-b">
+              <span className="font-semibold text-gray-700 flex items-center text-sm">
+                <svg
+                  className="w-4 h-4 mr-1 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+                Contents
+              </span>
+              <button className="text-xs text-[purple] hover:underline font-semibold">
+                [hide]
+              </button>
+            </div>
+            <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
+              <li>
+                <a href="#appearance" className="hover:underline">
+                  {" "}
+                  Appearance
+                </a>
+              </li>
+              <li>
+                <a href="#personaøity" className="hover:underline">
+                  Personality
+                </a>
+              </li>
+              <li>
+                <a href="#history" className="hover:underline">
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#powers" className="hover:underline">
+                  Powers and Abilities
+                </a>
+              </li>
+              <li>
+                <a href="#personaøity" className="hover:underline">
+                  Equipment
+                </a>
+              </li>
+
+              <li>
+                <a href="#appellations" className="hover:underline">
+                  Appellations
+                </a>
+              </li>
+              <li>
+                <a href="#etymology" className="hover:underline">
+                  Etymology
+                </a>
+              </li>
+              <li>
+                <a href="#trivia" className="hover:underline">
+                  Trivia
+                </a>
+              </li>
+              <li>
+                <a href="#references" className="hover:underline">
+                  Refrences
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
+              Appearance
+            </h2>
+          </div>
+          <p>
+            Momo has short pink hair and purple eyes. In the To LOVE-Ru manga,
+            Momo's hair was frizzy, but in the beginning of To LOVE-Ru Darkness
+            she straightened her hair out in hopes that Rito would see her as
+            more mature. She also has two small flowers on her hair. Like all
+            Devilukeans, Momo has a long black tail at her back, and like her
+            sisters, she has a spade-shaped tail end. Momo also has a bigger
+            bust than Nana, which the latter sometimes envies. When Momo turns
+            into "evil Momo", she acquires a short fang similar to Nana's except
+            that Nana's fang is on her left side while Momo's is on her right
+            side. Her pupils also become thinner and pointed.
+          </p>
+          <br />
+          <p>
+            According to the official databook, Momo's measurements were
+            B78-W54-H78 in the original manga. In To LOVE-Ru: Darkness, the
+            Venus Momo Club members estimated her measurements to be B80-W54-H79
+            which is later confirmed[1].
+          </p>
+          <br />
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mb-4" id="personality">
+              Personality
+            </h2>
+            <p>
+              While other characters would describe her as sweet, kindhearted
+              and innocent, the real Momo is above all else highly perverted, a
+              side of herself which she doesn't show to others much, with the
+              exception of Rito, whom she loves and lusts for. She often
+              fantasizes perverted situations with Rito even if it's him with
+              another girl, and desires for him to become sexually active
+              towards her. Sometimes, whenever Momo gets caught up in the moment
+              of imagining an ecchi situation with Rito and some other girl, she
+              has a tendency to drool. She often sneaks into his bed at night
+              half naked to sleep with him because, in his sleep, he becomes
+              much more frisky and physically active than he is aware of. She is
+              essentially the complete polar opposite of Rito Yuuki.
+            </p>
+            <br />
+            <p>
+              She seems to enjoy physical pleasure so much that it's difficult
+              to determine whether or not she is mistaking lust for love. One of
+              the main reasons that she fell in love with Rito is because she
+              loves his unintentional lustful tendencies which he shows when
+              asleep. She doesn't care if she is not Rito's favorite lover, and
+              is perfectly satisfied being one of many partners, and hopes that
+              Rito's other love interests are also as willing to compromise and
+              share their love for Rito. She even tempted Rito with an offer of
+              his own "flower garden of girls". Nonetheless, whatever way she
+              interprets love, she at least takes it seriously. She is not
+              willing to show her lustful side to anyone or be groped by anyone
+              except Rito. She turned down the chance to be accidentally kissed
+              by Rito in his sleep, wanting to receive a kiss from him only when
+              he wants to.
+            </p>
+            <br />
+            <p>
+              However, after her mother visits her and questions her if her
+              heart is fine with her plan, Momo begins to see her own Harem Plan
+              in a more logical perspective. While she convinces herself that
+              she would be perfectly content with being a part of Rito's harem,
+              she is now showing obvious signs of reluctance and doubting if she
+              would be truly happy with sharing Rito with all of the other
+              girls.
+            </p>
+            <br />
+            <p>
+              She is very caring towards plants, due to her ability to
+              communicate with them, and treats them as her friends and should
+              the situation be fit to their abilities, her tools and weapons. In
+              fact she notes one of the reasons she fell for Rito was his
+              kindness towards Celine and the plants in his garden, after which
+              she only progressively falls deeper in love with him, which
+              gradually goes from teasing him, to sleeping in his bed, to
+              conducting the Harem Plan all to secure her place beside him.
+            </p>
+            <br />
+            <p>
+              Momo is also known for her yandere tendencies, which some
+              characters who truly know her would describe to be the real Momo.
+              She is generally sweeter than her twin sister, but develops a bad
+              attitude whenever Nana takes credit for something they do. She
+              also shows a darker and more sinister side of herself whenever her
+              friends are in trouble, and she becomes more mischievous and
+              hostile. Some examples of this are when Nana and Yami were in
+              trouble on Planet Mistletoe, when the VMC planned to beat up Rito,
+              and when Yami, Mikan and Rito were threatened by Azenda. People
+              have generally stated that Momo becomes very scary when this
+              occurs. Momo calls this her battle state, a state which Yami and
+              Mea have noted that she has a tremendous amount of bloodlust.
+            </p>
+            <br />
+            <p>
+              Although she can be rather perverse and even selfish with her
+              desires on occasions, she is still a very kind person to those she
+              cares about and is willing to do anything to make them happy,
+              including helping Rito choose more than one woman when he
+              obviously cares about so many. Many of her perverted antics, while
+              also being for her own enjoyment, are more often than not done to
+              titillate and arouse Rito out of love and lust at the same time.
+              She's even willing to go to the extent of being absolutely
+              protective over others, like when she made it her current goal at
+              a time to make sure Rito wasn't harmed by Yami, and threatening
+              the VMC to let Rito go and apologize to him after beating him up
+              and promising to do worse.
+            </p>
+            <br />
+            <p>
+              Momo occasionally fiddles with her hair when thinking over
+              important situations concerning either Nemesis or her Harem plan,
+              which she would seem very serious about.
+            </p>
+            <br />
+            <p>
+              Like Rito, she also has an interest in playing video games, most
+              notably when buying love sim games for ideas for her "harem plan".
+            </p>
+          </div>
+        </div>
+        {/* Right: Info card sidebar */}
+        <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
+          <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white text-center shadow-lg flex flex-col items-center">
+            <div className="text-center mb-4 w-full">
+              <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
+                Momo Belia Deviluke
+              </h1>
+            </div>
+            <div className="flex justify-center mb-4 w-full">
+              <img
+                src="/To Love Ru/momo.jpg"
+                alt="Momo Belia Deviluke"
+                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+              />
+            </div>
+            <div className="w-full overflow-x-auto">
+              <table className="min-w-full border-separate border-spacing-0">
+                <tbody>
+                  {/* Characteristics */}
+                  <tr>
+                    <td
+                      colSpan={2}
+                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
+                    >
+                      Characteristics
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 w-1/3 border border-[#9C2E7A] ">
+                      Kanji
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      モモ・ベリア・デビルーク
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Name
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Momo Belia Deviluke
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Planet
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Deviluke
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Birthday
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      August 8th
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Zodiac Sign
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Leo
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Gender
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Female
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Height
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      151 cm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Weight
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      45 kg
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Blood Type
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      B
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Hair Color
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Pink
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Eye Color
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Purple
+                    </td>
+                  </tr>
+                  {/* Personal Status */}
+                  <tr>
+                    <td
+                      colSpan={2}
+                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
+                    >
+                      Personal Status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      School
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Sainan High School
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Class
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      1-B
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Education
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Currently attending Sainan High School
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Occupation
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Third Princess of Deviluke
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Relatives
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Lala Satalin Deviluke (Older Sister) <br />
+                      Nana Astar Deviluke (Older Twin) <br />
+                      Gid Lucione Deviluke (Father) <br />
+                      Sephie Michaela Deviluke (Mother)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Martial Status
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Yūki Rito (harem plan possible leader and mastermind)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Unusual Features
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      - Devilukean tail <br />
+                      - Able to communicate with plants <br />
+                      - Perverted <br />
+                    </td>
+                  </tr>
+                  {/* First Appearance */}
+                  <tr>
+                    <td
+                      colSpan={2}
+                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
+                    >
+                      First Appearance
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Manga Debut
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Chapter 97
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Anime Debut
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Episode OVA 4
+                    </td>
+                  </tr>
+                  {/* Voice Actors */}
+                  <tr>
+                    <td
+                      colSpan={2}
+                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
+                    >
+                      Voice Actors
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      Japanese VA
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Aki Toyosaki
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
+                      English VA
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Natalie Rial
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      colSpan={2}
+                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
+                    >
+                      Gallery
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

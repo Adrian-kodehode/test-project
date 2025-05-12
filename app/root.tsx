@@ -43,7 +43,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {location.pathname !== "/home" && <NewHeader />}
+        {location.pathname !== "/home" &&
+          location.pathname !== "/yami" &&
+          location.pathname !== "/momo" &&
+          location.pathname !== "/yui" &&
+          location.pathname !== "/mea" &&
+          location.pathname !== "/test" &&
+          location.pathname !== "/mikan" &&
+          location.pathname !== "/kyouko" &&
+          location.pathname !== "/haruna" &&
+          location.pathname !== "/rito" &&
+          location.pathname !== "/nana" &&
+          location.pathname !== "/lala" &&
+          location.pathname !== "/rin" &&
+          location.pathname !== "/run" &&
+          location.pathname !== "/saki" &&
+          location.pathname !== "/tearju" &&
+          location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         <PlaybackBar />
         <ScrollRestoration />
@@ -61,7 +77,21 @@ export default function App() {
       <Outlet />
       {location.pathname !== "/music" &&
         location.pathname !== "/home" &&
-        location.pathname !== "/test" &&
+        // location.pathname !== "/test" &&
+        location.pathname !== "/momo" &&
+        location.pathname !== "/nana" &&
+        location.pathname !== "/lala" &&
+        location.pathname !== "/rito" &&
+        location.pathname !== "/yami" &&
+        location.pathname !== "/mea" &&
+        location.pathname !== "/yui" &&
+        location.pathname !== "/mikan" &&
+        location.pathname !== "/haruna" &&
+        location.pathname !== "/rin" &&
+        location.pathname !== "/run" &&
+        location.pathname !== "/saki" &&
+        location.pathname !== "/tearju" &&
+        location.pathname !== "/nemesis" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );

@@ -218,65 +218,73 @@ export default function ToLoveRuWiki() {
               </h3>
 
               <div>
-                <img src="To Love Ru/nana.jpg" alt=""></img>
+                <a href="/nana">
+                  <img src="To Love Ru/nana.jpg" alt=""></img>
+                </a>
                 <p className="text-xs text-center font-medium text-purple-900 mt-1 line-clamp-2">
                   Nana Astar Deviluke
                 </p>
               </div>
               {/* Character list with square images */}
               <div className="divide-y divide-gray-200">
-                {[
-                  {
-                    name: "Kotegawa Yui",
-                    image:
-                      "https://static.wikia.nocookie.net/to-loveru/images/1/19/Yui_Kotegawa_TLRD_Manga.png",
-                  },
-                  {
-                    name: "Yūki Mikan",
-                    image:
-                      "https://static.wikia.nocookie.net/to-loveru/images/0/08/Mikan_Yuuki_TLRD_Manga.png",
-                  },
-                  {
-                    name: "Tearju Lunatique",
-                    image:
-                      "https://static.wikia.nocookie.net/to-loveru/images/e/e9/Tearju_Lunatique_TLRD_Manga.png",
-                  },
-                  {
-                    name: "Nana Astar Deviluke",
-                    image:
-                      "https://static.wikia.nocookie.net/to-loveru/images/1/1a/Nana_Astar_Deviluke_TLRD_Manga.png",
-                  },
-                  {
-                    name: "Sairenji Haruna",
-                    image:
-                      "https://static.wikia.nocookie.net/to-loveru/images/c/c8/Haruna_Sairenji_TLRD_Manga.png",
-                  },
-                ].map((character, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center py-2 px-4 hover:bg-gray-50"
-                  >
-                    <div className="w-12 h-12 mr-3 flex-shrink-0 bg-pink-100 rounded overflow-hidden">
-                      {character.image ? (
-                        <img
-                          src={character.image}
-                          alt={character.name}
-                          className="w-full h-full object-cover"
-                        />
-                      ) : (
-                        <div className="w-full h-full bg-pink-200 flex items-center justify-center">
-                          <span className="text-pink-500 font-medium text-xs">
-                            {character.name.split(" ")[0][0]}
-                          </span>
-                        </div>
-                      )}
+            {[
+              {
+                name: "Kotegawa Yui",
+                image:
+                  "https://static.wikia.nocookie.net/to-loveru/images/1/19/Yui_Kotegawa_TLRD_Manga.png",
+                route: "/yui",
+              },
+              {
+                name: "Yūki Mikan",
+                image:
+                  "https://static.wikia.nocookie.net/to-loveru/images/0/08/Mikan_Yuuki_TLRD_Manga.png",
+                route: "/mikan",
+              },
+              {
+                name: "Tearju Lunatique",
+                image:
+                  "https://static.wikia.nocookie.net/to-loveru/images/e/e9/Tearju_Lunatique_TLRD_Manga.png",
+                route: "/tearju",
+              },
+              {
+                name: "Lala Satalin Deviluke",
+                image: "To Love Ru/lala.jpg",
+                route: "/lala",
+              },
+              {
+                name: "Sairenji Haruna",
+                image:
+                  "https://static.wikia.nocookie.net/to-loveru/images/c/c8/Haruna_Sairenji_TLRD_Manga.png",
+                route: "/haruna",
+              },
+            ].map((character, index) => (
+              <a
+                key={index}
+                href={character.route}
+                className="flex items-center py-2 px-4 hover:bg-gray-50 transition-colors"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="w-12 h-12 mr-3 flex-shrink-0 bg-pink-100 rounded overflow-hidden">
+                  {character.image ? (
+                    <img
+                      src={character.image}
+                      alt={character.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-pink-200 flex items-center justify-center">
+                      <span className="text-pink-500 font-medium text-xs">
+                        {character.name.split(" ")[0][0]}
+                      </span>
                     </div>
-                    <span className="font-medium text-sm text-purple-900">
-                      {character.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
+                  )}
+                </div>
+                <span className="font-medium text-sm text-purple-900">
+                  {character.name}
+                </span>
+              </a>
+            ))}
+          </div>
 
               {/* Top Pages this Week */}
               <h3 className="text-sm font-bold py-2 px-4 mt-2 text-purple-900 border-t border-b border-gray-200">
@@ -378,7 +386,9 @@ export default function ToLoveRuWiki() {
                   <li className="py-3 px-4 hover:bg-pink-600">
                     <Link to="/shop">SHOP</Link>
                   </li>
-                  <li className="py-3 px-4 hover:bg-pink-600"><Link to="/video">VIDEO</Link></li>
+                  <li className="py-3 px-4 hover:bg-pink-600">
+                    <Link to="/video">VIDEO</Link>
+                  </li>
                 </ul>
               </div>
             </nav>
