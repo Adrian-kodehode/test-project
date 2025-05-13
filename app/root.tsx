@@ -84,6 +84,7 @@ export default function App() {
         location.pathname !== "/rito" &&
         location.pathname !== "/yami" &&
         location.pathname !== "/mea" &&
+        location.pathname !== "/kyouko" &&
         location.pathname !== "/yui" &&
         location.pathname !== "/mikan" &&
         location.pathname !== "/haruna" &&

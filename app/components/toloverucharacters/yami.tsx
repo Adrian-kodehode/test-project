@@ -281,7 +281,7 @@ export const Yami = () => {
                 </a>
               </li>
               <li>
-                <a href="#personaøity" className="hover:underline">
+                <a href="#personality" className="hover:underline">
                   Personality
                 </a>
                 <ol className="list-decimal list-inside pl-5 text-gray-600 text-xs mt-1">
@@ -388,7 +388,7 @@ export const Yami = () => {
           <div className="flex-1 text-black  max-w-2xl">
             <h2
               className="text-2xl font-bold mt-5 mb-3 border-b"
-              id="appearance"
+              id="personality"
             >
               Personality
             </h2>
@@ -601,7 +601,7 @@ export const Yami = () => {
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Konjiki no Yami / Golden Darkness
               </h1>
@@ -609,11 +609,11 @@ export const Yami = () => {
                 (Real Name: Eve)
               </h2>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center w-full">
               <img
                 src="/To Love Ru/yami.jpg"
                 alt="Konjiki no Yami"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">

@@ -225,20 +225,148 @@ export const Rin = () => {
             became associated with Saki after she and Rin protected her from
             bullies when they were children.
           </p>
+          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
+            <div className="flex items-center justify-between px-3 py-2 border-b">
+              <span className="font-semibold text-gray-700 flex items-center text-sm">
+                <svg
+                  className="w-4 h-4 mr-1 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+                Contents
+              </span>
+              <button className="text-xs text-[purple] hover:underline font-semibold">
+                [hide]
+              </button>
+            </div>
+            <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
+              <li>
+                <a href="#appearance" className="hover:underline">
+                  {" "}
+                  Appearance
+                </a>
+              </li>
+              <li>
+                <a href="#personaøity" className="hover:underline">
+                  Personality
+                </a>
+              </li>
+              <li>
+                <a href="#history" className="hover:underline">
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#power" className="hover:underline">
+                  Power and Abilities
+                </a>
+              </li>
+              <li>
+                <a href="#appellations" className="hover:underline">
+                  Appellations
+                </a>
+              </li>
+              <li>
+                <a href="#etymology" className="hover:underline">
+                  Etymology
+                </a>
+              </li>
+              <li>
+                <a href="#trivia" className="hover:underline">
+                  Trivia
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
+            Appearance
+          </h2>
+          <p>
+            Rin has brown hair that she ties in a ponytail by a blue scrunchie
+            with bangs hanging on either side while she has chest-length hair
+            strands hanging on either side, brown eyes and she is often seen
+            with an emotionless face. Her 3-sizes are B86-W60-H86.
+          </p>
+          <br />
+          <p>
+            On times, Rin is also shown to wear an outfit that constants of a
+            dark blue colored short-sleeve shirt that is underneath a flap dark
+            purple colored shirt with white/tan colored pants.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="personality">
+            Personality
+          </h2>
+          <p>
+            Rin is generally expressionless and formal, but she can get really
+            angry when it comes to Yūki Rito's clumsiness towards her, Fujisaki
+            Aya, and most of all, Tenjōin Saki, who she is very loyal to.
+            Although she has shown to smile practically once to Rito as a sign
+            of understanding, it didn't last long due to another one of his
+            mishaps. She thinks his sister is more reliable than he is. However,
+            Rin began developing feelings with Rito in Darkness Chapter 33 when
+            he saved her, and became more patient and grateful with him.{" "}
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="history">
+            History
+          </h2>
+          <p>
+            Rin has served Tenjōin Saki as her bodyguard, but Saki has always
+            thought of her as a close friend instead. They first met when Rin
+            came to Saki in the garden introducing herself as the daughter of
+            the Tenjouin family's butler and then tells her that she will be
+            serving her starting from that day. Saki acted friendly towards Rin
+            and welcomed her company as her friend, and Rin was deeply touched
+            by it. Although most of the time, Rin maintained a professional
+            manner and service around Saki, she truly considers Saki as a close
+            friend.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="power">
+            Power and Abilities
+          </h2>
+          <p>
+            Swordsmanship: Rin is known to practice Kendo, and is often seen
+            carrying a shinai. The only times she is seen using Kendo are either
+            when training or when she's mad at Yūki Rito whenever his clumsiness
+            results in him groping her, Tenjōin Saki or Fujisaki Aya. She has
+            also beaten up the principal time from time. Because she does not
+            involve herself with Rito, his alien friends or their adventures and
+            antics, she is mostly left out of any potentially dangerous
+            situation, and so the full extent of her expertise in Kendo has not
+            yet been seen.
+          </p>
+          <p>
+            • <strong>Marksmanship</strong>: On chapter 83, Rin has shown to
+            also have some
+          </p>
+          <p>
+            • <strong>sharpshooting</strong>: On chapter 83, Rin has shown to
+            also have some sharpshooting skills..
+          </p>
         </div>
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Kujō Rin
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center  w-full">
               <img
                 src="/To Love Ru/rin.jpg"
                 alt="Kujō Rin"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">

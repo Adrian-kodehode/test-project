@@ -124,7 +124,7 @@ export default function ToLoveRuWiki() {
               <img
                 src={image}
                 alt={`Slide ${idx}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           ))}
@@ -227,64 +227,64 @@ export default function ToLoveRuWiki() {
               </div>
               {/* Character list with square images */}
               <div className="divide-y divide-gray-200">
-            {[
-              {
-                name: "Kotegawa Yui",
-                image:
-                  "https://static.wikia.nocookie.net/to-loveru/images/1/19/Yui_Kotegawa_TLRD_Manga.png",
-                route: "/yui",
-              },
-              {
-                name: "Yūki Mikan",
-                image:
-                  "https://static.wikia.nocookie.net/to-loveru/images/0/08/Mikan_Yuuki_TLRD_Manga.png",
-                route: "/mikan",
-              },
-              {
-                name: "Tearju Lunatique",
-                image:
-                  "https://static.wikia.nocookie.net/to-loveru/images/e/e9/Tearju_Lunatique_TLRD_Manga.png",
-                route: "/tearju",
-              },
-              {
-                name: "Lala Satalin Deviluke",
-                image: "To Love Ru/lala.jpg",
-                route: "/lala",
-              },
-              {
-                name: "Sairenji Haruna",
-                image:
-                  "https://static.wikia.nocookie.net/to-loveru/images/c/c8/Haruna_Sairenji_TLRD_Manga.png",
-                route: "/haruna",
-              },
-            ].map((character, index) => (
-              <a
-                key={index}
-                href={character.route}
-                className="flex items-center py-2 px-4 hover:bg-gray-50 transition-colors"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="w-12 h-12 mr-3 flex-shrink-0 bg-pink-100 rounded overflow-hidden">
-                  {character.image ? (
-                    <img
-                      src={character.image}
-                      alt={character.name}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-pink-200 flex items-center justify-center">
-                      <span className="text-pink-500 font-medium text-xs">
-                        {character.name.split(" ")[0][0]}
-                      </span>
+                {[
+                  {
+                    name: "Kotegawa Yui",
+                    image:
+                      "https://static.wikia.nocookie.net/to-loveru/images/1/19/Yui_Kotegawa_TLRD_Manga.png",
+                    route: "/yui",
+                  },
+                  {
+                    name: "Yūki Mikan",
+                    image:
+                      "https://static.wikia.nocookie.net/to-loveru/images/0/08/Mikan_Yuuki_TLRD_Manga.png",
+                    route: "/mikan",
+                  },
+                  {
+                    name: "Tearju Lunatique",
+                    image:
+                      "https://static.wikia.nocookie.net/to-loveru/images/e/e9/Tearju_Lunatique_TLRD_Manga.png",
+                    route: "/tearju",
+                  },
+                  {
+                    name: "Lala Satalin Deviluke",
+                    image: "To Love Ru/lala.jpg",
+                    route: "/lala",
+                  },
+                  {
+                    name: "Sairenji Haruna",
+                    image:
+                      "https://static.wikia.nocookie.net/to-loveru/images/c/c8/Haruna_Sairenji_TLRD_Manga.png",
+                    route: "/haruna",
+                  },
+                ].map((character, index) => (
+                  <a
+                    key={index}
+                    href={character.route}
+                    className="flex items-center py-2 px-4 hover:bg-gray-50 transition-colors"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div className="w-12 h-12 mr-3 flex-shrink-0 bg-pink-100 rounded overflow-hidden">
+                      {character.image ? (
+                        <img
+                          src={character.image}
+                          alt={character.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-pink-200 flex items-center justify-center">
+                          <span className="text-pink-500 font-medium text-xs">
+                            {character.name.split(" ")[0][0]}
+                          </span>
+                        </div>
+                      )}
                     </div>
-                  )}
-                </div>
-                <span className="font-medium text-sm text-purple-900">
-                  {character.name}
-                </span>
-              </a>
-            ))}
-          </div>
+                    <span className="font-medium text-sm text-purple-900">
+                      {character.name}
+                    </span>
+                  </a>
+                ))}
+              </div>
 
               {/* Top Pages this Week */}
               <h3 className="text-sm font-bold py-2 px-4 mt-2 text-purple-900 border-t border-b border-gray-200">
@@ -459,29 +459,37 @@ export default function ToLoveRuWiki() {
                       Welcome
                     </div>
                     <div className="p-4 bg-white">
+                      {/* Carousel: responsive height and controls */}
                       <div className="relative flex justify-center mb-4 overflow-hidden">
                         <button
                           onClick={() => handleImageChange("prev")}
-                          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 p-2 rounded-full hover:bg-gray-300 z-10"
+                          className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200 text-gray-700 p-2 rounded-full hover:bg-gray-300 z-10"
+                          aria-label="Previous Slide"
                         >
                           &#8249;
                         </button>
-                        <div className="w-full h-[600px]">{animatedImages}</div>
+                        <div className="w-full h-[40vw] max-h-[400px] min-h-[200px] sm:h-[300px] md:h-[400px]">
+                          {animatedImages}
+                        </div>
                         <button
                           onClick={() => handleImageChange("next")}
-                          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 p-2 rounded-full hover:bg-gray-300 z-10"
+                          className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 text-gray-700 p-2 rounded-full hover:bg-gray-300 z-10"
+                          aria-label="Next Slide"
                         >
                           &#8250;
                         </button>
                       </div>
+                      {/* Logo: responsive sizing */}
                       <div className="flex justify-center">
                         <img
                           src="public/To Love Ru/Site-logo (2).png"
                           alt="To LOVE-Ru Logo"
-                          className="max-w-full h-full"
+                          className="max-w-[180px] w-full h-auto"
+                          style={{ objectFit: "contain" }}
                         />
                       </div>
-                      <p className="text-center mt-4 text-black">
+                      {/* Welcome text: responsive font and spacing */}
+                      <p className="text-center mt-4 text-black text-base sm:text-lg">
                         Welcome to the To LOVE-Ru Wiki, a wiki dedicated to
                         everything about <strong>To LOVE-Ru</strong> that anyone
                         can edit.
@@ -604,7 +612,16 @@ export default function ToLoveRuWiki() {
                             alt={character.name}
                             className="w-full h-auto border-4 border-[purple] rounded-lg group-hover:opacity-80 transition"
                           />
-                          <div className="absolute bottom-1 right-0.5 bg-[purple] text-white text-xl px-1 py-1 rounded">
+                          <div
+                            className={`
+                                absolute bottom-1 right-0.5
+                                px-2 py-1 rounded
+                                text-white text-base font-bold
+                                transition-all duration-300
+                                bg-[purple]
+                                group-hover:scale-110 group-hover:bg-[purple]
+                              `}
+                          >
                             <strong>{character.name}</strong>
                           </div>
                         </Link>

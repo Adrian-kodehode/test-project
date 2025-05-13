@@ -228,7 +228,7 @@ export const Momo = () => {
             whom she hangs out with more often, Momo becomes more attached to
             Rito and focuses on expanding "The Harem Plan" she has for him.
           </p>
-          <nav className="w-44 mt-5 bg-white text-center border rounded mb-6">
+          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
                 <svg
@@ -422,21 +422,179 @@ export const Momo = () => {
               Like Rito, she also has an interest in playing video games, most
               notably when buying love sim games for ideas for her "harem plan".
             </p>
+            <br />
+            <h2 className="text-2xl font-bold border-b mb-4" id="history">
+              History
+            </h2>
+            <p>
+              Ever since childhood, Momo and Nana always argued. Whenever they
+              fight, their older sister, Lala, would always arrange ways for
+              them to make up, and for Zastin not to be angry with them. An
+              example of this is when they were children, and Momo and Nana were
+              fighting, but Lala caused her inventions to run amok then asked
+              for Momo and Nana's help to catch them, so that Momo and Nana will
+              work together, and Zastin would scold Lala instead.
+            </p>
+            <br />
+            <p>
+              At some point, Momo travelled through space and met tons of plants
+              she befriended due to her ability to talk to them.
+            </p>
+            <br />
+            <h2 className="text-2xl font-bold border-b mb-4" id="powers">
+              Powers and Abilities
+            </h2>
+            <div className="flex flex-row items-start gap-4">
+              <div className="flex-1">
+                <p>
+                  <strong>Devilukean/Charmain Hybrid Physiology</strong>: Like
+                  all Devilukeans, Momo physical abilities are incredibly
+                  strong. Momo also has a hidden side to her known as "Evil
+                  Momo" (which she calls it her "battle mode"), in this state
+                  she has tremendous bloodlust, making her dangerous in battle.
+                  Despite her true power hasn't been shown in any battle yet,
+                  Nana seems to be scared of this side of Momo. Yami and Nemesis
+                  are also aware of her hidden power.
+                </p>
+              </div>
+              <img
+                src="To Love Ru/momoart.jpg"
+                alt=""
+                className="w-1/2 h-auto object-contain"
+                onClick={() => {
+                  window.open("To Love Ru/momoart.jpg ", "_blank");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+            </div>
+            <br />
+            <p>
+              However, her most notable ability is communicating with all plant
+              life. It is revealed that this is a result of being of Charmian
+              descent.
+            </p>
+            <br />
+            <div className="ml-8">
+              <p className="mt-2">
+                • <strong>Superhuman Strength</strong>: as a Devilukean, Momo
+                possesses incredible strength.
+              </p>
+              <div className="mt-4 flex flex-row gap-4 items-start">
+                <div className="flex-1">
+                  <p className="mt-2">
+                    • <strong>Devilukean Tail</strong>: She also has the ability
+                    to fire lightning out from the tip of her tail, when using
+                    this ability in tandem with with Nana's, it creates an even
+                    more powerful lighting shot. Like her sisters, Momo also
+                    becomes weak whenever someone touches her tail (however,
+                    given her personality, she apparently enjoys it as it has an
+                    erotic feeling to it).
+                  </p>
+                  <p className="mt-2">
+                    • <strong>Botanical Communication</strong>: An ability
+                    unique only to Momo. She shares a connection to plant life
+                    since she was born, being able to communicate with them
+                  </p>
+                  <p className="mt-4 ml-8">
+                    • <strong>Expert Xenobotanist and Horticulturalist</strong>:
+                    Momo's ability to understand plant life allows her to become
+                    an expert botanist. She understands the biology and
+                    chemistry of most plant life in the galaxy, and the
+                    abilities and effects of their spores, pollens and other
+                    characteristics. She maintains her own interplanetary
+                    garden, which she is able to access through her d-dial phone
+                    to call any of her plants and use their abilities for
+                    varying purposes, including combat.
+                  </p>
+                  <br />
+                </div>
+                <img
+                  src="To Love Ru/momoart2.jpg"
+                  alt=""
+                  className="w-1/2  h-auto object-contain"
+                  onClick={() => {
+                    window.open("To Love Ru/momoart2.jpg ", "_blank");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+              </div>
+            </div>
+            <p>
+              <strong>Intelligence</strong>: Momo also has a great intellect and
+              an aptitude with her sister Lala's technology, like creating the
+              virtual world video game Trouble Quest, programming a cyber safari
+              for Nana, and generating an invisible barrier. In terms of
+              technology, she is not as smart as Lala, but far more than Nana.
+              She is especially knowledgeable with the biology of most
+              plant-life in the galaxy.
+            </p>
+            <br />
+            <p>
+              <strong>Acting</strong>: She's also proven to be a very good
+              actress, managing to fool Rito while in Nana's body that 'Nana'
+              was attracted to him and wanted make sure he liked her despite her
+              breast size. Most notably, she manages to trick everyone into
+              thinking she is a sweet and innocent girl.
+            </p>
+            <br />
+            <h2 className="text-2xl font-bold border-b mb-4" id="equipment">
+              Equipment
+            </h2>
+            <div className="flex flex-row items-start gap-4">
+              <div className="flex-1">
+                <p>
+                  <strong className="text-[purple] underline">D-Dial</strong>:
+                  An invention with the same functions as a regular phone,
+                  however her D-Dial is capable of summoning plants and fruits
+                  that she has met through out space, whenever she needs them
+                  from an interplanetary botanical garden.
+                </p>
+                <br />
+              </div>
+              <img
+                src="To Love Ru/momoddial.jpg"
+                alt=""
+                className="w-1/2 h-auto object-contain"
+                onClick={() => {
+                  window.open("To Love Ru/momoddial.jpg", "_blank");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+            </div>
+            <p>
+              <strong>Anti-Gravity Wing System</strong>: A small chip placed at
+              the back of most of her clothes that gives her a pair of devilish
+              wings on the back to enable flight. This is an invention made by
+              Lala.
+            </p>
+            <br />
+            <p>
+              <strong>Laptop</strong>: Momo has a unique Laptop, which is what
+              she used to create a virtual space for the game Trouble Quest and
+              the Cyber Safari for her plants and Nana's animals. It can also
+              change the scenery through a window like making seem like it's
+              raining.
+            </p>
+            <br />
+            <p>
+              <strong>Transmutational Barrier Generator</strong>: A device that
+              creates a huge force field, big enough to contain a whole house.
+            </p>
           </div>
         </div>
         {/* Right: Info card sidebar */}
-        <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
+        <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white text-center shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Momo Belia Deviluke
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center w-full">
               <img
                 src="/To Love Ru/momo.jpg"
                 alt="Momo Belia Deviluke"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">

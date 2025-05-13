@@ -60,7 +60,7 @@ export const Haruna = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-[#FFF4FB] flex flex-row items-center justify-center min-h-screen">
+      <div className="bg-[#FFF4FB] flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -216,7 +216,7 @@ export const Haruna = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl h-screen">
+        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
           <p>
             <strong>Haruna Sairenji</strong> (西連寺 春菜 Sairenji Haruna?) is
             the second female protagonist of To Love Ru. She is in Rito's class
@@ -242,20 +242,152 @@ export const Haruna = () => {
             Haruna is affiliated with Sainan High's tennis club and also is left
             handed.
           </p>
+          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
+            <div className="flex items-center justify-between px-3 py-2 border-b">
+              <span className="font-semibold text-gray-700 flex items-center text-sm">
+                <svg
+                  className="w-4 h-4 mr-1 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+                Contents
+              </span>
+              <button className="text-xs text-[purple] hover:underline font-semibold">
+                [hide]
+              </button>
+            </div>
+            <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
+              <li>
+                <a href="#appearance" className="hover:underline">
+                  {" "}
+                  Appearance
+                </a>
+              </li>
+              <li>
+                <a href="#personaøity" className="hover:underline">
+                  Personality
+                </a>
+              </li>
+              <li>
+                <a href="#history" className="hover:underline">
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#power" className="hover:underline">
+                  Power and Abilities
+                </a>
+              </li>
+              <li>
+                <a href="#etymology" className="hover:underline">
+                  Etymology
+                </a>
+              </li>
+              <li>
+                <a href="#trivia" className="hover:underline">
+                  Trivia
+                </a>
+              </li>
+              <li>
+                <a href="#references" className="hover:underline">
+                  Refrences
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
+            Appearance
+          </h2>
+          <p>
+            Haruna has blue hair and purple eyes, she has quite a cute
+            complexion which most boys seem to like.
+          </p>
+          <br />
+          <p>
+            She always wears a red vertical hair clip on the left of her head.
+            According to Sawada Mio, Haruna's measurements are B79-W56-H82.
+            Despite being considered physically attractive for a girl her age,
+            she often feels inferior being surrounded by girls like Lala and
+            Yui, who are far more developed physically.
+          </p>
+          <br />
+          <div className="flex-1 text-black max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mb-4" id="personality">
+              Personality
+            </h2>
+            <p>
+              A highly responsible person, Haruna's personality can sway her
+              classmate's hearts to vote for her as their class representative,
+              even when she did not run as a candidate.
+            </p>
+            <br />
+            <p>
+              Haruna is also a very kind, understanding and patient person, to
+              the point that she's polite to everyone around her, especially to
+              Rito. Despite his perverted clumsiness, she always forgives him in
+              time. However, she does occasionally slap him for it out of fear,
+              even though she is fully aware that he does not do it on purpose,
+              but she forgives him very quickly.
+            </p>
+            <br />
+            <p>
+              In the beginning, she had feelings for Rito, but did not express
+              them until she started hanging out with Lala, after which she
+              started showing signs of jealousy. This did not prevent her from
+              becoming good friends with Lala. Once when she was intoxicated off
+              of Deviluke herbs, she couldn't help but cling on to Rito (while
+              half naked and wet) and said that he's all hers for the moment
+              (Darkness Chapter 26).
+            </p>
+            <br />
+            <p>
+              Haruna secretly enjoys Rito's kindness; one time he found her when
+              she had been turned into a cat by one of Lala's inventions and,
+              unaware that it was Haruna, started playing with her, which she
+              claimed was like being in heaven. It is her genuine wish to be
+              with Rito, though her shyness and Rito's clumsiness stand as the
+              obstacles for her to advance.
+            </p>
+            <br />
+            <p>
+              As the series continues, she begins to fantasize the moment where
+              she found herself being with Rito romantically, but quickly shakes
+              them off and blushes. It is hinted that Haruna is a perverted girl
+              as well, because she even thinks about ecchi moments with Rito in
+              secret.
+            </p>
+            <br />
+            <p>
+              She has a severe fear of ghosts and the supernatural with the
+              exception being Oshizu Murasame, but only for a while. When
+              frightened, she has a habit of grabbing the nearest thing around
+              her – typically Rito – and swinging wildly, in an attempt to get
+              rid of whatever frightens her.
+            </p>
+            <br />
+          </div>
         </div>
         {/* Right: Info card sidebar */}
-        <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
+        <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center  w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Sairenji Haruna
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center  w-full">
               <img
                 src="/To Love Ru/haruna.jpg"
                 alt="Konjiki no Yami"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">
@@ -274,7 +406,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 w-1/3 border border-[#9C2E7A] ">
                       Kanji
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       西連寺 春菜
                     </td>
                   </tr>
@@ -282,7 +414,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Name
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Sairenji Haruna
                     </td>
                   </tr>
@@ -290,7 +422,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Planet
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Earth
                     </td>
                   </tr>
@@ -298,7 +430,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Age
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       15 (first year) <br />
                       16 (second year)
                     </td>
@@ -307,7 +439,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Birthday
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       March 6
                     </td>
                   </tr>
@@ -315,7 +447,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Zodiac Sign
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Pisces
                     </td>
                   </tr>
@@ -323,7 +455,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Gender
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Female
                     </td>
                   </tr>
@@ -331,7 +463,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Height
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       160 cm
                     </td>
                   </tr>
@@ -339,7 +471,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Weight
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       50 kg
                     </td>
                   </tr>
@@ -347,7 +479,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Blood Type
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       O
                     </td>
                   </tr>
@@ -355,7 +487,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Hair Color
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Blue
                     </td>
                   </tr>
@@ -363,7 +495,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Eye Color
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Purple
                     </td>
                   </tr>
@@ -380,7 +512,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       School
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Sainan High School
                     </td>
                   </tr>
@@ -388,7 +520,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Class
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       1-A (chapters 1-48) <br />
                       2-A (chapters 49-present)
                     </td>
@@ -397,7 +529,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Education
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Currently attending Sainan High School
                     </td>
                   </tr>
@@ -405,7 +537,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Occupation
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       High school student
                     </td>
                   </tr>
@@ -413,7 +545,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Relatives
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Sairenji Akiho (sister) <br />
                       Maron (pet) <br />
                       Sairenji Fuyuhiko (father) <br />
@@ -424,7 +556,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Martial Status
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Single
                     </td>
                   </tr>
@@ -432,7 +564,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Unusual Features
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Possesses superhuman strength and great fighting skill
                       with any blunt weapon (or Rito) when in state of panic
                     </td>
@@ -450,7 +582,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Manga Debut
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Chapter 1
                     </td>
                   </tr>
@@ -458,7 +590,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Anime Debut
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Episode 1
                     </td>
                   </tr>
@@ -475,7 +607,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Sayuri Yahagi
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Misato Fuken
                     </td>
                   </tr>
@@ -483,7 +615,7 @@ export const Haruna = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       English VA
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Bryn Apprill (season 1-3) <br />
                       Monica Rial (season 4)
                     </td>

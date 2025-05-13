@@ -308,10 +308,13 @@ export const Lala = () => {
             </ol>
           </nav>
           <div className="flex-1 text-black max-w-2xl">
-            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="appearance">
+            <h2
+              className="text-2xl font-bold border-b mt-8 mb-4"
+              id="appearance"
+            >
               Appearance
             </h2>
-            
+
             <p>
               Lala is a highly attractive and curvaceous teenage girl with long
               bubble gum pink hair, emerald green eyes, and large breasts. She
@@ -339,7 +342,7 @@ export const Lala = () => {
                 <img
                   src="To Love Ru/lala-yui.jpg"
                   alt=""
-                  className="w-60 rounded"
+                  className="w-80 rounded"
                 />
                 <span className="block text-xs text-gray-600 mt-2 leading-snug">
                   Lala and Yui seen as "Perfect Beauties" by envious Haruna.
@@ -366,7 +369,10 @@ export const Lala = () => {
             </div>
           </div>
           <div className="flex-1 text-black  max-w-2xl">
-            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="personality">
+            <h2
+              className="text-2xl font-bold border-b mt-8 mb-4"
+              id="personality"
+            >
               Personality
             </h2>
             <p>
@@ -427,7 +433,6 @@ export const Lala = () => {
             </p>
             <br />
             <p>
-              {" "}
               She has also shown an amazing level of compassion for other
               characters, beyond simply being charitable or helpful. One example
               of this is when Haruna admitted to her that she is also in love
@@ -439,18 +444,16 @@ export const Lala = () => {
               inventions around so that they would settle their differences and
               work together, even though it would result in Lala getting
               lectured by Zastin.
-            </p>{" "}
+            </p>
             <br />
             <p>
-              {" "}
               On some occasions, Lala will say something ironic in relation to
               her own decisions. For instance, telling Saki not to run away from
               home, or telling Momo not to sneak into someone's bed when they
               are sleeping, hinting at a small piece of hypocrisy in her.
-            </p>{" "}
+            </p>
             <br />
             <p>
-              {" "}
               Due to never really been alone her entire life, she has no notion
               of modesty and often casually walks around the house completely
               naked, not caring who sees her. In more recent times, however, she
@@ -468,7 +471,7 @@ export const Lala = () => {
               take some amusement from making Rito blush and panic, a sight
               which she has declared 'cute' more than once. She has a habit of
               sleeping naked, with or without Rito by her side.
-            </p>{" "}
+            </p>
             <br />
             <p>
               She is also incredibly optimistic. A good example of this is at
@@ -478,8 +481,8 @@ export const Lala = () => {
               the chapter, Rito accidentally says "I love you" to almost the
               entire female cast she is even more ecstatic, saying that he can
               marry everyone.
-            </p>{" "}
-            <br />{" "}
+            </p>
+            <br />
             <p>
               In To Love Ru: Darkness, Lala has seemed to mature slightly,
               though she still will walk around the house naked at times and
@@ -493,18 +496,17 @@ export const Lala = () => {
               insurance to his love with Haruna and even starts to consider
               Lala's offer of marrying both of them, which he constantly shakes
               off.
-            </p>{" "}
-            <br />{" "}
+            </p>
+            <br />
             <p>
               With some encouragement from Momo, Lala starts showing her love
               towards Rito like she did before as her old childish clingy self,
               but Momo showed her some love simulation game to teach her how to
               express her love in a more adult way. Afterwards, she warped to
               him while he was taking a bath and asked to try a kiss.
-            </p>{" "}
-            <br />{" "}
+            </p>
+            <br />
             <p>
-              {" "}
               Despite her childish personality and immaturity, it has been
               stated by Momo and felt by Rito that Lala has an "overwhelming
               impish aura," with Momo wondering just how strong it would be if
@@ -514,21 +516,128 @@ export const Lala = () => {
             </p>
             <br />
           </div>
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="history">
+              History
+            </h2>
+            <div className="flex items-start gap-4">
+              <img
+                src="To Love Ru/littlelala.jpg"
+                alt="Little Lala"
+                className="h-full rounded"
+              />
+
+              <p>
+                As the first daughter of King Gid and Queen Sephie of Deviluke,
+                Lala was born the first princess of the planet Deviluke. She has
+                two known siblings, the twins Nana and Momo, whom she is very
+                close to. As a child she was friends with the Memorze royal
+                Run/Ren, though she seemed to prefer Run, who she used to
+                unknowingly torment. She is known to have a rather pleasant
+                relationship with her father, as she warmly recalled to Rito of
+                a time that she was lost in the forests of Deviluke and how her
+                father found her and took her back to the palace on his back. It
+                was not long after then that she built Peke, the costume robot
+                which allowed her to fly and gave her a permanent friend to
+                always be with. As the first princess and presumed eventual
+                successor to the throne of Deviluke, it appears that she must
+                marry so that both she and her spouse can rule together. As
+                such, she was continuously presented with male suitors, all of
+                whom she has turned down. When she finally couldn’t take it any
+                longer, she escaped from her home, but some men chased her out
+                of panic she warped to Earth so that she could have some freedom
+                and temporary safety.
+              </p>
+            </div>
+          </div>
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="powers">
+              Powers and Abilities
+            </h2>
+            <p>
+              Devilukean/Charmian Hybrid Physiology: Being a hybrid between
+              Devilukean and Charmian, Lala has gained capabilities of the two
+              races. As a Devilukean descendant, Lala's physical abilities such
+              as strength, power and speed are far greater than any known race,
+              although overusing her power would cause her to change into a
+              child-like form. She has also inherited some traits from her
+              Charmian mother.
+            </p>
+            <br />
+            <div className="flex flex-row items-start ml-8 gap-6">
+              <div className="flex-1">
+                <p>
+                  • <strong>Superhuman Strength</strong>: Her physical strength
+                  (without any inventions or powers) is pure brute force to the
+                  point where one punch can cause a shockwave and create a small
+                  crater on a wall without making physical
+                </p>
+                <p className="mb-3">
+                  • <strong>Superhuman Speed</strong>: Lala has also shown to be
+                  able to run incredibly fast, such being able to run 100 meters
+                  in 10.9 seconds.
+                </p>
+                <p className="mb-3">
+                  • <strong>Superhuman Durability</strong>: She has also shown
+                  to withstand heavy attacks with little to no injury. This also
+                  counts internally, as when she
+                </p>
+                <p className="mb-3">
+                  • <strong> Devilukean Tail</strong>: She can fire laser beams
+                  from the tip of her tail. However, her tail is both her weapon
+                  and her weakness, for it is very sensitive. When someone
+                  touches Lala's tail, she becomes weak and seems to lose her
+                  strength (and perhaps has an erotic feeling), though she can
+                  shake anyone off of her tail by mustering enough strength.
+                </p>
+                <p className="mb-3">
+                  • <strong>Sonic Scream</strong>: Lala has enough power in her
+                  breath to clear an entire sky. For example, when Japan was
+                  going to be hit with a very large typhoon, Lala went to the
+                  typhoon and screamed at it out of frustration for it ruining
+                  her plans with Rito. The result was enough force to blow away
+                  an entire typhoon away from Japan, which could even be seen
+                  from space.
+                </p>
+                <p className="mb-3">
+                  • <strong>Enhanced Metabolism</strong>: A trait Lala inherits
+                  from her mother, no matter how much she eats, Lala can never
+                  gain weight or get any fatter.
+                </p>
+              </div>
+             
+                <div className="flex-shrink-0">
+                <img
+                  src="To Love Ru/lalayami.jpg"
+                  alt=""
+                  className="max-w-xs rounded"
+                />
+                <span>Lala firing a laser beam to Yami</span>
+                <div className="my-24" />
+                <img
+                  src="To Love Ru/lalalaser.jpg"
+                  alt=""
+                  className="max-w-xs rounded"
+                />
+                <span>Lala vs. typhoon</span>
+                </div>
+            </div>
+          </div>
         </div>
 
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center  w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Lala Satalin Deviluke
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-ce w-full">
               <img
                 src="/To Love Ru/lala.jpg"
                 alt="Lala Satalin Deviluke"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">

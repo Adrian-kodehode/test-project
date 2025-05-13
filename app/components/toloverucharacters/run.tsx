@@ -239,21 +239,221 @@ export const Run = () => {
             Run and Ren permanently separated into two separate beings after
             reaching adulthood.
           </p>
+          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
+            <div className="flex items-center justify-between px-3 py-2 border-b">
+              <span className="font-semibold text-gray-700 flex items-center text-sm">
+                <svg
+                  className="w-4 h-4 mr-1 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+                Contents
+              </span>
+              <button className="text-xs text-[purple] hover:underline font-semibold">
+                [hide]
+              </button>
+            </div>
+            <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
+              <li>
+                <a href="#appearance" className="hover:underline">
+                  {" "}
+                  Appearance
+                </a>
+              </li>
+              <li>
+                <a href="#personaøity" className="hover:underline">
+                  Personality
+                </a>
+              </li>
+              <li>
+                <a href="#history" className="hover:underline">
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#power" className="hover:underline">
+                  Power and Abilities
+                </a>
+              </li>
+              <li>
+                <a href="#formerpower" className="hover:underline">
+                  Former Powers and Abilities
+                </a>
+              </li>
+              <li>
+                <a href="#trivia" className="hover:underline">
+                  Trivia
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
+            Appearance
+          </h2>
+          <p>
+            Run has hot pink eyes and has long light green hair with two points
+            sticking out at the top. Her body appears slender and curvy.
+          </p>
+          <br />
+          <p>
+            Her 3 sizes are B83-W55-H83. She is always wearing clothing typical
+            of Idols in Japan, especially her Blue Metalia outfit that she wears
+            when starring at the Magical Kyouko show.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="personality">
+            Personality
+          </h2>
+          <p>
+            Her personality can be described as determined and obsessive
+            (especially where Rito is concerned). On some occasions, when it
+            comes to Rito who she loves so much, she can be quite cheery and
+            sweet, and would often cling on to him. Run can also be a bit of a
+            stalker to him, but entirely out of devoted care instead of anything
+            truly selfish or immoral. She can get a little mad when it comes to
+            Lala and her relationship with Rito, but has since come (somewhat)
+            to terms with the fact that she still has time to win him over. Run
+            can be a bit melodramatic and can misinterpret things easily, more
+            so in the anime, a good example of this in Episode 16 of the
+            original series.
+          </p>
+          <br />
+          <p>
+            In the first series, her personality was really childish, and she
+            would always try to pull pranks on Lala (which ultimately fail) to
+            get back at her for all of the mischief she suffered from her. But
+            in To-Love-Ru Darkness, she has greatly matured, as she no longer
+            pulls any pranks on Lala and focuses on her work as an idol. She
+            tries harder to gain Rito's love, especially now since she is now a
+            full woman and is no longer with Ren.
+          </p>
+          <br />
+          <p>
+            In the OVAs, she doesn't mind showing others her body, however, she
+            will always end up sneezing causing Ren to be in an erotic
+            situation.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="history">
+            History
+          </h2>
+          <p>
+            Sometimes Run would be taken to Deviluke to play with Lala.
+            Apparently she really hated being part of Lala's experiments and
+            being forced to go through so much trouble (even while Ren was in
+            control). Even though Run hated Lala, her male counterpart Ren falls
+            in love with her.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="power">
+            Power and Abilities
+          </h2>
+          <p>
+            • <strong>Strength</strong>: Run has been shown to be strong enough
+            to carry a huge hammer.
+          </p>
+          <p className="mt-1">
+            • <strong>Speed</strong>: Run is also shown to have great speed,
+            however she cannot control her speed while holding something heavy
+            like a huge hammer, when attempting to hit Lala but instead hits
+            Rito.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="formerpower">
+            Former Powers and Abilities
+          </h2>
+          <p>
+            • <strong>Alternate Personalities</strong>: Both Memorzian genders
+            each have their own separate personalities. Run is also capable of
+            communicating with Ren within his subconscious (this also works for
+            Ren). The inactive personality can also feel whatever the active
+            personality physically feels, like when Ren accidentally kissed
+            Rito, Run had also felt it. This is no longer the case after
+            reaching adulthood. It is unknown, and unlikely, if they are still
+            capable of communicating with each other telepathically.
+          </p>
+          <p className="mt-1">
+            • <strong>Gender Swapping</strong>: It is said that due to
+            evolution, those from Memorze like Run are born with both male and
+            female genders. Normally Memorzorians would change monthly, but due
+            to the differences in environment and magnetic fields on Earth, Run
+            and Ren would change from a sneeze and both have different opinions
+            about certain things. After reaching adulthood, they both physically
+            separate, and Ren no longer shares a body with Run, so this ability
+            is not usable anymore.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="trivia">
+            Trivia
+          </h2>
+          <div className="flex flex-row items-start gap-6 mt-4">
+            <div className="flex-1">
+              <ul className="list-disc pl-5 mb-4">
+                <li>
+                  Run made few cameo in other works of{" "}
+                  <span className="text-[purple]">Yabuki Kentarō</span>:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>
+                      Her first cameo appearance in{" "}
+                      <span className="italic text-[purple]">
+                        Mayoi Neko Overrun!
+                      </span>{" "}
+                      is at chapter 2 page 24 (at the poster).
+                    </li>
+                    <li>
+                      Run also appeared on a television show (Magical Kyouko) in
+                      the chapter 6.
+                    </li>
+                    <li>
+                      Run appear on video or poster in several chapters of{" "}
+                      <span className="italic text-[purple]">
+                        Ayakashi Triangle
+                      </span>
+                    </li>
+                  </ul>
+                </li>
+                <li className="mt-3">
+                  Run's story and role is very similar to Ran from{" "}
+                  <span className="italic">Urusei Yatsura</span> who is a
+                  childhood friend of Lum, later turns into a rival and tries to
+                  steal her boyfriend.
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center w-64 min-w-[180px]">
+              <img
+                src="To Love Ru/runart.jpg"
+                alt="Run's Cameo Appearance"
+                className="rounded shadow w-full h-auto object-contain"
+              />
+              <span className="block text-xs text-gray-600 mt-2 leading-snug text-center">
+                Run's Cameo Appearance
+              </span>
+            </div>
+          </div>
         </div>
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center  w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Run Elsie Jewelria
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center  w-full">
               <img
-                src="https://static.wikia.nocookie.net/to-loveru/images/d/d8/Run_Elsie_Jewelria_TLRD_Manga.png"
+                src="To Love Ru/run.jpg"
                 alt="Run Elsie Jewelria
 "
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">
@@ -272,7 +472,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 w-1/3 border border-[#9C2E7A] ">
                       Kanji
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       ルン・エルシ・ジュエリア
                     </td>
                   </tr>
@@ -280,7 +480,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Name
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Run Elsie Jewelria
                     </td>
                   </tr>
@@ -288,7 +488,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Planet
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Memorze
                     </td>
                   </tr>
@@ -296,7 +496,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Age
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       15 (First year) <br />
                       16 (Second year)
                     </td>
@@ -305,7 +505,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Birthday
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       February 28
                     </td>
                   </tr>
@@ -313,7 +513,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Zodiac Sign
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Pisces
                     </td>
                   </tr>
@@ -321,7 +521,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Gender
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Female
                     </td>
                   </tr>
@@ -329,7 +529,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Height
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       158cm
                     </td>
                   </tr>
@@ -337,7 +537,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Weight
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       49kg
                     </td>
                   </tr>
@@ -345,7 +545,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Blood Type
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       A
                     </td>
                   </tr>
@@ -353,7 +553,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Hair Color
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Light Green
                     </td>
                   </tr>
@@ -361,7 +561,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Eye Color
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Maroon
                     </td>
                   </tr>
@@ -378,7 +578,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       School
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Sainan High
                     </td>
                   </tr>
@@ -386,7 +586,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Class
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       1-A (chapters 1-48) <br />
                       2-A (chapters 49-present)
                     </td>
@@ -395,7 +595,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Education
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Currently attending High School
                     </td>
                   </tr>
@@ -403,7 +603,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Occupation
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Royal of Planet Memorze Idol
                     </td>
                   </tr>
@@ -411,7 +611,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Relatives
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Ren Elsie Jewelria (Male Counterpart / twin)
                     </td>
                   </tr>
@@ -419,7 +619,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Martial Status
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Single
                     </td>
                   </tr>
@@ -427,7 +627,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Unusual Features
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Split personality and gender change (Formerly)
                     </td>
                   </tr>
@@ -444,7 +644,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Manga Debut
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Chapter 42
                     </td>
                   </tr>
@@ -452,7 +652,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Anime Debut
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Episode 7
                     </td>
                   </tr>
@@ -469,7 +669,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Japanese VA
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Fuyuka Oura
                     </td>
                   </tr>
@@ -477,7 +677,7 @@ export const Run = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       English VA
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Christina Kelly
                     </td>
                   </tr>

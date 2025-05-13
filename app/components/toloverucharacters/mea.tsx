@@ -236,20 +236,277 @@ export const Mea = () => {
             surname Kurosaki and being referred to by the name {""}
             <strong>Mea</strong>.
           </p>
+          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
+            <div className="flex items-center justify-between px-3 py-2 border-b">
+              <span className="font-semibold text-gray-700 flex items-center text-sm">
+                <svg
+                  className="w-4 h-4 mr-1 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+                Contents
+              </span>
+              <button className="text-xs text-[purple] hover:underline font-semibold">
+                [hide]
+              </button>
+            </div>
+            <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
+              <li>
+                <a href="#appearance" className="hover:underline">
+                  {" "}
+                  Appearance
+                </a>
+              </li>
+              <li>
+                <a href="#personaøity" className="hover:underline">
+                  Personality
+                </a>
+              </li>
+              <li>
+                <a href="#history" className="hover:underline">
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#power" className="hover:underline">
+                  Powers and Abilities
+                </a>
+              </li>
+              <li>
+                <a href="#appellations" className="hover:underline">
+                  Appellations
+                </a>
+              </li>
+              <li>
+                <a href="#etymology" className="hover:underline">
+                  Etymology
+                </a>
+              </li>
+              <li>
+                <a href="#trivia" className="hover:underline">
+                  Trivia
+                </a>
+              </li>
+              <li>
+                <a href="#navigation" className="hover:underline">
+                  Navigation
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
+            Appearance
+          </h2>
+          <p>
+            Mea has violet/blue colored eyes and red hair with a really long
+            braid. The upper part of her hair resembles Yami and Tearju's
+            hairstyle. She also has a violet colored hair clip with an indigo
+            colored cross on it and hair coming below it that's similar (yet
+            smaller) to her braid. She's also seen letting her hair untied,
+            mostly when taking a bath and when in combat. Sometimes she wears
+            black Gothic clothing (which she calls it her true form) that's
+            similar to what Yami usually wears but it's a lot more revealing,
+            instead of a skirt she wears shorts and her top has a hood on it,
+            also with a star shaped gap symbol on the chest part. This symbol
+            also appears on Yami's and Nemesis' clothing. She usually wears a
+            pair of striped panties, but doesn't wear any undergarment under her
+            battle outfit. Her 3-sizes are B75-W52-H77.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="personality">
+            Personality
+          </h2>
+          <p>
+            Mea has a laid-back, mischievous and childish personality, bordering
+            on the psychotic side sometimes. She is rarely not smiling,
+            particularly in combat, acts friendly to friend and foe alike, and
+            often says "wonderful" if something unfortunately perverted happens.
+            Mea has a sweet tooth and likes anything sweet, preferring to put so
+            many sugar cubes in her tea that they pile out the top of the cup.
+            She seems to enjoy messing with and teasing people, particularly in
+            regards to Rito and all the girls that have feelings for him.
+          </p>
+          <br />
+          <p>
+            For example she has made more than one reference to him having
+            licked her body or her desire for him to do so, though she makes
+            this out as a joke. However it has been discovered by Oshizu (during
+            her possession of Mea) that this desire is in fact completely
+            genuine. It was also discovered by Oshizu that within Mea's mind is
+            a darkness so deep that it almost consumed her and revealing a dark
+            and scary side to her that has left her highly mistrustful of Mea
+            ever since.
+          </p>
+          <br />
+          <p>
+            Mea is very loyal to Nemesis and follows her teachings about being a
+            weapon and gets mad at anyone if they disrespect Nemesis in any way.
+            However, there are those like Rito and Tearju who try to convince
+            her otherwise. This seems to work as she seems to begin to care and
+            consider others as friends and show sympathy towards "weaker"
+            beings.
+          </p>
+          <br />
+          <p>
+            Mea doesn't show any kind of embarrassment or shame, not even when
+            her clothes got ripped off. She instead prefers to get caught in
+            awkward and/or sexual experiences, showing a sadomasochistic side.
+          </p>
+          <br />
+          <p>
+            Oddly, Mea's personality is practically the opposite of her sister
+            Yami. She always seems kind and sweet around others, but has a
+            sadistic side which she rarely shows, while Yami appears cold and
+            emotionless around others, but has a nicer side that is rarely
+            shown. Mea is fond of anything ecchi while Yami detests it, as can
+            be seen in her fetish for being licked. The one thing the two do
+            share is the ability to get overwhelmed by their powers; Mea,
+            whenever taking apart in something as miniscule as cutting food, can
+            enter a state of euphoria that forces her to continue cutting all
+            things around her with glee, much like how Yami's anger towards
+            ecchi keeps her from rationalizing between life and death.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="history">
+            History
+          </h2>
+          <p>
+            Through what Mea remembers, she is practically what's left of the
+            Eden organization that created both her and Yami after it was
+            destroyed. Awakening from a destroyed life pod, the first thing she
+            sees is destruction everywhere. After wandering around for a moment,
+            she came across Nemesis, who took her in, trained her, and taught
+            her that the existence of a transformation weapon is only for
+            killing. She also told her about her older sister Yami, whom Mea
+            wanted to find by asking other criminals in space, which she managed
+            to. Before she came to Earth, she made a living on bounty hunting.
+          </p>
+          <br />
+          <p>
+            Mea enrolled into Sainan High in order to get acquainted with Yami,
+            a month before Momo and Nana did so. She did not make friends with
+            anyone (and possibly didn't even talk to anyone) until she met Nana.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="power">
+            Powers and Abilities
+          </h2>
+          <div className="flex items-start gap-4">
+            <p className="flex-1">
+              Transformation Ability: As a second generation transformation
+              weapon, Mea has transformation abilities similar to Yami because
+              of the nano-machines in her body, except she is able to create
+              more advanced machine/energy-based equipments, which Yami is
+              unable to create. Most of them are transformed from her hair. She
+              has been shown to create non-weapon objects like a puppet from her
+              hand.
+            </p>
+            <img
+              src="To Love Ru/maeart.jpg"
+              alt=""
+              className="w-1/2 h-auto object-contain"
+              onClick={() => {
+                window.open("To Love Ru/maeart.jpg", "_blank");
+              }}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
+          <div className="mt-5 ml-8">
+            <p className="mb-2">
+              • <strong>Weapon Transformation</strong>: Similar to Yami, Mea can
+              shapeshift any part of her body into weapons such as blades.
+              However, she is capable of creating many differently shaped
+              gun-like machines that shoot laser beams that easily destroy
+              powerful barriers and a micro-black hole.
+            </p>
+            <p className="mb-2">
+              • <strong>Hair Manipulation</strong>: Mea can control and move her
+              hair/pony tail (like an actual tail) and uses it for most of her
+              transformation abilities like many different shape guns, a clawed
+              hand or a blade at the end of it. Mea is shown to create bigger
+              machines and a multitude of huge guns and blades. Mea can also
+              extend the reach of hair.
+            </p>
+            <p className="mb-2">
+              • <strong>Psycho Dive</strong>: An ability unique to Mea, which
+              she can use to connect herself to another person's mind. By
+              physically touching that person's forehead, she can enter their
+              subconscious to steal information, look through their memories or
+              even enter their dreams and recreate them to whatever she wants.
+              This ability can also be used on machines, like when Mea connected
+              her ponytail through the screen of a laptop. By connecting her
+              ponytail at the back of a person's neck, she can control the
+              movements of that person, and through this, both Mea and said
+              person can share each other's thoughts and feelings, even deep
+              feelings that Mea herself was not aware of. Mea can also connect
+              with more than one person at same time. Sometimes Mea would
+              playfully use this ability on Rito to get in his head and do ecchi
+              things. Nana is the only known person to break free from this
+              ability.
+            </p>
+          </div>
+          <div className="mt-5 ml-8 flex gap-4 items-start">
+            <div className="flex-1">
+              <p>
+                • <strong>Body Transformation</strong>: Mea can alter the shape
+                and size of her body or parts of it, like making her breasts
+                bigger. Mea can also alter her size to copy the form and
+                appearance of anyone (eg: Tearju), similar to shapeshifting.
+              </p>
+              <p>
+                • <strong>Partial Animal Transformation</strong>: Mea has also
+                been shown to use partial animal forms like growing a pair of
+                feathered wings on her back to enable flight. She can also
+                transform her hair into animal ears such as cat ears (Darkness
+                Chapter 36). But it is also shown she can grow a pair of
+                feathered wings with metalic parts on it, Probably does type of
+                wings can be reffered as her wings specially made for speed
+                (Darkness Chapter 46)
+              </p>
+              <p>
+                • <strong>Vocal Alteration/Imatation</strong>: In addition to
+                her shapeshifting abilities, she can also change her voice to
+                sound like anyone she turns into.
+              </p>
+              <p>
+                • <strong>Attire Transmogrification</strong>: Mea can change her
+                attire into anything, like from her school uniform into her own
+                all black Gothic style suit similar to what Yami often wears,
+                but smaller and more revealing.
+              </p>
+            </div>
+            <img
+              src="To Love Ru/maeart2.jpg"
+              alt=""
+              className="w-1/2 h-auto object-contain"
+              onClick={() => {
+                window.open("To Love Ru/maeart2.jpg", "_blank");
+              }}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
         </div>
         {/* Right: Info card sidebar */}
-        <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
+        <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center  w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Kurosaki Mea
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center w-full">
               <img
-                src="https://static.wikia.nocookie.net/to-loveru/images/6/61/Mea_TLRD_Manga.png"
+                src="To Love Ru/mae.jpg"
                 alt="Kurosaki Mea"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">

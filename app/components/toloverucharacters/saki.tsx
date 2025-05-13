@@ -330,16 +330,16 @@ export const Saki = () => {
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center  w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Tenjōin Saki
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center  w-full">
               <img
-                src="https://static.wikia.nocookie.net/to-loveru/images/6/67/Saki_Tenjouin_TLRD_Manga.png"
+                src="To Love Ru/Saki1.jpg"
                 alt="Tenjōin Saki"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">

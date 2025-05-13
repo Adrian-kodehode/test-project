@@ -228,20 +228,165 @@ export const Tearju = () => {
             her like before she left her; she is also aware of her feelings for
             Rito.
           </p>
+          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
+            <div className="flex items-center justify-between px-3 py-2 border-b">
+              <span className="font-semibold text-gray-700 flex items-center text-sm">
+                <svg
+                  className="w-4 h-4 mr-1 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+                Contents
+              </span>
+              <button className="text-xs text-[purple] hover:underline font-semibold">
+                [hide]
+              </button>
+            </div>
+            <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
+              <li>
+                <a href="#appearance" className="hover:underline">
+                  {" "}
+                  Appearance
+                </a>
+              </li>
+              <li>
+                <a href="#personaøity" className="hover:underline">
+                  Personality
+                </a>
+              </li>
+              <li>
+                <a href="#history" className="hover:underline">
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#etymology" className="hover:underline">
+                  Etymology
+                </a>
+              </li>
+              <li>
+                <a href="#trivia" className="hover:underline">
+                  Trivia
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <div className="flex-1 text-black max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
+              Appearance
+            </h2>
+            <p>
+              Tearju is a very curvaceous woman with long blond hair and green
+              eyes. She also wears glasses. Most characters noticed that she
+              resembles Yami a lot (being her genetic origin). She often wears
+              black clothing such as a suit and a skirt. Underneath that suit is
+              a white under shirt with a high collar with a green brooch.
+              Similar to her friend, she also tends to wear skimpy, lacy panties
+              and bras, usually either purple or black, that are usually shown
+              anytime she winds up in a perverted situation. Out of all the
+              alien characters, she appears to be more human than all the
+              others.
+            </p>
+            <br />
+            <p>
+              Her 3-sizes are B96-W56-H90, which makes her the bustiest female
+              in series.
+            </p>
+            <br />
+          </div>
+          <div className="flex-1 text-black max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mb-4" id="personality">
+              Personality
+            </h2>
+            <p>
+              Tearju's personality can be described to be much like Rito. She is
+              very kind to those around her. But she can also be shy and clumsy,
+              both physically and socially, and can sometimes end up in awkward
+              moments. But despite this she is considered to be very smart and
+              knowledgeable.
+            </p>
+            <br />
+            <p>
+              Tearju cares deeply for Yami like a daughter/little sister and
+              wants to be close to her like before, but doesn't quite know how
+              to approach her after being separated from her for so long and
+              having her personality change so drastically. She also considers
+              Mea her little sister and would also want to be close to her, but
+              Mea greatly denies and rejects it, as was apparently brought up to
+              do so.
+            </p>
+          </div>
+          <div className="flex-1 text-black max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mb-4" id="history">
+              History
+            </h2>
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <img
+                  src="To Love Ru/tearjuart.jpg"
+                  alt=""
+                  className="w-60 rounded"
+                />
+                <div className="text-xs text-gray-600 mt-1 ">
+                  An old photo of the young Tearju and Mikado.
+                </div>
+              </div>
+              <div>
+                <p>
+                  Sometime in her youth, Tearju studied Biotechnology. She was
+                  also friends with Ryoko Mikado in school and went their
+                  separate ways at some point. Years later, she was part of
+                  Eden, an organization that would create Eve (later named
+                  Yami). Tearju raised her like a little sister, but the
+                  organization had plans to use Eve as weapon, and chased Tearju
+                  away. In the aftermath, Tearju had escaped and went into
+                  hiding, but is aware of the fall of the organization and that
+                  Eve became known as the assassin Golden Darkness.
+                </p>
+                <br />
+                <p>
+                  During the events of To-Love-Ru Darkness, Tearju was found by
+                  Mikado, who informed her of Yami's current position. Tearju
+                  was brought to Earth and is currently a teacher at Sainan High
+                  hoping to establish a better relationship with Yami and
+                  perhaps help Mea embrace humanity as well.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 text-black max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mb-4" id="etymology">
+              Etymology
+            </h2>
+            <p>
+              Her last name, 'Lunatique', is the French word for 'moody', in
+              relation to her previous life as a 'mad scientist'. It is also a
+              play on words of the word 'lunatic'.
+            </p>
+            <br />
+          </div>
         </div>
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center  w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Tearju Lunatique
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center  w-full">
               <img
                 src="/To Love Ru/tearju.jpg"
                 alt="Tearju Lunatique"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">
@@ -260,7 +405,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 w-1/3 border border-[#9C2E7A] ">
                       Kanji
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       ティアーユ＝ルナティーク
                     </td>
                   </tr>
@@ -268,7 +413,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Name
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Tearju Lunatique
                     </td>
                   </tr>
@@ -276,7 +421,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Planet
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Unknown
                     </td>
                   </tr>
@@ -284,7 +429,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Age
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Unknown (likely the same as Ryoko Mikado)
                     </td>
                   </tr>
@@ -292,7 +437,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Birthday
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Febuary 24th
                     </td>
                   </tr>
@@ -300,7 +445,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Zodiac Sign
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Pisces
                     </td>
                   </tr>
@@ -308,7 +453,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Gender
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Female
                     </td>
                   </tr>
@@ -316,7 +461,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Height
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       167 cm
                     </td>
                   </tr>
@@ -324,7 +469,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Weight
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       58 kg
                     </td>
                   </tr>
@@ -332,7 +477,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Blood Type
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Unknown
                     </td>
                   </tr>
@@ -340,7 +485,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Hair Color
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Blonde
                     </td>
                   </tr>
@@ -348,7 +493,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Eye Color
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Green
                     </td>
                   </tr>
@@ -365,7 +510,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       School
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Unknown
                     </td>
                   </tr>
@@ -374,7 +519,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Education
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       - Educated from unknown school from another planet. <br />
                       - Genius in Biotechnology
                     </td>
@@ -383,7 +528,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Occupation
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       - Sainan High School Teacher <br />
                       - Scientist and Biotechnician (formerly) <br />
                     </td>
@@ -392,7 +537,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Relatives
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Yami (Golden Darkness) <br />
                       (clone/creation/daughter figure) <br />
                       Mea Kurosaki (creation/daughter figure) <br />
@@ -403,7 +548,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Unusual Features
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       - Unlucky <br />
                       - Clumsy <br />
                     </td>
@@ -421,7 +566,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Manga Debut
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Darkness Chapter 13 in flashback <br />
                       Darkness Chapter 14 in person <br />
                     </td>
@@ -430,7 +575,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Anime Debut
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Darkness Episode 9 in flashback <br />
                       Darkness Episode 10 in person <br />
                     </td>
@@ -448,7 +593,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Japanese VA
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Misato Fukuen
                     </td>
                   </tr>
@@ -456,7 +601,7 @@ export const Tearju = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       English VA
                     </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
+                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
                       Katelyn Barr
                     </td>
                   </tr>

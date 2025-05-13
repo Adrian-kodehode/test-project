@@ -233,7 +233,7 @@ export const Nana = () => {
             friendship, she eventually becomes more open with her feelings for
             others through her friendship with Nana.
           </p>
-          <nav className="w-44 mt-5 bg-white text-center border rounded mb-6">
+          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
                 <svg
@@ -455,16 +455,16 @@ export const Nana = () => {
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white text-center shadow-lg flex flex-col items-center">
-            <div className="text-center mb-4 w-full">
+            <div className="text-center  w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
                 Nana Astar Deviluke
               </h1>
             </div>
-            <div className="flex justify-center mb-4 w-full">
+            <div className="flex justify-center  w-full">
               <img
                 src="public/To Love Ru/nana.jpg"
                 alt="Nana Astar Deviluke"
-                className="w-48 h-48 object-cover border-2 border-[#DB49AC] rounded"
+                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">
