@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Saki = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -45,7 +58,112 @@ export const Saki = () => {
               </svg>
               EXPLORE
             </li>
-            <li className="py-3 px-4 hover:bg-pink-600">MEDIA</li>
+            <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
+              MEDIA
+              <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                <ul>
+                  {/* Manga */}
+                  <li className="relative group/manga">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Manga
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Anime */}
+                  <li className="relative group/anime">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Anime
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          Motto To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness 2nd
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Games */}
+                  <li className="relative group/games">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Games
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Battle
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: True
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Idol
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Gravure
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li className="py-3 px-4 hover:bg-pink-600">
               <Link to="/toloveru">CHARACTERS</Link>
             </li>
@@ -60,7 +178,7 @@ export const Saki = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-[#FFF4FB] flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -181,21 +299,29 @@ export const Saki = () => {
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
                     number: 1,
+                    route: "/lala",
                   },
                   {
                     name: "Yuki Rito",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
                     number: 2,
+                    route: "/rito",
                   },
                   {
                     name: "Momo Deviluke",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
                     number: 3,
+                    route: "/momo",
                   },
                 ].map((page, index) => (
-                  <div key={index} className="relative">
+                  <Link
+                    key={index}
+                    to={page.route}
+                    className="relative block"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="relative">
                       <img
                         src={page.image}
@@ -209,7 +335,7 @@ export const Saki = () => {
                     <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
                       {page.name}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -217,6 +343,36 @@ export const Saki = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl ">
+          <h1 className="mb-5 text-3xl">Tenjōin Saki</h1>
+          <div className="flex flex-row mb-3 text-black">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+              Information
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Plot
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Relationships
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Gallery
+              </a>
+            </div>
+          </div>
           <p>
             <strong>Tenjōin Saki</strong> is the arrogant self-proclaimed queen
             bee of the school. She is currently in her third-year. Saki
@@ -307,23 +463,83 @@ export const Saki = () => {
                 </p>
                 <br />
               </div>
-                <p>
-                  On the other hand, she has a kind side to her, as she saved
-                  Aya from bullies and cares for her deeply as one of her
-                  closest friends along with Rin. She basically feels
-                  competitive towards anyone who might rival her glory, but
-                  otherwise, she can be quite courteous and hospitable even
-                  towards humble people, seeing their needs and desperations if
-                  they come off well enough. She often tries to earn the love
-                  and glory she wishes to receive from people by serving them
-                  with her own wealth, such as when she hosted a Christmas party
-                  for various people and other students, when she invited
-                  classmates to her private beach, and when she served food to
-                  her servants. She is very caring towards her friends, and is
-                  polite and grateful towards her domestic workers and
-                  guardians, showing a great deal of worry for them and never
-                  looking down on them as mere servants or commoners.
-                </p>
+              <p>
+                On the other hand, she has a kind side to her, as she saved Aya
+                from bullies and cares for her deeply as one of her closest
+                friends along with Rin. She basically feels competitive towards
+                anyone who might rival her glory, but otherwise, she can be
+                quite courteous and hospitable even towards humble people,
+                seeing their needs and desperations if they come off well
+                enough. She often tries to earn the love and glory she wishes to
+                receive from people by serving them with her own wealth, such as
+                when she hosted a Christmas party for various people and other
+                students, when she invited classmates to her private beach, and
+                when she served food to her servants. She is very caring towards
+                her friends, and is polite and grateful towards her domestic
+                workers and guardians, showing a great deal of worry for them
+                and never looking down on them as mere servants or commoners.
+              </p>
+              <br />
+            </div>
+            <div className="flex-1 text-black  max-w-2xl ">
+              <h2 className="text-2xl font-bold border-b mb-4" id="etymology">
+                Etymology
+              </h2>
+              <p>
+                • <strong>Tenjōin</strong> means "heaven/heavenly, sky,
+                imperial" (天) (ten), "article" (条) (jō) and "hospital" (院)
+                (in).
+              </p>
+              <br />
+              <p>
+                • <strong>Saki</strong> means "sand" (沙) (sa) and "noble lady"
+                (姫) (ki).
+              </p>
+              <br />
+            </div>
+            <div className="flex-1 text-black  max-w-2xl ">
+              <h2 className="text-2xl font-bold border-b mb-4" id="trivia">
+                Trivia
+              </h2>
+              <div className="flex flex-row items-start gap-6">
+                <div className="flex-1">
+                  <p>
+                    • Saki made a cameo appearance along with Rin and Aya in
+                    Mayoi Neko Overrun! ch. 3 pg24.
+                  </p>
+                  <p>
+                    • In Darkness Chapter 31, it shows that Saki has excellent
+                    artistic skills, having drawn a painting of Zastin in a
+                    bishounen style.
+                  </p>
+                  <p>
+                    • Saki's first name shares the name of Saki Hasemi, the
+                    writer of To Love-Ru.
+                  </p>
+                  <p>
+                    • Despite{" "}
+                    <a href="/momo" className="text-[purple]">
+                      Momo Belia Deviluke
+                    </a>{" "}
+                    saying that it'll be hard to include Saki in the Harem Plan,
+                    the title sequence of To LOVE-Ru Darkness 2nd shows Saki as
+                    one of the brides waiting for Rito.
+                  </p>
+                  <p>
+                    • Saki Tenjouin is ranked at 7th in the first poll of To
+                    Love Ru by 2086 votes. It is announced in the coloured front
+                    of the chapter 57, arranged in a middle part of the Weekly
+                    Shonen Jump.
+                  </p>
+                  <br />
+                </div>
+                <img
+                  src="To Love Ru/sakiart.jpg"
+                  alt=""
+                  className="w-60 h-auto rounded shadow"
+                  style={{ maxWidth: "240px" }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -574,6 +790,28 @@ export const Saki = () => {
           </div>
         </div>
       </div>
+      {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
+          showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        aria-label="Back to top"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
     </div>
   );
 };

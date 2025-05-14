@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Momo = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -45,7 +58,112 @@ export const Momo = () => {
               </svg>
               EXPLORE
             </li>
-            <li className="py-3 px-4 hover:bg-pink-600">MEDIA</li>
+            <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
+              MEDIA
+              <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                <ul>
+                  {/* Manga */}
+                  <li className="relative group/manga">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Manga
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Anime */}
+                  <li className="relative group/anime">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Anime
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          Motto To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness 2nd
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Games */}
+                  <li className="relative group/games">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Games
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Battle
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: True
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Idol
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Gravure
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li className="py-3 px-4 hover:bg-pink-600">
               <Link to="/toloveru">CHARACTERS</Link>
             </li>
@@ -60,7 +178,7 @@ export const Momo = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-[#FFF4FB] flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white text-center fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -181,21 +299,29 @@ export const Momo = () => {
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
                     number: 1,
+                    route: "/lala",
                   },
                   {
                     name: "Yuki Rito",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
                     number: 2,
+                    route: "/rito",
                   },
                   {
                     name: "Momo Deviluke",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
                     number: 3,
+                    route: "/momo",
                   },
                 ].map((page, index) => (
-                  <div key={index} className="relative">
+                  <Link
+                    key={index}
+                    to={page.route}
+                    className="relative block"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="relative">
                       <img
                         src={page.image}
@@ -209,7 +335,7 @@ export const Momo = () => {
                     <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
                       {page.name}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -218,6 +344,52 @@ export const Momo = () => {
 
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+          <h1 className="mb-5 text-3xl">Momo Belia Deviluke</h1>
+          <div className="flex flex-row mb-3 text-black">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+              Information
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Plot
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Plants
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Relationships
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Gallery
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Quotes
+              </a>
+            </div>
+          </div>
           <p>
             <strong>Momo Belia Deviluke</strong> is Nana's twin, as well as
             Lala's younger sister. As Gid's daughter, she holds the title of
@@ -580,6 +752,203 @@ export const Momo = () => {
               <strong>Transmutational Barrier Generator</strong>: A device that
               creates a huge force field, big enough to contain a whole house.
             </p>
+            <br />
+          </div>
+          <h2 className="text-2xl font-bold border-b mb-4" id="appellations">
+            Appellations
+          </h2>
+          <div className="grid grid-cols-3 gap-0 border mb-6">
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              Character
+            </div>
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              What they call her
+            </div>
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              What she calls them
+            </div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Yuuki Rito</a>{" "}
+            </div>
+            <div className="border p-2">Momo</div>
+            <div className="border p-2">Rito-san</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Lala Satalin Deviluke</a>{" "}
+            </div>
+            <div className="border p-2">Momo</div>
+            <div className="border p-2">Onee-sama</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Nana Astar Deviluke</a>{" "}
+            </div>
+            <div className="border p-2">Momo</div>
+            <div className="border p-2">Nana</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Yuuki Mikan</a>{" "}
+            </div>
+            <div className="border p-2">Momo-san</div>
+            <div className="border p-2">Mikan-san</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Yuuki Saibai</a>{" "}
+            </div>
+            <div className="border p-2">Momo-chan</div>
+            <div className="border p-2">Father</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Kurosaki Mea</a>{" "}
+            </div>
+            <div className="border p-2">Momo-chan</div>
+            <div className="border p-2">Mea-san</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Yami</a>{" "}
+            </div>
+            <div className="border p-2">Princess Momo, Momo</div>
+            <div className="border p-2">
+              Yami-san, Konjiki no Yami-san (earlier)
+            </div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Zastin</a>{" "}
+            </div>
+            <div className="border p-2">Momo-sama</div>
+            <div className="border p-2">Zastin-san</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Sairenji Haruna</a>{" "}
+            </div>
+            <div className="border p-2">Momo-chan</div>
+            <div className="border p-2">Haruna-san</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Kotegawa Yui</a>{" "}
+            </div>
+            <div className="border p-2">Momo-chan</div>
+            <div className="border p-2">Kotegawa-san</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Momioka Risa</a>{" "}
+            </div>
+            <div className="border p-2">Momo-chi</div>
+            <div className="border p-2">
+              Momioka-san, Momioka Risa (in thoughts)
+            </div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Nakajima</a>{" "}
+            </div>
+            <div className="border p-2">Momo-sama, Momo-san (earlier)</div>
+            <div className="border p-2">MNakajima-san</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Saruyama Kenichi</a>{" "}
+            </div>
+            <div className="border p-2">Momo-chan</div>
+            <div className="border p-2">Saruyama-san</div>
+          </div>
+          <h2 className="text-2xl font-bold border-b mb-4" id="etymology">
+            Etymology
+          </h2>
+          <p>Momo's given name is the japanese word for "peach" (桃).</p>
+          <br />
+          <p>
+            Like the other parts of the Devilukean family, Momo's second name
+            Belia (ベリア Beria) is a reference to the demons, Belial or Berith.
+          </p>{" "}
+          <br />
+          <p>
+            Her middle name Belia may also refer to Beelzebub, who was one of
+            the three superior spirits (or the Unholy Trinity) of Hell, together
+            with Lucifer (Satan) and Astaroth.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="trivia">
+            Trivia
+          </h2>
+          <div className="flex flex-row gap-4 items-start">
+            <div className="flex-1">
+              <p>
+                • Her estimated age of 14[2] seems to be based on the school
+                year that she and her sister joined. However, the people that
+                make the estimation have no first-hand knowledge.
+              </p>
+              <p className="mt-2 ml-8">
+                • Furthermore in another chapter it is shown that Nana and Momo
+                was allowed to join the school because of the perverted
+                principal, suggesting that there should actually be a problem
+                with them enrolling. Meaning they might be too young to actually
+                join.
+              </p>
+              <br />
+              <p className="mt-1">
+                • Her middle name is also transliterated to "Velia", "Veria",
+                "Beria" or "Bella" in some fan translations.
+              </p>
+            </div>
+            <img
+              src="To Love Ru/momoart3.jpg"
+              alt=""
+              className="w-1/2 h-auto object-contain"
+              style={{ maxWidth: 200 }}
+            />
+          </div>
+          <p className="mt-1">
+            • Her actual design and Mea's were based on another character by
+            Yabuki Kentarō: Amane Yuka from the one-shot Futagami Double, who
+            had a cameo in the manga Mayoi Neko Overrun! Chapter 3 page 23.
+          </p>
+          <p className="mt-1">
+            • It’s heavily implied that Momo has orally serviced Rito at least
+            three times over the course of the series.
+          </p>
+          <div className="ml-8 mt-5">
+            {" "}
+            <p>
+              • The first time is implied to happen at the beginning of Chapter
+              141 of the original manga.
+            </p>
+            <p>
+              • The second time is implied to happen sometime during the first
+              chapter of Darkness when Momo joined Rito in the bath with Mea
+              seeing the event occur by peaking into Rito’s memories with her
+              Psycho Dive ability in chapter 3.
+            </p>
+            <p>
+              • The third time is implied to happen at the beginning of chapter
+              39 of Darkness.
+            </p>
+            <br />
+          </div>
+          <p>
+            • Momo’s english voice actress Natalie Rial is the real life sister
+            of Monica Rial who voiced Kirisaki Kyōko and Haruna in To Love Ru
+            Darkness 2nd.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="references">
+            References
+          </h2>
+          <div className="ml-4">
+            <li> Harem Plan Guide Book and any other media after that.</li>
+            <li> To Love-Ru Darkness chapter 17</li>
+            <br />
           </div>
         </div>
         {/* Right: Info card sidebar */}
@@ -832,6 +1201,28 @@ export const Momo = () => {
           </div>
         </div>
       </div>
+      {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
+          showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        aria-label="Back to top"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
     </div>
   );
 };

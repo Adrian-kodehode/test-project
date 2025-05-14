@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Haruna = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setShowTopBtn(window.scrollY > 100);
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -45,7 +58,62 @@ export const Haruna = () => {
               </svg>
               EXPLORE
             </li>
-            <li className="py-3 px-4 hover:bg-pink-600">MEDIA</li>
+              <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
+                    MEDIA
+                    <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                      {/* Manga */}
+                      <li className="relative group/manga">
+                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                        Manga
+                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </div>
+                        <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                        <ul>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness</li>
+                        </ul>
+                        </div>
+                      </li>
+                      {/* Anime */}
+                      <li className="relative group/anime">
+                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                        Anime
+                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </div>
+                        <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                        <ul>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">Motto To LOVE-Ru</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness 2nd</li>
+                        </ul>
+                        </div>
+                      </li>
+                      {/* Games */}
+                      <li className="relative group/games">
+                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                        Games
+                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </div>
+                        <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                        <ul>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Battle</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: True</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Idol</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Gravure</li>
+                        </ul>
+                        </div>
+                      </li>
+                      </ul>
+                    </div>
+                    </li>
             <li className="py-3 px-4 hover:bg-pink-600">
               <Link to="/toloveru">CHARACTERS</Link>
             </li>
@@ -60,7 +128,7 @@ export const Haruna = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-[#FFF4FB] flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -174,29 +242,37 @@ export const Haruna = () => {
             </h3>
 
             <div className="p-2">
-              <div className="grid grid-cols-2 gap-2">
-                {[
-                  {
-                    name: "Lala Satalin Deviluke",
-                    image:
+                <div className="grid grid-cols-2 gap-2">
+                    {[
+                    {
+                      name: "Lala Satalin Deviluke",
+                      image:
                       "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
-                    number: 1,
-                  },
-                  {
-                    name: "Yuki Rito",
-                    image:
+                      number: 1,
+                      route: "/lala",
+                    },
+                    {
+                      name: "Yuki Rito",
+                      image:
                       "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
-                    number: 2,
-                  },
-                  {
-                    name: "Momo Deviluke",
-                    image:
+                      number: 2,
+                      route: "/rito",
+                    },
+                    {
+                      name: "Momo Deviluke",
+                      image:
                       "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
-                    number: 3,
-                  },
-                ].map((page, index) => (
-                  <div key={index} className="relative">
-                    <div className="relative">
+                      number: 3,
+                      route: "/momo",
+                    },
+                    ].map((page, index) => (
+                    <Link
+                      key={index}
+                      to={page.route}
+                      className="relative block"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div className="relative">
                       <img
                         src={page.image}
                         alt={page.name}
@@ -205,30 +281,63 @@ export const Haruna = () => {
                       <div className="absolute top-0 left-0 bg-purple-800 text-white w-5 h-5 flex items-center justify-center text-xs">
                         {page.number}
                       </div>
-                    </div>
-                    <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
+                      </div>
+                      <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
                       {page.name}
-                    </p>
-                  </div>
-                ))}
+                      </p>
+                    </Link>
+                    ))}
+                </div>
               </div>
-            </div>
           </div>
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+          <h1 className="mb-5 text-3xl">Sairenji Haruna</h1>
+          <div className="flex flex-row mb-3 text-black">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+              Information
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Plot
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Relationships
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Gallery
+              </a>
+            </div>
+          </div>
           <p>
             <strong>Haruna Sairenji</strong> (西連寺 春菜 Sairenji Haruna?) is
-            the second female protagonist of To Love Ru. She is in Rito's class
-            and is the girl of his affections. Haruna has similar feelings for
-            him, having been attracted to him because of his kind, gentle nature
-            since junior high, but believes them to be unrequited and has not
-            built up the nerve to confess to him. Despite her growing love for
-            Rito, her friendship with Lala causes her to suppress her feelings
-            since she doesn't want to hurt Lala who also loves Rito. However,
-            with some encouragement, she eventually tells Lala of her feelings
-            for Rito which Lala accepts, stating that Haruna is her rival for
-            Rito's heart, while still remaining friends.
+            the second female protagonist of To Love Ru. She is in{" "}
+            <a href="/rito" className="text-[purple] underline">
+              Rito
+            </a>
+            's class and is the girl of his affections. Haruna has similar
+            feelings for him, having been attracted to him because of his kind,
+            gentle nature since junior high, but believes them to be unrequited
+            and has not built up the nerve to confess to him. Despite her
+            growing love for Rito, her friendship with Lala causes her to
+            suppress her feelings since she doesn't want to hurt Lala who also
+            loves Rito. However, with some encouragement, she eventually tells
+            Lala of her feelings for Rito which Lala accepts, stating that
+            Haruna is her rival for Rito's heart, while still remaining friends.
           </p>
           <br />
           <p>
@@ -634,6 +743,28 @@ export const Haruna = () => {
           </div>
         </div>
       </div>
+       {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
+          showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        aria-label="Back to top"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
     </div>
   );
 };

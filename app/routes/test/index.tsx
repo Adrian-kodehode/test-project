@@ -25,6 +25,21 @@ const slideStyles = {
 };
 
 export default function ToLoveRuWiki() {
+
+    const [showTopBtn, setShowTopBtn] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setShowTopBtn(window.scrollY > 100);
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
@@ -299,21 +314,29 @@ export default function ToLoveRuWiki() {
                       image:
                         "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
                       number: 1,
+                      route: "/lala",
                     },
                     {
                       name: "Yuki Rito",
                       image:
                         "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
                       number: 2,
+                      route: "/rito",
                     },
                     {
                       name: "Momo Deviluke",
                       image:
                         "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
                       number: 3,
+                      route: "/momo",
                     },
                   ].map((page, index) => (
-                    <div key={index} className="relative">
+                    <Link
+                      key={index}
+                      to={page.route}
+                      className="relative block"
+                      style={{ textDecoration: "none" }}
+                    >
                       <div className="relative">
                         <img
                           src={page.image}
@@ -327,7 +350,7 @@ export default function ToLoveRuWiki() {
                       <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
                         {page.name}
                       </p>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -377,7 +400,112 @@ export default function ToLoveRuWiki() {
                     </svg>
                     EXPLORE
                   </li>
-                  <li className="py-3 px-4 hover:bg-pink-600">MEDIA</li>
+                  <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
+                    MEDIA
+                    <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        {/* Manga */}
+                        <li className="relative group/manga">
+                          <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                            Manga
+                            <svg
+                              className="w-3 h-3 ml-2"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </div>
+                          <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                            <ul>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru
+                              </li>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru Darkness
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        {/* Anime */}
+                        <li className="relative group/anime">
+                          <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                            Anime
+                            <svg
+                              className="w-3 h-3 ml-2"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </div>
+                          <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                            <ul>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru
+                              </li>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                Motto To LOVE-Ru
+                              </li>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru Darkness
+                              </li>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru Darkness 2nd
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        {/* Games */}
+                        <li className="relative group/games">
+                          <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                            Games
+                            <svg
+                              className="w-3 h-3 ml-2"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </div>
+                          <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                            <ul>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru Darkness: Battle
+                              </li>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru Darkness: True
+                              </li>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru Darkness: Idol
+                              </li>
+                              <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                                To LOVE-Ru Darkness: Gravure
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                   <li className="py-3 px-4 hover:bg-pink-600">
                     <Link to="/toloveru">CHARACTERS</Link>
                   </li>
@@ -411,7 +539,7 @@ export default function ToLoveRuWiki() {
                       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                     />
                   </svg>
-                  <h1 className="text-2xl font-medium">Home</h1>
+                  <h1 className="text-2xl font-medium text-black">Home</h1>
                 </div>
                 <div className="flex items-center">
                   <button className="text-purple-800 mr-4 flex items-center">
@@ -1708,6 +1836,28 @@ export default function ToLoveRuWiki() {
             </div>
           </div>
         </div>
+          {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
+          showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        aria-label="Back to top"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
       </div>
     </>
   );

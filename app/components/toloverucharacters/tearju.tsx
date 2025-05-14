@@ -45,7 +45,62 @@ export const Tearju = () => {
               </svg>
               EXPLORE
             </li>
-            <li className="py-3 px-4 hover:bg-pink-600">MEDIA</li>
+              <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
+                    MEDIA
+                    <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                      {/* Manga */}
+                      <li className="relative group/manga">
+                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                        Manga
+                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </div>
+                        <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                        <ul>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness</li>
+                        </ul>
+                        </div>
+                      </li>
+                      {/* Anime */}
+                      <li className="relative group/anime">
+                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                        Anime
+                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </div>
+                        <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                        <ul>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">Motto To LOVE-Ru</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness 2nd</li>
+                        </ul>
+                        </div>
+                      </li>
+                      {/* Games */}
+                      <li className="relative group/games">
+                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                        Games
+                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </div>
+                        <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                        <ul>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Battle</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: True</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Idol</li>
+                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Gravure</li>
+                        </ul>
+                        </div>
+                      </li>
+                      </ul>
+                    </div>
+                    </li>
             <li className="py-3 px-4 hover:bg-pink-600">
               <Link to="/toloveru">CHARACTERS</Link>
             </li>
@@ -60,7 +115,7 @@ export const Tearju = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-[#FFF4FB] flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -181,21 +236,29 @@ export const Tearju = () => {
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
                     number: 1,
+                    route: "/lala",
                   },
                   {
                     name: "Yuki Rito",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
                     number: 2,
+                    route: "/rito",
                   },
                   {
                     name: "Momo Deviluke",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
                     number: 3,
+                    route: "/momo",
                   },
                 ].map((page, index) => (
-                  <div key={index} className="relative">
+                  <Link
+                    key={index}
+                    to={page.route}
+                    className="relative block"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="relative">
                       <img
                         src={page.image}
@@ -209,7 +272,7 @@ export const Tearju = () => {
                     <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
                       {page.name}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -217,16 +280,54 @@ export const Tearju = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+          <h1 className="mb-5 text-3xl">Tearju Lunatique</h1>
+          <div className="flex flex-row mb-3 text-black">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+              Information
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                {" "}
+                Plot
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Relationships
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Gallery
+              </a>
+            </div>
+          </div>
           <p>
             <strong>Tearju Lunatique</strong> (ティアーユ＝ルナティーク Tiāyu
-            Runatīku?) is Yami (Golden Darkness) and Kurosaki Mea creator, as
-            she used her own cells in order to create Yami but didn't do the
-            same for Mea. She is a genius in Universe Biotechnology and has been
-            since she was a teenager. She takes the role of a klutzy and
-            beautiful homeroom teacher at Rito's school in the later chapters of
-            Darkness. She is aware of Yami at school and tries to get close to
-            her like before she left her; she is also aware of her feelings for
-            Rito.
+            Runatīku?) is{" "}
+            <a href="/yami" className="text-[purple] underline">
+              Yami (Golden Darkness)
+            </a>{" "}
+            and{" "}
+            <a href="/mea" className="text-[purple] underline">
+              Kurosaki Mea
+            </a>{" "}
+            creator, as she used her own cells in order to create Yami but
+            didn't do the same for Mea. She is a genius in Universe
+            Biotechnology and has been since she was a teenager. She takes the
+            role of a klutzy and beautiful homeroom teacher at Rito's school in
+            the later chapters of Darkness. She is aware of Yami at school and
+            tries to get close to her like before she left her; she is also
+            aware of her feelings for Rito.
           </p>
           <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
@@ -323,6 +424,7 @@ export const Tearju = () => {
               Mea greatly denies and rejects it, as was apparently brought up to
               do so.
             </p>
+            <br />
           </div>
           <div className="flex-1 text-black max-w-2xl">
             <h2 className="text-2xl font-bold border-b mb-4" id="history">

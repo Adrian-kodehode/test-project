@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Lala = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -45,7 +58,112 @@ export const Lala = () => {
               </svg>
               EXPLORE
             </li>
-            <li className="py-3 px-4 hover:bg-pink-600">MEDIA</li>
+            <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
+              MEDIA
+              <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                <ul>
+                  {/* Manga */}
+                  <li className="relative group/manga">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Manga
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Anime */}
+                  <li className="relative group/anime">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Anime
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          Motto To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness 2nd
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Games */}
+                  <li className="relative group/games">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Games
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Battle
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: True
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Idol
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Gravure
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li className="py-3 px-4 hover:bg-pink-600">
               <Link to="/toloveru">CHARACTERS</Link>
             </li>
@@ -60,7 +178,7 @@ export const Lala = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-[#FFF4FB] flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -181,21 +299,29 @@ export const Lala = () => {
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
                     number: 1,
+                    route: "/lala",
                   },
                   {
                     name: "Yuki Rito",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
                     number: 2,
+                    route: "/rito",
                   },
                   {
                     name: "Momo Deviluke",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
                     number: 3,
+                    route: "/momo",
                   },
                 ].map((page, index) => (
-                  <div key={index} className="relative">
+                  <Link
+                    key={index}
+                    to={page.route}
+                    className="relative block"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="relative">
                       <img
                         src={page.image}
@@ -209,7 +335,7 @@ export const Lala = () => {
                     <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
                       {page.name}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -217,6 +343,44 @@ export const Lala = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+          <h1 className="mb-5 text-3xl">Lala Satalin Deviluke</h1>
+          <div className="flex flex-row mb-3 text-black">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+              Information
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Plot
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Inventions
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Relationships
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Gallery
+              </a>
+            </div>
+          </div>
           <p>
             <strong>Lala Satalin Deviluke</strong> (ララ･サタリン・デビルーク
             Rara Satarin Debirūku?) is the main female protagonist of To-Love Ru
@@ -228,7 +392,6 @@ export const Lala = () => {
             in love with him after she misinterprets a statement that Rito
             shouts in self-defiance.
           </p>
-
           <nav className="w-44 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
@@ -274,7 +437,7 @@ export const Lala = () => {
                 </a>
               </li>
               <li>
-                <a href="#personaøity" className="hover:underline">
+                <a href="#equipment" className="hover:underline">
                   Equipment
                 </a>
                 <ol className="list-decimal list-inside pl-5 text-gray-600 text-xs mt-1">
@@ -342,7 +505,10 @@ export const Lala = () => {
                 <img
                   src="To Love Ru/lala-yui.jpg"
                   alt=""
-                  className="w-80 rounded"
+                  onClick={() => {
+                    window.open("To Love Ru/lala-yui.jpg");
+                  }}
+                  className="w-80 rounded cursor-pointer"
                 />
                 <span className="block text-xs text-gray-600 mt-2 leading-snug">
                   Lala and Yui seen as "Perfect Beauties" by envious Haruna.
@@ -605,11 +771,14 @@ export const Lala = () => {
                   gain weight or get any fatter.
                 </p>
               </div>
-             
-                <div className="flex-shrink-0">
+
+              <div className="flex-shrink-0">
                 <img
                   src="To Love Ru/lalayami.jpg"
                   alt=""
+                  onClick={() => {
+                    window.open("To Love Ru/lalayami.jpg");
+                  }}
                   className="max-w-xs rounded"
                 />
                 <span>Lala firing a laser beam to Yami</span>
@@ -617,12 +786,255 @@ export const Lala = () => {
                 <img
                   src="To Love Ru/lalalaser.jpg"
                   alt=""
+                  onClick={() => {
+                    window.open("To Love Ru/lalalaser.jpg");
+                  }}
                   className="max-w-xs rounded"
                 />
-                <span>Lala vs. typhoon</span>
-                </div>
+                <span className="ml-4">Lala vs. typhoon</span>
+              </div>
             </div>
           </div>
+          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="equipment">
+            Equipment
+          </h2>
+          <h3 className="font-bold text-gray-700">Inventions</h3>
+          <p className="mt-3 mb-2">
+            Main article:{" "}
+            <a href="#" className="text-[purple] underline">
+              Lala Satalin Deviluke/Inventions
+            </a>
+          </p>
+          <br />
+          <p>
+            Perhaps Lala's most distinguishing ability is being an extraordinary
+            inventor. She is considered a genius and has made many inventions.
+            However, Lala very much has the personality of both a perky child
+            and an absent-minded scientist, resulting in all of her inventions
+            being very toy-like, troublesome, mischievous, and causing
+            unintentional fanservice. Another distinct feature is how incredibly
+            fast she creates her inventions.
+          </p>
+          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="quotes">
+            Quotes
+          </h2>
+          <div className="ml-8">
+            <p>
+              "Ah, even though I have a tail, it doesn't mean I'll transform
+              when I look at the full moon."
+            </p>
+            <p>―Lala explaining her tail to Rito.</p>
+          </div>
+          <h2
+            className="text-2xl font-bold border-b mt-8 mb-4"
+            id="appellations"
+          >
+            Appellations
+          </h2>
+          <div className="grid grid-cols-3 gap-0 border mb-6">
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              Character
+            </div>
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              What they call her
+            </div>
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              What she calls them
+            </div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Yuuki Rito</a>{" "}
+            </div>
+            <div className="border p-2">Lala</div>
+            <div className="border p-2">Rito</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Momo Belia Deviluke</a>{" "}
+            </div>
+            <div className="border p-2">Onee-sama</div>
+            <div className="border p-2">Momo</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Nana Astar Deviluke</a>{" "}
+            </div>
+            <div className="border p-2">Ane-ue</div>
+            <div className="border p-2">Nana</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Yuuki Mikan</a>{" "}
+            </div>
+            <div className="border p-2">Lala-san</div>
+            <div className="border p-2">Mikan</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Gid Lucione Deviluke</a>{" "}
+            </div>
+            <div className="border p-2">Lala</div>
+            <div className="border p-2">Papa</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Sephie Michaela Deviluke</a>{" "}
+            </div>
+            <div className="border p-2">Lala</div>
+            <div className="border p-2">Mama</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Zastin</a>{" "}
+            </div>
+            <div className="border p-2">Lala-sama</div>
+            <div className="border p-2">Zastin</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Peke</a>{" "}
+            </div>
+            <div className="border p-2">Lala-sama</div>
+            <div className="border p-2">Peke</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Sairenji Haruna</a>{" "}
+            </div>
+            <div className="border p-2">Lala-san</div>
+            <div className="border p-2">Haruna</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Kotegawa Yui</a>{" "}
+            </div>
+            <div className="border p-2">Lala-san</div>
+            <div className="border p-2">Yui</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Yami</a>{" "}
+            </div>
+            <div className="border p-2">Princess Lala, Princess</div>
+            <div className="border p-2">Yami-chan</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Kurosaki Mea</a>{" "}
+            </div>
+            <div className="border p-2">Lala-senpai</div>
+            <div className="border p-2">Mea, Mea-chan</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Tenjōin Saki</a>{" "}
+            </div>
+            <div className="border p-2">Lala, Lala-san</div>
+            <div className="border p-2">Saki</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Saruyama Kenichi</a>{" "}
+            </div>
+            <div className="border p-2">Lala-chan</div>
+            <div className="border p-2">Saruyama</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Run Elsie Jewelria</a>{" "}
+            </div>
+            <div className="border p-2">Lala</div>
+            <div className="border p-2">Run-chan</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Ren Elsie Jewelria</a>{" "}
+            </div>
+            <div className="border p-2">Lala</div>
+            <div className="border p-2">Ren-chan</div>
+
+            <div className="border p-2 text-[purple]">
+              {" "}
+              <a href="/">Yuuki Saibai</a>{" "}
+            </div>
+            <div className="border p-2">Lala-chan</div>
+            <div className="border p-2">Rito Papa</div>
+          </div>
+          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="etymology">
+            Etymology
+          </h2>
+          <p>The name Lala is Hindi for tulip.</p>
+          <br />
+          <p>
+            Lala's middle name <strong>Satalin</strong>, along with her
+            father's, Lucione, may refer to Lucifer (Satan), who was one of the
+            three superior spirits (or the Unholy Trinity) of Hell, together
+            with Beelzebub and Astaroth.
+          </p>
+
+          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="trivia">
+            Trivia
+          </h2>
+          <div className="flex items-start gap-4">
+            <div className="flex-1">
+              <p>
+                • Lala, Peke along with a partial image of Haruna makes a brief
+                cameo appearance in the manga Mayoi Neko Overrun! as bystanders
+                (chapter 8, page 27).
+              </p>
+              <p>
+                • According to chapter 29 Lala does not wear a bra because she
+                finds them uncomfortable.
+              </p>
+              <p>
+                • When Lala showed Rito her tail (along with stripping naked,
+                embarrassing him), she told him that she doesn't transform when
+                the moon is full. This is a reference to Goku in the Dragon Ball
+                series by Akira Toriyama, whose tail gives him the ability to
+                transform into a large and destructive ape-like creature known
+                as Oozaru (The Great Ape in English) when the moon is full.
+              </p>
+            </div>
+            <img src="To Love Ru/lalaart.jpg" alt="" className="w-80 rounded" />
+          </div>
+              <p>
+                • Lala is the only character in the series to appear in the
+                fighting game J-Stars Victory Vs as a support character.
+              </p>
+              <p>
+                {" "}
+                • Lala's appearance is similar to Yui from the anime Angel
+                Beats, who also has long pink hair, a long black tail and
+                devilish wings on her back. However, Lala invented her wings.{" "}
+              </p>
+          
+          <p>
+            • Mizuki's design is similar to Lala's as they both have long pink
+            hair, big bust, a clip symbol on their left side of their heads, and
+            they both are gentle and well-behaved except that they have
+            different eye colors and that Peke is a robot.
+          </p>
+          <p>
+            {" "}
+            • Lala's appearance and name are similar to Lala "Lala Hojo" Lilia
+            from the manga Trans-Boy, written and illustrated by Yabuki Kentarō,
+            illustrator of the To Love-Ru series. • Satalin is similar to Satan,
+            which is Latin for "adversary" and is also the name of the Devil.
+          </p>
+          <p>
+            {" "}
+            • Lala's appearance was used as a model to create "Zero Two" at
+            Darling in the Franxx with Nemesis as base personality.{" "}
+          </p>
+          <p>
+            • Lala her sisters make a small cameo in Deadpool Samurai where
+            Thanos reveals has destroyed the Deviluke Planet. Because its just a
+            comedy manga with no canonicity (there are cameo from other
+            characters of different manga), Kentaro Yabuki joked on his twitter
+            that he checked and the planet is still here.
+          </p>
+          <br />
         </div>
 
         {/* Right: Info card sidebar */}
@@ -884,6 +1296,28 @@ export const Lala = () => {
           </div>
         </div>
       </div>
+      {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
+          showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        aria-label="Back to top"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
     </div>
   );
 };

@@ -77,7 +77,7 @@ export default function App() {
       <Outlet />
       {location.pathname !== "/music" &&
         location.pathname !== "/home" &&
-        // location.pathname !== "/test" &&
+        location.pathname !== "/test" &&
         location.pathname !== "/momo" &&
         location.pathname !== "/nana" &&
         location.pathname !== "/lala" &&

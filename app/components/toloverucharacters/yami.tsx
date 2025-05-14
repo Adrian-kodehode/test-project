@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Yami = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -23,7 +37,6 @@ export const Yami = () => {
           </a>
         </div>
       </div>
-
       {/* Wiki Navigation */}
       <nav className="bg-[#DB49AC] text-white shadow">
         <div className="container mx-auto px-4">
@@ -45,7 +58,112 @@ export const Yami = () => {
               </svg>
               EXPLORE
             </li>
-            <li className="py-3 px-4 hover:bg-pink-600">MEDIA</li>
+            <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
+              MEDIA
+              <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                <ul>
+                  {/* Manga */}
+                  <li className="relative group/manga">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Manga
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Anime */}
+                  <li className="relative group/anime">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Anime
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          Motto To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness 2nd
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Games */}
+                  <li className="relative group/games">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Games
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Battle
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: True
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Idol
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Gravure
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li className="py-3 px-4 hover:bg-pink-600">
               <Link to="/toloveru">CHARACTERS</Link>
             </li>
@@ -60,7 +178,7 @@ export const Yami = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-[#FFF4FB] flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -181,21 +299,29 @@ export const Yami = () => {
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/2/2c/Lala_Satalin_Deviluke_TLRD_Manga.png",
                     number: 1,
+                    route: "/lala",
                   },
                   {
                     name: "Yuki Rito",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/6/6d/Rito_Yuuki_TLRD_Manga.png",
                     number: 2,
+                    route: "/rito",
                   },
                   {
                     name: "Momo Deviluke",
                     image:
                       "https://static.wikia.nocookie.net/to-loveru/images/8/80/Momo_Belia_Deviluke_TLRD_Manga.png",
                     number: 3,
+                    route: "/momo",
                   },
                 ].map((page, index) => (
-                  <div key={index} className="relative">
+                  <Link
+                    key={index}
+                    to={page.route}
+                    className="relative block"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="relative">
                       <img
                         src={page.image}
@@ -209,14 +335,46 @@ export const Yami = () => {
                     <p className="text-xs font-medium text-purple-900 mt-1 line-clamp-2">
                       {page.name}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
           </div>
         </div>
+
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl ">
+          <h1 className="mb-5 text-3xl">Konjiki no Yami</h1>
+          <div className="flex flex-row mb-3 text-black">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+              Information
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                {" "}
+                Plot
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Relationships
+              </a>
+            </div>
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Gallery
+              </a>
+            </div>
+          </div>
           <p>
             <strong>Konjiki no Yami</strong> (金色の闇, Golden Darkness), mostly
             referred to by other characters as <strong>Yami</strong>, is a major
@@ -596,6 +754,200 @@ export const Yami = () => {
               </div>
             </div>
           </div>
+          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="history">
+            History
+          </h2>
+          <div className="flex flex-row gap-6 items-start">
+            <div className="flex-1">
+              <p>
+                Not much of Golden Darkness' history was known until she opened
+                up to Rito. She is a living weapon created by Dr. Tearju
+                Lunatique from her own cells (making Yami a clone) who named her
+                Eve and raised her. Eve was a happy little girl who looked up to
+                Tearju who would read her bedtime stories and cook. Despite the
+                food turning out poorly, Eve would still force herself to eat
+                it. They lived happily and Tearju planned to run away with Eve
+                but her plans were preempted by the Eden organization which
+                found out about the planned flight and attempted to kill Tearju,
+                forcing her to flee without Eve. Eve, who had just finished
+                making a necklace for Tearju, was then told that Tearju had
+                abandoned her and she would be trained as a weapon. It is then
+                that she was renamed Golden Darkness. Eden was destroyed by the
+                hitman Kuro, setting Eve free of their control. After Eden was
+                destroyed, Tearju heard rumors about a golden-haired assassin
+                and knew it had to be Eve. Tearju started searching for Eve but
+                was unable to find her (they meet again only in To-Love-Ru
+                Darkness).
+              </p>
+              <br />
+            </div>
+            <div className="flex-shrink-0">
+              <img
+                src="To Love Ru/yamiandtearju.jpg"
+                alt="Young Yami in Dr.Tearju's care."
+                className="w-60 h-auto rounded"
+              />
+            </div>
+          </div>
+          <div className="flex flex-row gap-6 items-start">
+            <div className="flex-1">
+              <p>
+                Before she met Rito and Lala, Yami lived alone in the universe,
+                performing assassination assignments as they were given to her.
+                At some point she bought an artificial intelligence for her
+                spaceship from a junk shop and named it Lunatique.
+              </p>
+              <br />
+              <p>
+                Soon after Yami completed her assassin training, she went to a
+                planet whose inhabitants have tentacles. Though she herself
+                refuses to tell of the experience, it is strongly implied that
+                it caused her extreme dislike of anything slimy and with
+                tentacles.
+              </p>
+              <br />
+              <p>
+                Yami once fought and defeated the assassin called Tyrant Azenda
+                because of a dispute within the assassination organization they
+                both worked for. That organization used to exist on the Planet
+                Kild, in the Talha Galaxy, which was known as the garbage dump
+                of the Universe
+              </p>
+            </div>
+            <div className="flex-shrink-0">
+              <img
+                src="To Love Ru/yamiart.jpg"
+                alt=""
+                className="w-60 h-auto rounded"
+              />
+            </div>
+          </div>
+          <br />
+          <p>
+            One time, while Yami was in the midst of combat her mind ran amok
+            and transformed into her Darkness Form for a few seconds. Although
+            the transformation was incomplete, she sliced the Planet Kild in
+            half. Some time after that, Yami came to Mikado suffering from many
+            injuries and with no memory of what had happened.
+          </p>
+          <br />
+          <p>
+            When she arrived on Earth, Yami had no memories from before she
+            became an assassin. However, being close to others, especially Rito,
+            has caused those memories to resurface. Yami eventually notes that
+            Rito's warmth reminds her of what she felt when she was with Tearju
+            as a child.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="powers">
+            Powers and Abilities
+          </h2>
+          <p>
+            Transformation Ability: Golden Darkness' signature ability is her
+            transformation ability otherwise known as the Trans-ability. This
+            ability allows her to turn almost any part of her body into almost
+            any animate objects (preferably weapons or tools used for combat) or
+            reshape the size and figure of her body. The nanomachines that
+            circulate through her body allow her to do this. A downside to her
+            powers is that if she uses her power excessively, the nanomachines
+            in her body overheat, leaving her extremely weak and unable to move
+            and causing her to pass out (To Love-Ru Chapter 45).
+          </p>
+          <br />
+          <p>
+            Yami considers her power to be a "cursed power" and that it can only
+            be used for hurting people (mainly males), however, she is truly
+            able to use her powers for harmless and trivial purposes with safe
+            precision, such as cutting up Lala's tofu (Chapter 76) or doing maid
+            work at Tenjōin Saki's mansion (Darkness Chapter 31).{" "}
+          </p>
+          <br />
+          <div className="flex flex-row gap-6 items-start">
+            <div className="flex-1">
+              <ul className="list-disc">
+                <li className="ml-8">
+                  <strong>Weapon Transformation</strong>: This ability gives her
+                  the power to change any and all parts of her body into weapons
+                  like her hands turning into blades, claws or huge mechanical
+                  gauntlets. Yami mostly uses this ability to create weapons
+                  from her hair, she has also been shown to create non-weapon
+                  objects such a frying pan or even some medical equipment but
+                  is still useful against opponents.
+                </li>
+                <li className="ml-8 mt-4">
+                  <strong>Hair Manipulation</strong>: Yami's most notable
+                  ability is her control over her hair. She can control its
+                  movements, extend its reach and uses it to create giant fists
+                  and dragon heads. She can even solidify her hair to form
+                  metallic objects like sword blades, metal teeth, battle axe,
+                  spiked maces, drills, hammers, shields, wrecking balls, etc.
+                  Even a giant shoe that's similar to the ones she wears. She
+                  can also use her hair to create a puppet. However she rarely
+                  uses this ability in combat, instead, she uses it to assault
+                  Rito if he happens to cause (either unintentionally or not)
+                  some mishaps around him.
+                </li>
+              </ul>
+            </div>
+            <div className="flex-shrink-0">
+              <img
+                src="To Love Ru/yamiart2.jpg"
+                alt=""
+                className="w-60 h-auto rounded"
+              />
+            </div>
+          </div>
+          <div className="flex flex-row gap-6 items-start">
+            <div className="flex-1">
+              <ul className="list-disc">
+                <li className="ml-8">
+                  <strong>Body Transformation</strong>: Yami is able to change
+                  her body sizes and measurements to look more mature and
+                  adult-like such as making her breasts larger.
+                </li>
+                <li className="ml-8">
+                  <strong>Partial Animal Transformation</strong>: She is also
+                  able to change parts of her body into animal-like features
+                  that gives her extra capabilities, growing a pair of white
+                  feathered wings (black while in her Darkness Form) from her
+                  back similer to an angel, to enable her fight. She can also
+                  turn her legs into a fish tail similar to a mermaid with gills
+                  that lets her breath and swim better underwater.
+                </li>
+                <br />
+                <p>
+                  <strong>Darkness Transformation</strong>: Following Tearju's
+                  expulsion from Eden, the scientists
+                </p>
+                <br />
+                <p>
+                  affiliated with the group implanted a program called
+                  "Darkness" into Yami. Nemesis has stated that this form is a
+                  grand weapon of destruction that has the capability to destroy
+                  the whole universe. Darkness power was so great that it could
+                  be able to overpower Kuro, destroying his seemly
+                  indestructible weapon, the Orichalcum handgun in the process.
+                  It was also feared by Tearju after Rito and Momo mentioned it
+                  to her during the Festival (Darkness Chapter 24). Because the
+                  scientists ultimately hated the fact that the universe was
+                  heading towards peace, they designed "Darkness" to activate
+                  when Yami felt a sense of peace in her heart. The
+                  Transformation starts with Yami losing control over her
+                  transform ability, in which it started molesting her with her
+                  hair. After a while, she is then cocooned by her hair and
+                  emerges in a transformed state. In this form, all of Yami's
+                  previous abilities are enhanced as well gaining new ones:
+                </p>
+              </ul>
+            </div>
+            <div className="flex-shrink-0">
+              <img
+                src="To Love Ru/yamiart3.jpg"
+                alt=""
+                className="w-60 h-auto  rounded"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Right: Info card sidebar */}
@@ -859,6 +1211,28 @@ export const Yami = () => {
           </div>
         </div>
       </div>
+      {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
+          showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        aria-label="Back to top"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
     </div>
   );
 };
