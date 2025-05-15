@@ -59,6 +59,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/run" &&
           location.pathname !== "/saki" &&
           location.pathname !== "/tearju" &&
+          location.pathname !== "/to_love-ru_manga" &&
+          location.pathname !== "/to_love-ru_darkness_manga" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         <PlaybackBar />
@@ -88,6 +90,8 @@ export default function App() {
         location.pathname !== "/yui" &&
         location.pathname !== "/mikan" &&
         location.pathname !== "/haruna" &&
+        location.pathname !== "/to_love-ru_manga" &&
+        location.pathname !== "/to_love-ru_darkness_manga" &&
         location.pathname !== "/rin" &&
         location.pathname !== "/run" &&
         location.pathname !== "/saki" &&

@@ -25,21 +25,20 @@ const slideStyles = {
 };
 
 export default function ToLoveRuWiki() {
+  const [showTopBtn, setShowTopBtn] = useState(false);
 
-    const [showTopBtn, setShowTopBtn] = useState(false);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        setShowTopBtn(window.scrollY > 100);
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-  
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 100);
     };
-  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
@@ -425,10 +424,18 @@ export default function ToLoveRuWiki() {
                           <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
                             <ul>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                                To LOVE-Ru
+                                <Link
+                                  to="/to_love-ru_manga"
+                                  className="text-black hover:underline"
+                                >
+                                  To LOVE-Ru
+                                </Link>
                               </li>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                                To LOVE-Ru Darkness
+                                <Link
+                                  to="/to_love-ru_darkness_manga"
+                                  className="text-black hover:underline"
+                                >To LOVE-Ru Darkness</Link>
                               </li>
                             </ul>
                           </div>
@@ -1836,28 +1843,28 @@ export default function ToLoveRuWiki() {
             </div>
           </div>
         </div>
-          {/* Back to Top Button */}
-      <button
-        onClick={scrollToTop}
-        className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
-          showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-        aria-label="Back to top"
-      >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
+        {/* Back to Top Button */}
+        <button
+          onClick={scrollToTop}
+          className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
+            showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
+          aria-label="Back to top"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M5 15l7-7 7 7"
-          />
-        </svg>
-      </button>
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M5 15l7-7 7 7"
+            />
+          </svg>
+        </button>
       </div>
     </>
   );
