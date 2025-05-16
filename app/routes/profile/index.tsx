@@ -6,12 +6,12 @@ export default function UserProfile() {
       <section className="container mx-auto px-4 py-10">
         <div className="bg-white border border-gray-300 rounded-2xl overflow-hidden shadow-md">
           {/* Cover Image */}
-          <div className="h-40">
+          <div className="h-80">
             <img
-              src="To Love Ru/toloveru-banner.jpg"
+              src="To Love Ru/Frame 1 (1).png"
               alt="Cover image"
-              className="w-full h-full object-scaldown"
-              style={{ objectFit: "contain" }}
+              className="w-full h-full object-bottom"
+              style={{ objectFit: "cover" }}
             />
           </div>
 
@@ -22,17 +22,17 @@ export default function UserProfile() {
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded overflow-hidden">
                   <img
-                    src="hello-4x.gif"
+                    src="To Love Ru/yami.jpg"
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
                   <h6 className="text-lg font-semibold text-gray-800">
-                    Hatsune Miku
+                    Konjiki no Yami
                   </h6>
                   <p className="text-sm text-gray-600">
-                    hatsune.miku@gmail.com
+                    golden.darkness@gmail.com
                   </p>
                 </div>
               </div>

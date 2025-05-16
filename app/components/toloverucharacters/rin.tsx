@@ -45,64 +45,116 @@ export const Rin = () => {
               </svg>
               EXPLORE
             </li>
-              <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
-                    MEDIA
-                    <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+            <li className="py-3 px-4 hover:bg-pink-600 relative group cursor-pointer">
+              MEDIA
+              <div className="absolute left-0 top-full min-w-[180px] bg-white text-black shadow-lg rounded z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                <ul>
+                  {/* Manga */}
+                  <li className="relative group/manga">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Manga
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
-                      {/* Manga */}
-                      <li className="relative group/manga">
-                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
-                        Manga
-                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                        </svg>
-                        </div>
-                        <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
-                        <ul>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                            <Link to="/to_love-ru_manga">To LOVE-Ru</Link>
-                          </li>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness</li>
-                        </ul>
-                        </div>
-                      </li>
-                      {/* Anime */}
-                      <li className="relative group/anime">
-                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
-                        Anime
-                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                        </svg>
-                        </div>
-                        <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
-                        <ul>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru</li>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">Motto To LOVE-Ru</li>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness</li>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness 2nd</li>
-                        </ul>
-                        </div>
-                      </li>
-                      {/* Games */}
-                      <li className="relative group/games">
-                        <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
-                        Games
-                        <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                        </svg>
-                        </div>
-                        <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
-                        <ul>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Battle</li>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: True</li>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Idol</li>
-                          <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">To LOVE-Ru Darkness: Gravure</li>
-                        </ul>
-                        </div>
-                      </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          <Link to="/to_love-ru_manga">To LOVE-Ru</Link>
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          <Link to="/to_love-ru_darkness_manga">
+                            To LOVE-Ru Darkness
+                          </Link>
+                        </li>
                       </ul>
                     </div>
-                    </li>
+                  </li>
+                  {/* Anime */}
+                  <li className="relative group/anime">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Anime
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          Motto To LOVE-Ru
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          <Link to="/to_love-ru_darkness_anime">
+                            To LOVE-Ru Darkness
+                          </Link>
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness 2nd
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  {/* Games */}
+                  <li className="relative group/games">
+                    <div className="px-4 py-2 hover:bg-pink-100 flex items-center justify-between">
+                      Games
+                      <svg
+                        className="w-3 h-3 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Battle
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: True
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Idol
+                        </li>
+                        <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
+                          To LOVE-Ru Darkness: Gravure
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li className="py-3 px-4 hover:bg-pink-600">
               <Link to="/toloveru">CHARACTERS</Link>
             </li>
@@ -351,7 +403,7 @@ export const Rin = () => {
                 </a>
               </li>
               <li>
-                <a href="#personaøity" className="hover:underline">
+                <a href="#personality" className="hover:underline">
                   Personality
                 </a>
               </li>

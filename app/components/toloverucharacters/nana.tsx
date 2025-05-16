@@ -1,21 +1,21 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const Nana = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        setShowTopBtn(window.scrollY > 100);
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-  
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 100);
     };
-  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -84,10 +84,12 @@ export const Nana = () => {
                     <div className="absolute left-full top-0 min-w-[180px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/manga:opacity-100 group-hover/manga:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_manga">To LOVE-Ru</Link>  
+                          <Link to="/to_love-ru_manga">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness
+                          <Link to="/to_love-ru_darkness_manga">
+                            To LOVE-Ru Darkness
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -113,13 +115,15 @@ export const Nana = () => {
                     <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru
+                          <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           Motto To LOVE-Ru
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness
+                          <Link to="/to_love-ru_darkness_anime">
+                            To LOVE-Ru Darkness
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           To LOVE-Ru Darkness 2nd
@@ -615,6 +619,70 @@ export const Nana = () => {
               She is very caring towards animals due to her ability to talk to
               them.
             </p>
+            <br />
+            <h2 className="text-2xl font-bold border-b mb-4" id="history">
+              Powers and Abilities
+            </h2>
+            <p>
+              <strong>Devilukean/Charmian Hybrid Physiology</strong>: Like all
+              Devilukeans, Nana's physical skills are greater than any known
+              race. Her's in particular, because Nana can be very athletic, as
+              she is very good at sports, even being asked to join Sainan High's
+              swimming club. Nana also possesses the Devilukean's super strength
+              and their bloodlust, making her very dangerous in battle. However,
+              her most notable ability is communicating with all animal life, it
+              is revealed that this is a result of having Charmian descendants
+              from her mother mixed with her Devilukean blood.
+            </p>
+            <br />
+            <div className="ml-8">
+              <li>
+                Superhuman Strength: As a Devilukean, Nana possesses incredible
+                strength, even able to throw an actual person (often Rito) a
+                great distance.
+              </li>
+              <br />
+              <li>
+                Devilukean Tail: Like her sisters, she also has the ability to
+                shoot lightning out from the tip of her tail, when using this
+                ability in tandem with with Momo's, it creates an even more
+                powerful lighting shot. Also like her sisters, Nana also becomes
+                weak whenever someone touches her tail. This weakness is usually
+                taken advantage of by Momo whenever they get into fight.
+              </li>
+              <br />
+              <li>
+                {" "}
+                Intelligence: Nana is not the smartest, but she is knowledgeable
+                of animals in the galaxy. Interestingly, she has a degree of
+                intelligence, such as understanding Rito's feelings.
+              </li>
+              <br />
+              <li>
+                Zoolingualism: An ability unique only to Nana. She shares a
+                connection to animal life since she was born, being able to
+                communicate with them, though this doesn't seem to be the case
+                with animals with low intellect.
+              </li>
+              <br />
+              <li className="ml-8">
+                Expert Xenoecologist: Compared to both her sisters (and perhaps
+                most characters), Nana is the least smart in comparison, even in
+                Earth history. However, she is an expert on most animal
+                biodiversity in the galaxy. She is very knowledgeable in the
+                habitats and lifestyles of many species in the galaxy, and is
+                able to customize and maintain the ecosystem in her cyber safari
+                so that all her different pets from various alien sources can
+                co-exist together. Strangely, she was unaware of where babies
+                come from until recently.
+              </li>
+              <br />
+              <li>
+                Strong Will Power: She has great willpower since she is the only
+                person able to resist Mea's Psycho Dive which is shown twice.
+              </li>
+              <br />
+            </div>
           </div>
         </div>
         {/* Right: Info card sidebar */}
@@ -870,7 +938,7 @@ export const Nana = () => {
           </div>
         </div>
       </div>
-       {/* Back to Top Button */}
+      {/* Back to Top Button */}
       <button
         onClick={scrollToTop}
         className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${

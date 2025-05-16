@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Saki = () => {
+export const Toloverudarknessanime = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
+  const [showImageModal, setShowImageModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -114,15 +115,13 @@ export const Saki = () => {
                     <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
+                          To LOVE-Ru
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           Motto To LOVE-Ru
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness_anime">
-                            To LOVE-Ru Darkness
-                          </Link>
+                          To LOVE-Ru Darkness
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           To LOVE-Ru Darkness 2nd
@@ -332,7 +331,7 @@ export const Saki = () => {
                         alt={page.name}
                         className="w-full aspect-square object-cover"
                       />
-                      <div className="absolute top-0 left-0 bg-purple-800 text-white w-5 h-5 flex items-center justify-center text-xs">
+                      <div className="absolute top-0 left-0 bg-purple-800 text-[#F9D910] w-5 h-5 flex items-center justify-center text-xs">
                         {page.number}
                       </div>
                     </div>
@@ -346,46 +345,24 @@ export const Saki = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl ">
-          <h1 className="mb-5 text-3xl">Tenjōin Saki</h1>
-          <div className="flex flex-row mb-3 text-black">
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
-              Information
-            </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
-              <a
-                href=""
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Plot
-              </a>
-            </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
-              <a
-                href=""
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Relationships
-              </a>
-            </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
-              <a
-                href=""
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Gallery
-              </a>
-            </div>
-          </div>
+        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+          <h1 className="mb-5 italic text-3xl">To LOVE-Ru Darkness (anime)</h1>
           <p>
-            <strong>Tenjōin Saki</strong> is the arrogant self-proclaimed queen
-            bee of the school. She is currently in her third-year. Saki
-            consistently tries to defeat Lala in everything, stating there can
-            only be one "queen" in Sainan High. She even tries to seduce Rito to
-            make Lala jealous (despite not loving him), but later, she falls in
-            love with Zastin. She once teamed up with Run Elise Jewelria to make
-            Lala look bad in front of Rito and to prove that Saki is the queen
-            of all things.
+            <strong className="italic">To LOVE-Ru</strong> (To LOVEる (To
+            Rabu-ru?)) was produced by XEBEC , directed by Takao Kato, and aired
+            in Japan between April 3rd and September 25th, 2008. It consists of
+            twenty-six episodes, following a different storyline than the manga,
+            until the anime refocused back to the manga in future OVAs and
+            season sequels. This led to negative comments, due to many episodes
+            being filler. Reviews on the OVA has been slightly better since they
+            adapt manga chapters.
+          </p>
+          <br />
+          <p>
+            In December 2018, North American licensor Sentai Filmworks confirmed
+            an English dub covering the entire first season was being produced.
+            In November 2019, Sentai Filmworks announced the English dub cast
+            and that the dubbed series would release on March 31, 2020.
           </p>
           <nav className="w-44 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
@@ -411,381 +388,346 @@ export const Saki = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#appearance" className="hover:underline">
-                  {" "}
-                  Appearance
-                </a>
-              </li>
-
-              <li>
-                <a href="#personality" className="hover:underline">
-                  Personality
+                <a href="#overview" className="hover:underline">
+                  Overview
                 </a>
               </li>
               <li>
-                <a href="#etymology" className="hover:underline">
-                  Etymology
+                <a href="#plot" className="hover:underline">
+                  Plot
                 </a>
               </li>
               <li>
-                <a href="#trivia" className="hover:underline">
-                  Trivia
+                <a href="#characters" className="hover:underline">
+                  Characters
+                </a>
+              </li>
+              <li>
+                <a href="#music" className="hover:underline">
+                  Music
+                </a>
+              </li>
+              <li>
+                <a href="#staff-credits" className="hover:underline">
+                  Staff Credits
+                </a>
+              </li>
+              <li>
+                <a href="#video-games" className="hover:underline">
+                  Video Games
+                </a>
+              </li>
+              <li>
+                <a href="#episode-list" className="hover:underline">
+                  Episode List
+                </a>
+              </li>
+              <li>
+                <a href="#ova" className="hover:underline">
+                  OVA
+                </a>
+              </li>
+              <li>
+                <a href="#external-links" className="hover:underline">
+                  External links
                 </a>
               </li>
             </ol>
           </nav>
-          <div className="flex-1 text-black  max-w-2xl ">
-            <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
-              Appearance
+          <div className="flex-1 text-black max-w-2xl">
+            <br />
+          </div>
+          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
+            Overview
+          </h2>
+          <p>
+            The anime adaptation of the sequel focuses on more maturity than the
+            previous anime sequels. The series still retains its usual perverted
+            comedy, except with a serious focus on its story plot and character
+            development, especially around{" "}
+            <a href="/yami" className="text-[purple] underline">
+              Yami
+            </a>
+            . The series provides more censored fan service during TV airing,
+            while following closely to the manga.
+          </p>
+          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
+            Plot
+          </h2>
+          <p>
+            As close encounters of the twisted kind between the residents of the
+            planet Develuke (represented primarily by the female members of the
+            royal family) and the inhabitants of Earth (represented mainly by
+            one very exhausted Rito Yuki) continue to escalate, the situation
+            spirals even further out of control. When junior princesses Nana and
+            Momo transferred into Earth School where big sister LaLa can
+            (theoretically) keep an eye on them, things SHOULD be smooth
+            sailing. But when Momo decides she'd like to "supplement" Rito's
+            relationship with LaLa with a little "sisterly love," you know
+            LaLa's not going to waste any time splitting harems. Unfortunately,
+            it's just about that point that Yami, the Golden Darkness, enters
+            the scene with all the subtleness of a supernova, along with an army
+            of possessed high school students! All of which is certain to make
+            Rito's life suck more than a black hole at the family picnic.
+            Unless, of course, a certain semi-demonic princess can apply a
+            little of her Develukean Whoop Ass to exactly that portion of
+            certain other heavenly bodies!
+          </p>
+          <br />
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2
+              className="text-2xl font-bold  border-b mt-8 mb-4"
+              id="characters"
+            >
+              Characters
+            </h2>
+            <ul className="mt-2 space-y-1">
+              {[
+                { name: "Rito Yuuki", route: "/rito" },
+                { name: "Momo Belia Deviluke", route: "/momo" },
+                { name: "Mea Kurosaki", route: "/mea" },
+                { name: "Nemesis", route: "/nemesis" },
+                { name: "Nana Astar Deviluke", route: "/nana" },
+                { name: "Lala Satalin Deviluke", route: "/lala" },
+                { name: "Haruna Sairenji", route: "/haruna" },
+                { name: "Yami", route: "/yami" },
+                { name: "Mikan Yuuki", route: "/mikan" },
+                { name: "Yui Kotegawa", route: "/yui" },
+              ].map((char) => (
+                <li key={char.route} className="flex items-center">
+                  <span className="w-1 h-1 rounded-full bg-black mr-2 inline-block" />
+                  <Link
+                    to={char.route}
+                    className="text-[purple] hover:underline"
+                  >
+                    {char.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="music">
+              Music
+            </h2>
+            <li className="font-bold">
+              Opening Theme:{" "}
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                "Rakuen PROJECT"
+              </a>{" "}
+              by{" "}
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Ray
+              </a>
+            </li>
+
+            <li className="font-bold">
+              Ending Theme: "Foul Play ni Kurari" by{" "}
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Kanon Wakeshima
+              </a>
+            </li>
+
+            <h2
+              className="text-2xl font-bold border-b mt-8 mb-4"
+              id="staff-credits"
+            >
+              Staff Credits
+            </h2>
+            <div className="flex flex-row items-start gap-6">
+              <div className="flex-1">
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>
+                    <strong>Original Creator:</strong> Yabuki Kentarō (art),
+                    Hasemi Saki (story)
+                  </li>
+                  <li>
+                    <strong>Director:</strong> Atsushi Ootsuki
+                  </li>
+                  <li>
+                    <strong>Music:</strong> Takeshi Watanabe
+                  </li>
+                  <li>
+                    <strong>Original Character Design:</strong> Yabuki Kentarō
+                  </li>
+                  <li>
+                    <strong>Character Design:</strong> Yūichi Oka
+                  </li>
+                  <li>
+                    <strong>Art Director:</strong> Nariyuki Ogi
+                  </li>
+                  <li>
+                    <strong>Animation Producer:</strong> Takumi Kusakabe
+                  </li>
+                  <li>
+                    <strong>Color Design:</strong> Tamae Matsuoka
+                  </li>
+                  <li>
+                    <strong>Art Design:</strong> Nariyuki Ogi
+                  </li>
+                  <li>
+                    <strong>Sound Director:</strong> Jin Aketagawa
+                  </li>
+                  <li>
+                    <strong>Producer:</strong> Kazumasa Sanjouba, Kentarō
+                    Hattori, Nobuhiro Wakayama, Tsuyoshi Tanaka
+                  </li>
+                </ul>
+              </div>
+              <div className="flex-shrink-0">
+                <img
+                  src="To Love Ru/toloverudarknessanimelogo.jpg"
+                  alt=""
+                  className="max-w-[200px] h-auto"
+                />
+              </div>
+            </div>
+            <h2
+              className="text-2xl font-bold border-b mt-8 mb-4"
+              id="video-games"
+            >
+              Video Games
             </h2>
             <p>
-              Saki has golden eyes and light blonde hair that's lightly permed
-              in the back and curled into spirals over her shoulders with two
-              small buns on both sides of her head held by red ribbons. Her
-              3-sizes are B84-W56-H85.
+              A PS-VITA RPG story action game titled To Love-Ru Darkness: Battle
+              Ecstasy, was released on May 22, 2014. It was developed by FuRyu,
+              developer of{" "}
+              <a href="#" className="text-[purple] underline hover:text-black">
+                Unchained Blades
+              </a>
+              .
             </p>
-            <br />
-            <div className="flex-1 text-black  max-w-2xl ">
-              <h2 className="text-2xl font-bold border-b mb-4" id="personality">
-                Personality
-              </h2>
-              <div className="flex items-start mb-4">
-                <img
-                  src="To Love Ru/saki.jpg"
-                  alt=""
-                  className="w-60 h-60 object-cover mr-6 rounded shadow"
-                />
-                <p>
-                  Saki can be stuck-up and full of herself, and she is quite
-                  competitive, especially to Lala, whom she considers her
-                  greatest rival. She is determined to prove that she is a
-                  magnificent person, and even gives herself many different
-                  titles as a self-proclaimed queen. She is highly arrogant and
-                  believes that no one is greater than her. She also has a
-                  proverbial laughter that is very stereotypical to her stuck-up
-                  personality.
-                </p>
-                <br />
-              </div>
-              <p>
-                On the other hand, she has a kind side to her, as she saved Aya
-                from bullies and cares for her deeply as one of her closest
-                friends along with Rin. She basically feels competitive towards
-                anyone who might rival her glory, but otherwise, she can be
-                quite courteous and hospitable even towards humble people,
-                seeing their needs and desperations if they come off well
-                enough. She often tries to earn the love and glory she wishes to
-                receive from people by serving them with her own wealth, such as
-                when she hosted a Christmas party for various people and other
-                students, when she invited classmates to her private beach, and
-                when she served food to her servants. She is very caring towards
-                her friends, and is polite and grateful towards her domestic
-                workers and guardians, showing a great deal of worry for them
-                and never looking down on them as mere servants or commoners.
-              </p>
-              <br />
-            </div>
-            <div className="flex-1 text-black  max-w-2xl ">
-              <h2 className="text-2xl font-bold border-b mb-4" id="etymology">
-                Etymology
-              </h2>
-              <p>
-                • <strong>Tenjōin</strong> means "heaven/heavenly, sky,
-                imperial" (天) (ten), "article" (条) (jō) and "hospital" (院)
-                (in).
-              </p>
-              <br />
-              <p>
-                • <strong>Saki</strong> means "sand" (沙) (sa) and "noble lady"
-                (姫) (ki).
-              </p>
-              <br />
-            </div>
-            <div className="flex-1 text-black  max-w-2xl ">
-              <h2 className="text-2xl font-bold border-b mb-4" id="trivia">
-                Trivia
-              </h2>
-              <div className="flex flex-row items-start gap-6">
-                <div className="flex-1">
-                  <p>
-                    • Saki made a cameo appearance along with Rin and Aya in
-                    Mayoi Neko Overrun! ch. 3 pg24.
-                  </p>
-                  <p>
-                    • In Darkness Chapter 31, it shows that Saki has excellent
-                    artistic skills, having drawn a painting of Zastin in a
-                    bishounen style.
-                  </p>
-                  <p>
-                    • Saki's first name shares the name of Saki Hasemi, the
-                    writer of To Love-Ru.
-                  </p>
-                  <p>
-                    • Despite{" "}
-                    <a href="/momo" className="text-[purple]">
-                      Momo Belia Deviluke
-                    </a>{" "}
-                    saying that it'll be hard to include Saki in the Harem Plan,
-                    the title sequence of To LOVE-Ru Darkness 2nd shows Saki as
-                    one of the brides waiting for Rito.
-                  </p>
-                  <p>
-                    • Saki Tenjouin is ranked at 7th in the first poll of To
-                    Love Ru by 2086 votes. It is announced in the coloured front
-                    of the chapter 57, arranged in a middle part of the Weekly
-                    Shonen Jump.
-                  </p>
-                  <br />
-                </div>
-                <img
-                  src="To Love Ru/sakiart.jpg"
-                  alt=""
-                  className="w-60 h-auto rounded shadow"
-                  style={{ maxWidth: "240px" }}
-                />
-              </div>
-            </div>
           </div>
         </div>
+
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
             <div className="text-center  w-full">
-              <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
-                Tenjōin Saki
+              <h1 className="text-[#F9D910] bg-[#DB49AC] text-xl italic font-bold p-2 ">
+                To LOVE-Ru Darkness
               </h1>
             </div>
-            <div className="flex justify-center  w-full">
+            <div className="flex justify-center w-full">
               <img
-                src="To Love Ru/Saki1.jpg"
-                alt="Tenjōin Saki"
-                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
+                src="To Love Ru/toloverudarknessanime.jpg"
+                alt="Lala Satalin Deviluke"
+                className="w-80 h-80 object-contain border-2 border-[#DB49AC] "
               />
             </div>
             <div className="w-full overflow-x-auto">
-              <table className="min-w-full border-separate border-spacing-0">
+              <table className="w-full min-w-full border-separate border-spacing-0">
                 <tbody>
                   {/* Characteristics */}
                   <tr>
                     <td
                       colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
+                      className="bg-[#DB49AC] w-full text-center text-[#F9D910] font-bold p-2"
                     >
-                      Characteristics
+                      Information
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 w-1/3 border border-[#9C2E7A] ">
-                      Kanji
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 w-1/3 border border-[#9C2E7A] ">
+                      Japanese
+                    </td>
+                    <td className="bg-white text-center  text-black p-2 border border-[#DB49AC] ">
+                      To LOVEる -とらぶる- ダークネス
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Rōmaji
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      天条院 沙姫
+                      To Raburu -Toraburu- Dākunesu
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Name
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-boldd p-2 border border-[#9C2E7A] ">
+                      Studio(s)
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Tenjōin Saki
+                      Xebec
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Planet
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Licencor[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Earth
+                      Sentai Filmworks
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Age
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Producer[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      16 (Second year) <br />
-                      17 (Third year)
+                      Geneon Universal Entertainment, Magic Capsual
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Birthday
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Director
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      February 1
+                      Atsushi Ootsuki
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Zodiac Sign
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Aired
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Aquarius
+                      October 6, 2012 to December 29, 2012
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Gender
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Episodes
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Female
+                      12
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Height
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Duration
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      165cm
+                      24 minutes per episode
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Weight
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Status
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      50kg
+                      Finished
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Blood Type
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Genre[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      A
+                      Comedy, Ecchi, Harem, Romance, School, Sci-Fi, Shōnen
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Hair Color
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Ratings
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Blonde
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Eye Color
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Gold
-                    </td>
-                  </tr>
-                  {/* Personal Status */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      Personal Status
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      School
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Sainan High
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Class
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      2-D (chapters 1-48) <br />
-                      3-D (chapters 49-present)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Education
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Currently attending Sainan High
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Relatives
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Tenjōin Ryūga (Father)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Martial Status
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Single
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Unusual Features
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Stereotypical noblewoman's laugh
-                    </td>
-                  </tr>
-                  {/* First Appearance */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      First Appearance
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Manga Debut
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Chapter 24
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Anime Debut
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Episode 5
-                    </td>
-                  </tr>
-                  {/* Voice Actors */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      Voice Actors
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Japanese VA
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Ayako Kawasumi
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      English VA
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Maggie Flecknoe
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      Gallery
+                      R+ - Mild Nudity
                     </td>
                   </tr>
                 </tbody>

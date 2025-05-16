@@ -86,7 +86,9 @@ export const Yami = () => {
                           <Link to="/to_love-ru_manga">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness
+                          <Link to="/to_love-ru_darkness_manga">
+                            To LOVE-Ru Darkness
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -112,13 +114,15 @@ export const Yami = () => {
                     <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru
+                          <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           Motto To LOVE-Ru
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness
+                          <Link to="/to_love-ru_darkness_anime">
+                            To LOVE-Ru Darkness
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           To LOVE-Ru Darkness 2nd
@@ -905,14 +909,23 @@ export const Yami = () => {
                   her body sizes and measurements to look more mature and
                   adult-like such as making her breasts larger.
                 </li>
-                <li className="ml-8">
-                  <strong>Partial Animal Transformation</strong>: She is also
-                  able to change parts of her body into animal-like features
-                  that gives her extra capabilities, growing a pair of white
-                  feathered wings (black while in her Darkness Form) from her
-                  back similer to an angel, to enable her fight. She can also
-                  turn her legs into a fish tail similar to a mermaid with gills
-                  that lets her breath and swim better underwater.
+                <li className="ml-8 flex flex-row items-start gap-6">
+                  <div className="flex-1">
+                    <strong>Partial Animal Transformation</strong>: She is also
+                    able to change parts of her body into animal-like features
+                    that gives her extra capabilities, growing a pair of white
+                    feathered wings (black while in her Darkness Form) from her
+                    back similar to an angel, to enable her to fly. She can also
+                    turn her legs into a fish tail similar to a mermaid with
+                    gills that lets her breathe and swim better underwater.
+                  </div>
+                  <div className="flex-shrink-0">
+                    <img
+                      src="To Love Ru/yamiart4.jpg"
+                      alt=""
+                      className="mt-80 w-60 h-auto rounded"
+                    />
+                  </div>
                 </li>
                 <br />
                 <p>

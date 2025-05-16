@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Toloverumanga = () => {
+export const Toloveruanime = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
 
@@ -346,21 +346,23 @@ export const Toloverumanga = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 italic text-3xl">To LOVE-Ru (manga)</h1>
-
+          <h1 className="mb-5 italic text-3xl">To LOVE-Ru (anime)</h1>
           <p>
-            <strong className="italic">To LOVE-Ru -Trouble-</strong> (To LOVEる
-            -とらぶる- (To Rabu-ru -Toraburu-?)) is the original manga. It
-            started publishing in Shonen Jump Weekly on April 24, 2006 and
-            finished on August 31, 2009. It was followed by a sequel titled To
-            LOVE-Ru Darkness.
+            <strong className="italic">To LOVE-Ru</strong> (To LOVEる (To
+            Rabu-ru?)) was produced by XEBEC , directed by Takao Kato, and aired
+            in Japan between April 3rd and September 25th, 2008. It consists of
+            twenty-six episodes, following a different storyline than the manga,
+            until the anime refocused back to the manga in future OVAs and
+            season sequels. This led to negative comments, due to many episodes
+            being filler. Reviews on the OVA has been slightly better since they
+            adapt manga chapters.
           </p>
           <br />
           <p>
-            For chapter covers, see{" "}
-            <a href="#" className="text-[purple] underline">
-              Manga Covers
-            </a>
+            In December 2018, North American licensor Sentai Filmworks confirmed
+            an English dub covering the entire first season was being produced.
+            In November 2019, Sentai Filmworks announced the English dub cast
+            and that the dubbed series would release on March 31, 2020.
           </p>
           <nav className="w-44 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
@@ -386,145 +388,50 @@ export const Toloverumanga = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#plot" className="hover:underline">
-                  Plot
-                </a>
-              </li>
-              <li>
                 <a href="#characters" className="hover:underline">
                   Characters
                 </a>
               </li>
               <li>
-                <a href="#chapters" className="hover:underline">
-                  Chapters
+                <a href="#plot" className="hover:underline">
+                  Plot
+                </a>
+              </li>
+              <li>
+                <a href="#music" className="hover:underline">
+                  Music
                 </a>
                 <ol className="list-decimal list-inside pl-5 text-gray-600 text-xs mt-1">
                   <li>
-                    <a href="#vol-1" className="hover:underline">
-                      Volume 1 (Chapters 1-7)
+                    <a href="#opening-theme" className="hover:underline">
+                      Opening Theme
                     </a>
                   </li>
                   <li>
-                    <a href="#vol-2" className="hover:underline">
-                      Volume 2 (Chapters 8-16)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-3" className="hover:underline">
-                      Volume 3 (Chapters 17-25)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-4" className="hover:underline">
-                      Volume 4 (Chapters 26-34)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-5" className="hover:underline">
-                      Volume 5 (Chapters 35-43)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-6" className="hover:underline">
-                      Volume 6 (Chapters 44-52)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-7" className="hover:underline">
-                      Volume 7 (Chapters 53-61)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-8" className="hover:underline">
-                      Volume 8 (Chapters 62-70)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-9" className="hover:underline">
-                      Volume 9 (Chapters 71-79)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-10" className="hover:underline">
-                      Volume 10 (Chapters 80-88)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-11" className="hover:underline">
-                      Volume 11 (Chapters 89-97)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-12" className="hover:underline">
-                      Volume 12 (Chapters 98-106)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-13" className="hover:underline">
-                      Volume 13 (Chapters 107-115)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-14" className="hover:underline">
-                      Volume 14 (Chapters 116-124)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-15" className="hover:underline">
-                      Volume 15 (Chapters 125-133)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-16" className="hover:underline">
-                      Volume 16 (Chapters 134-142)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-17" className="hover:underline">
-                      Volume 17 (Chapters 143-152)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vol-18" className="hover:underline">
-                      Volume 18 (Chapters 153-162)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#special" className="hover:underline">
-                      Special Chapters
+                    <a href="#ending-theme" className="hover:underline">
+                      Ending Theme
                     </a>
                   </li>
                 </ol>
               </li>
+              <li>
+                <a href="#episode-list" className="hover:underline">
+                  Episode List
+                </a>
+              </li>
+              <li>
+                <a href="#ova-episodes" className="hover:underline">
+                  OVA episodes
+                </a>
+              </li>
+              <li>
+                <a href="#receptions" className="hover:underline">
+                  Receptions
+                </a>
+              </li>
             </ol>
           </nav>
           <div className="flex-1 text-black max-w-2xl">
-            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
-              Plot
-            </h2>
-
-            <p>
-              The story of To Love-Ru revolves around Yuuki Rito, a high-school
-              student who cannot confess to the girl of his dreams, Sairenji
-              Haruna. One day when coming home and sulking in the bathtub, a
-              mysterious, nude girl appears out of nowhere. Her name is Lala and
-              she comes from the planet Deviluke, where she is the heir to the
-              throne. Her father wants her to return to her home planet so she
-              can marry one of the husband candidates. But she decides that she
-              wants to marry Rito in order to stay on Earth. Commander Zastin
-              has been ordered to bring Lala back and has already battled Rito.
-              He reports to the emperor that Rito would be suited to marry Lala,
-              after hearing Rito, who was actually defending himself instead of
-              Lala, says that marriage is impossible unless it is with the
-              person you love. Lala truly falls in love with Rito and decides
-              that she wants to marry Rito after hearing what he said. Her
-              father decides that, if Rito is able to protect Lala from her
-              fiancés, then he can marry her, but if Rito cannot protect Lala
-              from her other fiancés and meet the king's expectations, Lala's
-              father will kill Rito and destroy the Earth.
-            </p>
-
             <br />
           </div>
           <div className="flex-1 text-black  max-w-2xl">
@@ -536,15 +443,15 @@ export const Toloverumanga = () => {
             </h2>
             <ul className="mt-2 space-y-1">
               {[
-                { name: "Yuuki Rito", route: "/rito" },
+                { name: "Rito Yuuki", route: "/rito" },
                 { name: "Lala Satalin Deviluke", route: "/lala" },
-                { name: "Sairenji Haruna", route: "/haruna" },
+                { name: "Haruna Sairenji", route: "/haruna" },
                 { name: "Yami", route: "/yami" },
-                { name: "Yuuki Mikan", route: "/mikan" },
+                { name: "Mikan Yuuki", route: "/mikan" },
                 { name: "Run Elsie Jewelria", route: "/run" },
                 { name: "Ren Elsie Jewelria", route: "#" },
-                { name: "Tenjōin Saki", route: "/saki" },
-                { name: "Kotegawa Yui", route: "/yui" },
+                { name: "Saki Tenjouin", route: "/saki" },
+                { name: "Yui Kotegawa", route: "/yui" },
                 { name: "Gid Lucione Deviluke", route: "#" },
                 { name: "Zastin", route: "#" },
               ].map((char) => (
@@ -559,6 +466,79 @@ export const Toloverumanga = () => {
                 </li>
               ))}
             </ul>
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
+              Plot
+            </h2>
+            <div className="flex flex-row items-start gap-6">
+              <div className="flex-1">
+                <p>
+                  Timid 16-year-old Rito Yuuki has yet to profess his love to
+                  Haruna Sairenji—a classmate and subject of his infatuation
+                  since junior high. Sadly, his situation becomes even more
+                  challenging when one night, a mysterious, stark-naked girl
+                  crash-lands right on top of a bathing Rito.
+                </p>
+                <br />
+                <p>
+                  To add to the confusion, Rito discovers that the girl, Lala
+                  Satalin Deviluke, is the crown princess of an alien empire and
+                  has run away from her home. Despite her position as the
+                  heiress to the most dominant power in the entire galaxy, Lala
+                  is surprisingly more than willing to marry the decidedly
+                  average Rito in order to avoid an unwanted political marriage.
+                </p>
+              </div>
+              <div className="flex-shrink-0 w-56">
+                <img
+                  src="To Love Ru/toloveruanimelogo.jpg"
+                  alt="To LOVE-Ru Anime Logo"
+                  className="w-full object-contain rounded"
+                />
+              </div>
+            </div>
+            <br />
+            <p>
+              To LOVE-Ru depicts Rito's daily struggles with the bizarre chaos
+              that begins upon the arrival of Lala. With an evergrowing legion
+              of swooning beauties that continuously foil his attempted
+              confessions to Haruna, To LOVE-Ru is a romantic comedy full of
+              slapstick humor, sexy girls, and outlandishly lewd moments that
+              defy the laws of physics.
+            </p>
+            <br />
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="music">
+              Music
+            </h2>
+            <h3 className="font-bold">Opening Theme</h3>
+            <li className="ml-8">
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black font-bold"
+              >
+                "Forever We Can Make It"
+              </a>{" "}
+              by Thyme
+            </li>
+            <br />
+            <h3 className="font-bold">Ending Theme</h3>
+            <li className="ml-8">
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black font-bold"
+              >
+                "Lucky Tune"
+              </a>{" "}
+              (ラッキーチューン,Rakkī Chūn) by Anna (1 - 13, 26)
+            </li>
+            <li className="ml-8">
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black font-bold"
+              >
+                "Kiss no Yukue"
+              </a>{" "}
+              (kissの行方), by Anna (14 - 25).
+            </li>
             <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="chapters">
               Chapters
             </h2>
@@ -631,6 +611,7 @@ export const Toloverumanga = () => {
                   </a>
                 </li>
               </ul>
+
               <div className="w-56 max-w-xs flex-shrink-0">
                 <button
                   type="button"
@@ -2704,7 +2685,7 @@ export const Toloverumanga = () => {
             </div>
             <div className="flex justify-center w-full">
               <img
-                src="To Love Ru/To_Love-Ru_Volume_1.jpg"
+                src="To Love Ru/toloveruanime.jpg"
                 alt="Lala Satalin Deviluke"
                 className="w-80 h-80 object-contain border-2 border-[#DB49AC] "
               />
@@ -2726,7 +2707,7 @@ export const Toloverumanga = () => {
                       Japanese
                     </td>
                     <td className="bg-white text-center  text-black p-2 border border-[#DB49AC] ">
-                      To LOVEる -とらぶる-
+                      To LOVEる
                     </td>
                   </tr>
                   <tr>
@@ -2734,39 +2715,55 @@ export const Toloverumanga = () => {
                       Rōmaji
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      To Rabu ru -toraburu-
+                      To Rabu ru
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-[#F9D910] font-boldd p-2 border border-[#9C2E7A] ">
-                      Author
+                      Studio(s)
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Hasemi Saki
+                      Xebec
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Illustrator
+                      Licencor[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Yabuki Kentarō
+                      Sentai Filmworks
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Volumes
+                      Producer[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      18
+                      Geneon Universal Entertainment, TBS
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Chapters
+                      Aired
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      162
+                      April 4, 2008 to September 26, 2008
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Episodes
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      26
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Duration
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      24 minutes per episode
                     </td>
                   </tr>
                   <tr>
@@ -2774,32 +2771,23 @@ export const Toloverumanga = () => {
                       Status
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Completed
+                      Finished
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Published
+                      Genre[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Apr 24.2006 to Aug 31, 2009
+                      Comedy, Ecchi, Harem, Romance, School, Sci-Fi
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Genre(s)
+                      Ratings
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Comedy, Ecchi, Romance, School, Sci-Fi, Shounen, Harem,
-                      Supernatural
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Serialization
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Shounen Jump (Weekly)
+                      R+ - Mild Nudity
                     </td>
                   </tr>
                 </tbody>

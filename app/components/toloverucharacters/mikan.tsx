@@ -86,7 +86,9 @@ export const Mikan = () => {
                           <Link to="/to_love-ru_manga">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness
+                          <Link to="/to_love-ru_darkness_manga">
+                            To LOVE-Ru Darkness
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -112,13 +114,15 @@ export const Mikan = () => {
                     <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru
+                          <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           Motto To LOVE-Ru
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness
+                          <Link to="/to_love-ru_darkness_anime">
+                            To LOVE-Ru Darkness
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           To LOVE-Ru Darkness 2nd
@@ -586,6 +590,231 @@ export const Mikan = () => {
             stupid of him, she was also happy knowing how much he really cares
             for her.
           </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="appellations">
+            Appellations
+          </h2>
+          <div className="grid grid-cols-3 gap-0 border mb-6">
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              Character
+            </div>
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              What they call her
+            </div>
+            <div className="font-bold border flex items-center justify-center p-2 bg-gray-100">
+              What she calls them
+            </div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/rito">Yūki Rito</a>
+            </div>
+            <div className="border p-2">Mikan</div>
+            <div className="border p-2">Rito, Onii-Chan (sometimes)</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/lala">Lala Satalin Deviluke</a>
+            </div>
+            <div className="border p-2">Mikan</div>
+            <div className="border p-2">Lala-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/nana">Nana Astar Deviluke</a>
+            </div>
+            <div className="border p-2">Mikan</div>
+            <div className="border p-2">Nana-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/momo">Momo Belia Deviluke</a>
+            </div>
+            <div className="border p-2">Mikan-san</div>
+            <div className="border p-2">Momo-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/yami">Yami</a>
+            </div>
+            <div className="border p-2">Mikan, Yūki Mikan (earlier)</div>
+            <div className="border p-2">Yami-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/mea">Kurosaki Mea</a>
+            </div>
+            <div className="border p-2">Mikan-chan</div>
+            <div className="border p-2">Mea-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/haruna">Sairenji Haruna</a>
+            </div>
+            <div className="border p-2">Mikan-chan</div>
+            <div className="border p-2">Haruna-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/saki">Tenjōin Saki</a>
+            </div>
+            <div className="border p-2">Mikan, Yūki Mikan</div>
+            <div className="border p-2">Saki-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/rin">Kujō Rin</a>
+            </div>
+            <div className="border p-2">Mikan, Yūki Mikan (initially)</div>
+            <div className="border p-2">Rin-san, Kujou-san (initially)</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/oshizu">Murasame Shizu</a>
+            </div>
+            <div className="border p-2">Mikan-san</div>
+            <div className="border p-2">Oshizu-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/saruyama">Saruyama Kenichi</a>
+            </div>
+            <div className="border p-2">Mikan-chan</div>
+            <div className="border p-2">Saruyama-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/tearju">Tearju Lunatique</a>
+            </div>
+            <div className="border p-2">Mikan-chan</div>
+            <div className="border p-2">Tearju-san</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/mami">Nogiwa Mami</a>
+            </div>
+            <div className="border p-2">Mikan-chan</div>
+            <div className="border p-2">Mami</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/sachi">Kogure Sachie</a>
+            </div>
+            <div className="border p-2">Mikan</div>
+            <div className="border p-2">Sachi</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/haruko">Nitta Haruko</a>
+            </div>
+            <div className="border p-2">Yuuki-san, Mikan-chan</div>
+            <div className="border p-2">Haruko-sensei</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/ooyoshi">Ōyoshi Makoto</a>
+            </div>
+            <div className="border p-2">Yuuki-san</div>
+            <div className="border p-2">Ooyoshi-kun</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/kosuge">Kosuge</a>
+            </div>
+            <div className="border p-2">Yuuki-san</div>
+            <div className="border p-2">Kosuge-kun</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/celine">Celine</a>
+            </div>
+            <div className="border p-2">Mikan</div>
+            <div className="border p-2">Celine</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/peke">Peke</a>
+            </div>
+            <div className="border p-2">Mikan-san, Mikan-dono</div>
+            <div className="border p-2">Peke</div>
+
+            <div className="border p-2 text-[purple]">
+              <a href="/zastin">Zastin</a>
+            </div>
+            <div className="border p-2">Mikan-dono</div>
+            <div className="border p-2">Zastin-san</div>
+          </div>
+          <h2 className="text-2xl font-bold border-b mb-4" id="etymology">
+            Etymology
+          </h2>
+          <li>
+            <strong>Yūki</strong> means "tie, bind" (結) (<strong>yū</strong>)
+            and "castle" (城) (<strong>ki</strong>).
+          </li>
+          <br />
+          <li>
+            <strong>Mikan</strong> means "beautiful" (美) (<strong>mi</strong>)
+            and "orange" (柑) (<strong>kan</strong>), which is both acknowledged
+            and made fun of in the anime and manga.
+          </li>
+          <br />
+          <div className="ml-8">
+            <li>
+              This also made Saki and her friends misunderstand this name when
+              Rito and Lala went to her family's supermarket. They initially
+              believed "Mikan" to be some kind of orange, and issued Lala and
+              Rito to a challenge, where the two must beat Saki in order to
+              continue searching.
+            </li>
+            <br />
+            <li className="ml-8">The Yūki siblings were named after fruits:</li>
+            <br />
+            <li className="ml-16">
+              Pear (梨) and Orange (柑) for Rito and Mikan respectively.
+            </li>
+            <li className="ml-16">
+              Their mother is also named after a fruit (apple).
+            </li>
+          </div>
+          <h2 className="text-2xl font-bold border-b mb-4" id="trivia">
+            Trivia
+          </h2>
+          <li>She is often seen eating a blue popsicle.</li>
+          <li>
+            Like many other anime girls (and some guys), Mikan entered Saimoe
+            Contests.
+          </li>{" "}
+          <br />
+          <li className="ml-8">To see her result, visit here.</li>
+          <li className="ml-8">
+            To vote for her when the match is on, visit here.
+          </li>
+          <br />
+          <li>
+            Mikan makes a cameo appearance with Celine in Chapter 1 page 37 in
+            the manga Mayoi Neko Overrun!, more than any other character in the
+            series.
+          </li>
+          <li>
+            Mikan can resist Celine's pollen[3] for a while although this time
+            is reduced if Rito gets close to her.
+          </li>
+          <li>Mikan's friends, Sachi and Mami know that she is a Broccon.</li>
+          <li>
+            Although to a lesser degree Mikan also tends to fall into perverted
+            positions like Rito[4].
+          </li>
+          <li>
+            in Bangaihen 20: Bath ~Good Bath... I Guess?~ Mikan began to bathe
+            with Rito due to a deception by Momo but then she still continues
+            doing it until it becomes a habit as shown in Darkness chapters 63,
+            70, 76.
+          </li>
+          <li>
+            Although she is very careful to let others see her panties, she has
+            no problem showing them to Rito, Mikan usually puts herself in
+            positions where Rito can see her panties as seen in Bangaihen 22:
+            Natural Face ~Time of Rest~
+          </li>
+          <li>
+            in the final chapters Mikan has lost her shame towards Rito and lets
+            him wash her body[5] even going so far as to show him her special
+            place[6].
+          </li>
+          <br />
+          <img
+            src="https://static.wikia.nocookie.net/to-loveru/images/9/93/-MayoiNekoOverrun%21--ch06_046.png"
+            alt=""
+          />
+          <img
+            src="https://static.wikia.nocookie.net/to-loveru/images/4/4f/Mayoi-neko-overrun-1111562.jpg"
+            alt=""
+          />
+          <img
+            src="https://static.wikia.nocookie.net/to-loveru/images/a/ad/Mayoi-neko-overrun-1251102.jpg"
+            alt=""
+          />
         </div>
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans top-8 mr-8">
