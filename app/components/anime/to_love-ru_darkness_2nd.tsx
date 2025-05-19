@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Toloverudarknessanime = () => {
+export const Toloverudarkness2ndanime = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
 
@@ -352,53 +352,22 @@ export const Toloverudarknessanime = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 italic text-3xl">To LOVE-Ru Darkness (anime)</h1>
+          <h1 className="mb-5 italic text-3xl">To LOVE-Ru Darkness 2nd</h1>
           <p>
-            <strong className="italic">To LOVE-Ru Darkness</strong> (To LOVEる
-            -とらぶる- ダークネス To Raburu -Toraburu- Dākunesu?) is the sequel
-            to the{" "}
-            <a
-              href="/to_love-ru"
-              className="text-[purple] underline hover:text-black"
-            >
-              To LOVE-Ru
-            </a>{" "}
-            and{" "}
-            <a
-              href="/motto_to_love-ru"
-              className="text-[purple] underline hover:text-black"
-            >
-              Motto To LOVE-Ru
-            </a>{" "}
-            anime, based on the manga series of the same name,{" "}
+            <strong className="italic">To LOVE-Ru Darkness 2nd</strong> (To
+            LOVEる -とらぶる- ダークネス2nd Toraburu Dākunesu Sekando?) is the
+            second season of to the{" "}
             <a
               href="/to_love-ru_darkness"
               className="text-[purple] underline hover:text-black"
             >
               To LOVE-Ru Darkness
-            </a>
+            </a>{" "}
+            anime adaption. The production was announced on December 21, 2014.
+            It was officially aired on July 6, 2015.
           </p>
           <br />
-          <p>
-            The first season of To Love Ru Darkness anime series is composed of
-            12 episodes and 6 OVAs. Each OVA is a filler side-episode consists
-            of two or three story segments, while adapting random manga chapter.
-            The first OVA served as the plot episode before the TV series aired
-            and following on. The series was announced on March 31, 2012 and the
-            first episode aired on October 5 of the same year on Tokyo MX. The
-            anime is produced by Xebec and directed by Atsushi Ootsuki.
-          </p>
-          <br />
-          <p>
-            A second titled{" "}
-            <a
-              href="/to_love-ru_darkness2ndanime"
-              className="text-[purple] underline hover:text-black"
-            >
-              To LOVE-Ru Darkness 2nd
-            </a>
-            , began airing in July 2015.
-          </p>
+
           <nav className="w-44 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
@@ -423,11 +392,6 @@ export const Toloverudarknessanime = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#overview" className="hover:underline">
-                  Overview
-                </a>
-              </li>
-              <li>
                 <a href="#plot" className="hover:underline">
                   Plot
                 </a>
@@ -447,21 +411,25 @@ export const Toloverudarknessanime = () => {
                   Staff Credits
                 </a>
               </li>
-              <li>
-                <a href="#video-games" className="hover:underline">
-                  Video Games
-                </a>
-              </li>
+
               <li>
                 <a href="#episode-list" className="hover:underline">
                   Episode List
                 </a>
+                <ol className="list-decimal list-inside ml-5">
+                  <li>
+                    <a href="#episode-list">
+                      To Love-Ru Darkness 2nd (2015 TV series)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#episode-list">
+                      To Love-Ru Darkness 2nd (2015 OVA series)
+                    </a>
+                  </li>
+                </ol>
               </li>
-              <li>
-                <a href="#ova" className="hover:underline">
-                  OVA
-                </a>
-              </li>
+
               <li>
                 <a href="#external-links" className="hover:underline">
                   External links
@@ -472,43 +440,72 @@ export const Toloverudarknessanime = () => {
           <div className="flex-1 text-black max-w-2xl">
             <br />
           </div>
-          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
-            Overview
-          </h2>
-          <p>
-            The anime adaptation of the sequel focuses on more maturity than the
-            previous anime sequels. The series still retains its usual perverted
-            comedy, except with a serious focus on its story plot and character
-            development, especially around{" "}
-            <a href="/yami" className="text-[purple] underline">
-              Yami
-            </a>
-            . The series provides more censored fan service during TV airing,
-            while following closely to the manga.
-          </p>
+
           <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
             Plot
           </h2>
           <p>
-            As close encounters of the twisted kind between the residents of the
-            planet Develuke (represented primarily by the female members of the
-            royal family) and the inhabitants of Earth (represented mainly by
-            one very exhausted Rito Yuki) continue to escalate, the situation
-            spirals even further out of control. When junior princesses Nana and
-            Momo transferred into Earth School where big sister LaLa can
-            (theoretically) keep an eye on them, things SHOULD be smooth
-            sailing. But when Momo decides she'd like to "supplement" Rito's
-            relationship with LaLa with a little "sisterly love," you know
-            LaLa's not going to waste any time splitting harems. Unfortunately,
-            it's just about that point that Yami, the Golden Darkness, enters
-            the scene with all the subtleness of a supernova, along with an army
-            of possessed high school students! All of which is certain to make
-            Rito's life suck more than a black hole at the family picnic.
-            Unless, of course, a certain semi-demonic princess can apply a
-            little of her Develukean Whoop Ass to exactly that portion of
-            certain other heavenly bodies!
+            The dispassionate, transforming assassin{" "}
+            <a
+              href="/yami"
+              className="text-[purple] underline hover:text-black"
+            >
+              Yami
+            </a>{" "}
+            returns to peer deeper into the mysteries surrounding her new life,
+            while a sinister{" "}
+            <a
+              href="/nemesis"
+              className="text-[purple] underline hover:text-black"
+            >
+              Nemesis
+            </a>{" "}
+            manipulates her younger sister{" "}
+            <a href="/mea" className="text-[purple] underline hover:text-black">
+              Mea
+            </a>{" "}
+            from the shadows. Along with their newly discovered mother,{" "}
+            <a
+              href="/tearju"
+              className="text-[purple] underline hover:text-black"
+            >
+              Tearju
+            </a>
+            , this previously estranged family quikly becomes the center of
+            everyone's attetion. On the other hand,{" "}
+            <a
+              href="/momo"
+              className="text-[purple] underline hover:text-black"
+            >
+              Princess Momo
+            </a>
+            's{" "}
+            <a href="/#" className="text-[purple] underline hover:text-black">
+              Harem Plan
+            </a>{" "}
+            stands on shaky ground amidst{" "}
+            <a
+              href="/rito"
+              className="text-[purple] underline hover:text-black"
+            >
+              Rito
+            </a>
+            's inablilty to confess to his longtime cruch{" "}
+            <a
+              href="/haruna"
+              className="text-[purple] underline hover:text-black"
+            >
+              Haruna
+            </a>{" "}
+            who has grown feeling of her own.
           </p>
           <br />
+          <p>
+            But things aren't as peaceful as they seem, an evil force looms
+            amidst the innocuous commotion, threatening the eclipse the love,
+            happiness, and friendship of Rito and his harem. Only the light of
+            love can hope to banish the shadow.
+          </p>
           <div className="flex-1 text-black  max-w-2xl">
             <h2
               className="text-2xl font-bold  border-b mt-8 mb-4"
@@ -518,16 +515,16 @@ export const Toloverudarknessanime = () => {
             </h2>
             <ul className="mt-2 space-y-1">
               {[
-                { name: "Rito Yuuki", route: "/rito" },
+                { name: "Yuuki Rito", route: "/rito" },
                 { name: "Momo Belia Deviluke", route: "/momo" },
-                { name: "Mea Kurosaki", route: "/mea" },
+                { name: "Kurosaki Mea", route: "/mea" },
                 { name: "Nemesis", route: "/nemesis" },
                 { name: "Nana Astar Deviluke", route: "/nana" },
                 { name: "Lala Satalin Deviluke", route: "/lala" },
-                { name: "Haruna Sairenji", route: "/haruna" },
+                { name: "Sairenji Haruna", route: "/haruna" },
                 { name: "Yami", route: "/yami" },
-                { name: "Mikan Yuuki", route: "/mikan" },
-                { name: "Yui Kotegawa", route: "/yui" },
+                { name: "Yuuki Mikan", route: "/mikan" },
+                { name: "Kotegawa Yui", route: "/yui" },
               ].map((char) => (
                 <li key={char.route} className="flex items-center">
                   <span className="w-1 h-1 rounded-full bg-black mr-2 inline-block" />
@@ -543,32 +540,12 @@ export const Toloverudarknessanime = () => {
             <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="music">
               Music
             </h2>
-            <li className="font-bold">
-              Opening Theme:{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                "Rakuen PROJECT"
-              </a>{" "}
-              by{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Ray
-              </a>
-            </li>
-
-            <li className="font-bold">
-              Ending Theme: "Foul Play ni Kurari" by{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Kanon Wakeshima
-              </a>
-            </li>
+            <p>
+              <strong>Opening:</strong> Secret Arms by Ray
+            </p>
+            <p>
+              <strong>Ending:</strong> Garden by Mami Kawada
+            </p>
 
             <h2
               className="text-2xl font-bold border-b mt-8 mb-4"
@@ -615,30 +592,17 @@ export const Toloverudarknessanime = () => {
                     Hattori, Nobuhiro Wakayama, Tsuyoshi Tanaka
                   </li>
                 </ul>
+                <br />
               </div>
               <div className="flex-shrink-0">
                 <img
-                  src="To Love Ru/toloverudarknessanimelogo.jpg"
-                  alt=""
-                  className="max-w-[200px] h-auto"
+                  src="To Love Ru/toloverudarkness2ndlogo.jpg"
+                  alt="To LOVE-Ru Darkness 2nd Logo"
+                  className="w-44 h-auto rounded shadow border border-gray-200 bg-white"
+                  style={{ minWidth: "180px", maxWidth: "200px" }}
                 />
               </div>
             </div>
-            <h2
-              className="text-2xl font-bold border-b mt-8 mb-4"
-              id="video-games"
-            >
-              Video Games
-            </h2>
-            <p>
-              A PS-VITA RPG story action game titled To Love-Ru Darkness: Battle
-              Ecstasy, was released on May 22, 2014. It was developed by FuRyu,
-              developer of{" "}
-              <a href="#" className="text-[purple] underline hover:text-black">
-                Unchained Blades
-              </a>
-              .
-            </p>
           </div>
         </div>
 
@@ -647,14 +611,14 @@ export const Toloverudarknessanime = () => {
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
             <div className="text-center  w-full">
               <h1 className="text-[#F9D910] bg-[#DB49AC] text-xl italic font-bold p-2 ">
-                To LOVE-Ru Darkness
+                To LOVE-Ru Darkness 2nd
               </h1>
             </div>
             <div className="flex justify-center w-full">
               <img
-                src="To Love Ru/toloverudarknessanime.jpg"
-                alt="Lala Satalin Deviluke"
-                className="w-80 h-80 object-contain border-2 border-[#DB49AC] "
+                src="To Love Ru/toloverudarkness2nd.jpg"
+                alt="To LOVE-Ru Darkness 2nd"
+                className="w-80 h-80 object-contain border-2 border-[#DB49AC] cursor-pointer"
                 onClick={() => setShowImageModal(true)}
               />
               {showImageModal && (
@@ -663,8 +627,8 @@ export const Toloverudarknessanime = () => {
                   onClick={() => setShowImageModal(false)}
                 >
                   <img
-                    src="To Love Ru/toloverudarknessanime.jpg"
-                    alt="To LOVE-Ru Darkness"
+                    src="To Love Ru/toloverudarkness2nd.jpg"
+                    alt="To LOVE-Ru Darkness 2nd"
                     className="max-w-3xl max-h-[90vh] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
                     onClick={(e) => e.stopPropagation()}
                   />
@@ -695,7 +659,7 @@ export const Toloverudarknessanime = () => {
                       Japanese
                     </td>
                     <td className="bg-white text-center  text-black p-2 border border-[#DB49AC] ">
-                      To LOVEる -とらぶる- ダークネス
+                      To LOVEる -とらぶる- ダークネス2nd
                     </td>
                   </tr>
                   <tr>
@@ -703,7 +667,7 @@ export const Toloverudarknessanime = () => {
                       Rōmaji
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      To Raburu -Toraburu- Dākunesu
+                      To Raburu -Toraburu- Dākunesu Sekando
                     </td>
                   </tr>
                   <tr>
@@ -727,7 +691,7 @@ export const Toloverudarknessanime = () => {
                       Producer[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Geneon Universal Entertainment, Magic Capsual
+                      Magic Capsual
                     </td>
                   </tr>
                   <tr>
@@ -743,7 +707,7 @@ export const Toloverudarknessanime = () => {
                       Aired
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      October 6, 2012 to December 29, 2012
+                      July 7, 2015 to September 29, 2015
                     </td>
                   </tr>
                   <tr>
@@ -751,7 +715,7 @@ export const Toloverudarknessanime = () => {
                       Episodes
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      12
+                      14
                     </td>
                   </tr>
                   <tr>

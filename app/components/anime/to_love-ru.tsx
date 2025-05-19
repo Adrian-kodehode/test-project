@@ -115,16 +115,22 @@ export const Toloveruanime = () => {
                     <div className="absolute left-full top-0 min-w-[200px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/anime:opacity-100 group-hover/anime:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru
+                          <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          Motto To LOVE-Ru
+                          <Link to="/motto_to_love-ru_anime">
+                            Motto To LOVE-Ru
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness
+                          <Link to="/to_love-ru_darkness_anime">
+                            To LOVE-Ru Darkness
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness 2nd
+                          <Link to="/to_love-ru_darkness2ndanime">
+                            To LOVE-Ru Darkness 2nd
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -2688,7 +2694,28 @@ export const Toloveruanime = () => {
                 src="To Love Ru/toloveruanime.jpg"
                 alt="Lala Satalin Deviluke"
                 className="w-80 h-80 object-contain border-2 border-[#DB49AC] "
+                onClick={() => setShowImageModal(true)}
               />
+              {showImageModal && (
+                <div
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+                  onClick={() => setShowImageModal(false)}
+                >
+                  <img
+                    src="To Love Ru/toloveruanime.jpg"
+                    alt="To LOVE-Ru Darkness 2nd"
+                    className="max-w-3xl max-h-[90vh] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
+                    onClick={(e) => e.stopPropagation()}
+                  />
+                  <button
+                    className="absolute top-8 right-8 text-white text-3xl font-bold"
+                    onClick={() => setShowImageModal(false)}
+                    aria-label="Close"
+                  >
+                    &times;
+                  </button>
+                </div>
+              )}
             </div>
             <div className="w-full overflow-x-auto">
               <table className="w-full min-w-full border-separate border-spacing-0">
@@ -2719,7 +2746,7 @@ export const Toloveruanime = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-boldd p-2 border border-[#9C2E7A] ">
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
                       Studio(s)
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">

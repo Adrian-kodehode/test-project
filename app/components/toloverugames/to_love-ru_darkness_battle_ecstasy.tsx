@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Toloverudarknessanime = () => {
+export const Toloverudarknessbattleecstasy = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -352,53 +353,19 @@ export const Toloverudarknessanime = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 italic text-3xl">To LOVE-Ru Darkness (anime)</h1>
+          <h1 className="mb-5 italic text-3xl">
+            To LOVE-Ru Darkness: Battle Ecstasy
+          </h1>
           <p>
-            <strong className="italic">To LOVE-Ru Darkness</strong> (To LOVEる
-            -とらぶる- ダークネス To Raburu -Toraburu- Dākunesu?) is the sequel
-            to the{" "}
-            <a
-              href="/to_love-ru"
-              className="text-[purple] underline hover:text-black"
-            >
-              To LOVE-Ru
-            </a>{" "}
-            and{" "}
-            <a
-              href="/motto_to_love-ru"
-              className="text-[purple] underline hover:text-black"
-            >
-              Motto To LOVE-Ru
-            </a>{" "}
-            anime, based on the manga series of the same name,{" "}
-            <a
-              href="/to_love-ru_darkness"
-              className="text-[purple] underline hover:text-black"
-            >
-              To LOVE-Ru Darkness
-            </a>
+            <strong className="italic">
+              To LOVE-Ru Darkness: Battle Ecstasy
+            </strong>{" "}
+            is an "Ultra Harem Action" PSVITA game developed by Furyu in May 22,
+            2014. The genre is consistently made up of four parts: Playthrough
+            Action, My Room, Communication, and Adventure.
           </p>
           <br />
-          <p>
-            The first season of To Love Ru Darkness anime series is composed of
-            12 episodes and 6 OVAs. Each OVA is a filler side-episode consists
-            of two or three story segments, while adapting random manga chapter.
-            The first OVA served as the plot episode before the TV series aired
-            and following on. The series was announced on March 31, 2012 and the
-            first episode aired on October 5 of the same year on Tokyo MX. The
-            anime is produced by Xebec and directed by Atsushi Ootsuki.
-          </p>
-          <br />
-          <p>
-            A second titled{" "}
-            <a
-              href="/to_love-ru_darkness2ndanime"
-              className="text-[purple] underline hover:text-black"
-            >
-              To LOVE-Ru Darkness 2nd
-            </a>
-            , began airing in July 2015.
-          </p>
+
           <nav className="w-44 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
@@ -423,43 +390,32 @@ export const Toloverudarknessanime = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#overview" className="hover:underline">
-                  Overview
-                </a>
-              </li>
-              <li>
                 <a href="#plot" className="hover:underline">
-                  Plot
+                  Development
                 </a>
               </li>
               <li>
                 <a href="#characters" className="hover:underline">
-                  Characters
+                  Story
                 </a>
               </li>
+
               <li>
-                <a href="#music" className="hover:underline">
-                  Music
+                <a href="#contents" className="hover:underline">
+                  Contents
                 </a>
+                <ol className="list-decimal list-inside ml-5">
+                  <li>
+                    <a href="#contents">Limited Edition (8,980 yen)</a>
+                  </li>
+                  <li>
+                    <a href="#contents">Pre-Order Bonus</a>
+                  </li>
+                </ol>
               </li>
               <li>
-                <a href="#staff-credits" className="hover:underline">
-                  Staff Credits
-                </a>
-              </li>
-              <li>
-                <a href="#video-games" className="hover:underline">
-                  Video Games
-                </a>
-              </li>
-              <li>
-                <a href="#episode-list" className="hover:underline">
-                  Episode List
-                </a>
-              </li>
-              <li>
-                <a href="#ova" className="hover:underline">
-                  OVA
+                <a href="#screenshots" className="hover:underline">
+                  Screenshots
                 </a>
               </li>
               <li>
@@ -472,174 +428,128 @@ export const Toloverudarknessanime = () => {
           <div className="flex-1 text-black max-w-2xl">
             <br />
           </div>
-          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
-            Overview
+          <h2 className="text-2xl font-bold border-b mb-4" id="development">
+            Development
           </h2>
           <p>
-            The anime adaptation of the sequel focuses on more maturity than the
-            previous anime sequels. The series still retains its usual perverted
-            comedy, except with a serious focus on its story plot and character
-            development, especially around{" "}
-            <a href="/yami" className="text-[purple] underline">
-              Yami
-            </a>
-            . The series provides more censored fan service during TV airing,
-            while following closely to the manga.
-          </p>
-          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
-            Plot
-          </h2>
-          <p>
-            As close encounters of the twisted kind between the residents of the
-            planet Develuke (represented primarily by the female members of the
-            royal family) and the inhabitants of Earth (represented mainly by
-            one very exhausted Rito Yuki) continue to escalate, the situation
-            spirals even further out of control. When junior princesses Nana and
-            Momo transferred into Earth School where big sister LaLa can
-            (theoretically) keep an eye on them, things SHOULD be smooth
-            sailing. But when Momo decides she'd like to "supplement" Rito's
-            relationship with LaLa with a little "sisterly love," you know
-            LaLa's not going to waste any time splitting harems. Unfortunately,
-            it's just about that point that Yami, the Golden Darkness, enters
-            the scene with all the subtleness of a supernova, along with an army
-            of possessed high school students! All of which is certain to make
-            Rito's life suck more than a black hole at the family picnic.
-            Unless, of course, a certain semi-demonic princess can apply a
-            little of her Develukean Whoop Ass to exactly that portion of
-            certain other heavenly bodies!
+            FuRyu has shared first details and screenshots on PS Vita “ultra
+            pleasant harem action” game To Love-Ru Darkness: Battle Ecstasy. The
+            game, due out in Japan on May 22 for 6,980 yen, consists of action,
+            “my room,” communication, and adventure parts. Find those parts, as
+            well as a story, limited edition, and pre-order details, below.
           </p>
           <br />
-          <div className="flex-1 text-black  max-w-2xl">
-            <h2
-              className="text-2xl font-bold  border-b mt-8 mb-4"
-              id="characters"
-            >
-              Characters
-            </h2>
-            <ul className="mt-2 space-y-1">
-              {[
-                { name: "Rito Yuuki", route: "/rito" },
-                { name: "Momo Belia Deviluke", route: "/momo" },
-                { name: "Mea Kurosaki", route: "/mea" },
-                { name: "Nemesis", route: "/nemesis" },
-                { name: "Nana Astar Deviluke", route: "/nana" },
-                { name: "Lala Satalin Deviluke", route: "/lala" },
-                { name: "Haruna Sairenji", route: "/haruna" },
-                { name: "Yami", route: "/yami" },
-                { name: "Mikan Yuuki", route: "/mikan" },
-                { name: "Yui Kotegawa", route: "/yui" },
-              ].map((char) => (
-                <li key={char.route} className="flex items-center">
-                  <span className="w-1 h-1 rounded-full bg-black mr-2 inline-block" />
-                  <Link
-                    to={char.route}
-                    className="text-[purple] hover:underline"
-                  >
-                    {char.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="music">
-              Music
-            </h2>
-            <li className="font-bold">
-              Opening Theme:{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                "Rakuen PROJECT"
-              </a>{" "}
-              by{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Ray
-              </a>
+          <h2 className="text-2xl font-bold border-b mb-4" id="story">
+            Story
+          </h2>
+          <p>
+            One day, when Rito was in his house, he suddenly became dizzy, and
+            when he came to his senses, he was in a strange world. Momo suddenly
+            appears, and from her he hears that he is imprisoned in a strange
+            world and that Lala has been whisked away to a mystery dungeon. So
+            Rito decides to head out and rescue Lala from the dungeon she is
+            held prison in.
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="contents">
+            Contents
+          </h2>
+          <div className="ml-8">
+            <li>
+              Action Part - Search the dungeons in order to save the heroines,
+              and defeat the monsters that appear as you progress. On each floor
+              of the dungeon is an event where a heroine awaits.
             </li>
-
-            <li className="font-bold">
-              Ending Theme: "Foul Play ni Kurari" by{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Kanon Wakeshima
-              </a>
+            <li>
+              My Room Part - The game starts in a room that resembles Rito’s
+              house. This will serve as an area in which you and the captured
+              heroines from the action part can spend time together. With the
+              passing of certain events, players can form close relationships
+              with the heroines.
             </li>
-
-            <h2
-              className="text-2xl font-bold border-b mt-8 mb-4"
-              id="staff-credits"
-            >
-              Staff Credits
-            </h2>
-            <div className="flex flex-row items-start gap-6">
-              <div className="flex-1">
-                <ul className="list-disc pl-6 space-y-1">
-                  <li>
-                    <strong>Original Creator:</strong> Yabuki Kentarō (art),
-                    Hasemi Saki (story)
-                  </li>
-                  <li>
-                    <strong>Director:</strong> Atsushi Ootsuki
-                  </li>
-                  <li>
-                    <strong>Music:</strong> Takeshi Watanabe
-                  </li>
-                  <li>
-                    <strong>Original Character Design:</strong> Yabuki Kentarō
-                  </li>
-                  <li>
-                    <strong>Character Design:</strong> Yūichi Oka
-                  </li>
-                  <li>
-                    <strong>Art Director:</strong> Nariyuki Ogi
-                  </li>
-                  <li>
-                    <strong>Animation Producer:</strong> Takumi Kusakabe
-                  </li>
-                  <li>
-                    <strong>Color Design:</strong> Tamae Matsuoka
-                  </li>
-                  <li>
-                    <strong>Art Design:</strong> Nariyuki Ogi
-                  </li>
-                  <li>
-                    <strong>Sound Director:</strong> Jin Aketagawa
-                  </li>
-                  <li>
-                    <strong>Producer:</strong> Kazumasa Sanjouba, Kentarō
-                    Hattori, Nobuhiro Wakayama, Tsuyoshi Tanaka
-                  </li>
-                </ul>
-              </div>
-              <div className="flex-shrink-0">
-                <img
-                  src="To Love Ru/toloverudarknessanimelogo.jpg"
-                  alt=""
-                  className="max-w-[200px] h-auto"
-                />
-              </div>
-            </div>
-            <h2
-              className="text-2xl font-bold border-b mt-8 mb-4"
-              id="video-games"
-            >
-              Video Games
-            </h2>
-            <p>
-              A PS-VITA RPG story action game titled To Love-Ru Darkness: Battle
-              Ecstasy, was released on May 22, 2014. It was developed by FuRyu,
-              developer of{" "}
-              <a href="#" className="text-[purple] underline hover:text-black">
-                Unchained Blades
-              </a>
-              .
-            </p>
+            <li>
+              Communication Part (Trouble Touch Time) – You can communicate with
+              the heroines by touching the screen and using the back panel.
+            </li>
+            <li>
+              Adventure Part - This is the part that advances the story. Talk
+              with the heroines to progress.
+            </li>
           </div>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="limited-edition">
+            Limited Edition (8,980 yen)
+          </h2>
+          <div className="ml-8">
+            <li>Special box</li>
+            <li>Special “Konjiki no Yami” sleep sheet</li>
+            <li>Special “Momo” cord reel</li>
+            <li>Original costume “Sexy Apron” download code</li>
+          </div>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="pre-order">
+            Pre-Order Bonus
+          </h2>
+          <div className="ml-8">
+            <li>Original costume “Maid Clothes” download code</li>
+          </div>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="screenshots">
+            Screenshots
+          </h2>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy1.jpg",
+              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy2.jpg",
+              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy3.jpg",
+            ].map((src, idx) => (
+              <img
+                key={idx}
+                src={src}
+                alt={`To LOVE-Ru Darkness Battle Ecstasy screenshot ${idx + 1}`}
+                className="w-full h-auto rounded shadow"
+                onClick={() => {
+                  setSelectedImage(src);
+                  setShowImageModal(true);
+                }}
+              />
+            ))}
+            {showImageModal && selectedImage && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+                onClick={() => setShowImageModal(false)}
+              >
+                <img
+                  src={selectedImage}
+                  alt="To LOVE-Ru Darkness 2nd"
+                  className="max-w-3xl max-h-[90vh] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
+                  onClick={(e: React.MouseEvent<HTMLImageElement>) =>
+                    e.stopPropagation()
+                  }
+                />
+                <button
+                  className="absolute top-8 right-8 text-white text-3xl font-bold"
+                  onClick={() => setShowImageModal(false)}
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+              </div>
+            )}
+          </div>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="external-links">
+            External links
+          </h2>
+          <li>
+            <a
+              href="/#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              PS VITA Official Game Site
+            </a>{" "}
+            <strong>(Japanese)</strong>
+          </li>
         </div>
 
         {/* Right: Info card sidebar */}
@@ -652,31 +562,11 @@ export const Toloverudarknessanime = () => {
             </div>
             <div className="flex justify-center w-full">
               <img
-                src="To Love Ru/toloverudarknessanime.jpg"
-                alt="Lala Satalin Deviluke"
-                className="w-80 h-80 object-contain border-2 border-[#DB49AC] "
+                src="To Love Ru/ToLOVE-RuDarknessBattleEcstasy.jpg"
+                alt="To LOVE-Ru Darkness Battle Ecstasy"
+                className="w-80 h-80 object-contain border-2 border-[#DB49AC] cursor-pointer"
                 onClick={() => setShowImageModal(true)}
               />
-              {showImageModal && (
-                <div
-                  className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                  onClick={() => setShowImageModal(false)}
-                >
-                  <img
-                    src="To Love Ru/toloverudarknessanime.jpg"
-                    alt="To LOVE-Ru Darkness"
-                    className="max-w-3xl max-h-[90vh] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
-                    onClick={(e) => e.stopPropagation()}
-                  />
-                  <button
-                    className="absolute top-8 right-8 text-white text-3xl font-bold"
-                    onClick={() => setShowImageModal(false)}
-                    aria-label="Close"
-                  >
-                    &times;
-                  </button>
-                </div>
-              )}
             </div>
             <div className="w-full overflow-x-auto">
               <table className="w-full min-w-full border-separate border-spacing-0">
@@ -695,7 +585,7 @@ export const Toloverudarknessanime = () => {
                       Japanese
                     </td>
                     <td className="bg-white text-center  text-black p-2 border border-[#DB49AC] ">
-                      To LOVEる -とらぶる- ダークネス
+                      To LOVEる -とらぶる- ダークネス バトルエクスタシー
                     </td>
                   </tr>
                   <tr>
@@ -703,71 +593,15 @@ export const Toloverudarknessanime = () => {
                       Rōmaji
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      To Raburu -Toraburu- Dākunesu
+                      To Rabu ru -toraburu- Dākunesu Batoru Ekusutashii
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Studio(s)
+                      Release Date(s)
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Xebec
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Licencor[s]
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Sentai Filmworks
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Producer[s]
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Geneon Universal Entertainment, Magic Capsual
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Director
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Atsushi Ootsuki
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Aired
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      October 6, 2012 to December 29, 2012
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Episodes
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      12
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Duration
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      24 minutes per episode
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Status
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Finished
+                      <strong>JP:</strong> May 22, 2014
                     </td>
                   </tr>
                   <tr>
@@ -775,7 +609,23 @@ export const Toloverudarknessanime = () => {
                       Genre[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Comedy, Ecchi, Harem, Romance, School, Sci-Fi, Shōnen
+                      Ultra Harem Action
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Game Mode[s]
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Single Player
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
+                      Platform(s)
+                    </td>
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      PlayStation Vita
                     </td>
                   </tr>
                   <tr>
@@ -783,7 +633,7 @@ export const Toloverudarknessanime = () => {
                       Ratings
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      R+ - Mild Nudity
+                      CERO D
                     </td>
                   </tr>
                 </tbody>

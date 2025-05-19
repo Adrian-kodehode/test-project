@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Toloverudarknessanime = () => {
+export const Mottotoloveru = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
 
@@ -128,7 +128,7 @@ export const Toloverudarknessanime = () => {
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness2ndanime">
+                          <Link to="/to_love-ru_darkness_anime">
                             To LOVE-Ru Darkness 2nd
                           </Link>
                         </li>
@@ -352,53 +352,47 @@ export const Toloverudarknessanime = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 italic text-3xl">To LOVE-Ru Darkness (anime)</h1>
+          <h1 className="mb-5 italic text-3xl">Motto To LOVE-Ru</h1>
+
           <p>
-            <strong className="italic">To LOVE-Ru Darkness</strong> (To LOVEる
-            -とらぶる- ダークネス To Raburu -Toraburu- Dākunesu?) is the sequel
-            to the{" "}
+            <strong className="italic">Motto To LOVE-Ru</strong>
+            is the anime sequel to{" "}
             <a
-              href="/to_love-ru"
+              href="/to_love-ru_anime"
               className="text-[purple] underline hover:text-black"
             >
               To LOVE-Ru
-            </a>{" "}
-            and{" "}
-            <a
-              href="/motto_to_love-ru"
-              className="text-[purple] underline hover:text-black"
-            >
-              Motto To LOVE-Ru
-            </a>{" "}
-            anime, based on the manga series of the same name,{" "}
-            <a
-              href="/to_love-ru_darkness"
-              className="text-[purple] underline hover:text-black"
-            >
-              To LOVE-Ru Darkness
             </a>
+            . The series was first announced in 2010, and the first episode was
+            aired on October 5, 2010. Motto To Love-Ru was produced by Xebac and
+            directed by Atsushi Ootsuki. The show is made up by twelve episodes
+            with three, seven-minute-long stories in each episode, much like the
+            sixth To LOVE-Ru OVA. The opening is "Loop the Loop" by{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Kotoko
+            </a>{" "}
+            and the ending is "Baby Baby Love" by{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Haruka Tomatsu
+            </a>
+            .
           </p>
           <br />
           <p>
-            The first season of To Love Ru Darkness anime series is composed of
-            12 episodes and 6 OVAs. Each OVA is a filler side-episode consists
-            of two or three story segments, while adapting random manga chapter.
-            The first OVA served as the plot episode before the TV series aired
-            and following on. The series was announced on March 31, 2012 and the
-            first episode aired on October 5 of the same year on Tokyo MX. The
-            anime is produced by Xebec and directed by Atsushi Ootsuki.
+            Sentai Filmworks have licensed the seacond season in North America
+            and released the complete series set on DVD on April 3, 2012, the
+            Blu-ray set was released on May 27, 2014. The English dub version of
+            the series was released on February 16, 2021.
           </p>
           <br />
           <p>
-            A second titled{" "}
-            <a
-              href="/to_love-ru_darkness2ndanime"
-              className="text-[purple] underline hover:text-black"
-            >
-              To LOVE-Ru Darkness 2nd
-            </a>
-            , began airing in July 2015.
+            While the first To LOVE-Ru anime series made many differences from
+            the original story, this series follows the manga more closely,
+            though the chapters are in mostly random order. This lead to the
+            series being better recived by fans of the manga, along with
+            critics.
           </p>
+          <br />
           <nav className="w-44 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
@@ -423,11 +417,6 @@ export const Toloverudarknessanime = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#overview" className="hover:underline">
-                  Overview
-                </a>
-              </li>
-              <li>
                 <a href="#plot" className="hover:underline">
                   Plot
                 </a>
@@ -438,96 +427,109 @@ export const Toloverudarknessanime = () => {
                 </a>
               </li>
               <li>
-                <a href="#music" className="hover:underline">
-                  Music
+                <a href="#chapters" className="hover:underline">
+                  Chapters
                 </a>
-              </li>
-              <li>
-                <a href="#staff-credits" className="hover:underline">
-                  Staff Credits
-                </a>
-              </li>
-              <li>
-                <a href="#video-games" className="hover:underline">
-                  Video Games
-                </a>
-              </li>
-              <li>
-                <a href="#episode-list" className="hover:underline">
-                  Episode List
-                </a>
-              </li>
-              <li>
-                <a href="#ova" className="hover:underline">
-                  OVA
-                </a>
-              </li>
-              <li>
-                <a href="#external-links" className="hover:underline">
-                  External links
-                </a>
+                <li>
+                  <a href="#episode-list"></a>Episode List
+                </li>
+                <li>
+                  <a href="#references">References</a>
+                </li>
               </li>
             </ol>
           </nav>
           <div className="flex-1 text-black max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
+              Plot
+            </h2>
+            <p>
+              A year after{" "}
+              <a
+                href="/lala"
+                className="text-[purple] underline hover:text-black"
+              >
+                Lala
+              </a>{" "}
+              came to Earth, she is all the the more determined to make{" "}
+              <a
+                href="/rito"
+                className="text-[purple] underline hover:text-black"
+              >
+                Rito
+              </a>{" "}
+              fall for her, putting all her effort into it, even though she
+              knows that Rito actually loves{" "}
+              <a
+                href="/haruna"
+                className="text-[purple] underline hover:text-black"
+              >
+                Haruna
+              </a>
+              . Poor Rito will have to face tough times since Lala's younger
+              twin sisters,{" "}
+              <a
+                href="/nana"
+                className="text-[purple] underline hover:text-black"
+              >
+                Nana
+              </a>{" "}
+              and{" "}
+              <a
+                href="/momo"
+                className="text-[purple] underline hover:text-black"
+              >
+                Momo
+              </a>
+              , now live in the same house, along with Rito's reliable sister,{" "}
+              <a
+                href="/mikan"
+                className="text-[purple] underline hover:text-black"
+              >
+                Mikan
+              </a>
+              , and{" "}
+              <a href="#" className="text-[purple] underline hover:text-black">
+                Celine
+              </a>
+              .
+            </p>
             <br />
+            <p>
+              Fun and trouble await with their other friends from school and the
+              many other characters, with Lala's usually catastrophic
+              inventions,{" "}
+              <a
+                href="/yami"
+                className="text-[purple] underline hover:text-black"
+              >
+                Yami
+              </a>
+              's contract to kill Rito and many pending issues from the first
+              season.
+            </p>
           </div>
-          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
-            Overview
-          </h2>
-          <p>
-            The anime adaptation of the sequel focuses on more maturity than the
-            previous anime sequels. The series still retains its usual perverted
-            comedy, except with a serious focus on its story plot and character
-            development, especially around{" "}
-            <a href="/yami" className="text-[purple] underline">
-              Yami
-            </a>
-            . The series provides more censored fan service during TV airing,
-            while following closely to the manga.
-          </p>
-          <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="plot">
-            Plot
-          </h2>
-          <p>
-            As close encounters of the twisted kind between the residents of the
-            planet Develuke (represented primarily by the female members of the
-            royal family) and the inhabitants of Earth (represented mainly by
-            one very exhausted Rito Yuki) continue to escalate, the situation
-            spirals even further out of control. When junior princesses Nana and
-            Momo transferred into Earth School where big sister LaLa can
-            (theoretically) keep an eye on them, things SHOULD be smooth
-            sailing. But when Momo decides she'd like to "supplement" Rito's
-            relationship with LaLa with a little "sisterly love," you know
-            LaLa's not going to waste any time splitting harems. Unfortunately,
-            it's just about that point that Yami, the Golden Darkness, enters
-            the scene with all the subtleness of a supernova, along with an army
-            of possessed high school students! All of which is certain to make
-            Rito's life suck more than a black hole at the family picnic.
-            Unless, of course, a certain semi-demonic princess can apply a
-            little of her Develukean Whoop Ass to exactly that portion of
-            certain other heavenly bodies!
-          </p>
-          <br />
-          <div className="flex-1 text-black  max-w-2xl">
+          <div className="flex-1 text-black max-w-2xl">
             <h2
-              className="text-2xl font-bold  border-b mt-8 mb-4"
+              className="text-2xl font-bold border-b mt-8 mb-4"
               id="characters"
             >
               Characters
             </h2>
             <ul className="mt-2 space-y-1">
               {[
-                { name: "Rito Yuuki", route: "/rito" },
-                { name: "Momo Belia Deviluke", route: "/momo" },
-                { name: "Mea Kurosaki", route: "/mea" },
-                { name: "Nemesis", route: "/nemesis" },
-                { name: "Nana Astar Deviluke", route: "/nana" },
+                { name: "Yuuki Rito", route: "/rito" },
                 { name: "Lala Satalin Deviluke", route: "/lala" },
-                { name: "Haruna Sairenji", route: "/haruna" },
+                { name: "Nana Astar Deviluke", route: "/nana" },
+                { name: "Momo Belia Deviluke", route: "/momo" },
+                { name: "Sairenji Haruna", route: "/haruna" },
                 { name: "Yami", route: "/yami" },
-                { name: "Mikan Yuuki", route: "/mikan" },
-                { name: "Yui Kotegawa", route: "/yui" },
+                { name: "Yuuki Mikan", route: "/mikan" },
+                { name: "Ren Elsie Jewelria", route: "#" },
+                { name: "Tenjōin Saki", route: "/saki" },
+                { name: "Kotegawa Yui", route: "/yui" },
+                { name: "Zastin", route: "#" },
+                { name: "Run Elsie Jewelria", route: "/run" },
               ].map((char) => (
                 <li key={char.route} className="flex items-center">
                   <span className="w-1 h-1 rounded-full bg-black mr-2 inline-block" />
@@ -540,105 +542,23 @@ export const Toloverudarknessanime = () => {
                 </li>
               ))}
             </ul>
-            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="music">
-              Music
-            </h2>
-            <li className="font-bold">
-              Opening Theme:{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                "Rakuen PROJECT"
-              </a>{" "}
-              by{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Ray
-              </a>
-            </li>
-
-            <li className="font-bold">
-              Ending Theme: "Foul Play ni Kurari" by{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Kanon Wakeshima
-              </a>
-            </li>
-
-            <h2
-              className="text-2xl font-bold border-b mt-8 mb-4"
-              id="staff-credits"
-            >
-              Staff Credits
-            </h2>
-            <div className="flex flex-row items-start gap-6">
+            <div className="flex items-start mt-8">
               <div className="flex-1">
-                <ul className="list-disc pl-6 space-y-1">
-                  <li>
-                    <strong>Original Creator:</strong> Yabuki Kentarō (art),
-                    Hasemi Saki (story)
-                  </li>
-                  <li>
-                    <strong>Director:</strong> Atsushi Ootsuki
-                  </li>
-                  <li>
-                    <strong>Music:</strong> Takeshi Watanabe
-                  </li>
-                  <li>
-                    <strong>Original Character Design:</strong> Yabuki Kentarō
-                  </li>
-                  <li>
-                    <strong>Character Design:</strong> Yūichi Oka
-                  </li>
-                  <li>
-                    <strong>Art Director:</strong> Nariyuki Ogi
-                  </li>
-                  <li>
-                    <strong>Animation Producer:</strong> Takumi Kusakabe
-                  </li>
-                  <li>
-                    <strong>Color Design:</strong> Tamae Matsuoka
-                  </li>
-                  <li>
-                    <strong>Art Design:</strong> Nariyuki Ogi
-                  </li>
-                  <li>
-                    <strong>Sound Director:</strong> Jin Aketagawa
-                  </li>
-                  <li>
-                    <strong>Producer:</strong> Kazumasa Sanjouba, Kentarō
-                    Hattori, Nobuhiro Wakayama, Tsuyoshi Tanaka
-                  </li>
-                </ul>
+                <h2
+                  className="text-2xl font-bold border-b mb-4"
+                  id="episode-list"
+                >
+                  Episode List
+                </h2>
+                <li>Note Content Adapted from Wikipedia</li>
               </div>
-              <div className="flex-shrink-0">
-                <img
-                  src="To Love Ru/toloverudarknessanimelogo.jpg"
-                  alt=""
-                  className="max-w-[200px] h-auto"
-                />
-              </div>
+              <img
+                src="To Love Ru/mottotoloverulogo.jpg"
+                alt="Title for Motto To Love-Ru"
+                className="ml-6 w-40 h-auto object-contain"
+              />
             </div>
-            <h2
-              className="text-2xl font-bold border-b mt-8 mb-4"
-              id="video-games"
-            >
-              Video Games
-            </h2>
-            <p>
-              A PS-VITA RPG story action game titled To Love-Ru Darkness: Battle
-              Ecstasy, was released on May 22, 2014. It was developed by FuRyu,
-              developer of{" "}
-              <a href="#" className="text-[purple] underline hover:text-black">
-                Unchained Blades
-              </a>
-              .
-            </p>
+            <br />
           </div>
         </div>
 
@@ -647,12 +567,12 @@ export const Toloverudarknessanime = () => {
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
             <div className="text-center  w-full">
               <h1 className="text-[#F9D910] bg-[#DB49AC] text-xl italic font-bold p-2 ">
-                To LOVE-Ru Darkness
+                Motto To LOVE-Ru
               </h1>
             </div>
             <div className="flex justify-center w-full">
               <img
-                src="To Love Ru/toloverudarknessanime.jpg"
+                src="To Love Ru/mottotoloveru.jpg"
                 alt="Lala Satalin Deviluke"
                 className="w-80 h-80 object-contain border-2 border-[#DB49AC] "
                 onClick={() => setShowImageModal(true)}
@@ -663,8 +583,8 @@ export const Toloverudarknessanime = () => {
                   onClick={() => setShowImageModal(false)}
                 >
                   <img
-                    src="To Love Ru/toloverudarknessanime.jpg"
-                    alt="To LOVE-Ru Darkness"
+                    src="To Love Ru/mottotoloveru.jpg"
+                    alt="To LOVE-Ru Darkness 2nd"
                     className="max-w-3xl max-h-[90vh] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
                     onClick={(e) => e.stopPropagation()}
                   />
@@ -695,7 +615,7 @@ export const Toloverudarknessanime = () => {
                       Japanese
                     </td>
                     <td className="bg-white text-center  text-black p-2 border border-[#DB49AC] ">
-                      To LOVEる -とらぶる- ダークネス
+                      もっと To LOVEる -とらぶる-
                     </td>
                   </tr>
                   <tr>
@@ -703,7 +623,7 @@ export const Toloverudarknessanime = () => {
                       Rōmaji
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      To Raburu -Toraburu- Dākunesu
+                      Motto To Rabu ru
                     </td>
                   </tr>
                   <tr>
@@ -726,8 +646,9 @@ export const Toloverudarknessanime = () => {
                     <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
                       Producer[s]
                     </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Geneon Universal Entertainment, Magic Capsual
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] text-center">
+                      Geneon Universal Entertainment, TBS, Magic Capsule, PRA
+                      Kohei Kawase
                     </td>
                   </tr>
                   <tr>
@@ -743,7 +664,7 @@ export const Toloverudarknessanime = () => {
                       Aired
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      October 6, 2012 to December 29, 2012
+                      October 6, 2010 to December 22, 2010
                     </td>
                   </tr>
                   <tr>

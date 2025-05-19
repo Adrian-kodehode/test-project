@@ -471,7 +471,9 @@ export default function ToLoveRuWiki() {
                                 </Link>
                               </li>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                                Motto To LOVE-Ru
+                                <Link to="/motto_to_love-ru_anime">
+                                  Motto To LOVE-Ru
+                                </Link>
                               </li>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                                 <Link to="/to_love-ru_darkness_anime">
@@ -480,7 +482,9 @@ export default function ToLoveRuWiki() {
                                 </Link>
                               </li>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                                To LOVE-Ru Darkness 2nd
+                                <Link to="/to_love-ru_darkness2ndanime">
+                                  To LOVE-Ru Darkness 2nd
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -506,7 +510,9 @@ export default function ToLoveRuWiki() {
                           <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
                             <ul>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                                To LOVE-Ru Darkness: Battle
+                                <Link to="/to_love-ru_darkness_battle_ecstasy_game">
+                                  To LOVE-Ru Darkness: Battle Ecstasy
+                                </Link>
                               </li>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                                 To LOVE-Ru Darkness: True
