@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Toloverudarknessbattleecstasy = () => {
+export const toloveru_planets_and_locations = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -158,11 +158,11 @@ export const Toloverudarknessbattleecstasy = () => {
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_battle_ecstasy_game">
-                            To LOVE-Ru Darkness: Battle Ecstasy
+                            To Love-Ru Darkness Battle Ecstasy
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness_ture_princess_game">
+                          <Link to="/to_love-ru_darkness_princess_game">
                             To LOVE-Ru Darkness: True Princess
                           </Link>
                         </li>
@@ -170,9 +170,7 @@ export const Toloverudarknessbattleecstasy = () => {
                           To LOVE-Ru Darkness: Idol Revolution
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness_gravure_chances_game">
-                            To LOVE-Ru Darkness: Gravure Chances
-                          </Link>
+                          To LOVE-Ru Darkness: Gravure Chances
                         </li>
                       </ul>
                     </div>
@@ -359,20 +357,16 @@ export const Toloverudarknessbattleecstasy = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 italic text-3xl">
-            To LOVE-Ru Darkness: Battle Ecstasy
-          </h1>
+          <h1 className="mb-5 text-5xl">Planets and Locations</h1>
           <p>
-            <strong className="italic">
-              To LOVE-Ru Darkness: Battle Ecstasy
-            </strong>{" "}
-            is an "Ultra Harem Action" PSVITA game developed by Furyu in May 22,
-            2014. The genre is consistently made up of four parts: Playthrough
-            Action, My Room, Communication, and Adventure.
+            This is a list of the planets and locations mentioned in{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              TO LOVE-Ru
+            </a>
           </p>
           <br />
 
-          <nav className="w-44 mt-5 bg-white border rounded mb-6">
+          <nav className="w-40 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
                 <svg
@@ -396,255 +390,239 @@ export const Toloverudarknessbattleecstasy = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#plot" className="hover:underline">
-                  Development
+                <a href="#planets" className="hover:underline">
+                  Planets
                 </a>
               </li>
               <li>
-                <a href="#characters" className="hover:underline">
-                  Story
-                </a>
-              </li>
-
-              <li>
-                <a href="#contents" className="hover:underline">
-                  Contents
-                </a>
-                <ol className="list-decimal list-inside ml-5">
-                  <li>
-                    <a href="#contents">Limited Edition (8,980 yen)</a>
-                  </li>
-                  <li>
-                    <a href="#contents">Pre-Order Bonus</a>
-                  </li>
-                </ol>
+                <a href="#major_planets">Major Planets</a>
               </li>
               <li>
-                <a href="#screenshots" className="hover:underline">
-                  Screenshots
-                </a>
+                <a href="#minor_planets">Minor Planets</a>
               </li>
               <li>
-                <a href="#external-links" className="hover:underline">
-                  External links
-                </a>
+                <a href="#gallery">Gallery</a>
               </li>
             </ol>
           </nav>
+          <h2 className="font-bold">Planests</h2>
+          <br />
           <div className="flex-1 text-black max-w-2xl">
-            <br />
-          </div>
-          <h2 className="text-2xl font-bold border-b mb-4" id="development">
-            Development
-          </h2>
-          <p>
-            FuRyu has shared first details and screenshots on PS Vita “ultra
-            pleasant harem action” game To Love-Ru Darkness: Battle Ecstasy. The
-            game, due out in Japan on May 22 for 6,980 yen, consists of action,
-            “my room,” communication, and adventure parts. Find those parts, as
-            well as a story, limited edition, and pre-order details, below.
-          </p>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="story">
-            Story
-          </h2>
-          <p>
-            One day, when Rito was in his house, he suddenly became dizzy, and
-            when he came to his senses, he was in a strange world. Momo suddenly
-            appears, and from her he hears that he is imprisoned in a strange
-            world and that Lala has been whisked away to a mystery dungeon. So
-            Rito decides to head out and rescue Lala from the dungeon she is
-            held prison in.
-          </p>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="contents">
-            Contents
-          </h2>
-          <div className="ml-8">
+            <h1 className="text-2xl font-bold border-b mb-4" id="major_planets">
+              Major Planets
+            </h1>
             <li>
-              Action Part - Search the dungeons in order to save the heroines,
-              and defeat the monsters that appear as you progress. On each floor
-              of the dungeon is an event where a heroine awaits.
-            </li>
-            <li>
-              My Room Part - The game starts in a room that resembles Rito’s
-              house. This will serve as an area in which you and the captured
-              heroines from the action part can spend time together. With the
-              passing of certain events, players can form close relationships
-              with the heroines.
-            </li>
-            <li>
-              Communication Part (Trouble Touch Time) – You can communicate with
-              the heroines by touching the screen and using the back panel.
-            </li>
-            <li>
-              Adventure Part - This is the part that advances the story. Talk
-              with the heroines to progress.
-            </li>
-          </div>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="limited-edition">
-            Limited Edition (8,980 yen)
-          </h2>
-          <div className="ml-8">
-            <li>Special box</li>
-            <li>Special “Konjiki no Yami” sleep sheet</li>
-            <li>Special “Momo” cord reel</li>
-            <li>Original costume “Sexy Apron” download code</li>
-          </div>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="pre-order">
-            Pre-Order Bonus
-          </h2>
-          <div className="ml-8">
-            <li>Original costume “Maid Clothes” download code</li>
-          </div>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="screenshots">
-            Screenshots
-          </h2>
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy1.jpg",
-              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy2.jpg",
-              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy3.jpg",
-            ].map((src, idx) => (
-              <img
-                key={idx}
-                src={src}
-                alt={`To LOVE-Ru Darkness Battle Ecstasy screenshot ${idx + 1}`}
-                className="w-full h-auto rounded shadow"
-                onClick={() => {
-                  setSelectedImage(src);
-                  setShowImageModal(true);
-                }}
-              />
-            ))}
-            {showImageModal && selectedImage && (
-              <div
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                onClick={() => setShowImageModal(false)}
+              <a
+                href="/"
+                className="text-[purple] hover:underline hover:text-black"
               >
-                <img
-                  src={selectedImage}
-                  alt="To LOVE-Ru Darkness 2nd"
-                  className="max-w-3xl max-h-[90vh] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
-                  onClick={(e: React.MouseEvent<HTMLImageElement>) =>
-                    e.stopPropagation()
-                  }
-                />
-                <button
-                  className="absolute top-8 right-8 text-white text-3xl font-bold"
-                  onClick={() => setShowImageModal(false)}
-                  aria-label="Close"
-                >
-                  &times;
-                </button>
-              </div>
-            )}
+                Earth
+              </a>
+              - Where{" "}
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Sianan Town
+              </a>
+              and{" "}
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Sainan High
+              </a>
+              are located.
+            </li>
+            <li>
+              <a
+                href="/deviluke"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Deviluke
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Memorze
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Mistletoe
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Okiwana
+              </a>
+            </li>
+            <br />
+            <h1 className="text-2xl font-bold border-b mb-4" id="minor_planets">
+              Minor Planets
+            </h1>
+            <li>
+              Ako (anime only) - A planet destroyed by{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Gid Lucione Deviluke
+              </span>
+              .
+            </li>
+            <li>
+              Balke - The planet where{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Ghi Bree
+              </span>{" "}
+              is from.
+            </li>
+            <li>
+              Gaama - The planet where{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Lacospo
+              </span>{" "}
+              is from.
+            </li>
+            <li>
+              Kild - A planet that was sliced in half by{" "}
+              <a
+                href="/yami"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Golden Darkness
+              </a>{" "}
+              when the Darkness transformation accidentally activated. It is
+              described as the garbage dump of the universe.
+            </li>
+            <li>
+              Plantas - The planet where{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Celine
+              </span>{" "}
+              is from. Judging by the name, it is likely home to many plants.
+            </li>
+            <li>
+              Unnamed home planet of{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Tearju Lunatique
+              </span>{" "}
+              and{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Ryoko Mikado
+              </span>{" "}
+              appears to be more advanced compared to Earth. It has a futuristic
+              appearance, and spaceships can be seen in the sky.
+            </li>
+            <li>Cedar (anime only) - Sugitani's home planet</li>
+            <li>Gourmand - appears to be food themed</li>
+            <li>Juda</li>
+            <li>
+              Kara -{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Gid Lucione Deviluke
+              </span>{" "}
+              fought{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Nemesis
+              </span>{" "}
+              in a cyberspace that was based on Kara's data
+            </li>
+            <li>
+              Kirara (anime only) -{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Pikari
+              </span>
+              's home planet
+            </li>
+            <li>Latte</li>
+            <li>Melon</li>
+            <li>Nito</li>
+            <li>Rubbish</li>
+            <li>
+              Shishinabe - Gii-Chan, one of Nana's animals comes from Shishinabe
+            </li>
+            <li>Sold</li>
+            <li>
+              Solgam - the home planet of{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Solgam
+              </span>
+              , an organization that was destroyed by{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Kuro
+              </span>
+            </li>
+            <li>
+              Tentac -{" "}
+              <span className="text-[purple] hover:underline hover:text-black">
+                Meda-Q
+              </span>
+              's home planet
+            </li>
+            <li>Zelas</li>
           </div>
           <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="external-links">
-            External links
-          </h2>
-          <li>
-            <a
-              href="/#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              PS VITA Official Game Site
-            </a>{" "}
-            <strong>(Japanese)</strong>
-          </li>
-          <br />
-        </div>
-
-        {/* Right: Info card sidebar */}
-        <div className="w-[350px] p-5 font-sans  top-8 mr-8">
-          <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center  w-full">
-              <h1 className="text-[#F9D910] bg-[#DB49AC] text-xl italic font-bold p-2 ">
-                To LOVE-Ru Darkness
-              </h1>
-            </div>
-            <div className="flex justify-center w-full">
+          <h1 className="text-2xl font-bold border-b mb-4" id="gallery">
+            Gallery
+          </h1>
+          <div className="grid grid-cols-3 gap-8 mb-8">
+            <div className="flex flex-col items-center col-span-3">
               <img
-                src="To Love Ru/ToLOVE-RuDarknessBattleEcstasy.jpg"
-                alt="To LOVE-Ru Darkness Battle Ecstasy"
-                className="w-80 h-80 object-contain border-2 border-[#DB49AC] cursor-pointer"
-                onClick={() => setShowImageModal(true)}
+                src="To Love Ru/sainan.jpg"
+                alt="Sainan Town"
+                className="w-full h-80 object-cover rounded shadow"
               />
+              <span className="mt-2 text-center text-sm font-medium">
+                Sainan Town
+              </span>
             </div>
-            <div className="w-full overflow-x-auto">
-              <table className="w-full min-w-full border-separate border-spacing-0">
-                <tbody>
-                  {/* Characteristics */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-[#F9D910] font-bold p-2"
-                    >
-                      Information
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 w-1/3 border border-[#9C2E7A] ">
-                      Japanese
-                    </td>
-                    <td className="bg-white text-center  text-black p-2 border border-[#DB49AC] ">
-                      To LOVEる -とらぶる- ダークネス バトルエクスタシー
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Rōmaji
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      To Rabu ru -toraburu- Dākunesu Batoru Ekusutashii
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Release Date(s)
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      <strong>JP:</strong> May 22, 2014
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Genre[s]
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Ultra Harem Action
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Game Mode[s]
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Single Player
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Platform(s)
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      PlayStation Vita
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Ratings
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      CERO D
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="flex flex-col items-center col-span-3">
+              <img
+                src="To Love Ru/DevilukePalace.jpg"
+                alt="The Royal Palace of Deviluke"
+                className="w-full h-80 object-cover rounded shadow"
+              />
+              <span className="mt-2 text-center text-sm font-medium">
+                The Royal Palace of Deviluke
+              </span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/planetmemorze.jpg"
+                alt="Planet Memorze"
+                className="w-full h-60 object-cover rounded shadow"
+              />
+              <span className="mt-2 text-center text-sm font-medium">
+                Planet Memorze
+              </span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/mistletoe.jpg"
+                alt="Mistletoe"
+                className="w-full h-60 object-cover rounded shadow"
+              />
+              <span className="mt-2 text-center text-sm font-medium">
+                Mistletoe
+              </span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/Okiwana.jpg"
+                alt="Okiwana"
+                className="w-full h-60 object-cover rounded shadow"
+              />
+              <span className="mt-2 text-center text-sm font-medium">
+                Okiwana
+              </span>
             </div>
           </div>
         </div>

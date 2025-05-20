@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Toloverudarknessbattleecstasy = () => {
+export const Deviluke = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -158,11 +158,11 @@ export const Toloverudarknessbattleecstasy = () => {
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_battle_ecstasy_game">
-                            To LOVE-Ru Darkness: Battle Ecstasy
+                            To Love-Ru Darkness Battle Ecstasy
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness_ture_princess_game">
+                          <Link to="/to_love-ru_darkness_princess_game">
                             To LOVE-Ru Darkness: True Princess
                           </Link>
                         </li>
@@ -170,9 +170,7 @@ export const Toloverudarknessbattleecstasy = () => {
                           To LOVE-Ru Darkness: Idol Revolution
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness_gravure_chances_game">
-                            To LOVE-Ru Darkness: Gravure Chances
-                          </Link>
+                          To LOVE-Ru Darkness: Gravure Chances
                         </li>
                       </ul>
                     </div>
@@ -359,20 +357,47 @@ export const Toloverudarknessbattleecstasy = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 italic text-3xl">
-            To LOVE-Ru Darkness: Battle Ecstasy
-          </h1>
+          <h1 className="mb-5 text-5xl">Deviluke</h1>
+          <div className="flex items-start gap-6 mb-6">
+            <div className="flex-1">
+              <p>
+                <strong>Devilukes</strong> (デビルーク, Debirūku) is referred to
+                as the center of the galaxy, though this is probably a reference
+                to its importance rather than its location in the universe. The
+                planet of Deviluke literally rules the galaxy after the galactic
+                unification wars led by King Gid Lucione Deviluke, and as such
+                they hold dominion over all the planets of the galaxy and their
+                people.
+              </p>
+            </div>
+            <div className="flex flex-col items-start">
+              <img
+                src="To Love Ru/DevilukePalace.jpg"
+                alt="The Royal Palace of Deviluke."
+                className="w-64 h-40 object-cover rounded shadow flex-shrink-0"
+              />
+              <span className="mt-2 text-center text-sm font-medium">
+                The Royal Palace of Deviluke
+              </span>
+            </div>
+          </div>
+          <br />
           <p>
-            <strong className="italic">
-              To LOVE-Ru Darkness: Battle Ecstasy
-            </strong>{" "}
-            is an "Ultra Harem Action" PSVITA game developed by Furyu in May 22,
-            2014. The genre is consistently made up of four parts: Playthrough
-            Action, My Room, Communication, and Adventure.
+            Little is known about the planet itself, except that it has a Gothic
+            culture, a lot of many forests, really high mountains, and a high
+            level of technology. Much more is known about the citizens of
+            Deviluke, who are at least known to be many times stronger than
+            Earthlings, and who seem to have won their wars across the galaxy
+            using only their own natural powers, which seem to be of some
+            variety.{" "}
           </p>
           <br />
+          <p>
+            The planet is considered by many to be the most powerful planet in
+            the universe.
+          </p>
 
-          <nav className="w-44 mt-5 bg-white border rounded mb-6">
+          <nav className="w-60 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
                 <svg
@@ -396,257 +421,47 @@ export const Toloverudarknessbattleecstasy = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#plot" className="hover:underline">
-                  Development
+                <a href="#devilukeans" className="hover:underline">
+                  Devilukeans
                 </a>
-              </li>
-              <li>
-                <a href="#characters" className="hover:underline">
-                  Story
-                </a>
-              </li>
-
-              <li>
-                <a href="#contents" className="hover:underline">
-                  Contents
-                </a>
-                <ol className="list-decimal list-inside ml-5">
+                <ol className=" list-inside ml-5">
                   <li>
-                    <a href="#contents">Limited Edition (8,980 yen)</a>
+                    <a href="#appearance" className="hover:underline">
+                      1.1 Appearance
+                    </a>
                   </li>
                   <li>
-                    <a href="#contents">Pre-Order Bonus</a>
+                    <a href="#royal_family" className="hover:underline">
+                      1.2 Royal Family
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#powers_abilities" className="hover:underline">
+                      1.3 Powers and Abilities
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#weaknesses" className="hover:underline">
+                      1.4 Weaknesses
+                    </a>
                   </li>
                 </ol>
               </li>
               <li>
-                <a href="#screenshots" className="hover:underline">
-                  Screenshots
+                <a href="#trivia" className="hover:underline">
+                  Trivia
                 </a>
               </li>
               <li>
-                <a href="#external-links" className="hover:underline">
-                  External links
+                <a href="#gallery" className="hover:underline">
+                  Gallery
                 </a>
               </li>
             </ol>
           </nav>
-          <div className="flex-1 text-black max-w-2xl">
-            <br />
-          </div>
-          <h2 className="text-2xl font-bold border-b mb-4" id="development">
-            Development
-          </h2>
-          <p>
-            FuRyu has shared first details and screenshots on PS Vita “ultra
-            pleasant harem action” game To Love-Ru Darkness: Battle Ecstasy. The
-            game, due out in Japan on May 22 for 6,980 yen, consists of action,
-            “my room,” communication, and adventure parts. Find those parts, as
-            well as a story, limited edition, and pre-order details, below.
-          </p>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="story">
-            Story
-          </h2>
-          <p>
-            One day, when Rito was in his house, he suddenly became dizzy, and
-            when he came to his senses, he was in a strange world. Momo suddenly
-            appears, and from her he hears that he is imprisoned in a strange
-            world and that Lala has been whisked away to a mystery dungeon. So
-            Rito decides to head out and rescue Lala from the dungeon she is
-            held prison in.
-          </p>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="contents">
-            Contents
-          </h2>
-          <div className="ml-8">
-            <li>
-              Action Part - Search the dungeons in order to save the heroines,
-              and defeat the monsters that appear as you progress. On each floor
-              of the dungeon is an event where a heroine awaits.
-            </li>
-            <li>
-              My Room Part - The game starts in a room that resembles Rito’s
-              house. This will serve as an area in which you and the captured
-              heroines from the action part can spend time together. With the
-              passing of certain events, players can form close relationships
-              with the heroines.
-            </li>
-            <li>
-              Communication Part (Trouble Touch Time) – You can communicate with
-              the heroines by touching the screen and using the back panel.
-            </li>
-            <li>
-              Adventure Part - This is the part that advances the story. Talk
-              with the heroines to progress.
-            </li>
-          </div>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="limited-edition">
-            Limited Edition (8,980 yen)
-          </h2>
-          <div className="ml-8">
-            <li>Special box</li>
-            <li>Special “Konjiki no Yami” sleep sheet</li>
-            <li>Special “Momo” cord reel</li>
-            <li>Original costume “Sexy Apron” download code</li>
-          </div>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="pre-order">
-            Pre-Order Bonus
-          </h2>
-          <div className="ml-8">
-            <li>Original costume “Maid Clothes” download code</li>
-          </div>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="screenshots">
-            Screenshots
-          </h2>
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy1.jpg",
-              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy2.jpg",
-              "To Love Ru/ToLOVE-RuDarknessBattleEcstasy3.jpg",
-            ].map((src, idx) => (
-              <img
-                key={idx}
-                src={src}
-                alt={`To LOVE-Ru Darkness Battle Ecstasy screenshot ${idx + 1}`}
-                className="w-full h-auto rounded shadow"
-                onClick={() => {
-                  setSelectedImage(src);
-                  setShowImageModal(true);
-                }}
-              />
-            ))}
-            {showImageModal && selectedImage && (
-              <div
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                onClick={() => setShowImageModal(false)}
-              >
-                <img
-                  src={selectedImage}
-                  alt="To LOVE-Ru Darkness 2nd"
-                  className="max-w-3xl max-h-[90vh] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
-                  onClick={(e: React.MouseEvent<HTMLImageElement>) =>
-                    e.stopPropagation()
-                  }
-                />
-                <button
-                  className="absolute top-8 right-8 text-white text-3xl font-bold"
-                  onClick={() => setShowImageModal(false)}
-                  aria-label="Close"
-                >
-                  &times;
-                </button>
-              </div>
-            )}
-          </div>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="external-links">
-            External links
-          </h2>
-          <li>
-            <a
-              href="/#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              PS VITA Official Game Site
-            </a>{" "}
-            <strong>(Japanese)</strong>
-          </li>
-          <br />
-        </div>
 
-        {/* Right: Info card sidebar */}
-        <div className="w-[350px] p-5 font-sans  top-8 mr-8">
-          <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center  w-full">
-              <h1 className="text-[#F9D910] bg-[#DB49AC] text-xl italic font-bold p-2 ">
-                To LOVE-Ru Darkness
-              </h1>
-            </div>
-            <div className="flex justify-center w-full">
-              <img
-                src="To Love Ru/ToLOVE-RuDarknessBattleEcstasy.jpg"
-                alt="To LOVE-Ru Darkness Battle Ecstasy"
-                className="w-80 h-80 object-contain border-2 border-[#DB49AC] cursor-pointer"
-                onClick={() => setShowImageModal(true)}
-              />
-            </div>
-            <div className="w-full overflow-x-auto">
-              <table className="w-full min-w-full border-separate border-spacing-0">
-                <tbody>
-                  {/* Characteristics */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-[#F9D910] font-bold p-2"
-                    >
-                      Information
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 w-1/3 border border-[#9C2E7A] ">
-                      Japanese
-                    </td>
-                    <td className="bg-white text-center  text-black p-2 border border-[#DB49AC] ">
-                      To LOVEる -とらぶる- ダークネス バトルエクスタシー
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Rōmaji
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      To Rabu ru -toraburu- Dākunesu Batoru Ekusutashii
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Release Date(s)
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      <strong>JP:</strong> May 22, 2014
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Genre[s]
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Ultra Harem Action
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Game Mode[s]
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Single Player
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Platform(s)
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      PlayStation Vita
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
-                      Ratings
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      CERO D
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <br />
+          <div className="flex-1 text-black max-w-2xl"></div>
         </div>
       </div>
       {/* Back to Top Button */}

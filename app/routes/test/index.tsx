@@ -515,13 +515,17 @@ export default function ToLoveRuWiki() {
                                 </Link>
                               </li>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                                To LOVE-Ru Darkness: True
+                                <Link to="/to_love-ru_darkness_ture_princess_game">
+                                  To LOVE-Ru Darkness: True Princess
+                                </Link>
                               </li>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                                To LOVE-Ru Darkness: Idol
+                                To LOVE-Ru Darkness: Idol Revolution
                               </li>
                               <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                                To LOVE-Ru Darkness: Gravure
+                                <Link to="/to_love-ru_darkness_gravure_chances_game">
+                                  To LOVE-Ru Darkness: Gravure Chances
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -790,40 +794,49 @@ export default function ToLoveRuWiki() {
                         {
                           name: "Characters",
                           image: "To Love Ru/characters.jpg",
+                          route: "/toloveru", // Added route for navigation
                         },
                         {
                           name: "Manga",
                           image: "To Love Ru/manga.jpg",
+                          route: "/to_love-ru_manga",
                         },
                         {
                           name: "Anime",
                           image: "To Love Ru/anime.jpg",
+                          route: "/to_love-ru_anime",
                         },
                         {
                           name: "Music",
                           image: "To Love Ru/music.jpg",
+                          route: "/to_love-ru_music",
                         },
                         {
                           name: "Video Games",
                           image: "To Love Ru/video_games.jpg",
+                          route: "/to_love-ru_games",
                         },
                         {
                           name: "Artbooks",
                           image: "To Love Ru/artbooks.jpg",
+                          route: "/to_love-ru_artbooks",
                         },
                         {
                           name: "Images",
                           image: "To Love Ru/images.jpg",
+                          route: "/to_love-ru_images",
                         },
                         {
                           name: "Planets and Locations",
                           image: "To Love Ru/planets_and_locations.jpg",
+                          route: "/planets_and_locations",
                         },
                       ].map((item, idx) => (
-                        <div
+                        <Link
                           key={idx}
-                          className="text-center p-2 rounded text-purple-800 flex flex-col items-center"
-                          style={{ maxWidth: 160 }}
+                          to={item.route || "#"}
+                          className="text-center p-2 rounded text-purple-800 flex flex-col items-center hover:bg-purple-50 transition"
+                          style={{ maxWidth: 160, textDecoration: "none" }}
                         >
                           <img
                             src={item.image}
@@ -831,7 +844,7 @@ export default function ToLoveRuWiki() {
                             className="mb-2 w-48 h-48 rounded object-contain"
                           />
                           <span className="text-base">{item.name}</span>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>

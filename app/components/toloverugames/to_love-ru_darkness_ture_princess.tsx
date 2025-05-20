@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Toloverudarknessbattleecstasy = () => {
+export const Toloverudarknesstrueprincess = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -158,11 +158,11 @@ export const Toloverudarknessbattleecstasy = () => {
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_battle_ecstasy_game">
-                            To LOVE-Ru Darkness: Battle Ecstasy
+                            To Love-Ru Darkness Battle Ecstasy
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness_ture_princess_game">
+                          <Link to="/to_love-ru_darkness_princess_game">
                             To LOVE-Ru Darkness: True Princess
                           </Link>
                         </li>
@@ -170,9 +170,7 @@ export const Toloverudarknessbattleecstasy = () => {
                           To LOVE-Ru Darkness: Idol Revolution
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness_gravure_chances_game">
-                            To LOVE-Ru Darkness: Gravure Chances
-                          </Link>
+                          To LOVE-Ru Darkness: Gravure Chances
                         </li>
                       </ul>
                     </div>
@@ -360,15 +358,14 @@ export const Toloverudarknessbattleecstasy = () => {
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
           <h1 className="mb-5 italic text-3xl">
-            To LOVE-Ru Darkness: Battle Ecstasy
+            To LOVE-Ru Darkness: True Princess
           </h1>
           <p>
             <strong className="italic">
-              To LOVE-Ru Darkness: Battle Ecstasy
+              To LOVE-Ru Darkness: True Princess
             </strong>{" "}
-            is an "Ultra Harem Action" PSVITA game developed by Furyu in May 22,
-            2014. The genre is consistently made up of four parts: Playthrough
-            Action, My Room, Communication, and Adventure.
+            is an "Adventure Visual Novel" PSVITA game developed by FuRyu and
+            released in November 5, 2015.
           </p>
           <br />
 
@@ -396,32 +393,42 @@ export const Toloverudarknessbattleecstasy = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#plot" className="hover:underline">
+                <a href="#development" className="hover:underline">
                   Development
                 </a>
               </li>
               <li>
-                <a href="#characters" className="hover:underline">
+                <a href="#story" className="hover:underline">
                   Story
                 </a>
               </li>
-
               <li>
-                <a href="#contents" className="hover:underline">
-                  Contents
-                </a>
+                <a href="#characters">Characters</a>
                 <ol className="list-decimal list-inside ml-5">
                   <li>
-                    <a href="#contents">Limited Edition (8,980 yen)</a>
+                    <a href="#main">Main</a>
                   </li>
                   <li>
-                    <a href="#contents">Pre-Order Bonus</a>
+                    <a href="#supporting">Supporting</a>
                   </li>
                 </ol>
               </li>
               <li>
-                <a href="#screenshots" className="hover:underline">
-                  Screenshots
+                <a href="#editions" className="hover:underline">
+                  Editions
+                </a>
+                <ol className="list-decimal list-inside ml-5">
+                  <li>
+                    <a href="#contents">Regular Edition (6,980 yen)</a>
+                  </li>
+                  <li>
+                    <a href="#contents">Limited Edition (8,980 yen)</a>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <a href="#gallery" className="hover:underline">
+                  Gallery
                 </a>
               </li>
               <li>
@@ -438,66 +445,116 @@ export const Toloverudarknessbattleecstasy = () => {
             Development
           </h2>
           <p>
-            FuRyu has shared first details and screenshots on PS Vita “ultra
-            pleasant harem action” game To Love-Ru Darkness: Battle Ecstasy. The
-            game, due out in Japan on May 22 for 6,980 yen, consists of action,
-            “my room,” communication, and adventure parts. Find those parts, as
-            well as a story, limited edition, and pre-order details, below.
+            The "Dating Sumulation" game was first announced at the "Game Festa
+            2015".
           </p>
           <br />
           <h2 className="text-2xl font-bold border-b mb-4" id="story">
             Story
           </h2>
           <p>
-            One day, when Rito was in his house, he suddenly became dizzy, and
-            when he came to his senses, he was in a strange world. Momo suddenly
-            appears, and from her he hears that he is imprisoned in a strange
-            world and that Lala has been whisked away to a mystery dungeon. So
-            Rito decides to head out and rescue Lala from the dungeon she is
-            held prison in.
+            After the "Darkness" incident,{" "}
+            <a
+              href="/rito"
+              className="text-[purple] underline hover:text-black"
+            >
+              Rito Yuuki
+            </a>{" "}
+            thought he could finally return to his everyday life. However, due
+            to certain circumstances, Rito finds himself with a case temporary
+            memory loss. As he sets out to recover his memories, a new story
+            featuring the 11 heroines and their complicated expectations
+            unfolds.
           </p>
           <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="contents">
-            Contents
+          <h2 className="text-2xl font-bold border-b mb-4" id="characters">
+            Characters
           </h2>
+          <h2 className="text-xl font-bold">Main</h2>
+          <div className="ml-8 flex flex-row items-start gap-4">
+            <ul className="mt-2 space-y-1 flex-1">
+              {[
+                { name: "Yuuki Rito", route: "/rito" },
+                { name: "Lala Satalin Deviluke", route: "/lala" },
+                { name: "Sairenji Haruna", route: "/haruna" },
+                { name: "Momo Belia Deviluke", route: "/momo" },
+                { name: "Nana Astar Deviluke", route: "/nana" },
+                { name: "Golden Darkness", route: "/yami" },
+                { name: "Mea Kurosaki", route: "/mea" },
+                { name: "Kotegawa Yui", route: "/yui" },
+                { name: "Run Elsie Jewelria", route: "/run" },
+                { name: "Rin Kujou", route: "/rin" },
+                { name: "Yuuki Mikan", route: "/mikan" },
+                { name: "Nemesis", route: "/nemesis" },
+              ].map((char) => (
+                <li key={char.route} className="flex items-center">
+                  <span className="w-1 h-1 rounded-full bg-black mr-2 inline-block" />
+                  <Link
+                    to={char.route}
+                    className="text-[purple] hover:underline"
+                  >
+                    {char.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <img
+              src="To Love Ru/toloverudarknesstrueprincessart.jpg"
+              alt=""
+              className="w-40 h-auto rounded shadow"
+              onClick={() => {
+                setSelectedImage(
+                  "To Love Ru/toloverudarknesstrueprincessart.jpg"
+                );
+                setShowImageModal(true);
+              }}
+            />
+          </div>
+          <br />
+          <h2 className="text-xl font-bold">Supporting</h2>
           <div className="ml-8">
-            <li>
-              Action Part - Search the dungeons in order to save the heroines,
-              and defeat the monsters that appear as you progress. On each floor
-              of the dungeon is an event where a heroine awaits.
-            </li>
-            <li>
-              My Room Part - The game starts in a room that resembles Rito’s
-              house. This will serve as an area in which you and the captured
-              heroines from the action part can spend time together. With the
-              passing of certain events, players can form close relationships
-              with the heroines.
-            </li>
-            <li>
-              Communication Part (Trouble Touch Time) – You can communicate with
-              the heroines by touching the screen and using the back panel.
-            </li>
-            <li>
-              Adventure Part - This is the part that advances the story. Talk
-              with the heroines to progress.
-            </li>
+            <ul className="mt-2 space-y-1">
+              {[
+                { name: "Tearju Lunatique", route: "/tearju" },
+                { name: "Mikado Ryoko", route: "/#" },
+                { name: "Oshizu", route: "/#" },
+                { name: "Saki Tenjouin", route: "/saki" },
+                { name: "Risa Momioka", route: "/#" },
+                { name: "Kyouko Kirisaki", route: "/kyouko" },
+                { name: "Ren Elsie Jewelria", route: "/#" },
+                { name: "Principal", route: "/#" },
+              ].map((char) => (
+                <li key={char.route} className="flex items-center">
+                  <span className="w-1 h-1 rounded-full bg-black mr-2 inline-block" />
+                  <Link
+                    to={char.route}
+                    className="text-[purple] hover:underline"
+                  >
+                    {char.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
           <br />
           <h2 className="text-2xl font-bold border-b mb-4" id="limited-edition">
+            Editions
+          </h2>
+          <h2 className="text-xl font-bold" id="contents">
+            Regular Edition (6,980 yen)
+          </h2>
+          <li className="ml-8 mt-3">Game</li>
+
+          <br />
+          <h2 className="text-xl font-bold border-b mb-4" id="pre-order">
             Limited Edition (8,980 yen)
           </h2>
           <div className="ml-8">
             <li>Special box</li>
-            <li>Special “Konjiki no Yami” sleep sheet</li>
-            <li>Special “Momo” cord reel</li>
-            <li>Original costume “Sexy Apron” download code</li>
-          </div>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="pre-order">
-            Pre-Order Bonus
-          </h2>
-          <div className="ml-8">
-            <li>Original costume “Maid Clothes” download code</li>
+            <li>Game</li>
+            <li>Mea & Momo Bed Blanket (Size: H120xW100cm)</li>
+            <li>Special Cover Jacket Set (11pcs)</li>
+            <li>Original DLC</li>
           </div>
           <br />
           <h2 className="text-2xl font-bold border-b mb-4" id="screenshots">
@@ -564,12 +621,12 @@ export const Toloverudarknessbattleecstasy = () => {
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
             <div className="text-center  w-full">
               <h1 className="text-[#F9D910] bg-[#DB49AC] text-xl italic font-bold p-2 ">
-                To LOVE-Ru Darkness
+                To LOVE-Ru Darkness: True Princess
               </h1>
             </div>
             <div className="flex justify-center w-full">
               <img
-                src="To Love Ru/ToLOVE-RuDarknessBattleEcstasy.jpg"
+                src="To Love Ru/toloverudarknesstrueprincess.jpg"
                 alt="To LOVE-Ru Darkness Battle Ecstasy"
                 className="w-80 h-80 object-contain border-2 border-[#DB49AC] cursor-pointer"
                 onClick={() => setShowImageModal(true)}
@@ -592,7 +649,7 @@ export const Toloverudarknessbattleecstasy = () => {
                       Japanese
                     </td>
                     <td className="bg-white text-center  text-black p-2 border border-[#DB49AC] ">
-                      To LOVEる -とらぶる- ダークネス バトルエクスタシー
+                      To LOVEる ‐とらぶる‐ ダークネス トゥループリンセス
                     </td>
                   </tr>
                   <tr>
@@ -600,7 +657,7 @@ export const Toloverudarknessbattleecstasy = () => {
                       Rōmaji
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      To Rabu ru -toraburu- Dākunesu Batoru Ekusutashii
+                      To Rabu ru -toraburu- Dākunesu Turū Purinsesu
                     </td>
                   </tr>
                   <tr>
@@ -608,7 +665,7 @@ export const Toloverudarknessbattleecstasy = () => {
                       Release Date(s)
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      <strong>JP:</strong> May 22, 2014
+                      <strong>JP:</strong> November 5, 2015
                     </td>
                   </tr>
                   <tr>
@@ -616,7 +673,7 @@ export const Toloverudarknessbattleecstasy = () => {
                       Genre[s]
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Ultra Harem Action
+                      Adventure, Simulation (Visual Novel)
                     </td>
                   </tr>
                   <tr>
@@ -640,7 +697,7 @@ export const Toloverudarknessbattleecstasy = () => {
                       Ratings
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      CERO D
+                      CERO D (17+)
                     </td>
                   </tr>
                 </tbody>
