@@ -342,7 +342,7 @@ export const Deviluke = () => {
                         alt={page.name}
                         className="w-full aspect-square object-cover"
                       />
-                      <div className="absolute top-0 left-0 bg-purple-800 text-[#F9D910] w-5 h-5 flex items-center justify-center text-xs">
+                      <div className="absolute top-0 left-0 bg-purple-800 text-white w-5 h-5 flex items-center justify-center text-xs">
                         {page.number}
                       </div>
                     </div>
@@ -459,9 +459,485 @@ export const Deviluke = () => {
               </li>
             </ol>
           </nav>
-
           <br />
-          <div className="flex-1 text-black max-w-2xl"></div>
+          <div className="flex-1 text-black max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mb-4" id="devilukeans">
+              Devilukeans
+            </h2>
+            <h3 className="text-xl mb-4" id="appearance">
+              Appearance{" "}
+            </h3>
+            <p className="mt-2">
+              Like their planet, the appearance of the Devilukeans follow a
+              theme of devils and demons. All Devilukeans have tails at least
+              half as long as their bodies, ending in a pointed tip of various
+              shapes. Most of the Devilukeans shown have diamond-shaped tail
+              tips; the Devilukean king, Gid, has a tail that ends in a
+              trident-shaped tip (its metalic appearance and use as an blade in
+              battle are thought to indicate that it's a weaponized
+              replacement): the tails of the Devilukan princesses all end in a
+              spaded-shaped tip (whether this difference is due to gender or
+              their{" "}
+              <a href="#" className="text-[purple] underline hover:text-black">
+                Charmian
+              </a>{" "}
+              heritage in not revealed ).
+            </p>
+            <br />
+            <p>
+              Other than their unique tails, Devilukeans, like with many other
+              alien races, greatly resemble humans and are possibly a distant
+              relative of them. They can easily be mistaken for being human; one
+              example is when{" "}
+              <a href="#" className="text-[purple] underline hover:text-black">
+                Maron
+              </a>{" "}
+              was confused about how a human was talking to him, though it was
+              actually Nana.
+            </p>
+            <br />
+            <p>
+              Their clothing follow the devil theme as well, but also appear to
+              be inspired by playing cards. Emperor Gid's true form wears a
+              black outfit that could be described as resembling a Gothic dark
+              prince.{" "}
+              <a href="#" className="text-[purple] underline hover:text-black">
+                Zastin
+              </a>{" "}
+              is almost always seen wearing an archaic stone-like gray armor
+              with many sharp edges, which might have appeared rather sinister
+              were it not for its presence in a light-hearted{" "}
+              <a
+                href="/to_love-ru_manga"
+                className="text-[purple] underline hover:text-black"
+              >
+                manga
+              </a>{" "}
+              series, and Zastin's own comically inept character. The princesses
+              often wear black devil wings on their backs, which enable them to
+              fly. Their clothing seem to be inspired by playing cards, mildly
+              modeled after harlequin outfit with light frills, has a slight
+              diamond motif, and striped stockings.
+            </p>
+            <br />
+            <p>
+              <a
+                href="/lala"
+                className="text-[purple] underline hover:text-black"
+              >
+                Lala
+              </a>
+              's iconic "
+              <a href="#" className="text-[purple] underline hover:text-black">
+                Peke
+              </a>
+              " outfit is unique to herself. Besides the black wings, it does
+              not seem to follow any kind of Devilukean trend, but rather is
+              simply designed by Lala's goofy imagination, which is dominantly
+              white, round and curvy, much like most of her other inventions.
+            </p>
+            <br />
+            <h2 className="text-2xl font-bold border-b mb-4" id="royal_family">
+              Royal Family
+            </h2>
+            <div className="ml-8 mt-2">
+              <li>
+                King of Deviluke -{" "}
+                <a
+                  href="#"
+                  className="text-[purple] hover:underline hover:text-black"
+                >
+                  Gid Lucione Deviluke
+                </a>
+              </li>
+              <li>
+                Queen of Deviluke -{" "}
+                <a
+                  href="#"
+                  className="text-[purple] hover:underline hover:text-black"
+                >
+                  Sephie Michaela Deviluke
+                </a>
+              </li>
+              <li>
+                Princesses of Deviluke{" "}
+                <ol className="ml-12 mt-2 list-disc">
+                  <li>
+                    First Princess -{" "}
+                    <a
+                      href="/lala"
+                      className="text-[purple] hover:underline hover:text-black"
+                    >
+                      Lala Satalin Deviluke
+                    </a>{" "}
+                  </li>
+                  <li>
+                    Second Princess -{" "}
+                    <a
+                      href="/momo"
+                      className="text-[purple] hover:underline hover:text-black"
+                    >
+                      Nana Astar Deviluke
+                    </a>{" "}
+                  </li>
+                  <li>
+                    Third Princess -{" "}
+                    <a
+                      href="#"
+                      className="text-[purple] hover:underline hover:text-black"
+                    >
+                      Momo Belia Deviluke
+                    </a>{" "}
+                  </li>
+                </ol>
+                <br />
+                <li>
+                  Royal Palace Guards{" "}
+                  <ol className="ml-12 mt-2 list-disc">
+                    <li>
+                      Comannder -{" "}
+                      <a
+                        href="#"
+                        className="text-[purple] hover:underline hover:text-black"
+                      >
+                        Zastin
+                      </a>{" "}
+                    </li>
+                    <li>
+                      Assistents -{" "}
+                      <a
+                        href="#"
+                        className="text-[purple] hover:underline hover:text-black"
+                      >
+                        Maul
+                      </a>{" "}
+                      and{" "}
+                      <a
+                        href="#"
+                        className="text-[purple] hover:underline hover:text-black"
+                      >
+                        Smutts
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </li>
+            </div>
+            <br />
+            <h2
+              className="text-2xl font-bold border-b mb-4"
+              id="powers_abilities"
+            >
+              Powers and Abilities
+            </h2>
+            <p>
+              All Devilukeans have superhuman strength. They are much stornger
+              then Earthlings and most aliens of the galaxy. At one time, Lala
+              even reached a stalmate against{" "}
+              <a
+                href="/yami"
+                className="text-[purple] underline hover:text-black"
+              >
+                Yami
+              </a>
+              , a well-known assassin, with just using her brute strength.
+              However, Yami admits that living peacfully on Earth has weackened
+              her. Another Display of the Devilukeans strength is when Gid was
+              able to hit a tennis ball so hard it caused{" "}
+              <a href="#" className="text-[purple] underline hover:text-black">
+                Sasuga
+              </a>
+              , the tennis club's adviser, to faint while standing.
+            </p>
+            <br />
+            <p>
+              Some Devilukeans have sort of blood lust emotion through fighting
+              or when simply tempted by someone who gets them mad. Others like{" "}
+              <a
+                href="/momo"
+                className="text-[purple] underline hover:text-black"
+              >
+                Momo
+              </a>{" "}
+              have a lustful desire for sexual pleasure.
+            </p>
+            <br />
+            <div className="flex items-start gap-6 mt-4">
+              <div className="flex-1">
+                <p>
+                  Gid and his daughters have shown the ability to shoot
+                  destructive beams of energy from their tails. The most
+                  poverful display of this ability have been made by Gid, who
+                  used it to effortlessly destroy{" "}
+                  <a
+                    href="/nemesis"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    Nemesis
+                  </a>{" "}
+                  body, and Lala, who canceled out an attack from{" "}
+                  <a
+                    href="/yami"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    Darkness
+                  </a>{" "}
+                  powerful enough to destroy a planet. However, so far, no other
+                  Devilukeans have shown this ability, so it is unknown whether
+                  or not it is exclusive to the royal Devilukeans. Nana and
+                  Momo's abilities to communicate with animals and plants are
+                  unique variations of the "charm" ability inherited from their{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    mother
+                  </a>
+                  , and no similar abilities have been revealed by any other
+                  Devilukeans.
+                </p>
+              </div>
+              <img
+                src="To Love Ru/Tail-beam-like-shock-beam.jpg"
+                alt=""
+                className="w-64 h-40 object-cover rounded shadow flex-shrink-0"
+              />
+            </div>
+            <br />
+            <h2 className="text-2xl font-bold border-b mb-4" id="weaknesses">
+              Weaknesses
+            </h2>
+            <p>
+              Despite the Devilukeans "perfect warrior" abilities, they stil
+              have weaknesses. The overuse of their power can cause them to
+              temporarily revert into their child-like forms, such as the case
+              with Gid after the Galactic Unification Wars, and Lala during her
+              fight against Yami in{" "}
+              <a href="#" className="text-[purple] underline hover:text-black">
+                Darkness Chapter 44
+              </a>
+              . The recuperation period can vary drasticlly depending on how
+              much power was used. Lala returnd to her normal form after a few
+              weeks at most, whereas Gid remaind a child for years.
+            </p>
+            <br />
+            <div className="flex items-start gap-6">
+              <div className="flex flex-col items-start w-48">
+                <img
+                  src="https://static.wikia.nocookie.net/to-loveru/images/1/1a/Momo_TLRD_EP12_02.png/"
+                  alt="Momo rubbing her tail."
+                  className="w-48 h-60 mt-2 object-cover rounded shadow flex-shrink-0 cursor-pointer"
+                  onClick={() => {
+                    setSelectedImage(
+                      "https://static.wikia.nocookie.net/to-loveru/images/1/1a/Momo_TLRD_EP12_02.png/"
+                    );
+                    setShowImageModal(true);
+                  }}
+                />
+                <span className="mt-2 text-xs text-gray-500 text-center w-full">
+                  Momo rubbing her tail.
+                </span>
+              </div>
+              {showImageModal && selectedImage && (
+                <div
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+                  onClick={() => setShowImageModal(false)}
+                >
+                  <img
+                    src={selectedImage}
+                    alt=""
+                    className="max-w-3xl max-h-[90vh] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
+                    onClick={(e: React.MouseEvent<HTMLImageElement>) =>
+                      e.stopPropagation()
+                    }
+                  />
+                  <button
+                    className="absolute top-8 right-8 text-white text-3xl font-bold"
+                    onClick={() => setShowImageModal(false)}
+                    aria-label="Close"
+                  >
+                    &times;
+                  </button>
+                </div>
+              )}
+              <div className="flex-1 ml-4">
+                <p className="text-base">
+                  Some Devilukeans are shown to have sensitive tails, this
+                  weakness is present only in women and in men this does not
+                  affect them much (
+                  <a
+                    href="#"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    To LOVE-Ru: chapter 117
+                  </a>
+                  ). When someone touches it, the Devilukean will lose power,
+                  but might manage to find enough strength to throw said person
+                  and let their tail go. The feeling of having their tail
+                  touched gives them an "erotic" sensation. However, this
+                  weakness is only shown between Lala and her sisters. When Nana
+                  was asked if this applied to everyone, she mentions that
+                  everyone's different (Motto To LOVE-Ru Episode 11). As seen
+                  with Momo, Devilukeans with sensitive tails can pleasure
+                  themselves by rubbing it.
+                </p>
+              </div>
+            </div>
+            <br />
+            <h2 className="text-2xl font-bold border-b mb-4" id="trivia">
+              Trivia
+            </h2>
+            <li>
+              In the{" "}
+              <a
+                href="/to_love-ru_anime"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                anime
+              </a>
+              , the way Devilukeans propose is by grabbing the female's breasts
+              and confessing to her. Coincidentally Rito accidently did both
+              without knowing it. Within the three days after the "said event",
+              there is a cooling off period tp cancel the engagement by touching
+              the female's breast again.
+            </li>
+            <li>
+              In chapter 12 of the manga, Lala complains about the heat and
+              tells Rito that there is no summer season in Deviluke.
+            </li>
+            <li>
+              The second names of the Devilukean Royal Family are reference to
+              demons. while the only known Royal Consort's is reference to an
+              angle.{" "}
+              <ol className="ml-12 mt-5 list-item list-disc">
+                <li>
+                  Gid "Lucione" Deviluke - Lucione comes from{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] hover:underline hover:text-black"
+                  >
+                    Lucifer.
+                  </a>
+                </li>
+                <li>
+                  Lala "Satalin" Deviluke - Satalin comes from{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] hover:underline hover:text-black"
+                  >
+                    Satan.
+                  </a>
+                </li>
+                <li>
+                  Nana "Astra" Deviluke - Astra comes from{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] hover:underline hover:text-black"
+                  >
+                    Astaroth.
+                  </a>
+                </li>
+                <li>
+                  Momo "Belia" Deviluke - Belia comes from{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] hover:underline hover:text-black"
+                  >
+                    Belial.{" "}
+                  </a>
+                  and Beria{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] hover:underline hover:text-black"
+                  >
+                    Berith
+                  </a>
+                </li>
+                <li>
+                  Sephie "Michaela" Deviluke - Michaela comes from{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] hover:underline hover:text-black"
+                  >
+                    Michael.
+                  </a>
+                </li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              There have been several information about Deviluke and the
+              Devilukeans that resembles Planet Vegeta and the Saiyans from
+              Dragon Ball. These resemblances appear to be intentional, as{" "}
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Yabuki Kentarō
+              </a>{" "}
+              is known to be a fan of Dragon Ball.
+              <ol className="ml-12 mt-5 list-item list-disc">
+                <li>
+                  The Devilukeans have superstrength, much like the Saiyans.
+                </li>
+                <li>
+                  Devilukean women grow weak when their tails are touched, like
+                  the Saiyans.
+                </li>
+                <li>
+                  The Devilukean king, Gid, was originally regular sized, but
+                  became small later on. The same thing happened to Goku in
+                  Dragon Ball GT. However, the reason why they became small is
+                  different.
+                </li>
+                <li>
+                  In the first chapter of the manga (and the first episode of
+                  the anime), when Lala was showing Rito her tail, she commented
+                  "Even though I have a tail, that doesn't mean I transform when
+                  I see a full moon". This was an intentional reference to
+                  Dragon Ball, since Saiyans transform when they see full moons
+                  because of their tails.
+                </li>
+                <li>
+                  Both planets conquered other planets. However, in the case of
+                  Planet Deviluke, the Devilukeans conquered planets in order to
+                  unite them during the galactic unification wars, while the
+                  Saiyans conquered other planets for bounty.
+                </li>
+                <li>
+                  Both planets are notorious across the galaxy, and the other
+                  aliens are afraid of them.
+                </li>
+              </ol>
+            </li>
+            <br />
+            <div className="flex items-start gap-4 mt-4">
+              <div className="flex-1">
+                <li>
+                  In the Deadpool Samurai manga, Thanos claimed that he went to
+                  Deviluke planet and destroyed it. Later,{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] hover:underline hover:text-black"
+                  >
+                    Kentaro Yabuki
+                  </a>{" "}
+                  joked on his twitter that he checked and the planet is still
+                  here.
+                </li>
+              </div>
+              <img
+                src="public/To Love Ru/DeadpoolSamuraicameo.jpg"
+                alt=""
+                className="w-48 h-32 object-cover rounded shadow flex-shrink-0"
+                onClick={() => {
+                  setSelectedImage("To Love Ru/DeadpoolSamuraicameo.jpg");
+                  setShowImageModal(true);
+                }}
+              />
+            </div>
+            <br />
+          </div>
         </div>
       </div>
       {/* Back to Top Button */}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const toloveru_planets_and_locations = () => {
+export const Sianan_town = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -342,7 +342,7 @@ export const toloveru_planets_and_locations = () => {
                         alt={page.name}
                         className="w-full aspect-square object-cover"
                       />
-                      <div className="absolute top-0 left-0 bg-purple-800 text-[#F9D910] w-5 h-5 flex items-center justify-center text-xs">
+                      <div className="absolute top-0 left-0 bg-purple-800 text-white w-5 h-5 flex items-center justify-center text-xs">
                         {page.number}
                       </div>
                     </div>
@@ -357,274 +357,257 @@ export const toloveru_planets_and_locations = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 text-5xl">Planets and Locations</h1>
-          <p>
-            This is a list of the planets and locations mentioned in{" "}
-            <a href="#" className="text-[purple] underline hover:text-black">
-              TO LOVE-Ru
-            </a>
-          </p>
-          <br />
-
-          <nav className="w-40 mt-5 bg-white border rounded mb-6">
-            <div className="flex items-center justify-between px-3 py-2 border-b">
-              <span className="font-semibold text-gray-700 flex items-center text-sm">
-                <svg
-                  className="w-4 h-4 mr-1 text-gray-500"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h7"
-                  />
-                </svg>
-                Contents
-              </span>
-              <button className="text-xs text-[purple] hover:underline font-semibold">
-                [hide]
-              </button>
+          <h1 className="mb-5 text-5xl">Sainan Town</h1>
+          <div className="flex items-start gap-6 mb-6">
+            <div className="flex-1">
+              <p>
+                <strong>Sainan Town</strong> (彩南町 Sainan machi) is the
+                Japanese town where most of the main events occur in To Love-Ru
+                series.
+              </p>
             </div>
-            <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
-              <li>
-                <a href="#planets" className="hover:underline">
-                  Planets
-                </a>
-              </li>
-              <li>
-                <a href="#major_planets">Major Planets</a>
-              </li>
-              <li>
-                <a href="#minor_planets">Minor Planets</a>
-              </li>
-              <li>
-                <a href="#gallery">Gallery</a>
-              </li>
-            </ol>
-          </nav>
-          <h2 className="font-bold">Planests</h2>
-          <br />
-          <div className="flex-1 text-black max-w-2xl">
-            <h1 className="text-2xl font-bold border-b mb-4" id="major_planets">
-              Major Planets
-            </h1>
-            <li>
-              <a
-                href="/"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Earth
-              </a>
-              - Where{" "}
-              <a
-                href="sianan_town"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Sianan Town{" "}
-              </a>
-              and{" "}
-              <a
-                href="sainan_high"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Sainan High{" "}
-              </a>
-              are located.
-            </li>
-            <li>
-              <a
-                href="/deviluke"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Deviluke
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Memorze
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Mistletoe
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Okiwana
-              </a>
-            </li>
-            <br />
-            <h1 className="text-2xl font-bold border-b mb-4" id="minor_planets">
-              Minor Planets
-            </h1>
-            <li>
-              Ako (anime only) - A planet destroyed by{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Gid Lucione Deviluke
+            <div className="flex flex-col items-start">
+              <img
+                src="To Love Ru/sainan.jpg"
+                alt="The Royal Palace of Deviluke."
+                className="w-80 h-40 object-cover rounded shadow flex-shrink-0"
+              />
+              <span className="mt-2 text-center text-sm font-medium">
+                Sainan Town.
               </span>
-              .
-            </li>
-            <li>
-              Balke - The planet where{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Ghi Bree
-              </span>{" "}
-              is from.
-            </li>
-            <li>
-              Gaama - The planet where{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Lacospo
-              </span>{" "}
-              is from.
-            </li>
-            <li>
-              Kild - A planet that was sliced in half by{" "}
-              <a
-                href="/yami"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Golden Darkness
-              </a>{" "}
-              when the Darkness transformation accidentally activated. It is
-              described as the garbage dump of the universe.
-            </li>
-            <li>
-              Plantas - The planet where{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Celine
-              </span>{" "}
-              is from. Judging by the name, it is likely home to many plants.
-            </li>
-            <li>
-              Unnamed home planet of{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Tearju Lunatique
-              </span>{" "}
-              and{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Ryoko Mikado
-              </span>{" "}
-              appears to be more advanced compared to Earth. It has a futuristic
-              appearance, and spaceships can be seen in the sky.
-            </li>
-            <li>Cedar (anime only) - Sugitani's home planet</li>
-            <li>Gourmand - appears to be food themed</li>
-            <li>Juda</li>
-            <li>
-              Kara -{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Gid Lucione Deviluke
-              </span>{" "}
-              fought{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Nemesis
-              </span>{" "}
-              in a cyberspace that was based on Kara's data
-            </li>
-            <li>
-              Kirara (anime only) -{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Pikari
-              </span>
-              's home planet
-            </li>
-            <li>Latte</li>
-            <li>Melon</li>
-            <li>Nito</li>
-            <li>Rubbish</li>
-            <li>
-              Shishinabe - Gii-Chan, one of Nana's animals comes from Shishinabe
-            </li>
-            <li>Sold</li>
-            <li>
-              Solgam - the home planet of{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Solgam
-              </span>
-              , an organization that was destroyed by{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Kuro
-              </span>
-            </li>
-            <li>
-              Tentac -{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Meda-Q
-              </span>
-              's home planet
-            </li>
-            <li>Zelas</li>
+            </div>
           </div>
+          <h1 className="text-2xl font-bold border-b mb-4" id="location">
+            Location
+          </h1>
+          <li>
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Yuuki's House
+            </a>{" "}
+            - The house of Yuuki family.{" "}
+            <a
+              href="/rito"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Rito
+            </a>{" "}
+            and{" "}
+            <a
+              href="/mikan"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Yūki Mikan
+            </a>{" "}
+            are living here, while their parents,{" "}
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Saibai
+            </a>{" "}
+            and{" "}
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Ringo
+            </a>{" "}
+            are living in other places due to their works. Early in the story,{" "}
+            <a
+              href="/lala"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Lala
+            </a>{" "}
+            asks Rito to live with him.{" "}
+            <a
+              href="/nana"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Nana
+            </a>{" "}
+            and{" "}
+            <a
+              href="/momo"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Momo
+            </a>{" "}
+            also join the house later.
+          </li>
+          <li>
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Sainan High
+            </a>{" "}
+            - The high school of the town. Most of the major characters are
+            attending this school.
+          </li>
+          <li>
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Sainan First Elementary School
+            </a>{" "}
+            - The school where Mikan is attending.{" "}
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Nogiwa Mami
+            </a>
+            ,{" "}
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Kogure Sachie
+            </a>{" "}
+            and{" "}
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Makoto Ooyoshi
+            </a>{" "}
+            also attend this school.
+          </li>
+          <li>
+            7-Twelve Convenience Store - A (branch of) convenince store near
+            Yuuki's House.
+          </li>
+          <li>Park</li>
+          <li>Shopping District</li>
+          <li>Tenjouin's Department Store</li>
+          <li>Super Vegeta - A supermarket in the shopping district.</li>
+          <li>Starbox Coffee - A branch of the franchised coffee shop.</li>
+          <li>Cafe Hasurin - The maid cafe where Sawada Mio works.</li>
+          <li>Bennys Restaurant</li>
+          <li>Library</li>
+          <li>Water Theme Park</li>
+          <li>
+            Poka Poka Hotspring - The bath house where Yami takes a bath
+            frequently.
+          </li>
+          <li>Shrine</li>
+          <li>Saibai Studio</li>
+          <li>
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Mikado's Clinic
+            </a>
+          </li>
+          <li>
+            Mezon Apartment -{" "}
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Zastin
+            </a>
+            ,{" "}
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Maul
+            </a>
+            , and{" "}
+            <a
+              href="#"
+              className="text-[purple] hover:underline hover:text-black"
+            >
+              Smutts
+            </a>
+            's place on Earth.
+          </li>
           <br />
           <h1 className="text-2xl font-bold border-b mb-4" id="gallery">
             Gallery
           </h1>
-          <div className="grid grid-cols-3 gap-8 mb-8">
-            <div className="flex flex-col items-center col-span-3">
-              <img
-                src="To Love Ru/sainan.jpg"
-                alt="Sainan Town"
-                className="w-full h-80 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Sainan Town
-              </span>
-            </div>
-            <div className="flex flex-col items-center col-span-3">
-              <img
-                src="To Love Ru/DevilukePalace.jpg"
-                alt="The Royal Palace of Deviluke"
-                className="w-full h-80 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                The Royal Palace of Deviluke
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="To Love Ru/planetmemorze.jpg"
-                alt="Planet Memorze"
-                className="w-full h-60 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Planet Memorze
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="To Love Ru/mistletoe.jpg"
-                alt="Mistletoe"
-                className="w-full h-60 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Mistletoe
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="To Love Ru/Okiwana.jpg"
-                alt="Okiwana"
-                className="w-full h-60 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Okiwana
-              </span>
-            </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+            {[
+              "https://static.wikia.nocookie.net/to-loveru/images/a/a5/Yuuki%27s_House_MTLR_EP8_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/4/45/7-Twelve_TLRD_EP2_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/a/ab/Tokimeki_Park_TLRD_EP3_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/6/65/Sainan_Shopping_District_MTLR_EP4_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/e/ee/Cafe_Hasurin_MTLR_EP10_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/9/99/Bennys_TLRD_EP6_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/9/9b/Starbox_Coffee_TLRD_OVA1_01.png",
+              "https://static.wikia.nocookie.net/to-loveru/images/8/8e/Park_TLRD_EP4_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/9/98/Taiyaki_Stand_TLRD_EP9_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/a/ad/Riverside_TLRD_EP5_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/2/28/Poka_Poka_Hotspring_MTLR_EP1_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/d/dd/Shrine_TLRD_OVA2_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/2/29/Mikado_Clinic_MTLR_EP2_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/1/17/Mezon_Apartment_MTLR_EP5_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/b/bf/Water_Theme_Park_MTLR_EP12_01.png/",
+              "https://static.wikia.nocookie.net/to-loveru/images/1/12/Mea%27s_Condominium_TLRD_EP11_01.png/",
+            ].map((src, i) => (
+              <div
+                key={i}
+                className="rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow bg-white"
+              >
+                <img
+                  src={src}
+                  alt=""
+                  className="w-full h-40 object-cover object-center transition-transform duration-200 hover:scale-105"
+                  onClick={() => {
+                    setSelectedImage(src);
+                    setShowImageModal(true);
+                  }}
+                />
+              </div>
+            ))}
+            {/* Image Modal rendered once, outside the map */}
+            {showImageModal && selectedImage && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+                onClick={() => setShowImageModal(false)}
+              >
+                <img
+                  src={selectedImage}
+                  alt=""
+                  className="max-w-[full] max-h-[full] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
+                  onClick={(e: React.MouseEvent<HTMLImageElement>) =>
+                    e.stopPropagation()
+                  }
+                />
+                <button
+                  className="absolute top-8 right-8 text-white text-3xl font-bold"
+                  onClick={() => setShowImageModal(false)}
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+              </div>
+            )}
           </div>
+          <br />
+          <h1 className="text-2xl font-bold border-b mb-4" id="trivia">
+            Trivia
+          </h1>
+          <li>
+            The name of some locations in the town are alluded to other series
+            and the real world:
+            <ol className="list-disc list-inside ml-12">
+              <li>"Mezon Apartment" from Mezon Ikkoku.</li>
+              <li>"Super Vegeta" from Dragon Ball Z.</li>
+              <li>"Tokimeki Park" from Tokimeki Memorial.</li>
+              <li>"7-Twelve" from 7-Eleven.</li>
+              <li>"Bennys" from Benny's.</li>
+              <li>"Starbox Coffee" from Starbucks.</li>
+            </ol>
+          </li>
+          <br />
         </div>
       </div>
       {/* Back to Top Button */}

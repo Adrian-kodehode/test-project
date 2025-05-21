@@ -70,7 +70,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/to_love-ru_darkness_gravure_chances_game" &&
           location.pathname !== "/planets_and_locations" &&
           location.pathname !== "/deviluke" &&
-          location.pathname !== "/planets_and_locations" &&
+          location.pathname !== "/sianan_town" &&
+          location.pathname !== "/sainan_high" &&
           location.pathname !== "/to_love-ru_music" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
@@ -113,6 +114,8 @@ export default function App() {
         location.pathname !== "/planets_and_locations" &&
         location.pathname !== "/to_love-ru_music" &&
         location.pathname !== "/deviluke" &&
+        location.pathname !== "/sianan_town" &&
+        location.pathname !== "/sainan_high" &&
         location.pathname !== "/rin" &&
         location.pathname !== "/run" &&
         location.pathname !== "/saki" &&

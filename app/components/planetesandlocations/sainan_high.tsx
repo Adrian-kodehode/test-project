@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const toloveru_planets_and_locations = () => {
+export const Sianan_high = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -342,7 +342,7 @@ export const toloveru_planets_and_locations = () => {
                         alt={page.name}
                         className="w-full aspect-square object-cover"
                       />
-                      <div className="absolute top-0 left-0 bg-purple-800 text-[#F9D910] w-5 h-5 flex items-center justify-center text-xs">
+                      <div className="absolute top-0 left-0 bg-purple-800 text-white w-5 h-5 flex items-center justify-center text-xs">
                         {page.number}
                       </div>
                     </div>
@@ -357,16 +357,108 @@ export const toloveru_planets_and_locations = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 text-5xl">Planets and Locations</h1>
-          <p>
-            This is a list of the planets and locations mentioned in{" "}
-            <a href="#" className="text-[purple] underline hover:text-black">
-              TO LOVE-Ru
-            </a>
-          </p>
-          <br />
-
-          <nav className="w-40 mt-5 bg-white border rounded mb-6">
+          <h1 className="mb-5 text-5xl">Sainan High</h1>
+          <div className="flex items-start gap-6 mb-6">
+            <div className="flex-1">
+              <div className="flex flex-col sm:flex-row items-start gap-6">
+                <div className="flex-1">
+                  <strong>Sainan Metropolitan High School</strong> or simply{" "}
+                  <strong>Sainan High</strong> (彩南高校) is the school where
+                  all of the main characters (except for{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    Mikan
+                  </a>
+                  ) study. As the series progressed, more and more of{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    Rito
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    Lala
+                  </a>
+                  's friends enroll in the school, usually girls. A running gag
+                  in the series is that the female characters in the series do
+                  not have any difficulty enrolling despite being aliens because
+                  the{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    perverted principal
+                  </a>{" "}
+                  accepts any cute girl who enrolls there. Sometimes, the
+                  principal would even invite other cute girls to go to his
+                  school (i.e.{" "}
+                  <a
+                    href="#"
+                    className="text-[purple] underline hover:text-black"
+                  >
+                    Riko
+                  </a>
+                </div>
+                <div className="flex flex-col items-center mt-4 sm:mt-0 sm:ml-4">
+                  <img
+                    src="https://static.wikia.nocookie.net/to-loveru/images/c/c4/Sainan_High_TLRD_EP10_01.png/"
+                    alt="Sainan high school main building."
+                    className="w-72 h-40 object-cover rounded-lg shadow-lg "
+                  />
+                  <span className="mt-2 text-xs text-gray-500 text-center w-full">
+                    Sainan high school main building.
+                  </span>
+                </div>
+              </div>
+              <p>
+                ). However, there were times where a male character was able to
+                enroll in the school easily as well, like{" "}
+                <a
+                  href="#"
+                  className="text-[purple] underline hover:text-black"
+                >
+                  Ren
+                </a>
+                , who enrolled in the middle of the year. A reason for this
+                could be that the principal's pervertedness does not pick any
+                gender (like in one case when the principal chased after{" "}
+                <a
+                  href="#"
+                  className="text-[purple] underline hover:text-black"
+                >
+                  Run
+                </a>
+                , so she transformed into Ren, hoping that the principal would
+                stop, only to have him say he was okay with that too, and resume
+                chasing).
+              </p>
+              <br />
+              <p>
+                The school was destroyed in{" "}
+                <a
+                  href="#"
+                  className="text-[purple] underline hover:text-black"
+                >
+                  Chapter 72
+                </a>{" "}
+                due to Lala and Yami having a fight, though it was rebuilt by{" "}
+                <a
+                  href="#"
+                  className="text-[purple] underline hover:text-black"
+                >
+                  Chapter 74
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+          <nav className="w-44 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
                 <svg
@@ -390,240 +482,258 @@ export const toloveru_planets_and_locations = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#planets" className="hover:underline">
-                  Planets
+                <a href="#uniforms" className="hover:underline">
+                  Uniforms
                 </a>
               </li>
               <li>
-                <a href="#major_planets">Major Planets</a>
+                <a href="#students" className="hover:underline">
+                  Students
+                </a>
+                <ol className="list-item list-inside ml-5">
+                  <li>
+                    <a href="#1styear" className="hover:underline">
+                      1st Year
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#2ndyear" className="hover:underline">
+                      2nd Year
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#3rdyear" className="hover:underline">
+                      3rd Year
+                    </a>
+                  </li>
+                </ol>
               </li>
               <li>
-                <a href="#minor_planets">Minor Planets</a>
+                <a href="#staff" className="hover:underline">
+                  Staff
+                </a>
               </li>
               <li>
-                <a href="#gallery">Gallery</a>
+                <a href="gallery" className="hover:underline">
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="trivia" className="hover:underline">
+                  Trivia
+                </a>
               </li>
             </ol>
           </nav>
-          <h2 className="font-bold">Planests</h2>
+          <h1 className="text-2xl font-bold border-b mb-4" id="uniforms">
+            Uniforms
+          </h1>
+          <p>
+            During summer, the male unifom consists a white short sleeve button
+            shirt and green trousers with a yellow cross-hatched pattern. In
+            Winter, they wear a lemon coloured blazer and a green tie.
+          </p>
           <br />
-          <div className="flex-1 text-black max-w-2xl">
-            <h1 className="text-2xl font-bold border-b mb-4" id="major_planets">
-              Major Planets
-            </h1>
+          <p>
+            During summer, the female uniform also consists a white button shirt
+            with a sleeve-less lemon colored jumper, a green bow-tie and green
+            skirts with yellow coloured cross-hatched pattern. In Winter, they
+            also wear a lemon colored blazer instead of a jumper.
+          </p>
+          <br />
+
+          <h1 className="text-2xl font-bold border-b mb-4" id="students">
+            Students
+          </h1>
+          <p>This list only includes characters who have names.</p>
+          <br />
+          <h2 className="font-bold text-xl mb-5">1st Year</h2>
+          <div className="ml-8">
             <li>
               <a
-                href="/"
+                href="/momo"
                 className="text-[purple] hover:underline hover:text-black"
               >
-                Earth
-              </a>
-              - Where{" "}
-              <a
-                href="sianan_town"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Sianan Town{" "}
-              </a>
-              and{" "}
-              <a
-                href="sainan_high"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Sainan High{" "}
-              </a>
-              are located.
-            </li>
-            <li>
-              <a
-                href="/deviluke"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Deviluke
+                Momo Belia Deviluke
               </a>
             </li>
             <li>
               <a
-                href="/"
+                href="/nana"
                 className="text-[purple] hover:underline hover:text-black"
               >
-                Memorze
+                Nana Astra Deviluke
               </a>
             </li>
             <li>
               <a
-                href="/"
+                href="/mea"
                 className="text-[purple] hover:underline hover:text-black"
               >
-                Mistletoe
+                Kurosaki Mea
               </a>
             </li>
             <li>
-              <a
-                href="/"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Okiwana
-              </a>
-            </li>
-            <br />
-            <h1 className="text-2xl font-bold border-b mb-4" id="minor_planets">
-              Minor Planets
-            </h1>
-            <li>
-              Ako (anime only) - A planet destroyed by{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Gid Lucione Deviluke
-              </span>
-              .
-            </li>
-            <li>
-              Balke - The planet where{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Ghi Bree
-              </span>{" "}
-              is from.
-            </li>
-            <li>
-              Gaama - The planet where{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Lacospo
-              </span>{" "}
-              is from.
-            </li>
-            <li>
-              Kild - A planet that was sliced in half by{" "}
               <a
                 href="/yami"
                 className="text-[purple] hover:underline hover:text-black"
               >
-                Golden Darkness
-              </a>{" "}
-              when the Darkness transformation accidentally activated. It is
-              described as the garbage dump of the universe.
+                Yami{" "}
+              </a>
+              (Golden Darkness)
             </li>
             <li>
-              Plantas - The planet where{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Celine
-              </span>{" "}
-              is from. Judging by the name, it is likely home to many plants.
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Tachibana
+              </a>
             </li>
             <li>
-              Unnamed home planet of{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Tearju Lunatique
-              </span>{" "}
-              and{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Ryoko Mikado
-              </span>{" "}
-              appears to be more advanced compared to Earth. It has a futuristic
-              appearance, and spaceships can be seen in the sky.
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Nakajima
+              </a>
             </li>
-            <li>Cedar (anime only) - Sugitani's home planet</li>
-            <li>Gourmand - appears to be food themed</li>
-            <li>Juda</li>
+            <li>Kurata</li>
             <li>
-              Kara -{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Gid Lucione Deviluke
-              </span>{" "}
-              fought{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Nemesis
-              </span>{" "}
-              in a cyberspace that was based on Kara's data
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Sugimura
+              </a>
             </li>
             <li>
-              Kirara (anime only) -{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Pikari
-              </span>
-              's home planet
-            </li>
-            <li>Latte</li>
-            <li>Melon</li>
-            <li>Nito</li>
-            <li>Rubbish</li>
-            <li>
-              Shishinabe - Gii-Chan, one of Nana's animals comes from Shishinabe
-            </li>
-            <li>Sold</li>
-            <li>
-              Solgam - the home planet of{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Solgam
-              </span>
-              , an organization that was destroyed by{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Kuro
-              </span>
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Chiaki Yanagida
+              </a>
             </li>
             <li>
-              Tentac -{" "}
-              <span className="text-[purple] hover:underline hover:text-black">
-                Meda-Q
-              </span>
-              's home planet
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Reina Kozakura
+              </a>
             </li>
-            <li>Zelas</li>
           </div>
-          <br />
-          <h1 className="text-2xl font-bold border-b mb-4" id="gallery">
-            Gallery
-          </h1>
-          <div className="grid grid-cols-3 gap-8 mb-8">
-            <div className="flex flex-col items-center col-span-3">
-              <img
-                src="To Love Ru/sainan.jpg"
-                alt="Sainan Town"
-                className="w-full h-80 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Sainan Town
-              </span>
-            </div>
-            <div className="flex flex-col items-center col-span-3">
-              <img
-                src="To Love Ru/DevilukePalace.jpg"
-                alt="The Royal Palace of Deviluke"
-                className="w-full h-80 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                The Royal Palace of Deviluke
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="To Love Ru/planetmemorze.jpg"
-                alt="Planet Memorze"
-                className="w-full h-60 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Planet Memorze
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="To Love Ru/mistletoe.jpg"
-                alt="Mistletoe"
-                className="w-full h-60 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Mistletoe
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="To Love Ru/Okiwana.jpg"
-                alt="Okiwana"
-                className="w-full h-60 object-cover rounded shadow"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Okiwana
-              </span>
-            </div>
+          <h2 className="font-bold text-xl mb-5 mt-5">2nd Year</h2>
+          <div className="ml-8">
+            <li>
+              <a
+                href="/rito"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Yūki Rito
+              </a>
+            </li>
+            <li>
+              <a
+                href="/lala"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Lala Satalin Deviluke
+              </a>
+            </li>
+            <li>
+              <a
+                href="/haruna"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Sairenji Haruna
+              </a>
+            </li>
+            <li>
+              <a
+                href="/yui"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Kotegawa Yui
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Ren Elsie Jewelria
+              </a>
+            </li>
+            <li>
+              <a
+                href="/run"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Run Elsie Jewelria
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Sawada Mio
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Momioka Risa
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Saruyama Kenichi
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Oshizu Murasame
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Arai Sayaka
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Shirayuri Koyomi
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Matome Ageru
+              </a>
+            </li>
+          </div>
+          <h2 className="font-bold text-xl mb-5 mt-5">3rd Year</h2>
+          <div className="ml-8">
+            <li></li>
           </div>
         </div>
       </div>
