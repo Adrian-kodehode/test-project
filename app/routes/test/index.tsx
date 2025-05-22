@@ -181,7 +181,7 @@ export default function ToLoveRuWiki() {
         <link rel="canonical" href="/toloveru" />
       </Helmet>
       <div
-        className="min-h-screen"
+        className="min-h-screen bg-white"
         style={{
           backgroundImage: 'url("/To Love Ru/672584.png")',
           backgroundSize: "cover",
@@ -623,8 +623,16 @@ export default function ToLoveRuWiki() {
                         >
                           &#8249;
                         </button>
-                        <div className="w-full h-[40vw] max-h-[400px] min-h-[200px] sm:h-[300px] md:h-[400px]">
-                          {animatedImages}
+                        <div className="w-full h-[60vw] max-h-[600px] min-h-[300px] sm:h-[400px] md:h-[600px]">
+                          <div
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              imageRendering: "auto", // Prevent pixelation
+                            }}
+                          >
+                            {animatedImages}
+                          </div>
                         </div>
                         <button
                           onClick={() => handleImageChange("next")}
@@ -799,12 +807,12 @@ export default function ToLoveRuWiki() {
                         {
                           name: "Manga",
                           image: "To Love Ru/manga.jpg",
-                          route: "/to_love-ru_manga",
+                          route: "/toloverumanga",
                         },
                         {
                           name: "Anime",
                           image: "To Love Ru/anime.jpg",
-                          route: "/to_love-ru_anime",
+                          route: "/anime",
                         },
                         {
                           name: "Music",
@@ -814,17 +822,17 @@ export default function ToLoveRuWiki() {
                         {
                           name: "Video Games",
                           image: "To Love Ru/video_games.jpg",
-                          route: "/to_love-ru_games",
+                          route: "/games",
                         },
                         {
                           name: "Artbooks",
                           image: "To Love Ru/artbooks.jpg",
-                          route: "/to_love-ru_artbooks",
+                          route: "/artbook",
                         },
                         {
                           name: "Images",
                           image: "To Love Ru/images.jpg",
-                          route: "/to_love-ru_images",
+                          route: "#",
                         },
                         {
                           name: "Planets and Locations",

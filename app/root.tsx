@@ -69,10 +69,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/to_love-ru_darkness_ture_princess_game" &&
           location.pathname !== "/to_love-ru_darkness_gravure_chances_game" &&
           location.pathname !== "/planets_and_locations" &&
+          location.pathname !== "/to_love-ru_music" &&
           location.pathname !== "/deviluke" &&
           location.pathname !== "/sianan_town" &&
           location.pathname !== "/sainan_high" &&
-          location.pathname !== "/to_love-ru_music" &&
+          location.pathname !== "/memorze" &&
+          location.pathname !== "/artbook" &&
+          location.pathname !== "/toloverumanga" &&
+          location.pathname !== "/anime" &&
+          location.pathname !== "/games" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         <PlaybackBar />
@@ -116,11 +121,16 @@ export default function App() {
         location.pathname !== "/deviluke" &&
         location.pathname !== "/sianan_town" &&
         location.pathname !== "/sainan_high" &&
+        location.pathname !== "/memorze" &&
+        location.pathname !== "/artbook" &&
         location.pathname !== "/rin" &&
         location.pathname !== "/run" &&
         location.pathname !== "/saki" &&
         location.pathname !== "/tearju" &&
         location.pathname !== "/nemesis" &&
+        location.pathname !== "/toloverumanga" &&
+        location.pathname !== "/anime" &&
+        location.pathname !== "/games" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );

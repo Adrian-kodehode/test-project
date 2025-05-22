@@ -356,7 +356,7 @@ export const Mottotoloveru = () => {
 
           <p>
             <strong className="italic">Motto To LOVE-Ru</strong>
-            is the anime sequel to{" "}
+            {" "}is the anime sequel to{" "}
             <a
               href="/to_love-ru_anime"
               className="text-[purple] underline hover:text-black"
@@ -646,7 +646,7 @@ export const Mottotoloveru = () => {
                     <td className="bg-[#DB49AC] text-[#F9D910] font-bold p-2 border border-[#9C2E7A] ">
                       Producer[s]
                     </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] text-center">
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
                       Geneon Universal Entertainment, TBS, Magic Capsule, PRA
                       Kohei Kawase
                     </td>

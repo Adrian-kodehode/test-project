@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Sianan_town = () => {
+export const Games = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -356,258 +356,102 @@ export const Sianan_town = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
-          <h1 className="mb-5 text-5xl">Sainan Town</h1>
+        <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 h-screen max-w-4xl">
+          <h1 className="mb-2 pt-5 text-5xl">Video Games</h1>
           <div className="flex items-start gap-6 mb-6">
             <div className="flex-1">
-              <p>
-                <strong>Sainan Town</strong> (彩南町 Sainan machi) is the
-                Japanese town where most of the main events occur in To Love-Ru
-                series.
-              </p>
-            </div>
-            <div className="flex flex-col items-start">
-              <img
-                src="To Love Ru/sainan.jpg"
-                alt="The Royal Palace of Deviluke."
-                className="w-80 h-40 object-cover rounded shadow flex-shrink-0"
-              />
-              <span className="mt-2 text-center text-sm font-medium">
-                Sainan Town.
-              </span>
+              <div className="flex flex-col sm:flex-row items-start gap-6">
+                <div className="flex-1">
+                  <p className="">Category page</p>
+                </div>
+              </div>
             </div>
           </div>
-          <h1 className="text-2xl font-bold border-b mb-4" id="location">
-            Location
-          </h1>
-          <li>
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Yuuki's House
-            </a>{" "}
-            - The house of Yuuki family.{" "}
-            <a
-              href="/rito"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Rito
-            </a>{" "}
-            and{" "}
-            <a
-              href="/mikan"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Yūki Mikan
-            </a>{" "}
-            are living here, while their parents,{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Saibai
-            </a>{" "}
-            and{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Ringo
-            </a>{" "}
-            are living in other places due to their works. Early in the story,{" "}
-            <a
-              href="/lala"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Lala
-            </a>{" "}
-            asks Rito to live with him.{" "}
-            <a
-              href="/nana"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Nana
-            </a>{" "}
-            and{" "}
-            <a
-              href="/momo"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Momo
-            </a>{" "}
-            also join the house later.
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Sainan High
-            </a>{" "}
-            - The high school of the town. Most of the major characters are
-            attending this school.
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Sainan First Elementary School
-            </a>{" "}
-            - The school where Mikan is attending.{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Nogiwa Mami
-            </a>
-            ,{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Kogure Sachie
-            </a>{" "}
-            and{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Makoto Ooyoshi
-            </a>{" "}
-            also attend this school.
-          </li>
-          <li>
-            7-Twelve Convenience Store - A (branch of) convenince store near
-            Yuuki's House.
-          </li>
-          <li>Park</li>
-          <li>Shopping District</li>
-          <li>Tenjouin's Department Store</li>
-          <li>Super Vegeta - A supermarket in the shopping district.</li>
-          <li>Starbox Coffee - A branch of the franchised coffee shop.</li>
-          <li>Cafe Hasurin - The maid cafe where Sawada Mio works.</li>
-          <li>Bennys Restaurant</li>
-          <li>Library</li>
-          <li>Water Theme Park</li>
-          <li>
-            Poka Poka Hotspring - The bath house where Yami takes a bath
-            frequently.
-          </li>
-          <li>Shrine</li>
-          <li>Saibai Studio</li>
-          <li>
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Mikado's Clinic
-            </a>
-          </li>
-          <li>
-            Mezon Apartment -{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Zastin
-            </a>
-            ,{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Maul
-            </a>
-            , and{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Smutts
-            </a>
-            's place on Earth.
-          </li>
-          <br />
-          <h1 className="text-2xl font-bold border-b mb-4" id="gallery">
-            Gallery
-          </h1>
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+
+          <div className="flex flex-col sm:flex-row items-start gap-6"></div>
+          <h1 className="text-2xl mt-8 mb-4 font-bold">Trending pages</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {[
-            "To Love Ru/SainanTown.jpg",
-            "To Love Ru/SainanTown2.jpg",
-            "To Love Ru/SainanTown3.jpg",
-            "To Love Ru/SainanTown4.jpg",
-            "To Love Ru/SainanTown5.jpg",
-            "To Love Ru/SainanTown6.jpg",
-            "To Love Ru/SainanTown7.jpg", 
-            "To Love Ru/SainanTown8.jpg",
-            "To Love Ru/SainanTown9.jpg",
-            "To Love Ru/SainanTown10.jpg",
-            "To Love Ru/SainanTown11.jpg",
-            "To Love Ru/SainanTown12.jpg",
-            "To Love Ru/SainanTown13.jpg",
-            "To Love Ru/SainanTown14.jpg",
-            "To Love Ru/SainanTown15.jpg",
-            "To Love Ru/SainanTown16.jpg",
-            ].map((src, i) => (
-              <div
-                key={i}
-                className="rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow bg-white"
-              >
-                <img
-                  src={src}
-                  alt=""
-                  className="w-full h-40 object-cover object-center transition-transform duration-200 hover:scale-105"
-                  onClick={() => {
-                    setSelectedImage(src);
-                    setShowImageModal(true);
-                  }}
-                />
-              </div>
+              {
+                src: "To Love Ru/ToLOVE-RuDarknessBattleEcstasy.jpg",
+                title: "To LOVE-Ru Darkness: Battle Ecstasy",
+                link: "/to_love-ru_darkness_battle_ecstasy_game",
+              },
+              {
+                src: "To Love Ru/toloverudarknesstrueprincess.jpg",
+                title: "To LOVE-Ru Darkness: True Princess",
+                link: "/to_love-ru_darkness_ture_princess_game",
+              },
+              {
+                src: "To Love Ru/Excitiing Beach.jpg",
+                title: "To LOVE-Ru: Excitiing Beach School Version",
+                link: "#",
+              },
+              {
+                src: "To Love Ru/TLRD_Gravure_Chances.png",
+                title: "To LOVE-Ru Darkness: Gravure Chances",
+                link: "/to_love-ru_darkness_gravure_chances_game",
+              },
+              {
+                src: "To Love Ru/Excitiing Outdoor.jpg",
+                title: "To LOVE-Ru: Excitiing Outdoor School Version",
+                link: "#",
+              },
+            ].map((item, i) => (
+              <React.Fragment key={i}>
+                <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow bg-white border-2 border-pink-200 flex flex-col items-center group">
+                  <div className="relative w-full aspect-[3/4] bg-gradient-to-t from-pink-50 to-white flex items-center justify-center">
+                    <img
+                      src={item.src}
+                      alt={item.title}
+                      className="max-h-96 w-auto mx-auto object-contain transition-transform duration-200 group-hover:scale-105 cursor-pointer"
+                      style={{ imageRendering: "auto" }}
+                      onClick={() => {
+                        setSelectedImage(item.src);
+                        setShowImageModal(true);
+                      }}
+                    />
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-pink-200/20 pointer-events-none" />
+                  </div>
+                  {item.link ? (
+                    <Link
+                      to={item.link}
+                      className="block text-center mt-4 mb-6 px-2 text-lg font-bold text-pink-900 group-hover:text-pink-600 transition-colors cursor-pointer"
+                    >
+                      {item.title}
+                    </Link>
+                  ) : (
+                    <span className="block text-center mt-4 mb-6 px-2 text-lg font-bold text-pink-900 group-hover:text-pink-600 transition-colors">
+                      {item.title}
+                    </span>
+                  )}
+                </div>
+                {showImageModal && selectedImage === item.src && (
+                  <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+                    onClick={() => setShowImageModal(false)}
+                  >
+                    <img
+                      src={selectedImage}
+                      alt=""
+                      className="max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl border-4 border-pink-400 bg-white p-4"
+                      style={{ imageRendering: "auto" }}
+                      onClick={(e: React.MouseEvent<HTMLImageElement>) =>
+                        e.stopPropagation()
+                      }
+                    />
+                    <button
+                      className="absolute top-8 right-8 text-white text-4xl font-bold hover:text-pink-300 transition-colors"
+                      onClick={() => setShowImageModal(false)}
+                      aria-label="Close"
+                    >
+                      &times;
+                    </button>
+                  </div>
+                )}
+              </React.Fragment>
             ))}
-            {/* Image Modal rendered once, outside the map */}
-            {showImageModal && selectedImage && (
-              <div
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                onClick={() => setShowImageModal(false)}
-              >
-                <img
-                  src={selectedImage}
-                  alt=""
-                  className="max-w-[full] max-h-[full] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
-                  onClick={(e: React.MouseEvent<HTMLImageElement>) =>
-                    e.stopPropagation()
-                  }
-                />
-                <button
-                  className="absolute top-8 right-8 text-white text-3xl font-bold"
-                  onClick={() => setShowImageModal(false)}
-                  aria-label="Close"
-                >
-                  &times;
-                </button>
-              </div>
-            )}
           </div>
-          <br />
-          <h1 className="text-2xl font-bold border-b mb-4" id="trivia">
-            Trivia
-          </h1>
-          <li>
-            The name of some locations in the town are alluded to other series
-            and the real world:
-            <ol className="list-disc list-inside ml-12">
-              <li>"Mezon Apartment" from Mezon Ikkoku.</li>
-              <li>"Super Vegeta" from Dragon Ball Z.</li>
-              <li>"Tokimeki Park" from Tokimeki Memorial.</li>
-              <li>"7-Twelve" from 7-Eleven.</li>
-              <li>"Bennys" from Benny's.</li>
-              <li>"Starbox Coffee" from Starbucks.</li>
-            </ol>
-          </li>
-          <br />
         </div>
       </div>
       {/* Back to Top Button */}

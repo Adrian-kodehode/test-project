@@ -637,50 +637,90 @@ export const Nana = () => {
             <br />
             <div className="ml-8">
               <li>
-                Superhuman Strength: As a Devilukean, Nana possesses incredible
-                strength, even able to throw an actual person (often Rito) a
-                great distance.
+                <strong>Superhuman Strength:</strong> As a Devilukean, Nana
+                possesses incredible strength, even able to throw an actual
+                person (often Rito) a great distance.
               </li>
               <br />
-              <li>
-                Devilukean Tail: Like her sisters, she also has the ability to
-                shoot lightning out from the tip of her tail, when using this
-                ability in tandem with with Momo's, it creates an even more
-                powerful lighting shot. Also like her sisters, Nana also becomes
-                weak whenever someone touches her tail. This weakness is usually
-                taken advantage of by Momo whenever they get into fight.
+              <li className="flex items-start gap-4">
+                <div className="flex-1">
+                  <strong>Devilukean Tail:</strong> Like her sisters, she also
+                  has the ability to shoot lightning out from the tip of her
+                  tail, when using this ability in tandem with Momo's, it
+                  creates an even more powerful lighting shot. Also like her
+                  sisters, Nana also becomes weak whenever someone touches her
+                  tail. This weakness is usually taken advantage of by Momo
+                  whenever they get into fight.
+                </div>
+                <img
+                  src="https://static.wikia.nocookie.net/to-loveru/images/d/df/Nana_Tail_attack_v2.png/"
+                  alt=""
+                  className="w-32 h-auto rounded border border-gray-200"
+                />
               </li>
               <br />
               <li>
                 {" "}
-                Intelligence: Nana is not the smartest, but she is knowledgeable
-                of animals in the galaxy. Interestingly, she has a degree of
-                intelligence, such as understanding Rito's feelings.
+                <strong>Intelligence:</strong> Nana is not the smartest, but she
+                is knowledgeable of animals in the galaxy. Interestingly, she
+                has a degree of intelligence, such as understanding Rito's
+                feelings.
               </li>
               <br />
               <li>
-                Zoolingualism: An ability unique only to Nana. She shares a
-                connection to animal life since she was born, being able to
-                communicate with them, though this doesn't seem to be the case
-                with animals with low intellect.
+                <strong>Zoolingualism:</strong> An ability unique only to Nana.
+                She shares a connection to animal life since she was born, being
+                able to communicate with them, though this doesn't seem to be
+                the case with animals with low intellect.
               </li>
               <br />
               <li className="ml-8">
-                Expert Xenoecologist: Compared to both her sisters (and perhaps
-                most characters), Nana is the least smart in comparison, even in
-                Earth history. However, she is an expert on most animal
-                biodiversity in the galaxy. She is very knowledgeable in the
-                habitats and lifestyles of many species in the galaxy, and is
-                able to customize and maintain the ecosystem in her cyber safari
-                so that all her different pets from various alien sources can
-                co-exist together. Strangely, she was unaware of where babies
-                come from until recently.
+                <strong>Expert Xenoecologist:</strong> Compared to both her
+                sisters (and perhaps most characters), Nana is the least smart
+                in comparison, even in Earth history. However, she is an expert
+                on most animal biodiversity in the galaxy. She is very
+                knowledgeable in the habitats and lifestyles of many species in
+                the galaxy, and is able to customize and maintain the ecosystem
+                in her cyber safari so that all her different pets from various
+                alien sources can co-exist together. Strangely, she was unaware
+                of where babies come from until recently.
               </li>
               <br />
               <li>
-                Strong Will Power: She has great willpower since she is the only
-                person able to resist Mea's Psycho Dive which is shown twice.
+                <strong>Strong Will Power:</strong> She has great willpower
+                since she is the only person able to resist Mea's Psycho Dive
+                which is shown twice.
               </li>
+              <br />
+              <h2 className="text-2xl font-bold border-b mb-4" id="equipment">
+                Equipment
+              </h2>
+              <div className="flex items-start gap-4">
+                <img
+                  src="https://static.wikia.nocookie.net/to-loveru/images/9/90/Nana_MTLR_EP4_01.png"
+                  alt="Nana summoning an animal from her D-Dial."
+                  className="w-40 h-auto rounded border border-gray-200"
+                />
+                <p>
+                  <a
+                    href="#"
+                    className="text-[purple] underline font-bold hover:text-black"
+                  >
+                    D-Dial:
+                  </a>{" "}
+                  An invention with the same functions as a regular phone,
+                  however, her D-Dial is capable of summoning animals that she
+                  has met throughout space, whenever she needs them from her
+                  virtual Cyber Safari.
+                </p>
+              </div>
+              <br />
+              <p>
+                <strong>Anti-Gravity Wing System:</strong> A small chip placed
+                at the back of most of her clothes that gives her a pair of
+                devilish wings on the back to enable flight. This is an
+                invention made by Lala.
+              </p>
               <br />
             </div>
           </div>

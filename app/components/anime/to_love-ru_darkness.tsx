@@ -337,7 +337,7 @@ export const Toloverudarknessanime = () => {
                         alt={page.name}
                         className="w-full aspect-square object-cover"
                       />
-                      <div className="absolute top-0 left-0 bg-purple-800 text-[#F9D910] w-5 h-5 flex items-center justify-center text-xs">
+                      <div className="absolute top-0 left-0 bg-purple-800 text-white w-5 h-5 flex items-center justify-center text-xs">
                         {page.number}
                       </div>
                     </div>

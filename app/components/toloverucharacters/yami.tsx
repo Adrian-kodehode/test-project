@@ -919,13 +919,6 @@ export const Yami = () => {
                     turn her legs into a fish tail similar to a mermaid with
                     gills that lets her breathe and swim better underwater.
                   </div>
-                  <div className="flex-shrink-0">
-                    <img
-                      src="To Love Ru/yamiart4.jpg"
-                      alt=""
-                      className="mt-80 w-60 h-auto rounded"
-                    />
-                  </div>
                 </li>
                 <br />
                 <p>
@@ -951,15 +944,25 @@ export const Yami = () => {
                   emerges in a transformed state. In this form, all of Yami's
                   previous abilities are enhanced as well gaining new ones:
                 </p>
-              </ul>
-            </div>
-            <div className="flex-shrink-0">
-              <img
-                src="To Love Ru/yamiart3.jpg"
-                alt=""
-                className="w-60 h-auto  rounded"
-              />
-            </div>
+                </ul>
+                </div>
+                <div className="flex flex-row gap-6 items-start">
+                  <div className="flex-1">
+                    {/* You can add more text or details here if needed */}
+                  </div>
+                  <div className="flex flex-col gap-6 flex-shrink-0">
+                    <img
+                      src="To Love Ru/yamiart4.jpg"
+                      alt=""
+                      className="w-60 h-auto rounded"
+                    />
+                    <img
+                      src="To Love Ru/yamiart3.jpg"
+                      alt=""
+                      className="w-60 h-auto rounded"
+                    />
+                  </div>
+                </div>
           </div>
         </div>
 

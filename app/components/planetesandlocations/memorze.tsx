@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Sianan_town = () => {
+export const Memorze = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -357,257 +357,113 @@ export const Sianan_town = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
-          <h1 className="mb-5 text-5xl">Sainan Town</h1>
+          <h1 className="mb-5 text-5xl">Memorze</h1>
           <div className="flex items-start gap-6 mb-6">
             <div className="flex-1">
-              <p>
-                <strong>Sainan Town</strong> (彩南町 Sainan machi) is the
-                Japanese town where most of the main events occur in To Love-Ru
-                series.
-              </p>
+              <div className="flex flex-col sm:flex-row items-start gap-6">
+                <div className="flex-1">
+                  <strong>Memorze</strong> is the planet where{" "}
+                  <a href="/run">Run</a> and <a href="#">Ren</a> comes from. It
+                  is a tiny desert planent, 80% of it being dry land, and has
+                  two suns, therefor the planent has no night. Because of the
+                  high temperatures, the environment can be described as
+                  "punishing whenever it is". however, it is within the
+                  temperate range to support life. The king of Memorze created
+                  the planent's country by agglomerating small tribes.
+                </div>
+                <div className="flex flex-col items-center mt-4 sm:mt-0 sm:ml-4">
+                  <img
+                    src="To Love Ru/memorze.jpg"
+                    alt="Sainan high school main building."
+                    className="w-72 h-40 object-cover rounded-lg shadow-lg "
+                  />
+                  <span className="mt-2 text-xs text-gray-500 text-start w-full">
+                    Planent Memorze
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col items-start">
+          </div>
+
+          <h1 className="text-2xl font-bold border-b mb-4 ">Momorzorians</h1>
+          <div className="flex flex-col sm:flex-row items-start gap-6">
+            <div className="flex-1">
+              <p>
+                Memorzorians are like humans, but they are born with both male
+                and female genders within the same body and have separate
+                personalities. It is said that this is an evolutionary trait for
+                the sake of thriving in their difficult environment, since food
+                and water were such precious commodities prior to them trading
+                with people from other planets.
+              </p>
+              <br />
+              <p>
+                Little is known about their culture, but it may be similar to
+                Arab culture on Earth, as seen in Lala's flashback with Run
+                dressed in clothes similar to Arabian clothing, especially with
+                how the landscape is also a desert.
+              </p>
+              <br />
+              <h1 className="text-2xl font-bold border-b mb-4 ">
+                Pover and abilities
+              </h1>
+              <p>
+                Memorzorians can automatically change their gender and
+                personalities through an exchange period of about a month in
+                average. However, this can change depending on the difference in
+                environment and magnetic fields, such as when{" "}
+                <a
+                  href="#"
+                  className="text-[purple] underline hover:text-black"
+                >
+                  Ren
+                </a>{" "}
+                and{" "}
+                <a
+                  href="/run"
+                  className="text-[purple] underline hover:text-black"
+                >
+                  Run{" "}
+                </a>
+                arrived on Earth, they were able to change by sneezing. They are
+                also able to communicate with their counterparts within their
+                subconscious. After reaching "adulthood", the two genders and
+                minds within a Memorzorian's body permanently split into two
+                separate individuals. This process, as stated by a book which is
+                read by{" "}
+                <a
+                  href="/yami"
+                  className="text-[purple] underline hover:text-black"
+                >
+                  Yami
+                </a>
+                , is called "metamorphose".
+              </p>
+              <br />
+              <p>
+                Memorzorians are shown to have great speed and strength, but
+                perhaps not nearly as fast and strong as{" "}
+                <a
+                  href="/deviluke"
+                  className="text-[purple] underline hover:text-black"
+                >
+                  Devilukeans
+                </a>
+                .
+              </p>
+              <br />
+            </div>
+            <div className="flex flex-col items-center mt-4 sm:mt-0 sm:ml-4">
               <img
-                src="To Love Ru/sainan.jpg"
-                alt="The Royal Palace of Deviluke."
-                className="w-80 h-40 object-cover rounded shadow flex-shrink-0"
+                src="To Love Ru/memorzeart.jpg"
+                alt="The king and queen of Memorze."
+                className="w-60 h-full object-cover rounded-lg shadow-lg"
               />
-              <span className="mt-2 text-center text-sm font-medium">
-                Sainan Town.
+              <span className="mt-2 text-xs text-gray-500 text-start w-full">
+                The king and queen of Memorze.
               </span>
             </div>
           </div>
-          <h1 className="text-2xl font-bold border-b mb-4" id="location">
-            Location
-          </h1>
-          <li>
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Yuuki's House
-            </a>{" "}
-            - The house of Yuuki family.{" "}
-            <a
-              href="/rito"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Rito
-            </a>{" "}
-            and{" "}
-            <a
-              href="/mikan"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Yūki Mikan
-            </a>{" "}
-            are living here, while their parents,{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Saibai
-            </a>{" "}
-            and{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Ringo
-            </a>{" "}
-            are living in other places due to their works. Early in the story,{" "}
-            <a
-              href="/lala"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Lala
-            </a>{" "}
-            asks Rito to live with him.{" "}
-            <a
-              href="/nana"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Nana
-            </a>{" "}
-            and{" "}
-            <a
-              href="/momo"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Momo
-            </a>{" "}
-            also join the house later.
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Sainan High
-            </a>{" "}
-            - The high school of the town. Most of the major characters are
-            attending this school.
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Sainan First Elementary School
-            </a>{" "}
-            - The school where Mikan is attending.{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Nogiwa Mami
-            </a>
-            ,{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Kogure Sachie
-            </a>{" "}
-            and{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Makoto Ooyoshi
-            </a>{" "}
-            also attend this school.
-          </li>
-          <li>
-            7-Twelve Convenience Store - A (branch of) convenince store near
-            Yuuki's House.
-          </li>
-          <li>Park</li>
-          <li>Shopping District</li>
-          <li>Tenjouin's Department Store</li>
-          <li>Super Vegeta - A supermarket in the shopping district.</li>
-          <li>Starbox Coffee - A branch of the franchised coffee shop.</li>
-          <li>Cafe Hasurin - The maid cafe where Sawada Mio works.</li>
-          <li>Bennys Restaurant</li>
-          <li>Library</li>
-          <li>Water Theme Park</li>
-          <li>
-            Poka Poka Hotspring - The bath house where Yami takes a bath
-            frequently.
-          </li>
-          <li>Shrine</li>
-          <li>Saibai Studio</li>
-          <li>
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Mikado's Clinic
-            </a>
-          </li>
-          <li>
-            Mezon Apartment -{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Zastin
-            </a>
-            ,{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Maul
-            </a>
-            , and{" "}
-            <a
-              href="#"
-              className="text-[purple] hover:underline hover:text-black"
-            >
-              Smutts
-            </a>
-            's place on Earth.
-          </li>
-          <br />
-          <h1 className="text-2xl font-bold border-b mb-4" id="gallery">
-            Gallery
-          </h1>
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
-            {[
-            "To Love Ru/SainanTown.jpg",
-            "To Love Ru/SainanTown2.jpg",
-            "To Love Ru/SainanTown3.jpg",
-            "To Love Ru/SainanTown4.jpg",
-            "To Love Ru/SainanTown5.jpg",
-            "To Love Ru/SainanTown6.jpg",
-            "To Love Ru/SainanTown7.jpg", 
-            "To Love Ru/SainanTown8.jpg",
-            "To Love Ru/SainanTown9.jpg",
-            "To Love Ru/SainanTown10.jpg",
-            "To Love Ru/SainanTown11.jpg",
-            "To Love Ru/SainanTown12.jpg",
-            "To Love Ru/SainanTown13.jpg",
-            "To Love Ru/SainanTown14.jpg",
-            "To Love Ru/SainanTown15.jpg",
-            "To Love Ru/SainanTown16.jpg",
-            ].map((src, i) => (
-              <div
-                key={i}
-                className="rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow bg-white"
-              >
-                <img
-                  src={src}
-                  alt=""
-                  className="w-full h-40 object-cover object-center transition-transform duration-200 hover:scale-105"
-                  onClick={() => {
-                    setSelectedImage(src);
-                    setShowImageModal(true);
-                  }}
-                />
-              </div>
-            ))}
-            {/* Image Modal rendered once, outside the map */}
-            {showImageModal && selectedImage && (
-              <div
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                onClick={() => setShowImageModal(false)}
-              >
-                <img
-                  src={selectedImage}
-                  alt=""
-                  className="max-w-[full] max-h-[full] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
-                  onClick={(e: React.MouseEvent<HTMLImageElement>) =>
-                    e.stopPropagation()
-                  }
-                />
-                <button
-                  className="absolute top-8 right-8 text-white text-3xl font-bold"
-                  onClick={() => setShowImageModal(false)}
-                  aria-label="Close"
-                >
-                  &times;
-                </button>
-              </div>
-            )}
-          </div>
-          <br />
-          <h1 className="text-2xl font-bold border-b mb-4" id="trivia">
-            Trivia
-          </h1>
-          <li>
-            The name of some locations in the town are alluded to other series
-            and the real world:
-            <ol className="list-disc list-inside ml-12">
-              <li>"Mezon Apartment" from Mezon Ikkoku.</li>
-              <li>"Super Vegeta" from Dragon Ball Z.</li>
-              <li>"Tokimeki Park" from Tokimeki Memorial.</li>
-              <li>"7-Twelve" from 7-Eleven.</li>
-              <li>"Bennys" from Benny's.</li>
-              <li>"Starbox Coffee" from Starbucks.</li>
-            </ol>
-          </li>
-          <br />
         </div>
       </div>
       {/* Back to Top Button */}

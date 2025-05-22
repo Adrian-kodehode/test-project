@@ -192,7 +192,7 @@ export const Sianan_high = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-[#fcc0e9] flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -356,7 +356,7 @@ export const Sianan_high = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+        <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
           <h1 className="mb-5 text-5xl">Sainan High</h1>
           <div className="flex items-start gap-6 mb-6">
             <div className="flex-1">
@@ -407,7 +407,7 @@ export const Sianan_high = () => {
                 </div>
                 <div className="flex flex-col items-center mt-4 sm:mt-0 sm:ml-4">
                   <img
-                    src="https://static.wikia.nocookie.net/to-loveru/images/c/c4/Sainan_High_TLRD_EP10_01.png/"
+                    src="To Love Ru/SainanHigh.jpg"
                     alt="Sainan high school main building."
                     className="w-72 h-40 object-cover rounded-lg shadow-lg "
                   />
@@ -733,7 +733,230 @@ export const Sianan_high = () => {
           </div>
           <h2 className="font-bold text-xl mb-5 mt-5">3rd Year</h2>
           <div className="ml-8">
-            <li></li>
+            <li>
+              <a
+                href="/saki"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Tenjōin Saki
+              </a>
+            </li>
+            <li>
+              <a
+                href="/rin"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Kujō Rin
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Fujisaki Ayako
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-[purple] hover:underline hover:text-black"
+              >
+                Motemitsu Taizō
+              </a>
+            </li>
+            <li>Kusao</li>
+            <br />
+          </div>
+          <p>
+            The first ones to be introduced as students of Sainan High were Rito
+            Yuuki, his male friend Kenichi Saruyama, and Rito's crush Haruna
+            Sairenji. In the second chapter, Haruna's perverted friends, Risa
+            Momioka and Mio Sawada, were also introduced briefly. Then, by the
+            fourth chapter, Lala also enrolled in Sainan High to become closer
+            to Rito. When Haruna toured Lala around the school, another
+            recurring character was introduced: Taizou Motemitsu, the pitcher of
+            the baseball team who's notorious for hitting on girls then suddenly
+            rejected and exclaimed by his posse. By the twentieth chapter, one
+            of Lala's childhood friends, Ren Elsie Jewelria, also enrolled in
+            Sainan High to become closer to Lala. A few chapters later, three
+            more girls were introduced, the arrogant queen bee Saki Tenjouin,
+            and her friends Rin Kujou and Aya Fujisaki, all three being one year
+            higher than Rito and his friends. Later, Ren's female counterpart,
+            Run, also enrolled in the school despite Ren being enrolled there
+            already.{" "}
+          </p>
+          <br />
+          <p>
+            Rito and Lala initially attempted to hide the fact that Lala is an
+            alien. Students would often notice Lala's Devilukean tail swinging
+            behind her, but at first they simply passed it off as some
+            accessory. Eventually, their friends discovered that she is actually
+            an alien, to which they reacted surprisingly unsurprised. And soon
+            enough, much of the entire school knows that she is an alien, also
+            none too surprised.
+          </p>
+          <br />
+          <p>
+            On Rito and Lala's second year, Yui Kotegawa was introduced, who is
+            a member of the student morals committee, and is often seen
+            reprimanding the students' "shameless" behavior. In the abandoned
+            building next to the school, there lived a ghost named Shizu
+            Murasame, who soon enrolled in the middle of the year after{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Dr. Mikado
+            </a>{" "}
+            gave her an artificial body.
+          </p>
+          <br />
+          <p>
+            In To LOVE-Ru Darkness, Lala's twin sisters, Momo and Nana, enroll
+            as well as Golden Darkness (Yami). Momo and Nana enrolled in Sainan
+            High because Momo would like to keep an eye on Rito and his girls so
+            that her{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Harem Plan
+            </a>{" "}
+            may succeed (she just convinced Nana to join her in enrolling). Nana
+            soon befriends Mea Kurosaki, who is revealed to be a second
+            generation{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Transformation Weapon
+            </a>{" "}
+            (Yami's little sister), who joined Sainan High a month prior to keep
+            an eye on Golden Darkness.
+          </p>
+          <br />
+          <p>
+            Right after enrolling, Momo instantly becomes popular, and soon has
+            her own fan club, the{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Venus Momo Club
+            </a>{" "}
+            (VMC). Like her sister, the club knows that Momo is an alien
+            princess from the planet Deviluke. They seem to have nothing better
+            to do than to follow and worship her, which she finds annoying.
+          </p>
+          <br />
+          <h1 className="text-2xl font-bold border-b mb-4" id="staff">
+            Staff
+          </h1>
+          <p>
+            {" "}
+            The most prominent staff in the series is{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Ryoko Mikado
+            </a>
+            , the school doctor, who also happens to be an alien. She becomes a
+            close friend and ally to Rito, Lala, and their friends, and they
+            would consult with her whenever they have alien problems. The second
+            most prominent staff is the{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              notoriously perverted unnamed principal
+            </a>{" "}
+            of the school. The principal would usually appear only to chase his
+            female students or to offer other cute girls to enroll into his
+            school. The third most prominent staff is{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Honekawa-Sensei
+            </a>
+            , Rito and Lala's elderly homeroom teacher. He is the only seen
+            teacher who actually discusses something in the classroom. In To
+            LOVE-Ru Darkness,{" "}
+            <a
+              href="/tearju"
+              className="text-[purple] underline hover:text-black"
+            >
+              Dr. Tearju Lunatique
+            </a>{" "}
+            substitutes Honekawa as Rito and Lala's homeroom teacher before
+            becoming the homeroom teacher of Nana, Momo, Yami and Mea's class.
+            The least prominent staff are{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Sasuga
+            </a>
+            , the tennis club's handsome advisor, and{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Naruiwa
+            </a>
+            , a teacher in the disciplinary team.
+          </p>
+          <br />
+          <h1 className="text-2xl font-bold border-b mb-4" id="gallery">
+            Gallery
+          </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+            {[
+              "To Love Ru/SainanHigh1.jpg",
+              "To Love Ru/SainanHigh2.jpg",
+              "To Love Ru/SainanHigh3.jpg",
+              "To Love Ru/SainanHigh4.jpg",
+              "To Love Ru/SainanHigh5.jpg",
+              "To Love Ru/SainanHigh6.jpg",
+              "To Love Ru/SainanHigh7.jpg",
+            ].map((src, i) => (
+              <div
+                key={i}
+                className="rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow bg-white"
+              >
+                <img
+                  src={src}
+                  alt=""
+                  className="w-full h-40 object-cover object-center transition-transform duration-200 hover:scale-105"
+                  onClick={() => {
+                    setSelectedImage(src);
+                    setShowImageModal(true);
+                  }}
+                />
+                {showImageModal && selectedImage && (
+                  <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+                    onClick={() => setShowImageModal(false)}
+                  >
+                    <img
+                      src={selectedImage}
+                      alt=""
+                      className="max-w-[full] max-h-[full] rounded shadow-lg border-4 border-[#DB49AC] bg-white"
+                      onClick={(e: React.MouseEvent<HTMLImageElement>) =>
+                        e.stopPropagation()
+                      }
+                    />
+                    <button
+                      className="absolute top-8 right-8 text-white text-3xl font-bold"
+                      onClick={() => setShowImageModal(false)}
+                      aria-label="Close"
+                    >
+                      &times;
+                    </button>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <br />
+          <h1 className="text-2xl font-bold border-b mb-4" id="trivia">
+            Trivia
+          </h1>
+          <div className="ml-8">
+            {" "}
+            <li>
+              There are warning posters of the Principal throughout the school.
+            </li>
+            <li>
+              There are also recruiting posters of the VMC throughout the
+              school.
+            </li>
+            <li>
+              The school's uniform design is similar to the uniform from the
+              One-Shot Manga Futagami Double, illustrated and authored by Yabuki
+              Kentaro, the illustrator of the To Love-Ru series.
+            </li>
+            <li>
+              The name of the high school in To Love-Ru, Sainan (彩南), is a
+              homophone to the Japanese word for catastrophe (災難). This is
+              probably a wordplay related to the theme of the series.
+            </li>
+            <br />
           </div>
         </div>
       </div>

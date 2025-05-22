@@ -803,18 +803,81 @@ export const Mikan = () => {
             place[6].
           </li>
           <br />
-          <img
-            src="https://static.wikia.nocookie.net/to-loveru/images/9/93/-MayoiNekoOverrun%21--ch06_046.png"
-            alt=""
-          />
-          <img
-            src="https://static.wikia.nocookie.net/to-loveru/images/4/4f/Mayoi-neko-overrun-1111562.jpg"
-            alt=""
-          />
-          <img
-            src="https://static.wikia.nocookie.net/to-loveru/images/a/ad/Mayoi-neko-overrun-1251102.jpg"
-            alt=""
-          />
+          <div className="flex flex-row">
+            {" "}
+            <img
+              src="https://static.wikia.nocookie.net/to-loveru/images/9/93/-MayoiNekoOverrun%21--ch06_046.png"
+              alt=""
+            />
+            <img
+              src="https://static.wikia.nocookie.net/to-loveru/images/4/4f/Mayoi-neko-overrun-1111562.jpg"
+              alt=""
+            />
+            <img
+              src="https://static.wikia.nocookie.net/to-loveru/images/a/ad/Mayoi-neko-overrun-1251102.jpg"
+              alt=""
+            />
+          </div>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="references">
+            References
+          </h2>
+          <div>
+            <ol className="list-decimal list-item ml-8 mb-5">
+              <li>
+                <a
+                  href="#"
+                  className="text-[purple] hover:underline hover:text-black"
+                >
+                  To Love-Ru Darkness Chapter 56
+                </a>{" "}
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[purple] hover:underline hover:text-black"
+                >
+                  To LOVE-Ru Darkness Chapter 5
+                </a>{" "}
+              </li>
+              <li>
+                {" "}
+                Bangaihen 1:{" "}
+                <a
+                  href="#"
+                  className="text-[purple] hover:underline hover:text-black"
+                >
+                  Pollen Plan ~Dangerous Little Sister Situation~
+                </a>
+              </li>
+              <li>
+                {" "}
+                Bangaihen 7:{" "}
+                <a
+                  href="#"
+                  className="text-[purple] hover:underline hover:text-black"
+                >
+                  Anxious (1) ~Is This Alright~
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[purple] hover:underline hover:text-black"
+                >
+                  To Love-Ru Darkness chapter 70
+                </a>{" "}
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[purple] hover:underline hover:text-black"
+                >
+                  To Love-Ru Darkness chapter 76
+                </a>{" "}
+              </li>
+            </ol>
+          </div>
         </div>
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans top-8 mr-8">

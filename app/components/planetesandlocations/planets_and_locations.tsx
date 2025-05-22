@@ -192,7 +192,7 @@ export const toloveru_planets_and_locations = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-[#fcc0e9] flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -342,7 +342,7 @@ export const toloveru_planets_and_locations = () => {
                         alt={page.name}
                         className="w-full aspect-square object-cover"
                       />
-                      <div className="absolute top-0 left-0 bg-purple-800 text-[#F9D910] w-5 h-5 flex items-center justify-center text-xs">
+                      <div className="absolute top-0 left-0 bg-purple-800 text-white w-5 h-5 flex items-center justify-center text-xs">
                         {page.number}
                       </div>
                     </div>
@@ -356,7 +356,7 @@ export const toloveru_planets_and_locations = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+        <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
           <h1 className="mb-5 text-5xl">Planets and Locations</h1>
           <p>
             This is a list of the planets and locations mentioned in{" "}
@@ -416,7 +416,7 @@ export const toloveru_planets_and_locations = () => {
                 href="/"
                 className="text-[purple] hover:underline hover:text-black"
               >
-                Earth
+                Earth{" "}
               </a>
               - Where{" "}
               <a
@@ -444,7 +444,7 @@ export const toloveru_planets_and_locations = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="/memorze"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Memorze

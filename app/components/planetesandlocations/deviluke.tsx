@@ -192,7 +192,7 @@ export const Deviluke = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-[#fcc0e9] flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -356,7 +356,7 @@ export const Deviluke = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+        <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
           <h1 className="mb-5 text-5xl">Deviluke</h1>
           <div className="flex items-start gap-6 mb-6">
             <div className="flex-1">
