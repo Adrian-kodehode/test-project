@@ -78,6 +78,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/toloverumanga" &&
           location.pathname !== "/anime" &&
           location.pathname !== "/games" &&
+          location.pathname !== "/plants" &&
+          location.pathname !== "/plot" &&
+          location.pathname !== "/relationships" &&
+          location.pathname !== "/lala_plot" &&
+          location.pathname !== "/lala_inventions" &&
+          location.pathname !== "/lala_relationships" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         <PlaybackBar />
@@ -131,6 +137,12 @@ export default function App() {
         location.pathname !== "/toloverumanga" &&
         location.pathname !== "/anime" &&
         location.pathname !== "/games" &&
+        location.pathname !== "/plants" &&
+        location.pathname !== "/plot" &&
+        location.pathname !== "/lala_plot" &&
+        location.pathname !== "/relationships" &&
+        location.pathname !== "/lala_inventions" &&
+        location.pathname !== "/lala_relationships" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );

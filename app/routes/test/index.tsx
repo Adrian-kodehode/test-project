@@ -1533,7 +1533,7 @@ export default function ToLoveRuWiki() {
                         </ul>
                       </div>
                       {/* Right: Spotlights */}
-                      <div className="flex flex-col items-center md:w-1/3 min-w-[220px]">
+                      <div className="flex flex-col items-center md:w-1/3 min-w-[400px]">
                         <div className="text-center font-bold text-lg text-[#7c1fa0] mb-2">
                           Anime / Manga Hub{" "}
                           <span className="font-normal text-black">May</span>

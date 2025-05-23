@@ -355,7 +355,7 @@ export const Momo = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/plot"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Plot
@@ -363,7 +363,7 @@ export const Momo = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/plants"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Plants
@@ -371,7 +371,7 @@ export const Momo = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -379,7 +379,7 @@ export const Momo = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/gallery"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
@@ -387,7 +387,7 @@ export const Momo = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/quotes"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Quotes
