@@ -38,7 +38,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/public/To Love Ru/momo.jpg" type="image/png" />
+        <link rel="icon" href="To Love Ru/momo.jpg" type="image/png" />
         <Meta />
         <Links />
       </head>
@@ -84,6 +84,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/lala_plot" &&
           location.pathname !== "/lala_inventions" &&
           location.pathname !== "/lala_relationships" &&
+          location.pathname !== "/yami_relationships" &&
+          location.pathname !== "/yami_plot" &&
+          location.pathname !== "/nana_plot" &&
+          location.pathname !== "/nana_relationships" &&
+          location.pathname !== "/nana_animals" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         <PlaybackBar />
@@ -143,6 +148,11 @@ export default function App() {
         location.pathname !== "/relationships" &&
         location.pathname !== "/lala_inventions" &&
         location.pathname !== "/lala_relationships" &&
+        location.pathname !== "/yami_relationships" &&
+        location.pathname !== "/yami_plot" &&
+        location.pathname !== "/nana_plot" &&
+        location.pathname !== "/nana_animals" &&
+        location.pathname !== "/nana_relationships" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );

@@ -117,7 +117,9 @@ export const Yami = () => {
                           <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          Motto To LOVE-Ru
+                          <Link to="/motto_to_love-ru_anime">
+                            Motto To LOVE-Ru
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_anime">
@@ -125,7 +127,9 @@ export const Yami = () => {
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness 2nd
+                          <Link to="/to_love-ru_darkness2ndanime">
+                            To LOVE-Ru Darkness 2nd
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -355,7 +359,7 @@ export const Yami = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="yami_plot"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 {" "}
@@ -364,7 +368,7 @@ export const Yami = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="yami_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -372,7 +376,7 @@ export const Yami = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="yami_gallery"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
@@ -944,25 +948,25 @@ export const Yami = () => {
                   emerges in a transformed state. In this form, all of Yami's
                   previous abilities are enhanced as well gaining new ones:
                 </p>
-                </ul>
-                </div>
-                <div className="flex flex-row gap-6 items-start">
-                  <div className="flex-1">
-                    {/* You can add more text or details here if needed */}
-                  </div>
-                  <div className="flex flex-col gap-6 flex-shrink-0">
-                    <img
-                      src="To Love Ru/yamiart4.jpg"
-                      alt=""
-                      className="w-60 h-auto rounded"
-                    />
-                    <img
-                      src="To Love Ru/yamiart3.jpg"
-                      alt=""
-                      className="w-60 h-auto rounded"
-                    />
-                  </div>
-                </div>
+              </ul>
+            </div>
+            <div className="flex flex-row gap-6 items-start">
+              <div className="flex-1">
+                {/* You can add more text or details here if needed */}
+              </div>
+              <div className="flex flex-col gap-6 flex-shrink-0">
+                <img
+                  src="To Love Ru/yamiart4.jpg"
+                  alt=""
+                  className="w-60 h-auto rounded"
+                />
+                <img
+                  src="To Love Ru/yamiart3.jpg"
+                  alt=""
+                  className="w-60 h-auto rounded"
+                />
+              </div>
+            </div>
           </div>
         </div>
 

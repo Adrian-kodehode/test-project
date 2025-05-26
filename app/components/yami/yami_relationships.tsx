@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Lala_relationships = () => {
+export const Yami_relationships = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -357,32 +357,25 @@ export const Lala_relationships = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
-          <h1 className="mb-5 text-5xl">Lala Satalin Deviluke/Relationship</h1>
+          <h1 className="mb-5 text-5xl">Yami/Relationship</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a href="/lala" className="text-[purple]">
+              <a href="/yami" className="text-[purple]">
                 Information
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
               <a
-                href="/lala_plot"
+                href="/yami_plot"
                 className="text-[purple]  hover:underline hover:text-black"
               >
                 Plot
               </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a
-                href="/lala_inventions"
-                className="text-[purple]  hover:underline hover:text-black"
-              >
-                Inventions
-              </a>
-            </div>
+
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="/lala_relationships"
+                href="/yami_relationships"
                 className="hover:underline hover:text-black"
               >
                 Relationships
@@ -390,7 +383,7 @@ export const Lala_relationships = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/lala_gallery"
+                href="/yami_gallery"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
@@ -524,179 +517,145 @@ export const Lala_relationships = () => {
             </a>
           </h3>
           <p className="mt-3">
-            In the first chapter, Lala only pretends to love Rito so that she
-            can stay on Earth and escape her marriage suitors. However, after he
-            saves her (or rather tries to save her) from Zastin and his
-            subordinates, and reasons the necessity of love and freedom in
-            marriage, Lala mistakenly assumes that Rito truly understood her
-            feelings, and she really does fall in love with him and wants to
-            marry him. It is her marriage to him that will make him the next
-            king of Deviluke, after her father.
+            Yami was initially hired to kill Rito by Lacospo (one of Lala's
+            suitors), but after learning that Rito is not Lacospo described him
+            to be, she turned on him, but still claims that she will kill Rito
+            eventually. He actually confirms to Rito that she only said that as
+            an excuse to stay on Earth, and warns him not to make her too angry
+            (Chapter 138). As time passes, Yami seems to grow some feelings for
+            Rito. It is Rito who introduced her to taiyaki, the only thing she
+            really eats. Rito carried her on his back to Mikado's clinic when
+            she overused her powers, saved her from another assassin hired by
+            Lacospo, and, unbeknownst to him, showed her a kinder side of
+            himself that made her envy Mikan for being so close to him. Yami
+            hates it when Rito sees her naked or changing, and she never
+            hesitates to use her transformation powers to give him a powerful
+            punch to the face, though this is possibly just her instinctive way
+            of getting someone to leave her alone. She does not seem to mind
+            when other girls see her naked or changing.
           </p>
           <br />
           <p>
-            At first, Lala's love for Rito appears to be childish. She often
-            enthusiastically hugs him and openly shows her affection to him. She
-            claims that he's good "When push comes to shove" (Chapter 5), and
-            believes that he is "The most dependable person in the Universe"
-            (Chapter 19). As the story progresses, Lala gradually matures, and
-            so does her love for Rito, as it is not as insane as before. Her
-            (somewhat) calmer attitude around him has allowed them to develop a
-            closer relationship.
-          </p>{" "}
+            Yami appears to have love-hate feelings towards Rito. She convinces
+            him, and perhaps herself as well, that he is still her target. And
+            she often states how much she hates perverts. Naturally, Rito's
+            pattern of accidentally falling and groping girls earns Yami's wrath
+            more than a few times. Even when seeing Yami naked is clearly not
+            Rito's fault, she would still proceed to give him a beating.
+            However, like other female characters, Rito's kindness does manage
+            to slowly grow on her. It's possible that Yami knows that Rito isn't
+            as perverted as some think and just hates it when he sees her
+            without clothes.
+          </p>
+          <br />
+          <div className="flex flex-row items-start gap-6">
+            <div className="flex-1">
+              <p>
+                In Chapter 158 of the manga, Yami was accidentally sprayed by
+                Celine's pollens, causing her to feel infatuated with Rito. She
+                then forces Rito to spend time with her (like a date), and soon
+                after, asked him to kiss her, but stopped her and tried to get
+                her to go back to her old, normal personality. After the effects
+                of the pollen wore off, Yami asked why he didn't kiss her. Rito
+                replied that he couldn't do that if she was not on her proper
+                mental state. Yami then called him idiot for showing kindness to
+                an enemy, but also made it clear that she doesn't hate idiots.
+                She then smiled very sweetly at him. This is the only time Yami
+                ever showed her soft side to a male, and also the only time she
+                smiled heartily in the whole manga. All of this suggests that it
+                seems possible that Yami started to develop feelings for Rito
+                from this point. Even though she says she'll let him die
+                painlessly when she kills him, obviously as a cover.
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/yamismile.jpg"
+                alt=""
+                className="w-56 h-auto rounded shadow"
+                style={{ maxWidth: "220px" }}
+              />
+              <span className="text-xs text-center mt-2 text-gray-600 italic block max-w-[220px]">
+                Yami smiles sweetly to Rito (Chapter 158 of the manga, To
+                Love-Ru)
+              </span>
+            </div>
+          </div>
+          <br />
+          <div className="flex flex-row items-start gap-6">
+            <div className="flex-1">
+              <p>
+                In To Love-Ru Darkness (the sequel of the original To Love-Ru
+                manga), while Yami is still wrathful to Rito's usual clumsiness,
+                her relationship and feelings with him continue to grow and
+                develop.{" "}
+              </p>
+              <br />
+              <p>
+                In Chapters 013-014, Rito and Yami get caught by Lala's
+                invention and become stuck together, temporarily unable to
+                separate, much to her bitterness. After a day putting up with
+                each other, when things finally calm down at night, they are
+                finally able to speak more calmly with each other while being
+                alone together. Yami begins revealing to Rito about her past
+                with Tearju, and the organization that separated them and turned
+                Yami into a weapon, something she never spoke about even to
+                Mikan. When Rito condemns the organization, she finds him quite
+                strange because even though Rito knows that he is her target to
+                kill, he would get mad for her sake at the people from the
+                organization who used her like a weapon. Yami notes that she
+                feels safe and at peace when she is around Rito, feelings she
+                does not often experience in her unhappy life as an assassin.
+                After the effects of Lala's invention wore off, Yami still
+                clings to Rito as she falls asleep. Rito is the only person whom
+                she has opened up to about her past.
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/yamiblush.jpg"
+                alt=""
+                className="w-56 h-auto rounded shadow"
+                style={{ maxWidth: "220px" }}
+              />
+              <span className="text-xs text-center mt-2 text-gray-600 italic block max-w-[220px]">
+                Yami blushes to Rito (Chapter 002, To Love-Ru Darkness)
+              </span>
+            </div>
+          </div>
           <br />
           <p>
-            In the last chapter of To Love-Ru, Rito finally confesses to Lala
-            that he loves her. While she is very happy to hear it, she is also
-            overjoyed when he tells her that he loves Haruna as well, believing
-            that he loves both. In actuality, Lala knows that if Rito marries
-            her, then as the new king of Deviluke, he could also marry Haruna,
-            who has become Lala's best friend. But when Rito's bumbling last
-            attempt to confess to Haruna finds him blindly confessing to four
-            other characters, none of whom were Haruna herself, Lala expresses
-            greater joy or happiness of everyone marrying Rito so that they
-            could all stay together, perhaps proving that Lala's maturity still
-            needs to grow some more.
-          </p>
-          <br />
-          <p>
-            In To Love-Ru Darkness, their feelings for each other remain the
-            same, and they both now enjoy a more calm and comfortable
-            relationship, but they still haven't moved forward into a more
-            romantic relationship, due to Rito wanting to confess to Haruna
-            first, to which Lala encourages. After all the time they had to know
-            each other better, they both now genuinely see something special in
-            each other. When Rito hears about how much Lala loves her sisters,
-            and learns that Lala is truly a kind and pure girl, he falls more in
-            love with her (To Love-Ru Darkness chapter 10). And when Rito goes
-            to comfort and give advice and encouragement to a heartbroken Nana,
-            Lala notices that Nana has cheered up, and she states that it's as
-            expected of Rito (To Love-Ru Darkness chapter 21).
-          </p>
-          <br />
-          <p>
-            However, Peke wondered that if it's ok to leave her where it is now,
-            saying that there hasn't been any real development since Rito's
-            confession to her and also says that it's not enough. With some
-            encouragement from Momo (and for the sake of completing her Harem
-            plan), Momo tells her to be more appealing towards Rito. Lala starts
-            acting like her old self and being really clingy to Rito again. Lala
-            also teleported into the bathtub where Rito currently was
-            (reflecting the time first they met). She started coming onto him
-            and even wanted to try a kiss. (To Love-Ru Darkness chapter 34)
-          </p>
-          <br />
-          <p>
-            After an ecchi moment in the bathroom, Lala practices kissing Rito
-            with the stuffed bunny he gave her, when Nana walks in and Lala
-            tells her about Rito's feelings. The next day, Rito confronts Lala
-            on top of the school and admits that he can't kiss her until he's
-            figured out his feelings, something Lala has expected, since Nana
-            told her the previous night. She then apologizes to Rito for loving
-            him so much she didn't realize his feelings. She then proceeded to
-            kiss him on the cheek and states that until he's ready, she'll be
-            waiting for a special kiss from him. (To Love-Ru Darkness chapter
-            35)
-          </p>
-          <br />
-          <p>
-            Lala is a very important existance in Rito life and vice versa for
-            rito just the thought of lala not being apart of his life pains him
-            greatly and gets anxious whenever she's not around as for Lala as
-            there feelings continue to grow for each other throughout the series
-            Rito has become a irreplaceable existance to her.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/haruna"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Haruna Sairenji
-            </a>
-          </h3>
-          <p className="mt-3">
-            Lala regards Haruna as her best friend and will often go to her for
-            advive when she is not sure about some part of Earth culture or
-            Rito. Later, Haruna reveals to Lala that she too is in love with
-            Rito. This causes Lala guilt over how she has acted around Rito over
-            the previous year, she even tries to distance hearself from him in
-            an effort to make Haruna more comfortable.
-          </p>
-          <br />
-          <p>
-            Later after much thinking, she confronts Haruna and declearess
-            hearself her official love rival. She has since reverted back to her
-            over-the-top method of displauing her affections to Rito.
-          </p>
-          <br />
-          <p>
-            Lala and HAruna are also one of the very few people that wilingly
-            used Maru-Maru Charge-Kun with each other when Lala tried to lure
-            and catch the alleged stalker, once again proves how great trust
-            both girls have in each other. Though Lala for a moment also tried
-            to please Rito, with her chance. Not too successful, as it rather
-            caused great confusion in his heart.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/haruna"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Peke
-            </a>
-          </h3>
-          <p className="mt-3">
-            As Lala is her creator, it goes without saying that Peke is greatly
-            loyal and obedient to Lala. Peke is Lala's most constant companion,
-            and has been with her since her creation and when Lala ran away from
-            home. While Peke considers Lala as a great person, admired for her
-            beauty and intelligence, and finds any suitor unworthy of her, Peke
-            is still aware of some of Lala's eccentricities. She questions
-            Lala's judgment in choosing Rito as her fiancé, and her childish
-            attempts at getting closer to him. And she says that despite being
-            one of the greatest geniuses in the galaxy, most of Lala's
-            inventions turn out to be pranks.{" "}
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/nana"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Nana Astar Deviluke
-            </a>
-          </h3>
-          <p>
-            Nana is one of Lala's little sisters and has shown very high respect
-            for her sister, calling her "Ane-ue". They both excel in sports, and
-            sometimes Nana would get a little upset with her for her airheaded
-            personality. Nana also shows respect for her when she scolds Momo
-            for sleeping in Rito's bed, saying that Rito is Lala's fiancé.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/momo"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Momo Belia Deviluke
-            </a>
-          </h3>
-          <p>
-            Momo is Lala's youngest sister. Like Nana, she also shows high
-            respect for her older sister, calling her "Onee-sama". Momo's
-            respect was also shown when she did not try to steal Rito from her,
-            and instead decided to be contented with being a lover. However,
-            Momo has since found a compromise so that her sister would not be
-            heartbroken, and Momo's love for Rito can still be reciprocated.
+            In Darkness chapter 40, Yami's Darkness transformation radically
+            changes her personality into a bolder and highly perverted one, and
+            her feelings for Rito are revealed (or somewhat changed) in a very
+            psychotic way. She now greatly enjoys feeling ecchi, and immediately
+            teleports Rito to her side, surrounding him with many girls as she
+            molests them around Rito. She explains her desire to kill him in a
+            very ecchi situation to express her love for him and because he is
+            her target.
           </p>
           <br />
           <p>
-            In To Love-Ru Darkness, Momo inherits and expands Lala's harem plan,
-            wanting to share Rito with her sister, as well as with all of Rito's
-            other love interests.
+            It is revealed in Chapter 46 that Yami is in fact in love with Rito,
+            and that it is said love that causes the "bug" in her Darkness
+            transformation. But after Rito helped her transform back to normal,
+            she denies any kind of love for him and still insists that he is her
+            target. Nevertheless, Yami is grateful to him and now possesses a
+            desire to improve her relationship with him, though due to her
+            growing tsundere traits, she is far from willing to admit it, and
+            Rito ignorantly interprets her angry outbursts as still hating and
+            wanting to kill him.
+          </p>
+          <br />
+          <p>
+            After that incident, Yami realizes that her feeling for Rito is
+            love. She admits to Mikan that she is in love with her older
+            brother. In Darkness Chapter 71, Yami transforms into her darkness
+            form to save Rito from Kuro. During this incident in Chapter 72,
+            Yami is groped by Rito, but this time she just scolds him a little
+            bit, instead of hitting him like she's been doing in the past. After
+            the fight, Yami confesses her feelings to Rito, calling him her
+            "target of love".
           </p>
           <br />
           <h3>
@@ -707,49 +666,51 @@ export const Lala_relationships = () => {
               Mikan Yuuki
             </a>
           </h3>
-          <p>
-            Lala thinks very highly of Mikan, mostly because she lets her stay
-            in her and Rito's house and Lala loves her cooking. Lala and Mikan
-            are very good friends and Lala always tries to help her with chores
-            (even though she messes up the chores most of the time). Their
-            relationship at times can even be described as siblingly.
-          </p>
-          <br />
-          <p>
-            Mikan is somehow extremely casual and unfazed with the
-            eccentricities around Lala, whether it's Rito's recent engagement to
-            Lala, or even Lala's alien origins. Even finding Lala completely
-            naked in Rito's bed has become a normal occurrence to her. Mikan
-            easily welcomed Lala into their lives and is pleased to know that
-            things will get more interesting upon Lala's arrival. However, she
-            does not feel the same way about her sister Momo, who is more mature
-            and mischievous.
-          </p>
-          <br />
-          <p>
-            Lala really enjoys Mikan's cooking, which she is really terrible at,
-            always putting dark matter in it.
-          </p>
+          <div className="flex flex-row items-start gap-6">
+            <div className="flex-1">
+              <p className="mt-3">
+                After that incident, Yami realizes that her feeling for Rito is
+                love. She admits to Mikan that she is in love with her older
+                brother. In Darkness Chapter 71, Yami transforms into her
+                darkness form to save Rito from Kuro. During this incident in
+                Chapter 72, Yami is groped by Rito, but this time she just
+                scolds him a little bit, instead of hitting him like she's been
+                doing in the past. After the fight, Yami confesses her feelings
+                to Rito, calling him her "target of love".
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/yamimikan.jpg"
+                alt=""
+                className="w-56 h-auto rounded shadow"
+                style={{ maxWidth: "220px" }}
+              />
+              <span className="text-xs text-center mt-2 text-gray-600 italic block max-w-[220px]">
+                Yami and Mikan hanging out.
+              </span>
+            </div>
+          </div>
           <br />
           <h3>
             <a
-              href="/yami"
+              href="/lala"
               className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
             >
-              Golden Darkness (Yami/Eve)
+              Lala Satalin Deviluke
             </a>
           </h3>
-          <p>
-            Lala considers herself a friend to Yami, going so far as to help her
-            pick out new clothes (Chapter 61), and help Yami realize how nice
-            Rito really is by letting Mikan and Yami switch bodies for a while
-            (Chapter 139). Yami would even put aside her hatred towards Rito for
-            the moment whenever Lala asks her.
+          <p className="mt-3">
+            Yami is forced to fight Lala when she is assigned to kill Rito.
+            After they stop fighting, they become friends (at least in Lala's
+            eyes). As of Yami's opinion of Lala, she seems oblivious to Lala's
+            friendly behavior towards her, but she never attacks Lala or says
+            anything bad about her after their fight.
           </p>
           <br />
           <p>
-            It was Lala who named her Yami-chan, a name repeated by most other
-            characters.
+            It was Lala who named her Yami-chan (Yami means darkness in
+            Japanese), a name repeated by most other characters.
           </p>
           <br />
           <p>
@@ -758,120 +719,112 @@ export const Lala_relationships = () => {
             personality, she psychotically expresses her love for Rito and her
             desire to kill him, and with Lala protecting Rito, Darkness declares
             Lala as her enemy and the one blocking her from killing Rito and
-            become one with him.
+            become one with him. But after Yami's transformation is faded, she
+            apologizes to Lala for their fight, which Lala quickly forgives
+            without any problem.
           </p>
           <br />
           <h3>
             <a
-              href="/yui"
+              href="/mea"
               className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
             >
-              Yui Kotegawa
+              Mea Kurosaki
             </a>
           </h3>
           <p>
-            In terms of personality, Lala and Yui are the polar opposite of each
-            other. But in spite of that, they are generally friends, even though
-            Yui does hold some dislike over Lala's naive, yet indecent behavior.
+            Yami doesn't appear to be particularly attached to Mea after
+            discovering that
           </p>
           <br />
-          <p>
-            Lala likes Yui a lot and often tries to find ways to include her in
-            their group events. While others have a tendency to view Yui in a
-            bossy, and sometimes resentful light, Lala does not. However, due to
-            Lala's nature, it is doubtful if she would see anything as bad in
-            her.
-          </p>
+          <div className="flex flex-row items-start gap-6">
+            <div className="flex-1">
+              <p>
+                she is technically her sister and, also like her, a (second
+                generation) transformation weapon made from the same
+                organization as Yami. It is Mea's mission to return Yami back
+                into space and back into her previous cold assassin's life,
+                which is a task set to her by her master Nemesis. Mea at least
+                desires for "Yami Onee-chan" to join her. But Yami encourages
+                Mea to learn and embrace the human life and companionship on
+                Earth, just as Yami is learning to do.
+              </p>
+              <br />
+              <p>
+                Mea still thinks that Yami should be the ultimate weapon and
+                unstoppable by anyone. However, in To-Love-Ru Darkness chapter
+                30, Mea has a slight change of heart after her conversation with
+                Rito. When he explains how Tearju sees her and Yami as her
+                little sisters and how families are important, she helps him
+                persuade Yami to come back to school and perhaps rebuild her
+                relationship with Tearju.
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/yamimea.jpg"
+                alt=""
+                className="w-56 h-auto rounded shadow"
+                style={{ maxWidth: "220px" }}
+              />
+              <span className="text-xs text-center mt-2 text-gray-600 italic block max-w-[220px]">
+                The first time Yami admits out loud that Mea is her sister
+              </span>
+            </div>
+          </div>
           <br />
           <p>
-            Regarding appearance Lala and Yui sports, nearly identical
-            curvaceous figures and together are considered to have the most
-            attractive bodies at the school by other girls. Whenever a
-            comparison of girls' figures is brought up Lala and Yui are often
-            used as a sort of an idea that other girls want to achieve.
-            Ironically, even though these two have the best bodies, they are the
-            only two so far who pay no real attention to their appearance.
-          </p>
-          <br />
-          <p>
-            Yui would seemingly get jealous whenever she sees Lala close to
-            Rito, but naturally, denies it herself.
+            In Darkness Chapter 37, Mea was forced to use her transformation
+            powers in front of many others to save the school from a micro black
+            hole. Yami then appeared and introduced Mea as her little sister.
+            Mea was then warmly welcomed by all of the students present. Yami
+            has shown that Mea is someone important to her , some examples were
+            when Nemesis lied to her about Mea not being real which caused her
+            to lose her peace of mind and use her "Darkness" ability. Another is
+            when she had transported Momo and Nana to Mea's apartment while she
+            was "Darkness" showing she still believes Mea is real.
           </p>
           <br />
           <h3>
             <a
-              href="#"
+              href="/tearju"
               className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
             >
-              Ren Elsie Jewelria
+              Tearju Lunatique
             </a>
           </h3>
-          <p>
-            When they were children, Lala would often dress up Ren as a girl and
-            call him a cry baby. Lala would also perform disastrous experiments
-            on him and test out her inventions on him. Despite this, Ren is in
-            love with Lala. In their past, when Ren asked Lala if she would
-            marry him, she passively replied that she would if he could become
-            manly. Upon arriving on Earth, Ren persistently tries to prove to
-            Lala that he has become manly by trying to defeat Rito in various
-            completely pointless challenges. However, Lala remains passive,
-            neglectful, and even somewhat oblivious of Ren's attempts to court
-            her, as she now only wants Rito.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/ren"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Run Elsie Jewelria
-            </a>
-          </h3>
-          <p>
-            Run is Ren's (former) female self, who is essentially an entirely
-            different person but shares the same body as Ren. While Ren is in
-            love with Lala, despite Lala playing with them quite abusively as
-            children, Run holds a grudge against her. She never forgave Lala for
-            tormenting her as a child. To make things worse, Lala has Rito, with
-            whom Run is also in love with. Run immaturely made various
-            outrageous attempts to get revenge and harass and humiliate Lala,
-            such as using the youth skunk and the clothes-destroying bomb, but
-            they all backfire. But Run and Lala are actually friends, and have
-            been since childhood, and Run doesn't genuinely hate Lala, but
-            simply has been angry at her. Lala still regards Run as one of her
-            best friends and is completely clueless about how Run feels.
+          <p className="mt-3">
+            Tearju is the one who created and gave life to Yami from her own
+            DNA, making Tearju sort of like her mother, but Yami stated they
+            were more like sisters. Before her life as an assassin, Yami used to
+            play and have fun with Tearju and would even eat whatever she cooked
+            (despite being badly made). Yami seems to hold high respect for
+            Tearju even now. When Tearju escaped the organization, she was
+            unable to take Yami with her, although Yami doesn't blame her for it
+            and says she's glad that Tearju is alright. Tearju wants to be close
+            to her again, but because both are similarly emotionally awkward and
+            unsure, neither would approach each other unless forced to. Since
+            Tearju's arrival as a teacher at Sainan high, Yami stopped wearing
+            her uniform and stopped attending classes.
           </p>
           <br />
           <p>
-            In recent times, Run has had a more friendly relationship with Lala,
-            or at least more civil, and seems to have put her grudge behind her,
-            as she no longer tries to get back at her by pulling pranks on her.
-            After Run becomes a popular idol and attends school less often, she
-            and Lala are rarely seen together anymore.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/saki"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Saki Tenjouin
-            </a>
-          </h3>
-          <p>
-            While Lala tries to be friends with everyone, Saki Tenjouin holds a
-            grudge against Lala for challenging her popularity (without being
-            aware of it). Saki used to be the most popular and beautiful girl in
-            school, until Lala showed up and attracted all the attention away.
-            Saki goes so far as to go naked, set up booby traps, and even shoot
-            Lala with mustard to try to humiliate her. Most of her antics
-            usually backfire. However, Saki has shown some gratitude when Lala
-            helped her the time she ran away from home.
+            If Tearju had rescued Yami from the organization that turned her
+            into a weapon, Yami would have grown up differently with a better
+            and happier childhood. It is revealed that Yami is afraid of
+            becoming closer to Tearju because she doesn't know how to face her
+            after becoming a notorious assassin, and feels she doesn't deserve
+            to be with her again after what she has become. But with help of
+            Rito and Mea, they persuade her to come back to school. Tearju has
+            become her new homeroom teacher, and was tearfully overjoyed to see
+            her in her uniform.
           </p>
           <br />
           <p>
-            Lala is mostly oblivious to the fact that Saki really doesn't like
-            her, and is still friendly to her.
+            Yami's relationship with Tearju still remains very awkward. Even
+            after Yami publicly introduced Mea as her sister, she remains
+            reluctant to become closer to Tearju again and would rather drag
+            even Rito along with her to avoid being alone with Tearju.
           </p>
           <br />
           <h3>
@@ -879,15 +832,44 @@ export const Lala_relationships = () => {
               href="#"
               className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
             >
-              Risa Momioka & Mio Sawada
+              Lunatique
             </a>
           </h3>
           <p>
-            Risa and Mio are Lala's somewhat perverted classmates and friends of
-            Haruna. Lala has limited direct contact with them in the series but
-            clearly enjoys their company. Indeed when the two of them engage in
-            their usual antics of groping girls, Lala is never annoyed by them,
-            even when it's her turn to be groped.
+            The Lunatique is the artificial intelligence in Yami's space ship
+            which is also where she lives. Lunatique is very loyal to Yami as he
+            always calls her "master" and shows some concern for her. Yami
+            states that he is like an old friend who helps her escape when she
+            is on the verge of life and death. She eventually told him to refer
+            to her as "Yami-chan".
+          </p>
+          <br />
+          <h3>
+            <a
+              href="nemesis"
+              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
+            >
+              Nemesis
+            </a>
+          </h3>
+          <p>
+            Nemesis is also a transformation weapon like Yami and Mea. Nemesis
+            and Yami seem to know each other, though they first meet each other
+            in Darkness Chapters 23-24. Nemesis originally planned for Yami to
+            return to her old life as an assassin, starting with finishing what
+            she started when first coming to Earth which is killing Rito.
+            However, because Rito can change the way a transformation weapon
+            acts, Nemesis decided to observe how things progress, first by
+            approaching Rito herself.
+          </p>
+          <br />
+          <p>
+            Nemesis says that one day, Yami will inevitably once again become an
+            emotionless killer when she uses a hidden ability known as
+            "Darkness", which she describes will bring about chaos and
+            destruction to the universe. After Yami's Darkness transformation is
+            defeated by Rito, it is now unknown if Nemesis has anymore plans
+            with Yami. Jan
           </p>
           <br />
           <h3>
@@ -895,79 +877,29 @@ export const Lala_relationships = () => {
               href="#"
               className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
             >
-              Mikado Ryouko
+              Principal
             </a>
           </h3>
-          <p>
-            "Mikado-sensei", as the kids usually call her, is one of Rito's and
-            Lala's personal friends. When Lala had her strange flu, it was
-            revealed that Mikado is in fact also an alien and provides exotic
-            herbs and treatment methods intended for other aliens that live
-            amongst unknowing Earth inhabitants.
-          </p>
-          <br />
-          <p>
-            Lala is respectful of Mikado and treats her with the same sunny
-            personality that she treats everyone else.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/gid"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Gid Lucione Deviluke
-            </a>
-          </h3>
-          <p>
-            Her father, the King of the planet Deviluke, can be very strict and
-            demands obedience from Lala and her sisters, like when she ran away
-            from home to escape meetings with her suitors (which he forces her
-            to go to), he sent extreme forces to bring her back.
-          </p>
-          <br />
-          <p>
-            In the manga, he seemed kind and understanding of Lala's choice in
-            having Rito for a husband and said to arrange the wedding right
-            away, but she declined his wedding plans, making him go back to
-            being strict, stating that he finally allowed her to have her own
-            way, but she revealed that he only wanted her to get married so he
-            can step down as king and go around doing perverted things (also
-            because she knew that Rito did not love her at the time and did not
-            want to force him).
-          </p>
-          <br />
-          <p>
-            She is shown, however, to have warm memories of him from her
-            childhood, comparing Rito's kindness to her father coming to find
-            her when she was lost in the woods on Deviluke.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/sephie"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Sephie Michaela Deviluke
-            </a>
-          </h3>
-          <p>
-            Sephie is the mother of Lala, Nana, and Momo, and she has yet to
-            make an appearance in the manga. Peke notes that Lala's mother is
-            very beautiful and that Lala has inherited her beauty and attractive
-            physique from her. Momo states that she's a wonderful person. As the
-            current queen of Deviluke (in their father's place, who isn't good
-            at politics), she demonstrates active leadership and endeavors to
-            maintain relations with every planet. To Lala and her sisters, she
-            is the person they admire the most.
-          </p>
-          <br />
-          <p>
-            Momo has stated that despite being busy most of the time, their
-            mother still makes time to call them (To-Love-Ru Darkness Chapter
-            23). She finally makes time to visit her daughters after hearing
-            that Lala became small after overusing her powers.
-          </p>
+          <div className="flex flex-row items-start gap-6">
+            <div className="flex-1">
+              <p>
+                Yami finds the principal annoying due to him constantly sexually
+                harassing her. When he harasses her, she instantly beats him,
+                which he seems to enjoy.
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/yamiprincipal.jpg"
+                alt=""
+                className="w-56 h-auto rounded shadow"
+                style={{ maxWidth: "220px" }}
+              />
+              <span className="text-xs text-center mt-2 text-gray-600 italic block max-w-[220px]">
+                Principal flirting on Yami.
+              </span>
+            </div>
+          </div>
           <br />
         </div>
       </div>

@@ -355,7 +355,7 @@ export const Nana = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="nana_plot"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Plot
@@ -363,7 +363,7 @@ export const Nana = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="nana_animals"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Animals
@@ -371,7 +371,7 @@ export const Nana = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="nana_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -379,7 +379,7 @@ export const Nana = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="nana_gallery"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery

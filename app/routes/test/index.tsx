@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "@remix-run/react";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 import { shonenJumpWikis } from "app/components/shonenJumpWikis";
-import { a } from "node_modules/framer-motion/dist/types.d-DDSxwf0n";
+// import { a } from "node_modules/framer-motion/dist/types.d-DDSxwf0n";
 
 // Add these styles at the beginning of your file
 const slideStyles = {
@@ -181,14 +181,14 @@ export default function ToLoveRuWiki() {
         <link rel="canonical" href="/toloveru" />
       </Helmet>
       <div
-        className="min-h-screen bg-white"
-        style={{
-          backgroundImage: 'url("/To Love Ru/672584.png")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
+        className="min-h-screen bg-[#fcc0e9]"
+        // style={{
+        //   backgroundImage: 'url("/To Love Ru/672584.png")',
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundAttachment: "fixed",
+        // }}
       >
         {/* Content Area with Left Sidebar */}
         <div className="flex">
@@ -645,7 +645,7 @@ export default function ToLoveRuWiki() {
                       {/* Logo: responsive sizing */}
                       <div className="flex justify-center">
                         <img
-                          src="public/To Love Ru/Site-logo (2).png"
+                          src="To Love Ru/Site-logo (2).png"
                           alt="To LOVE-Ru Logo"
                           className="max-w-[180px] w-full h-auto"
                           style={{ objectFit: "contain" }}
@@ -986,7 +986,7 @@ export default function ToLoveRuWiki() {
                     <div className="p-4 bg-gray-100 rounded-lg mt-6">
                       <div className="flex items-start space-x-3 mb-4">
                         <img
-                          src="To Love Ru/nemisis.jpg"
+                          src="To Love Ru/nemesis.jpg"
                           alt="Nemesis avatar"
                           className="w-8 h-8 rounded-full"
                         />
@@ -1410,73 +1410,70 @@ export default function ToLoveRuWiki() {
                     </div>
                     <div className="p-4 mt-3 border border-[#DB49AC] bg-white scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 h-[400px] overflow-y-auto">
                       <div className="grid grid-cols-3">
-                        <img
-                          src="public/To Love Ru/latest (1).jpg"
-                          alt=""
-                        ></img>
-                        <img src="public/Site-logo.png" alt=""></img>
-                        <img src="public/Wiki-wordmark.png" alt=""></img>
-                        <img src="public/Wiki-wordmark (1).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (2).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (3).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (4).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (5).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (6).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (7).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (8).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (9).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (10).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (11).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (12).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (13).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (14).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (15).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (16).png" alt=""></img>
-                        <img src="public/Site-logo (1).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (17).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (18).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (19).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (20).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (21).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (22).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (23).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (24).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (25).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (26).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (27).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (28).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (29).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (30).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (31).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (32).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (33).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (34).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (35).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (36).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (37).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (38).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (39).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (40).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (41).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (42).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (43).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (44).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (45).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (46).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (47).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (48).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (49).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (50).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (51).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (52).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (53).png" alt=""></img>
-                        <img src="public/Wiki-wordmark (54).png" alt=""></img>
+                        <img src="/To Love Ru/latest (1).jpg" alt=""></img>
+                        <img src="/Site-logo.png" alt=""></img>
+                        <img src="/Wiki-wordmark.png" alt=""></img>
+                        <img src="/Wiki-wordmark (1).png" alt=""></img>
+                        <img src="/Wiki-wordmark (2).png" alt=""></img>
+                        <img src="/Wiki-wordmark (3).png" alt=""></img>
+                        <img src="/Wiki-wordmark (4).png" alt=""></img>
+                        <img src="/Wiki-wordmark (5).png" alt=""></img>
+                        <img src="/Wiki-wordmark (6).png" alt=""></img>
+                        <img src="/Wiki-wordmark (7).png" alt=""></img>
+                        <img src="/Wiki-wordmark (8).png" alt=""></img>
+                        <img src="/Wiki-wordmark (9).png" alt=""></img>
+                        <img src="/Wiki-wordmark (10).png" alt=""></img>
+                        <img src="/Wiki-wordmark (11).png" alt=""></img>
+                        <img src="/Wiki-wordmark (12).png" alt=""></img>
+                        <img src="/Wiki-wordmark (13).png" alt=""></img>
+                        <img src="/Wiki-wordmark (14).png" alt=""></img>
+                        <img src="/Wiki-wordmark (15).png" alt=""></img>
+                        <img src="/Wiki-wordmark (16).png" alt=""></img>
+                        <img src="/Site-logo (1).png" alt=""></img>
+                        <img src="/Wiki-wordmark (17).png" alt=""></img>
+                        <img src="/Wiki-wordmark (18).png" alt=""></img>
+                        <img src="/Wiki-wordmark (19).png" alt=""></img>
+                        <img src="/Wiki-wordmark (20).png" alt=""></img>
+                        <img src="/Wiki-wordmark (21).png" alt=""></img>
+                        <img src="/Wiki-wordmark (22).png" alt=""></img>
+                        <img src="/Wiki-wordmark (23).png" alt=""></img>
+                        <img src="/Wiki-wordmark (24).png" alt=""></img>
+                        <img src="/Wiki-wordmark (25).png" alt=""></img>
+                        <img src="/Wiki-wordmark (26).png" alt=""></img>
+                        <img src="/Wiki-wordmark (27).png" alt=""></img>
+                        <img src="/Wiki-wordmark (28).png" alt=""></img>
+                        <img src="/Wiki-wordmark (29).png" alt=""></img>
+                        <img src="/Wiki-wordmark (30).png" alt=""></img>
+                        <img src="/Wiki-wordmark (31).png" alt=""></img>
+                        <img src="/Wiki-wordmark (32).png" alt=""></img>
+                        <img src="/Wiki-wordmark (33).png" alt=""></img>
+                        <img src="/Wiki-wordmark (34).png" alt=""></img>
+                        <img src="/Wiki-wordmark (35).png" alt=""></img>
+                        <img src="/Wiki-wordmark (36).png" alt=""></img>
+                        <img src="/Wiki-wordmark (37).png" alt=""></img>
+                        <img src="/Wiki-wordmark (38).png" alt=""></img>
+                        <img src="/Wiki-wordmark (39).png" alt=""></img>
+                        <img src="/Wiki-wordmark (40).png" alt=""></img>
+                        <img src="/Wiki-wordmark (41).png" alt=""></img>
+                        <img src="/Wiki-wordmark (42).png" alt=""></img>
+                        <img src="/Wiki-wordmark (43).png" alt=""></img>
+                        <img src="/Wiki-wordmark (44).png" alt=""></img>
+                        <img src="/Wiki-wordmark (45).png" alt=""></img>
+                        <img src="/Wiki-wordmark (46).png" alt=""></img>
+                        <img src="/Wiki-wordmark (47).png" alt=""></img>
+                        <img src="/Wiki-wordmark (48).png" alt=""></img>
+                        <img src="/Wiki-wordmark (49).png" alt=""></img>
+                        <img src="/Wiki-wordmark (50).png" alt=""></img>
+                        <img src="/Wiki-wordmark (51).png" alt=""></img>
+                        <img src="/Wiki-wordmark (52).png" alt=""></img>
+                        <img src="/Wiki-wordmark (53).png" alt=""></img>
+                        <img src="/Wiki-wordmark (54).png" alt=""></img>
                       </div>
                     </div>
                     <div className="flex items-center justify-center text-black">
                       If you'd like to affiliate with us, please contact{" "}
                       <strong className="text-[purple] ml-1">
-                        Aministrator.
+                        Administrator.
                       </strong>
                     </div>
                   </div>
@@ -1537,7 +1534,7 @@ export default function ToLoveRuWiki() {
                         <div className="text-center font-bold text-lg text-[#7c1fa0] mb-2">
                           Anime / Manga Hub{" "}
                           <span className="font-normal text-black">May</span>
-                          <span className="text-[purple]"> Spotlighta:</span>
+                          <span className="text-[purple]"> Spotlights:</span>
                         </div>
                         <div className="flex flex-row justify-center items-center gap-8 mb-4">
                           {/* Center image */}
@@ -1564,7 +1561,7 @@ export default function ToLoveRuWiki() {
                           </div>
                           <div className="flex flex-col items-center order-4 md:order-3">
                             <img
-                              src="public/To Love Ru/Wiki-wordmark (57).png"
+                              src="To Love Ru/Wiki-wordmark (57).png"
                               alt="Centuria"
                               className="h-12 mb-1"
                             />
@@ -1601,7 +1598,7 @@ export default function ToLoveRuWiki() {
                       <div className="flex-1">
                         <div className="flex flex-row flex-wrap items-center gap-x-3 gap-y-2 text-[purple] font-medium text-sm">
                           {shonenJumpWikis.map((title, idx) => (
-                            <React.Fragment key={title}>
+                            <React.Fragment key={`${title}-${idx}`}>
                               {idx > 0 && (
                                 <span className="mx-1 text-gray-400">•</span>
                               )}
@@ -1620,7 +1617,7 @@ export default function ToLoveRuWiki() {
                     </div>
                   </div>
                   <div className="bg-gray-50 border-l-4 border-[#B197FC] pt-6 mt-6 rounded-b-md">
-                    <div className="felx flex-col items-center">
+                    <div className="flex flex-col items-center">
                       <div className="mb-4 flex justify-center items-center">
                         <span className="text-black">
                           Ongoing Anime Spotlights
