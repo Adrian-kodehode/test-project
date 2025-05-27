@@ -354,7 +354,7 @@ export const Yui = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/yui_plot"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 {" "}
@@ -363,7 +363,7 @@ export const Yui = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/yui_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -371,7 +371,7 @@ export const Yui = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/yui_gallery"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery

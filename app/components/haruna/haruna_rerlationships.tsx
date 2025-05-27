@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Nana_relationships = () => {
+export const Haruna_relationships = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -357,7 +357,7 @@ export const Nana_relationships = () => {
         </div>
         {/* Left: Main text content */}
         <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
-          <h1 className="mb-5 text-5xl">Nana Astar Deviluke/Relationship</h1>
+          <h1 className="mb-5 text-5xl">Sairenji Haruna/Relationship</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
               <a href="/nana" className="text-[purple]">
@@ -422,43 +422,33 @@ export const Nana_relationships = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#lala-satalin-deviluke" className="hover:underline">
-                  Lala Satalin Deviluke
-                </a>
-              </li>
-              <li>
-                <a href="#momo-belia-deviluke" className="hover:underline">
-                  Momo Belia Deviluke
-                </a>
-              </li>
-              <li>
                 <a href="#rito-yuuki" className="hover:underline">
                   Rito Yuuki
                 </a>
               </li>
               <li>
+                <a href="#lala-satalin-deviluke" className="hover:underline">
+                  Lala Satalin Deviluke
+                </a>
+              </li>
+              <li>
+                <a href="#oshizu" className="hover:underline">
+                  Oshizu Murasame
+                </a>
+              </li>
+              <li>
                 <a href="#mikan-yuuki" className="hover:underline">
-                  Mikan Yuuki
+                  Akiho Sairenji
                 </a>
               </li>
               <li>
-                <a href="#haruna-sairenji" className="hover:underline">
-                  Haruna Sairenji
+                <a href="#risa&mio" className="hover:underline">
+                  Risa Momioka & Mio Sawada
                 </a>
               </li>
               <li>
-                <a href="#mea-kurosaki" className="hover:underline">
-                  Mea Kurosaki
-                </a>
-              </li>
-              <li>
-                <a href="#sephie-michaela-deviluke" className="hover:underline">
-                  Sephie Michaela Deviluke
-                </a>
-              </li>
-              <li>
-                <a href="#celine" className="hover:underline">
-                  Celine
+                <a href="#maron" className="hover:underline">
+                  Maron
                 </a>
               </li>
             </ol>
@@ -466,268 +456,202 @@ export const Nana_relationships = () => {
           <br />
           <h3>
             <a
-              href="/lala"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Lala Satalin Deviluke
-            </a>
-          </h3>
-          <p className="mt-4">
-            Ever since childhood, Nana and Momo always fought. Every time the
-            two fought, their older sister Lala always made reconciliation for
-            the twins, therefore Zastin was not to be angry with them. For
-            example, in childhood, when Momo and Nana were fighting, Zastin
-            scolded them. Meanwhile Lala made her inventions run amok, and she
-            begged Nana and Momo to catch the inventions, so her twins were led
-            to help it together, and Zastin diverted his anger from the twins
-            and toward Lala.
-          </p>
-          <br />
-          <p>
-            Nana has shown very high respects and affection for her sister,
-            calling her "Ane-ue". They both excel in sports and get along quite
-            well together, though sometimes Nana would get a little upset with
-            Lala for the airheaded personality. Nana also shows respect for her
-            when she scolds Momo for sleeping in Rito's bed, saying that Rito is
-            Lala's fiancée, despite her annoyed feelings towards him.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/momo"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Momo Belia Deviluke
-            </a>
-          </h3>
-          <p className="mt-4">
-            Nana's most active and noticeable relationship is with her twin
-            sister Momo. While the two love each other and are often seen
-            spending time together, they are naturally polar opposites. From an
-            early age, they have always been fighting and it was only through
-            the efforts of her elder sister Lala that their relationship
-            remained good. Although the twin sisters often squabble with each
-            other over trivial things, they do love each other deeply. In To
-            Love-Ru, they are often seen together and often plan mischievous
-            things together, such as the virtual reality games, and running away
-            from home to escape their studies together.
-          </p>
-          <br />
-          <p>
-            Nana envies Momo for having larger breasts than her, something that
-            Momo doesn't hesitate to tease her about. Although Momo may have
-            some reasons to be jealous of Nana, the only time she has ever shown
-            jealousy towards Nana was when Rito hugged her, which is something
-            Momo had never received from him.
-          </p>
-          <br />
-          <p>
-            In To Love-Ru Darkness, they both enroll in the same school as Rito
-            and Lala, and still do things together, but their lives become less
-            attached and parallel to each other, and they are not as often seen
-            together as they were before. While Nana develops her own friendship
-            with Mea and lives a life far more relaxed than her younger half's,
-            Momo concentrates on her Harem Plan that was originally proposed by
-            Lala to make almost every girl close to fall for him, including her
-            sister Nana. At the end of Darkness Chapter 35 Momo decides to let
-            Nana in on her Harem plan, but when she hears of it, she is strongly
-            against it.
-          </p>
-          <br />
-          <h3>
-            <a
               href="/rito"
               className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
+              id="rito"
             >
               Rito Yuuki
             </a>
           </h3>
-          <div className="flex flex-row items-start gap-4">
+          <p>
+            Haruna is a very kind, patient and understanding girl. More than
+            most other girls in the series, Haruna has always known about and
+            loved Rito's positive traits, despite also being a frequent victim
+            of Rito's perverted clumsiness. In Chapter 84, it is revealed that
+            Haruna first took notice of his existence when he won the school
+            festival for his class, and she has realized and remembered that he
+            must be a kind person since she noticed him taking care of the
+            flowers at school when they were neglected by others. When the
+            plants in the school garden got ruined, she was the only person who
+            believes he wasn't the one responsible, when other girls accused
+            him.
+          </p>
+          <br />
+          <p>
+            Unknown to Haruna, Rito has harbored affections for her since he
+            overheard that she was the only one who believed in him about the
+            school garden incident before the start of the series, but because
+            of his shyness and clumsiness, his numerous attempts to confess his
+            love to her ended in failure. And unknown to Rito, Haruna has held
+            affections for him as well. But she is hesitant to begin a romantic
+            relationship with him due to her friendship with Lala, who is
+            already pursuing a relationship with Rito.
+          </p>
+          <br />
+          <p>
+            Haruna also finds Rito to be very gentle, caring, compassionate and
+            loyal. These feelings are furthered by the advice he gives to
+            others, the way he treats plants and animals alike and how often
+            he's willing to sacrifice himself for the sake of others. She has a
+            romantic side to her with her feelings that long to be fully
+            attached to him, even calling Yami "lucky" when they were
+            accidentally attached together and unable to separate.
+          </p>
+          <br />
+          <p>
+            In Darkness chapter 54, Haruna's relationship with Rito takes an
+            unexpected leap forward when the two are shrunken by Lala's
+            invention and amidst trying to hide themselves, accidentally kissed
+            each other. The next day, both are too flustered to face each other
+            and don't know how to react to the accidental kiss with the one they
+            harbored feelings for. But after pressure from Oshizu and Momo, both
+            are on the verge of finally confessing to each other, but at the
+            very last second, Haruna apologizes for the accidental kiss, and
+            Rito simply forgives, leaving their romantic development back to
+            nowhere.
+          </p>
+          <br />
+          <p>
+            Despite their somewhat implicitly intimate relationship, they still
+            address each other by their last name (Haruna calls Rito
+            "Yuuki-kun", and Rito calls her "Sairenji"). In Japanese culture,
+            people who are close to each other often address their partners by
+            their first name, and sometimes, they add honorifics (-kun, -chan,
+            -san, etc) to determine their closeness. Judging by this, their
+            relationship may not be stable and close as close friends; although
+            they two are trying their best to overcome their shyness.
+          </p>
+          <br />
+          <p>
+            In chapter 75, she finally decides to confess her feelings to Rito
+            after to Nemesis announces her plan to create a harem with all girls
+            of Sainan. Haruna does not believe in a harem and that love should
+            be monopolized. She gains the courage to confess when Rito screams a
+            harem is impossible.
+          </p>
+          <br />
+          <p>
+            In chapter 76, Rito also admitted that he also has feelings for her
+            . However, he refused to be in a relationship with Haruna because he
+            also has strong feelings for Lala.
+          </p>
+          <br />
+          <h3>
+            <a
+              href="/lala"
+              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
+              id="lala"
+            >
+              Lala Satalin Deviluke
+            </a>
+          </h3>
+          <div className="flex flex-row items-start gap-4 mb-4">
             <div className="flex-1">
               <p>
-                Nana is one of the few girls who does not have romantic feelings
-                for Rito in the beginning. In fact, her impression of him and
-                his friendships with many girls is quite negative. She thinks of
-                him as a shameless pervert, and is widely known for calling him
-                a "beast". Overall, she doesn't genuinely hate him, but rather
-                she can't seem to see what's so great about him. She has,
-                however, said that he can be kind sometimes and is often
-                grateful when he puts her needs before himself, and he tries to
-                make her as calm and happy as he can, given her normally abrupt
-                change of mood. She begins to have feelings for him when he
-                saved her from falling.
+                Haruna and Lala are best friends. It is because of her
+                friendship with Lala that Haruna has been hesitant to pursue a
+                romantic relationship with Rito. Lala, on the other hand, knows
+                about Rito's feelings for Haruna, and is very enthusiastic to
+                see them get together, believing that both girls can marry Rito
+                together, as Japan's customs would no longer apply to Rito when
+                he marries Lala and becomes King of Deviluke.
               </p>
               <br />
+              <p>
+                As of To love-Ru Darkness, she has learned that both she and
+                Lala can marry Rito together, which greatly surprised her,
+                realizing the reason for Lala's cheerfulness about Haruna's
+                feelings for Rito. She currently doesn't quite know what to make
+                of the newfound possibility.
+              </p>
             </div>
-            <div className="flex flex-col items-center min-w-[120px]">
+            <div className="flex flex-col items-center">
               <img
-                src="To Love Ru/nanarito.jpg"
+                src="https://static.wikia.nocookie.net/to-loveru/images/0/05/LHY.jpg"
                 alt=""
-                className="mb-1 w-48 h-auto"
+                className="w-40 h-auto rounded shadow"
               />
-              <span className="text-center text-xs text-gray-700">
-                Nana beating up Rito.
+              <span className="text-xs text-gray-600 mt-2 text-center">
+                Lala's and Haruna's skinship reaches near yuri levels.
               </span>
             </div>
           </div>
-          <div className="flex flex-row items-start gap-4">
-            <div className="flex-1">
-              <p>
-                After Nana's relationship with Mea became strained and left her
-                heartbroken, Rito came to offer her advice and encouragement.
-                When Rito hugged her in his arms to console her, it gave her the
-                courage to confront and reconcile with Mea. Nana is grateful to
-                him for encouraging her to confront to Mea, and she also notes
-                that being hugged by Rito felt warm. Her feelings for Rito have
-                greatly improved from this, and she subsequently snuck into
-                Rito's room to sleep next to him (only to find Momo already
-                sleeping next to him half-naked, much to her anger).
-              </p>
-              <br />
-              <p>
-                As time goes on for her, Nana eventually begins to have slight
-                romantic feelings for Rito (like feeding him food), although she
-                tends to snap herself back to what she thinks to be real and
-                continues to dislike him. While she doesn't fully give into
-                these thoughts, she tends to have a somewhat shy and flustered
-                reaction to them.
-              </p>
-              <br />
-            </div>
-            <div className="flex flex-col items-center min-w-[120px]">
-              <img
-                src="To Love Ru/nanarito2.jpg"
-                alt=""
-                className="mb-1 w-48 h-auto"
-              />
-            </div>
-          </div>
-          <p>
-            Currently, Nana generally treats Rito like a brother, but obviously
-            the kind she often squabbles with and gets mad at. She still says
-            that Rito is an idiot, pervert, and a beast, but she acknowledges
-            that he can truly be counted on when someone is in trouble and will
-            thank him for his help, though in her own way and on very rare
-            occasions. She remembers how good it felt when she was hugged in his
-            arms. Once, while listening to a scary story, she easily got scared
-            and was seen hiding closely behind Rito.
-          </p>
           <br />
+
           <p>
-            Despite what she thought of him the first time they met, she has
-            slowly developed affectionate feelings towards him that she herself
-            can barely understand or chooses to understand, much like Kotegawa.
-            But later on, she wonders if she might be the type of girl Rito
-            would like, and even wonders if he likes her breast size or if he
-            would like her with makeup, however, when she and Momo where gonna
-            see what kind of girls like, he tells her that he likes girls for
-            their personality, not their appearences, and tells Nana that he
-            doesn't care that she's flat-chested, which made her blush later on.
-          </p>
-          <br />
-          <p>
-            Interestingly, while she refers to him as "Rito", she referred to
-            him as "Yuuki Rito" in her earlier appearances when talking to
-            herself about him. This may show that she secretly didn't consider
-            their relationship to be that close at the time. In later chapters
-            of To Love-Ru and To Love-Ru Darkness, she always thinks and speaks
-            of him as "Rito".
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/mikan"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Mikan Yuuki
-            </a>
-          </h3>
-          <p>
-            Mikan has developed a positive connection with Nana due to their
-            similar chest-related angst. Mikan has shown to trust Nana, such as
-            asking her to wake Rito up and lets her take a bath with him and
-            Yami, whose hands were stuck together due to Lala's invention,
-            Clingy-Clingy Glue-kun that Celine had found.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/haruna"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Haruna Sairenji
-            </a>
-          </h3>
-          <p>
-            Nana actually knows that Haruna furtively loves Rito through
-            Haruna's dog Maron as Nana can communicate with animals, although
-            only few of the characters know Haruna's affection toward Rito.
-          </p>
-          <br />
-          <h3>
-            <a
-              href="/mea"
-              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
-            >
-              Mea Kurosaki
-            </a>
-          </h3>
-          <p>
-            After enrolling into Sainan High School along with Momo, Mea became
-            the first friend Nana made, and Nana greatly cherishes their
-            friendship. Unknown to Nana, at first, Mea is a living weapon, like
-            Yami And like Yami, Mea is not genuinely accustomed to friendship
-            and emotions, despite her cheery exterior.
-          </p>
-          <br />
-          <p>
-            Mea convinced herself that she is a weapon who was only pretending
-            to have emotions to follow orders as a spy in the school. When Nana
-            discovered Mea's identity as a living weapon, Mea confessed that she
-            was only pretending to be friends. This left Nana deeply upsets. But
-            after consolation and encouragement from Rito, Nana approached Mea
-            again, and Mea realized that she does still care for Nana. They have
-            since become friends again.
+            Haruna and Lala are also one of the very few people that willingly
+            used Maru-Maru Change-Kun with each other when Lala tried lure and
+            catch alleged stalker, once again prove how great trust both girl
+            have in each other. Though those few Haruna's moment within Lala's
+            body caused great confusion in Rito's heart.
           </p>
           <br />
           <h3>
             <a
               href="#"
               className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
+              id="oshizu"
             >
-              Sephie Michaela Deviluke
+              Oshizu Murasame
             </a>
           </h3>
-          <div className="flex flex-row items-start gap-4">
-            <div className="flex-1">
-              <p>
-                Sephie is the mother of Lala, Nana and Momo. It's said that she
-                might be the most beautiful woman ever, something Lala and Momo
-                have inherited from her, but not Nana as much (who is very
-                sensitive about it). Momo states that she's a wonderful person.
-                As the current queen of Deviluke (in their father's place, who
-                isn't good at politics), she demonstrates active leadership and
-                endeavors to maintain relations with every planet. To Nana and
-                her sisters, she is the person they admire the most.
-              </p>
-              <br />
-              <p>
-                Nana has an obviously strong bond with her mother, hugging her
-                in front of others and constantly being on the lookout for her
-                well-being.
-              </p>
-                <br />
+          <p>
+            Despite Haruna's huge fear of ghosts, she has become very
+            comfortable around Oshizu, and the two have become good friends, and
+            are often seen together. Oshizu is the first to learn of Haruna's
+            crush on Rito after briefly possessing her, and becomes very
+            supportive and encouraging towards Haruna confessing her feelings to
+            him. She would even go as far as using powers to help, which usually
+            fails in the end.
+          </p>
+          <br />
+          <div>
+            <h3>
+              <a
+                href="#"
+                className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
+                id="risa&mio"
+              >
+                Risa Momioka & Mio Sawada
+              </a>
+            </h3>
+            <p>
+              Risa and Mio are Haruna's close friends, and are often seen
+              together in school. Haruna is less than amused by them constantly
+              groping her.
+            </p>
+            <br />
+            <h3>
+              <a
+                href="#"
+                className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
+                id="maron"
+              >
+                Maron
+              </a>
+            </h3>
+            <div className="flex flex-row items-start gap-4 mb-4">
+              <div className="flex-1">
+                <p>
+                  Maron is the pet dog Haruna has at home. He is actually her
+                  older sister's pet, but because she is always working, Haruna
+                  is always the one taking care of him. Maron highly considers
+                  Haruna his master, and spends a great deal of time licking
+                  her, sometimes all over her body in a very perverted manner.
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.wikia.nocookie.net/to-loveru/images/2/2c/ToLoveRu_v02_165.jpg"
+                  alt=""
+                  className="w-40 h-auto rounded shadow"
+                />
+                <span className="text-xs text-gray-600 mt-2 text-center">
+                  Risa startles Haruna by groping her.
+                </span>
+              </div>
             </div>
-            <div className="flex flex-col items-center min-w-[120px]">
-              <img
-                src="To Love Ru/nanamother.jpg"
-                alt=""
-                className="mb-1 w-48 h-auto"
-              />
-              <span className="text-center text-xs text-gray-700">
-                Nana clings on her mother.
-              </span>
-            </div>
+            <br />
           </div>
         </div>
       </div>

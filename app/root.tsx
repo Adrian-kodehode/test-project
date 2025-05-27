@@ -89,6 +89,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/nana_plot" &&
           location.pathname !== "/nana_relationships" &&
           location.pathname !== "/nana_animals" &&
+          location.pathname !== "/yui_plot" &&
+          location.pathname !== "/yui_relationships" &&
+          location.pathname !== "/run_relationships" &&
+          location.pathname !== "/haruna_relationships" &&
+          location.pathname !== "/haruna_plot" &&
+          location.pathname !== "/mikan_relationships" &&
+          location.pathname !== "/rito_relationships" &&
+          location.pathname !== "/rito_plot" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         <PlaybackBar />
@@ -153,6 +161,14 @@ export default function App() {
         location.pathname !== "/nana_plot" &&
         location.pathname !== "/nana_animals" &&
         location.pathname !== "/nana_relationships" &&
+        location.pathname !== "/yui_plot" &&
+        location.pathname !== "/yui_relationships" &&
+        location.pathname !== "/run_relationships" &&
+        location.pathname !== "/haruna_plot" &&
+        location.pathname !== "/haruna_relationships" &&
+        location.pathname !== "/mikan_relationships" &&
+        location.pathname !== "/rito_relationships" &&
+        location.pathname !== "/rito_plot" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );

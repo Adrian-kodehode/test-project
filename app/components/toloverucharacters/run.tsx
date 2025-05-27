@@ -117,7 +117,9 @@ export const Run = () => {
                           <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          Motto To LOVE-Ru
+                          <Link to="/mother_to_love-ru_anime">
+                            Motto To LOVE-Ru
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_anime">
@@ -125,7 +127,9 @@ export const Run = () => {
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness 2nd
+                          <Link to="/to_love-ru_darkness2ndanime">
+                            To LOVE-Ru Darkness 2nd
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -354,7 +358,7 @@ export const Run = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="run_plot"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 {" "}
@@ -363,7 +367,7 @@ export const Run = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="run_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -371,7 +375,7 @@ export const Run = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="run_gallery"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery

@@ -986,7 +986,7 @@ export default function ToLoveRuWiki() {
                     <div className="p-4 bg-gray-100 rounded-lg mt-6">
                       <div className="flex items-start space-x-3 mb-4">
                         <img
-                          src="To Love Ru/nemesis.jpg"
+                          src="To Love Ru/nemisis.jpg"
                           alt="Nemesis avatar"
                           className="w-8 h-8 rounded-full"
                         />

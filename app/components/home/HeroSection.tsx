@@ -1,5 +1,5 @@
-import video1 from "public/One Piece/Luffy Gear 5 Survives a Direct Impact ｜ One Piece.mp4";
-import video2 from "public/My Deer Friend Nokotan _ Opening Movie _ Shikairo Days _ It's Anime - It's Anime (1080p, h264, youtube).mp4";
+import video1 from "/One Piece/Luffy Gear 5 Survives a Direct Impact ｜ One Piece.mp4";
+import video2 from "/My Deer Friend Nokotan _ Opening Movie _ Shikairo Days _ It's Anime - It's Anime (1080p, h264, youtube).mp4";
 
 export const HeroSection = () => {
   return (
