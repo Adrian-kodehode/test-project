@@ -38,7 +38,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="To Love Ru/momo.jpg" type="image/png" />
+        <link
+          rel="icon"
+          href="To Love Ru/toloveruDarkness.png"
+          type="image/png"
+        />
         <Meta />
         <Links />
       </head>
@@ -97,6 +101,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/mikan_relationships" &&
           location.pathname !== "/rito_relationships" &&
           location.pathname !== "/rito_plot" &&
+          location.pathname !== "/saki_plot" &&
+          location.pathname !== "/saki_relationships" &&
+          location.pathname !== "/mea_relationships" &&
+          location.pathname !== "/mea_plot" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         <PlaybackBar />
@@ -169,6 +177,10 @@ export default function App() {
         location.pathname !== "/mikan_relationships" &&
         location.pathname !== "/rito_relationships" &&
         location.pathname !== "/rito_plot" &&
+        location.pathname !== "/saki_plot" &&
+        location.pathname !== "/saki_relationships" &&
+        location.pathname !== "/mea_relationships" &&
+        location.pathname !== "/mea_plot" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );

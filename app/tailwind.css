@@ -5,25 +5,49 @@
 
 html,
 body {
-  @apply bg-spotify-black text-spotify-white min-h-screen;
+  background-color: #000; /* bg-spotify-black */
+  color: #fff; /* text-spotify-white */
+  min-height: 100vh; /* min-h-screen */
 }
 
 .spotify-button {
-  @apply bg-spotify-green hover:bg-spotify-hover text-spotify-white font-bold py-2 px-4 rounded-full;
+  background-color: #1db954; /* bg-spotify-green */
+  color: #fff; /* text-spotify-white */
+  font-weight: bold; /* font-bold */
+  padding-top: 0.5rem; /* py-2 */
+  padding-bottom: 0.5rem;
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem;
+  border-radius: 9999px; /* rounded-full */
+  transition: background-color 0.2s;
+}
+.spotify-button:hover {
+  background-color: #1ed760; /* hover:bg-spotify-hover */
 }
 
 .spotify-sidebar {
-  @apply bg-spotify-black p-6;
+  background-color: #000; /* bg-spotify-black */
+  padding: 1.5rem; /* p-6 */
 }
 
 .spotify-main {
-  @apply bg-gradient-to-b from-spotify-darkgray to-spotify-black;
+  background: linear-gradient(
+    to bottom,
+    #181818,
+    #000
+  ); /* bg-gradient-to-b from-spotify-darkgray to-spotify-black */
 }
 
 .spotify-card {
-  @apply bg-spotify-darkgray hover:bg-opacity-80 transition-all duration-200 rounded-lg p-4;
+  background-color: #181818; /* bg-spotify-darkgray */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1rem; /* p-4 */
+  transition: all 0.2s; /* transition-all duration-200 */
+}
+.spotify-card:hover {
+  opacity: 0.8; /* hover:bg-opacity-80 */
 }
 
 .spotify-text-secondary {
-  @apply text-spotify-lightgray;
+  color: #b3b3b3; /* text-spotify-lightgray */
 }

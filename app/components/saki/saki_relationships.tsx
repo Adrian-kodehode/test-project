@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Plot = () => {
+export const Relationships = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
@@ -125,9 +125,7 @@ export const Plot = () => {
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness2ndanime">
-                            To LOVE-Ru Darkness 2nd
-                          </Link>
+                          To LOVE-Ru Darkness 2nd
                         </li>
                       </ul>
                     </div>
@@ -350,43 +348,36 @@ export const Plot = () => {
 
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className=" text-3xl">Nana Astar Deviluke/Plot</h1>
+          <h1 className=" text-3xl">Kotegawa Yui/Relationships</h1>
           <p className="text-[purple] hover:underline hover:text-black mb-5">
-            <a href="/nana">Nana Astra Deviluke</a>
+            <a href="/saki">Kotegawa Yui</a>
           </p>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a href="/nana" className="text-[purple]">
+              <a href="/saki" className="text-[purple]">
                 Information
               </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
               <a
-                href="/nana_plot"
-                className=" hover:underline hover:text-black"
+                href="/saki_plot"
+                className="text-[purple]  hover:underline hover:text-black"
               >
                 Plot
               </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="/nana_animals"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Animals
-              </a>
-            </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
-              <a
-                href="/nana_relationships"
-                className="text-[purple] hover:underline hover:text-black"
+                href="/saki_relationships"
+                className=" hover:underline hover:text-black"
               >
                 Relationships
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/nana_gallery"
+                href="#"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
@@ -395,106 +386,237 @@ export const Plot = () => {
           </div>
 
           <div className="flex-1 text-black  max-w-2xl">
+            <nav className="w-[300px] mt-5 bg-white text-start border rounded mb-6">
+              <div className="flex items-center justify-between px-3 py-2 border-b">
+                <span className="font-semibold text-gray-700 flex items-center text-sm">
+                  <svg
+                    className="w-4 h-4 mr-1 text-gray-500"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                  Contents
+                </span>
+                <button className="text-xs text-[purple] hover:underline font-semibold">
+                  [hide]
+                </button>
+              </div>
+              <ol className=" list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
+                <li>
+                  <a href="#relationships" className="hover:underline">
+                    1. Relationships with Other Characters
+                  </a>
+                  <ol className=" list-inside pl-4 mt-1 space-y-1">
+                    <li>
+                      <a href="#rin" className="hover:underline">
+                        1.1. Kujō Rin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#aya" className="hover:underline">
+                        1.2. Ayako "Aya" Fujisaki
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ryuga" className="hover:underline">
+                        1.3. Tenjōin Ryūga
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#lala" className="hover:underline">
+                        1.4. Lala Satalin Deviluke
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#zastin" className="hover:underline">
+                        1.5. Zastin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#rito" className="hover:underline">
+                        1.6. Rito Yuuki
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#run" className="hover:underline">
+                        1.7. Run Elise Jewelria
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </nav>
+            <h2 className="text-2xl mb-4 border-b font-bold">
+              Relationships with Other Characters
+            </h2>
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="rito"
+            >
+              <a href="/rito">Kujō Rin</a>
+            </h2>
             <p>
-              <a
-                href="/nana"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Nana
-              </a>{" "}
-              made a debut together with{" "}
-              <a
-                href="/momo"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Momo
-              </a>{" "}
-              in chapter 97 of the{" "}
-              <a
-                href="/to_love-ru_manga"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                To LOVE-Ru manga
-              </a>
-              . They were responsible for the{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Trouble Quest
-              </a>
-              , a virtual video game they built to observe the true character of{" "}
-              <a
-                href="/lala"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Lala
-              </a>
-              's friends and especially her loved{" "}
-              <a
-                href="/rito"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Rito
-              </a>
-              . After recognizing that Lala had good friends, the twins returned
-              to planet{" "}
-              <a
-                href="/deviluke"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Deviluke
-              </a>
-              .
+              Rin is Saki's bodyguard and friend. Her frien has served the
+              Tenjouin family for generations.
             </p>
             <br />
             <p>
-              A few chapters later, in chapter 108, the twins went back to Earth
-              escaping from Deviluke and their study, as Zastin is instructed by
-              Gid to bring the twins back home. They tried to escape, but when
-              Nana and Momo started fighting each other, Zastin, Maul and Smutts
-              were able to catch up to them, and a battle ensued. It was
-              revealed that Nana and Momo also have D-Dials, which summon
-              animals and plants, respectively. Finally, they defeated Zastin
-              and his henchmen, and they convinced their father that they're
-              going to stay on Earth with Lala.
+              Saki considers both Rin and Aya to be her closest friends, to the
+              point that she ran away from home rather than be forced by her
+              father to study aboard without her friends. Rin on the other hand,
+              while caring for and greatly respecting her, is a little more
+              divided between her loyalty to her Saki-sama and obedience to her
+              family, who serve Saki's family. This was seen when Saki ran away
+              from home, and Rin arrived to bring her back by force rather than
+              supporting her. Ultimately, Saki did not leave to study aboard,
+              and they were able to remain together.
             </p>
             <br />
             <p>
-              Throughout the series, Nana unconsciously develops affectionate
-              feelings for Rito. She thinks of him as a shameless pervert, and
-              is widely known for calling him a "beast". After she talked with
-              Haruna in chapter 117 and found about her feeling for Rito, Nana
-              learned he can be kind sometimes and is often grateful when he
-              puts her needs before himself. She begins to have feelings for him
-              when he saved her from falling.
+              Recently, Saki noticed Rin's more bashful expression around Rito
+              Yuuki, which she has never expected from Rin for as long as they
+              have known each other. Claiming that she also understand what love
+              is like, Saki is very supportive of Rin's growing feelings, even
+              if it's towards someone like Rito.
+            </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="aya"
+            >
+              <a href="/aya">Ayako "Aya" Fujisaki</a>
+            </h2>
+            <p>
+              Aya is Saki's close friend. As a child, she was often bullied and
+              Saki protected her. So far, Aya has served little purpose
+              throughout the series besides following and supporting her
+              Saki-sama, whom she idolizes. She has never been seen without
+              accompanying her friends, being something of an extra to their
+              group. But Saki does care greatly for Aya as well as Rin, and
+              wouldn't take the chance to study abroad if it meant leaving her
+              friends.
             </p>
             <br />
             <p>
-              In To LOVE-Ru Darkness (manga), Nana, along with her sister,
-              become Sainan High's students, she makes friends with a girl named
-              Mea and she gets shocked whenever Mea admits something perverted
-              to Rito. Eventually, the friendship between Mea and Nana becomes
-              very strong; however, Mea turns into her semi-weapon form and
-              tells Nana that their friendship was not real! Nana was petrified
-              and traumatized after she saw Mea's true form and personality.
+              {" "}
+              Being weak-willed and nothing truly remarkable, Aya is perhaps one
+              of the few evidences that the usually arrogant Saki Tenjouin has a
+              good and kinder side towards lesser people.
+            </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="ryuga"
+            >
+              <a href="/ryuga">Tenjōin Ryūga</a>
+            </h2>
+            <p>
+              Her father who she loves and respects his every demand until
+              Chapter 131, where she ran away from home when he told her she was
+              going to study overseas thus she would not be able to be with her
+              friends. But after some encouragement from Lala, she confronted
+              and stood up to her father, Ryuuga had respected her wishes and
+              felt proud at how much his daughter has matured. Oddly, like Saki
+              he also has a proverbial laughter.
+            </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="lala"
+            >
+              <a href="/lala">Lala Satalin Deviluke</a>
+            </h2>
+            <p>
+              Saki considers Lala to be her eternal rival, and goes through any
+              means to prove that she is better than her, even though her plans
+              usually backfire and she sometimes ends up naked in the process.
+              Lala remains totally oblivious that Saki holds a competitive
+              grudge against her and considers Saki a good friend of hers.
             </p>
             <br />
             <p>
-              Rito tried to console Nana. When that didn't technically work,
-              Rito embraced Nana. With that hug alone, plus some encouraging
-              words about friendship, Nana finally realized what she had to do.
-              She had to approach Mea and "opened her heart". Obviously, Mea
-              used her semi-weapon abilities to scare off Nana again; however,
-              Nana has shown a huge amount of courage and she faced the
-              heartless semi-weapon. Nana stood there boldly and she confessed
-              her care for Mea. This somehow opened Mea up. Finally, Mea
-              understood what a friend truly was. This part of the story has
-              shown Nana's bold bravery against something quite deadly, and this
-              has shown Nana starts to open up to Rito. In fact, she even tried
-              to sleep in Rito's bed afterwards (although inadvertently halted
-              by the presence of Momo).
+              However Saki was grateful to Lala for helping her at the time she
+              had tried to run away from home.
             </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="zastin"
+            >
+              <a href="/zastin">Zastin</a>
+            </h2>
+            <p>
+              Saki has been in love with Zastin ever since he helped her get her
+              limo out of a small hole on the ground (by lifting it with one
+              arm). She was frustrated when she found out that he is Lala's
+              servant. She tries to get closer to him and gain his affections,
+              but with little success. While Zastin is always formal and polite
+              towards her as he is with everyone else, it is unknown how he
+              feels towards her as he seems slightly oblivious to her feelings,
+              and there is little evidence that he has romantic feelings towards
+              her.
+            </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="rito"
+            >
+              <a href="/rito">Rito Yuuki</a>
+            </h2>
+            <p>
+              At first she tried seducing him to make Lala jealous, but this did
+              not last long. Since then, any and most of her appearances seem to
+              only serve the purpose of being a victim to the perverted mishaps
+              that surround Rito.
+            </p>
+            <br />
+            <p>
+              Due to her feelings for Zastin, she along with two of her close
+              friends (later just Aya) are the only ones in the female cast who
+              have absolutely no romantic feelings towards Rito and she gets mad
+              at him whenever he accidentally does something perverted to any of
+              them. She also thinks that his sister is more reliable than he is.
+              In To Love-Ru Darkness Chapter 31, Momo didn't consider her or Aya
+              for her harem plan.
+            </p>
+            <br />
+            <p>
+              Saki unintentionally showed Rito a warmer side to her when she
+              showed kindness and hospitality to Riko Yuusaki, until Riko's
+              shocking revelation, which only added to Rito's already perverted
+              history around Saki and her friends. Even though she hates him,
+              Rito would still try his best to help her, like when she ran away
+              from home and he allowed her shelter in his home, for which she
+              showed little gratitude toward him.
+            </p>
+            <br />
+            <p>
+              Despite her general dislike of Rito, she nonetheless supports
+              Rin's recent crush towards him, noting that, of all people, Rito
+              is the first to make Rin feel this way.
+            </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="run"
+            >
+              <a href="/run">Run Elise Jewelria</a>
+            </h2>
+            <p>
+              Because Run also held a grudge against Lala, on one occasion, Saki
+              has teamed up with Run to humiliate Lala, but as always it would
+              ultimately fail and backfire. They don't team up anymore due to
+              Run's busy schedule as an idol and has no more intention in doing
+              so.
+            </p>
+            <br />
           </div>
         </div>
       </div>

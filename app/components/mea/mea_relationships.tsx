@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Plot = () => {
+export const Mea_relationships = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -117,7 +119,9 @@ export const Plot = () => {
                           <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          Motto To LOVE-Ru
+                          <Link to="/motto_to_love-ru_anime">
+                            Motto To LOVE-Ru
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_anime">
@@ -153,16 +157,20 @@ export const Plot = () => {
                     <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness: Battle
+                          <Link to="/to_love-ru_darkness_battle_ecstasy_game">
+                            To Love-Ru Darkness Battle Ecstasy
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness: True
+                          <Link to="/to_love-ru_darkness_princess_game">
+                            To LOVE-Ru Darkness: True Princess
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness: Idol
+                          To LOVE-Ru Darkness: Idol Revolution
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness: Gravure
+                          To LOVE-Ru Darkness: Gravure Chances
                         </li>
                       </ul>
                     </div>
@@ -184,8 +192,8 @@ export const Plot = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
-        <div className="w-64 border-r border-gray-200 bg-white text-center fixed left-0 top-0 h-full sidebar transition-transform duration-300">
+      <div className="bg-[#fcc0e9] flex flex-row items-start justify-center min-h-screen">
+        <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
             <div className="flex items-center justify-between">
@@ -347,155 +355,216 @@ export const Plot = () => {
             </div>
           </div>
         </div>
-
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className=" text-3xl">Nana Astar Deviluke/Plot</h1>
-          <p className="text-[purple] hover:underline hover:text-black mb-5">
-            <a href="/nana">Nana Astra Deviluke</a>
-          </p>
+        <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
+          <h1 className="mb-5 text-5xl">Kurosaki Mea/Relationship</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a href="/nana" className="text-[purple]">
+              <a href="/mea" className="text-[purple]">
                 Information
               </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
               <a
-                href="/nana_plot"
-                className=" hover:underline hover:text-black"
+                href="/mea_plot"
+                className="text-[purple]  hover:underline hover:text-black"
               >
                 Plot
               </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="/nana_animals"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Animals
-              </a>
-            </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
-              <a
-                href="/nana_relationships"
-                className="text-[purple] hover:underline hover:text-black"
+                href="/mea_relationships"
+                className="hover:underline hover:text-black"
               >
                 Relationships
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/nana_gallery"
+                href="#"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
               </a>
             </div>
           </div>
-
-          <div className="flex-1 text-black  max-w-2xl">
-            <p>
-              <a
-                href="/nana"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Nana
-              </a>{" "}
-              made a debut together with{" "}
-              <a
-                href="/momo"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Momo
-              </a>{" "}
-              in chapter 97 of the{" "}
-              <a
-                href="/to_love-ru_manga"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                To LOVE-Ru manga
-              </a>
-              . They were responsible for the{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Trouble Quest
-              </a>
-              , a virtual video game they built to observe the true character of{" "}
-              <a
-                href="/lala"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Lala
-              </a>
-              's friends and especially her loved{" "}
-              <a
-                href="/rito"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Rito
-              </a>
-              . After recognizing that Lala had good friends, the twins returned
-              to planet{" "}
-              <a
-                href="/deviluke"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Deviluke
-              </a>
-              .
-            </p>
-            <br />
-            <p>
-              A few chapters later, in chapter 108, the twins went back to Earth
-              escaping from Deviluke and their study, as Zastin is instructed by
-              Gid to bring the twins back home. They tried to escape, but when
-              Nana and Momo started fighting each other, Zastin, Maul and Smutts
-              were able to catch up to them, and a battle ensued. It was
-              revealed that Nana and Momo also have D-Dials, which summon
-              animals and plants, respectively. Finally, they defeated Zastin
-              and his henchmen, and they convinced their father that they're
-              going to stay on Earth with Lala.
-            </p>
-            <br />
-            <p>
-              Throughout the series, Nana unconsciously develops affectionate
-              feelings for Rito. She thinks of him as a shameless pervert, and
-              is widely known for calling him a "beast". After she talked with
-              Haruna in chapter 117 and found about her feeling for Rito, Nana
-              learned he can be kind sometimes and is often grateful when he
-              puts her needs before himself. She begins to have feelings for him
-              when he saved her from falling.
-            </p>
-            <br />
-            <p>
-              In To LOVE-Ru Darkness (manga), Nana, along with her sister,
-              become Sainan High's students, she makes friends with a girl named
-              Mea and she gets shocked whenever Mea admits something perverted
-              to Rito. Eventually, the friendship between Mea and Nana becomes
-              very strong; however, Mea turns into her semi-weapon form and
-              tells Nana that their friendship was not real! Nana was petrified
-              and traumatized after she saw Mea's true form and personality.
-            </p>
-            <br />
-            <p>
-              Rito tried to console Nana. When that didn't technically work,
-              Rito embraced Nana. With that hug alone, plus some encouraging
-              words about friendship, Nana finally realized what she had to do.
-              She had to approach Mea and "opened her heart". Obviously, Mea
-              used her semi-weapon abilities to scare off Nana again; however,
-              Nana has shown a huge amount of courage and she faced the
-              heartless semi-weapon. Nana stood there boldly and she confessed
-              her care for Mea. This somehow opened Mea up. Finally, Mea
-              understood what a friend truly was. This part of the story has
-              shown Nana's bold bravery against something quite deadly, and this
-              has shown Nana starts to open up to Rito. In fact, she even tried
-              to sleep in Rito's bed afterwards (although inadvertently halted
-              by the presence of Momo).
-            </p>
+          <div className="flex items-start gap-6 mb-6"></div>
+          <nav className="w-72 mt-5 bg-white border rounded mb-6">
+            <div className="flex items-center justify-between px-3 py-2 border-b">
+              <span className="font-semibold text-gray-700 flex items-center text-sm">
+                <svg
+                  className="w-4 h-4 mr-1 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+                Contents
+              </span>
+              <button className="text-xs text-[purple] hover:underline font-semibold">
+                [hide]
+              </button>
+            </div>
+            <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
+              <li>
+                <a href="#relationships" className="hover:underline">
+                  Relationships with Other Characters
+                </a>
+                <ol className="list-inside ml-5">
+                  <li>
+                    <a href="#golden-darkness" className="hover:underline">
+                      1.1 Golden Darkness (Yami)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tearju-lunatique" className="hover:underline">
+                      1.2 Tearju Lunatique
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#nemesis" className="hover:underline">
+                      1.3 Nemesis
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#rito-yuuki" className="hover:underline">
+                      1.4 Rito Yuuki
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#nana-astar-deviluke" className="hover:underline">
+                      1.5 Nana Aster Deviluke
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#momo-belia-deviluke" className="hover:underline">
+                      1.6 Momo Belia Deviluke
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#oshizu-murasame" className="hover:underline">
+                      1.7 Oshizu Murasame
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </nav>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4" id="relationships">
+            Relationships with Other Characters
+          </h2>
+          <h2
+            className="text-[purple] hover:underline hover:text-black text-2xl font-bold mb-4"
+            id="golden-darkness"
+          >
+            Golden Darkness (Yami)
+          </h2>
+          <p className="mb-6">
+            Like Yami, Mea is a transformation weapon that was created by
+            Tearju.
+          </p>
+          <div className="flex flex-row items-start gap-6">
+            <div className="flex-1">
+              <p>
+                Though not also created from Tearju's DNA, she is still
+                considered to be their younger sister. Mea came to Earth by
+                orders of her master Nemesis to bring Yami back into space as
+                her cold-hearted assassin old self and wants her to be the
+                ultimate weapon that is unstoppable by anything and anyone, but
+                Yami encouraged her to try and embrace humanity, which she
+                slowly does with the help of Rito, Tearju, Momo and Nana. Yami
+                shows a slight care and understanding towards Mea. She deeply
+                cares for Yami which is shown when she was desperately trying to
+                return Yami from the way she was before becoming "Darkness."
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="To Love Ru/meayami.jpg"
+                alt=""
+                className="w-56 h-auto rounded shadow"
+                style={{ maxWidth: "220px" }}
+                onClick={() => {
+                  setSelectedImage("To Love Ru/meayami.jpg");
+                  setShowImageModal(true);
+                }}
+              />
+              {showImageModal && (
+                <div
+                  className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                  onClick={() => setShowImageModal(false)}
+                >
+                  <img
+                    src={selectedImage || ""}
+                    alt="Selected"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              )}
+              <span className="text-xs text-center mt-2 text-gray-600 italic block max-w-[220px]">
+                The first time Yami admits out loud that Mea is her sister
+              </span>
+            </div>
           </div>
+          <br />
+          <h2
+            className="text-[purple] hover:underline hover:text-black text-2xl font-bold  mb-4"
+            id="tearju-lunatique"
+          >
+            Tearju Lunatique
+          </h2>
+          <p>
+            Tearju is Mea's creator. As stated by Nemesis, Tearju is the
+            "barrier" for Yami to become her cold-hearted old self, which is why
+            Mea wants her out of the way, but Tearju considers her a sister like
+            Yami, which she rejects.
+          </p>
+          <br />
+          <p>
+            Perhaps because she feels able to find a sister and family in an
+            assassin like Yami to ease the loneliness she denies having, she
+            rejects Tearju, whom she cannot accept as her family without
+            betraying her stubborn belief that she is a weapon.
+          </p>
+          <br />
+          <p>
+            As of To Love-Ru Darkness chapter 30, Mea has begun to allow Yami to
+            reunite with Tearju. But she still maintains her reluctance to
+            become closer to Tearju.
+          </p>
+          <br />
+          <h2
+            className="text-[purple] hover:underline hover:text-black text-2xl font-bold  mb-4"
+            id="nemesis"
+          >
+            Nemesis
+          </h2>
+          <p>
+            Nemesis was the first person Mea ever met after waking up. Nemesis
+            guided Mea and teaches her what it means to be a transformation
+            weapon and about who Yami is. Mea looks up to and trusts Nemesis,
+            calling her master and gets mad at anyone who disrespects her in any
+            way. It is Nemesis' teachings and Mea's strict adherence to them
+            that put her directly at odds with the other characters of the
+            series, and the friendships they offer to her.
+          </p>
+          <br />
+          <p>
+            Mea would become uneasy when Nemesis is not there to help her
+            reaffirm her beliefs by reminding her not to be swayed by friends.
+            However, Mea has decided to think more independently and become more
+            open and understanding with her newfound friendships, which her
+            master has decided to permit.
+          </p>
         </div>
       </div>
       {/* Back to Top Button */}

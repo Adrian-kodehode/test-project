@@ -350,35 +350,28 @@ export const Plot = () => {
 
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className=" text-3xl">Nana Astar Deviluke/Plot</h1>
+          <h1 className=" text-3xl">Tenjōin Saki/Plot</h1>
           <p className="text-[purple] hover:underline hover:text-black mb-5">
-            <a href="/nana">Nana Astra Deviluke</a>
+            <a href="/saki">Tenjōin Saki</a>
           </p>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a href="/nana" className="text-[purple]">
+              <a href="/saki" className="text-[purple]">
                 Information
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="/nana_plot"
+                href="/saki_plot"
                 className=" hover:underline hover:text-black"
               >
                 Plot
               </a>
             </div>
+
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/nana_animals"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Animals
-              </a>
-            </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
-              <a
-                href="/nana_relationships"
+                href="/saki_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -386,7 +379,7 @@ export const Plot = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/nana_gallery"
+                href="/#"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
@@ -395,105 +388,16 @@ export const Plot = () => {
           </div>
 
           <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold  pt-5 mb-2 border-b">Anime</h2>
             <p>
-              <a
-                href="/nana"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Nana
-              </a>{" "}
-              made a debut together with{" "}
-              <a
-                href="/momo"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Momo
-              </a>{" "}
-              in chapter 97 of the{" "}
-              <a
-                href="/to_love-ru_manga"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                To LOVE-Ru manga
-              </a>
-              . They were responsible for the{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Trouble Quest
-              </a>
-              , a virtual video game they built to observe the true character of{" "}
-              <a
-                href="/lala"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Lala
-              </a>
-              's friends and especially her loved{" "}
-              <a
-                href="/rito"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Rito
-              </a>
-              . After recognizing that Lala had good friends, the twins returned
-              to planet{" "}
-              <a
-                href="/deviluke"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Deviluke
-              </a>
-              .
-            </p>
-            <br />
-            <p>
-              A few chapters later, in chapter 108, the twins went back to Earth
-              escaping from Deviluke and their study, as Zastin is instructed by
-              Gid to bring the twins back home. They tried to escape, but when
-              Nana and Momo started fighting each other, Zastin, Maul and Smutts
-              were able to catch up to them, and a battle ensued. It was
-              revealed that Nana and Momo also have D-Dials, which summon
-              animals and plants, respectively. Finally, they defeated Zastin
-              and his henchmen, and they convinced their father that they're
-              going to stay on Earth with Lala.
-            </p>
-            <br />
-            <p>
-              Throughout the series, Nana unconsciously develops affectionate
-              feelings for Rito. She thinks of him as a shameless pervert, and
-              is widely known for calling him a "beast". After she talked with
-              Haruna in chapter 117 and found about her feeling for Rito, Nana
-              learned he can be kind sometimes and is often grateful when he
-              puts her needs before himself. She begins to have feelings for him
-              when he saved her from falling.
-            </p>
-            <br />
-            <p>
-              In To LOVE-Ru Darkness (manga), Nana, along with her sister,
-              become Sainan High's students, she makes friends with a girl named
-              Mea and she gets shocked whenever Mea admits something perverted
-              to Rito. Eventually, the friendship between Mea and Nana becomes
-              very strong; however, Mea turns into her semi-weapon form and
-              tells Nana that their friendship was not real! Nana was petrified
-              and traumatized after she saw Mea's true form and personality.
-            </p>
-            <br />
-            <p>
-              Rito tried to console Nana. When that didn't technically work,
-              Rito embraced Nana. With that hug alone, plus some encouraging
-              words about friendship, Nana finally realized what she had to do.
-              She had to approach Mea and "opened her heart". Obviously, Mea
-              used her semi-weapon abilities to scare off Nana again; however,
-              Nana has shown a huge amount of courage and she faced the
-              heartless semi-weapon. Nana stood there boldly and she confessed
-              her care for Mea. This somehow opened Mea up. Finally, Mea
-              understood what a friend truly was. This part of the story has
-              shown Nana's bold bravery against something quite deadly, and this
-              has shown Nana starts to open up to Rito. In fact, she even tried
-              to sleep in Rito's bed afterwards (although inadvertently halted
-              by the presence of Momo).
+              {" "}
+              In the first season, Saki is less related to Rito than manga, and
+              her impression to him is not defined. But when Rito flirts with
+              Lala, he is whipped by Saki. Therefore, she seems to be jealous to
+              Rito. And when Lala is revealed as an alien, she fallaciously
+              considers that "So, I am even defeated by her." She also feels
+              solitary when Lala doesn't stay, and seems less abhorrent to Lala
+              than manga.
             </p>
           </div>
         </div>

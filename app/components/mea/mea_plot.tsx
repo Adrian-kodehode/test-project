@@ -352,33 +352,26 @@ export const Plot = () => {
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
           <h1 className=" text-3xl">Nana Astar Deviluke/Plot</h1>
           <p className="text-[purple] hover:underline hover:text-black mb-5">
-            <a href="/nana">Nana Astra Deviluke</a>
+            <a href="/mea">Nana Astra Deviluke</a>
           </p>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a href="/nana" className="text-[purple]">
+              <a href="/mea" className="text-[purple]">
                 Information
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="/nana_plot"
+                href="/mea_plot"
                 className=" hover:underline hover:text-black"
               >
                 Plot
               </a>
             </div>
+            
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/nana_animals"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Animals
-              </a>
-            </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
-              <a
-                href="/nana_relationships"
+                href="/mea_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -396,105 +389,165 @@ export const Plot = () => {
 
           <div className="flex-1 text-black  max-w-2xl">
             <p>
-              <a
-                href="/nana"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Nana
-              </a>{" "}
-              made a debut together with{" "}
-              <a
-                href="/momo"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Momo
-              </a>{" "}
-              in chapter 97 of the{" "}
-              <a
-                href="/to_love-ru_manga"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                To LOVE-Ru manga
-              </a>
-              . They were responsible for the{" "}
-              <a
-                href="#"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Trouble Quest
-              </a>
-              , a virtual video game they built to observe the true character of{" "}
-              <a
-                href="/lala"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Lala
-              </a>
-              's friends and especially her loved{" "}
-              <a
-                href="/rito"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Rito
-              </a>
-              . After recognizing that Lala had good friends, the twins returned
-              to planet{" "}
-              <a
-                href="/deviluke"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Deviluke
-              </a>
-              .
+              Unlike her sister, Yami, Mea has never known anything in her life
+              other than being a living weapon. Her first memories are of waking
+              up in a destroyed life pod and wandering throughout the rubble of
+              the destroyed research station she was born in and meeting
+              Nemesis, a living weapon from another project. Nemesis raised Mea
+              to be a killer and that people like her have no place with
+              humanity. Mea and Nemesis came to Earth to bring Yami back into
+              space as the cold-hearted assassin again. At the beginning of To
+              Love-Ru Darkness, Mea enrolled in Sainan High to watch over Yami
+              and introduces herself to her as the next generation
+              Transformation weapon, who can be considered Yami's little sister.
+              While at Sainan High, she becomes the first friend of Nana Aster
+              Deviluke, who enrolled with along with Momo and Yami.
+            </p>
+            <br />
+
+            <p>
+              While living on Earth and attending school with Nana, Mea
+              maintains the conviction she learned from her master Nemesis that
+              she is really a heartless living weapon, and believes that her
+              usual cheerfulness and mischief are only a facade. However,
+              maintaining her friendly behavior and being around friends at
+              school slowly make her open herself up more to others. At school,
+              she becomes acquainted with Nana's companions, her sister Momo,
+              and Rito, Yami's supposed target. While investigating Rito, she
+              discovers that Momo plans on adding Yami into a harem she is
+              building for Rito, which goes against her plan to bring Yami back
+              into space as an assassin again. As she continues to observe Yami,
+              she becomes uneasy and confused with Yami's growing relationships
+              with others. Yami soon reveals to Rito and Momo that Mea is her
+              little sister, and she encourages Mea to open up to others.
+            </p>
+            <br />
+
+            <p>
+              Dr. Tearju Lunatique arrives to Earth and begins teaching at their
+              school, still caring for Yami and hoping to reunite with her.
+              Although Tearju is both Yami's and Mea's creator, she has never
+              actually met Mea in person until her arrival at their school.
+              Because Mea is essentially Yami's little sister, Tearju was
+              quickly ready to consider Mea her little sister as well. However,
+              Mea rejects her due to her loyalty to Nemesis and their plan to
+              bring Yami back to their lives as killers.
+            </p>
+            <br />
+
+            <p>
+              Mea becomes very confused by her sister's choice to remain on
+              earth living a peaceful life surrounded by friends, and though she
+              does slowly come around to the idea, she maintains her desire for
+              her sister to join her and become an assassin again. She
+              stubbornly convinces herself that deep down, she is the heartless
+              weapon Nemesis claim they truly are. But when Rito questions her
+              master's teachings, Mea takes control of Rito with her Psycho-dive
+              ability, and forces him to lick her body as punishment. However,
+              she unintentionally shared with him her deeper feelings. When Rito
+              discovers and reveals that deep down she is actually lost,
+              confused and lonely, she angrily denies those feelings and insists
+              that she is a heartless weapon.
             </p>
             <br />
             <p>
-              A few chapters later, in chapter 108, the twins went back to Earth
-              escaping from Deviluke and their study, as Zastin is instructed by
-              Gid to bring the twins back home. They tried to escape, but when
-              Nana and Momo started fighting each other, Zastin, Maul and Smutts
-              were able to catch up to them, and a battle ensued. It was
-              revealed that Nana and Momo also have D-Dials, which summon
-              animals and plants, respectively. Finally, they defeated Zastin
-              and his henchmen, and they convinced their father that they're
-              going to stay on Earth with Lala.
+              Nana eventually witnesses Mea using her transformation powers in a
+              fight and discovers that she is a Transformation Weapon like
+              Golden Darkness, much to her shock. Mea then tells her that their
+              friendship was fake and that they should stop pretending to be
+              friends. She then leaves, leaving Nana heartbroken and seemingly
+              cutting her ties with Nana. But when Nana approaches her again to
+              restore their friendship, Mea was moved by her feelings and
+              realizes that she cares for Nana too, and they have since
+              reconciled and become friends again. Nemesis is aware and aproves
+              of their relationship and permits Mea to think more independently.
+              Mea has since become more open around her friends.
             </p>
             <br />
+
             <p>
-              Throughout the series, Nana unconsciously develops affectionate
-              feelings for Rito. She thinks of him as a shameless pervert, and
-              is widely known for calling him a "beast". After she talked with
-              Haruna in chapter 117 and found about her feeling for Rito, Nana
-              learned he can be kind sometimes and is often grateful when he
-              puts her needs before himself. She begins to have feelings for him
-              when he saved her from falling.
+              Mea initially keeps her identity as a transformation weapon a
+              secret because she wants to hold onto the life and friendships she
+              earned as Mea Kurosaki. However, in Darkness Chapter 37, everyone
+              finds out her true identity when she uses her powers to save the
+              school from a micro black hole. Yami introduces her to everyone as
+              her little sister, and everyone welcomes her, not caring she's a
+              transformation weapon.
             </p>
+
             <br />
             <p>
-              In To LOVE-Ru Darkness (manga), Nana, along with her sister,
-              become Sainan High's students, she makes friends with a girl named
-              Mea and she gets shocked whenever Mea admits something perverted
-              to Rito. Eventually, the friendship between Mea and Nana becomes
-              very strong; however, Mea turns into her semi-weapon form and
-              tells Nana that their friendship was not real! Nana was petrified
-              and traumatized after she saw Mea's true form and personality.
+              In Darkness Chapter 39, just when Yami and Mea felt accepted by
+              everyone and accepted their new peaceful lives, Yami's "Darkness"
+              transformation activates, and Mea transforms and becomes Nemesis.
+              Nemesis explains that Mea is a seperate personality that Nemesis
+              created in order to better adapt being around other people.
+              Because Mea has always appeared to see Nemesis face to face
+              before, she was not aware that she and Nemesis were two minds in
+              the same body, and Mea's personality is currently being supressed
+              by the darkness inside Nemesis.
             </p>
             <br />
+
             <p>
-              Rito tried to console Nana. When that didn't technically work,
-              Rito embraced Nana. With that hug alone, plus some encouraging
-              words about friendship, Nana finally realized what she had to do.
-              She had to approach Mea and "opened her heart". Obviously, Mea
-              used her semi-weapon abilities to scare off Nana again; however,
-              Nana has shown a huge amount of courage and she faced the
-              heartless semi-weapon. Nana stood there boldly and she confessed
-              her care for Mea. This somehow opened Mea up. Finally, Mea
-              understood what a friend truly was. This part of the story has
-              shown Nana's bold bravery against something quite deadly, and this
-              has shown Nana starts to open up to Rito. In fact, she even tried
-              to sleep in Rito's bed afterwards (although inadvertently halted
-              by the presence of Momo).
+              As the newly transformed Yami continues to go after Rito and cause
+              all kinds of perverted chaos, Mea speaks to Nemesis inside her
+              subconscious, insisting that Nemesis lied about Mea being her
+              alternate personality, and demands her body back. Nemesis explains
+              that when they first met, she was in a physically unstable
+              condition and needed a physical vessel to stabilize herself, and
+              so she fused herself into Mea. She plans to leave Mea's body after
+              Darkness kills Rito, and then the three of them will be together.
+              Mea attempts to persuade her from allowing Rito to die, but
+              Nemesis remains unpersuaded.
             </p>
+            <br />
+
+            <p>
+              While Mea cannot manage to regain control of her body by herself,
+              she manages to gain control of a single hair, which she used to
+              call Oshizu via psycho-dive. With Oshizu restraining Nemesis, Mea
+              expresses her respect and gratitude to Nemesis. After she is free
+              from Nemesis, she decides to stop Yami from killing Rito, but she
+              cheerfully calls Nemesis "Neme-chan" before she leaves, much to
+              Nemesis' surprise.
+            </p>
+            <br />
+
+            <p>
+              Mea reunites with Nana and Momo, and deduces that Yami's obsession
+              with Rito and newly perverted tendencies are caused by a bug
+              inside her as a result of Rito's influence on her and her feelings
+              for Rito. And in order to end her rampage and bring her back to
+              normal, Rito must stimulate her by attacking her with all of his
+              perverted powers. After Mea, Nana and Momo join together to create
+              an opening, Rito desperately suppresses his usual character and
+              begins his shameless assault on Yami, groping and molesting her
+              relentlessly until she is overwhelmed with stimulation. Yami
+              finally returns to normal.
+            </p>
+            <br />
+
+            <p>
+              After things soon return to normal, Mea announces to Momo that she
+              will help with the Harem Plan, much to Momo's shock and suspicion.
+              The ever perverted Mea wants to experience the perverted powers
+              that Rito displayed that managed to take down Yami. But also, she
+              believes that Yami and Nana both love Rito, and decides to help
+              them become more true to their feelings.
+            </p>
+            <br />
+
+            <p>
+              After the Darkness event, Mea notices that Yami is more
+              emotionally reactive than usual, especially in regards to Rito,
+              whom she still angrily denies having any feelings for. Mea tells
+              Yami that Rito is tasked to tend to the schoolyard flowers, and
+              suggest that Yami helps him to become better friends with him,
+              which she initially refuses to do, but reluctantly decides to try
+              later.
+            </p>
+            <br />
           </div>
         </div>
       </div>
