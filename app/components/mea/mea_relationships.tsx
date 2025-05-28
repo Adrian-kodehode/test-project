@@ -565,6 +565,146 @@ export const Mea_relationships = () => {
             open and understanding with her newfound friendships, which her
             master has decided to permit.
           </p>
+          <br />
+          <p>
+            In Darkness chapter 40, Nemesis explains that the dark conscience
+            within Mea was really Nemesis herself, and that Mea is actually an
+            alternate personality of Nemesis. She explains that she created Mea
+            as an artificial personality to sneak into Seinan, and that the two
+            share the same body. However, after this revelation, while Nemesis
+            is in control, Mea still retains her personality and awareness, and
+            believes that Nemesis lied about Mea being an alternate personality.{" "}
+          </p>
+          <br />
+          <p>
+            To Mea, Nemesis instead reveals that she was in unstable physical
+            condition and needed to temporarily fuse with Mea to continue to
+            exist. While Mea continues to fight back for control of her own
+            body, she still expresses her respect and gratitude to her master
+            for being with her and teaching her when she was alone. After
+            managing to free herself from Nemesis' control, she still acts
+            cheerful towards her, but has earned a newfound sense of
+            independence from her former master, which she signifies by calling
+            her "Neme-chan", surprising her.
+          </p>
+          <br />
+          <h2
+            className="text-[purple] hover:underline hover:text-black text-2xl font-bold  mb-4"
+            id="rito-yuuki"
+          >
+            Rito Yuuki
+          </h2>
+          <p>
+            Mea is interested in Rito especially when Nana told her that he is a
+            beast. Mea has a desire for Rito to lick her body and at times
+            teases him by asking him to do it to her despite being in front of
+            people. While their thoughts and feelings are synchronized, Rito
+            notices a feeling inside her, saying it's "like a lost child all on
+            your own", which she angrily denies.
+          </p>
+          <br />
+          <p>
+            On some level Mea cares for Rito, viewing him as something more than
+            a casual acquaintance and showing a great interest in his life. She
+            continues to toy with his shyness and tries to do lewd things with
+            him. It's unknown if it's love or lust, or even if it's for her
+            enjoyment, to attempt to please him, or both. Rito truly cares for
+            Mea and tries to make her embrace humanity, which she slowly begins
+            to accept and appreciate from him. After having spoken to Rito, Mea
+            allows Yami to reunite with Tearju, and even assists Rito in
+            convincing her to attend school again, grudgingly accepting Rito's
+            advice about filling the gap between them.
+          </p>
+          <br />
+          <p>
+            She once mentioned to her master Nemesis that Rito is a fool for
+            easily trusting, she also thinks of him weak, although Mea is
+            curious to see how far a weak earthling would go in helping others
+            against more frightening foes.
+          </p>
+          <br />
+          <p>
+            After Rito saves Yami from her inner "darkness", Mea acknowledges
+            her newfound feelings for Rito and declares her intention to assist
+            in Momo's Harem Plan, albeit in her own way.
+          </p>
+          <br />
+          <h2
+            className="text-[purple] hover:underline hover:text-black text-2xl font-bold  mb-4"
+            id="nana-astar-deviluke"
+          >
+            Nana Astar Deviluke
+          </h2>
+          <p>
+            Nana is the first friend Mea made when she came to Earth. They seem
+            like best friends. Nana introduced Mea to some of her animal
+            friends, and Mea even tried to save Nana from an oncoming truck.
+          </p>
+          <br />
+          <p>
+            Once Nana saw Mea in her semi-weapon form, realizing she's just like
+            Yami, Mea states that their friendship was all a lie. Nana felt
+            saddened and heartbroken by this. Rito encouraged Nana to fearlessly
+            embrace Mea to prove to her that it wasn't a lie. In the end, Mea
+            accepted it, and they became friends again.
+          </p>
+          <br />
+          <h2
+            className="text-[purple] hover:underline hover:text-black text-2xl font-bold  mb-4"
+            id="momo-belia-deviluke"
+          >
+            Momo Belia Deviluke
+          </h2>
+          <p>
+            Mea gets on Momo's nerves when she interferes with her plan to make
+            Rito's harem, even when talking about it around others. But other
+            than that, they get on good terms, and hang out together with Nana
+            on some occasions. They are also similarly perverted whenever Rito
+            is involved, like how when Momo tries to bring Run closer to Rito
+            they both get excited and imagine an ecchi moment is going to happen
+            to them, and they both even enjoy licking on Rito's female body.
+          </p>
+          <br />
+          <h2
+            className="text-[purple] hover:underline hover:text-black text-2xl font-bold  mb-4"
+            id="oshizu-murasame"
+          >
+            Oshizu Murasame
+          </h2>
+          <p>
+            Oshizu was one of the girls who knows about Mea's true self. While
+            wanting to get more information on Mea and her Master, she took
+            possesion on her to find anything important. As Oshizu dived deeper
+            inside Mea's mind, she discovered a deep darkness that almost
+            consumed her making her to unable to trust Mea.
+          </p>
+          <br />
+          <p>
+            After seeing Mea convincing Yami to open up with Tearju, Oshizu
+            starts seeing a kind side of Mea and considers to become friends
+            with her. She starts following her and ends up getting teased by
+            Mea. Irritated, she said that she hates her but Mea replies that she
+            does not hate her, as Oshizu was easy to be teased and how she feels
+            comfortable to be her real self in front of Oshizu.
+          </p>
+          <br />
+          <p>
+            Oshizu asked her why she hides her identity even when she was
+            comfrotable with it. Mea tells Oshizu that acting as an earthling is
+            no use no more but at the same time, she does not want to discard
+            her identity as Kurosaki Mea. She has shown some care for Oshizu as
+            she helped her destroy a black hole before her spirit has completely
+            disappeared with the latter revealing her true identity in Darkness
+            Chapter 37. They have become closer friends, but Mea likes taking
+            adventage of her power and fear of dogs which causes something ecchi
+            to happen.
+          </p>
+          <br />
+          <p>
+            Mea now considers Oshizu as a friend whom she can depend on. When
+            she was being controlled by Nemesis, Mea called to Oshizu for help,
+            and together, they successfully freed Mea from Nemesis' control.
+          </p>
         </div>
       </div>
       {/* Back to Top Button */}

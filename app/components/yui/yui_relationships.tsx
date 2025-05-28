@@ -456,7 +456,8 @@ export const Relationships = () => {
               caused everyone to freely speak their minds.
             </p>
             <br />
-            <div>
+            <div className="flex flex-row items-start gap-4">
+              <div className="flex-1">
               <p>
                 In To Love Ru: Darkness, while Momo is trying to further her
                 Harem Plan, she manipulated Yui and Rito into being alone
@@ -464,17 +465,27 @@ export const Relationships = () => {
                 During a black out, Rito falls onto Yui. While Rito is on top of
                 her on his bed, Yui puts her arms around him and explains how
                 she has learned to accept that it is normal for boys to be
-                shameless, and that they are not all bad. She then offers
+                shameless, and that they are not all bad. 
+              </p>
+              </div>
+              <div className="flex flex-col items-center">
+              <img
+                src="https://static.wikia.nocookie.net/to-loveru/images/a/a4/Yui_Rito_TLRD_EP1_01.png"
+                alt=""
+                className="max-w-[200px] rounded"
+              />
+              <span className="text-xs text-gray-600 mt-1">Rito falling to Yui</span>
+              </div>
+            </div>
+            <p>She then offers
                 herself to him if he agrees to do shameless things only to her
                 (chapter 4). Rito breaks away and explains to her that although
                 he is interested, he does not do shameless things intentionally.
                 Yui loves Rito even more as she sees his innocent nature and how
                 he is different from what she perceived all boys to be. She
                 surprised herself with what she was doing and how far she went,
-                and is grateful to Rito for not seducing her.
-              </p>
-              <br />
-            </div>
+                and is grateful to Rito for not seducing her.</p>
+            <br />
             <p>
               After a little longer she comes to realize that she loves him.
               Although she still has got to put up with a lot of his clumsiness,

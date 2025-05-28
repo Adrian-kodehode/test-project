@@ -16,6 +16,7 @@ import List from "./components/List";
 import NewHeader from "./components/NewHeader";
 import Footer from "./components/Footer";
 import PlaybackBar from "./components/PlaybackBar";
+import CustomCursor from "./components/CustomCursor";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -119,7 +120,8 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <div>
+    <div className="cursor-none">
+      <CustomCursor gifSrc="guraDance-4x.gif" size={48} />
       <Outlet />
       {location.pathname !== "/music" &&
         location.pathname !== "/home" &&
