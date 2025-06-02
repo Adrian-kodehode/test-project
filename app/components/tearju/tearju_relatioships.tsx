@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Rin = () => {
+export const Tearju_relationships = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -104,7 +119,9 @@ export const Rin = () => {
                           <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          Motto To LOVE-Ru
+                          <Link to="/motto_to_love-ru_anime">
+                            Motto To LOVE-Ru
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_anime">
@@ -112,7 +129,9 @@ export const Rin = () => {
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness 2nd
+                          <Link to="/to_love-ru_darkness2ndanime">
+                            To LOVE-Ru Darkness 2nd
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -138,16 +157,20 @@ export const Rin = () => {
                     <div className="absolute left-full top-0 min-w-[240px] bg-white text-black shadow-lg rounded z-30 opacity-0 group-hover/games:opacity-100 group-hover/games:pointer-events-auto pointer-events-none transition-opacity duration-200">
                       <ul>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness: Battle
+                          <Link to="/to_love-ru_darkness_battle_ecstasy_game">
+                            To Love-Ru Darkness Battle Ecstasy
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness: True
+                          <Link to="/to_love-ru_darkness_princess_game">
+                            To LOVE-Ru Darkness: True Princess
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness: Idol
+                          To LOVE-Ru Darkness: Idol Revolution
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness: Gravure
+                          To LOVE-Ru Darkness: Gravure Chances
                         </li>
                       </ul>
                     </div>
@@ -169,7 +192,7 @@ export const Rin = () => {
           </ul>
         </div>
       </nav>
-      <div className="bg-white flex flex-row items-start justify-center min-h-screen">
+      <div className="bg-[#fcc0e9] flex flex-row items-start justify-center min-h-screen">
         <div className="w-64 border-r border-gray-200 bg-white fixed left-0 top-0 h-full sidebar transition-transform duration-300">
           {/* Wiki Title */}
           <div className="px-4 py-3 bg-gray-100 border-b border-gray-200">
@@ -333,47 +356,41 @@ export const Rin = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className="mb-5 text-3xl">Kujō Rin</h1>
+        <div className="flex-1 text-black bg-white pl-8 pr-8 pt-8 max-w-4xl">
+          <h1 className="mb-5 text-5xl">Tearju Lunatique/Relationship</h1>
           <div className="flex flex-row mb-3 text-black">
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
-              Information
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
+              <a href="/tearju" className="text-[purple]">
+                Information
+              </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
               <a
-                href="rin_plot"
-                className="text-[purple] hover:underline hover:text-black"
+                href="/tearju_plot"
+                className="text-[purple]  hover:underline hover:text-black"
               >
-                {" "}
                 Plot
               </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="rin_relationships"
-                className="text-[purple] hover:underline hover:text-black"
+                href="/tearju_relationships"
+                className="hover:underline hover:text-black"
               >
                 Relationships
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/tearju_gallery"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
               </a>
             </div>
           </div>
-          <p>
-            <strong>Kujō Rin</strong> is Tenjōin Saki's loyal and longest known
-            friend. Rin is skilled in kendo and has been a loyal bodyguard to
-            Saki for years, as her family has always served the Tenjouin family
-            in this position. The bespectacled Fujisaki Aya is weak-willed and
-            became associated with Saki after she and Rin protected her from
-            bullies when they were children.
-          </p>
-          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
+          <div className="flex items-start gap-6 mb-6"></div>
+          <nav className="w-60 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
                 <svg
@@ -397,356 +414,223 @@ export const Rin = () => {
             </div>
             <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
               <li>
-                <a href="#appearance" className="hover:underline">
-                  {" "}
-                  Appearance
-                </a>
+                <a href="#yami">Golden Darkness (Yami)</a>
               </li>
               <li>
-                <a href="#personality" className="hover:underline">
-                  Personality
-                </a>
+                <a href="#rito">Rito Yuuki</a>
               </li>
               <li>
-                <a href="#history" className="hover:underline">
-                  History
-                </a>
+                <a href="#mea">Mea Kurosaki</a>
               </li>
               <li>
-                <a href="#power" className="hover:underline">
-                  Power and Abilities
-                </a>
+                <a href="#ryoko">Ryoko Mikado</a>
               </li>
               <li>
-                <a href="#appellations" className="hover:underline">
-                  Appellations
-                </a>
-              </li>
-              <li>
-                <a href="#etymology" className="hover:underline">
-                  Etymology
-                </a>
-              </li>
-              <li>
-                <a href="#trivia" className="hover:underline">
-                  Trivia
-                </a>
+                <a href="#nemesis">Nemesis</a>
               </li>
             </ol>
           </nav>
-          <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
-            Appearance
-          </h2>
-          <p>
-            Rin has brown hair that she ties in a ponytail by a blue scrunchie
-            with bangs hanging on either side while she has chest-length hair
-            strands hanging on either side, brown eyes and she is often seen
-            with an emotionless face. Her 3-sizes are B86-W60-H86.
+          <br />
+
+          <h3>
+            <a
+              href="/yami"
+              className="text-[purple] text-2xl mb-3 mt-3 font-bold hover:underline hover:text-black"
+            >
+              Golden Darkness (Yami)
+            </a>
+          </h3>
+          <p className="mt-3">
+            Tearju is Yami's creator and DNA origin, who named her Eve. Befor
+            Yami's life as an assassin, Tearju treated her like a little sister
+            who was always happy and child-like. She would always look up to
+            Tearju, even now calling her on of the smartest beings there is and
+            even eating badly mad food she cooked. Tearju planned on escaping
+            the organization with Yami, but was unable to, thus forcing her to
+            leave Yami behind with the people who forced her to become a weapon.
           </p>
           <br />
           <p>
-            On times, Rin is also shown to wear an outfit that constants of a
-            dark blue colored short-sleeve shirt that is underneath a flap dark
-            purple colored shirt with white/tan colored pants.
+            During their first encounter after being separated for a long time.
+            Yami stats that she doesn't blame her for leaving her behind and
+            says that she's glad the Tearju is okay. Currently, Tearju hopes to
+            become closer to Yami like before but Yami usally avoids Tearju
+            unless meeting each other is neesded.
           </p>
           <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="personality">
-            Personality
-          </h2>
           <p>
-            Rin is generally expressionless and formal, but she can get really
-            angry when it comes to Yūki Rito's clumsiness towards her, Fujisaki
-            Aya, and most of all, Tenjōin Saki, who she is very loyal to.
-            Although she has shown to smile practically once to Rito as a sign
-            of understanding, it didn't last long due to another one of his
-            mishaps. She thinks his sister is more reliable than he is. However,
-            Rin began developing feelings with Rito in Darkness Chapter 33 when
-            he saved her, and became more patient and grateful with him.{" "}
+            Since Tearju's arrival, Yami refused to attend classes and wear her
+            school uniform, which Tearju deeply wanted to see. In To-Love-Ru
+            Darkness Chapter 30, Tearju becomes the homeroom teacher for Nana,
+            Momo, Mea and Yami's class. Yami reveals that she still cares about
+            Tearju, but is too afraid to face her after having become assassin,
+            but with some persuasion from Rito and, surprisingly, Mea, Yami
+            returns to school and attends class with her uniform, which made
+            Tearju very happy.
           </p>
           <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="history">
-            History
-          </h2>
           <p>
-            Rin has served Tenjōin Saki as her bodyguard, but Saki has always
-            thought of her as a close friend instead. They first met when Rin
-            came to Saki in the garden introducing herself as the daughter of
-            the Tenjouin family's butler and then tells her that she will be
-            serving her starting from that day. Saki acted friendly towards Rin
-            and welcomed her company as her friend, and Rin was deeply touched
-            by it. Although most of the time, Rin maintained a professional
-            manner and service around Saki, she truly considers Saki as a close
-            friend.
+            Yami is also protective of Tearju, especially against Rito's bad
+            habits.
           </p>
           <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="power">
-            Power and Abilities
-          </h2>
-          <p>
-            <strong>Swordsmanship</strong>: Rin is known to practice Kendo, and
-            is often seen carrying a shinai. The only times she is seen using
-            Kendo are either when training or when she's mad at Yūki Rito
-            whenever his clumsiness results in him groping her, Tenjōin Saki or
-            Fujisaki Aya. She has also beaten up the principal time from time.
-            Because she does not involve herself with Rito, his alien friends or
-            their adventures and antics, she is mostly left out of any
-            potentially dangerous situation, and so the full extent of her
-            expertise in Kendo has not yet been seen.
+          <h3>
+            <a
+              href="/rito"
+              className="text-[purple] text-2xl mb-3 mt-3 font-bold hover:underline hover:text-black"
+            >
+              Rito Yuuki
+            </a>
+          </h3>
+          <p className="mt-3">
+            Tearju became Rito's temporary homeroom teacher in To Love-Ru
+            Darkness (after Honekawa-Sensei became absent with terrible back
+            pain). She sees Rito as a close friend of Yami's, and has even shown
+            signs of supporting Yami's hidden feelings towards him. When Rito
+            greatly helped reconnect her relationship with Yami, he gained her
+            eternal gratitude and trust. She understands that he is a very kind
+            person, and even pointed out that it was like him to notice that
+            something is troubling someone.
           </p>
+          <br />
           <p>
-            <strong>Marksmanship</strong>: On chapter 83, Rin has shown to also
-            have some sharpshooting skills.
+            Tearju became Rito's temporary homeroom teacher in To Love-Ru
+            Darkness (after Honekawa-Sensei became absent with terrible back
+            pain). She sees Rito as a close friend of Yami's, and has even shown
+            signs of supporting Yami's hidden feelings towards him. When Rito
+            greatly helped reconnect her relationship with Yami, he gained her
+            eternal gratitude and trust. She understands that he is a very kind
+            person, and even pointed out that it was like him to notice that
+            something is troubling someone.
           </p>
-        </div>
-        {/* Right: Info card sidebar */}
-        <div className="w-[350px] p-5 font-sans sticky top-8 mr-8">
-          <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center w-full">
-              <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
-                Kujō Rin
-              </h1>
+          <br />
+          <div className="flex items-start gap-4">
+            <div className="flex-1">
+              <p>
+                Their relationship is however often complicated by fact that
+                they share similar trait of clumsiness and bad luck. Due to him
+                being a problem causer and her being a problem attractor, it
+                creates a weird kind of unspoken compatibility between them,
+                that increases the probability and degree of perverted accidents
+                that happen to them. Where even simply walking around each other
+                often results in Rito nearly or completely violating Tearju by
+                some kind of accident. Luckily for Rito, Tearju shows a great
+                deal of understanding and never gets mad at him for anything
+                that happens between them.
+              </p>
             </div>
-            <div className="flex justify-center  w-full">
+            <div className="flex flex-col items-center">
               <img
-                src="/To Love Ru/rin.jpg"
-                alt="Kujō Rin"
-                className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
+                src="https://static.wikia.nocookie.net/to-loveru/images/1/10/TLRD_CH14_Cover.png"
+                alt=""
+                className="w-48 rounded shadow"
               />
             </div>
-            <div className="w-full overflow-x-auto">
-              <table className="min-w-full border-separate border-spacing-0">
-                <tbody>
-                  {/* Characteristics */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      Characteristics
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 w-1/3 border border-[#9C2E7A] ">
-                      Kanji
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      九条 凛
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Name
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Kujō Rin
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Planet
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Earth
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Age
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      16 (second year) <br />
-                      17 (third year)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Birthday
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      October 25
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Zodiac Sign
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Scorpio
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Gender
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Female
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Height
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      167.5cm
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Weight
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      54kg
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Blood Type
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      A
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Hair Color
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Dark Brown
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Eye Color
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Brown
-                    </td>
-                  </tr>
-                  {/* Personal Status */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      Personal Status
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      School
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Sainan High
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Class
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      2-D (chapters 1-48) <br />
-                      3-D (chapters 49-present)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Education
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Currently attending High School
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Occupation
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      High school student <br />
-                      Tenjōin Saki's personal bodyguard <br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Relatives
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Tenjōin Saki (in service to) <br />
-                      Kai Kujou (father)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Martial Status
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Single
-                    </td>
-                  </tr>
-
-                  {/* First Appearance */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      First Appearance
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Manga Debut
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Chapter 25
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Anime Debut
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Episode 5
-                    </td>
-                  </tr>
-                  {/* Voice Actors */}
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      Voice Actors
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Japanese VA
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Mai Hashimoto
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      English VA
-                    </td>
-                    <td className="bg-white text-black p-2 border border-[#DB49AC] ">
-                      Chaney Moore
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      colSpan={2}
-                      className="bg-[#DB49AC] w-full text-center text-white font-bold p-2"
-                    >
-                      Gallery
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </div>
+          <p>
+            Their compatibility was later even used by Mikado, when she tried to
+            investigate Rito's clumsiness scientifically in search of a cure
+            (however it was also hinted that she partially did it for her own
+            amusement).
+          </p>
+          <br />
+          <h3>
+            <a
+              href="/mea"
+              className="text-[purple] text-2xl mb-3 mt-3 font-bold hover:underline hover:text-black"
+            >
+              Mea Kurosaki
+            </a>
+          </h3>
+          <p className="mt-3">
+            Mea is another transformation weapon created by Tearju, but not
+            created from her DNA as Yami is. Because, due to unrevealed reasons,
+            Tearju was not there when Mea awakened, and Mea was all alone until
+            meeting Nemesis, Tearju and Mea had no close relationship to start
+            with.
+          </p>
+          <br />
+          <p>
+            Mea sees Tearju as a "barrier" for her mission to return Yami to
+            being the cold assassin she once was and wants her out of the way
+            for that. However, since Mea is sort of Yami's sister, Tearju
+            considers Mea to be a sister to her as well, and hopes that Mea
+            follows Yami's example by embracing her emotions and bonds, to which
+            Mea rebuffs under her conviction that she is a weapon.
+          </p>
+          <br />
+          <p>
+            After Mea has reconciled with Nana and become more open to
+            relationships, Mea is still uninterested in having any relationship
+            with Tearju. In chapter 30, Mea still doesn't care about the idea of
+            Tearju and Yami reuniting, but after thinking about what Rito said
+            about how she and Yami are like little sisters to Tearju and how
+            family is important, she surprisingly helps him persuade Yami to
+            come to school as a student again and become closer to Tearju. But
+            Mea still maintains her reluctance to also become close to Tearju
+            herself.
+          </p>
+          <br />
+          <h3>
+            <a
+              href="/ryoko"
+              className="text-[purple] text-2xl mb-3 mt-3 font-bold hover:underline hover:text-black"
+            >
+              Ryoko Mikado
+            </a>
+          </h3>
+          <p className="mt-3">
+            Tearju and Mikado have been best friends since they were in school
+            together. They went their separate ways some time before Tearju was
+            recruited into the suspicious organization where she would
+            eventually create Eve (Yami) and Mea.
+          </p>
+          <br />
+          <p>
+            In To Love-Ru Darkness, Mikado eventually reunited with Tearju to
+            tell her how Eve is doing on Earth. It was because of Mikado that
+            Tearju came to Earth and became Rito's substitute teacher and the
+            new homeroom teacher for Nana, Momo, Mea, and Yami's class.
+          </p>
+          <br />
+          <h3 className="text-[purple] text-2xl mb-3 mt-3 font-bold hover:underline hover:text-black">
+            <a
+              href="/nemesis"
+              className="text-[purple] text-2xl mb-3 mt-3 font-bold hover:underline hover:text-black"
+            >
+              Nemesis
+            </a>
+          </h3>
+          <p>
+            Tearju seems to know a few things about Nemesis and the organization
+            that created her but doesn't seem to know her in person. But Nemesis
+            knows her quite well and said that Tearju is the "barrier" to Yami
+            from returning to a cold heartless assassin.
+          </p>
         </div>
       </div>
+      {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none ${
+          showTopBtn ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        aria-label="Back to top"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
     </div>
   );
 };

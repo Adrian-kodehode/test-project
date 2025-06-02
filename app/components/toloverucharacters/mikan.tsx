@@ -354,7 +354,7 @@ export const Mikan = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="mikan_plot"
+                href="#"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Plot

@@ -611,6 +611,205 @@ export const Kyouko = () => {
               flames in her hands or blowing it out of her mouth.
             </p>
           </div>
+          <h2
+            className="text-2xl font-bold border-b mb-4 mt-8"
+            id="relationship"
+          >
+            Relationship with Other Characters
+          </h2>
+          <h3
+            className="text-xl font-semibold mt-4 mb-2 text-[purple] hover:underline hover:text-black"
+            id="run"
+          >
+            Run Elsie Jewelria
+          </h3>
+          <p>
+            Run first met Kyouko when she starred as a villan in her show. At
+            first, Run didn't take too kindly to Kyouko but after getting to
+            know her better, Run sees that Kyouko is a really kind person who
+            listens to Run's music and even reads her blog (and finding out that
+            Kyouko is human/alien hybrid), and they become good friends. Kyouko
+            knows about Run's feelings towards{" "}
+            <a
+              href="/rito"
+              className="text-[purple] underline hover:text-black"
+            >
+              {" "}
+              Yūki Rito
+            </a>{" "}
+            and wishes the best of luck in getting him.
+          </p>
+          <br />
+          <p>
+            In To LOVE-Ru Darkness, she visits{" "}
+            <a
+              href="/sainan_high"
+              className="text-[purple] underline hover:text-black"
+            >
+              Sainan High
+            </a>{" "}
+            and ask Rito to be her tour guide, which is part of her plan to find
+            out what she can about him for Run, but than starts developing
+            feelings for Rito herself. While she continues to talk with Rito in
+            her spare time to learn more about Run's chances for a relationship
+            with him, she has yet to tell Run about her own growing infatuation
+            with him.
+          </p>
+          <br />
+          <h3
+            className="text-xl font-semibold mt-4 mb-2 text-[purple] hover:underline hover:text-black"
+            id="ren"
+          >
+            Ren Elsie Jewelria
+          </h3>
+          <p>
+            Ren doesn't seem to be as close to Kyouko as{" "}
+            <a href="/run" className="text-[purple] underline hover:text-black">
+              Run Elsie Jewelria
+            </a>{" "}
+            is, but she is aware of their ability to swap mindes and gender
+            through a sneeze. Kyouko has helped them from changing when she and
+            Run are preforming together, but this is no longer the necessary as
+            the two have separate bodies now.
+          </p>
+          <br />
+          <h3
+            className="text-xl font-semibold mt-4 mb-2 text-[purple] hover:underline hover:text-black"
+            id="rito"
+          >
+            Yūki Rito
+          </h3>
+          <p>
+            They first met when{" "}
+            <a href="/run" className="text-[purple] underline hover:text-black">
+              Run Elsie Jewelria
+            </a>{" "}
+            asked Rito to meet her and pretend to be her boyfriend. Kyouko told
+            Run that she relized about half way through that it was all pretend.
+            Kyouko likes Rito's innocence, as when he saw her naked after a
+            mishap, she finds him cute hen he blushed. During her visit at{" "}
+            <a
+              href="/sainan_high"
+              className="text-[purple] underline hover:text-black"
+            >
+              Sainan High
+            </a>
+            , to find out what she can learn about Rito for Run, she starts to
+            develop feelings for him after he saved her from a swarm of
+            rampaging fans and carried her in his arms. Although she is
+            reluctant to acknowledge it, it appears that having been carried in
+            Rito's arms was where she started to have a crush on him. Her
+            feelings for him grow even more in Darkness chapter 58, when she
+            hangs out with him to ask about his feelings for{" "}
+            <a
+              href="/lala"
+              className="text-[purple] underline hover:text-black"
+            >
+              Lala Satalin Deviluke
+            </a>
+            , only to be carried in his arms again after another mishap. When
+            talking about Rito with Run, Kyouko inadvertently mentioned that she
+            was jealous that Run went to the same school as him and got to see
+            him much more regularly than her.
+          </p>
+          <br />
+          <h3
+            className="text-xl font-semibold mt-4 mb-2 text-[purple] hover:underline hover:text-black"
+            id="lala"
+          >
+            Lala Satalin Deviluke
+          </h3>
+          <p>
+            Lala is a devoted fan of hers and would always watch her show,
+            occasionally with others like her sisters,{" "}
+            <a
+              href="/mikan"
+              className="text-[purple] underline hover:text-black"
+            >
+              Yūki Mikan
+            </a>
+            ,{" "}
+            <a href="#" className="text-[purple] underline hover:text-black">
+              Celine
+            </a>
+            and even{" "}
+            <a
+              href="/rito"
+              className="text-[purple] underline hover:text-black"
+            >
+              {" "}
+              Yūki Rito
+            </a>
+            . They first met when she helped repair her clothes due to{" "}
+            <a href="/run" className="text-[purple] underline hover:text-black">
+              Run Elsie Jewelria
+            </a>
+            's grenade that dissolved them. She also helped her escape the swarm
+            of fans that were after her with an invention that teleported her
+            and Rito inside a locker (leaving most of their clothes behind).
+          </p>
+          <br />
+          <h2 className="text-2xl font-bold border-b mb-4 mt-8" id="etymology">
+            Etymology
+          </h2>
+          <li>
+            Kirisaki means "fog, mist, haze" (霧) (kiri) and "cape, peninsula"
+            (崎) (saki).
+          </li>{" "}
+          <li>
+            Kyōko means "respectful, polite" (恭) (kyō) and "child" (子) (ko),
+            which implies her kind and friendly personality towards others.
+          </li>
+          <h2 className="text-2xl font-bold border-b mb-4 mt-8" id="trivia">
+            Trivia
+          </h2>
+          <li>
+            Kyouko' character is adapted from "Kyōko Kirisaki" of Black Cat,
+            another series by artist Yabuki Kentarō. Both characters have the
+            same name, similar appearance, and the same fire-like ability.
+            However, their personalities are different.
+          </li>
+          <li>
+            In Episode 20 of the To Love-Ru first anime, the whole episode is
+            based on her show. This episode is based on first omake of manga,
+            though it was stretched into a full episode.
+          </li>
+          <div className="flex flex-row gap-4 items-start">
+            <div className="flex-1">
+              <li>
+                Kyouko has a black cat as a pet, likely a reference to the
+                manga/anime of the same name.
+              </li>
+              <li>
+                Kyouko appeared as her role in Magical Kyouko TV series in Mayoi
+                Neko Overrun! Chapter 1.
+              </li>
+              <li>
+                Kyouko’s english voice actress Monica Rial, also voice Haruna
+                Sairenji in To Love Ru Darkness 2nd.
+              </li>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="https://static.wikia.nocookie.net/to-loveru/images/0/0e/Mayoi-neko-overrun-1111568.jpg"
+                alt=""
+                className="max-w-[180px] rounded"
+              />
+              <span className="text-xs text-gray-600 mt-2 text-center">
+                Magical Kyōko on Mayoi Neko Overrun.
+              </span>
+            </div>
+          </div>
+          <li>
+            Kyouko is the only character from To Love Ru and Black Cat to have
+            the exact same voice actresses reprise their roles for both the
+            Japanese Sub and English Dub.
+          </li>
+          <li>
+            Kyouko’s English voice actress Monica Rial has a real life sister
+            Natalie Rial who voiced Momo Belia Deviluke.
+          </li>
+          <br />
         </div>
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans  top-8 mr-8">

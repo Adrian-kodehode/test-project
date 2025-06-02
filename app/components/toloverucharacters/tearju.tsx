@@ -112,7 +112,9 @@ export const Tearju = () => {
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness 2nd
+                          <Link to="/to_love-ru_darkness2ndanime">
+                            To LOVE-Ru Darkness 2nd
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -341,7 +343,7 @@ export const Tearju = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/tearju_plot"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 {" "}
@@ -350,7 +352,7 @@ export const Tearju = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href=""
+                href="/tearju_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
