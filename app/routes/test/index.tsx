@@ -261,9 +261,9 @@ export default function ToLoveRuWiki() {
                     route: "/tearju",
                   },
                   {
-                    name: "Lala Satalin Deviluke",
-                    image: "To Love Ru/lala.jpg",
-                    route: "/lala",
+                    name: "Murasame Shizu",
+                    image: "To Love Ru/Shizu_Murasame_TLRD_Manga.png",
+                    route: "/oshizu",
                   },
                   {
                     name: "Sairenji Haruna",

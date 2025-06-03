@@ -716,7 +716,7 @@ export const Nana_relationships = () => {
                 in front of others and constantly being on the lookout for her
                 well-being.
               </p>
-                <br />
+              <br />
             </div>
             <div className="flex flex-col items-center min-w-[120px]">
               <img
@@ -729,6 +729,16 @@ export const Nana_relationships = () => {
               </span>
             </div>
           </div>
+          <h3>
+            <a
+              href="#"
+              className="text-[purple] mb-3 mt-3 font-bold hover:underline hover:text-black"
+            >
+              Celine
+            </a>
+          </h3>
+          <p>Nana is shown to get along well with Celine.</p>
+          <br />
         </div>
       </div>
       {/* Back to Top Button */}

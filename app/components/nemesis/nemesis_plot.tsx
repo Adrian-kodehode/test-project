@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Relationships = () => {
+export const Plot = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
@@ -348,36 +348,36 @@ export const Relationships = () => {
 
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className=" text-3xl">Kotegawa Yui/Relationships</h1>
+          <h1 className=" text-3xl">Nemesis/Plot</h1>
           <p className="text-[purple] hover:underline hover:text-black mb-5">
-            <a href="/yui">Kotegawa Yui</a>
+            <a href="/lala">Nemesis</a>
           </p>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a href="/yui" className="text-[purple]">
+              <a href="/nemesis" className="text-[purple]">
                 Information
               </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="/yui_plot"
-                className="text-[purple]  hover:underline hover:text-black"
+                href="/nemesis_plot"
+                className=" hover:underline hover:text-black"
               >
                 Plot
               </a>
             </div>
-
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
+          
+            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/yui_relationships"
-                className=" hover:underline hover:text-black"
+                href="/nemesis_relationships"
+                className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/yui_inventions"
+                href="#"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
@@ -386,241 +386,99 @@ export const Relationships = () => {
           </div>
 
           <div className="flex-1 text-black  max-w-2xl">
-            <nav className="w-60 mt-5 bg-white text-start border rounded mb-6">
-              <div className="flex items-center justify-between px-3 py-2 border-b">
-                <span className="font-semibold text-gray-700 flex items-center text-sm">
-                  <svg
-                    className="w-4 h-4 mr-1 text-gray-500"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h7"
-                    />
-                  </svg>
-                  Contents
-                </span>
-                <button className="text-xs text-[purple] hover:underline font-semibold">
-                  [hide]
-                </button>
-              </div>
-              <ol className="list-decimal list-inside px-5 py-3 text-gray-700 text-sm space-y-1">
-                <li>
-                  <a href="#rito" className="hover:underline">
-                    {" "}
-                    Rito Yuuki
-                  </a>
-                </li>
-                <li>
-                  <a href="#lala" className="hover:underline">
-                    Lala Satalin Deviluke
-                  </a>
-                </li>
-                <li>
-                  <a href="#yū" className="hover:underline">
-                    Kotegawa Yū
-                  </a>
-                </li>
-                <li>
-                  <a href="#risa-and-mio" className="hover:underline">
-                    Risa Momioka and Mio Sawade
-                  </a>
-                </li>
-                <li>
-                  <a href="#celine" className="hover:underline">
-                    Celine
-                  </a>
-                </li>
-              </ol>
-            </nav>
-            <h2
-              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
-              id="rito"
-            >
-              <a href="/rito">Rito Yuuki</a>
-            </h2>
             <p>
-              Originally thinking he was just another "Shameless" boy, she
-              realized how wrong she was. Her feelings for him began to change
-              to move towards romance when Rito saved her from a group of
-              delinquents. Throughout the series, Yui's love interest in Rito
-              developed. Yui made chocolate for him on Valentine's Day, even
-              though she claimed it was just "Giri (Obligatory) Chocolate," she
-              really made chocolate only for him. In the OVA, at a group picnic,
-              Yui told Rito "I won't let you do shameless things with anyone
-              else but me!!" while she was under the influence of pollen that
-              caused everyone to freely speak their minds.
-            </p>
-            <br />
-            <div className="flex flex-row items-start gap-4">
-              <div className="flex-1">
-              <p>
-                In To Love Ru: Darkness, while Momo is trying to further her
-                Harem Plan, she manipulated Yui and Rito into being alone
-                together at Rito's house during what appeared to be a rain.
-                During a black out, Rito falls onto Yui. While Rito is on top of
-                her on his bed, Yui puts her arms around him and explains how
-                she has learned to accept that it is normal for boys to be
-                shameless, and that they are not all bad. 
-              </p>
-              </div>
-              <div className="flex flex-col items-center">
-              <img
-                src="https://static.wikia.nocookie.net/to-loveru/images/a/a4/Yui_Rito_TLRD_EP1_01.png"
-                alt=""
-                className="max-w-[200px] rounded"
-              />
-              <span className="text-xs text-gray-600 mt-1">Rito falling to Yui</span>
-              </div>
-            </div>
-            <p>She then offers
-                herself to him if he agrees to do shameless things only to her
-                (chapter 4). Rito breaks away and explains to her that although
-                he is interested, he does not do shameless things intentionally.
-                Yui loves Rito even more as she sees his innocent nature and how
-                he is different from what she perceived all boys to be. She
-                surprised herself with what she was doing and how far she went,
-                and is grateful to Rito for not seducing her.</p>
-            <br />
-            <p>
-              After a little longer she comes to realize that she loves him.
-              Although she still has got to put up with a lot of his clumsiness,
-              she knows most of all that he is not a boy who would intentionally
-              disrespect girls or take advantage of them. When Momioka playfully
-              and dishonestly explains her sexual experience with Rito, Yui
-              knows immediately that it was not true, remembering Rito could
-              have done it with her when they were in his bedroom but did not,
-              and thinks to herself that he is indeed different from other boys,
-              and that he is special. Yui would prefer for Rito to be more
-              responsible for his actions. She even mentioned that because he is
-              careless, he brings shameless incidents upon himself.
+              Nemesis is initially introduced as the main antagonist of To
+              LOVE-Ru Darkness, later transitioning into a more complex and
+              sympathetic protagonist. She is the master of{" "}
+              <a
+                href="/mea"
+                className="text-[purple] underline hover:text-black"
+              >
+                Mea
+              </a>{" "}
+              and plays a central role in the darker themes of the series.
             </p>
             <br />
             <p>
-              While Rito does not have any romantic feelings for Yui, he does,
-              however, find her attractive as shown when he gets embarrassed
-              when being alone with her in her room. Her growing love for Rito
-              surprises even herself. However, being inexperienced with boys and
-              being a typical tsundere, she has difficulty opening up to Rito
-              and often hides her shyness with aggression and anger.She even
-              fantasize about rito on multiple occasion the most common one is
-              of her being his wife and pregnant with child.
-            </p>
-            <br />
-            <h2
-              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
-              id="lala"
-            >
-              <a href="/lala">Lala Satalin Deviluke</a>
-            </h2>
-            <div>
-              <p>
-                While Yui is generally very uptight, and in some senses Lala's
-                complete opposite, she still is her friend. Lala's outgoingness
-                with Rito often leads to Yui considering it "Shameless," however
-                it has become a norm with her. Yui shows a slight jealousy
-                towards how close she is with Rito, but strongly denies it
-                herself. While Lala likes to consider everyone to be her
-                friends, Yui and Lala don't generally bond with each other
-                personally.
-              </p>
-            </div>
-            <br />
-            <p>
-              However, despite all their differences both sports nearly
-              identical curvaceous figures and together are considered to have
-              most attractive bodies on school by others girls. Whenever a
-              comparison of girls' figures is brought up Yui and Lala are often
-              used as sort of ideal that other girls want to achieve.
-              Ironically, even though Yui and Lala have the best bodies, they
-              are the only two so far who pay no real attention to their
-              appearance.
-            </p>
-            <br />
-            <h2
-              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
-              id="nana"
-            >
-              <a href="#">Kotegawa Yū</a>
-            </h2>
-            <p>
-              Yū is Yui's older brother and a lady's man, which is something
-              that Yui dislikes about him. Yuu is aware of Yui's love for Rito,
-              which she denies. He is eager to see his sister grow to become
-              more mature and acknowledge her love for Rito.
-            </p>
-            <br />
-            <h2
-              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
-              id="sephie"
-            >
-              <a href="#">Risa Momioka and Mio Sawada</a>
-            </h2>
-            <p>
-              There is little evidence that Yui is explicitly friends with Risa
-              and Mio. Because they are always groping other girls, talking
-              about sexual subjects, and just being "shameless", Yui would
-              naturally reprimand them to stop being so shameless, which is
-              clearly not well heard by them. It does not help that Yui has a
-              surprisingly attractive figure, which they pointed out as having a
-              pretty "shameless" body herself. They would occasionally grope her
-              body as well, like they would to other girls.
+              She first appears shrouded in shadow, speaking exclusively to Mea.
+              Her primary objective is to uncover the reasons behind Yami’s
+              shift in behavior—why she has become more human-like and abandoned
+              her identity as an assassin.
             </p>
             <br />
             <p>
-              Because of how Risa appears more frequently, she practically
-              annoys Yui the most, because of how she always comments on how
-              mischievous she can be and how she would say something about a
-              situation would lead to a perverted one, mostly involving Rito.
-              She even lied to her about having done something "shameless" with
-              Rito.
+              In Chapter 23, Nemesis makes her first physical appearance. She
+              quickly begins teasing Rito about his shyness and attempts to
+              manipulate him into becoming her servant.
             </p>
-            <br />
-            <h2
-              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
-              id="mikan"
-            >
-              <a href="#">Celine</a>
-            </h2>
-            <div className="flex flex-row items-start gap-4">
-              <div className="flex-1">
-              <p>
-                Celine has consistently shown a strong liking to Yui, as pointed
-                out by Rito when she hugged her. Yui was once mistaken for being
-                Celine's mother and in a way as Rito's wife to which she denied,
-                becoming easily flustered. Despite this, Celine is typically
-                portrayed while clinging to Yui in several moments during the
-                manga, with her fulfilling the role of a mother figure.
-                Likewise, during the events of Darkness, Celine is consistently
-                depicted clinging to Yui. As for her, Yui usually day dreams of
-                adopting Celine and forming a family with Rito. She has even
-                dreamed of being pregnant with Rito's child on at least a couple
-                of occasions.
-              </p>
-              </div>
-              <div className="flex flex-col items-center">
-              <img
-                src="https://static.wikia.nocookie.net/to-loveru/images/4/41/Yui_Celine_TLRD_EP5_01.png"
-                alt=""
-                className="max-w-[200px] rounded"
-              />
-              <span className="text-xs text-gray-600 mt-1">Yui and Celine.</span>
-              </div>
-            </div>
             <br />
             <p>
-              On some occasions Yui has babysits Celine, and has been seen
-              reading to her at school in off panels of the manga. In the "What
-              If" scenario, depicted in the Harem Gold Artbook, Yui is depicted
-              having adopted Celine and given birth to a daughter with Rito,
-              going by the name of Hana. She is also depicted as being pregnant
-              with their third child.
+              Although her relationship with{" "}
+              <a
+                href="/momo"
+                className="text-[purple] underline hover:text-black"
+              >
+                Momo
+              </a>{" "}
+              is strained, the two occasionally join forces to playfully tease{" "}
+              <a
+                href="/rito"
+                className="text-[purple] underline hover:text-black"
+              >
+                Rito
+              </a>
+              .
             </p>
             <br />
+            <p>
+              Nemesis's ultimate goal is to revert{" "}
+              <a
+                href="/yami"
+                className="text-[purple] underline hover:text-black"
+              >
+                Yami
+              </a>{" "}
+              to her "Darkness" form and ignite a new galactic war, aiming to
+              create a world where living weapons like herself and Yami can
+              belong.
+            </p>
+            <br />
+            <p>
+              Following the failure of her plan, she becomes a target of Zastin
+              in Chapter 59, as her actions endangered all three Devilukean
+              princesses and caused Lala to temporarily revert to her child
+              form.
+            </p>
+            <br />
+            <p>
+              In Chapter 60, Nemesis engages in a fierce battle against Gid
+              Lucione Deviluke and is ultimately defeated. As her body begins to
+              fade, Rito chooses to save her by allowing her consciousness to
+              merge with his body.
+            </p>
+            <br />
+            <p>
+              While residing inside Rito, Nemesis gains insight into his
+              memories, emotions, and relationships. This experience subtly
+              alters her perspective and strengthens her connection to the main
+              cast.
+            </p>
+            <br />
+            <p>
+              Once she recovers 75% of her strength, she is forced to separate
+              from Rito to confront Kuro. However, Yami intervenes, taking on
+              Kuro herself to bring the conflict to a close.
+            </p>
+            <br />
+            <p>
+              Later, Nemesis transfers to Sainan High and declares herself the
+              new student council president by force. In front of the entire
+              student body, she boldly announces her love for Rito and her
+              intent to make him happy by building a harem around him. However,
+              the plan is quickly derailed when Haruna confesses her feelings to
+              Rito, bringing a new dynamic to the unfolding story.
+            </p>
+            <br />{" "}
           </div>
         </div>
       </div>

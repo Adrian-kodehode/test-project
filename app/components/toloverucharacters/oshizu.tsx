@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Rito = () => {
+export const Oshizu = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
@@ -15,6 +15,7 @@ export const Rito = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -36,7 +37,6 @@ export const Rito = () => {
           </a>
         </div>
       </div>
-
       {/* Wiki Navigation */}
       <nav className="bg-[#DB49AC] text-white shadow">
         <div className="container mx-auto px-4">
@@ -117,7 +117,9 @@ export const Rito = () => {
                           <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          Motto To LOVE-Ru
+                          <Link to="/motto_to_love-ru_anime">
+                            Motto To LOVE-Ru
+                          </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_anime">
@@ -125,7 +127,9 @@ export const Rito = () => {
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          To LOVE-Ru Darkness 2nd
+                          <Link to="/to_love-ru_darkness2ndanime">
+                            To LOVE-Ru Darkness 2nd
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -345,24 +349,26 @@ export const Rito = () => {
             </div>
           </div>
         </div>
+
         {/* Left: Main text content */}
-       <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-4xl ">
-          <h1 className="mb-5 text-3xl">Yūki Rito</h1>
+        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-4xl ">
+          <h1 className="mb-5 text-3xl">Murasame Shizu (Oshizu)</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               Information
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="rito_plot"
+                href="yami_plot"
                 className="text-[purple] hover:underline hover:text-black"
               >
+                {" "}
                 Plot
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="rito_relationships"
+                href="yami_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -370,7 +376,7 @@ export const Rito = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="#"
+                href="yami_gallery"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery
@@ -378,63 +384,18 @@ export const Rito = () => {
             </div>
           </div>
           <p>
-            <strong>Yūki Rito</strong> is the main male protagonist of the To
-            Love-Ru series, and its sequel, To Love-Ru Darkness. He is a normal
-            16-year-old student of Sainan High, who has a big crush on Sairenji
-            Haruna, to whom he attempted numerous times to confess to but has
-            met failure each time. It was only by accident that he met Lala
-            Satalin Deviluke, an alien princess he accidentally became engaged
-            to.
+            <strong>Murasame Shizu</strong> usually addressed as{" "}
+            <strong>"Oshizu"</strong> (お静) the O (お) is an honorific used to
+            refer to women, is the ghost of a girl who died in the old abandoned
+            school building 400 years ago. Since her meeting with Rito and the
+            others, she begins exploring the world outside the old school
+            building. Oshizu is aware of Haruna's crush on Rito by her ability
+            to sense feelings while possessing another person and becomes very
+            supportive towards cheering Haruna into confessing her feelings to
+            him. Her real name is Murasame Shizu, but she likes to be called
+            Oshizu better.
           </p>
-          <br />
-          <p>
-            Rito used to be on the soccer team in junior high and was fairly
-            good, but quit because he was constantly helping his father with his
-            manga duties, and did not want to leave his little sister Yūki Mikan
-            alone in the house. Mikan comments he is very good at the most
-            "useless little things", like crane and festival games (e.g. hoops,
-            catching fish, squirt guns). Along with the many useless little
-            things Rito is good at, he is also an accomplished florist, gardener
-            and horticulturist.
-          </p>
-          <br />
-          <p>
-            Rito's nature is an extremely loving one, yet also somewhat clumsy,
-            where he always ends up unintentionally molesting or groping the
-            many girls in the series. He is generally very kind, thoughtful and
-            has a lot of respect for women, though mostly by intention, and not
-            so much by a success. Due to his shyness around girls, he is very
-            awkward around women and has great difficulty maintaining his
-            composure around any sort of stimulating situation. Even without
-            interference from Lala's inventions, Oshizu's psychic powers, or
-            Celine jumping into his face, Rito is individually clumsy enough to
-            trip over absolutely nothing, and possesses extraordinary skill in
-            accidentally reaching his hands or face into the breasts or other
-            private parts of any girl within reach when he is falling. He is
-            constantly viewed as a "pervert" but unknowingly, his kindliness is
-            what wins him the affections of most of the girls in the series.
-          </p>
-          <br />{" "}
-          <p>
-            Over time he also comes to love Lala and knowing his feelings for
-            Haruna, she suggests for him to be with both of them, because due to
-            being engaged to her, he is next in line for the throne of Deviluke,
-            which would make polygamy legal for him. In{" "}
-            <strong>To Love-Ru Darkness</strong>, Lala's little sister Momo also
-            falls in love with Rito and expands Lala's initial idea into her
-            harem plan, where she and all the other girls who love Rito can be
-            with him.
-          </p>
-          <br />
-          <p>
-            As of Chapter 61 of Darkness, Rito became Nemesis' Trans-Fusion host
-            after he offered her his body as a temporary home until she
-            recovered enough power to retain a physical form. Nemesis inside
-            Rito knew that he has feelings for Haruna, so she created an
-            atmosphere so under such circumstances they finally confessed to
-            each other (Chapter 75 & 76).
-          </p>
-          <nav className="w-44 mt-5 bg-white text-start border rounded mb-6">
+          <nav className="w-52 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
                 <svg
@@ -464,7 +425,7 @@ export const Rito = () => {
                 </a>
               </li>
               <li>
-                <a href="#personaøity" className="hover:underline">
+                <a href="#personality" className="hover:underline">
                   Personality
                 </a>
               </li>
@@ -479,27 +440,6 @@ export const Rito = () => {
                 </a>
               </li>
               <li>
-                <a href="#indecency" className="hover:underline">
-                  Rito's Godly Indecency
-                </a>
-              </li>
-              <li>
-                <a href="#hobbies" className="hover:underline">
-                  Hobbies and Interests
-                </a>
-              </li>
-              <li>
-                <a href="#transformations" className="hover:underline">
-                  Transformations
-                </a>
-              </li>
-
-              <li>
-                <a href="#appellations" className="hover:underline">
-                  Appellations
-                </a>
-              </li>
-              <li>
                 <a href="#etymology" className="hover:underline">
                   Etymology
                 </a>
@@ -509,194 +449,287 @@ export const Rito = () => {
                   Trivia
                 </a>
               </li>
-              <li>
-                <a href="#references" className="hover:underline">
-                  Refrences
-                </a>
-              </li>
             </ol>
           </nav>
-          <h2 className="text-2xl font-bold border-b mb-4" id="appearance">
-            Appearance
-          </h2>
-          <p>
-            Rito has golden brown eyes and orange-brown hair. In the original
-            series the spikes on his hair were sharp and seemingly sticking out,
-            but in To-Love-Ru Darkness his hair seems to be a lot neater and
-            softer. He is shown to be of average height, if compared to other
-            male students in his class and is taller than most of the female
-            cast.
-          </p>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="personality">
-            Personality
-          </h2>
-          <p>
-            Rito is kind and sweet and he always cares about people. He is
-            virtuous, righteous, and withholds an incredible deal of respect
-            towards others that surpasses his own idea of self-worth. He is
-            courageous and persistent enough to risk his life to protect his
-            friends well being, like when he protected Lala from her strong
-            bodyguards Maul and Smutts or the hitman Kuro, saved Haruna from Ghi
-            Bree and stood up to his deceptively monstrous form, traveled to a
-            dangerous planet to find a cure for Celine when she was sick, and
-            tried to save Rin from Bladix's control and broke her free from it,
-            nearly having his own mind being taken.
-          </p>
-          <br />
-          <p>
-            Rito is especially caring and considerate towards women in
-            particular, as he has shown disgust multiple times towards the
-            concept of assaulting girls in any way (though he once violently
-            threw Momo off his bed), and refuses to take advantage of and/or
-            demean them intentionally, even if they give him permission to do
-            so, unless it is absolutely necessary (such as when he had to bring
-            Yami back to her old self when she was in her Darkness Form).
-            Despite whatever struggles may come his way, he never gives up on
-            those in danger. For these reasons, Lala stated that he's "the most
-            dependable person in the universe". Rito also tends to help out
-            those who dislike him, such as Yami, before she developed feelings
-            for him, like when she was sick from over-using her powers and he
-            carried her to Mikado's clinic. He has also shown his sympathy for
-            her when he learned of her past, and expressed anger towards the
-            organization that created and raised her to become a weapon, going
-            as far as to say he will never "forgive them".
-          </p>
-          <br />
-          <p>
-            Being a normal boy, though, he initially can also easily and
-            somewhat frequently lose his temper and snap at people when annoyed
-            by their actions or words, even when he doesn't mean to. At first,
-            he has shown to be angry and upset with Lala quite often, since he
-            does have to put up with a lot of her hijinks, and even punched Ren
-            in the face for thoughtlessly ruining what could have been a moment
-            between him and Haruna, as well as for accidentally kissing him. His
-            humble nature, in turn, can often have low self esteem about
-            himself, building off of his rare short fuse. He rarely gives
-            himself credit for his good deeds, tends to dwell on his mistakes
-            more than anything when sad, hardly ever speaks up for or voices
-            himself and, in general, doesn't do anything to truly stand up for
-            himself.
-          </p>
-          <br />
-          <p>
-            His personality as a kind and loyal friend makes him quite
-            trustworthy, and very persuasive which enables him to sway and
-            befriend other people. Girls tend to feel a certain "warmth" when
-            close to him or when he comforts them. He is a very charismatic
-            person, always trying to make people feel better and understand
-            others' points of view and changing it to a more positive outlook.
-            He cares for plants and animals, as shown when he was the only one
-            who didn't neglect to care for the school flowers, and when he
-            rescued a cat from a tree, both of which persuaded Haruna and Yui
-            that he is really a kind person.
-          </p>
-          <br />
-          <p>
-            Unfortunately, while girls appreciate and cherish his innocent
-            nature, his innocence is arguably one of his worst traits. He
-            rejects sexual pleasure often due to his nervous and celibacy-filled
-            nature towards it, and he easily loses his composure around
-            provocative situations being pushed into his face due to a moral
-            sense of chivalrous respect for the opposite sex. As a result, he
-            has grown to become very clumsy and shy around women, often getting
-            flustered when faced with sudden upfront, erotic situations either
-            out of guilt, unsure panic, confusion, or all three. Due to his
-            unique clumsiness, his flustered reactions always lead to
-            accidentally violating them in absurdly over-the-top ways. For these
-            reasons, he is either regarded by other girls as an innocent boy and
-            suitable love interest, or as an insolent boy and 'pervert', though
-            never anything worse than this.
-          </p>
-          <br />
-          <p>
-            While sleeping, Rito acts as what Momo describes as a true Harem
-            King. He has dreams about ice creams and marshmallows, and starts to
-            grope and lick those who are sleeping next to him (mostly Momo),
-            thinking them as marshmallows and/or ice cream. He even was about to
-            kiss Momo, but she stopped him telling him their first kiss must be
-            of his free will.
-          </p>
-          <br />
-          <p>
-            He seems to start getting more interested in sexual activities as
-            seen in Darkness Chapter 73 where he has a dream about pushing Momo
-            down and grabbing her breasts on purpose, while it actually was Lala
-            in his futon at the time.
-          </p>
-          <br />
-          <h2 className="text-2xl font-bold border-b mb-4" id="history">
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold mb-3 border-b" id="appearance">
+              Appearance
+            </h2>
+            <div className="flex flex-row items-start gap-6">
+              <div className="flex flex-col items-center min-w-[160px]">
+                <img
+                  src="To Love Ru/oshizu.jpg"
+                  alt=""
+                  className="w-60 h-auto rounded"
+                  onClick={() => window.open("To Love Ru/oshizu.jpg", "_blank")}
+                />
+              </div>
+              <div className="flex-1">
+                <p>
+                  Oshizu has long blue-violet hair and irises. In her ghost
+                  form, she wears a white kimono and purple sash, she also has
+                  light colored wisps floating around her, can be slightly
+                  see-through and instead of legs she has a ghostly tail (though
+                  during an OVA episode, her legs could be seen, though
+                  comically when Yami accidentally "cut" her ghost tail down).
+                  She looks the same in her human body only without any ghost
+                  features, and when working at Mikado's clinic, she is seen
+                  wearing a pink nurse's uniform. She always wears two beige
+                  ribbons in her hair. Her artificial body's measurements are
+                  82-56-81.
+                </p>
+              </div>
+            </div>
+            <br />
+          </div>
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2
+              className="text-2xl font-bold mt-5 mb-3 border-b"
+              id="personality"
+            >
+              Personality
+            </h2>
+            <p>
+              Oshizu is sincere, kind, and very curious about the modern world
+              and has a severe case of cynophobia (fear of dogs), likened to
+              Sairenji Haruna's level of fear to the supernatural (who also has
+              a pet dog), the cause of this is unknown. When frightened of other
+              things, she can emit blasts of mental stress, blowing apart
+              various objects and surroundings with her poltergeist power, she
+              occasionally "disconnects" from her body during brief moments of
+              excitement or being frightened by dogs. Oshizu can also be a bit
+              of a blockhead because she easily misinterprets certain situations
+              and can go off topic. Oshizu is quite determined about helping
+              Haruna confess her love for Rito by using her powers. But that
+              usually ends up in a perverted accident.
+            </p>
+            <br />
+            <p>
+              She is very old-fashioned as seen in OVA 1 and Ch. 102, when she
+              used a Japanese brush to draw Japanese women.
+            </p>
+          </div>
+          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="history">
             History
           </h2>
           <p>
-            As a child, Rito would often go out and play football/soccer with
-            friends, but because his parents weren't always around, which would
-            leave Mikan all alone at home. Feeling bad for her as any good
-            family member would, Rito would stay in to look after her. When he
-            was thirteen, he took Mikan to the public pool that was crowded at
-            the time, which caused the two to separate (although Mikan unaware
-            of it). Rito was so worried that by the time he found her, his
-            T-shirt was covered in sweat which Mikan noticed how desperately he
-            searched for her, though she thought it was stupid of him she was
-            also happy.
+            Oshizu comes from an era that was described as a "living hell" due
+            to a lot of people desperately starving from a famine due to a
+            drought. The cause of her death is unknown. It is hinted in the
+            4koma that she was used as a sacrifice to try to make it rain.
           </p>
           <br />
           <p>
-            Rito has always assisted his father's work as a manga artist, and
-            then would take Mikan to a shrine nearby to play. One time, during
-            his fifth grade, while Yui was also at the shrine, Rito climbed a
-            tree to help a cat who was stuck. This was the first time that Yui
-            met Rito, although it was years later during a déjà vu that Yui
-            remembered that the boy was, in fact, Rito. The cat that Rito saved
-            from the tree was the same cat that Yui tried but couldn't save
-            prior to Rito and Mikan's arrival at the shrine. She tried to ask
-            some of the boys from her class to help her, but they rejected her
-            because they hated Yui's strictness as their class representative,
-            and left to play games instead. Because of that, Yui had the
-            impression that all boys are bad. However, due to Rito's bravery,
-            Yui's perception of boys changed, and she realized that not all of
-            them are bad. Rito isn't aware that Yui was the same girl he met at
-            the shrine.
+            After 400 years, Oshizu "returns" to the living after Ryoko Mikado
+            creates a prosthetic body for her to inhabit, built with biological
+            qualities (looking and feeling like an actual, human body) and has
+            become a recurring character in the series, even attending Sainan
+            high. She currently works as an assistant for Mikado. In the first
+            anime, Oshizu is not given a new body and her presence is limited,
+            while in the OVA and Motto To Love-Ru and so on, she has her own
+            body as she does in the manga.
           </p>
+          <br />
+          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="powers">
+            Powers and Abilities
+          </h2>
+          <div className="flex flex-row gap-6 items-start">
+            <div className="flex-1">
+              <p>
+                Ghost Physiology: As a ghost, she is capable of flight,
+                intangibility, psychokinesis, etc. while in her human body most
+                of her ghost powers are limited but she is still able to use
+                abilities such as psychokinesis and poltergeist. However, Mikado
+                said that if Oshizu overuses her powers, her spirit would
+                disappear. Although she technically has good intentional control
+                over her powers, her vulnerability to distractions as well as
+                her panics around dogs make her easily lose control, with
+                disastrous results. Interestingly, when her powers go berserk,
+                they inexplicably cause all kinds of perverted mishaps around
+                Rito, such as stripping the clothes of girls in front of him, or
+                throwing them over each other into a provocative position.
+              </p>
+            </div>
+            <div className="flex flex-col items-center min-w-[200px]">
+              <img
+                src="https://static.wikia.nocookie.net/to-loveru/images/4/46/Ch37_pg38.jpg"
+                alt=""
+                className="w-48 h-auto rounded"
+                onClick={() =>
+                  window.open(
+                    "https://static.wikia.nocookie.net/to-loveru/images/4/46/Ch37_pg38.jpg",
+                    "_blank"
+                  )
+                }
+              />
+              <span className="mt-2 text-xs text-center block max-w-[12rem]">
+                The usual result of Oshizu using her powers. And it will always
+                be Rito who gets punished.
+              </span>
+            </div>
+          </div>
+          <br />
+          <div className="ml-8">
+            <li>
+              <strong>Flight:</strong> A most basic ghost ability, Oshizu is
+              capable of flying. However, she seems only capable of this after
+              detaching herself from her artificial physical body. It is unknown
+              to what height and distance she is able to fly, as she was never
+              seen traveling far from the abandoned school building she was
+              haunting, or from her synthetic body.
+            </li>
+            <li>
+              <strong>Intangibility:</strong> Another basic ghost ability that
+              lets her phase through walls, which she can also only do after
+              detaching from her artificial body.{" "}
+            </li>
+            <div className="flex flex-row gap-6 items-start">
+              <div className="flex-1">
+                <li>
+                  <strong>Possession:</strong> Oshizu is capable of possessing
+                  others and control their movements. While she possesses
+                  others, she can also enter their subconscious and look through
+                  their memories and understand their feelings, especially
+                  feelings towards others. This ability is similar to Mea's
+                  Psycho-Dive. While no further details are given, it seems,
+                  that this ability also brings possible danger of Oshizu
+                  permanently fusing with soul of compatible person whose body
+                  she possess, if she stays in that body for too long. As nearly
+                  happened, when she accidentally possesed Haruna, and nearly
+                  ended with Oshizu overwriting Haruna's consciousness, or
+                  Oshizu herself being nearly consumed, when she tried possess
+                  Mea. However in that case it could be also because Mea was
+                  already possessed by Nemesis at that time.
+                </li>
+              </div>
+              <div className="flex flex-col items-center min-w-[200px]">
+                <img
+                  src="To Love Ru/Haruna x Oshizu merge.jpg"
+                  alt=""
+                  className="w-48 h-auto rounded"
+                />
+                <span className="mt-2 text-xs text-center block max-w-[12rem]">
+                  Oshizu accidentally possessing Haruna.
+                </span>
+              </div>
+            </div>
+            <li>
+              <strong>Extrasensory Perception:</strong> Oshizu has extrasensory
+              perception, which allows her to sense aura. She was able to sense
+              the aura of another ghost that haunted Zastin's apartment. She was
+              also able to sense the activation of Yami's Darkness
+              Transformation even from a long distance.
+            </li>
+            <li>
+              <strong>Concentrated Psychokinetic Power:</strong> By pointing
+              with her fingers, she is able to move objects with her mind
+              without any physical contact and create poltergeists. She can also
+              use this to control the bodies of other people without possessing
+              them. She can create huge forces of shockwaves that can blast
+              through walls and create force fields strong enough to seal a
+              micro black hole. Although when frightened she loses control over
+              this power for a moment, often leading to perverted results.
+            </li>
+            <li>
+              <strong>Psycho-Pyrokinesis:</strong> She can also use her
+              psychokinesis to control the wisps floating around her (when in
+              ghost form) to target her opponents and set them on fire similar
+              to pyrokinesis. It's unknown if this affects other living things
+              or just other spirits.{" "}
+            </li>
+            <li>
+              <strong>Exorcism:</strong> Oshizu is also capable of exorcism,
+              which she has shown by pulling out the spirit that possessed
+              Zastin.
+            </li>
+            <li className="ml-8">
+              Additionally, she can force a spirit back into its own body in a
+              brief moment when it just leaves the body. Comically, she did that
+              when the homeroom teacher Honekawa's spirit left his body,
+              miraculously "reviving" him.
+            </li>
+          </div>
           <br />
           <p>
-            During Rito's eighth grade, Rito became classmates with Haruna
-            Sairenji. It was stated that this was the last time that Haruna and
-            Rito became classmates (prior to the start of the series). In the
-            anime, Rito has been in love with her when she was the only one who
-            believed he did not vandalize the plants in the school garden.
-            Haruna stated that she first noticed him during a school
-            competition, when their class was lagging behind the other classes
-            in a race, and he never gave up, and ended up winning the race for
-            his class and won the trophy. Haruna also noticed Rito's care for
-            the plants in the school, and noticed that Rito would always refill
-            the water in the flower vase while no one else cared, and concluded
-            that he must be a kind person.
+            <strong>Medical Skills:</strong> Due to being Mikado's assistant,
+            Oshizu picked up some medical skills to be able to heal others. But
+            she can be quite clumsy and would hurt others instead, especially
+            when frightened.
           </p>
           <br />
+          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="etymology">
+            Etymology
+          </h2>
           <p>
-            Before Rito met Lala, it was stated that Rito had difficulty talking
-            to girls, which led to his lack of confidence and clumsiness around
-            them. However, because of Lala's friendliness, and Rito's growing
-            relationship with Lala, most of Lala's female friends became Rito's
-            as well, especially Haruna Sairenji (whom Rito had a crush on and
-            could not even talk to prior to Lala's "descent") and is now able to
-            have a proper conversation with them.
+            Her full name can literally be translated as "Silent Rain in the
+            Village".
           </p>
           <br />
+          <div className="ml-8">
+            <li>
+              <strong>Murasame</strong> means "town, village" (村) (
+              <strong>mura</strong>) and "rain" (雨) (<strong>same</strong>),
+              which literally means "passing shower" altogether; this may be a
+              reference to her old-fashioned style.
+            </li>
+            <li>
+              <strong>Shizu</strong> means "quiet" (静).
+            </li>
+          </div>
+          <br />
+          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="trivia">
+            Trivia
+          </h2>
+          <div className="ml-8 flex flex-row gap-6 items-start">
+            <div className="flex-1">
+              <li>
+                She appeared in Mayoi Neko Overrun! as a customer (with Haruna).
+              </li>
+              <li>
+                In Mayoi Neko Overrun! Murasame is the name of a family who owns
+                an academy/orphanage, with excellent students and the most
+                excellent would be adopted to the family. It's unknown if this is
+                a connection to Oshizu's family name, though the kanji being the
+                same hints towards this being the case.
+              </li>
+              <li>
+                Being over 400 years old she is easily the oldest character of the
+                series.
+              </li>
+              <li>
+                It is unknown if she will age (and eventually die when she becomes
+                old) just like any other human beings when she is in her new
+                artificial body, or it is just her spirit will become feral once
+                again after her "second death".
+              </li>
+              <li>
+                In Chapter 153, when Rito inside Peke causes her to malfunction,
+                Peke dresses Oshizu as Enma Ai from Hell Girl. This is a reference
+                to the fact Oshizu and Enma share the same seiyuu, Noto Mamiko.
+              </li>
+            </div>
+            <div className="flex-shrink-0 flex flex-col items-center min-w-[200px]">
+              <img
+                src="https://static.wikia.nocookie.net/to-loveru/images/0/03/-MayoiNekoOverrun%21--ch06_008.png"
+                alt=""
+                className="w-48 h-auto rounded"
+              />
+            </div>
+          </div>
         </div>
+
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center  w-full">
+            <div className="text-center w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
-                Yūki Rito
+                Murasame Shizu
               </h1>
             </div>
-            <div className="flex justify-center  w-full">
+            <div className="flex justify-center w-full">
               <img
-                src="To Love Ru/rito.jpg"
-                alt="Yūki Rito"
+                src="/To Love Ru/Shizu_Murasame_TLRD_Manga.png"
+                alt="Murasame Shizu"
                 className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
@@ -716,98 +749,96 @@ export const Rito = () => {
                     <td className="bg-[#DB49AC] text-white p-2 w-1/3 border border-[#9C2E7A] ">
                       Kanji
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      結城 リト(梨斗)
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      金色の闇 (イヴ)
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Name
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Yūki Rito
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Konjiki no Yami
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Planet
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Earth
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Kurosu (2008 anime only)
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Age
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      15 (first year) <br />
-                      16 (second year)
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      14-15 (manga) <br /> 24,000 Kurosu Years (2008 anime only)
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Birthday
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      October 16
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      December 24th
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Zodiac Sign
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Libra
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Capricon
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Gender
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Male
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Female
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Height
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      164.5 cm
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      153 cm
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Weight
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      62 kg
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      45 kg
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Blood Type
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      O
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      AB
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Hair Color
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Light brown (manga, Motto To Love-Ru onwards in anime)
-                      Brownish orange (First To Love-Ru anime and OVAs)
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Blonde
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Eye Color
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Gold Brown
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Dark Red
                     </td>
                   </tr>
                   {/* Personal Status */}
@@ -823,67 +854,62 @@ export const Rito = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       School
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Sainan High
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Sainan High School
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Class
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      1-A (chapters 1-48) <br />
-                      2-A (chapters 49-present)
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      1-B
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Education
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Currently attending Sainan High
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Currently attending Sainan High School
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Occupation
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Highschool student
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Assassin <br />
+                      Target:{" "}
+                      <a href="/rito" className="text-[purple] ">
+                        Yuuki Rito
+                      </a>
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Relatives
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Yūki Mikan (sister) <br />
-                      Yūki Saibai (father) <br />
-                      Yūki Ringo (mother) <br />
-                      Celine (adoptive daughter/sister) <br />
-                      Yuusaki Riko (female alter-ego) <br />
-                      Gid Lucione Deviluke (father-in-law)(Pending) <br />
-                      Sephie Michaela Deviluke (mother-in-law)(Pending) <br />
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Doctor Tearju Lunatique <br />
+                      Kurosaki Nea
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Martial Status
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Lala Satalin Deviluke (fiancée) / (future wife) Momo Belia
-                      Deviluke (harem plan candidate and mastermind)
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Single
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Unusual Features
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      - Always grabs girl's private parts by accident <br />
-                      - Frequently does perverted things in sleep <br />
-                      - High agility beyond Earthling level <br />
-                      - Immune to Charmian power <br />
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Body Transformation <br />
+                      "Darkness" Transformation
                     </td>
                   </tr>
                   {/* First Appearance */}
@@ -899,16 +925,16 @@ export const Rito = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Manga Debut
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      To LOVE-Ru Chapter 1
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Chapter 35
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Anime Debut
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      To LOVE-Ru Episode 1
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Episode 11
                     </td>
                   </tr>
                   {/* Voice Actors */}
@@ -924,16 +950,16 @@ export const Rito = () => {
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Japanese VA
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Akeno Watanabe
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Misato Fuken
                     </td>
                   </tr>
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       English VA
                     </td>
-                    <td className="bg-white text-black text-center p-2 border border-[#DB49AC] ">
-                      Ry McKeand
+                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
+                      Katelyn Barr
                     </td>
                   </tr>
                   <tr>

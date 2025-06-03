@@ -350,35 +350,28 @@ export const Plot = () => {
 
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
-          <h1 className=" text-3xl">Nana Astar Deviluke/Plot</h1>
+          <h1 className=" text-3xl">Sairenji Haruna/Plot</h1>
           <p className="text-[purple] hover:underline hover:text-black mb-5">
-            <a href="/yami">Nana Astra Deviluke</a>
+            <a href="/haruna">Sairenji Haruna</a>
           </p>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a href="/nana" className="text-[purple]">
+              <a href="/haruna" className="text-[purple]">
                 Information
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="/nana_plot"
+                href="/haruna_plot"
                 className=" hover:underline hover:text-black"
               >
                 Plot
               </a>
             </div>
+
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/nana_animals"
-                className="text-[purple] hover:underline hover:text-black"
-              >
-                Animals
-              </a>
-            </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
-              <a
-                href="/nana_relationships"
+                href="/haruna_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -386,7 +379,7 @@ export const Plot = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/nana_gallery"
+                href="/"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery

@@ -384,7 +384,6 @@ export const Relationships = () => {
               </a>
             </div>
           </div>
-
           <div className="flex-1 text-black  max-w-2xl">
             <p>
               As the main character of To Love-Ru, Rito has relationships with
@@ -582,7 +581,6 @@ export const Relationships = () => {
               god".
             </p>
             <br />
-
             <h2
               className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
               id="saibai"
@@ -1067,7 +1065,348 @@ export const Relationships = () => {
               unexpected by how it made her feel.
             </p>
             <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="tearju"
+            >
+              <a href="/tearju">Tearju Lunatique</a>
+            </h2>
+            <p>
+              Tearju temporarily became Rito's homeroom teacher when she heard
+              that Yami had been staying on Earth and was attending his school.
+              Though she can be somewhat absent-minded and oblivious around him,
+              leading to awkward situations between the two, Rito still seems to
+              respect and enjoy her company, seeing her as a passionate link o
+              Yami's lighter side and has instantly come to her aid on numerous
+              occasions.
+            </p>
+            <br />
+            <p>
+              After Yami opened up to him about her past with Tearju, Rito
+              became eager to help them reunite with each other so that they may
+              restore the life and happiness they once had together. When Tearju
+              becomes Yami's homeroom teacher, Rito, with help from Mea,
+              successfully persuadad Yami to return to school, in hopes the she
+              and Tearju might become close to each other agian.
+            </p>
+            <br />
+            <p>
+              Tearju is fond of Rito and hopes that he and Yami would improve
+              their relationship. She is also very forgiving of his clumsiness,
+              especially since he accidentally violated her numerous times since
+              her arrival.
+            </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="ryouko"
+            >
+              <a href="/ryouko">Ryouko Mikado</a>
+            </h2>
+            <p>
+              Mikado works as the doctor at Rito's school. Rito and the others
+              have a good and trusting friendship with her, and occasionally
+              comes by her office at school to socialize or talk about important
+              matters, such as Golden Darkness, Tearju, and the organization
+              they were associated with, which Mikado is able to investigate
+              through her former black market connections.
+            </p>
+            <br />
+            <p>
+              Mikado is quite fond of Rito and finds his childlike innocence
+              amusing. She can be quite mischievous with him, and likes to have
+              fun with his shyness around women, such as asking him to take off
+              Yami's clothes so Mikado can treat her sickness, making him rub
+              lotion on her at the beach and instructing Lala to add aphrodisiac
+              to her Valentine chocolate for Rito. She particularly finds his
+              female counterpart Riko Yuusaki cute and would like to examine her
+              body, though she was just teasing him.
+            </p>
+            <br />
+            <p>
+              Together with Oshizu and Tearju, she leads an investigation into
+              the cause of Rito's surreal propensity to grope girls by accident.
+              And when she experienced first-hand his power of pleasing women
+              sexually herself, she tells him that it is incurable, but instead
+              encourages him to use such a "talent" to his advantage with hearts
+              in her eyes.
+            </p>
+            <br />
+            <h2 className="text-2xl font-bold border-b mb-4 mt-4">
+              Trans Weapons
+            </h2>
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="yami"
+            >
+              <a href="/yami">Golden Darkness (Yami)</a>
+            </h2>
+            <p>
+              She was initially hired to kill Rito by Lacospo (one of Lala's
+              suitors), but after learning that Rito is not at all what Lacospo
+              described him to be, she turned on him and spares Rito, but still
+              claims that she will kill him eventually and will stay on earth
+              until her mission is complete (even though the job is technically
+              over). Later she confirms to him that her mission is only an
+              excuse to stay on Earth and warns him not to make her too angry.
+              Yami probably knows that Rito isn't a pervert like everyone thinks
+              and just hates it when he sees her naked (Chapter 77), and she
+              doesn't hesitate to use her powers to give him a powerful punch in
+              the face, despite it not being his fault.{" "}
+            </p>
+            <br />
+            <p>
+              Yami appears to have love-hate feelings for Rito. She convinces
+              him, and perhaps herself as well, that he is still her target.
+              Like other female characters, his kindness slowly grows on her,
+              like when she was feeling sick from overusing her powers and he
+              carried her to Mikado's clinic, and when he protected her from
+              another assassin sent by Lacospo, and when he refused to take
+              advantage of her while she was uncontrollably infatuated with him
+              under the influence of Celine's pollen. She calls him an idiot for
+              showing kindness to an enemy, but also makes it clear that she
+              doesn't hate idiots, sometimes showing a sweet smile that is rare
+              to her. She also notes that being around him makes her feel safe,
+              a feeling she does not often experience in her unhappy life as an
+              assassin (and notes that it reminded her of her life with Tearju).
+              Rito is the only person she has opened up to about her past.
+            </p>
+            <br />
+            <p>
+              In the beginning, Rito always seemed afraid of Yami whenever she
+              was around, but as the series continues, Rito's fear of Yami seems
+              to have lightened (although he still shows fear of her sometimes)
+              and has shown to care for her. He would get mad for her sake and
+              even worry about her well-being, despite him being her target,
+              there's something she finds strange about him.
+            </p>
+            <br />
+            <p>
+              Later on, Yami had developed some feelings for Rito. She got
+              advice from Mea, Momo, and the teacher into getting along and much
+              closer to Rito. Those feelings have been confirmed when she
+              confessed to Mikan about her love for Rito after being caught
+              buying some love-advising books (Darkness Chapter 70)
+            </p>
+            <br />
+            <p>
+              In Chapter 72, after saving Rito from Kuro, Yami has finally
+              confessed her love. However, she said she doesn't want to be an
+              obstacle between Rito and Lala's relationship. She is now less
+              violent with Rito and tries hard to increase her cooking skills
+              with Mikan's help.
+            </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="mea"
+            >
+              <a href="/mea">Mea Kurosaki</a>
+            </h2>
+            <p>
+              {" "}
+              Mea is interested in Rito, especially when Nana called him a
+              beast. Mea seems to find pleasure in being licked, and has a deep
+              desire to have Rito lick her body and to do perverted things with
+              her, which she playfully teases him about, by asking him to do it
+              despite being around other people.
+            </p>
+            <br />
+            <p>
+              When Rito spoke to her and questioned if some things she learned
+              from her Master Nemesis could be wrong, Mea punished him by
+              controlling him with her psycho-dive ability, forcing him to lick
+              and molest her body, and at the same time sharing the sensations
+              with him, which she believes he finds uncomfortable. However, she
+              unintentionally shared with him her deeper feelings of being
+              uneasy, lost and lonely, which she angrily continued to deny,
+              still convincing herself that she is a weapon.
+            </p>
+            <br />
+            <p>
+              Mea was at first opposed to Rito's desire to reunite Yami with
+              Tearju so that they could be happy together again. But recently,
+              after speaking with Rito, she decided to help him persuade Yami to
+              attend classes and see Tearju again, grudgingly accepting Rito's
+              insistence that Tearju sees them as her little sisters and the
+              importance of filling the gaps between them.
+            </p>
+            <br />
+            <p>
+              Rito cares for Mea and wants her to embrace friendship and tries
+              to convince her that she is not alone. It's unknown what Mea's
+              true feelings towards Rito are, as she finds his persuasion to
+              accept humanity annoying, yet she still continues to act
+              cheerfully around him.
+            </p>
+            <br />
+            <p>
+              Overtime, Mea grows rather fond of Rito, and even decides to
+              invite herself into Momo's Harem Plan, which Momo is reluctant to
+              accept. She wishes to assist in the Harem Plan in the hopes of
+              helping Nana and Yami become more honest with their feelings for
+              Rito, but also because Mea is very perverted and still desires
+              Rito to lick her body.
+            </p>
+            <br />
+            <h2
+              className="text-2xl text-[purple] hover:underline hover:text-black mb-4 font-bold"
+              id="nemesis"
+            >
+              <a href="/nemesis">Nemesis</a>
+            </h2>
+            <p>
+              {" "}
+              Nemesis is a sadistic and demanding girl who planned for Yami to
+              return to being a cold-hearted assassin again, starting with
+              killing her target, Rito. Recently, that doesn't seem like the
+              case anymore as she tries to become friends with Rito (in her own
+              erotic way) to observe their lives more closely. She says that he
+              is a fool for trusting people, but despite this, she is very
+              (sexually) interested in him and finds his nervous expressions
+              towards her arousing and because of Rito's ability to bring the
+              transformation weapons, Yami and Mea, closer to humanity, rather
+              than leaving him alone she wants him all to herself as her
+              servant, making him do things like massaging her shoulders,
+              commenting and exaggerating his technique on pleasuring women, and
+              even sneaking upon him in the bath. Wanting Rito all to herself as
+              her servant, she essentially set herself up as an enemy to Momo's
+              harem plan for Rito, telling her to give up on the plan.
+            </p>
+            <br />
+            <p>
+              She also teases Rito from time to time, but some of her jokes are
+              pretty extreme such as accidentally turning Rito into a baby and
+              giving him to Kotegawa.
+            </p>
+            <br />
+            <p>
+              However, just as he is with all other girls, Rito is considerate
+              and caring to Nemesis as well, which he greatly demonstrated when
+              he took pity on her and offered to allow her to live inside his
+              body until she can recover after her battle against King Gid
+              Lucione Deviluke, having seen the good inside of her and believing
+              that she withheld the capability to change. He bravely convinced
+              the Devilukean king to let him save her life and stop her acts of
+              terrorism himself by taking her under his wing and showing her the
+              beauty and fun of life, even if it means allowing Gid to kill him
+              as well as Nemesis if she continues her ambition. Believing that
+              he has no obligation to help her, Nemesis finds Rito's willingness
+              to save her and trust her with his own body very strange, but
+              nevertheless accepts his offer, which she will use to survive for
+              future entertainment.
+            </p>
+            <br />
+            <h2
+              className="text-[purple] text-2xl mb-4 hover:underline hover:text-black font-bold border-b"
+              id="run"
+            >
+              Run Elise Jewelria
+            </h2>
+            <p>
+              {" "}
+              Run first fell in love with Rito when they accidentally kissed
+              each other (in her male form). Since then, she considered Lala her
+              rival for Rito's heart and has tried many methods to get his
+              attention that would lead to certain misunderstandings,
+              occasionally running towards him and landing in an awkward manner,
+              which greatly annoys him. Along with Kyouko, they are the only two
+              out of all the girls that like him that refers to him as
+              "Rito-kun", which is interesting in and of itself, seeing as their
+              relationships don't seem particularly close enough to be on a
+              first name basis (with the -kun honorific).
+            </p>{" "}
+            <br />
+            <p>
+              In To LOVE-Ru Darkness, Run becomes a famous idol. She has also
+              greatly matured around Rito and becomes closer to him on their
+              date. During their date, Rito realizes that he hardly knows
+              anything about her. From this date Rito is now aware of how deep
+              Run's feelings are towards him, but she is saddened by the fact
+              that Rito would never see her as a real girl while sharing the
+              same body with Ren. This was the case until Run and Ren reached
+              "adulthood", causing them to split bodies. Since then, Run has
+              been determined to try harder to gain Rito's affections.
+            </p>{" "}
+            <br />
+            <p>
+              In Darkness Chapter 35, it's possible that Rito is begun to have
+              feelings for her, as dreamed about her naked and kissing him
+              (along with Haruna and Lala). However, he turned her down, due to
+              his claiming that he is a useless, indecisive guy and he feels he
+              did not deserve Run's feeling, plus his feeling for Haruna is
+              still strong and tormenting him. Nevertheless, since Rito and Lala
+              are not officially dating, this in turn encourages Run to win
+              Rito's affection even more, going as far as Run telling not to
+              lose to Haruna or Lala.
+            </p>{" "}
+            <br />
+            <h2
+              className="text-[purple] text-2xl mb-4 hover:underline hover:text-black font-bold border-b"
+              id="ren"
+            >
+              Ren Elise Jewelria
+            </h2>
+            <p>
+              {" "}
+              Ren sees Rito as his rival for Lala's love, so he tries constantly
+              to prove to her that he is more manly than Rito by challenging him
+              to completely pointless challenges (which Rito doesn't care about
+              and Lala isn't even aware of). During one of their squabbles, Ren
+              accidentally kissed Rito, infuriating both boys, and causing Ren
+              to hate Rito even more. Consequently, the kiss also caused his
+              (yet-to-be-introduced) female alter-ego to fall in love with Rito,
+              which Ren also blames him for.
+            </p>
+            <br />
+            <p>
+              As of To Love-Ru Darkness, Ren seems to no longer make any effort
+              to try and impress Lala, perhaps due to being featured less
+              frequently in the story. It's unknown if he has accepted Rito as
+              the one Lala loves or still tries off-scene to impress her. He
+              does still care about Lala. Ren seems to have since matured from
+              what he was before and put most of his animosity towards Rito
+              behind him.
+            </p>
+            <br />
+            <p>
+              He and Rito no longer seems to be against each other anymore and
+              may have established a better relationship. However, he reminds
+              Rito how kind Lala truly is and questions him if he is taking
+              advantage of her kindness, which Rito thinks deep down that it
+              might be true. Including Run, Ren advises him not to do anything
+              to make girls cry and he took those words to heart.
+            </p>{" "}
           </div>
+          <br />
+          <h2
+            className="text-[purple] text-2xl mb-4 hover:underline hover:text-black font-bold border-b"
+            id="kyouko"
+          >
+            Kyouko Kirisaki
+          </h2>
+          <p>
+            {" "}
+            Kyouko is a famous idol who works alongside Run. They first met when
+            Run wanted to introduce Rito as her boyfriend, which Rito agreed to
+            pretend to be. During their meeting, she revealed to him that she is
+            a human/alien hybrid who controls fire. Still unknown to him, Kyouko
+            realized about halfway through that he was only pretending to be
+            Run's boyfriend.
+          </p>
+          <br />
+          <p>
+            Kyouko likes Rito's innocence. Unlike other girls, she doesn't hit
+            or use her abilities on him when he sees her naked after a mishap,
+            and she finds him cute when he blushes and likes to make fun of his
+            shyness. Kyouko is supportive of Run's feelings. During her visit to
+            Sainan High to give a lecture, she was actually there to learn more
+            about him for her friend, but unexpectedly started to develop her
+            own feelings for him after he saved her from a swarm of rampaging
+            fans and carried her like a princess. She has kept this feeling
+            hidden from Run for now.
+          </p>{" "}
+          <br />
         </div>
       </div>
       {/* Back to Top Button */}

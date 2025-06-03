@@ -346,7 +346,7 @@ export const Mea = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-4xl ">
           <h1 className="mb-5 text-3xl">Kurosaki Mea</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">

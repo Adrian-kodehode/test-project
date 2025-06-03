@@ -360,29 +360,22 @@ export const Haruna_relationships = () => {
           <h1 className="mb-5 text-5xl">Sairenji Haruna/Relationship</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a href="/nana" className="text-[purple]">
+              <a href="/haruna" className="text-[purple]">
                 Information
               </a>
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
               <a
-                href="/nana_plot"
+                href="/haruna_plot"
                 className="text-[purple]  hover:underline hover:text-black"
               >
                 Plot
               </a>
             </div>
-            <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold  rounded-t">
-              <a
-                href="/nana_animals"
-                className="text-[purple]  hover:underline hover:text-black"
-              >
-                Animals
-              </a>
-            </div>
+         
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               <a
-                href="/nana_relationships"
+                href="/haruna_relationships"
                 className="hover:underline hover:text-black"
               >
                 Relationships
@@ -390,7 +383,7 @@ export const Haruna_relationships = () => {
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="/nana_gallery"
+                href=""
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Gallery

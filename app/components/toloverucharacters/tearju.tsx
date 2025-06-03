@@ -335,7 +335,7 @@ export const Tearju = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl">
+        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-4xl ">
           <h1 className="mb-5 text-3xl">Tearju Lunatique</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
@@ -547,7 +547,7 @@ export const Tearju = () => {
                 className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
-            <div className="w-full overflow-x-auto">
+            <div className="w-full ">
               <table className="min-w-full border-separate border-spacing-0">
                 <tbody>
                   {/* Characteristics */}

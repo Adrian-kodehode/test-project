@@ -347,7 +347,7 @@ export const Nana = () => {
           </div>
         </div>
         {/* Left: Main text content */}
-        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-2xl ">
+       <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-4xl ">
           <h1 className="mb-5 text-3xl">Nana Astar Deviluke</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
@@ -653,9 +653,9 @@ export const Nana = () => {
                   whenever they get into fight.
                 </div>
                 <img
-                  src="https://static.wikia.nocookie.net/to-loveru/images/d/df/Nana_Tail_attack_v2.png/"
+                  src="To Love Ru/nanaart.jpg"
                   alt=""
-                  className="w-32 h-auto rounded border border-gray-200"
+                  className="w-60 h-full rounded border border-gray-200"
                 />
               </li>
               <br />

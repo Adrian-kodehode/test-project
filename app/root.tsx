@@ -110,6 +110,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/tearju_relationships" &&
           location.pathname !== "/rin_plot" &&
           location.pathname !== "/rin_relationships" &&
+          location.pathname !== "/nemesis_plot" &&
+          location.pathname !== "/nemesis_relationships" &&
+          location.pathname !== "/oshizu" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         <PlaybackBar />
@@ -191,6 +194,9 @@ export default function App() {
         location.pathname !== "/tearju_relationships" &&
         location.pathname !== "/rin_plot" &&
         location.pathname !== "/rin_relationships" &&
+        location.pathname !== "/nemesis_plot" &&
+        location.pathname !== "/nemesis_relationships" &&
+        location.pathname !== "/oshizu" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );
