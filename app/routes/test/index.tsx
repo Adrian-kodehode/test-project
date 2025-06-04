@@ -266,10 +266,10 @@ export default function ToLoveRuWiki() {
                     route: "/oshizu",
                   },
                   {
-                    name: "Sairenji Haruna",
+                    name: "Mikado Ryouko",
                     image:
-                      "https://static.wikia.nocookie.net/to-loveru/images/c/c8/Haruna_Sairenji_TLRD_Manga.png",
-                    route: "/haruna",
+                      "To Love Ru/mikado.jpg",
+                    route: "/mikado",
                   },
                 ].map((character, index) => (
                   <a

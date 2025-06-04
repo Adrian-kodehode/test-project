@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Toloverudarknessmanga = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
-  const [showImageModal, setShowImageModal] = useState(false);
+  const [modalImage, setModalImage] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -653,7 +653,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_1.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -662,13 +664,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_1.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 1 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -732,7 +734,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_2.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -741,13 +745,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_2.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 2 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -847,7 +851,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_3.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -856,13 +862,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_3.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 3 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -935,7 +941,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_4.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -944,13 +952,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_4.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 4 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1023,7 +1031,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_5.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1032,13 +1042,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_5.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 5 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1111,7 +1121,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_6.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1120,13 +1132,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_6.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 6 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1199,7 +1211,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_7.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1208,13 +1222,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_7.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 7 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1287,7 +1301,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_8.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1296,13 +1312,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_8.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 8 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1375,7 +1391,9 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage("To Love Ru/To_Love_Ru_Darkness_Volume_9.jpg")
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1384,13 +1402,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_9.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 9 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1463,7 +1481,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_10.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1472,13 +1494,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_10.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 10 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1551,7 +1573,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_11.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1560,13 +1586,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_11.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 11 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1639,7 +1665,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_12.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1648,13 +1678,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_12.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 12 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1718,7 +1748,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_13.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1727,13 +1761,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_13.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 13 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1807,7 +1841,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_14.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1816,13 +1854,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_14.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 14 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1886,7 +1924,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_15.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1895,13 +1937,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_15.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 15 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -1965,7 +2007,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_16.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -1974,13 +2020,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_16.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 16 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -2044,7 +2090,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_17.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -2053,13 +2103,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_17.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 17 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}
@@ -2124,7 +2174,11 @@ export const Toloverudarknessmanga = () => {
                 <button
                   type="button"
                   className="focus:outline-none w-full"
-                  onClick={() => setShowImageModal(true)}
+                  onClick={() =>
+                    setModalImage(
+                      "To Love Ru/To_Love_Ru_Darkness_Volume_18.jpg"
+                    )
+                  }
                   style={{ display: "block" }}
                 >
                   <img
@@ -2133,13 +2187,13 @@ export const Toloverudarknessmanga = () => {
                     className="w-full object-contain border-2 border-[#DB49AC] hover:scale-105 transition-transform"
                   />
                 </button>
-                {showImageModal && (
+                {modalImage && (
                   <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setShowImageModal(false)}
+                    onClick={() => setModalImage(null)}
                   >
                     <img
-                      src="To Love Ru/To_Love_Ru_Darkness_Volume_18.jpg"
+                      src={modalImage}
                       alt="To LOVE-Ru Volume 18 Large"
                       className="max-w-full max-h-[90vh] rounded-lg border-4 border-[#DB49AC] shadow-2xl"
                       onClick={(e) => e.stopPropagation()}

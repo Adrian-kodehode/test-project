@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Oshizu = () => {
+export const Mikado = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
@@ -15,7 +15,6 @@ export const Oshizu = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
   return (
     <div className="ml-64 flex-1">
       {/* Wiki Logo Header */}
@@ -37,6 +36,7 @@ export const Oshizu = () => {
           </a>
         </div>
       </div>
+
       {/* Wiki Navigation */}
       <nav className="bg-[#DB49AC] text-white shadow">
         <div className="container mx-auto px-4">
@@ -117,9 +117,7 @@ export const Oshizu = () => {
                           <Link to="/to_love-ru_anime">To LOVE-Ru</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/motto_to_love-ru_anime">
-                            Motto To LOVE-Ru
-                          </Link>
+                          Motto To LOVE-Ru
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
                           <Link to="/to_love-ru_darkness_anime">
@@ -127,9 +125,7 @@ export const Oshizu = () => {
                           </Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-pink-100 whitespace-nowrap">
-                          <Link to="/to_love-ru_darkness2ndanime">
-                            To LOVE-Ru Darkness 2nd
-                          </Link>
+                          To LOVE-Ru Darkness 2nd
                         </li>
                       </ul>
                     </div>
@@ -349,26 +345,25 @@ export const Oshizu = () => {
             </div>
           </div>
         </div>
-
         {/* Left: Main text content */}
         <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-4xl ">
-          <h1 className="mb-5 text-3xl">Murasame Shizu (Oshizu)</h1>
+          <h1 className="mb-5 text-3xl">Mikado Ryouko</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
               Information
             </div>
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="oshizu_plot"
+                href="#"
                 className="text-[purple] hover:underline hover:text-black"
               >
-                {" "}
                 Plot
               </a>
             </div>
+
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold rounded-t">
               <a
-                href="oshizu_relationships"
+                href="/mikado_relationships"
                 className="text-[purple] hover:underline hover:text-black"
               >
                 Relationships
@@ -384,18 +379,19 @@ export const Oshizu = () => {
             </div>
           </div>
           <p>
-            <strong>Murasame Shizu</strong> usually addressed as{" "}
-            <strong>"Oshizu"</strong> (お静) the O (お) is an honorific used to
-            refer to women, is the ghost of a girl who died in the old abandoned
-            school building 400 years ago. Since her meeting with Rito and the
-            others, she begins exploring the world outside the old school
-            building. Oshizu is aware of Haruna's crush on Rito by her ability
-            to sense feelings while possessing another person and becomes very
-            supportive towards cheering Haruna into confessing her feelings to
-            him. Her real name is Murasame Shizu, but she likes to be called
-            Oshizu better.
+            <strong>Mikado Ryouko</strong> is the school doctor at{" "}
+            <a
+              href="/sainan_high"
+              className="text-[purple] underline hover:text-black"
+            >
+              Sainan High
+            </a>
+            . She also helps out other extraterrestrials on Earth in various
+            manners, usually those dealing with medical care, though she does
+            offer students like Rito and his friends a variety of her own
+            concoctions and some help concerning matters from space.
           </p>
-          <nav className="w-52 mt-5 bg-white border rounded mb-6">
+          <nav className="w-44 mt-5 bg-white border rounded mb-6">
             <div className="flex items-center justify-between px-3 py-2 border-b">
               <span className="font-semibold text-gray-700 flex items-center text-sm">
                 <svg
@@ -449,288 +445,170 @@ export const Oshizu = () => {
                   Trivia
                 </a>
               </li>
+              <li>
+                <a href="#navigation" className="hover:underline">
+                  Navigation
+                </a>
+              </li>
             </ol>
           </nav>
-          <div className="flex-1 text-black  max-w-2xl">
-            <h2 className="text-2xl font-bold mb-3 border-b" id="appearance">
+          <div className="flex-1 text-black max-w-2xl">
+            <h2
+              className="text-2xl font-bold border-b mt-8 mb-4"
+              id="appearance"
+            >
               Appearance
             </h2>
-            <div className="flex flex-row items-start gap-6">
-              <div className="flex flex-col items-center min-w-[160px]">
-                <img
-                  src="To Love Ru/oshizu.jpg"
-                  alt=""
-                  className="w-60 h-auto rounded"
-                  onClick={() => window.open("To Love Ru/oshizu.jpg", "_blank")}
-                />
-              </div>
-              <div className="flex-1">
-                <p>
-                  Oshizu has long blue-violet hair and irises. In her ghost
-                  form, she wears a white kimono and purple sash, she also has
-                  light colored wisps floating around her, can be slightly
-                  see-through and instead of legs she has a ghostly tail (though
-                  during an OVA episode, her legs could be seen, though
-                  comically when Yami accidentally "cut" her ghost tail down).
-                  She looks the same in her human body only without any ghost
-                  features, and when working at Mikado's clinic, she is seen
-                  wearing a pink nurse's uniform. She always wears two beige
-                  ribbons in her hair. Her artificial body's measurements are
-                  82-56-81.
-                </p>
-              </div>
-            </div>
+            <p>
+              Mikado has green eyes and brownish red hair, she aslo has pointy
+              elf-like ears that she hides underneath her hair to blend with
+              humans. Mikado often wears a lab coat, a pink top (that slightly
+              shows the top of her brests) that's held together by a belt on her
+              waist and a black skirt. She has a slender and mature body that
+              quite a few girls in the series envy her for. Her three sizes are
+              B95-W58-H91. When she is not wearing clothes, her under wear
+              mostly consists of lacy lingerie ranging from black to very dark
+              blue and purple.
+            </p>
             <br />
           </div>
           <div className="flex-1 text-black  max-w-2xl">
             <h2
-              className="text-2xl font-bold mt-5 mb-3 border-b"
+              className="text-2xl font-bold border-b mt-8 mb-4"
               id="personality"
             >
               Personality
             </h2>
             <p>
-              Oshizu is sincere, kind, and very curious about the modern world
-              and has a severe case of cynophobia (fear of dogs), likened to
-              Sairenji Haruna's level of fear to the supernatural (who also has
-              a pet dog), the cause of this is unknown. When frightened of other
-              things, she can emit blasts of mental stress, blowing apart
-              various objects and surroundings with her poltergeist power, she
-              occasionally "disconnects" from her body during brief moments of
-              excitement or being frightened by dogs. Oshizu can also be a bit
-              of a blockhead because she easily misinterprets certain situations
-              and can go off topic. Oshizu is quite determined about helping
-              Haruna confess her love for Rito by using her powers. But that
-              usually ends up in a perverted accident.
+              Mikado is kind to others, especially her students, including Rito
+              and his friends, and stands up for them whenever they are under
+              attack.
             </p>
             <br />
             <p>
-              She is very old-fashioned as seen in OVA 1 and Ch. 102, when she
-              used a Japanese brush to draw Japanese women.
+              Mikado is also optimistic and playful and is often amused by
+              innocent perverted mishaps, especially around Rito. She enjoys
+              teasing Rito's shyness around women, does not mind Celine or Rito
+              molesting her by accident, and also appears to enjoy the sexual
+              pleasure. In the first anime, she also does not mind when anyone
+              sees her naked.
             </p>
+            <br />
+            <p>
+              In the first anime, she also shows that she is comfortable enough
+              to converse with Rito in a serious and mature manner (yet still
+              obviously caring since she was thinking of giving him advice even
+              when nobody asked her to do so, albeit she never came up with
+              anything in the end), as seen when she approaches him one on one
+              inside his room to say that she likes the planet Earth and that
+              Rito must do what he can to save it while enclosing his hand on
+              both of hers seemingly comfortable in telling him her serious
+              feelings and thoughts about the matter (episode 25).
+            </p>
+            <br />
           </div>
-          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="history">
-            History
-          </h2>
-          <p>
-            Oshizu comes from an era that was described as a "living hell" due
-            to a lot of people desperately starving from a famine due to a
-            drought. The cause of her death is unknown. It is hinted in the
-            4koma that she was used as a sacrifice to try to make it rain.
-          </p>
-          <br />
-          <p>
-            After 400 years, Oshizu "returns" to the living after Ryoko Mikado
-            creates a prosthetic body for her to inhabit, built with biological
-            qualities (looking and feeling like an actual, human body) and has
-            become a recurring character in the series, even attending Sainan
-            high. She currently works as an assistant for Mikado. In the first
-            anime, Oshizu is not given a new body and her presence is limited,
-            while in the OVA and Motto To Love-Ru and so on, she has her own
-            body as she does in the manga.
-          </p>
-          <br />
-          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="powers">
-            Powers and Abilities
-          </h2>
-          <div className="flex flex-row gap-6 items-start">
-            <div className="flex-1">
-              <p>
-                Ghost Physiology: As a ghost, she is capable of flight,
-                intangibility, psychokinesis, etc. while in her human body most
-                of her ghost powers are limited but she is still able to use
-                abilities such as psychokinesis and poltergeist. However, Mikado
-                said that if Oshizu overuses her powers, her spirit would
-                disappear. Although she technically has good intentional control
-                over her powers, her vulnerability to distractions as well as
-                her panics around dogs make her easily lose control, with
-                disastrous results. Interestingly, when her powers go berserk,
-                they inexplicably cause all kinds of perverted mishaps around
-                Rito, such as stripping the clothes of girls in front of him, or
-                throwing them over each other into a provocative position.
-              </p>
-            </div>
-            <div className="flex flex-col items-center min-w-[200px]">
-              <img
-                src="https://static.wikia.nocookie.net/to-loveru/images/4/46/Ch37_pg38.jpg"
-                alt=""
-                className="w-48 h-auto rounded"
-                onClick={() =>
-                  window.open(
-                    "https://static.wikia.nocookie.net/to-loveru/images/4/46/Ch37_pg38.jpg",
-                    "_blank"
-                  )
-                }
-              />
-              <span className="mt-2 text-xs text-center block max-w-[12rem]">
-                The usual result of Oshizu using her powers. And it will always
-                be Rito who gets punished.
-              </span>
-            </div>
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="history">
+              History
+            </h2>
+            <p>
+              Formerly an operative for a shadowy, black market extraterrestrial
+              organization named Solgam bent on overthrowing Emperor Gid, she
+              fled from her superiors to Earth in hopes of hiding her identity.
+              She now works as a doctor at Sainan High and runs her own clinic
+              at her home where people and aliens go to for medical help, the
+              latter group in secret.
+            </p>
+            <br />
+            <p>
+              Mikado has met Yami prior to start of the series, with Yami coming
+              to her for treatment, shortly after her first Darkness
+              Tranformation, full of injuries but with no memory of how she got
+              them.
+            </p>
+            <br />
           </div>
-          <br />
-          <div className="ml-8">
-            <li>
-              <strong>Flight:</strong> A most basic ghost ability, Oshizu is
-              capable of flying. However, she seems only capable of this after
-              detaching herself from her artificial physical body. It is unknown
-              to what height and distance she is able to fly, as she was never
-              seen traveling far from the abandoned school building she was
-              haunting, or from her synthetic body.
-            </li>
-            <li>
-              <strong>Intangibility:</strong> Another basic ghost ability that
-              lets her phase through walls, which she can also only do after
-              detaching from her artificial body.{" "}
-            </li>
-            <div className="flex flex-row gap-6 items-start">
-              <div className="flex-1">
-                <li>
-                  <strong>Possession:</strong> Oshizu is capable of possessing
-                  others and control their movements. While she possesses
-                  others, she can also enter their subconscious and look through
-                  their memories and understand their feelings, especially
-                  feelings towards others. This ability is similar to Mea's
-                  Psycho-Dive. While no further details are given, it seems,
-                  that this ability also brings possible danger of Oshizu
-                  permanently fusing with soul of compatible person whose body
-                  she possess, if she stays in that body for too long. As nearly
-                  happened, when she accidentally possesed Haruna, and nearly
-                  ended with Oshizu overwriting Haruna's consciousness, or
-                  Oshizu herself being nearly consumed, when she tried possess
-                  Mea. However in that case it could be also because Mea was
-                  already possessed by Nemesis at that time.
-                </li>
-              </div>
-              <div className="flex flex-col items-center min-w-[200px]">
-                <img
-                  src="To Love Ru/Haruna x Oshizu merge.jpg"
-                  alt=""
-                  className="w-48 h-auto rounded"
-                />
-                <span className="mt-2 text-xs text-center block max-w-[12rem]">
-                  Oshizu accidentally possessing Haruna.
-                </span>
-              </div>
-            </div>
-            <li>
-              <strong>Extrasensory Perception:</strong> Oshizu has extrasensory
-              perception, which allows her to sense aura. She was able to sense
-              the aura of another ghost that haunted Zastin's apartment. She was
-              also able to sense the activation of Yami's Darkness
-              Transformation even from a long distance.
-            </li>
-            <li>
-              <strong>Concentrated Psychokinetic Power:</strong> By pointing
-              with her fingers, she is able to move objects with her mind
-              without any physical contact and create poltergeists. She can also
-              use this to control the bodies of other people without possessing
-              them. She can create huge forces of shockwaves that can blast
-              through walls and create force fields strong enough to seal a
-              micro black hole. Although when frightened she loses control over
-              this power for a moment, often leading to perverted results.
-            </li>
-            <li>
-              <strong>Psycho-Pyrokinesis:</strong> She can also use her
-              psychokinesis to control the wisps floating around her (when in
-              ghost form) to target her opponents and set them on fire similar
-              to pyrokinesis. It's unknown if this affects other living things
-              or just other spirits.{" "}
-            </li>
-            <li>
-              <strong>Exorcism:</strong> Oshizu is also capable of exorcism,
-              which she has shown by pulling out the spirit that possessed
-              Zastin.
-            </li>
-            <li className="ml-8">
-              Additionally, she can force a spirit back into its own body in a
-              brief moment when it just leaves the body. Comically, she did that
-              when the homeroom teacher Honekawa's spirit left his body,
-              miraculously "reviving" him.
-            </li>
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="powers">
+              Powers and Abilities
+            </h2>
+            <p>
+              Though she has no unique special abilities, Mikado is a highly
+              skilled doctor for both humans and many different species of
+              aliens and an expert on a number of extraterrestrial matters.
+              Although, in the anime, she is quite good at using her medical
+              skills in combat, shown when she restrained Pikari using nothing
+              but a roll of gauze. She is very knowledgeable about herbs and
+              medicines, and she may use them for varying purposes and sometimes
+              even a little mischief.
+            </p>
+            <br />
+            <p>
+              She also has knowledge and access to various equipment of alien
+              technological origin, including a regeneration tank much like the
+              one used in Yami's creation and childhood, which she used to treat
+              Yami's overuse of her powers. It is both her vast medical
+              knowledge and her access to highly-advanced alien technology that
+              enables her to achieve scientific feats that are currently well
+              beyond Earth's capabilities: She was able to construct an
+              artificial human body for the ghost Oshizu to use as her own
+              physical body like a living girl.
+            </p>
+            <br />
           </div>
-          <br />
-          <p>
-            <strong>Medical Skills:</strong> Due to being Mikado's assistant,
-            Oshizu picked up some medical skills to be able to heal others. But
-            she can be quite clumsy and would hurt others instead, especially
-            when frightened.
-          </p>
-          <br />
-          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="etymology">
-            Etymology
-          </h2>
-          <p>
-            Her full name can literally be translated as "Silent Rain in the
-            Village".
-          </p>
-          <br />
-          <div className="ml-8">
-            <li>
-              <strong>Murasame</strong> means "town, village" (村) (
-              <strong>mura</strong>) and "rain" (雨) (<strong>same</strong>),
-              which literally means "passing shower" altogether; this may be a
-              reference to her old-fashioned style.
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2
+              className="text-2xl font-bold border-b mt-8 mb-4"
+              id="etymology"
+            >
+              Etymology
+            </h2>
+            <li className="ml-6">
+              <strong>Mikado</strong> means "honorable" (御) (
+              <strong>mika</strong>) and "gate" (門) (<strong>do</strong>).
             </li>
-            <li>
-              <strong>Shizu</strong> means "quiet" (静).
+            <li className="ml-6">
+              <strong>Ryōko</strong> means "cool, refreshing" (涼) (
+              <strong>ryō</strong>) and "child" (子) (<strong>ko</strong>).
             </li>
+            <br />
           </div>
-          <br />
-          <h2 className="text-2xl font-bold mt-5 mb-3 border-b" id="trivia">
-            Trivia
-          </h2>
-          <div className="ml-8 flex flex-row gap-6 items-start">
-            <div className="flex-1">
+          <div className="flex-1 text-black  max-w-2xl">
+            <h2 className="text-2xl font-bold border-b mt-8 mb-4" id="trivia">
+              Trivia
+            </h2>
+            <ul className="list-disc list-inside pl-5">
               <li>
-                She appeared in Mayoi Neko Overrun! as a customer (with Haruna).
+                Due to Mikado's pointy ears, she has an elf-like appearance.
               </li>
               <li>
-                In Mayoi Neko Overrun! Murasame is the name of a family who owns
-                an academy/orphanage, with excellent students and the most
-                excellent would be adopted to the family. It's unknown if this
-                is a connection to Oshizu's family name, though the kanji being
-                the same hints towards this being the case.
+                While the field of her doctorate is unknown despite medicine
+                being her implied profession, the fact that Mikado was able to
+                construct a physical body for Oshizu's ghost to inhabit suggests
+                she has a secondary grasp of bioengineering. It is unknown how
+                intimately she has this knowledge; her use of a regeneration
+                tank for treating Yami would imply a cursory grasp at worst and
+                a tenuous one at best. Furthermore, it was never shown how she
+                made Oshizu's body, so the ultimate extent of her bioengineering
+                knowledge is unknown.
               </li>
-              <li>
-                Being over 400 years old she is easily the oldest character of
-                the series.
-              </li>
-              <li>
-                It is unknown if she will age (and eventually die when she
-                becomes old) just like any other human beings when she is in her
-                new artificial body, or it is just her spirit will become feral
-                once again after her "second death".
-              </li>
-              <li>
-                In Chapter 153, when Rito inside Peke causes her to malfunction,
-                Peke dresses Oshizu as Enma Ai from Hell Girl. This is a
-                reference to the fact Oshizu and Enma share the same seiyuu,
-                Noto Mamiko.
-              </li>
-            </div>
-            <div className="flex-shrink-0 flex flex-col items-center min-w-[200px]">
-              <img
-                src="https://static.wikia.nocookie.net/to-loveru/images/0/03/-MayoiNekoOverrun%21--ch06_008.png"
-                alt=""
-                className="w-48 h-auto rounded"
-              />
-            </div>
+            </ul>
+            <br />
           </div>
         </div>
 
         {/* Right: Info card sidebar */}
         <div className="w-[350px] p-5 font-sans  top-8 mr-8">
           <div className="w-full border-4 border-[#DB49AC] rounded-lg bg-white shadow-lg flex flex-col items-center">
-            <div className="text-center w-full">
+            <div className="text-center  w-full">
               <h1 className="text-white bg-[#DB49AC] text-xl font-bold p-2 ">
-                Murasame Shizu
+                Mikado Ryouko
               </h1>
             </div>
-            <div className="flex justify-center w-full">
+            <div className="flex justify-ce w-full">
               <img
-                src="/To Love Ru/Shizu_Murasame_TLRD_Manga.png"
-                alt="Murasame Shizu"
+                src="/To Love Ru/mikado.jpg"
+                alt="Mikado Ryouko"
                 className="w-80 h-80 object-cover border-2 border-[#DB49AC] "
               />
             </div>
@@ -751,7 +629,7 @@ export const Oshizu = () => {
                       Kanji
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      村雨静
+                      御門 涼子
                     </td>
                   </tr>
                   <tr>
@@ -759,7 +637,7 @@ export const Oshizu = () => {
                       Name
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Murasame Shizu
+                      Mikado Ryouko
                     </td>
                   </tr>
                   <tr>
@@ -767,7 +645,7 @@ export const Oshizu = () => {
                       Planet
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Earth
+                      Unknown (extraterrestrial)
                     </td>
                   </tr>
                   <tr>
@@ -775,7 +653,7 @@ export const Oshizu = () => {
                       Age
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      approx. 16 at time of death <br /> Died 400 years ago
+                      27
                     </td>
                   </tr>
                   <tr>
@@ -783,7 +661,7 @@ export const Oshizu = () => {
                       Birthday
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      July 26
+                      September 9th
                     </td>
                   </tr>
                   <tr>
@@ -791,15 +669,7 @@ export const Oshizu = () => {
                       Zodiac Sign
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Leo
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Gender
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Female
+                      Virgo
                     </td>
                   </tr>
                   <tr>
@@ -807,7 +677,7 @@ export const Oshizu = () => {
                       Height
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      159cm
+                      171cm
                     </td>
                   </tr>
                   <tr>
@@ -815,7 +685,7 @@ export const Oshizu = () => {
                       Weight
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      49 kg
+                      59kg
                     </td>
                   </tr>
                   <tr>
@@ -823,7 +693,7 @@ export const Oshizu = () => {
                       Blood Type
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      B
+                      O
                     </td>
                   </tr>
                   <tr>
@@ -831,7 +701,7 @@ export const Oshizu = () => {
                       Hair Color
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Dark Blue
+                      Brown
                     </td>
                   </tr>
                   <tr>
@@ -839,7 +709,7 @@ export const Oshizu = () => {
                       Eye Color
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Blue
+                      Green
                     </td>
                   </tr>
                   {/* Personal Status */}
@@ -851,29 +721,16 @@ export const Oshizu = () => {
                       Personal Status
                     </td>
                   </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      School
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Sainan High School
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
-                      Class
-                    </td>
-                    <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      1-A (chapter 1-48) <br />
-                      2-A (chapter 49-present)
-                    </td>
-                  </tr>
+
                   <tr>
                     <td className="bg-[#DB49AC] text-white p-2 border border-[#9C2E7A] ">
                       Education
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Currently attending High School
+                      Graduated from unknown school <br />
+                      from another planet <br />
+                      Trained doctor for humans and <br />
+                      extra-terrestrials
                     </td>
                   </tr>
                   <tr>
@@ -881,8 +738,9 @@ export const Oshizu = () => {
                       Occupation
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Dr. Mikado's assistant <br />
-                      Nurse-in-traning
+                      Doctor
+                      <br />
+                      Alien Doctor
                     </td>
                   </tr>
                   <tr>
@@ -890,7 +748,13 @@ export const Oshizu = () => {
                       Relatives
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Unknown
+                      <a
+                        href="/tearju"
+                        className="text-[purple] hover:underline hover:text-black"
+                      >
+                        Tearju Lunatique
+                      </a>{" "}
+                      (Former schoolmate)
                     </td>
                   </tr>
                   <tr>
@@ -906,9 +770,7 @@ export const Oshizu = () => {
                       Unusual Features
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Is a ghost <br />
-                      Psychic powers <br />
-                      Severe Cynophobic (fear of dogs)
+                      Elf-like ears
                     </td>
                   </tr>
                   {/* First Appearance */}
@@ -925,7 +787,7 @@ export const Oshizu = () => {
                       Manga Debut
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Chapter 56
+                      Chapter 28
                     </td>
                   </tr>
                   <tr>
@@ -933,7 +795,7 @@ export const Oshizu = () => {
                       Anime Debut
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                      Episode 17
+                      Episode 9
                     </td>
                   </tr>
                   {/* Voice Actors */}
@@ -950,7 +812,8 @@ export const Oshizu = () => {
                       Japanese VA
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                     Noto Mamiko
+                      Masako Jō (2008-12) <br />
+                      Harumi Sakurai (2012-17)
                     </td>
                   </tr>
                   <tr>
@@ -958,8 +821,7 @@ export const Oshizu = () => {
                       English VA
                     </td>
                     <td className="bg-white text-center text-black p-2 border border-[#DB49AC] ">
-                     Melissa Molano (season 1-3) <br />
-                     Jad Saxton (season 4)
+                      Marissa Lenti
                     </td>
                   </tr>
                   <tr>

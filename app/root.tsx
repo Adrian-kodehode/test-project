@@ -113,9 +113,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/nemesis_plot" &&
           location.pathname !== "/nemesis_relationships" &&
           location.pathname !== "/oshizu" &&
+          location.pathname !== "/oshizu_plot" &&
+          location.pathname !== "/oshizu_relationships" &&
+          location.pathname !== "/mikado" &&
+          location.pathname !== "/mikado_relationships" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
-        <PlaybackBar />
+        {location.pathname !== "/test" && <PlaybackBar />}
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -126,9 +130,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   const location = useLocation();
 
+  // Only show the custom cursor if not on /home
+  const showCustomCursor = location.pathname !== "/home";
+
   return (
-    <div className="cursor-none">
-      <CustomCursor gifSrc="guraDance-4x.gif" size={48} />
+    <div className={showCustomCursor ? "cursor-none" : ""}>
+      {showCustomCursor && <CustomCursor gifSrc="guraDance-4x.gif" size={48} />}
       <Outlet />
       {location.pathname !== "/music" &&
         location.pathname !== "/home" &&
@@ -197,6 +204,10 @@ export default function App() {
         location.pathname !== "/nemesis_plot" &&
         location.pathname !== "/nemesis_relationships" &&
         location.pathname !== "/oshizu" &&
+        location.pathname !== "/oshizu_plot" &&
+        location.pathname !== "/oshizu_relationships" &&
+        location.pathname !== "/mikado" &&
+        location.pathname !== "/mikado_relationships" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );
