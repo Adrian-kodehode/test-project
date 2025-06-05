@@ -351,7 +351,7 @@ export const Yami = () => {
         </div>
 
         {/* Left: Main text content */}
-       <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-4xl ">
+        <div className="flex-1 text-black pl-8 pr-8 pt-8 max-w-4xl ">
           <h1 className="mb-5 text-3xl">Konjiki no Yami</h1>
           <div className="flex flex-row mb-3 text-black">
             <div className="pr-5 pl-5 pt-1 border flex items-center justify-center border-black font-bold bg-[pink] rounded-t">
@@ -795,6 +795,7 @@ export const Yami = () => {
                 alt="Young Yami in Dr.Tearju's care."
                 className="w-60 h-auto rounded"
               />
+              <span>Young Yami in Dr.Tearju's care.</span>
             </div>
           </div>
           <div className="flex flex-row gap-6 items-start">
@@ -930,41 +931,321 @@ export const Yami = () => {
                   expulsion from Eden, the scientists
                 </p>
                 <br />
-                <p>
-                  affiliated with the group implanted a program called
-                  "Darkness" into Yami. Nemesis has stated that this form is a
-                  grand weapon of destruction that has the capability to destroy
-                  the whole universe. Darkness power was so great that it could
-                  be able to overpower Kuro, destroying his seemly
-                  indestructible weapon, the Orichalcum handgun in the process.
-                  It was also feared by Tearju after Rito and Momo mentioned it
-                  to her during the Festival (Darkness Chapter 24). Because the
-                  scientists ultimately hated the fact that the universe was
-                  heading towards peace, they designed "Darkness" to activate
-                  when Yami felt a sense of peace in her heart. The
-                  Transformation starts with Yami losing control over her
-                  transform ability, in which it started molesting her with her
-                  hair. After a while, she is then cocooned by her hair and
-                  emerges in a transformed state. In this form, all of Yami's
-                  previous abilities are enhanced as well gaining new ones:
+                <div className="flex flex-row gap-6 items-start">
+                  <div className="flex-1">
+                    <p>
+                      affiliated with the group implanted a program called
+                      "Darkness" into Yami. Nemesis has stated that this form is
+                      a grand weapon of destruction that has the capability to
+                      destroy the whole universe. Darkness power was so great
+                      that it could be able to overpower Kuro, destroying his
+                      seemly indestructible weapon, the Orichalcum handgun in
+                      the process. It was also feared by Tearju after Rito and
+                      Momo mentioned it to her during the Festival (Darkness
+                      Chapter 24). Because the scientists ultimately hated the
+                      fact that the universe was heading towards peace, they
+                      designed "Darkness" to activate when Yami felt a sense of
+                      peace in her heart. The Transformation starts with Yami
+                      losing control over her transform ability, in which it
+                      started molesting her with her hair. After a while, she is
+                      then cocooned by her hair and emerges in a transformed
+                      state. In this form, all of Yami's previous abilities are
+                      enhanced as well gaining new ones:
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center min-w-[160px]">
+                    <img
+                      src="To Love Ru/yamiart3.jpg"
+                      alt=""
+                      className="w-60 h-auto rounded"
+                    />
+                    <span className="mt-2 text-xs text-center">
+                      Yami telling that she transformed by her own will.
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex flex-row gap-6 items-start mt-4">
+                    <div className="flex-1">
+                      <ul className="list-disc ml-8">
+                        <li>
+                          <strong>Limitless Transform Ability:</strong>{" "}
+                          According to Nemesis, the Darkness form is what
+                          happens when Transform runs amok and removes all of
+                          its limits, which she referred to as the Limitless
+                          Transform Ability. This ultimately turns Yami from an
+                          Anti-personal weapon into an Anti-planetary weapon.
+                        </li>
+                        <li>
+                          <strong>Wormholes:</strong> Yami can create wormholes
+                          with the use of her hair and teleport anything or
+                          anyone anywhere, even herself. It is described by
+                          Tearju as applying her Transform Abilities on space to
+                          displace it.
+                        </li>
+                        <li>
+                          <strong>Matter Manipulation:</strong> Yami is now able
+                          to freely control physical matter itself by
+                          transforming her Transform Ability into said matter.
+                          She has been shown being able to control water and
+                          solidfy it , creathing huge hands and is also able to
+                          stant on it. She can also control solid material lik
+                          creating a wormhole in the ground shaped lik a moth
+                          with sharp teeth, and creating and controling a giant
+                          earth statue shaped like Rito.
+                        </li>
+                        <li>
+                          <strong>Energy Based Weapons:</strong> Yami can now
+                          construct weapons made out of energy.
+                        </li>
+                        <li>
+                          <strong>Planet Slicer:</strong> Yami's ultimate
+                          attack. She can form a giant blade of energy that is
+                          capable of cutting a planet in half.
+                        </li>
+                      </ul>
+                      <br />
+                    </div>
+                    <div className="flex-shrink-0">
+                      <img
+                        src="To Love Ru/yamiart4.jpg"
+                        alt=""
+                        className="w-60 h-auto rounded"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p className="mb-4">
+                  <strong>Expert Hand-To-Hand Combatant:</strong> Apart from her
+                  alien powers, she also has excellent martial arts skills. Her
+                  physical combat skills nearly match her transformation power,
+                  meaning that even if her transformation powers were taken away
+                  from her, she could still win a fight with just her fighting
+                  skill, as shown when she beats up the school principal while
+                  in Mikan's body only using kicks and punches. She has also
+                  shown to be skilled with a regular Katana (though created from
+                  her hair).
                 </p>
+                <p className="mb-4">
+                  <strong>Enhanced Strength:</strong> Yami is shown to have a
+                  great amount of strength despite her child-like appearance.
+                </p>
+                <p className="mb-4">
+                  <strong>Enhanced Durability:</strong> Yami is able to
+                  withstand heavy attacks like a direct hit from a laser from
+                  Lala's tail.
+                </p>
+                <p className="mb-4">
+                  <strong>Enhanced Agility and Reflexes:</strong> Yami has
+                  really good athletic skills, capable of doing somersaults,
+                  leaping over buildings and dodging certain impacts, but is
+                  still unable to dodge Rito's clumsiness, who always seems to
+                  manage to stumble upon her regardless.
+                </p>
+                <p className="mb-8">
+                  <strong>Expert Tactician:</strong> Yami has seemly proven
+                  herself to be an excellent tactician, as shown from observing
+                  her opponents and finding any sort of weakness, such as being
+                  knowledgeable of the Demon Sword, Bladix, at first sight or
+                  single-handedly finding out the rough alien Khameleon at the
+                  Tenjouin beach resort like a detective (due to reading too
+                  many detective manga, as pointed out by Mikan).
+                </p>
+                <h3
+                  className="text-2xl font-bold mt-5 mb-3 border-b"
+                  id="appellations"
+                >
+                  Appellations
+                </h3>
+                <table className="min-w-full border border-gray-300 mb-8">
+                  <thead>
+                    <tr className="bg-gray-100">
+                      <th className="px-4 py-2 border border-gray-300 text-left">
+                        Character
+                      </th>
+                      <th className="px-4 py-2 border border-gray-300 text-left">
+                        What they call her
+                      </th>
+                      <th className="px-4 py-2 border border-gray-300 text-left">
+                        What she calls them
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yuuki Rito
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yami, Konjiki no Yami
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yuuki Rito
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Lala Satalin Deviluke
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">Yami</td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Princess Lala, Princess
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yuuki Mikan
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yami-san
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Mikan
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Kurosaki Mea
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yami-oneechan
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">Mea</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Tearju Lunatique
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Eve, Yami
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">Tear</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Ryoko Mikado
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yami-chan
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Doctor Mikado
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Momo Belia Deviluke
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yami-san, Konjiki no Yami-san (earlier)
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Princess Momo
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Nana Astar Deviluke
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">Yami</td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Princess Nana
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Saruyama Kenichi
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Yami-chan
+                      </td>
+                      <td className="px-4 py-2 border border-gray-300">
+                        Saruyama Kenichi
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h3
+                  className="text-2xl font-bold mt-5 mb-3 border-b"
+                  id="etymology"
+                >
+                  Etymology
+                </h3>
+                <ul className="list-disc ml-4">
+                  <li>
+                    "Konjiki no Yami" literally translated to Golden Darkness.
+                    "Yami" means Darkness.
+                  </li>
+                </ul>
+              </ul>
+              <h3 className="text-2xl font-bold mt-5 mb-3 border-b" id="triva">
+                Triva
+              </h3>
+              <ul className="list-disc ml-4">
+                <li>
+                  Golden Darkness/Yami's character and appearance are based on
+                  another character named Eve from the manga series Black Cat
+                  (another series by Kentaro Yabuki). This Eve has also been
+                  created by Tearju Lunatique from Black Cat, whom Tearju
+                  Lunatique was designed and named after. The name "Eve" is
+                  likely connected to the Eden organization that created her.
+                  Even Yami's transformation powers, such as growing wings and
+                  being able to transform her legs into a mermaid tail, were
+                  inspired by Eve.
+                </li>
+                <li>
+                  Yami was one of the most popular and main characters in To
+                  Love-Ru aside from Rito, Lala, and Haruna. This is the reason
+                  because she is promoted as one of main characters (along with
+                  Momo) in To Love-Ru Darkness'.
+                </li>
+                <li className="mb-4">
+                  Because Yami is created from Tearju Lunatique's genes, their
+                  eyes should share the same color (because eye color is defined
+                  by specific genetic code).However, in the anime, Tear's eyes
+                  are emerald green, while Yami's ones are crimson red.
+                </li>
+                <div className="flex flex-row gap-6 items-start">
+                  <div className="flex-1">
+                    <li>
+                      Yami's voice actress, Misato Fukuen also voiced Tearju
+                      Lunatique and in Black Cat she voiced Eve and Tearju
+                      Lunatique too.
+                    </li>
+                    <li>
+                      Along with Lala and Run, Yami was the one who could bring
+                      herself to confess her love to Rito in Darkness manga
+                      chapter 72, by saying Rito was the target of her love,
+                      although she did not wait for a response from Rito
+                      himself.
+                    </li>
+                    <li>
+                      Yami also made a cameo appearance in the manga Mayoi Neko
+                      Overrun in chapter 7 page 27.
+                    </li>
+                  </div>
+                  <div className="flex flex-col items-center mb-4 min-w-[180px]">
+                    <img
+                      src="https://static.wikia.nocookie.net/to-loveru/images/9/9a/Mayoi-neko-overrun-1463726.jpg"
+                      alt=""
+                      className="w-40 h-auto rounded"
+                      onClick={() =>
+                        window.open(
+                          "https://static.wikia.nocookie.net/to-loveru/images/9/9a/Mayoi-neko-overrun-1463726.jpg",
+                          "_blank"
+                        )
+                      }
+                    />
+                    <span className="mt-2 text-xs text-center w-40">
+                      Yami's appearance in Mayoi Neko Overrun.
+                    </span>
+                  </div>
+                </div>
               </ul>
             </div>
             <div className="flex flex-row gap-6 items-start">
               <div className="flex-1">
                 {/* You can add more text or details here if needed */}
-              </div>
-              <div className="flex flex-col gap-6 flex-shrink-0">
-                <img
-                  src="To Love Ru/yamiart4.jpg"
-                  alt=""
-                  className="w-60 h-auto rounded"
-                />
-                <img
-                  src="To Love Ru/yamiart3.jpg"
-                  alt=""
-                  className="w-60 h-auto rounded"
-                />
               </div>
             </div>
           </div>

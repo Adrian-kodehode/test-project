@@ -11,10 +11,10 @@ export default function Navigation() {
     { name: "Collection", href: "/image", current: true, mainTab: true },
     { name: "Dashboard", href: "/dashboard", current: true, mainTab: true },
     { name: "To LOVE-Ru ", href: "/test", current: true, mainTab: true },
+    { name: "Blue Archive", href: "/blue_archive", current: true, mainTab: true },
     { name: "Discover", href: "/discover", current: true, mainTab: true },
     { name: "Marketplace", href: "/marketplace", current: true, mainTab: true },
     { name: "Video", href: "/video", current: true, mainTab: false },
-    { name: "Reports", href: "/reports", current: true, mainTab: true },
 
     // { name: "", href: "/profile", current: true },
     // { name: "", href: "/shoppingcart", current: true },

@@ -267,9 +267,13 @@ export default function ToLoveRuWiki() {
                   },
                   {
                     name: "Mikado Ryouko",
-                    image:
-                      "To Love Ru/mikado.jpg",
+                    image: "To Love Ru/mikado.jpg",
                     route: "/mikado",
+                  },
+                  {
+                    name: "Sephie Michaela Deviluke",
+                    image: "To Love Ru/sephie2.jpg",
+                    route: "/sephie",
                   },
                 ].map((character, index) => (
                   <a

@@ -34,26 +34,30 @@ export const links: LinksFunction = () => [
 export function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
 
+  // Choose favicon based on route
+  // Map routes to favicons for easier extension
+  const faviconMap: Record<string, string> = {
+    "/blue_archive": "public/Blue-Archive/MP_BA.png",
+  };
+  const defaultFavicon = "public/To Love Ru/toloveruDarkness.png";
+  const favicon = faviconMap[location.pathname] || defaultFavicon;
+
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="icon"
-          href="To Love Ru/toloveruDarkness.png"
-          type="image/png"
-        />
+        <link rel="icon" href={favicon} type="image/png" />
         <Meta />
         <Links />
       </head>
       <body>
-        {location.pathname !== "/home" &&
+        {location.pathname !== "/test" &&
+          location.pathname !== "/home" &&
           location.pathname !== "/yami" &&
           location.pathname !== "/momo" &&
           location.pathname !== "/yui" &&
           location.pathname !== "/mea" &&
-          location.pathname !== "/test" &&
           location.pathname !== "/mikan" &&
           location.pathname !== "/kyouko" &&
           location.pathname !== "/haruna" &&
@@ -117,9 +121,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/oshizu_relationships" &&
           location.pathname !== "/mikado" &&
           location.pathname !== "/mikado_relationships" &&
+          location.pathname !== "/sephie" &&
+          // location.pathname !== "/blue_archive" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
-        {location.pathname !== "/test" && <PlaybackBar />}
+        {location.pathname !== "/test" && location.pathname !== "/home" && (
+          <PlaybackBar />
+        )}
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -208,6 +216,8 @@ export default function App() {
         location.pathname !== "/oshizu_relationships" &&
         location.pathname !== "/mikado" &&
         location.pathname !== "/mikado_relationships" &&
+        location.pathname !== "/sephie" &&
+        location.pathname !== "/blue_archive" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );
