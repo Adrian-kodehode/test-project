@@ -12,52 +12,88 @@ export const BlueArchive = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <div className="bg-[url(Blue-Archive/bluearchive.jpg)] bg-cover bg-no-repeat bg-fixed min-h-screen flex flex-col">
+    <div
+      className="min-h-screen flex flex-col"
+      style={{
+        backgroundImage: "url('/Blue-Archive/bluearchive.jpg')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        backgroundPosition: "center center",
+        imageRendering: "auto", // Prevents pixelation
+      }}
+    >
       {/* Header */}
-
-      <h1 className="text-2xl font-bold">Sensei Welcome to Kivtek!</h1>
-      <nav className="mr-auto flex gap-6">
-        <a href="#" className="hover:underline">
-          Explore
-        </a>
-        <a href="#" className="hover:underline">
-          Blue Archive
-        </a>
-        <a href="#" className="hover:underline">
-          Technology
-        </a>
-        <a href="#" className="hover:underline">
-          Menu
-        </a>
-      </nav>
-
+      <header className="w-full  flex flex-col items-start justify-center pt-10 pl-40 relative">
+        <div className="flex flex-row items-start gap-6">
+          <img
+            src="/Blue-Archive/Site-logo (5).png"
+            alt="Blue Archive Logo"
+            className="h-16 w-auto drop-shadow-lg"
+          />
+          <h1 className="text-lx pt-10 font-bold text-[#02d3fb] tracking-wide drop-shadow-md">
+            Sensei Welcome to Kivotos!
+          </h1>
+        </div>
+        <nav className="mt-4 flex gap-8 text-[#02d3fb] font-bold text-lg justify-center">
+          <a href="#" className="hover:underline hover:text-white transition">
+            EXPLORE
+          </a>
+          <a href="#" className="hover:underline hover:text-white transition">
+            BLUE ARCHIVE
+          </a>
+          <a href="#" className="hover:underline hover:text-white transition">
+            TERMINOLOGY
+          </a>
+          <a href="#" className="hover:underline hover:text-white transition">
+            MENU
+          </a>
+          <a href="#" className="hover:underline hover:text-white transition">
+            MISC
+          </a>
+        </nav>
+      </header>
       <div className="flex flex-1 justify-center items-start px-8 py-8 gap-8">
         {/* Sidebar */}
 
         {/* Main Content */}
         <main className="flex-1 max-w-5xl bg-black bg-opacity-80 rounded-lg p-8 text-white shadow-lg">
           <div className="flex flex-col items-start mb-4">
-            <img
-              src="https://static.wikia.nocookie.net/blue-archive/images/e/e6/Site-logo.png/"
-              alt="Blue Archive"
-              className="h-12 w-auto mb-2"
-            />
-
-            <h2 className="text-3xl text-[#06bbfa]">Blue Archive</h2>
+            <h2 className="text-3xl text-[#06bbfa] mt-5 pb-20 drop-shadow">
+              Blue Archive
+            </h2>
           </div>
-          <div className="mb-4 flex justify-center items-center">
-            <span className="bg-[#02d3fb]  border-2  border-[#357ff3] text-black font-extrabold rounded px-2 py-1 text-xs mr-2">
+          <div className="mb-6 flex justify-center items-center scale-100 ">
+            <a
+              href="#overview"
+              className="bg-[#02d3fb] border-2 border-[#357ff3] text-black font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
               Overview
-            </span>
-            <span className="  border-2  border-[#357ff3] text-[#357ff3] font-extrabold rounded px-2 py-1 text-xs mr-2">
+            </a>
+            <a
+              href="#live"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
               Live
-            </span>
-            <span className=" border-2  border-[#357ff3] text-[#357ff3] font-extrabold rounded px-2 py-1 text-xs mr-2">
+            </a>
+            <a
+              href="#shorts"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
               Shorts
-            </span>
-            <span className="  border-2  border-[#357ff3] text-[#357ff3] font-extrabold rounded px-2 py-1 text-xs mr-2">
+            </a>
+            <a
+              href="#gallery"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
               Gallery
-            </span>
+            </a>
+            <a
+              href="#student-profile"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
+              Student Profile
+            </a>
           </div>
           <div className="flex justify-center mb-4">
             <img
@@ -235,7 +271,7 @@ export const BlueArchive = () => {
           >
             Staff
           </h3>
-          <div className="mt-3 ">
+          <div className="mt-3 ml-5">
             <li>
               <strong>Story Scenario Writer</strong> ~ Isakusan
             </li>
@@ -297,11 +333,429 @@ export const BlueArchive = () => {
             story in Korean.
           </p>
           <h3
-            className="text-2xl font-bold  border-b-gray-700 text-[#06bbfa] mt-8"
+            className="text-2xl font-bold mb-5 border-b-gray-700 text-[#06bbfa] mt-8"
             id="pre-registration"
           >
             Pre-Registration
           </h3>
+          <table className="w-full text-xs md:text-sm text-white border-2 border-[#02d3fb] rounded mb-8 bg-black border-separate border-spacing-0">
+            <thead>
+              <tr className="bg-[#02d3fb] text-black font-bold text-center">
+                <th
+                  colSpan={8}
+                  className="px-2 py-2 border-b border-[#3e7af2] text-base text-[#3e7af2] tracking-wide"
+                >
+                  JP Pre-registration
+                  <span className="float-right text-xs text-[#3e7af2] font-normal cursor-pointer hover:underline">
+                    [Collapse]
+                  </span>
+                </th>
+              </tr>
+              <tr className="bg-[#02d3fb] text-black font-bold text-center">
+                <th className="px-2 py-2 border border-gray-600">
+                  Number of Pre-Registration
+                </th>
+                <th className="px-2 py-2 border border-gray-600">Reward</th>
+                <th className="px-2 py-2 border border-gray-600">Status</th>
+                <th className="px-2 py-2 border border-gray-600">
+                  Reward's Deadline
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="text-center">
+                <td className="px-2 py-2 border border-gray-600">10,000</td>
+                <td className="px-2 py-2 border border-gray-600 flex items-center justify-center gap-1 relative">
+                  <span className="inline-block relative">
+                    <img
+                      src="Blue-Archive/Gold.png"
+                      alt="Gem"
+                      style={{ width: 50, height: 40, borderRadius: "9999px" }}
+                      className="mt-1"
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-5 pl-7 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x50K
+                    </b>
+                  </span>
+                </td>
+                <td className="px-2 py-2 border border-gray-600 text-[#20e82a] font-bold">
+                  Achieved
+                </td>
+                <td className="px-2 py-2 border border-gray-600" rowSpan={7}>
+                  <span className="block text-white">May 13th, 2021</span>
+                  <span className="block text-[#ff0000] italic font-bold">
+                    ENDED!
+                  </span>
+                </td>
+              </tr>
+              <tr className="text-center">
+                <td className="px-2 py-2 border border-gray-600">30,000</td>
+                <td className="px-2 py-2 border border-gray-600 flex items-center justify-center gap-1 relative">
+                  <span className="inline-block relative">
+                    <img
+                      src="Blue-Archive/Pyroxene.png"
+                      alt="Gem"
+                      style={{ width: 50, height: 40, borderRadius: "9999px" }}
+                      className="mt-1"
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-5 pl-7 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x100
+                    </b>
+                  </span>
+                </td>
+                <td className="px-2 py-2 border border-gray-600 text-[#20e82a] font-bold">
+                  Achieved
+                </td>
+              </tr>
+              <tr className="text-center">
+                <td className="px-2 py-2 border border-gray-600">70,000</td>
+                <td className="px-2 py-2 border border-gray-600 flex items-center justify-center gap-1 relative">
+                  <span className="inline-block relative">
+                    <img
+                      src="Blue-Archive/Pyroxene.png"
+                      alt="Gem"
+                      style={{ width: 50, height: 40, borderRadius: "9999px" }}
+                      className="mt-1"
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-5 pl-7 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x200
+                    </b>
+                  </span>
+                </td>
+                <td className="px-2 py-2 border border-gray-600 text-[#20e82a] font-bold">
+                  Achieved
+                </td>
+              </tr>
+              <tr className="text-center">
+                <td className="px-2 py-2 border border-gray-600">100,000</td>
+                <td className="px-2 py-2 border border-gray-600 flex items-center justify-center gap-1 relative">
+                  <span className="inline-block relative">
+                    <img
+                      src="Blue-Archive/Pyroxene.png"
+                      alt="Gem"
+                      style={{ width: 50, height: 40, borderRadius: "9999px" }}
+                      className="mt-1"
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-5 pl-7 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x300
+                    </b>
+                  </span>
+                </td>
+                <td className="px-2 py-2 border border-gray-600 text-[#20e82a] font-bold">
+                  Achieved
+                </td>
+              </tr>
+              <tr className="text-center">
+                <td className="px-2 py-2 border border-gray-600">150,000</td>
+                <td className="px-2 py-2 border border-gray-600 flex items-center justify-center gap-1 relative">
+                  <span className="inline-block relative">
+                    <img
+                      src="Blue-Archive/Pyroxene.png"
+                      alt="Gem"
+                      style={{ width: 50, height: 40, borderRadius: "9999px" }}
+                      className="mt-1"
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-5 pl-7 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x600
+                    </b>
+                  </span>
+                </td>
+                <td className="px-2 py-2 border border-gray-600 text-[#20e82a] font-bold">
+                  Achieved
+                </td>
+              </tr>
+              <tr className="text-center">
+                <td className="px-2 py-2 border border-gray-600">200,000</td>
+                <td className="px-2 py-2 border border-gray-600 flex items-center justify-center gap-1 relative">
+                  <span className="inline-block relative">
+                    <img
+                      src="Blue-Archive/Junko_Icon.png"
+                      alt="Character"
+                      style={{ width: 60, height: 50 }}
+                      className="mt-2"
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-7 pl-9 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x1
+                    </b>
+                  </span>
+                </td>
+                <td className="px-2 py-2 border border-gray-600 text-[#20e82a] font-bold">
+                  Achieved
+                </td>
+              </tr>
+              <tr className="text-center">
+                <td className="px-2 py-2 border border-gray-600">
+                  (<b>Bonus</b>) 250,000+
+                </td>
+                <td className="px-2 py-2 border border-gray-600 flex items-center justify-center gap-1 relative">
+                  <span className="inline-block relative">
+                    <img
+                      src="Blue-Archive/Pyroxene.png"
+                      alt="Gem"
+                      style={{ width: 50, height: 40, borderRadius: "9999px" }}
+                      className="mt-1"
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-5 pl-7 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x600
+                    </b>
+                  </span>
+                </td>
+                <td className="px-2 py-2 border border-gray-600 text-[#20e82a] font-bold">
+                  Achieved
+                </td>
+              </tr>
+              <tr className="bg-[#02d3fb] text-black font-bold text-center">
+                <td className="px-2 py-2 border-t border-gray-600" colSpan={4}>
+                  Total Rewards
+                </td>
+              </tr>
+              <tr className="text-center">
+                <td className="px-2 py-2 border-b border-gray-600" colSpan={4}>
+                  <span
+                    className="inline-block relative pl-7"
+                    style={{ marginLeft: "-10px" }}
+                  >
+                    <img
+                      src="Blue-Archive/Gold.png"
+                      alt="Character"
+                      style={{
+                        width: 60,
+                        height: 50,
+                        position: "relative",
+                        left: "-20px",
+                        zIndex: 10,
+                        bottom: "-5px",
+                      }}
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-7 ml-2 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x50K
+                    </b>
+                  </span>
+                  <span
+                    className="inline-block relative pl-4"
+                    style={{ marginLeft: "-10px" }}
+                  >
+                    <img
+                      src="Blue-Archive/Pyroxene.png"
+                      alt="Character"
+                      style={{
+                        width: 60,
+                        height: 50,
+                        position: "relative",
+                        left: "-20px",
+                        zIndex: 10,
+                        bottom: "-5px",
+                      }}
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-7 pr-2 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x1200
+                    </b>
+                  </span>
+                  <span
+                    className="inline-block relative pl-6"
+                    style={{ marginLeft: "-10px" }}
+                  >
+                    <img
+                      src="Blue-Archive/Junko_Icon.png"
+                      alt="Character"
+                      style={{
+                        width: 60,
+                        height: 50,
+                        position: "relative",
+                        left: "-20px",
+                        zIndex: 10,
+                        bottom: "-10px",
+                      }}
+                    />
+                    <b
+                      className="absolute inset-0 flex items-center justify-center mt-7 pl-7 w-full h-full text-white text-sm"
+                      style={{ pointerEvents: "none" }}
+                    >
+                      x1
+                    </b>
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3
+            className="text-2xl font-bold border-b border-b-gray-700 text-[#06bbfa] mt-8"
+            id="gameplay"
+          >
+            Gameplay
+          </h3>
+          <h3
+            className="text-2xl font-bold border-b border-b-gray-700 text-[#06bbfa] mt-8"
+            id="trivia"
+          >
+            Trivia
+          </h3>
+          <div>
+            <ul className="list-disc pl-5 space-y-2 text-sm mt-3 text-white">
+              <li>
+                In the English community, the name is shorten to "BA" while in
+                the Japanese community, the name is shorten to "ブルアカ
+                (buruaka)".
+              </li>
+              <li>
+                The name of this project was called "Project MX (Moe' Xcom)".
+              </li>
+              <li>
+                "Blue Archive" could be a reference to the "Blue Cliff Records"
+                in Zen Buddhism.
+              </li>
+            </ul>
+          </div>
+          <h3
+            className="text-2xl font-bold border-b border-b-gray-700 text-[#06bbfa] mt-8"
+            id="see-also"
+          >
+            See Also
+          </h3>
+          <div className="mt-3">
+            <ul className="list-disc pl-5 space-y-2 text-sm text-white">
+              <li>
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  Students
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  Event
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  Total Assault (Raid)
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  School
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  Gacha
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h3
+            className="text-2xl font-bold border-b border-b-gray-700 text-[#06bbfa] mt-8"
+            id="external-links"
+          >
+            External Links
+          </h3>
+          <h4 className="text-xl font-bold mt-3 text-blue-400">
+            Official Websites
+          </h4>
+          <div className="mt-3 ml-5">
+            <ul className="list-disc pl-5 space-y-2 text-sm text-white">
+              <li>
+                Official
+                <a
+                  href="https://bluearchive.jp/"
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+                >
+                  {" "}
+                  Japanese Website
+                </a>
+              </li>
+              <li>
+                Official
+                <a
+                  href="https://bluearchive.nexon.com/home"
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+                >
+                  {" "}
+                  Global Website
+                </a>
+              </li>
+              <li>
+                Official
+                <a
+                  href="https://bluearchive-cn.com/"
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+                >
+                  Chinese Website
+                </a>
+              </li>
+              <li>
+                Official
+                <a
+                  href="https://sh-anime.shochiku.co.jp/bluearchive-anime/"
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+                >
+                  {" "}
+                  Anime website
+                </a>
+              </li>
+              <li>
+                Yostar
+                <a
+                  href="https://yo-star.com/en-us"
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+                >
+                  {" "}
+                  Website
+                </a>
+              </li>
+              <li>
+                Nexon Games
+                <a
+                  href="https://www.nexongames.co.kr/"
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+                >
+                  {" "}
+                  Website
+                </a>
+              </li>
+              <li>
+                Nexon
+                <a
+                  href="https://www.nexon.com/main/en"
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+                >
+                  {" "}
+                  Website
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h3 className="text-xl font-bold mt-6 text-blue-400">
+            Official Social Medias
+          </h3>
+          <h4 className="text-lg font-bold mt-3 text-[#3e7af2]" id="jp">
+            JP
+          </h4>
         </main>
       </div>
 
@@ -309,7 +763,7 @@ export const BlueArchive = () => {
       {showTopBtn && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-40 right-6 z-50 bg-[#DB49AC] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none"
+          className="fixed bottom-40 right-6 z-50 bg-[#59deff] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 hover:bg-pink-500 focus:outline-none"
           aria-label="Back to top"
         >
           <svg

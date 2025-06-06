@@ -19,14 +19,19 @@ export const HeroSection = () => {
       <div className="flex justify-center my-10">
         <a
           href="/shop"
-          className="bg-gradient-to-r from-[#FF0080] to-[#7928CA] py-3 px-4 mx-3 rounded-md"
+          className="bg-gradient-to-r from-[#FF0080] to-[#7928CA] py-3 px-6 mx-3 rounded-md text-white font-semibold shadow-lg hover:opacity-90 transition duration-300 flex items-center justify-center"
         >
-          {" "}
           Shop
         </a>
-        <a href="test" className="py-3 px-4 mx-3 rounded-md border ">
-          {" "}
-          To LOVE Ru Wiki
+        <a href="/test">
+          <img src="/To Love Ru/Site-logo (2).png" alt="" />
+        </a>
+        <a
+          href="/blue_archive"
+          className="bg-[url(public/Blue-Archive/YEH-4x.png)] py-3 px-4 mx-3 rounded-md bg-cover bg-center text-white hover:bg-opacity-80 transition duration-300 flex items-center justify-center"
+          aria-label="Blue Archive"
+        >
+          Blue Archive
         </a>
       </div>
       <div className="flex mt-10 justify-center">

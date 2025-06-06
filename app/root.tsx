@@ -122,12 +122,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/mikado" &&
           location.pathname !== "/mikado_relationships" &&
           location.pathname !== "/sephie" &&
-          // location.pathname !== "/blue_archive" &&
+          location.pathname !== "/blue_archive" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
-        {location.pathname !== "/test" && location.pathname !== "/home" && (
-          <PlaybackBar />
-        )}
+        {location.pathname !== "/home" && <PlaybackBar />}
         <ScrollRestoration />
         <Scripts />
       </body>
