@@ -962,7 +962,6 @@ export const BlueArchive = () => {
               </a>
             </li>
           </div>
-          
         </main>
       </div>
 
