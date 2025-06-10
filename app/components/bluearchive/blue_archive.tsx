@@ -71,7 +71,7 @@ export const BlueArchive = () => {
               Overview
             </a>
             <a
-              href="#live"
+              href="/live"
               className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
             >
               Live
@@ -617,7 +617,7 @@ export const BlueArchive = () => {
           >
             Trivia
           </h3>
-          <div>
+          <div className="ml-5">
             <ul className="list-disc pl-5 space-y-2 text-sm mt-3 text-white">
               <li>
                 In the English community, the name is shorten to "BA" while in
@@ -639,7 +639,7 @@ export const BlueArchive = () => {
           >
             See Also
           </h3>
-          <div className="mt-3">
+          <div className="mt-3 ml-5">
             <ul className="list-disc pl-5 space-y-2 text-sm text-white">
               <li>
                 <a href="#" className="text-[#3e7af2] hover:underline">
@@ -750,12 +750,219 @@ export const BlueArchive = () => {
               </li>
             </ul>
           </div>
-          <h3 className="text-xl font-bold mt-6 text-blue-400">
+          <h3 className="text-xl font-bold mt-6 text-[#70caff]">
             Official Social Medias
           </h3>
-          <h4 className="text-lg font-bold mt-3 text-[#3e7af2]" id="jp">
+          <h4 className="text-lg font-bold mt-3 text-[#289df6]" id="jp">
             JP
           </h4>
+          <div className="ml-5">
+            <li>
+              Official{" "}
+              <a
+                href="https://twitter.com/Blue_ArchiveJP"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                Japanese X (formerly known as Twitter)
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href="https://www.youtube.com/@BlueArchive_JP"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                Japanese YouTube channel
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href="https://twitter.com/BlueArchive_TV"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                TV Anime X
+              </a>
+            </li>
+          </div>
+          <h4
+            className="text-lg font-bold mt-3 text-[#289df6]"
+            id="global-korea-thailand-taiwan"
+          >
+            Global/Korea/Thailand/Taiwan
+          </h4>
+          <div className="ml-5 mt-3">
+            <li>
+              Official{" "}
+              <a
+                href=""
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+              >
+                Global X
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href=""
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+              >
+                Global YouTube channel
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href=""
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+              >
+                Global Discord Server
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href=""
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+              >
+                Korean X
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href=""
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+              >
+                Korean YouTube channel
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href=""
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+              >
+                Global Facebook
+              </a>
+              , may be redirected into any local regions below:
+            </li>
+            <div className="ml-10 mt-2 mb-2">
+              <li>
+                Official{" "}
+                <a
+                  href=""
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+                >
+                  Taiwan Facebook
+                </a>{" "}
+              </li>
+              <li>
+                Official{" "}
+                <a
+                  href=""
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+                >
+                  Thailand Facebook
+                </a>
+              </li>
+              <li>
+                Official{" "}
+                <a
+                  href=""
+                  className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+                >
+                  Korean Facebook
+                </a>
+              </li>
+            </div>
+            <li>
+              Official{" "}
+              <a
+                href=""
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+              >
+                Taiwan Youtube Channel
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href=""
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6åx_#3e7af2]"
+              >
+                Thailand Youtube Channel
+              </a>
+            </li>
+          </div>
+          <h4 className="text-lg font-bold mt-3 text-[#289df6]" id="china">
+            China
+          </h4>
+          <div className="ml-5 mt-3">
+            <li>
+              Official{" "}
+              <a
+                href="https://weibo.com/u/6011443154"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                Chinese Weibo
+              </a>
+            </li>
+            <li>
+              Official{" "}
+              <a
+                href="https://space.bilibili.com/3493265644980448"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                Chinese Bilibili Channel
+              </a>
+            </li>
+          </div>
+          <h3
+            className="text-xl font-bold mt-6 text-[#70caff]"
+            id="known-staffs-social-medias"
+          >
+            Known Staffs Social Medias
+          </h3>
+          <div className="ml-5 mt-3">
+            <li>
+              Mx2j{" "}
+              <a
+                href="https://twitter.com/nosongang"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              Hwansang{" "}
+              <a
+                href="https://twitter.com/hwansang12"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              DoReMi{" "}
+              <a
+                href="https://twitter.com/doremi4704"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              純粋な不純物{" "}
+              <a
+                href="https://twitter.com/parang9494"
+                className="text-[#3e7af2] hover:underline hover:text-white hover:drop-shadow-[0_0_6px_#3e7af2]"
+              >
+                Twitter
+              </a>
+            </li>
+          </div>
+          
         </main>
       </div>
 

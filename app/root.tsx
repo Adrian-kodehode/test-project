@@ -123,6 +123,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/mikado_relationships" &&
           location.pathname !== "/sephie" &&
           location.pathname !== "/blue_archive" &&
+          location.pathname !== "/live" && 
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         {location.pathname !== "/home" && <PlaybackBar />}
@@ -216,6 +217,7 @@ export default function App() {
         location.pathname !== "/mikado_relationships" &&
         location.pathname !== "/sephie" &&
         location.pathname !== "/blue_archive" &&
+        location.pathname !== "/live" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );

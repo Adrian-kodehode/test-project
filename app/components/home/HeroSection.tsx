@@ -16,22 +16,26 @@ export const HeroSection = () => {
         intuitive develepoment tools. Get started today and turn your
         imagination into immersice reality!
       </p>
-      <div className="flex justify-center my-10">
+      <div className="flex justify-center my-10 gap-6">
         <a
           href="/shop"
-          className="bg-gradient-to-r from-[#FF0080] to-[#7928CA] py-3 px-6 mx-3 rounded-md text-white font-semibold shadow-lg hover:opacity-90 transition duration-300 flex items-center justify-center"
+          className="bg-gradient-to-r from-[#FF0080] to-[#7928CA] py-3 px-6 rounded-md text-white font-semibold shadow-lg hover:opacity-90 transition duration-300 flex items-center justify-center min-w-[120px] h-[56px] text-center"
         >
           Shop
         </a>
-        <a href="/test">
-          <img src="/To Love Ru/Site-logo (2).png" alt="" />
+        <a href="/test" className="flex items-center justify-center min-w-[120px] h-[56px]">
+          <img
+        src="/To Love Ru/Site-logo (2).png"
+        alt=""
+        className="object-contain h-50 w-70"
+          />
         </a>
-        <a
-          href="/blue_archive"
-          className="bg-[url(public/Blue-Archive/YEH-4x.png)] py-3 px-4 mx-3 rounded-md bg-cover bg-center text-white hover:bg-opacity-80 transition duration-300 flex items-center justify-center"
-          aria-label="Blue Archive"
-        >
-          Blue Archive
+        <a href="/blue_archive" className="flex items-center justify-center min-w-[120px] h-[56px]">
+          <img
+        src="Blue-Archive/bluearchivelogo.jpg"
+        alt=""
+        className="object-contain h-35 w-44"
+          />
         </a>
       </div>
       <div className="flex mt-10 justify-center">
