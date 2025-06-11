@@ -14,6 +14,10 @@ export const Live = () => {
   const [selectedMonth, setSelectedMonth] = useState<string>("january");
   const [selectedYear, setSelectedYear] = useState<string>("2021");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div
       className="min-h-screen flex flex-col"
@@ -1641,7 +1645,7 @@ export const Live = () => {
                       </li>
                       <li>
                         <a href="#" className="text-[#357ff3]">
-                          Aru {" "}
+                          Aru{" "}
                         </a>{" "}
                         / アル
                       </li>
@@ -1661,114 +1665,1160 @@ export const Live = () => {
                   </div>
                 )}
                 {selectedMonth === "june" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_June_2022.png"
-                    alt="Blue Archive Live June 2022"
-                  />
+                  <div>
+                    {" "}
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_June_2022.png"
+                      alt="Blue Archive Live June 2022"
+                    />
+                    <p className="mb-5">
+                      <b>Blue Archive Live! - It's Time for Final Exam SP!</b>
+                      (ブルアカらいぶ！期末テストの時期ですね！SP) is the 6th
+                      livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      This live broadcast will focus on information about newly
+                      implemented in-game events! We will also be conducting
+                      some gameplay! Sensei, please look forward to it!
+                    </p>
+                    <p className="mb-5">
+                      In addition, if you tweet on Twitter during the broadcast
+                      with the hashtag "#ブルアカ期末テストSP", your tweet might
+                      be shown on the live broadcast! Please tweet your thoughts
+                      and comments on the program as you watch the broadcast!
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      June 17th, 2022 20:00 ~ 22:00 JST (02:00:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Kouzuki Haruka (
+                        <a href="#" className="text-[#357ff3]">
+                          Hinomiya Chinatsu
+                        </a>{" "}
+                        ) / 香月 はるか（チナツ役)
+                      </li>
+                      <li>
+                        Gotou Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "july" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_July_2022.png"
-                    alt="Blue Archive Live July 2022"
-                  />
+                  <div>
+                    {" "}
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_July_2022.png"
+                      alt="Blue Archive Live July 2022"
+                    />
+                    <p className="mb-5">
+                      <b>
+                        Summer Blue Archive Live! - 1.5 Year Anniversary
+                        Special!
+                      </b>{" "}
+                      (夏のブルアカらいぶ！1.5周年記念すぺしゃる！) is the 7th
+                      livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      Blue Archive will soon celebrate the 1.5 year anniversary
+                      of its release! In this live broadcast, we will bring you
+                      the latest information on the in-game events that will be
+                      held to celebrate the 1.5 year anniversary, as well as the
+                      latest information outside of the game!
+                    </p>
+                    <p className="mb-5">
+                      In addition, if you tweet on Twitter during the broadcast
+                      with the hashtag "#夏のブルアカらいぶ", your tweet might
+                      be shown on the live broadcast! Please tweet your thoughts
+                      and comments on the program as you watch the broadcast!
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      July 16th, 2022 19:00 ~ 22:20 JST (03:20:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Kouzuki Haruka (
+                        <a href="#" className="text-[#357ff3]">
+                          Hinomiya Chinatsu
+                        </a>{" "}
+                        ) / 香月 はるか（チナツ役）
+                      </li>
+                      <li>
+                        Miura Chiyuki (
+                        <a href="#" className="text-[#357ff3]">
+                          Izayoi Nonomi
+                        </a>{" "}
+                        ) / 三浦 千幸（ノノミ役）
+                      </li>
+                      <li>
+                        Gotou Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>
+                        Takagawa Mina (
+                        <a href="#" className="text-[#357ff3]">
+                          Otose Kotama
+                        </a>{" "}
+                        ) / 高川 みな（コタマ役）
+                      </li>
+                      <li>Takatsuka Tomohito (Guest) / 高塚 智人（ゲスト）</li>
+                      <li>
+                        {" "}
+                        <s className="line-through">
+                          Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト){" "}
+                        </s>
+                        <b className="text-[#ff0000] italic">
+                          Unbaled to attend due to his family member caught a
+                          fever
+                        </b>
+                      </li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "september" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_September_2022.png"
-                    alt="Blue Archive Live September 2022"
-                  />
+                  <div>
+                    {" "}
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_September_2022.png"
+                      alt="Blue Archive Live September 2022"
+                    />
+                    <p className="mb-5">
+                      <b>⁠ Arona channel Episode 38 - Special Edition</b>
+                      (アロナちゃんねる 特別版 #38) is 7.5th livestream. It is a
+                      pre-recorded stream and a special version of{" "}
+                      <a href="#" className="text-[#357ff3]">
+                        Arona Channel
+                      </a>
+                      . Nevertheless, it does feature upcoming content.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      Sensei! A special edition of Arona Channel will be
+                      released on September 23rd at 1900 JST. Look forward to
+                      it!
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      September 23rd, 2022 19:00 ~ 19:16 JST (00:16:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5">
+                      <li>
+                        <a href="#" className="text-[#]">
+                          Arona
+                        </a>{" "}
+                        / アロナ
+                      </li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "october" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_October_2022.png"
-                    alt="Blue Archive Live October 2022"
-                  />
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_October_2022.png"
+                      alt="Blue Archive Live October 2022"
+                    />
+                    <p className="mb-5">
+                      <b>
+                        {" "}
+                        Blue Archive Live - October 2022Category:test⁠ Blue
+                        Archive Live! ~ Autumn of Appetite! Autumn of Art!
+                        Autumn of the Blue Archive!
+                      </b>
+                      (ブルアカらいぶ！～食欲の秋！芸術の秋！ブルアカの秋！SP～)
+                      is the 8th livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      Official live broadcast "Blue Archive Live! ~ Autumn of
+                      Appetite! Autumn of Art! Autumn of the Blue Archive!" will
+                      be broadcast!
+                    </p>
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information on newly in-game events and other updates as
+                      well as the latest information outside the game!
+                    </p>
+                    <p className="mb-5">
+                      Teachers, please look forward to the live broadcast♪
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      October 22nd, 2022 19:00 ~ 21:00 JST (02:00:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Hiromi Igarashi (
+                        <a href="#" className="text-[#357ff3]">
+                          Sunohara Kokona
+                        </a>
+                        ) / 五十嵐 裕美（ココナ役）
+                      </li>
+                      <li>
+                        Haruka Ran (
+                        <a href="#" className="text-[#357ff3]">
+                          Hayase Yuuka
+                        </a>
+                        ) / 春花 らん（ユウカ役）
+                      </li>
+                      <li>
+                        Takagawa Mina (
+                        <a href="#" className="text-[#357ff3]">
+                          Otose Kotama
+                        </a>
+                        ) / 高川 みな（コタマ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "december" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_December_2022.png"
-                    alt="Blue Archive Live December 2022"
-                  />
+                  <div>
+                    {" "}
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_December_2022.png"
+                      alt="Blue Archive Live December 2022"
+                    />
+                    <p className="mb-5">
+                      <b>
+                        Blue Archive Live - December 2022Category:test⁠ Blue
+                        Archive Live! ~ Let's enjoy Christmas and New Year's Eve
+                      </b>{" "}
+                      (ブルアカらいぶ！～クリスマスも年末年始も楽しもうSP！～)
+                      is the 9th livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live! ~ Let's
+                      enjoy Christmas and New Year's Eve".
+                    </p>
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information on newly in-game events and other updates as
+                      well as the latest information outside the game!
+                    </p>
+                    <p className="mb-5">
+                      Teachers, please look forward to the live broadcast♪
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      December 22nd, 2022 20:00 ~ 21:30 JST (01:30:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Gotou Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>
+                        Kaihara Reina (
+                        <a href="#" className="text-[#357ff3]">
+                          Omagari Hare
+                        </a>
+                        ) / 貝原 怜奈（ハレ役）
+                      </li>
+                    </div>
+                  </div>
                 )}
               </>
             )}
             {selectedYear === "2023" && (
               <>
                 {selectedMonth === "january" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_January_2023.png"
-                    alt="Blue Archive Live June 2023"
-                  />
+                  <div>
+                    {" "}
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_January_2023.png"
+                      alt="Blue Archive Live June 2023"
+                    />
+                    <p className="mb-5">
+                      <b>
+                        ⁠Blue Archive Live! ~ Second Anniversary Special
+                        (Sekando Aniba) (ブルアカらいぶ！せかんどあにばSP)
+                      </b>{" "}
+                      is the 10th livestream. This live stream is a real-life
+                      event and took place in Bellesalle Akihabara, Tokyo.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The Blue Archive will soon celebrate its 2nd anniversary!
+                      <br />
+                      We will be bringing you the official live broadcast, "Blue
+                      Archive Live! ~ Second Anniversary".
+                      <br />
+                      This time, we will celebrate our 2nd anniversary with a
+                      public live broadcast from "Bellesalle Akihabara" in
+                      Akihabara, Tokyo! We will prepare various plans and
+                      present 3 stages.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      January 22nd, 2023 12:00 ~ 19:00 JST (07:00:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5 mb-2">
+                      <li>
+                        <b>
+                          Blue Archive Live! 2nd Anni SP! Last minute Assembly
+                          Part 1{" "}
+                        </b>
+                        (12:00 ~ 13:15)
+                      </li>
+                      <ul className="ml-10 mt-2 list-disc">
+                        <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                        <li>
+                          Kaihara Reina (
+                          <a href="#" className="text-[#357ff3]">
+                            Omagari Hare
+                          </a>{" "}
+                          ) / 貝原 怜奈（ハレ役）
+                        </li>
+                        <li>
+                          Gotou Ayasa (
+                          <a href="#" className="text-[#357ff3]">
+                            Oono Tsukuyo
+                          </a>{" "}
+                          ) / 後藤 彩佐（ツクヨ役）
+                        </li>
+                        <li>
+                          Takagawa Mina (
+                          <a href="#" className="text-[#357ff3]">
+                            Otose Kotama
+                          </a>{" "}
+                          ) / 高川 みな（コタマ役）
+                        </li>
+                        <li>
+                          Haruka Ran (
+                          <a href="#" className="text-[#357ff3]">
+                            Hayase Yuuka
+                          </a>{" "}
+                          ) / 春花 らん（ユウカ役）
+                        </li>
+                        <li>
+                          Miura Chiyuki (
+                          <a href="#" className="text-[#357ff3]">
+                            Izayoi Nonomi
+                          </a>{" "}
+                          ) / 三浦 千幸（ノノミ役）
+                        </li>
+                      </ul>
+                      <li className="mt-3">
+                        <b>
+                          Blue Archive Live! 2nd Anni SP! Last minute Assembly
+                          Part 2
+                        </b>
+                        (14:00 ~ 15:00)
+                      </li>
+                      <ul className="ml-10 mt-2 list-disc">
+                        <li>Takatsuka Tomohito (MC) / 高塚 智人（MC）</li>
+                        <li>
+                          Ishigami Shizuka (
+                          <a href="#" className="text-[#357ff3]">
+                            Joumae Saori
+                          </a>{" "}
+                          ) / 石上 静香（サオリ役）
+                        </li>
+                        <li>
+                          Reina Kaihara (
+                          <a href="#" className="text-[#357ff3]">
+                            Omagari Hare
+                          </a>{" "}
+                          ) / 貝原 怜奈（ハレ役）
+                        </li>
+                        <li>
+                          Gotou Ayasa (O
+                          <a href="#" className="text-[#357ff3]">
+                            ono Tsukuyo
+                          </a>{" "}
+                          ) / 後藤 彩佐（ツクヨ役）
+                        </li>
+                        <li>
+                          Sato Satomi (
+                          <a href="#" className="text-[#357ff3]">
+                            Amami Nodoka
+                          </a>{" "}
+                          ) / 佐藤 聡美（ノドカ役）
+                        </li>
+                        <li>
+                          Shirasu Saho (
+                          <a href="#" className="text-[#357ff3]">
+                            Kasuga Tsubaki
+                          </a>{" "}
+                          ) / 白砂 沙帆（ツバキ役）
+                        </li>
+                        <li>
+                          Takagawa Mina (
+                          <a href="#" className="text-[#357ff3]">
+                            Otose Kotama
+                          </a>{" "}
+                          ) / 高川 みな（コタマ役）
+                        </li>
+                        <li>
+                          Miura Chiyuki (
+                          <a href="#" className="text-[#357ff3]">
+                            Izayoi Nonomi
+                          </a>{" "}
+                          ) / 三浦 千幸（ノノミ役）
+                        </li>
+                      </ul>
+                      <li className=" mt-3">
+                        <b>
+                          'Blue Archive Live! 2nd Anni SP! ~Peace already!
+                          Sensei!~{" "}
+                        </b>
+                        (16:00 ~ 19:00)
+                      </li>
+                      <ul className="ml-10 mt-2 list-disc">
+                        <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                        <li>
+                          Reina Kaihara (
+                          <a href="#" className="text-[#357ff3]">
+                            Omagari Hare
+                          </a>{" "}
+                          ) / 貝原 怜奈（ハレ役）
+                        </li>
+                        <li>
+                          Kouzuki Haruka (
+                          <a href="#" className="text-[#357ff3]">
+                            Hinomiya Chinatsu
+                          </a>{" "}
+                          ) / 香月 はるか（チナツ役）
+                        </li>
+                        <li>
+                          Gotou Ayasa (
+                          <a href="#" className="text-[#357ff3]">
+                            Oono Tsukuyo
+                          </a>{" "}
+                          ) / 後藤 彩佐（ツクヨ役）
+                        </li>
+                        <li>
+                          Shirasu Saho (
+                          <a href="#" className="text-[#357ff3]">
+                            Kasuga Tsubak
+                          </a>{" "}
+                          i) / 白砂 沙帆（ツバキ役）
+                        </li>
+                        <li>
+                          Takagawa Mina (
+                          <a href="#" className="text-[#357ff3]">
+                            Otose Kotama
+                          </a>{" "}
+                          ) / 高川 みな（コタマ役）
+                        </li>
+                        <li>
+                          Haruka Ran (
+                          <a href="#" className="text-[#357ff3]">
+                            Hayase Yuuka
+                          </a>{" "}
+                          ) / 春花 らん（ユウカ役）
+                        </li>
+                        <li>
+                          Takatsuka Tomohito (Guest) / 高塚 智人（ゲスト）
+                        </li>
+                      </ul>
+                    </div>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Highlights
+                    </h4>
+                    <ul className="ml-5 list-disc mb-2">
+                      <li>Opening and Ending message by Arona</li>
+                      <li>Animated PV4</li>
+                    </ul>
+                    <div className="rounded-lg  shadow-lg">
+                      <h4 className="text-lg text-[#02d3fb] font-bold mb-2 border-b border-[#02d3fb] pb-1">
+                        Gameplay
+                      </h4>
+                      <ul className="ml-5 list-disc mb-4 text-sm leading-relaxed">
+                        <li>
+                          <span className="font-semibold text-white">
+                            New Event
+                          </span>
+                          <ul className="ml-5 list-disc">
+                            <li>
+                              <a
+                                href="#"
+                                className="text-[#357ff3] font-semibold hover:underline"
+                              >
+                                F.SCT Strategic Battle
+                              </a>
+                              <span className="text-gray-300 ml-1">
+                                (January 24th, 2023 to February 22nd, 2023)
+                              </span>
+                            </li>
+                            <li>
+                              <span className="text-gray-300">
+                                This is a{" "}
+                                <a
+                                  href="#"
+                                  className="text-[#357ff3] font-semibold hover:underline"
+                                >
+                                  Union Event
+                                </a>{" "}
+                                that coincides with the{" "}
+                                <a
+                                  href="#"
+                                  className="text-[#357ff3] font-semibold hover:underline"
+                                >
+                                  Main Story
+                                </a>
+                                .
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li className="mt-3">
+                          <span className="font-semibold text-white">
+                            New Limited Banner
+                          </span>
+                          <ul className="ml-5 list-disc">
+                            <li>
+                              <a
+                                href="#"
+                                className="text-[#357ff3] font-semibold hover:underline"
+                              >
+                                You are the hope of an innocent night
+                              </a>
+                              <span className="text-gray-300 ml-1">
+                                (January 24th, 2023 to January 31st, 2023)
+                              </span>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                className="text-[#357ff3] font-semibold hover:underline"
+                              >
+                                Misono Mika
+                              </a>
+                              <span className="text-[#ffd700] font-bold ml-1">
+                                (★★★)
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                      <h4 className="text-lg text-[#02d3fb] font-bold mb-2 border-b border-[#02d3fb] pb-1">
+                        New Unlimited Banner
+                      </h4>
+                      <ul className="ml-5 list-disc mb-4 text-sm leading-relaxed">
+                        <li>
+                          <span className="font-semibold text-white">
+                            10 free pulls till 100th
+                          </span>
+                          <span className="text-gray-300">
+                            {" "}
+                            (January 31st, 2023 to February 10th, 2023)
+                          </span>
+                        </li>
+                        <li>
+                          <span className="font-semibold text-white">
+                            Righteousness is as Hot as a Hot Spring!
+                          </span>
+                          <span className="text-gray-300">
+                            {" "}
+                            (January 31st, 2023 to February 10th, 2023)
+                          </span>
+                          <ul className="ml-5 list-disc">
+                            <li>
+                              <a
+                                href="#"
+                                className="text-[#357ff3] font-semibold hover:underline"
+                              >
+                                Shimokura Megu
+                              </a>
+                              <span className="text-[#ffd700] font-bold ml-1">
+                                (★★★)
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span className="font-semibold text-white">
+                            Justice is Sweet as Coffee
+                          </span>
+                          <span className="text-gray-300">
+                            {" "}
+                            (January 31st, 2023 to February 10th, 2023)
+                          </span>
+                          <ul className="ml-5 list-disc">
+                            <li>
+                              <a
+                                href="#"
+                                className="text-[#357ff3] font-semibold hover:underline"
+                              >
+                                Ogata Kanna
+                              </a>
+                              <span className="text-[#ffd700] font-bold ml-1">
+                                (★★★)
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <h4 className="text-lg text-[#02d3fb] font-bold mb-2 border-b border-[#02d3fb] pb-1">
+                        New Login
+                      </h4>
+                      <ul className="ml-5 list-disc mb-4 text-sm leading-relaxed">
+                        <li>
+                          <span className="font-semibold text-white">
+                            2nd Anniversary Login Bonus!
+                          </span>
+                          <span className="text-gray-300">
+                            {" "}
+                            (January 24th, 2023 to February 22nd, 2023)
+                          </span>
+                        </li>
+                      </ul>
+                      <h4 className="text-lg text-[#02d3fb] font-bold mb-2 border-b border-[#02d3fb] pb-1">
+                        New Campaign
+                      </h4>
+                      <ul className="ml-5 list-disc mb-4 text-sm leading-relaxed">
+                        <li className="font-semibold text-white">
+                          Triple Drop Campaign
+                        </li>
+                        <li className="font-semibold text-white">
+                          Double Exp Campaign
+                        </li>
+                      </ul>
+                      <h4 className="text-lg text-[#02d3fb] font-bold mb-2 border-b border-[#02d3fb] pb-1">
+                        New Story
+                      </h4>
+                      <ul className="ml-5 list-disc mb-4 text-sm leading-relaxed">
+                        <li>
+                          <span className="font-semibold text-white">
+                            Final Chapter: Where All Miracles Begin
+                          </span>
+                          <ul className="ml-5 list-disc">
+                            <li className="text-gray-300">
+                              Part 1 (January 22nd, 2023)
+                            </li>
+                            <li className="text-gray-300">
+                              Part 2 (January 24th, 2023)
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <h4 className="text-lg text-[#02d3fb] font-bold mb-2 border-b border-[#02d3fb] pb-1">
+                        New Features{" "}
+                        <span className="text-xs text-gray-300 font-normal">
+                          (January 24th, 2023)
+                        </span>
+                      </h4>
+                      <ul className="ml-5 list-disc text-sm leading-relaxed">
+                        <li className="text-white">Max level increase to 85</li>
+                        <li className="text-white">
+                          Added Stage L on{" "}
+                          <span className="text-[#357ff3]">Base Defence</span>{" "}
+                          and{" "}
+                          <span className="text-[#357ff3]">
+                            Credit Collection
+                          </span>
+                        </li>
+                        <li className="text-white">
+                          Pyroxene Package has been reset
+                        </li>
+                        <li className="text-white">
+                          Teachers will be able to re-purchase Limited Pyroxene
+                          Packs
+                        </li>
+                        <li className="text-white">
+                          Added more{" "}
+                          <span className="text-[#357ff3]">Unique Item</span>{" "}
+                          for Shiroko, Neru, Suzumi and Junko
+                        </li>
+                        <li className="text-white">
+                          Added New Furniture:{" "}
+                          <span className="text-[#357ff3]">
+                            Abydos Classroom Series
+                          </span>
+                        </li>
+                        <li className="text-white">
+                          Added more furniture interactions for Mika, Megu and
+                          Kanna
+                        </li>
+                        <li className="text-white">
+                          Added and updated new artwork for Nagisa and Sakurako
+                        </li>
+                      </ul>
+                    </div>
+                    <h4 className="text-lg text-[#357ff3] font-bold mt-5 mb-2">
+                      Pyroxene Package
+                    </h4>
+                  </div>
                 )}
                 {selectedMonth === "february" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_February_2023.png"
-                    alt="Blue Archive Live July 2023"
-                  />
+                  <div>
+                    {" "}
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_February_2023.png"
+                      alt="Blue Archive Live July 2023"
+                    />
+                    <p className="mb-5">
+                      <b>
+                        {" "}
+                        ⁠ Blue Archive Live! ~ We're Doing a Live Broadcast For
+                        2 Months Straight ♪Special
+                      </b>{" "}
+                      (ブルアカらいぶ！2か月連続で生放送やっちゃいます♪SP) is
+                      the 11th livestream.{" "}
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live!"
+                    </p>
+                    <p className="mb-5">
+                      {" "}
+                      In this live broadcast, we will bring you the latest
+                      information on newly in-game events and other updates as
+                      well as the latest information outside the game!
+                    </p>
+                    <p className="mb-5">
+                      {" "}
+                      Teachers, please look forward to the live broadcast♪
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      February 18th, 2023 19:00 ~ 20:55 JST (01:55:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div>
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Ishigami Shizuka (
+                        <a href="#" className="text-[#357ff3]">
+                          Joumae Saori
+                        </a>{" "}
+                        ) / 石上 静香（サオリ役）
+                      </li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Gotou Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "april" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_April_2023.png"
-                    alt="Blue Archive Live September 2023"
-                  />
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_April_2023.png"
+                      alt="Blue Archive Live September 2023"
+                    />
+                    <p className="mb-5">
+                      <b>Blue Archive Live! ~ Cherry Blossom Blooms Special</b>{" "}
+                      (ブルアカらいぶ！サクラ咲く、はるうららSP) is the 12th
+                      livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live!"
+                    </p>
+
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information on newly in-game events and other updates as
+                      well as the latest information outside the game!
+                    </p>
+
+                    <p className="mb-5">
+                      Teachers, please look forward to the live broadcast♪
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      April 22nd, 2023 19:00 ~ 21:40 JST (02:40:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Terasawa Momoka (
+                        <a href="#" className="text-[#357ff3]">
+                          Hanaoka Yuzu
+                        </a>{" "}
+                        ) / 寺澤 百花（ユズ役）
+                      </li>
+                      <li>
+                        Kaihara Reina (
+                        <a href="#" className="text-[#357ff3]">
+                          Omagari Hare
+                        </a>{" "}
+                        ) / 貝原 怜奈（ハレ役）
+                      </li>
+                      <li>
+                        Takagawa Mina (
+                        <a href="#" className="text-[#357ff3]">
+                          Otose Kotama
+                        </a>{" "}
+                        ) / 高川 みな（コタマ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "june" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_June_2023.png"
-                    alt="Blue Archive Live October 2023"
-                  />
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_June_2023.png"
+                      alt="Blue Archive Live October 2023"
+                    />
+                    <p className="mb-5">
+                      <b>Blue Archive Live! ~ Early Summer Special</b>
+                      (ブルアカらいぶ！初夏♪SP) is the 13th livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live!"
+                    </p>
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information on newly in-game events and other updates as
+                      well as the latest information outside the game!
+                    </p>
+                    <p className="mb-5">
+                      Teachers, please look forward to the live broadcast♪
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      June 17th, 2023 19:00 ~ 21:00 JST (02:00:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="mt-5 ml-5 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Aihara Arisa (
+                        <a href="#" className="text-[#357ff3]">
+                          Shimokura Megu
+                        </a>{" "}
+                        ) / 愛原 ありさ（メグ役）
+                      </li>
+                      <li>Takatsuka Tomohito (Guest) / 高塚 智人（ゲスト）</li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Highlights
+                    </h4>
+                    <div className="ml-5 mb-2">
+                      <li>Opening and Ending message by Arona</li>
+                      <li className="ml-5 mt-2 mb-2">Swimsuit arona returns</li>
+                      <li>New animated PV for the next event</li>
+                      <li>
+                        Blue Archive will participate in Aomori Nebuta Festival
+                        from August 02nd, 2023 to August 07th, 2023
+                      </li>
+                      <li>
+                        The next 2.5th Anniversary livestream will be held in
+                        real-life on July 23rd, 2023 from 17:00 to 20:30
+                      </li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "july" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_July_2023.png"
-                    alt="Blue Archive Live December 2023"
-                  />
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_July_2023.png"
+                      alt="Blue Archive Live December 2023"
+                    />
+                    <p className="mb-5">
+                      <b> Summer Blue Archive Live! ~ Acchicchi Special</b>
+                      (夏のブルアカらいぶ！あっちっちSP) is the 14th livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live!"
+                    </p>
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information on newly in-game events and other updates as
+                      well as the latest information outside the game!
+                    </p>
+                    <p className="mb-5">
+                      Teachers, please look forward to the live broadcast♪
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      June 23rd, 2023 17:00 ~ 20:45 JST (03:45:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Kaihara Reina (
+                        <a href="#" className="text-[#357ff3]">
+                          Omagari Hare
+                        </a>{" "}
+                        ) / 貝原 怜奈（ハレ役）
+                      </li>
+                      <li>
+                        Inui Natsune (
+                        <a href="#" className="text-[#357ff3]">
+                          Kurosaki Koyuki
+                        </a>{" "}
+                        ) / 乾 夏寧（コユキ役）
+                      </li>
+                      <li>
+                        Miura Chiyuki (
+                        <a href="#" className="text-[#357ff3]">
+                          Izayoi Nonomi
+                        </a>{" "}
+                        ) / 三浦 千幸（ノノミ役）
+                      </li>
+                      <li>
+                        Gotou Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>Takatsuka Tomohito (Guest) / 高塚 智人（ゲスト）</li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Highlights
+                    </h4>
+                    <div className="ml-5 mb-2">
+                      <li>Opening and Ending message by Arona and Plana</li>
+                      <li className="ml-5 mt-2 mb-2">3D Plana debut</li>
+                      <li>Arona and Shiroko Anime Character Design Reveal</li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "october" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_October_2023.png"
-                    alt="Blue Archive Live January 2024"
-                  />
+                  <div>
+                    {" "}
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_October_2023.png"
+                      alt="Blue Archive Live January 2024"
+                    />
+                    <p className="mb-5">
+                      <b>Blue Archive Live! Welcome to Academy City Special!</b>
+                      (ブルアカらいぶ！学園都市へようこそ！SP) is the 15th
+                      livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live!"
+                    </p>
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information on newly in-game events and other updates as
+                      well as the latest information outside the game!
+                    </p>
+                    <p className="mb-5">
+                      Teachers, please look forward to the live broadcast♪
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      October 20th, 2023 20:00 ~ 22:45 JST (02:45:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Gotou Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>
+                        Sumi Tomomi Jiena (
+                        <a href="#" className="text-[#357ff3]">
+                          Nakamasa Ichika
+                        </a>{" "}
+                        ) / 鷲見 友美ジェナ（イチカ）
+                      </li>
+                      <li>
+                        Aihara Arisa (
+                        <a href="#" className="text-[#357ff3]">
+                          Shimokura Megu
+                        </a>{" "}
+                        ) / 愛原 ありさ（メグ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
                 )}
                 {selectedMonth === "december" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_December_2023.png"
-                    alt="Blue Archive Live March 2024"
-                  />
-                )}
-              </>
-            )}
-            {selectedYear === "2024" && (
-              <>
-                {selectedMonth === "january" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_January_Day_1_2024.png"
-                    alt="Blue Archive Live January 2024"
-                  />
-                )}
-                {selectedMonth === "march" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_March_2024.png"
-                    alt="Blue Archive Live March 2024"
-                  />
-                )}
-                {selectedMonth === "april" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_April_2024.png"
-                    alt="Blue Archive Live April 2024"
-                  />
-                )}
-                {selectedMonth === "june" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_June_2024 (1).png"
-                    alt="Blue Archive Live June 2024"
-                  />
-                )}
-                {selectedMonth === "july" && (
-                  <img
-                    src="Blue-Archive/Blue_Archive_Live_-_July_2024.png"
-                    alt="Blue Archive Live July 2024"
-                  />
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_December_2023.png"
+                      alt="Blue Archive Live March 2024"
+                    />
+                    <p className="mb-5">
+                      <b>Blue Archive Live! Merikuri!</b>{" "}
+                      (ブルアカらいぶ！めりくり！) is the 16th livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live!"
+                    </p>
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information on newly in-game events and other updates as
+                      well as the latest information outside the game!
+                    </p>
+                    <p className="mb-5">
+                      Teachers, please look forward to the live broadcast♪
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      December 24th, 2023 19:00 ~ 21:55 JST (02:55:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Kaihara Reina (Omagari Hare) / 貝原 怜奈（ハレ役）
+                      </li>
+                      <li>
+                        Takagawa Mina (Otose Kotama) / 高川 みな（コタマ役）
+                      </li>
+                      <li>
+                        Shirasu Saho (Kasuga Tsubaki) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Aihara Arisa (Shimokura Megu) / 愛原 ありさ（メグ役）
+                      </li>
+                    </div>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Highlights
+                    </h4>
+                    <div className="ml-5 mb-2">
+                      <li>Opening and Ending message by Arona and Plana</li>
+                    </div>
+                  </div>
                 )}
               </>
             )}
