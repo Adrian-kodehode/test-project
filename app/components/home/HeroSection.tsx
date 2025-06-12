@@ -30,7 +30,7 @@ export const HeroSection = () => {
         className="object-contain h-50 w-70"
           />
         </a>
-        <a href="/blue_archive" className="flex items-center justify-center min-w-[120px] h-[56px]">
+        <a href="/bluearchivehome" className="flex items-center justify-center min-w-[120px] h-[56px]">
           <img
         src="Blue-Archive/bluearchivelogo.jpg"
         alt=""

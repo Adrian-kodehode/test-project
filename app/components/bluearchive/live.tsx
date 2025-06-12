@@ -1,3 +1,4 @@
+import { Divide } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 export const Live = () => {
@@ -27,17 +28,18 @@ export const Live = () => {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
         backgroundPosition: "center center",
-        imageRendering: "auto", // Prevents pixelation
       }}
     >
       {/* Header */}
       <header className="w-full  flex flex-col items-start justify-center pt-10 pl-40 relative">
         <div className="flex flex-row items-start gap-6">
-          <img
-            src="/Blue-Archive/Site-logo (5).png"
-            alt="Blue Archive Logo"
-            className="h-16 w-auto drop-shadow-lg"
-          />
+          <a href="/bluearchivehome">
+            <img
+              src="/Blue-Archive/Site-logo (5).png"
+              alt="Blue Archive Logo"
+              className="h-16 w-auto drop-shadow-lg"
+            />
+          </a>
           <h1 className="text-lx pt-10 font-bold text-[#02d3fb] tracking-wide drop-shadow-md">
             Sensei Welcome to Kivotos!
           </h1>
@@ -2822,10 +2824,579 @@ export const Live = () => {
                 )}
               </>
             )}
+            {selectedYear === "2024" && (
+              <>
+                {selectedMonth === "january" && (
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_January_Day_1_2024.png"
+                      alt="Blue Archive Live January 2024 Day 1"
+                    />
+                    <p className="mb-5">
+                      <b>~Thank you Very Much Sensei~ Special Stage Day 1</b>
+                      (ブルアカふぇす！～3きゅーべりーまっち、先生♪～
+                      スペシャルステージ Day1) is the 17th livestream. This is a
+                      2 day live stream is a real-life event and will take place
+                      in Makuhari Messe International Exhibition Center
+                      Exhibition Halls Hall 9 ~ 11, Chiba.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The Blue Archive will celebrate its 3rd anniversary. "Blue
+                      Archive Live! ~Thank you Very Much Sensei~!"
+                    </p>
+                    <p className="mb-5">
+                      "Blue Archive Live! ~Thank you Very Much Sensei~! -
+                      Special Stage Day 1" will be broadcast live on this
+                      program. There will also be a present campaign in each
+                      program, so please join us!
+                    </p>
+                    <p className="mb-5">
+                      Let's celebrate the 3rd anniversary of the Blue Archive
+                      together!
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      January 20th, 2024 10:00 ~ 18:00 JST (08:00:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <li className="mb-2 ml-5 font-bold">
+                      Blue Archive Fest! Start! (10:00 - 11:00)
+                    </li>
+                    <div className="ml-16 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Aihara Arisa ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Shimokura Megu
+                        </a>{" "}
+                        ) / 愛原 ありさ（メグ役）
+                      </li>
+                      <li>
+                        Inui Natsune ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Kurosaki Koyuki
+                        </a>{" "}
+                        / 乾 夏寧（コユキ役）
+                      </li>
+                      <li>
+                        Reina Kaihara ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Omagari Hare
+                        </a>{" "}
+                        ) / 貝原 怜奈（ハレ役）
+                      </li>
+                      <li>
+                        Gotou Ayasa ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>
+                        Shirasu Saho ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Sumi Tomomi Jiena ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Nakamasa Ichika
+                        </a>{" "}
+                        ) / 鷲見 友美ジェナ（イチカ役）
+                      </li>
+                      <li>
+                        Takagawa Mina ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Otose Kotama
+                        </a>{" "}
+                        ) / 高川 みな（コタマ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                      <li>Takatsuka Tomohito (Guest) / 高塚 智人（ゲスト）</li>
+                    </div>
+
+                    <li className="mb-2 ml-5 font-bold">
+                      Let's look back together! Blue Archive Story! (11:30 -
+                      13:00)
+                    </li>
+                    <div className="ml-16 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Ishigami Shizuka ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Joumae Saori
+                        </a>{" "}
+                        ) / 石上 静香（サオリ役）
+                      </li>
+                      <li>
+                        Inui Natsune ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Kurosaki Koyuki
+                        </a>{" "}
+                        / 乾 夏寧（コユキ役）
+                      </li>
+                      <li>
+                        Kaihara Reina ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Omagari Hare
+                        </a>{" "}
+                        ) / 貝原 怜奈（ハレ役）
+                      </li>
+                      <li>
+                        Gotou Ayasa ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>
+                        Shirasu Saho ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Tanaka Minami ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Tendou Alice
+                        </a>{" "}
+                        ) / 田中 美海（アリス役）
+                      </li>
+                      <li>
+                        Taneda Risa ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Shirasu Azusa
+                        </a>{" "}
+                        ) / 種田 梨沙（アズサ役）
+                      </li>
+                      <li>
+                        Terasawa Momoka ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Hanaoka Yuzu
+                        </a>{" "}
+                        ) / 寺澤 百花（ユズ役）
+                      </li>
+                      <li>
+                        Tomonaga Akane ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Sorai Saki
+                        </a>{" "}
+                        ) / 友永朱音（サキ役）
+                      </li>
+                      <li>
+                        Hondo Kaede ({" "}
+                        <a href="#" className="text-[#357ff3]">
+                          Ajitani Hifumi
+                        </a>{" "}
+                        ) / 本渡楓（ヒフミ役）
+                      </li>
+                      <li>
+                        <span className="line-through">
+                          Miura Chiyuki ({" "}
+                          <a href="#" className="text-[#357ff3]">
+                            Izayoi Nonomi
+                          </a>{" "}
+                          ) / 三浦 千幸（ノノミ役）
+                        </span>
+                        <span className="text-[#ff0000] font-bold italic">
+                          Unable to attend due to her poor health. Ishitobi
+                          Erika ({" "}
+                          <a href="#" className="text-[#357ff3]">
+                            Haruka
+                          </a>{" "}
+                          ) will replace her role in the stream
+                        </span>
+                      </li>
+                    </div>
+                    <li className="mb-2 ml-5 font-bold">
+                      Blue Archive Fest! Special DJ Stage Day 1! (13:45 - 15:15)
+                    </li>
+                    <div className="ml-16 mb-5">
+                      <li>Mitsukiyo / ミツキヨ</li>
+                      <li>KARUT</li>
+                      <li>Nor</li>
+                    </div>
+                    <li className="mb-2 ml-5 font-bold">
+                      Let's look back together! Blue Archive Story! (15:30 -
+                      17:00)
+                    </li>
+                    <div className="ml-16 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Aihara Arisa (
+                        <a href="#" className="text-[#357ff3]">
+                          Shimokura Megu
+                        </a>{" "}
+                        ) / 愛原 ありさ（メグ役）
+                      </li>
+                      <li>
+                        Ishigami Shizuka (
+                        <a href="#" className="text-[#357ff3]">
+                          Joumae Saori
+                        </a>{" "}
+                        ) / 石上 静香（サオリ役）
+                      </li>
+                      <li>
+                        Ishitobi Erika (
+                        <a href="#" className="text-[#357ff3]">
+                          Igusa Haruka
+                        </a>{" "}
+                        ) / 石飛恵里花（ハルカ役）
+                      </li>
+                      <li>
+                        Inui Natsune (
+                        <a href="#" className="text-[#357ff3]">
+                          Kurosaki Koyuki
+                        </a>{" "}
+                        / 乾 夏寧（コユキ役）
+                      </li>
+                      <li>
+                        Kaihara Reina (
+                        <a href="#" className="text-[#357ff3]">
+                          Omagari Hare
+                        </a>{" "}
+                        ) / 貝原 怜奈（ハレ役）
+                      </li>
+                      <li>
+                        Gotou Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Sumi Tomomi Jiena (
+                        <a href="#" className="text-[#357ff3]">
+                          Nakamasa Ichika
+                        </a>{" "}
+                        ) / 鷲見 友美ジェナ（イチカ役）
+                      </li>
+                      <li>
+                        Takagawa Mina (
+                        <a href="#" className="text-[#357ff3]">
+                          Otose Kotama
+                        </a>{" "}
+                        ) / 高川 みな（コタマ役）
+                      </li>
+                      <li>
+                        Terasawa Momoka (
+                        <a href="#" className="text-[#357ff3]">
+                          Hanaoka Yuzu
+                        </a>{" "}
+                        ) / 寺澤 百花（ユズ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                      <li>Takatsuka Tomohito (Guest) / 高塚 智人（ゲスト）</li>
+                    </div>
+                  </div>
+                )}
+                {selectedMonth === "march" && (
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_March_2024.png"
+                      alt="Blue Archive Live March 2024"
+                    />
+                    <p className="mb-5">
+                      <b>
+                        Blue Archive Live! Haruurara, How Are You Preparing For
+                        Your New Life? SP
+                      </b>
+                      (ブルアカらいぶ！はるうらら、新生活の準備いかがですか？)
+                      is the 16th livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live! Haruurara,
+                      how are you preparing for your new life?"
+                    </p>
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information inside and outside of the game! Teacher,
+                      please look forward to the live broadcast♪
+                    </p>
+                    <p className="mb-5">
+                      Furthermore, if you post on X (formerly Twitter) with the
+                      hashtag "#ブルアカらいぶいかがですかSP" during the
+                      broadcast, your post may be displayed on the live
+                      broadcast! While watching the broadcast, please feel free
+                      to tweet your thoughts and comments about the program!
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      March 24th, 2024 20:00 ~ 23:20 JST (03:20:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Ishitobi Erika (
+                        <a href="#" className="text-[#357ff3]">
+                          Igusa Haruka
+                        </a>{" "}
+                        ) / 石飛 恵里花（ハルカ役）
+                      </li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Gotō Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
+                )}
+                {selectedMonth === "april" && (
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_April_2024.png"
+                      alt="Blue Archive Live April 2024"
+                    />
+                    <p className="mb-5">
+                      <b>Archive Live! Itookashi☆Spring Trip to Kyoto SP!</b>{" "}
+                      (ブルアカらいぶ！いとおかし☆春の京都旅行！) is the 17th
+                      livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      This time it will be broadcast live from the Kyoto
+                      International Conference Centre ANNEX HALL in Kyoto!
+                    </p>
+                    <p className="mb-5">
+                      The latest news from inside and outside the game and the
+                      announcement of the winning artwork from the "3rd
+                      Anniversary Fan Art" project that was being solicited on X
+                      (Twitter)!
+                    </p>
+                    <p className="mb-5">
+                      Sensei, please look forward to the live broadcast!
+                    </p>
+                    <p className="mb-5">
+                      Furthermore, if you post on X (formerly Twitter) with the
+                      hashtag "#ブルアカらいぶいとをかしSP" during the
+                      broadcast, your post may be displayed on the live
+                      broadcast! While watching the broadcast, please feel free
+                      to tweet your thoughts and comments about the program!
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      April 20th, 2024 17:00 ~ 20:00 JST (04:08:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Aihara Arisa (
+                        <a href="#" className="text-[#357ff3]">
+                          Shimokura Megu
+                        </a>{" "}
+                        ) / 愛原 ありさ（メグ役）
+                      </li>
+                      <li>
+                        Inui Natsune (
+                        <a href="#" className="text-[#357ff3]">
+                          Kurosaki Koyuki
+                        </a>{" "}
+                        / 乾 夏寧（コユキ役）
+                      </li>
+                      <li>
+                        Gotō Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
+                )}
+                {selectedMonth === "june" && (
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_June_2024 (1).png"
+                      alt="Blue Archive Live June 2024"
+                    />
+                    <p className="mb-5">
+                      <b> Blue Archive Live! Zabigining Obusama SP!</b>
+                      (ブルアカらいぶ！ざびぎにんぐおぶさまーSP！) is the 18th
+                      livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      The official live broadcast "Blue Archive Live! Zabigining
+                      Obusama SP!"
+                    </p>
+                    <p className="mb-5">
+                      In this live broadcast, we will bring you the latest
+                      information inside and outside of the game! Teacher,
+                      please look forward to the live broadcast♪
+                    </p>
+                    <p className="mb-5">
+                      Furthermore, if you post on X (formerly Twitter) with the
+                      hashtag "#ブルアカらいぶいかがですかSP" during the
+                      broadcast, your post may be displayed on the live
+                      broadcast! While watching the broadcast, please feel free
+                      to tweet your thoughts and comments about the program!
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      June 23rd, 2024 19:00 ~ 22:05 JST (03:05:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Miura Chiyuki (
+                        <a href="#" className="text-[#357ff3]">
+                          Izayoi Nonomi
+                        </a>{" "}
+                        ) / 三浦 千幸（ノノミ役）
+                      </li>
+                      <li>
+                        Ishitobi Erika (
+                        <a href="#" className="text-[#357ff3]">
+                          Igusa Haruka
+                        </a>{" "}
+                        ) / 石飛 恵里花（ハルカ役）
+                      </li>
+                      <li>
+                        Aihara Arisa (
+                        <a href="#" className="text-[#357ff3]">
+                          Shimokura Megu
+                        </a>{" "}
+                        ) / 愛原 ありさ（メグ役）
+                      </li>
+                      <li>Takatsuka Tomohito (Guest) / 高塚 智人（ゲスト）</li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
+                )}
+                {selectedMonth === "july" && (
+                  <div>
+                    <img
+                      src="Blue-Archive/Blue_Archive_Live_-_July_2024.png"
+                      alt="Blue Archive Live July 2024"
+                    />
+                    <p className="mb-5">
+                      <b>Summer Blue Archive Live! Happy Summer Showtime SP!</b>{" "}
+                      (夏のブルアカらいぶ！はっぴ～さま～しょ～たいむ！SP) is
+                      the 19th livestream.
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mb-2">
+                      Synopsis
+                    </h4>
+                    <p className="mb-5">
+                      Blue Archive will soon celebrate the 3.5th anniversary of
+                      its release! In commemoration of this, we will be
+                      delivering the official live broadcast "Summer Blue
+                      Archive Live!".
+                    </p>
+                    <p className="mb-5">
+                      This time, to celebrate the 3.5th anniversary, we will be
+                      broadcasting live from "Belle Salle Tokyo Nihonbashi" in
+                      Nihonbashi, Tokyo! We will bring you the latest
+                      information inside and outside the game! Please look
+                      forward to the live broadcast, Sensei!
+                    </p>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Date
+                    </h4>
+                    <li className="ml-5">
+                      July 21st, 2024 19:00 ~ 23:08 JST (04:08:00)
+                    </li>
+                    <h4 className="text-lg text-[#02d3fb] font-bold mt-5 mb-2">
+                      Cast
+                    </h4>
+                    <div className="ml-5 mb-5">
+                      <li>Sakamaki Manabu (MC) / 坂巻 学（MC）</li>
+                      <li>
+                        Gotou Ayasa (
+                        <a href="#" className="text-[#357ff3]">
+                          Oono Tsukuyo
+                        </a>{" "}
+                        ) / 後藤 彩佐（ツクヨ役）
+                      </li>
+                      <li>
+                        Shirasu Saho (
+                        <a href="#" className="text-[#357ff3]">
+                          Kasuga Tsubaki
+                        </a>{" "}
+                        ) / 白砂 沙帆（ツバキ役）
+                      </li>
+                      <li>
+                        Ishitobi Erika (
+                        <a href="#" className="text-[#357ff3]">
+                          Igusa Haruka
+                        </a>{" "}
+                        ) / 石飛恵里花（ハルカ役）
+                      </li>
+                      <li>
+                        Aihara Arisa (
+                        <a href="#" className="text-[#357ff3]">
+                          Shimokura Megu
+                        </a>{" "}
+                        ) / 愛原 ありさ（メグ役）
+                      </li>
+                      <li>Takatsuka Tomohito (Guest) / 高塚 智人（ゲスト）</li>
+                      <li>Sakata Shougo (Guest) / 坂田 将吾（ゲスト）</li>
+                      <li>Ichiki Mitsuhiro (Guest) / 市来 光弘（ゲスト）</li>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
           </div>
         </main>
       </div>
-
       {/* Back to Top Button */}
       {showTopBtn && (
         <button
