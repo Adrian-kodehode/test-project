@@ -15,7 +15,7 @@ export const BlueArchive = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/bluearchive.jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark.jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -26,17 +26,22 @@ export const BlueArchive = () => {
       {/* Header */}
       <header className="w-full  flex flex-col items-start justify-center pt-10 pl-40 relative">
         <div className="flex flex-row items-start gap-6">
-          <img
-            src="/Blue-Archive/Site-logo (5).png"
-            alt="Blue Archive Logo"
-            className="h-16 w-auto drop-shadow-lg"
-          />
+          <a href="/bluearchivehome">
+            <img
+              src="/Blue-Archive/Site-logo (5).png"
+              alt="Blue Archive Logo"
+              className="h-16 w-auto drop-shadow-lg"
+            />
+          </a>
           <h1 className="text-lx pt-10 font-bold text-[#02d3fb] tracking-wide drop-shadow-md">
             Sensei Welcome to Kivotos!
           </h1>
         </div>
         <nav className="mt-4 flex gap-8 text-[#02d3fb] font-bold text-lg justify-center">
-          <a href="#" className="hover:underline hover:text-white transition">
+          <a
+            href="/blue_archive"
+            className="hover:underline hover:text-white transition"
+          >
             EXPLORE
           </a>
           <a href="#" className="hover:underline hover:text-white transition">
@@ -83,13 +88,13 @@ export const BlueArchive = () => {
               Shorts
             </a>
             <a
-              href="#gallery"
+              href=""
               className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
             >
               Gallery
             </a>
             <a
-              href="#student-profile"
+              href="/students"
               className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
             >
               Student Profile
@@ -98,7 +103,7 @@ export const BlueArchive = () => {
           <div className="flex justify-center mb-4">
             <img
               src="Blue-Archive/Blue_Archive_KR_logo_(white_text).png"
-              alt=""
+              alt="/students"
             />
           </div>
           <div className="flex items-start gap-6 ">

@@ -5,21 +5,30 @@ const Slideshow = ({ images }: { images: string[] }) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    if (images.length <= 1) return;
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
     }, 3000);
     return () => clearInterval(interval);
   }, [images.length]);
 
+  if (!images.length) return null;
+
   return (
     <div className="w-full flex justify-center items-center">
-      <img src={images[index]} alt="Slideshow" className="rounded-lg w-full" />
+      <img
+        src={images[index]}
+        alt={`Slideshow ${index + 1}`}
+        className="rounded-lg w-full"
+        style={{ display: "block" }}
+      />
     </div>
   );
 };
 
 export const BlueArchiveHome = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
+  const [selectedGacha, setSelectedGacha] = useState<number>(1);
 
   useEffect(() => {
     const handleScroll = () => setShowTopBtn(window.scrollY > 100);
@@ -40,7 +49,7 @@ export const BlueArchiveHome = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/bluearchive.jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark.jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -50,17 +59,22 @@ export const BlueArchiveHome = () => {
       {/* Header */}
       <header className="w-full  flex flex-col items-start justify-center pt-10 pl-40 relative">
         <div className="flex flex-row items-start gap-6">
-          <img
-            src="/Blue-Archive/Site-logo (5).png"
-            alt="Blue Archive Logo"
-            className="h-16 w-auto drop-shadow-lg"
-          />
+          <a href="/bluearchivehome">
+            <img
+              src="/Blue-Archive/Site-logo (5).png"
+              alt="Blue Archive Logo"
+              className="h-16 w-auto drop-shadow-lg"
+            />
+          </a>
           <h1 className="text-lx pt-10 font-bold text-[#02d3fb] tracking-wide drop-shadow-md">
             Sensei Welcome to Kivotos!
           </h1>
         </div>
         <nav className="mt-4 flex gap-8 text-[#02d3fb] font-bold text-lg justify-center">
-          <a href="#" className="hover:underline hover:text-white transition">
+          <a
+            href="/blue_archive"
+            className="hover:underline hover:text-white transition"
+          >
             EXPLORE
           </a>
           <a href="#" className="hover:underline hover:text-white transition">
@@ -81,13 +95,104 @@ export const BlueArchiveHome = () => {
         {/* Main Content */}
         <main className="flex-1 max-w-7xl bg-black bg-opacity-80 rounded-lg p-8 text-white shadow-lg flex flex-col gap-8">
           <h2 className="text-4xl pb-16 mt-10 text-[#06bbfa]">Home</h2>
+              <div className="mb-6 flex justify-center items-center scale-100 ">
+            <a
+              href="#overview"
+              className="bg-[#02d3fb] border-2 border-[#357ff3] text-black font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
+              Overview
+            </a>
+            <a
+              href="/live"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
+              Live
+            </a>
+            <a
+              href="#shorts"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
+              Shorts
+            </a>
+            <a
+              href="#gallery"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
+              Gallery
+            </a>
+            <a
+              href="#student-profile"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+            >
+              Student Profile
+            </a>
+          </div>
+          <div className="flex justify-center mb-4">
+            <img
+              src="Blue-Archive/Blue_Archive_KR_logo_(white_text).png"
+              alt="/students"
+            />
+          </div>
           {/* Welcome Box */}
           <section className="border-2 border-[#02d3fb] rounded-lg p-4 ] bg-opacity-90 mb-2">
             <div className="bg-[#02d3fb] rounded px-4 py-1 text-center font-extrabold text-black text-lg tracking-wide mb-2">
-              <span className="mr-2">🧑‍🏫</span> Sensei, Welcome to the Blue
-              Archive Wikia! <span className="ml-2">📘</span>
+              <span className="mr-2">
+                <img
+                  src="/Blue-Archive/icons/Abydos_Icon.png"
+                  alt="Abydos"
+                  className="w-6 h-6 inline-block"
+                />
+                <img
+                  src="/Blue-Archive/icons/Gehenna_Icon.png"
+                  alt="Gehenna"
+                  className="w-6 h-6 inline-block"
+                />
+                <img
+                  src="/Blue-Archive/icons/Millennium_Icon.png"
+                  alt="Millennium"
+                  className="w-6 h-6 inline-block"
+                />
+                <img
+                  src="/Blue-Archive/icons/Trinity_Icon.png"
+                  alt="Trinity"
+                  className="w-6 h-6 inline-block"
+                />
+                <img
+                  src="/Blue-Archive/icons/Hyakkiyako_Icon.png"
+                  alt="Hyakkiyako"
+                  className="w-6 h-6 inline-block"
+                />
+              </span>
+              Sensei, Welcome to the Blue Archive Wikia!
+              <span className="ml-2">
+                <img
+                  src="/Blue-Archive/icons/Shanhaijing_Icon.png"
+                  alt="Shanhaijing"
+                  className="w-6 h-6 inline-block"
+                />
+                <img
+                  src="/Blue-Archive/icons/Red_Winter_Icon.png"
+                  alt="Red Winter"
+                  className="w-6 h-6 inline-block"
+                />
+                <img
+                  src="/Blue-Archive/icons/Valkyrie_Icon.png"
+                  alt="Valkyrie"
+                  className="w-6 h-6 inline-block"
+                />
+                <img
+                  src="/Blue-Archive/icons/ARIUS_Icon.png"
+                  alt="Arius"
+                  className="w-6 h-6 inline-block"
+                />
+                <img
+                  src="/Blue-Archive/icons/SRT_Icon.png"
+                  alt="SRT"
+                  className="w-6 h-6 inline-block"
+                />
+              </span>
             </div>
-            <div className="text-center text-sm mt-2">
+            <div className="text-center mt-2 mb-5">
               This is a WIP wiki dedicated to Blue Archive (BA) that anyone can
               edit
               <br />
@@ -100,7 +205,7 @@ export const BlueArchiveHome = () => {
               <span className="font-bold text-pink-400">Spoilers!</span> Read at
               your own risk!
             </div>
-            <ul className="text-xs mt-2 list-disc list-inside space-y-1 text-center">
+            <ul className=" mt-2 list-disc list-inside space-y-1 text-center mb-5">
               <li>
                 For new users, make sure to read the{" "}
                 <span className="underline text-[#02d3fb] cursor-pointer">
@@ -126,11 +231,11 @@ export const BlueArchiveHome = () => {
                 </span>
               </li>
             </ul>
-            <section className=" p-4 mb-2">
-              <div className="bg-[#02d3fb] rounded px-4 py-1 text-center font-extrabold text-black text-md mb-2">
+            <section>
+              <div className="bg-[#02d3fb] rounded px-4  text-center font-extrabold text-black text-md ">
                 ~~ Sources ~~
               </div>
-              <div className="text-xs text-center">
+              <div className=" mt-2 text-center">
                 This wiki uses information and images from:
                 <br />
                 The official BA's{" "}
@@ -154,12 +259,38 @@ export const BlueArchiveHome = () => {
                   Yangikaze
                 </span>{" "}
                 and Machine Translation
+                <div className="flex flex-wrap justify-center ">
+                  {[
+                    "AR_New_Icon.png",
+                    "DualSG_New_Icon.png",
+                    "DualSMG_New_Icon.png",
+                    "FT_New_Icon.png",
+                    "GL_New_Icon.png",
+                    "HG_New_Icon.png",
+                    "MG_New_Icon.png",
+                    "ML_New_Icon.png",
+                    "MountMG_New_Icon.png",
+                    "RF_New_Icon.png",
+                    "RG_New_Icon.png",
+                    "RL_New_Icon.png",
+                    "SG_New_Icon.png",
+                    "SMG_New_Icon.png",
+                    "SR_New_Icon.png",
+                  ].map((img) => (
+                    <img
+                      key={img}
+                      src={`/Blue-Archive/weapons/${img}`}
+                      alt={img.replace("_New_Icon.png", "")}
+                      className="w-12 h-12 object-contain "
+                      title={img.replace("_New_Icon.png", "")}
+                    />
+                  ))}
+                </div>
               </div>
             </section>
           </section>
-
           {/* Upcoming Birthday */}
-          <section className="border-2 border-[#02d3fb] rounded-lg p-4  bg-opacity-90 mb-2">
+          <section className="border-2 border-[#02d3fb] rounded-lg  bg-opacity-90 mb-2">
             <div className="bg-[#02d3fb] rounded px-4 py-1 text-center font-extrabold text-black text-md mb-2">
               Upcoming Birthday
             </div>
@@ -168,53 +299,93 @@ export const BlueArchiveHome = () => {
               <img
                 src="Blue-Archive/characters/Yukari_Icon.png"
                 alt="Birthday Character"
+                className="w-24 h-24 object-contain mb-2"
               />
             </div>
           </section>
-
           {/* Anime Promo */}
-          <section className="border-2 border-[#02d3fb] rounded-lg p-4 bg-[#0a223a] bg-opacity-90 mb-2 flex flex-col items-center">
-            {/* Slideshow with smooth fade animation */}
-            <Slideshow
-              images={[
-                "/Blue-Archive/images/【ブルアカ】5th_PV.jpg",
-                "/Blue-Archive/images/【ブルアカTVアニメ】ティザー_PV.jpg",
-                "/Blue-Archive/images/1.5th_Anniversary_Illustration_1.png",
-                "/Blue-Archive/images/Arona_Room_2.png",
-              ]}
-            />
-            <style>{`
-              .slideshow-img {
-                transition: opacity 0.7s ease;
-                opacity: 1;
-              }
-              .slideshow-img.hide {
-                opacity: 0;
-              }
-            `}</style>
-          </section>
-          <div className="text-center">
-            <h4 className="font-bold text-lg text-[#02d3fb]">
-              ブルーアーカイブ The Animation
-            </h4>
-            <p className="text-xs">
-              2024年4月より テレビ東京・BS11ほかにて放送予定
-            </p>
-            <button className="mt-2 bg-[#02d3fb] text-white px-4 py-1 rounded-full text-xs font-bold hover:bg-pink-500 transition">
-              ▶ Play PV
-            </button>
-          </div>
+          {/* <section className="max-w-[800px] rounded-lg p-4 mb-2 flex flex-col items-center justify-center mx-auto">
 
+            <div className="w-[800px] h-[450px] flex items-center justify-center">
+              <Slideshow
+                images={[
+                  "/Blue-Archive/images/【ブルアカ】5th_PV.jpg",
+                  "/Blue-Archive/images/【ブルアカTVアニメ】ティザー_PV.jpg",
+                  "/Blue-Archive/images/1.5th_Anniversary_Illustration_1.png",
+                  "/Blue-Archive/images/Arona_Room_2.png",
+                ]}
+              />
+            </div>
+            </section> */}
+          {/* Fandom Slider - Improved Styling */}
+          {/* Slideshow - replaces static fandom slider */}
+          <section className="w-full max-w-3xl mx-auto my-8">
+            <img
+              src="/Blue-Archive/images/1.5th_Anniversary_Illustration_1.png"
+              alt="Blue Archive Promo"
+              className="rounded-lg w-full"
+              style={{ display: "block" }}
+            />
+          </section>
+          {/* "/Blue-Archive/images/【ブルアカ】5th_PV.jpg",
+          "/Blue-Archive/images/【ブルアカTVアニメ】ティザー_PV.jpg",
+          "/Blue-Archive/images/1.5th_Anniversary_Illustration_1.png",
+          "/Blue-Archive/images/Arona_Room_2.png", */}
           {/* Main Menu */}
-          <section className="border-2 border-[#02d3fb] rounded-lg p-4 bg-[#0a223a] bg-opacity-90">
-            <div className=" px-4 py-1 text-center font-bold text-black text-md mb-2">
+          <section className="border-2 border-[#02d3fb] rounded-lg p-4  bg-opacity-90 mb-2">
+            <div className="bg-[#02d3fb] rounded px-4 py-1 text-center font-extrabold text-black text-md mb-2">
               Main Menu
             </div>
-            <img
-              src="/Blue-Archive/main-menu.jpg"
-              alt="Main Menu"
-              className="rounded-lg w-full mb-2"
-            />
+            <div className="flex flex-col items-center">
+              <img src="Blue-Archive/images/MP_Work.png" alt="Main Menu" />
+            </div>
+            <div className="bg-[#02d3fb] rounded mt-3 px-4 py-1 text-center font-extrabold text-black text-md mb-2">
+              Content
+            </div>
+            <div className="grid grid-cols-4 gap-4">
+              {[
+              "MP_Student.png",
+              "MP_Achievement.png",
+              "MP_Circle.png",
+              "MP_FAQ.png",
+              "MP_Gacha.png",
+              "MP_School.png",
+              "MP_Club.png",
+              "MP_Shop.png",
+              "MP_BA.png",
+              "MP_Soundtrack.png",
+              "MP_4-Koma.png",
+              "MP_Arona_Channel.png",
+              "MP_Firearm.png",
+              "MP_Equipment.png",
+              "MP_Terrain.png",
+              "MP_Type.png",
+              "MP_Cafe.png",
+              "MP_Crafting.png",
+              "MP_Bond.png",
+              "MP_Schedule.png",
+              "MP_UE.png",
+              "MP_TailorMade.png",
+              "",
+              "",
+              "",
+              ].map((img, i) =>
+              img ? (
+                <div key={img} className="flex flex-col justify-center items-center">
+                <img
+                  src={`Blue-Archive/icons/${img}`}
+                  alt={img.replace(".png", "")}
+                  className="w-56 h-56 object-contain"
+                />
+                <span className="mt-2 text-xs text-white text-center font-semibold">
+                  {img.replace("MP_", "").replace(".png", "").replace(/_/g, " ")}
+                </span>
+                </div>
+              ) : (
+                <div key={i} />
+              )
+              )}
+            </div>
           </section>
         </main>
 
@@ -402,6 +573,45 @@ export const BlueArchiveHome = () => {
                   ends in 5d 7h 50m 44s JST
                 </span>
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="bg-[#02d3fb] rounded px-4 py-1 text-center font-extrabold text-[#417ef3] border-2 border-[#417ef3] text-md mb-2">
+              Featured Gatch
+            </div>
+            <div className="flex justify-center gap-4 mb-2">
+              {[1, 2, 3, 4].map((num) => (
+                <button
+                  key={num}
+                  className={`text-xl font-bold px-4 py-1 relative ${
+                    selectedGacha === num
+                      ? "text-white bg-[#02d3fb] rounded"
+                      : "text-[#02d3fb]"
+                  }`}
+                  style={{ minWidth: 32, textAlign: "center" }}
+                  onClick={() => setSelectedGacha(num)}
+                >
+                  {num}
+                </button>
+              ))}
+            </div>
+            <div className="w-full flex justify-center">
+              <div className="h-1 w-full bg-[#02d3fb] rounded-full" />
+            </div>
+            <div className="flex justify-center mt-2">
+              <img
+                src={
+                  [
+                    "Blue-Archive/gacha/Gacha_Banner_164.png",
+                    "Blue-Archive/gacha/Gacha_Banner_125.png",
+                    "Blue-Archive/gacha/Gacha_Banner_126.png",
+                    "Blue-Archive/gacha/Gacha_Banner_112.png",
+                  ][(selectedGacha ?? 1) - 1]
+                }
+                alt="Featured Gacha Banner"
+                className="rounded-lg max-w-full"
+                style={{ maxHeight: 120 }}
+              />
             </div>
           </div>
           {/* Natsu & Kazusa side by side */}
