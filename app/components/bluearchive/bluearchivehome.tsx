@@ -95,7 +95,13 @@ export const BlueArchiveHome = () => {
         {/* Main Content */}
         <main className="flex-1 max-w-7xl bg-black bg-opacity-80 rounded-lg p-8 text-white shadow-lg flex flex-col gap-8">
           <h2 className="text-4xl pb-16 mt-10 text-[#06bbfa]">Home</h2>
-              <div className="mb-6 flex justify-center items-center scale-100 ">
+          {/* <div className="flex justify-center mb-4">
+            <img
+              src="Blue-Archive/Blue_Archive_KR_logo_(white_text).png"
+              alt="/students"
+            />
+          </div> */}
+          <div className="mb-6 flex justify-center items-center scale-100 ">
             <a
               href="#overview"
               className="bg-[#02d3fb] border-2 border-[#357ff3] text-black font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
@@ -126,12 +132,6 @@ export const BlueArchiveHome = () => {
             >
               Student Profile
             </a>
-          </div>
-          <div className="flex justify-center mb-4">
-            <img
-              src="Blue-Archive/Blue_Archive_KR_logo_(white_text).png"
-              alt="/students"
-            />
           </div>
           {/* Welcome Box */}
           <section className="border-2 border-[#02d3fb] rounded-lg p-4 ] bg-opacity-90 mb-2">
@@ -344,46 +344,52 @@ export const BlueArchiveHome = () => {
             </div>
             <div className="grid grid-cols-4 gap-4">
               {[
-              "MP_Student.png",
-              "MP_Achievement.png",
-              "MP_Circle.png",
-              "MP_FAQ.png",
-              "MP_Gacha.png",
-              "MP_School.png",
-              "MP_Club.png",
-              "MP_Shop.png",
-              "MP_BA.png",
-              "MP_Soundtrack.png",
-              "MP_4-Koma.png",
-              "MP_Arona_Channel.png",
-              "MP_Firearm.png",
-              "MP_Equipment.png",
-              "MP_Terrain.png",
-              "MP_Type.png",
-              "MP_Cafe.png",
-              "MP_Crafting.png",
-              "MP_Bond.png",
-              "MP_Schedule.png",
-              "MP_UE.png",
-              "MP_TailorMade.png",
-              "",
-              "",
-              "",
+                "MP_Student.png",
+                "MP_Achievement.png",
+                "MP_Circle.png",
+                "MP_FAQ.png",
+                "MP_Gacha.png",
+                "MP_School.png",
+                "MP_Club.png",
+                "MP_Shop.png",
+                "MP_BA.png",
+                "MP_Soundtrack.png",
+                "MP_4-Koma.png",
+                "MP_Arona_Channel.png",
+                "MP_Firearm.png",
+                "MP_Equipment.png",
+                "MP_Terrain.png",
+                "MP_Type.png",
+                "MP_Cafe.png",
+                "MP_Crafting.png",
+                "MP_Bond.png",
+                "MP_Schedule.png",
+                "MP_UE.png",
+                "MP_TailorMade.png",
+                "",
+                "",
+                "",
               ].map((img, i) =>
-              img ? (
-                <div key={img} className="flex flex-col justify-center items-center">
-                <img
-                  src={`Blue-Archive/icons/${img}`}
-                  alt={img.replace(".png", "")}
-                  className="w-56 h-56 object-contain"
-                />
-                <span className="mt-2 text-xs text-white text-center font-semibold">
-                  {img.replace("MP_", "").replace(".png", "").replace(/_/g, " ")}
-                </span>
-                </div>
-              ) : (
-                <div key={i} />
-              )
+                img ? (
+                  <div
+                    key={img}
+                    className="flex flex-col justify-center items-center"
+                  >
+                    <img
+                      src={`Blue-Archive/icons/${img}`}
+                      alt={img.replace(".png", "")}
+                      className="w-56 h-56 object-contain"
+                    />
+                    <span className="mt-2 text-xs text-white text-center font-semibold">
+                      {img
+                        .replace("MP_", "")
+                        .replace(".png", "")
+                        .replace(/_/g, " ")}
+                    </span>
+                  </div>
+                ) : (
+                  <div key={i} />
+                )
               )}
             </div>
           </section>
@@ -610,7 +616,7 @@ export const BlueArchiveHome = () => {
                 }
                 alt="Featured Gacha Banner"
                 className="rounded-lg max-w-full"
-                style={{ maxHeight: 120 }}
+                style={{ maxHeight: 200 }}
               />
             </div>
           </div>
@@ -619,7 +625,7 @@ export const BlueArchiveHome = () => {
             style={{
               display: "flex",
               flexDirection: "row",
-              gap: "8px",
+              gap: "3px",
               justifyContent: "center",
             }}
           >
@@ -1205,12 +1211,13 @@ export const BlueArchiveHome = () => {
             </div>
           </div>
 
-          {/* Place Yoshimi and Kikyou side by side */}
+          {/*Yoshimi and Kikyou*/}
           <div
+        className="flex flex-row gap-3 "
             style={{
               display: "flex",
               flexDirection: "row",
-              gap: "8px",
+              gap: "3px",
               justifyContent: "center",
             }}
           >
@@ -1793,6 +1800,13 @@ export const BlueArchiveHome = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="text-xs text-white text-center">
+            <div>June 11st, 2025 JST – June 18th, 2025 JST</div>
+            <div className="font-bold">
+              Gacha Period{" "}
+              <span className="text-[#ff0000]">ends in 1d 18h 37m 44s JST</span>
             </div>
           </div>
         </aside>
