@@ -83,7 +83,7 @@ export const BlueArchiveHome = () => {
           <a href="#" className="hover:underline hover:text-white transition">
             TERMINOLOGY
           </a>
-          <a href="#" className="hover:underline hover:text-white transition">
+          <a href="/students" className="hover:underline hover:text-white transition">
             MENU
           </a>
           <a href="#" className="hover:underline hover:text-white transition">

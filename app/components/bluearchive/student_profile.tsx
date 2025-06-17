@@ -35,7 +35,7 @@ export const Students = () => {
             <img
               src="/Blue-Archive/Site-logo (5).png"
               alt="Blue Archive Logo"
-              className="h-16 w-auto drop-shadow-lg"
+              className="h-24 w-auto drop-shadow-lg"
             />
           </a>
           <h1 className="text-lx pt-10 font-bold text-[#02d3fb] tracking-wide drop-shadow-md">
@@ -147,7 +147,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Tank.png" alt="" />
                   </span>
                 </td>
@@ -211,7 +211,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Supporter.png" alt="" />
                   </span>
                 </td>
@@ -274,7 +274,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block flex flex-col items-center justify-center mx-auto">
+                  <span className=" flex flex-col items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Tank.png" alt="" />
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
@@ -338,7 +338,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -397,7 +397,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -456,7 +456,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -519,7 +519,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -577,7 +577,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -636,7 +636,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Supporter.png" alt="" />
                   </span>
                 </td>
@@ -699,7 +699,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -757,7 +757,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -820,7 +820,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -878,7 +878,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Healer (1).png" alt="" />
                   </span>
                 </td>
@@ -931,7 +931,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Tactical.png" alt="" />
                   </span>
                 </td>
@@ -995,7 +995,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1058,7 +1058,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1121,7 +1121,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1180,7 +1180,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Tactical.png" alt="" />
                   </span>
                 </td>
@@ -1233,7 +1233,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Supporter.png" alt="" />
                   </span>
                 </td>
@@ -1292,7 +1292,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1355,7 +1355,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1418,7 +1418,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1481,7 +1481,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Supporter.png" alt="" />
                   </span>
                 </td>
@@ -1540,7 +1540,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Supporter.png" alt="" />
                   </span>
                 </td>
@@ -1599,7 +1599,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Supporter.png" alt="" />
                   </span>
                 </td>
@@ -1658,7 +1658,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1707,7 +1707,7 @@ export const Students = () => {
                   Special
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Healer (1).png" alt="" />
                   </span>
                 </td>
@@ -1770,7 +1770,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Supporter.png" alt="" />
                   </span>
                 </td>
@@ -1829,7 +1829,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1888,7 +1888,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
                   </span>
                 </td>
@@ -1947,7 +1947,7 @@ export const Students = () => {
                   Striker
                 </td>
                 <td className="py-2 px-2">
-                  <span className="inline-block  flex items-center justify-center mx-auto">
+                  <span className="  flex items-center justify-center mx-auto">
                     <img src="Blue-Archive/icons/Supporter.png" alt="" />
                   </span>
                 </td>
@@ -1961,6 +1961,2374 @@ export const Students = () => {
                   Penetration
                 </td>
                 <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Mutsuki_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Mutsuki
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#e68f16]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Mutsuki_New_Year_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Mutsuki <br /> (New Year)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Kayoko_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Kayoko
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#e68f16]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Kayoko_New_Year_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Kayoko <br /> (New Year)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#46adff]">
+                  Special Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Kayoko_Dress_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Kayoko <br /> (Dress)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ffa500]">
+                  Penetration
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Haruka_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Haruka
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#268acb]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Tank.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  FRONT
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Haruka_New_Year_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Haruka <br /> (New Year)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Haruna_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Haruna
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Haruna_New_Year_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Haruna <br /> (New Year)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Haruna_Gym_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Haruna <br /> (Gym)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Healer (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#9b57aa]">
+                  Sonic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Junko_Icon (1).png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Junko
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#e68f16]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ffa500]">
+                  Penetration
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Junko_New_Year_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Junko <br /> (New Year)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#268ACB]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Izumi_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Izumi
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>{" "}
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Izumi_Swimsuit_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Izumi <br /> (Swimsuit)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#268ACB]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Izumi_New_Year_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Izumi <br /> (New Year)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>{" "}
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Akari_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Akari
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#e68f16]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Penetration
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Akari_New_Year_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Akari <br /> (New Year)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>{" "}
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Tactical.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#46adff]">
+                  Special Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Fuuka_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Fuuka
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#e68f16]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>{" "}
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Healer (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Fuuka_New_Year_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Fuuka <br /> (New Year)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>{" "}
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ffa500]">
+                  Penetration
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#46adff]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Juri_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Juri
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#268acb]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>{" "}
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Juri_Part_Timer_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Juri <br /> (Part Timer)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Tank.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  FRONT
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Sena_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Sena
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Tactical.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Sena_Casual_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Sena <br /> (Casual)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Healer (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#9b57aa]">
+                  Sonic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Kasumi_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Kasumi
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#9b57aa]">
+                  Sonic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Megu_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Megu
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  FRONT
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#46adff]">
+                  Special Armor
+                </td>
+              </tr>
+              <tr className="bg-[#e34a45] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Kirara_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Kirara
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#9b57aa]">
+                  Sonic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ff0000]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Rio_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Rio
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185F6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#9b57aa]">
+                  Elastic Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Yuuka_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Yuuka
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#e68f16]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Tank.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  FRONT
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Yuuka_Gym_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Yuuka <br /> (Gym)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Tank.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  FRONT
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#46adff]">
+                  Special Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Yuuka_Pajamas_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Yuuka <br /> (Pajamas)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Tank.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  FRONT
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Noa_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Noa
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#46adff]">
+                  Special Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Noa_Pajamas_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Noa <br /> (Pajamas)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ffa500]">
+                  Penetration
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Koyuki_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Koyuki
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#46adff]">
+                  Mystic
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Chihiro_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Chihiro
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185f6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
+                  Penetraton
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Maki_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Maki
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#ff6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
+                  Penetraton
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Maki_Camp_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Maki <br /> (Camp)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185F6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
+                  Heavy Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Hare_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Hare
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185F6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Hare_Camp_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Hare <br /> (Camp)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#ff6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Kotama_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Kotama
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#268acb]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#2185F6]">
+                  Special
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  BACK
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img
+                    src="Blue-Archive/icons/Cross_1.png"
+                    alt=""
+                    className="w-14 h-14"
+                  />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
+                  Explosion
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
+                  Light Armor
+                </td>
+              </tr>
+              <tr className="bg-[#4f86f7] border-b border-gray-700">
+                <td className="py-2 px-2 flex items-center justify-center gap-2">
+                  <img
+                    src="/Blue-Archive/characters/Kotama_Camp_Icon.png"
+                    alt=""
+                    className="w-40 h-30"
+                  />
+                  <span
+                    className="text-xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
+                    }}
+                  >
+                    Kotama <br /> (Camp)
+                  </span>
+                </td>
+                <td className="py-2 px-6 bg-[#9B85E6]">
+                  <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-1">
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                      <img
+                        src="Blue-Archive/images/Star_Icon.png"
+                        alt=""
+                        className="w-6 h-6"
+                      />
+                    </div>
+                    <img
+                      src="Blue-Archive/images/Star_Icon.png"
+                      alt=""
+                      className="w-6 h-6"
+                    />
+                  </div>
+                </td>
+                <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#ff6133]">
+                  Striker
+                </td>
+                <td className="py-2 px-2">
+                  <span className="  flex items-center justify-center mx-auto">
+                    <img src="Blue-Archive/icons/Supporter.png" alt="" />
+                  </span>
+                </td>
+                <td className="py-2 px-2 text-xl font-extrabold text-black italic">
+                  MIDDLE
+                </td>
+                <td className="py-2 px-2 text-2xl font-extrabold text-black">
+                  <img src="Blue-Archive/icons/Cover.png" alt="" />
+                </td>
+                <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
+                  Penetration
+                </td>
+                <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
                   Heavy Armor
                 </td>
               </tr>
