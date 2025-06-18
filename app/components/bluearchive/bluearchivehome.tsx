@@ -103,8 +103,8 @@ export const BlueArchiveHome = () => {
           </div> */}
           <div className="mb-6 flex justify-center items-center scale-100 ">
             <a
-              href="#overview"
-              className="bg-[#02d3fb] border-2 border-[#357ff3] text-black font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
+              href="/blue_archive"
+              className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
             >
               Overview
             </a>
@@ -127,7 +127,7 @@ export const BlueArchiveHome = () => {
               Gallery
             </a>
             <a
-              href="#student-profile"
+              href="/students"
               className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
             >
               Student Profile

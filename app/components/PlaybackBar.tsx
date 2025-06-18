@@ -37,28 +37,23 @@ const PlaybackBar = () => {
               icon={
                 <FeatherShuffle className="text-spotify-lightgray hover:text-spotify-white" />
               }
-              size="small"
               onClick={() => {}}
             />
             <IconButton
               icon={<FeatherSkipBack className="text-spotify-white" />}
-              size="small"
               onClick={() => {}}
             />
             <IconButton
               className="spotify-button w-10 h-10 flex items-center justify-center"
               icon={<FeatherPlay className="text-spotify-black" />}
-              size="small"
               onClick={() => {}}
             />
             <IconButton
               icon={<FeatherSkipForward className="text-spotify-white" />}
-              size="small"
               onClick={() => {}}
             />
             <IconButton
               icon={<FeatherRepeat className="text-spotify-white" />}
-              size="small"
               onClick={() => {}}
             />
           </div>
