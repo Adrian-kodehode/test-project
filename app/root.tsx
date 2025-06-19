@@ -126,7 +126,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/live" &&
           location.pathname !== "/bluearchivehome" &&
           location.pathname !== "/students" &&
-          location.pathname !== "/hikari" && 
+          location.pathname !== "/hikari" &&
+          location.pathname !== "/toki_bunny" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         {location.pathname !== "/home" && <PlaybackBar />}
@@ -224,8 +225,8 @@ export default function App() {
         location.pathname !== "/live" &&
         location.pathname !== "/students" &&
         location.pathname !== "/hikari" &&
+        location.pathname !== "/toki_bunny" &&
         location.pathname !== "/video" && <Footer />}
-        
     </div>
   );
 }

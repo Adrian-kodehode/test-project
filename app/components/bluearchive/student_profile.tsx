@@ -5027,11 +5027,14 @@ export const Students = () => {
               </tr>
               <tr className="bg-[#4f86f7] border-b border-gray-700">
                 <td className="py-2 px-2 flex items-center justify-center gap-2">
-                  <img
-                    src="/Blue-Archive/characters/Toki_Bunny_Girl_Icon.png"
-                    alt=""
-                    className="w-40 h-30"
-                  />
+                  <a href="/toki">
+                    {" "}
+                    <img
+                      src="/Blue-Archive/characters/Toki_Bunny_Girl_Icon.png"
+                      alt=""
+                      className="w-40 h-30"
+                    />
+                  </a>
                   <span
                     className="text-xl font-extrabold"
                     style={{
