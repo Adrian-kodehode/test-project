@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import tokiBunnySkills from "./toki_bunny_skills";
+import hoshinoSkills from "./hoshino_skills";
+import { s } from "node_modules/framer-motion/dist/types.d-DDSxwf0n";
 
-export const TokiBunny = () => {
+export const Hoshino = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [selectedTab, setSelectedTab] = useState("icon");
   const [selectedTabStats, setSelectedTabStats] = useState("main");
@@ -63,7 +64,7 @@ export const TokiBunny = () => {
       </header>
       <main className="flex-1 mt-10 mb-10 w-[1200px] max-w-[98vw] bg-black bg-opacity-80 rounded-lg p-4 text-white shadow-lg mx-auto ">
         <h2 className="text-4xl mt-10 mb-10 ml-5 text-[#06bbfa]">
-          Asuma Toki (Bunny Girl ver.)
+          Takanashi Hoshino
         </h2>
         <div className="flex justify-center items-center scale-100 ">
           <a
@@ -100,32 +101,39 @@ export const TokiBunny = () => {
         <div className="flex flex-row gap-8">
           {/* Main content (left) */}
           <div className="flex-1 mt-5 ml-3">
-            <div className="bg-[#4f86f7] w-[400px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 rounded">
+            <div className="bg-[#06bbfa] w-[250px] left-36 text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 rounded">
               <span className="block text-center w-full italic">
-                “ Pyon. I am the best agent.”
+                “ Alright, alright-”
               </span>
               <br />
-              <span className="absolute right-28 bottom-1 text-xs italic">
-                ~ Asuma Toki (Bunny Girl ver.)
+              <span className="absolute right-18 bottom-1 text-xs italic">
+                ~ Takanashi Hoshino
               </span>
             </div>
             <p className="mt-5 max-w-[600px]">
-              <strong>Asuma Toki (Bunny Girl ver.)</strong> (飛鳥馬トキ
-              (バニーガール Ver.)) is the Bunny Girl Variant of{" "}
+              <strong>Takanashi Hoshino (小鳥遊 ホシノ)</strong> is one of the
               <a href="#" className="text-[#357ff3] hover:underline">
-                Toki
-              </a>{" "}
-              and is one of the{" "}
-              <a href="/students" className="text-[#357ff3] hover:underline">
                 students
               </a>{" "}
+              <br />
               studying in{" "}
               <a href="#" className="text-[#357ff3] hover:underline">
-                Millennium Science School
+                Abydos High School
               </a>{" "}
-              who wields an{" "}
+              who wields a{" "}
               <a href="#" className="text-[#357ff3] hover:underline">
-                Assault Rifle
+                Shotgun
+              </a>
+              .
+            </p>
+            <p className="mb-5 mt-6">
+              She is the president of the{" "}
+              <a href="#" className="text-[#357ff3] hover:underline">
+                Abydos Student Council
+              </a>{" "}
+              and the chairwoman of the{" "}
+              <a href="#" className="text-[#357ff3] hover:underline">
+                Countermeasures Committee
               </a>
               .
             </p>
@@ -151,7 +159,7 @@ export const TokiBunny = () => {
                   [hide]
                 </button>
               </div>
-              <ol className=" list-inside px-5 py-3 text-white text-sm space-y-1">
+              <ol className="list-inside px-5 py-3 text-white text-sm space-y-1">
                 <li>
                   <a href="#profile" className="hover:underline">
                     <span className="text-gray-400"> 1.</span> Profile
@@ -239,14 +247,18 @@ export const TokiBunny = () => {
                   </a>
                 </li>
                 <li>
-                  <span className="text-gray-400"> 5.</span>{" "}
                   <a href="#trivia" className="hover:underline">
-                    Trivia
+                    <span className="text-gray-400"> 5.</span> Trivia
+                  </a>
+                </li>
+                <li>
+                  <a href="#see-also" className="hover:underline">
+                    <span className="text-gray-400"> 6.</span> See Also
                   </a>
                 </li>
                 <li>
                   <a href="#navigation" className="hover:underline">
-                    <span className="text-gray-400"> 6.</span> Navigation
+                    <span className="text-gray-400"> 7.</span> Navigation
                   </a>
                 </li>
               </ol>
@@ -265,11 +277,19 @@ export const TokiBunny = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                C&C's Toki is a firm beliver in wearing a bunny-girl outfit when
-                it comes to undercover missions. Perhaps it is because she is
-                usually in a special position, but she seems a little more
-                excited than usual to be entrusted with an undercover mission
-                that she has not had much contact with...
+                Takanashi Hoshino is the president of the{" "}
+                <a href="#" className="text-[#3e7af2]">
+                  Abydos Student Council
+                </a>{" "}
+                and the only third-year of{" "}
+                <a href="#" className="text-[#3e7af2]">
+                  Abydos High School
+                </a>
+                , and the current chairwoman for the{" "}
+                <a href="#" className="text-[#3e7af2]">
+                  Countermeasures Commitee
+                </a>
+                .
               </p>
             </div>
             <h3
@@ -280,10 +300,13 @@ export const TokiBunny = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                See{" "}
-                <a href="#" className="text-[#3e7af2] hover:underline">
-                  Asuma Toki
-                </a>
+                Speaking like a senile aunt, she enjoys playing around and
+                napping more than work. Because of this, she usually gets
+                scolded by the rest of the Committee. But, once the mission
+                starts, she protects her comrades by fighting valiantly on the
+                front lines. Since accepting the title of student council
+                president, she has gradually brightened up. Perhaps this is the
+                real Hoshino.
               </p>
             </div>
             <h3
@@ -294,9 +317,8 @@ export const TokiBunny = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Toki has hip-length pale blonde hair with a crown-styled braid,
-                interspersed with random blue strands. She has sky blue eyes and
-                a big navy blue bow behind her head.
+                She has pink hair with a cowlick reaching to her legs. She has
+                heterochromia of blue and orange eyes.
               </p>
             </div>
             <h4
@@ -307,10 +329,8 @@ export const TokiBunny = () => {
             </h4>
             <div className="ml-3 mt-2">
               <p>
-                See{" "}
-                <a href="#" className="text-[#3e7af2] hover:underline">
-                  Asuma Toki{" "}
-                </a>
+                Hoshino's halo has a pink eye-like circle with an outer line
+                curved around and ends with a strip line.
               </p>
             </div>
 
@@ -318,12 +338,12 @@ export const TokiBunny = () => {
           </div>
 
           {/* Aside (right) */}
-          <aside className="bg-[#4f86f7] border-2 border-[#357ff3] rounded-lg shadow-lg p-6 mt-5 w-full max-w-xs mb-8 mr-5">
-            <h2 className="text-2xl font-bold text-[#ccccff] mb-2 text-center">
-              Asuma Toki (Bunny Girl ver.) /
+          <aside className="bg-[#06bbfa] border-2 border-[#357ff3] rounded-lg shadow-lg p-6 mt-5 w-full max-w-xs mb-8 mr-5">
+            <h2 className="text-2xl font-bold text-[#aae5f8] mb-2 text-center">
+              Takanashi Hoshino /
             </h2>
-            <div className="text-center text-sm text-[#ccccff] font-bold mb-4">
-              飛鳥馬トキ (バニーガール Ver.)
+            <div className="text-center text-sm text-[#aae5f8] font-bold mb-4">
+              小鳥遊 ホシノ
             </div>
             <section>
               <div className="flex justify-center">
@@ -337,7 +357,7 @@ export const TokiBunny = () => {
                     <li key={tab.key}>
                       <button
                         type="button"
-                        className={`px-4 py-2 text-[#ccccff] font-${
+                        className={`px-4 py-2 text-[#aae5f8] font-${
                           tab.key === selectedTab ? "extrabold" : "semibold"
                         } cursor-pointer ${
                           tab.key === selectedTab
@@ -352,22 +372,62 @@ export const TokiBunny = () => {
                   ))}
                 </ul>
               </div>
+              <div className="flex justify-center ">
+                <ul className="flex w-full justify-between flex-wrap">
+                  {[
+                    { label: "Default", key: "default" },
+                    { label: "Robber", key: "robber" },
+                    { label: "Gym", key: "gym" },
+                    { label: "Young", key: "young" },
+                    { label: "Winter", key: "winter" },
+                  ].map((tab) => (
+                    <li key={tab.key} className="flex-1 text-center">
+                      <button
+                        type="button"
+                        className={`w-full px-2 py-1 text-xs text-[#aae5f8] font-${
+                          tab.key === selectedTab ? "extrabold" : "semibold"
+                        } focus:outline-none`}
+                        onClick={() => setSelectedTab(tab.key)}
+                      >
+                        <span
+                          className={`block ${
+                            tab.key === selectedTab
+                              ? "border-b-2 border-[#357ff3] pb-1"
+                              : ""
+                          }`}
+                        >
+                          {tab.label}
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <div className="flex justify-center">
                 <figure>
                   <a href="#">
                     <img
                       src={
-                        selectedTab === "icon"
-                          ? "/Blue-Archive/characters/Toki_Bunny_Girl_Icon.png"
-                          : selectedTab === "portrait"
-                          ? "/Blue-Archive/characters/Toki_Bunny_Girl_Portrait.png"
+                        selectedTab === "portrait"
+                          ? "/Blue-Archive/characters/Hoshino_Portrait.png"
                           : selectedTab === "sprite"
-                          ? "/Blue-Archive/characters/Toki_Bunny_Girl_Sprite.png"
+                          ? "/Blue-Archive/characters/Hoshino_Sprite.png"
                           : selectedTab === "halo"
-                          ? "/Blue-Archive/characters/Toki_Halo.png"
-                          : "/Blue-Archive/characters/Toki_Bunny_Girl_Icon.png"
+                          ? "/Blue-Archive/characters/Hoshino_Halo.png"
+                          : selectedTab === "young"
+                          ? "/Blue-Archive/characters/Hoshino_Young_Portrait.png"
+                          : selectedTab === "winter"
+                          ? "/Blue-Archive/characters/Hoshino_Winter_Portrait.png"
+                          : selectedTab === "robber"
+                          ? "/Blue-Archive/characters/Hoshino_Robber_Portrait.png"
+                          : selectedTab === "gym"
+                          ? "/Blue-Archive/characters/Hoshino_Gym_Portrait.png"
+                          : selectedTab === "default" ||
+                            selectedTab === "Default"
+                          ? "/Blue-Archive/characters/Hoshino_Portrait.png"
+                          : "/Blue-Archive/characters/Hoshino_Icon.png"
                       }
-                      alt={`Hikari ${
+                      alt={`Hoshino ${
                         selectedTab.charAt(0).toUpperCase() +
                         selectedTab.slice(1)
                       }`}
@@ -379,14 +439,14 @@ export const TokiBunny = () => {
             </section>
             <section>
               <table className="w-full border-separate border-spacing-y-2">
-                <caption className="text-lg font-bold text-[#ccccff] rounded-t-md py-2 text-left">
+                <caption className="text-lg font-bold text-[#aae5f8] rounded-t-md py-2 text-left">
                   Unit Information
                 </caption>
                 <tbody>
                   {/* Rarity, Bond, Cover */}
                   <tr>
                     {/* Rarity */}
-                    <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
+                    <td className="bg-[#aae5f8] px-2 py-2 text-center align-middle w-1/3">
                       <div className="flex gap-1 justify-center w-full">
                         {[1, 2, 3].map((i) => (
                           <img
@@ -402,7 +462,7 @@ export const TokiBunny = () => {
                       </div>
                     </td>
                     {/* Bond */}
-                    <td className="bg-[#ccccff] px-2 py-2  text-center align-middle w-1/3">
+                    <td className="bg-[#aae5f8] px-2 py-2  text-center align-middle w-1/3">
                       <div className="flex gap-1 justify-center items-center w-full">
                         <img
                           src="/Blue-Archive/icons/Bond.png"
@@ -412,7 +472,7 @@ export const TokiBunny = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Blue_Font_6.png"
+                          src="/Blue-Archive/icons/Blue_Font_9.png"
                           alt="Bond Level"
                           width={16}
                           height={16}
@@ -421,10 +481,10 @@ export const TokiBunny = () => {
                       </div>
                     </td>
                     {/* Cover */}
-                    <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
+                    <td className="bg-[#aae5f8] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/icons/Cover.png"
-                        alt="Cover"
+                        src="/Blue-Archive/icons/Cross_1.png"
+                        alt="Cross"
                         width={18}
                         height={18}
                         className="inline-block"
@@ -434,7 +494,7 @@ export const TokiBunny = () => {
                   {/* Role, Class, Position */}
                   <tr>
                     {/* Role */}
-                    <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
+                    <td className="bg-[#aae5f8] px-2 py-2 text-center align-middle w-1/3">
                       <img
                         src="/Blue-Archive/icons/STRIKER.png"
                         alt="STRIKER"
@@ -444,25 +504,25 @@ export const TokiBunny = () => {
                       />
                     </td>
                     {/* Class */}
-                    <td className="bg-[#ccccff] px-2 py-2  text-center align-middle w-1/3">
+                    <td className="bg-[#aae5f8] px-2 py-2  text-center align-middle w-1/3">
                       <div className="flex flex-col items-center justify-center">
                         <img
-                          src="/Blue-Archive/icons/Attacker (1).png"
-                          alt="Attacker"
+                          src="/Blue-Archive/icons/Tank.png"
+                          alt="Tank"
                           width={20}
                           height={20}
                           className="inline-block mb-1"
                         />
                         <span className="font-semibold text-black text-sm">
-                          Attacker
+                          Tank
                         </span>
                       </div>
                     </td>
                     {/* Position */}
-                    <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
+                    <td className="bg-[#aae5f8] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/icons/MIDDLE.png"
-                        alt="MIDDLE"
+                        src="/Blue-Archive/icons/FRONT.png"
+                        alt="FRONT"
                         width={50}
                         height={20}
                         className="inline-block"
@@ -472,9 +532,9 @@ export const TokiBunny = () => {
                   {/* School, Firearm */}
                   <tr>
                     {/* School */}
-                    <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
+                    <td className="bg-[#aae5f8] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/icons/Highlander_Icon.png"
+                        src="/Blue-Archive/icons/Abydos_Icon.png"
                         alt="Highlander Icon"
                         width={56}
                         height={48}
@@ -482,9 +542,9 @@ export const TokiBunny = () => {
                       />
                     </td>
                     {/* Firearm */}
-                    <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
+                    <td className="bg-[#aae5f8] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/weapons/HG_New_Icon.png"
+                        src="/Blue-Archive/weapons/SG_Icon.png"
                         alt="Handgun Icon"
                         width={80}
                         height={48}
@@ -492,12 +552,12 @@ export const TokiBunny = () => {
                       />
                     </td>
                     {/* Empty cell for alignment */}
-                    <td className="bg-[#ccccff] px-2 py-2  text-center align-middle w-1/3"></td>
+                    <td className="bg-[#aae5f8] px-2 py-2  text-center align-middle w-1/3"></td>
                   </tr>
                   {/* Terrain */}
                   <tr>
                     {/* City */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2">
                       <div className="relative inline-block">
                         <img
                           src="/Blue-Archive/icons/City_Icon.png"
@@ -507,8 +567,8 @@ export const TokiBunny = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Neutral_Icon.png"
-                          alt="Neutral Icon"
+                          src="/Blue-Archive/icons/Terrible_Icon.png"
+                          alt="Terrible Icon"
                           width={24}
                           height={24}
                           className="absolute right-[-6px] bottom-[-6px] z-20"
@@ -516,7 +576,7 @@ export const TokiBunny = () => {
                       </div>
                     </td>
                     {/* Desert */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2">
                       <div className="relative inline-block">
                         <img
                           src="/Blue-Archive/icons/Desert_Icon.png"
@@ -535,7 +595,7 @@ export const TokiBunny = () => {
                       </div>
                     </td>
                     {/* Indoor */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2">
                       <div className="relative inline-block">
                         <img
                           src="/Blue-Archive/icons/Indoor_Icon.png"
@@ -545,8 +605,8 @@ export const TokiBunny = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Terrible_Icon.png"
-                          alt="Terrible Icon"
+                          src="/Blue-Archive/icons/Neutral_Icon.png"
+                          alt="Neutral Icon"
                           width={24}
                           height={24}
                           className="absolute right-[-8px] bottom-[-8px] z-20"
@@ -557,30 +617,39 @@ export const TokiBunny = () => {
                   {/* Offensive/Defensive Type */}
                   <tr>
                     {/* Offensive Type */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
-                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[#9b57aa]">
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2">
+                      <img
+                        src="Blue-Archive/images/Offensive_Icon.png"
+                        alt=""
+                      />
+                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[#ffa500]">
                         <b>
-                          <span className="text-black">Sonic</span>
+                          <span className="text-black">Penetration</span>
                         </b>
                       </div>
                     </td>
                     {/* Defensive Type */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
-                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-red-600">
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2">
+                      <img
+                        src="Blue-Archive/images/Defensive_Icon.png"
+                        alt=""
+                      />
+
+                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[#ffa500]">
                         <b>
-                          <span className="text-black">Light</span>
+                          <span className="text-black">Heavy</span>
                         </b>
                       </div>
                     </td>
                     {/* Empty */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2"></td>
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2"></td>
                   </tr>
                   {/* Equipment */}
                   <tr>
                     {/* Equipment 1: Gloves */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Gloves_T1_Icon.png"
+                        src="/Blue-Archive/icons/Shoe_T1_Icon.png"
                         alt="Gloves T1 Icon"
                         width={56}
                         height={44}
@@ -588,9 +657,9 @@ export const TokiBunny = () => {
                       />
                     </td>
                     {/* Equipment 2: Hairpin */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Hairpin_T1_Icon.png"
+                        src="/Blue-Archive/icons/Bag_T1_Icon.png"
                         alt="Hairpin T1 Icon"
                         width={56}
                         height={44}
@@ -598,7 +667,7 @@ export const TokiBunny = () => {
                       />
                     </td>
                     {/* Equipment 3: Charm */}
-                    <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
+                    <td className="bg-[#aae5f8] text-center align-middle w-1/3 px-2 py-2">
                       <img
                         src="/Blue-Archive/icons/Charm_T1_Icon.png"
                         alt="Charm T1 Icon"
@@ -621,7 +690,7 @@ export const TokiBunny = () => {
                     <li key={tab.key}>
                       <button
                         type="button"
-                        className={`px-4 py-2 text-[#ccccff] font-${
+                        className={`px-4 py-2 text-[#aae5f8] font-${
                           tab.key === selectedTabStats
                             ? "extrabold"
                             : "semibold"
@@ -643,67 +712,67 @@ export const TokiBunny = () => {
                 <div className="mt-4">
                   {/* Level 1 Row */}
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-extrabold text-[#ccccff] text-sm">
+                    <span className="font-extrabold text-[#aae5f8] text-sm">
                       LEVEL 1
                     </span>
-                    <span className="font-extrabold text-[#ccccff] text-sm">
+                    <span className="font-extrabold text-[#aae5f8] text-sm">
                       BASE★
                     </span>
                   </div>
                   {/* Level 1 Stats */}
-                  <div className="bg-[#ccccff] grid grid-cols-4 gap-2 pt-3 pb-2 mb-2">
+                  <div className="bg-[#aae5f8] grid grid-cols-4 gap-2 pt-3 pb-2 mb-2">
                     <div className="flex flex-col items-center">
-                      <span className="text-xs font-bold text-[#4f86f7]">
+                      <span className="text-xs font-bold text-[#06bbfa]">
                         HP
                       </span>
-                      <span className="font-bold text-lg text-black">2068</span>
+                      <span className="font-bold text-lg text-black">3275</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="text-xs font-bold text-[#4f86f7]">
+                      <span className="text-xs font-bold text-[#06bbfa]">
                         ATK
                       </span>
-                      <span className="font-bold text-lg text-black">291</span>
+                      <span className="font-bold text-lg text-black">213</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="text-xs font-bold text-[#4f86f7]">
+                      <span className="text-xs font-bold text-[#06bbfa]">
                         DEF
                       </span>
-                      <span className="font-bold text-lg text-black">16</span>
+                      <span className="font-bold text-lg text-black">175</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="text-xs font-bold text-[#4f86f7]">
+                      <span className="text-xs font-bold text-[#06bbfa]">
                         HEAL
                       </span>
-                      <span className="font-bold text-lg text-black">1416</span>
+                      <span className="font-bold text-lg text-black">1687</span>
                     </div>
                   </div>
                   {/* Level 100 Row 1 */}
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-extrabold text-[#ccccff] text-sm">
+                    <span className="font-extrabold text-[#aae5f8] text-sm">
                       Level 100
                     </span>
-                    <span className="font-bold text-[#ccccff] text-sm">
+                    <span className="font-bold text-[#aae5f8] text-sm">
                       BASE★
                     </span>
                   </div>
                   {/* Level 100 Stats 1 */}
-                  <div className="bg-[#ccccff] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
+                  <div className="bg-[#aae5f8] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">23957</span>
+                      <span className="font-bold text-black">54746</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2904</span>
+                      <span className="font-bold text-black">2134</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">96</span>
+                      <span className="font-bold text-black">1052</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">4250</span>
+                      <span className="font-bold text-black">5059</span>
                     </div>
                   </div>
                   {/* Level 100 Row 2 (4 images) */}
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-extrabold text-[#ccccff] text-sm">
+                    <span className="font-extrabold text-[#aae5f8] text-sm">
                       Level 100
                     </span>
                     <div className="flex space-x-1">
@@ -720,23 +789,23 @@ export const TokiBunny = () => {
                     </div>
                   </div>
                   {/* Level 100 Stats 2 */}
-                  <div className="bg-[#ccccff] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
+                  <div className="bg-[#aae5f8] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">25882</span>
+                      <span className="font-bold text-black">59145</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">3237</span>
+                      <span className="font-bold text-black">2579</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">96</span>
+                      <span className="font-bold text-black">1052</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">4685</span>
+                      <span className="font-bold text-black">5575</span>
                     </div>
                   </div>
                   {/* Level 100 Row 3 (5 images) */}
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-extrabold text-[#ccccff] text-sm">
+                    <span className="font-extrabold text-[#aae5f8] text-sm">
                       Level 100
                     </span>
                     <div className="flex space-x-1">
@@ -753,24 +822,24 @@ export const TokiBunny = () => {
                     </div>
                   </div>
                   {/* Level 100 Stats 3 */}
-                  <div className="bg-[#ccccff] grid grid-cols-4 gap-2 mb-4 pt-3 pb-2">
+                  <div className="bg-[#aae5f8] grid grid-cols-4 gap-2 mb-4 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">28877</span>
+                      <span className="font-bold text-black">65988</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">3642</span>
+                      <span className="font-bold text-black">2676</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">96</span>
+                      <span className="font-bold text-black">1052</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5227</span>
+                      <span className="font-bold text-black">6221</span>
                     </div>
                   </div>
                   {/* Profile Dropdown */}
 
                   <details>
-                    <summary className="cursor-pointer font-bold text-[#ccccff] flex items-center">
+                    <summary className="cursor-pointer font-bold text-[#aae5f8] flex items-center">
                       Profile
                       <svg
                         className="w-4 h-4 ml-1 inline"
@@ -796,7 +865,7 @@ export const TokiBunny = () => {
                     </div>
                   </details>
                   <details className="mt-2">
-                    <summary className="cursor-pointer font-bold text-[#ccccff] flex items-center">
+                    <summary className="cursor-pointer font-bold text-[#aae5f8] flex items-center">
                       Other Information
                       <svg
                         className="w-4 h-4 ml-1 inline"
@@ -849,10 +918,14 @@ export const TokiBunny = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
-              Toki wears a navy blue velvet bunny outfit paired with white thigh
-              highs, navy <br /> blue heels, a light blue ribbon below her neck
-              and a detached white collar. <br /> Atop her head, she wears navy
-              blue velvet bunny ears.
+              She wears the Abydos uniform although in a relaxed, lazy style in
+              comparison to her fellow pupils. Unlike Shiroko, Serika, and
+              Ayane, Hoshino Forgets the blazer and has the top two shirt
+              buttons undone and her tie quite loose. She also wears a pair of
+              fingerless gloves and wears a buckled, tactical brace. Below she
+              tucks her shirt into a black and grey pleated skirt, a pair of
+              white socks, and a pair of navy blue sneakers with white laces and
+              soles.
             </p>
           </div>
           <h4
@@ -884,7 +957,7 @@ export const TokiBunny = () => {
           <div className="mt-6">
             {/* Tab Buttons */}
             <div className="flex border-b border-[#63929C] mb-2">
-              {tokiBunnySkills.map((tab) => (
+              {hoshinoSkills.map((tab) => (
                 <button
                   key={tab.key}
                   className={`px-4 py-2 text-sm font-bold transition-colors ${
@@ -901,7 +974,7 @@ export const TokiBunny = () => {
             </div>
             {/* Tab Content */}
             <div className="bg-[#232b36] w-[700px] rounded-b-lg border border-[#63929C] p-4">
-              {tokiBunnySkills.map(
+              {hoshinoSkills.map(
                 (tab) =>
                   activeSkillTab === tab.key && (
                     <div key={tab.key} className="flex items-start">
@@ -1235,13 +1308,13 @@ export const TokiBunny = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-[#3e7af2] p-3 rounded">
+                <div className="bg-[#06bbfa] p-3 rounded">
                   <div className="flex justify-between mb-2">
                     <span className="text-black text-sm">Midsummer cat</span>
                   </div>
                 </div>
 
-                <div className="bg-[#3e7af2] p-3 rounded">
+                <div className="bg-[#06bbfa] p-3 rounded">
                   <div className="flex justify-between mb-2">
                     <span className="text-black text-sm">Memorial Lobby</span>
                     <div className="flex items-center">
@@ -1266,7 +1339,7 @@ export const TokiBunny = () => {
                 ].map((bond, index) => (
                   <div
                     key={index}
-                    className="bg-[#3e7af2] p-2 rounded flex justify-between"
+                    className="bg-[#06bbfa] p-2 rounded flex justify-between"
                   >
                     <span className="text-xs text-black">{bond.level}</span>
                     <span className="text-xs text-black font-bold">
@@ -1277,7 +1350,7 @@ export const TokiBunny = () => {
               </div>
               <div>
                 <img
-                  src="Blue-Archive/live2d/Toki_Bunny_Girl_Live2D.gif"
+                  src="Blue-Archive/live2d/Hoshino_Live2D.gif"
                   alt=""
                   className="w-full mt-4 rounded-lg"
                   loading="lazy"
