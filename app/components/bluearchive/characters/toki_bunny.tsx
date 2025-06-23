@@ -1,5 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import tokiBunnySkills from "./toki_bunny_skills";
+
+const TokiBunnyLive2D = memo(() => (
+  <div className="flex flex-col space-y-2">
+    <img
+      src="Blue-Archive/live2d/Toki_Bunny_Girl_Live2D.gif"
+      alt="Hoshino Live2D"
+      className="w-full rounded-lg mx-auto "
+    />
+  </div>
+));
 
 export const TokiBunny = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -100,12 +110,12 @@ export const TokiBunny = () => {
         <div className="flex flex-row gap-8">
           {/* Main content (left) */}
           <div className="flex-1 mt-5 ml-3">
-            <div className="bg-[#4f86f7] w-[400px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 rounded">
+            <div className="bg-[#4f86f7] w-[300px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 left-40 rounded">
               <span className="block text-center w-full italic">
                 “ Pyon. I am the best agent.”
               </span>
               <br />
-              <span className="absolute right-28 bottom-1 text-xs italic">
+              <span className="absolute right-15 bottom-1 text-xs italic">
                 ~ Asuma Toki (Bunny Girl ver.)
               </span>
             </div>
@@ -1214,77 +1224,144 @@ export const TokiBunny = () => {
               </div>
             </div>
           </div>
-
           {/* Bond Section */}
-          <h3 className="text-[#3e7af2] text-xl font-bold ml-3 mt-8" id="bond">
-            Bond
-          </h3>
-          <div className="ml-3 mt-4">
-            <div className="bg-black bg-opacity-60 border border-gray-800 rounded-lg p-4 max-w-3xl">
-              <div className="border-b border-gray-700 pb-3 mb-3">
-                <div className="flex items-center">
-                  <img
-                    src="/Blue-Archive/icons/Bond.png"
-                    alt="Bond Icon"
-                    className="w-6 h-6 mr-2"
-                  />
-                  <h4 className="text-[#06bbfa] font-bold">
-                    Affection Rank Bonus
-                  </h4>
-                </div>
-              </div>
+          <section id="bond" className="mt-8 ml-3">
+            <h3 className="text-[#3e7af2] text-xl font-bold">Bond</h3>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-[#3e7af2] p-3 rounded">
-                  <div className="flex justify-between mb-2">
-                    <span className="text-black text-sm">Midsummer cat</span>
-                  </div>
-                </div>
-
-                <div className="bg-[#3e7af2] p-3 rounded">
-                  <div className="flex justify-between mb-2">
-                    <span className="text-black text-sm">Memorial Lobby</span>
-                    <div className="flex items-center">
-                      <span className="text-pink-500 mr-1">♥</span>
-                      <span className="text-black">5</span>
-                    </div>
-                  </div>
-                  <div className="text-xs text-black mt-1">
-                    Total Stats - ATK+182 / HP+1190
-                  </div>
-                </div>
-              </div>
-              <div className="mt-4 grid grid-cols-2 gap-2 md:grid-cols-4">
-                {[
-                  { level: "LV02 - 05", bonus: "ATK+3" },
-                  { level: "LV06 - 10", bonus: "ATK+4" },
-                  { level: "LV11 - 15", bonus: "ATK+5 / HP+55" },
-                  { level: "LV16 - 20", bonus: "ATK+7 / HP+67" },
-                  { level: "LV21 - 30", bonus: "ATK+2 / HP+12" },
-                  { level: "LV31 - 40", bonus: "ATK+3 / HP+17" },
-                  { level: "LV41 - 50", bonus: "ATK+4 / HP+29" },
-                ].map((bond, index) => (
-                  <div
-                    key={index}
-                    className="bg-[#3e7af2] p-2 rounded flex justify-between"
+            <table className="w-full border-2 border-[#4f86f7] rounded-lg text-center mt-4">
+              <thead>
+                <tr>
+                  <th
+                    colSpan={4}
+                    className="relative bg-[#4f86f7] text-black font-bold px-4 py-1 "
                   >
-                    <span className="text-xs text-black">{bond.level}</span>
-                    <span className="text-xs text-black font-bold">
-                      {bond.bonus}
+                    Affection Rank Bonus
+                    <span className="absolute left-4 top-2 text-xs">
+                      <a href="/wiki/Template:Bond">V</a> • T •{" "}
+                      <a
+                        href="https://bluearchive.fandom.com/wiki/Bond?action=edit"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        E
+                      </a>
                     </span>
-                  </div>
-                ))}
-              </div>
-              <div>
-                <img
-                  src="Blue-Archive/live2d/Toki_Bunny_Girl_Live2D.gif"
-                  alt=""
-                  className="w-full mt-4 rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
+                    <span className="absolute right-4 top-2 text-xs text-yellow-300">
+                      <a href="/wiki/Affection">Affection</a>
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-1">
+                    Shooting Stars
+                  </th>
+                  <td colSpan={3} className="border border-[#4f86f7] px-2 py-1">
+                    <audio
+                      controls
+                      className="w-full max-w-xs mx-auto h-8"
+                      src="https://static.wikia.nocookie.net/blue-archive/images/5/59/Shooting_Stars.ogg/revision/latest?cb=20210309192025"
+                    >
+                      Your browser does not support the <code>audio</code>{" "}
+                      element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    Memorial Lobby
+                  </th>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    <div className="flex items-center justify-center space-x-1">
+                      <img
+                        src="/Blue-Archive/icons/Bond.png"
+                        alt="Bond"
+                        width={20}
+                        height={19}
+                      />
+                      <img
+                        src="/Blue-Archive/icons/Blue_Font_9.png"
+                        alt="Bond Level"
+                        width={18}
+                        height={17}
+                      />
+                    </div>
+                  </th>
+                  <th
+                    colSpan={2}
+                    className="bg-[#4f86f7] text-black font-bold px-2 py-2"
+                  >
+                    Total Stats ~ DEF+79 / HP+2625
+                  </th>
+                </tr>
+
+                {/* Live2D & Icon column */}
+                <tr>
+                  <td
+                    rowSpan={7}
+                    className="border border-[#4f86f7] rounded-lg p-2 align-top"
+                  >
+                    <TokiBunnyLive2D />
+                  </td>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    LV02 – 05
+                  </th>
+                  <td className="border border-[#4f86f7] text-left px-2 py-2">
+                    DEF +1
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    LV06 – 10
+                  </th>
+                  <td className="border border-[#4f86f7] text-left px-2 py-2">
+                    DEF +2
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    LV11 – 15
+                  </th>
+                  <td className="border border-[#4f86f7] text-left px-2 py-2">
+                    DEF +2 / HP +122
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    LV16 – 20
+                  </th>
+                  <td className="border border-[#4f86f7] text-left px-2 py-2">
+                    DEF +3 / HP +147
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    LV21 – 30
+                  </th>
+                  <td className="border border-[#4f86f7] text-left px-2 py-2">
+                    DEF +1 / HP +26
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    LV31 – 40
+                  </th>
+                  <td className="border border-[#4f86f7] text-left px-2 py-2">
+                    DEF +1 / HP +38
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
+                    LV41 – 50
+                  </th>
+                  <td className="border border-[#4f86f7] text-left px-2 py-2">
+                    DEF +2 / HP +64
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </div>
       </main>
 

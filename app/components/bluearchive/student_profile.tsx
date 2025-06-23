@@ -170,11 +170,13 @@ export const Students = () => {
               </tr>
               <tr className="bg-[#00bfff] border-b border-gray-700">
                 <td className="py-2 px-2 flex items-center justify-center gap-2">
-                  <img
-                    src="/Blue-Archive/characters/Hoshino_Swimsuit_Icon.png"
-                    alt="Hoshino (Armed)"
-                    className="w-40 h-30"
-                  />
+                  <a href="/hoshino_swimsuit">
+                    <img
+                      src="/Blue-Archive/characters/Hoshino_Swimsuit_Icon.png"
+                      alt="Hoshino (Armed)"
+                      className="w-40 h-30"
+                    />
+                  </a>
                   <span
                     className="text-xl font-extrabold"
                     style={{
