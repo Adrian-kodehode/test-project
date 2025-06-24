@@ -1317,11 +1317,14 @@ export const Students = () => {
               </tr>
               <tr className="bg-[#e34a45] border-b border-gray-700">
                 <td className="py-2 px-2 flex items-center justify-center gap-2">
-                  <img
-                    src="/Blue-Archive/characters/Hina_Swimsuit_Icon.png"
-                    alt=""
-                    className="w-40 h-30"
-                  />
+                  <a href="/hina_swimsuit">
+                    {" "}
+                    <img
+                      src="/Blue-Archive/characters/Hina_Swimsuit_Icon.png"
+                      alt=""
+                      className="w-40 h-30"
+                    />
+                  </a>
                   <span
                     className="text-xl font-extrabold"
                     style={{

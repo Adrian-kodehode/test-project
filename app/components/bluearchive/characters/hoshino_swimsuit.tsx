@@ -8,7 +8,10 @@ const HoshinoSwimsuitLive2D = memo(() => (
     <img
       src="Blue-Archive/live2d/Hoshino_Swimsuit_Live2D.gif"
       alt="Hoshino Live2D"
-      className="w-full rounded-lg mx-auto "
+      className="w-full rounded-lg mx-auto"
+      loading="lazy"
+      draggable={false}
+      style={{ pointerEvents: "none" }}
     />
   </div>
 ));
@@ -1579,6 +1582,7 @@ export const HoshinoSwimsuit = () => {
                 </tr>
 
                 {/* Live2D & Icon column */}
+                const
                 <tr>
                   <td
                     rowSpan={7}
