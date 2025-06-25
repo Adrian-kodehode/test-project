@@ -1343,11 +1343,7 @@ export const Hoshino = () => {
             <div className="flex w-full">
               {/* Left side - EX Skill image */}
               <div className="w-1/3 bg-black bg-opacity-50 p-4 flex items-center justify-center">
-                <img
-                  src="Blue-Archive/live2d/Toki_Bunny_Girl_EX.gif"
-                  alt="EX Skill"
-                  className="w-full"
-                />
+              
               </div>
 
               {/* Right side - Material grid */}
@@ -1454,78 +1450,7 @@ export const Hoshino = () => {
               </div>
             </div>
           </div>
-          {/* Growth Material Section */}
-          <h3
-            className="text-[#3e7af2] text-xl font-bold ml-3 mt-8"
-            id="growth-material"
-          >
-            Growth Material
-          </h3>
-          <div className="mt-4">
-            <div className="bg-black bg-opacity-60 border border-gray-800 rounded-lg p-4 max-w-3xl">
-              <h4 className="text-[#06bbfa] font-bold mb-3">
-                Material Requirements
-              </h4>
-              <div className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8">
-                {[
-                  {
-                    name: "Tech Notes",
-                    image: "/Blue-Archive/icons/Tech_Notes_T1_Icon.png",
-                    level: "T1-T2",
-                  },
-                  {
-                    name: "Millennium Report",
-                    image: "/Blue-Archive/icons/Millennium_Report_T1_Icon.png",
-                    level: "T1-T4",
-                  },
-                  {
-                    name: "Nebra Disc",
-                    image: "/Blue-Archive/icons/Nebra_0.png",
-                    level: "T1",
-                  },
-                  {
-                    name: "Nebra Disc",
-                    image: "/Blue-Archive/icons/Nebra_1.png",
-                    level: "T2",
-                  },
-                  {
-                    name: "Nebra Disc",
-                    image: "/Blue-Archive/icons/Nebra_2.png",
-                    level: "T3",
-                  },
-                  {
-                    name: "Antikythera",
-                    image: "/Blue-Archive/icons/Antikythera_0.png",
-                    level: "T1",
-                  },
-                  {
-                    name: "Antikythera",
-                    image: "/Blue-Archive/icons/Antikythera_1.png",
-                    level: "T2",
-                  },
-                  {
-                    name: "Credits",
-                    image: "/Blue-Archive/Gold.png",
-                    level: "",
-                  },
-                ].map((material, index) => (
-                  <div key={index} className="flex flex-col items-center">
-                    <img
-                      src={material.image}
-                      alt={material.name}
-                      className="w-12 h-12 mb-1"
-                    />
-                    <span className="text-xs text-white text-center">
-                      {material.name}
-                    </span>
-                    <span className="text-xs text-gray-400">
-                      {material.level}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+        
 
           {/* Unique Equipment Section */}
           <h3

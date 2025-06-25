@@ -890,69 +890,409 @@ export const TokiBunny = () => {
             Skills
           </h3>
           {/* Skills Tabbed Interface */}
-
-          <div className="mt-6">
-            {/* Tab Buttons */}
-            <div className="flex border-b border-[#63929C] mb-2">
-              {tokiBunnySkills.map((tab) => (
+          <section id="skills" className="mt-8">
+            {/* Tabs */}
+            <div className="flex border-b border-[#4f86f7]">
+              {[
+                { key: "ex", label: "EX Skill" },
+                { key: "normal", label: "Normal Skill" },
+                { key: "passive", label: "Passive Skill" },
+                { key: "sub", label: "Sub Skill" },
+              ].map((tab) => (
                 <button
                   key={tab.key}
+                  onClick={() => setActiveSkillTab(tab.key)}
                   className={`px-4 py-2 text-sm font-bold transition-colors ${
                     activeSkillTab === tab.key
-                      ? "text-[#06bbfa] border-b-2 border-[#06bbfa] bg-[#232b36]"
-                      : "text-[#63929C] hover:text-[#06bbfa]"
+                      ? "text-[#4f86f7] border-b-2 border-[#4f86f7]"
+                      : "text-gray-400 hover:text-[#4f86f7]"
                   }`}
-                  onClick={() => setActiveSkillTab(tab.key)}
-                  type="button"
                 >
                   {tab.label}
                 </button>
               ))}
             </div>
-            {/* Tab Content */}
-            <div className="bg-[#232b36] w-[700px] rounded-b-lg border border-[#63929C] p-4">
-              {tokiBunnySkills.map(
-                (tab) =>
-                  activeSkillTab === tab.key && (
-                    <div key={tab.key} className="flex items-start">
-                      {/* Image on the left */}
-                      <div className="mr-4 flex-shrink-0 flex items-center justify-start mt-14 h-20">
-                        <img src={tab.icon} alt={tab.label} className="" />
-                      </div>
-                      {/* Content on the right */}
-                      <div className="flex-1">
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="font-bold text-lg text-[#06bbfa]">
-                            {tab.name}
+
+            {/* Tab Contents */}
+            <div className="mt-4 space-y-6">
+              {/* EX Skill */}
+              {activeSkillTab === "ex" && (
+                <div className="overflow-x-auto rounded">
+                  <table className="w-[600px] border-2 border-[#4f86f7] rounded-lg">
+                    <thead>
+                      <tr>
+                        <th
+                          colSpan={2}
+                          className="relative bg-[#4f86f7] text-black px-4 py-3 text-sm font-bold"
+                        >
+                          <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            Special Armament: Arm Gear
                           </span>
-                          {tab.cost && (
-                            <span className="text-xs font-bold text-[#232b36] bg-[#63929C] px-2 py-1 rounded">
-                              Cost: {tab.cost}
-                            </span>
-                          )}
-                        </div>
-                        <ul className="list-disc ml-6 text-xs text-white space-y-1">
-                          {tab.description?.map((desc, i) => (
-                            <li key={i}>
-                              <b>{desc.level}</b> ~ {desc.text}
-                              <span className="text-[#63929C] font-bold">
-                                {desc.value}
-                              </span>
-                              {"extra" in desc &&
-                                desc.extra &&
-                                desc.extra.length > 0 && (
-                                  <span>{desc.extra}</span>
-                                )}
+                          <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            Cost: 2
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="w-1/4 bg-[#4f86f7] p-2">
+                          <img
+                            src="Blue-Archive/icons/TARGET.png"
+                            alt="Sealess: Ishbóshet icon"
+                            className="w-full h-auto rounded"
+                          />
+                        </td>
+                        <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>
+                              <span className="font-bold">LV01</span> ~ Deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                550%
+                              </span>{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              enemy.
                             </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  )
+                            <li>
+                              <span className="font-bold">LV02</span> ~ Deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                632%
+                              </span>{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              enemy.
+                            </li>
+                            <li>
+                              <span className="font-bold">LV03</span> ~ Deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                798%
+                              </span>{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              enemy.
+                            </li>
+                            <li>
+                              <span className="font-bold">LV04</span> ~ Deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                880%
+                              </span>{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              enemy.
+                            </li>
+                            <li>
+                              <span className="font-bold">LV05</span> ~ Deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1045%
+                              </span>{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              enemy.
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               )}
+
+              {/* Normal Skill */}
+              {activeSkillTab === "normal" && (
+                <div className="overflow-x-auto">
+                  <table className="w-[1000px] border-2 border-[#4f86f7] rounded-lg">
+                    <thead>
+                      <tr>
+                        <th
+                          colSpan={2}
+                          className="relative bg-[#4f86f7] text-black px-4 py-3 text-sm font-bold"
+                        >
+                          <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            Agent's Secret Tools
+                          </span>
+                          <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            Skill Icons
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="w-1/4 bg-[#4f86f7] p-2">
+                          <img
+                            src="Blue-Archive/icons/STAT-DEBUFF.png"
+                            alt="Emergency First Aid icon"
+                            className="w-full h-auto rounded"
+                          />
+                        </td>
+                        <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
+                          <ul className="list-disc list-inside space-y-1">
+                            {[
+                              141, 148, 155, 170, 177, 187, 198, 205, 212, 226,
+                            ].map((dmg, idx) => {
+                              const stunDurations = [
+                                19.9, 19.9, 19.9, 21.9, 21.9, 21.9, 23.9, 23.9,
+                                23.9, 25.9,
+                              ];
+                              return (
+                                <li key={idx}>
+                                  <span className="font-bold">
+                                    LV{(idx + 1).toString().padStart(2, "0")}
+                                  </span>{" "}
+                                  ~ Deals{" "}
+                                  <span className="text-[#4f86f7] font-bold">
+                                    {dmg}%
+                                  </span>{" "}
+                                  of ATK as DMG to{" "}
+                                  <span className="text-[#4f86f7] font-bold">
+                                    1
+                                  </span>{" "}
+                                  enemy every{" "}
+                                  <span className="text-[#4f86f7] font-bold">
+                                    40
+                                  </span>{" "}
+                                  sec. Decreases CRIT.DMG.RES by{" "}
+                                  <span className="text-[#4f86f7] font-bold">
+                                    {stunDurations[idx].toFixed(1)}%
+                                  </span>{" "}
+                                  (
+                                  <span className="text-[#4f86f7] font-bold">
+                                    30
+                                  </span>{" "}
+                                  sec).
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {/* Passive Skill */}
+              {activeSkillTab === "passive" && (
+                <div className="overflow-x-auto">
+                  <table className="w-[600px] border-2 border-[#4f86f7] rounded-lg">
+                    <thead>
+                      <tr>
+                        <th
+                          colSpan={2}
+                          className="relative bg-[#4f86f7] text-black px-4 py-3 text-sm font-bold"
+                        >
+                          <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            Skilled Expertise
+                          </span>
+                          <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            Skill Icons
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="w-1/4 bg-[#4f86f7] p-2">
+                          <img
+                            src="Blue-Archive/icons/WEAPON-BUFF.png"
+                            alt="Foreclosure Task Force President icon"
+                            className="w-full h-auto rounded"
+                          />
+                        </td>
+                        <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
+                          <ul className="list-disc list-inside space-y-1">
+                            {[
+                              14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1,
+                              23.8, 26.6,
+                            ].map((def, i) => (
+                              <li key={i}>
+                                <span className="font-bold">
+                                  LV{(i + 1).toString().padStart(2, "0")}
+                                </span>{" "}
+                                ~ Increases ATK by{" "}
+                                <span className="text-[#4f86f7] font-bold">
+                                  {def}%
+                                </span>
+                                .
+                              </li>
+                            ))}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {/* Sub Skill */}
+              {activeSkillTab === "sub" && (
+                <div className="overflow-x-auto">
+                  <table className="w-[800px] border-2 border-[#4f86f7] rounded-lg">
+                    <thead>
+                      <tr>
+                        <th
+                          colSpan={2}
+                          className="relative bg-[#4f86f7] text-black px-4 py-3 text-sm font-bold"
+                        >
+                          <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            Armament Handling
+                          </span>
+                          <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            Skill Icons
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="w-1/4 bg-[#4f86f7] p-2">
+                          <img
+                            src="Blue-Archive/icons/BULLET_TYPE_BUFF.png"
+                            alt="Expert Suppression icon"
+                            className="w-full h-auto rounded"
+                          />
+                        </td>
+                        <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
+                          <ul className="list-disc list-inside space-y-1">
+                            {[
+                              8.7, 9.1, 9.5, 11.3, 11.7, 12.2, 13.9, 14.3, 14.8,
+                              16.5,
+                            ].map((bar, i) => (
+                              <li key={i}>
+                                <span className="font-bold">
+                                  LV{(i + 1).toString().padStart(2, "0")}
+                                </span>{" "}
+                                ~ Increases ATK by{" "}
+                                <span className="text-[#4f86f7] font-bold">
+                                  {bar}%
+                                </span>{" "}
+                                when using EX-Skills (Stacks up to{" "}
+                                <span className="text-[#4f86f7] font-bold">
+                                  5
+                                </span>{" "}
+                                times).
+                              </li>
+                            ))}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {/* Skill Status Table (Tailwind) */}
+              <div className="overflow-x-auto mt-8">
+                <table className="w-full border-2 border-[#4f86f7] rounded-lg text-center">
+                  <thead>
+                    <tr>
+                      <th
+                        colSpan={5}
+                        className="bg-[#4f86f7] border border-[#4f86f7] text-black text-sm font-bold py-2 px-4 "
+                      >
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs">
+                            <a
+                              href="/wiki/Template:Skill_Status"
+                              className="hover:underline"
+                            >
+                              V
+                            </a>{" "}
+                            • T •{" "}
+                            <a
+                              href="https://bluearchive.fandom.com/wiki/Template:Skill_Status?action=edit"
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="hover:underline"
+                            >
+                              E
+                            </a>
+                          </span>
+                          <span>Skill Status (Hover Over)</span>
+                          <a
+                            href="/wiki/Status_Effect"
+                            className="text-xs text-yellow-300 hover:underline"
+                          >
+                            Status Effect
+                          </a>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      {["EX-Skill", "Normal", "Passive", "Sub", "UE"].map(
+                        (label) => (
+                          <th
+                            key={label}
+                            className="bg-[#4f86f7] text-black text-sm font-bold py-1"
+                          >
+                            {label}
+                          </th>
+                        )
+                      )}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-2 border-[#4f86f7] p-2">
+                        <img
+                          src="Blue-Archive/icons/Cross_2.png"
+                          alt="Cross Icon"
+                          className="w-9 h-9 mx-auto"
+                        />
+                      </td>
+                      <td className="border-2 border-[#4f86f7] p-2">
+                        <img
+                          src="Blue-Archive/icons/Debuff_-_CRIT.DMG.RES.png"
+                          alt="Stunned Icon"
+                          className="w-9 h-9 mx-auto"
+                        />
+                      </td>
+                      <td className="border-2 border-[#4f86f7] p-2">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_ATK.png"
+                          alt="Crit Buff Icon"
+                          className="w-9 h-9 mx-auto"
+                        />
+                      </td>
+                      <td className="border-2 border-[#4f86f7] p-2">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_Enhance_Explosion.png"
+                          alt="ATK Buff Icon"
+                          className="w-9 h-9 mx-auto"
+                        />
+                      </td>
+                      <td className="border-2 border-[#4f86f7] p-2">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_ATK_SPD.png"
+                          alt="CC Power Buff Icon"
+                          className="w-9 h-9 mx-auto"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
+          </section>
+
           {/* EX-Skill Table Section */}
+          <h3
+            className="text-[#3e7af2] text-xl font-bold ml-3 mt-8"
+            id="growth-material"
+          >
+            Growth Material
+          </h3>
           <div className="mt-10">
             {/* Table Header with tabs */}
             <div className="flex w-full">
@@ -1079,78 +1419,6 @@ export const TokiBunny = () => {
               </div>
             </div>
           </div>
-          {/* Growth Material Section */}
-          <h3
-            className="text-[#3e7af2] text-xl font-bold ml-3 mt-8"
-            id="growth-material"
-          >
-            Growth Material
-          </h3>
-          <div className="mt-4">
-            <div className="bg-black bg-opacity-60 border border-gray-800 rounded-lg p-4 max-w-3xl">
-              <h4 className="text-[#06bbfa] font-bold mb-3">
-                Material Requirements
-              </h4>
-              <div className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8">
-                {[
-                  {
-                    name: "Tech Notes",
-                    image: "/Blue-Archive/icons/Tech_Notes_T1_Icon.png",
-                    level: "T1-T2",
-                  },
-                  {
-                    name: "Millennium Report",
-                    image: "/Blue-Archive/icons/Millennium_Report_T1_Icon.png",
-                    level: "T1-T4",
-                  },
-                  {
-                    name: "Nebra Disc",
-                    image: "/Blue-Archive/icons/Nebra_0.png",
-                    level: "T1",
-                  },
-                  {
-                    name: "Nebra Disc",
-                    image: "/Blue-Archive/icons/Nebra_1.png",
-                    level: "T2",
-                  },
-                  {
-                    name: "Nebra Disc",
-                    image: "/Blue-Archive/icons/Nebra_2.png",
-                    level: "T3",
-                  },
-                  {
-                    name: "Antikythera",
-                    image: "/Blue-Archive/icons/Antikythera_0.png",
-                    level: "T1",
-                  },
-                  {
-                    name: "Antikythera",
-                    image: "/Blue-Archive/icons/Antikythera_1.png",
-                    level: "T2",
-                  },
-                  {
-                    name: "Credits",
-                    image: "/Blue-Archive/Gold.png",
-                    level: "",
-                  },
-                ].map((material, index) => (
-                  <div key={index} className="flex flex-col items-center">
-                    <img
-                      src={material.image}
-                      alt={material.name}
-                      className="w-12 h-12 mb-1"
-                    />
-                    <span className="text-xs text-white text-center">
-                      {material.name}
-                    </span>
-                    <span className="text-xs text-gray-400">
-                      {material.level}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
 
           {/* Unique Equipment Section */}
           <h3
@@ -1188,42 +1456,6 @@ export const TokiBunny = () => {
             </div>
           </div>
 
-          {/* Unique Item Section */}
-          <h3
-            className="text-[#3e7af2] text-xl font-bold ml-3 mt-8"
-            id="unique-item"
-          >
-            Unique Item
-          </h3>
-          <div className="ml-3 mt-4">
-            <div className="flex gap-4 bg-black bg-opacity-60 p-4 rounded-lg border border-gray-800 max-w-2xl">
-              <div className="flex-shrink-0">
-                <img
-                  src="/Blue-Archive/icons/BunnyEars_Icon.png"
-                  alt="Secret Agent Bunny Ears"
-                  className="w-20 h-20 object-contain"
-                />
-              </div>
-              <div>
-                <h4 className="text-[#06bbfa] font-bold">
-                  Secret Agent Bunny Ears
-                </h4>
-                <p className="text-sm text-white mt-2">
-                  Special bunny ears with advanced listening technology. While
-                  appearing as a simple costume accessory, they actually enhance
-                  Toki's ability to detect enemies and improve mission success
-                  rates.
-                </p>
-                <div className="mt-3">
-                  <span className="text-xs text-gray-400">Effect: </span>
-                  <span className="text-xs text-white">
-                    Increases Stealth by 15% and Critical Rate by 8% when
-                    initiating combat
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
           {/* Bond Section */}
           <section id="bond" className="mt-8 ml-3">
             <h3 className="text-[#3e7af2] text-xl font-bold">Bond</h3>
@@ -1292,7 +1524,7 @@ export const TokiBunny = () => {
                     colSpan={2}
                     className="bg-[#4f86f7] text-black font-bold px-2 py-2"
                   >
-                    Total Stats ~ DEF+79 / HP+2625
+                    Total Stats ~ ATK+182 / HP+1190
                   </th>
                 </tr>
 
@@ -1308,7 +1540,7 @@ export const TokiBunny = () => {
                     LV02 – 05
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    DEF +1
+                    ATK+3
                   </td>
                 </tr>
                 <tr>
@@ -1316,7 +1548,7 @@ export const TokiBunny = () => {
                     LV06 – 10
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    DEF +2
+                    ATk+4
                   </td>
                 </tr>
                 <tr>
@@ -1324,7 +1556,7 @@ export const TokiBunny = () => {
                     LV11 – 15
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    DEF +2 / HP +122
+                    ATK+5 / HP+55
                   </td>
                 </tr>
                 <tr>
@@ -1332,7 +1564,7 @@ export const TokiBunny = () => {
                     LV16 – 20
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    DEF +3 / HP +147
+                    ATK+7 / HP+67
                   </td>
                 </tr>
                 <tr>
@@ -1340,7 +1572,7 @@ export const TokiBunny = () => {
                     LV21 – 30
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    DEF +1 / HP +26
+                    ATK+2 / HP+12
                   </td>
                 </tr>
                 <tr>
@@ -1348,7 +1580,7 @@ export const TokiBunny = () => {
                     LV31 – 40
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    DEF +1 / HP +38
+                    ATK+3 / HP+17
                   </td>
                 </tr>
                 <tr>
@@ -1356,7 +1588,7 @@ export const TokiBunny = () => {
                     LV41 – 50
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    DEF +2 / HP +64
+                    ATK+4 / HP+29
                   </td>
                 </tr>
               </tbody>

@@ -1540,7 +1540,7 @@ export const HoshinoSwimsuit = () => {
               <tbody>
                 <tr>
                   <th className="bg-[#06bbfa] text-black font-bold px-2 py-1">
-                    Shooting Stars
+                    DIVE INTO SUMMER
                   </th>
                   <td colSpan={3} className="border border-[#06bbfa] px-2 py-1">
                     <audio
@@ -1566,7 +1566,7 @@ export const HoshinoSwimsuit = () => {
                         height={19}
                       />
                       <img
-                        src="/Blue-Archive/icons/Blue_Font_9.png"
+                        src="/Blue-Archive/icons/Blue_Font_2.png"
                         alt="Bond Level"
                         width={18}
                         height={17}
@@ -1577,12 +1577,12 @@ export const HoshinoSwimsuit = () => {
                     colSpan={2}
                     className="bg-[#06bbfa] text-black font-bold px-2 py-2"
                   >
-                    Total Stats ~ DEF+79 / HP+2625
+                    Total Stats ~ ATK+128 / DEF+50
                   </th>
                 </tr>
 
                 {/* Live2D & Icon column */}
-                const
+
                 <tr>
                   <td
                     rowSpan={7}
@@ -1594,7 +1594,7 @@ export const HoshinoSwimsuit = () => {
                     LV02 – 05
                   </th>
                   <td className="border border-[#06bbfa] text-left px-2 py-2">
-                    DEF +1
+                    ATK+2
                   </td>
                 </tr>
                 <tr>
@@ -1602,7 +1602,7 @@ export const HoshinoSwimsuit = () => {
                     LV06 – 10
                   </th>
                   <td className="border border-[#06bbfa] text-left px-2 py-2">
-                    DEF +2
+                    ATK+3
                   </td>
                 </tr>
                 <tr>
@@ -1610,7 +1610,7 @@ export const HoshinoSwimsuit = () => {
                     LV11 – 15
                   </th>
                   <td className="border border-[#06bbfa] text-left px-2 py-2">
-                    DEF +2 / HP +122
+                    ATK+4 / DEF+2
                   </td>
                 </tr>
                 <tr>
@@ -1618,7 +1618,7 @@ export const HoshinoSwimsuit = () => {
                     LV16 – 20
                   </th>
                   <td className="border border-[#06bbfa] text-left px-2 py-2">
-                    DEF +3 / HP +147
+                    ATK+5 / DEF+2
                   </td>
                 </tr>
                 <tr>
@@ -1626,7 +1626,7 @@ export const HoshinoSwimsuit = () => {
                     LV21 – 30
                   </th>
                   <td className="border border-[#06bbfa] text-left px-2 py-2">
-                    DEF +1 / HP +26
+                    ATK+1 / DEF+1
                   </td>
                 </tr>
                 <tr>
@@ -1634,7 +1634,7 @@ export const HoshinoSwimsuit = () => {
                     LV31 – 40
                   </th>
                   <td className="border border-[#06bbfa] text-left px-2 py-2">
-                    DEF +1 / HP +38
+                    ATK+2 / DEF+1
                   </td>
                 </tr>
                 <tr>
@@ -1642,7 +1642,7 @@ export const HoshinoSwimsuit = () => {
                     LV41 – 50
                   </th>
                   <td className="border border-[#06bbfa] text-left px-2 py-2">
-                    DEF +2 / HP +64
+                    ATK+3 / DEF+1
                   </td>
                 </tr>
               </tbody>

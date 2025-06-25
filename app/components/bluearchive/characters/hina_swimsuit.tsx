@@ -544,8 +544,8 @@ export const HinaSwimsuit = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Excellent_Icon.png"
-                          alt="Excellent Icon"
+                          src="/Blue-Archive/icons/Neutral_Icon.png"
+                          alt="Neutral Icon"
                           width={24}
                           height={24}
                           className="absolute right-[-6px] bottom-[-6px] z-20"
@@ -599,9 +599,9 @@ export const HinaSwimsuit = () => {
                         src="Blue-Archive/images/Offensive_Icon.png"
                         alt=""
                       />
-                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[#ffa500]">
+                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[#ff0e0e]">
                         <b>
-                          <span className="text-black">Penetration</span>
+                          <span className="text-black">Explosion</span>
                         </b>
                       </div>
                     </td>
@@ -626,7 +626,7 @@ export const HinaSwimsuit = () => {
                     {/* Equipment 1: Gloves */}
                     <td className="bg-[#973333] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Shoe_T1_Icon.png"
+                        src="/Blue-Archive/icons/Hat_T1_Icon.png"
                         alt="Gloves T1 Icon"
                         width={56}
                         height={44}
@@ -636,7 +636,7 @@ export const HinaSwimsuit = () => {
                     {/* Equipment 2: Hairpin */}
                     <td className="bg-[#973333] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Bag_T1_Icon.png"
+                        src="/Blue-Archive/icons/Hairpin_T1_Icon.png"
                         alt="Hairpin T1 Icon"
                         width={56}
                         height={44}
@@ -646,7 +646,7 @@ export const HinaSwimsuit = () => {
                     {/* Equipment 3: Charm */}
                     <td className="bg-[#973333] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Charm_T1_Icon.png"
+                        src="/Blue-Archive/icons/Watch_T1_Icon.png"
                         alt="Charm T1 Icon"
                         width={56}
                         height={44}
@@ -702,25 +702,25 @@ export const HinaSwimsuit = () => {
                       <span className="text-xs font-bold text-[#e34a45]">
                         HP
                       </span>
-                      <span className="font-bold text-lg text-black">3275</span>
+                      <span className="font-bold text-lg text-black">2458</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#e34a45]">
                         ATK
                       </span>
-                      <span className="font-bold text-lg text-black">213</span>
+                      <span className="font-bold text-lg text-black">366</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#e34a45]">
                         DEF
                       </span>
-                      <span className="font-bold text-lg text-black">175</span>
+                      <span className="font-bold text-lg text-black">78</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#e34a45]">
                         HEAL
                       </span>
-                      <span className="font-bold text-lg text-black">1687</span>
+                      <span className="font-bold text-lg text-black">1685</span>
                     </div>
                   </div>
                   {/* Level 100 Row 1 */}
@@ -733,16 +733,16 @@ export const HinaSwimsuit = () => {
                   {/* Level 100 Stats 1 */}
                   <div className="bg-[#973333] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">54746</span>
+                      <span className="font-bold text-black">21303</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2134</span>
+                      <span className="font-bold text-black">3662</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">1052</span>
+                      <span className="font-bold text-black">468</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5059</span>
+                      <span className="font-bold text-black">5055</span>
                     </div>
                   </div>
                   {/* Level 100 Row 2 (4 images) */}
@@ -766,16 +766,16 @@ export const HinaSwimsuit = () => {
                   {/* Level 100 Stats 2 */}
                   <div className="bg-[#973333] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">59145</span>
+                      <span className="font-bold text-black">23015</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2579</span>
+                      <span className="font-bold text-black">4082</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">1052</span>
+                      <span className="font-bold text-black">468</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5575</span>
+                      <span className="font-bold text-black">5572</span>
                     </div>
                   </div>
                   {/* Level 100 Row 3 (5 images) */}
@@ -799,16 +799,16 @@ export const HinaSwimsuit = () => {
                   {/* Level 100 Stats 3 */}
                   <div className="bg-[#973333] grid grid-cols-4 gap-2 mb-4 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">65988</span>
+                      <span className="font-bold text-black">25677</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2676</span>
+                      <span className="font-bold text-black">4592</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">1052</span>
+                      <span className="font-bold text-black">468</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">6221</span>
+                      <span className="font-bold text-black">6217</span>
                     </div>
                   </div>
                   {/* Profile Dropdown */}
@@ -1091,7 +1091,7 @@ export const HinaSwimsuit = () => {
                                   <span className="text-[#e34a45] font-bold">
                                     1
                                   </span>{" "}
-                                  enemy evry{" "}
+                                  enemy every{" "}
                                   <span className="text-[#e34a45] font-bold">
                                     20
                                   </span>{" "}
@@ -1642,7 +1642,7 @@ export const HinaSwimsuit = () => {
                         height={19}
                       />
                       <img
-                        src="/Blue-Archive/icons/Blue_Font_9.png"
+                        src="/Blue-Archive/icons/Blue_Font_5.png"
                         alt="Bond Level"
                         width={18}
                         height={17}
@@ -1653,7 +1653,7 @@ export const HinaSwimsuit = () => {
                     colSpan={2}
                     className="bg-[#e34a45] text-black font-bold px-2 py-2"
                   >
-                    Total Stats ~ DEF+79 / HP+2625
+                    Total Stats ~ ATK+207 / HP+1025
                   </th>
                 </tr>
                 {/* Live2D & Icon column */}
@@ -1669,7 +1669,7 @@ export const HinaSwimsuit = () => {
                     LV02 – 05
                   </th>
                   <td className="border border-[#e34a45] text-left px-2 py-2">
-                    DEF +1
+                    ATK+3
                   </td>
                 </tr>
                 <tr>
@@ -1677,7 +1677,7 @@ export const HinaSwimsuit = () => {
                     LV06 – 10
                   </th>
                   <td className="border border-[#e34a45] text-left px-2 py-2">
-                    DEF +2
+                    ATK+5
                   </td>
                 </tr>
                 <tr>
@@ -1685,7 +1685,7 @@ export const HinaSwimsuit = () => {
                     LV11 – 15
                   </th>
                   <td className="border border-[#e34a45] text-left px-2 py-2">
-                    DEF +2 / HP +122
+                    ATK+6 / HP+48
                   </td>
                 </tr>
                 <tr>
@@ -1693,7 +1693,7 @@ export const HinaSwimsuit = () => {
                     LV16 – 20
                   </th>
                   <td className="border border-[#e34a45] text-left px-2 py-2">
-                    DEF +3 / HP +147
+                    ATK+8 / HP+57
                   </td>
                 </tr>
                 <tr>
@@ -1701,7 +1701,7 @@ export const HinaSwimsuit = () => {
                     LV21 – 30
                   </th>
                   <td className="border border-[#e34a45] text-left px-2 py-2">
-                    DEF +1 / HP +26
+                   ATK+2 / HP+10
                   </td>
                 </tr>
                 <tr>
@@ -1709,7 +1709,7 @@ export const HinaSwimsuit = () => {
                     LV31 – 40
                   </th>
                   <td className="border border-[#e34a45] text-left px-2 py-2">
-                    DEF +1 / HP +38
+                    ATK+3 / HP+15
                   </td>
                 </tr>
                 <tr>
@@ -1717,7 +1717,7 @@ export const HinaSwimsuit = () => {
                     LV41 – 50
                   </th>
                   <td className="border border-[#e34a45] text-left px-2 py-2">
-                    DEF +2 / HP +64
+                    ATK+4 / HP+25
                   </td>
                 </tr>
               </tbody>
