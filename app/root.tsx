@@ -132,6 +132,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/hoshino_swimsuit" &&
           location.pathname !== "/hina_swimsuit" &&
           location.pathname !== "/karin_bunny" &&
+          location.pathname !== "/akane_bunny" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div className="pb-24">{children}</div>
         {location.pathname !== "/home" && <PlaybackBar />}
@@ -234,6 +235,7 @@ export default function App() {
         location.pathname !== "/hoshino_swimsuit" &&
         location.pathname !== "/hina_swimsuit" &&
         location.pathname !== "/karin_bunny" &&
+        location.pathname !== "/akane_bunny" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );

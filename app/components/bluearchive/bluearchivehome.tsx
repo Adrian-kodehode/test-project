@@ -47,17 +47,17 @@ export const BlueArchiveHome = () => {
 
   return (
     <div
-      className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/Site-background-dark.jpg')",
+        backgroundImage: "url('/Blue-Archive/Event_46.png')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        backgroundPosition: "center center",
       }}
+      className="min-h-screen flex flex-col"
     >
       {/* Header */}
-      <header className="w-full  flex flex-col items-start justify-center pt-10 pl-40 relative">
+      <header className="w-full flex flex-col items-start justify-center pt-10 pl-40 relative">
         <div className="flex flex-row items-start gap-6">
           <a href="/bluearchivehome">
             <img
@@ -83,7 +83,10 @@ export const BlueArchiveHome = () => {
           <a href="#" className="hover:underline hover:text-white transition">
             TERMINOLOGY
           </a>
-          <a href="/students" className="hover:underline hover:text-white transition">
+          <a
+            href="/students"
+            className="hover:underline hover:text-white transition"
+          >
             MENU
           </a>
           <a href="#" className="hover:underline hover:text-white transition">
@@ -419,38 +422,38 @@ export const BlueArchiveHome = () => {
             <div className="text-[#ff0000] font-bold">
               JP Clock -{" "}
               <span className="font-extrabold text-white">
-                Thu, 12 Jun 2025, 20:09:15 (JST)
+                Thu, 26 Jun 2025, 21:09:15 (JST)
               </span>
             </div>
             <div className="text-[#ff0000] font-bold">
               Global Clock -{" "}
               <span className="font-extrabold text-white">
-                Thu, 12 Jun 2025, 11:09:15 (UTC)
+                Thu, 26 Jun 2025, 12:09:15 (UTC)
               </span>
             </div>
             <div className="text-[#ff0000] font-bold">
               Reset Time -{" "}
-              <span className="font-extrabold text-white">0d 7h 50m 44s</span>
+              <span className="font-extrabold text-white">0d 6h 50m 44s</span>
             </div>
           </div>
           <hr className="border-gray-400 my-2" />
           {/* Event 1 */}
           <div className="flex flex-col items-center mb-4">
             <div className="text-[#02d3fb] text-xs italic font-bold">
-              -ive aLIVE! (Rerun)
+              A Hundred Years of One Flower
             </div>
             <img
-              src="Blue-Archive/images/Event_35_-_Title.png"
+              src="Blue-Archive/images/Event_46_-_Title.png"
               alt="ive aLIVE! Event"
             />
             <div className="text-xs text-white text-center">
               <div className="font-bold">
-                June 04th, 2025 JST – June 18th, 2025 JST
+                June 25th, 2025 JST – July 09th, 2025 JST
               </div>
               <div className="font-bold">
                 Event Period{" "}
                 <span className="text-[#ff0000]">
-                  ends in 5d 7h 50m 44s JST
+                  ends in 12d 6h 50m 44s JST
                 </span>
               </div>
             </div>
@@ -586,7 +589,7 @@ export const BlueArchiveHome = () => {
               Featured Gatch
             </div>
             <div className="flex justify-center gap-4 mb-2">
-              {[1, 2, 3, 4].map((num) => (
+              {[1, 2].map((num) => (
                 <button
                   key={num}
                   className={`text-xl font-bold px-4 py-1 relative ${
@@ -608,10 +611,8 @@ export const BlueArchiveHome = () => {
               <img
                 src={
                   [
-                    "Blue-Archive/gacha/Gacha_Banner_164.png",
-                    "Blue-Archive/gacha/Gacha_Banner_125.png",
-                    "Blue-Archive/gacha/Gacha_Banner_126.png",
-                    "Blue-Archive/gacha/Gacha_Banner_112.png",
+                    "Blue-Archive/gacha/Gacha_Banner_165.png",
+                    "Blue-Archive/gacha/Gacha_Banner_166.png",
                   ][(selectedGacha ?? 1) - 1]
                 }
                 alt="Featured Gacha Banner"
@@ -636,7 +637,7 @@ export const BlueArchiveHome = () => {
             >
               <div
                 style={{
-                  background: "#fbb35a",
+                  background: "#e05289",
                   border: "2px solid #02D3FB",
                   borderRadius: "5px",
                   display: "inline-block",
@@ -668,7 +669,7 @@ export const BlueArchiveHome = () => {
                     <a href="/wiki/Natsu(Band_ver.)">
                       <img
                         alt="Natsu (Band ver.)"
-                        src="Blue-Archive/characters/Natsu_Band_Icon.png"
+                        src="Blue-Archive/images/Yukari_Swimsuit_Icon.png"
                         decoding="async"
                         loading="lazy"
                         width={125}
@@ -796,7 +797,7 @@ export const BlueArchiveHome = () => {
                     paddingRight: "2%",
                   }}
                 >
-                  <b>Striker</b>
+                  <b className="font-extrabold">Striker</b>
                 </span>
                 <span
                   style={{
@@ -820,7 +821,7 @@ export const BlueArchiveHome = () => {
                         color: "#000000",
                       }}
                     >
-                      <b>Natsu (Band)</b>
+                      <b>Yukari (Swimsuit)</b>
                     </span>
                   </a>
                 </span>
@@ -834,7 +835,7 @@ export const BlueArchiveHome = () => {
                 >
                   <div
                     style={{
-                      background: "Red",
+                      background: "#ffa500",
                       borderRadius: "5px",
                       border: "2px solid #000000",
                       fontSize: "10px",
@@ -862,7 +863,7 @@ export const BlueArchiveHome = () => {
                   </div>
                   <div
                     style={{
-                      background: "#46adff",
+                      background: "red",
                       borderRadius: "5px",
                       border: "2px solid #000000",
                       fontSize: "10px",
@@ -890,7 +891,7 @@ export const BlueArchiveHome = () => {
                   </div>
                   <div
                     style={{
-                      background: "#fbb35a",
+                      background: "#e05289",
                       borderRadius: "5px",
                       border: "2px solid #000000",
                       fontSize: "10px",
@@ -902,7 +903,7 @@ export const BlueArchiveHome = () => {
                         className="mw-file-description image"
                       >
                         <img
-                          src="Blue-Archive/images/Healer.png"
+                          src="Blue-Archive/icons/Attacker (1).png"
                           decoding="async"
                           loading="lazy"
                           width={19}
@@ -926,7 +927,7 @@ export const BlueArchiveHome = () => {
             >
               <div
                 style={{
-                  background: "#fbb35a",
+                  background: "#e05289",
                   border: "2px solid #02D3FB",
                   borderRadius: "5px",
                   display: "inline-block",
@@ -957,8 +958,8 @@ export const BlueArchiveHome = () => {
                   <span>
                     <a href="/wiki/Kyouyama_Kazusa_(Band_ver.)">
                       <img
-                        alt="Kyouyama Kazusa (Band ver.)"
-                        src="Blue-Archive/characters/Kazusa_Band_Icon.png"
+                        alt="Kikyou (Swimsuit ver.)"
+                        src="Blue-Archive/images/Kikyou_Swimsuit_Icon.png"
                         decoding="async"
                         loading="lazy"
                         width={125}
@@ -1078,7 +1079,7 @@ export const BlueArchiveHome = () => {
                     right: 0,
                     lineHeight: "10px",
                     padding: "1px",
-                    background: "#FF6133",
+                    background: "#2185f6",
                     borderBottomLeftRadius: "3px",
                     fontSize: "8px",
                     color: "#000000",
@@ -1086,8 +1087,9 @@ export const BlueArchiveHome = () => {
                     paddingRight: "2%",
                   }}
                 >
-                  <b>Striker</b>
+                  <b className="font-extrabold">Special</b>
                 </span>
+
                 <span
                   style={{
                     position: "absolute",
@@ -1110,599 +1112,7 @@ export const BlueArchiveHome = () => {
                         color: "#000000",
                       }}
                     >
-                      <b>Kazusa (Band)</b>
-                    </span>
-                  </a>
-                </span>
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "2px",
-                    left: "2px",
-                    display: "inline-block",
-                  }}
-                >
-                  <div
-                    style={{
-                      background: "Red",
-                      borderRadius: "5px",
-                      border: "2px solid #000000",
-                      fontSize: "10px",
-                    }}
-                  >
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/3/3a/Offensive_Icon.png/revision/latest?cb=20210519154600"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Offensive_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={19}
-                          height={19}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Offensive Icon.png"
-                          data-image-key="Offensive_Icon.png"
-                          data-relevant="0"
-                          data-src="Blue-Archive/images/Offensive_Icon.png"
-                        />
-                      </a>
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      background: "#46adff",
-                      borderRadius: "5px",
-                      border: "2px solid #000000",
-                      fontSize: "10px",
-                    }}
-                  >
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/5/50/Defensive_Icon.png/revision/latest?cb=20210519154625"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Defensive_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={19}
-                          height={19}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Defensive Icon.png"
-                          data-image-key="Defensive_Icon.png"
-                          data-relevant="0"
-                          data-src="Blue-Archive/images/Defensive_Icon.png"
-                        />
-                      </a>
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      background: "#fbb35a",
-                      borderRadius: "5px",
-                      border: "2px solid #000000",
-                      fontSize: "10px",
-                    }}
-                  >
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/7/7e/Attacker.png/revision/latest?cb=20210714042101"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Attacker.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={19}
-                          height={19}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Attacker.png"
-                          data-image-key="Attacker.png"
-                          data-relevant="0"
-                          data-src="Blue-Archive/images/Attacker.png"
-                        />
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/*Yoshimi and Kikyou*/}
-          <div
-        className="flex flex-row gap-3 "
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              gap: "3px",
-              justifyContent: "center",
-            }}
-          >
-            {/* Yoshimi */}
-            <div
-              style={{ display: "inline-block" }}
-              className="advanced-tooltip tooltips-init-complete"
-            >
-              <div
-                style={{
-                  background: "#fbb35a",
-                  border: "2px solid #02D3FB",
-                  borderRadius: "5px",
-                  display: "inline-block",
-                  position: "relative",
-                  height: "100px",
-                  width: "115px",
-                  overflow: "hidden",
-                  verticalAlign: "middle",
-                  marginTop: "2px",
-                  marginBottom: "2px",
-                  transform: "skewX(-10deg)",
-                  marginLeft: "7px",
-                  marginRight: "-7px",
-                }}
-              >
-                <span
-                  style={{
-                    position: "absolute",
-                    top: "-5px",
-                    left: "-5px",
-                    right: "-5px",
-                    bottom: "-5px",
-                    alignItems: "center",
-                    paddingTop: "5%",
-                    transform: "skewX(10deg)",
-                  }}
-                >
-                  <span>
-                    <a href="/wiki/Yoshimi(Band_ver.)">
-                      <img
-                        alt="Yoshimi (Band ver.)"
-                        src="Blue-Archive/characters/Yoshimi_Band_Icon.png"
-                        decoding="async"
-                        loading="lazy"
-                        width={125}
-                        height={101}
-                        className="mw-file-element lazyloaded"
-                        data-image-name="Yoshimi Band Icon.png"
-                        data-image-key="Yoshimi_Band_Icon.png"
-                        data-relevant="1"
-                        data-src="https://static.wikia.nocookie.net/blue-archive/images/7/7f/Kazusa_Band_Icon.png/revision/latest/scale-to-width-down/125?cb=20240424132857"
-                      />
-                    </a>
-                  </span>
-                </span>
-                <span
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    right: 0,
-                    display: "flex",
-                    flexDirection: "row",
-                    gap: "2px",
-                    lineHeight: "10px",
-                    padding: "1px",
-                    background: "#9B85E6",
-                    borderBottomLeftRadius: "3px",
-                    fontSize: "8px",
-                    color: "#000000",
-                    paddingLeft: "2%",
-                    paddingRight: "2%",
-                  }}
-                >
-                  <b
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      gap: "2px",
-                    }}
-                  >
-                    <span>
-                      <a href="#" className="mw-file-description image">
-                        <img
-                          src="Blue-Archive/images/Star_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={15}
-                          height={14}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Star Icon.png"
-                          data-image-key="Star_Icon.png"
-                          data-relevant="1"
-                          data-src="Blue-Archive/images/Star_Icon.png"
-                        />
-                      </a>
-                    </span>
-                    <span
-                      className="hidden"
-                      style={{ opacity: 0, width: "0px", position: "absolute" }}
-                    >
-                      Star IconCategory:test
-                    </span>
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/1/1f/Star_Icon.png/revision/latest?cb=20210224171150"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Star_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={15}
-                          height={14}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Star Icon.png"
-                          data-image-key="Star_Icon.png"
-                          data-relevant="1"
-                          data-src="Blue-Archive/images/Star_Icon.png"
-                        />
-                      </a>
-                    </span>
-                    <span
-                      className="hidden"
-                      style={{ opacity: 0, width: "0px", position: "absolute" }}
-                    >
-                      Star IconCategory:test
-                    </span>
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/1/1f/Star_Icon.png/revision/latest?cb=20210224171150"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Star_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={15}
-                          height={14}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Star Icon.png"
-                          data-image-key="Star_Icon.png"
-                          data-relevant="1"
-                          data-src="Blue-Archive/images/Star_Icon.png"
-                        />
-                      </a>
-                    </span>
-                    <span
-                      className="hidden"
-                      style={{ opacity: 0, width: "0px", position: "absolute" }}
-                    >
-                      Star IconCategory:test
-                    </span>
-                  </b>
-                </span>
-                <span
-                  style={{
-                    position: "absolute",
-                    top: "18px",
-                    right: 0,
-                    lineHeight: "10px",
-                    padding: "1px",
-                    background: "#FF6133",
-                    borderBottomLeftRadius: "3px",
-                    fontSize: "8px",
-                    color: "#000000",
-                    paddingLeft: "2%",
-                    paddingRight: "2%",
-                  }}
-                >
-                  <b>Striker</b>
-                </span>
-                <span
-                  style={{
-                    position: "absolute",
-                    bottom: "1.5px",
-                    right: "1px",
-                    lineHeight: "10px",
-                    paddingLeft: "2%",
-                    paddingRight: "2%",
-                    background: "none",
-                    borderRadius: "3px",
-                    textAlign: "center",
-                    textShadow:
-                      "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
-                  }}
-                >
-                  <a href="/wiki/Yoshimi(Band_ver.)">
-                    <span
-                      style={{
-                        fontSize: "9.5px",
-                        color: "#000000",
-                      }}
-                    >
-                      <b>Yoshimi (Band)</b>
-                    </span>
-                  </a>
-                </span>
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "2px",
-                    left: "2px",
-                    display: "inline-block",
-                  }}
-                >
-                  <div
-                    style={{
-                      background: "Red",
-                      borderRadius: "5px",
-                      border: "2px solid #000000",
-                      fontSize: "10px",
-                    }}
-                  >
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/3/3a/Offensive_Icon.png/revision/latest?cb=20210519154600"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Offensive_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={19}
-                          height={19}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Offensive Icon.png"
-                          data-image-key="Offensive_Icon.png"
-                          data-relevant="0"
-                          data-src="Blue-Archive/images/Offensive_Icon.png"
-                        />
-                      </a>
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      background: "#46adff",
-                      borderRadius: "5px",
-                      border: "2px solid #000000",
-                      fontSize: "10px",
-                    }}
-                  >
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/5/50/Defensive_Icon.png/revision/latest?cb=20210519154625"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Defensive_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={19}
-                          height={19}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Defensive Icon.png"
-                          data-image-key="Defensive_Icon.png"
-                          data-relevant="0"
-                          data-src="Blue-Archive/images/Defensive_Icon.png"
-                        />
-                      </a>
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      background: "#fbb35a",
-                      borderRadius: "5px",
-                      border: "2px solid #000000",
-                      fontSize: "10px",
-                    }}
-                  >
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/7/7e/Attacker.png/revision/latest?cb=20210714042101"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Attacker.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={19}
-                          height={19}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Attacker.png"
-                          data-image-key="Attacker.png"
-                          data-relevant="0"
-                          data-src="Blue-Archive/images/Attacker.png"
-                        />
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Kikyou */}
-            <div
-              style={{ display: "inline-block" }}
-              className="advanced-tooltip tooltips-init-complete"
-            >
-              <div
-                style={{
-                  background: "#e05289",
-                  border: "2px solid #02D3FB",
-                  borderRadius: "5px",
-                  display: "inline-block",
-                  position: "relative",
-                  height: "100px",
-                  width: "115px",
-                  overflow: "hidden",
-                  verticalAlign: "middle",
-                  marginTop: "2px",
-                  marginBottom: "2px",
-                  transform: "skewX(-10deg)",
-                  marginLeft: "7px",
-                  marginRight: "-7px",
-                }}
-              >
-                <span
-                  style={{
-                    position: "absolute",
-                    top: "-5px",
-                    left: "-5px",
-                    right: "-5px",
-                    bottom: "-5px",
-                    alignItems: "center",
-                    paddingTop: "5%",
-                    transform: "skewX(10deg)",
-                  }}
-                >
-                  <span>
-                    <a href="/wiki/Kikyou(Band_ver.)">
-                      <img
-                        alt="Kikyou (Band ver.)"
-                        src="Blue-Archive/characters/Kikyou_Icon.png"
-                        decoding="async"
-                        loading="lazy"
-                        width={125}
-                        height={101}
-                        className="mw-file-element lazyloaded"
-                        data-image-name="Kikyou_Band Icon.png"
-                        data-image-key="Kikyou_Band_Icon.png"
-                        data-relevant="1"
-                        data-src="https://static.wikia.nocookie.net/blue-archive/images/7/7f/Kazusa_Band_Icon.png/revision/latest/scale-to-width-down/125?cb=20240424132857"
-                      />
-                    </a>
-                  </span>
-                </span>
-                <span
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    right: 0,
-                    display: "flex",
-                    flexDirection: "row",
-                    gap: "2px",
-                    lineHeight: "10px",
-                    padding: "1px",
-                    background: "#9B85E6",
-                    borderBottomLeftRadius: "3px",
-                    fontSize: "8px",
-                    color: "#000000",
-                    paddingLeft: "2%",
-                    paddingRight: "2%",
-                  }}
-                >
-                  <b
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      gap: "2px",
-                    }}
-                  >
-                    <span>
-                      <a href="#" className="mw-file-description image">
-                        <img
-                          src="Blue-Archive/images/Star_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={15}
-                          height={14}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Star Icon.png"
-                          data-image-key="Star_Icon.png"
-                          data-relevant="1"
-                          data-src="Blue-Archive/images/Star_Icon.png"
-                        />
-                      </a>
-                    </span>
-                    <span
-                      className="hidden"
-                      style={{ opacity: 0, width: "0px", position: "absolute" }}
-                    >
-                      Star IconCategory:test
-                    </span>
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/1/1f/Star_Icon.png/revision/latest?cb=20210224171150"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Star_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={15}
-                          height={14}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Star Icon.png"
-                          data-image-key="Star_Icon.png"
-                          data-relevant="1"
-                          data-src="Blue-Archive/images/Star_Icon.png"
-                        />
-                      </a>
-                    </span>
-                    <span
-                      className="hidden"
-                      style={{ opacity: 0, width: "0px", position: "absolute" }}
-                    >
-                      Star IconCategory:test
-                    </span>
-                    <span>
-                      <a
-                        href="https://static.wikia.nocookie.net/blue-archive/images/1/1f/Star_Icon.png/revision/latest?cb=20210224171150"
-                        className="mw-file-description image"
-                      >
-                        <img
-                          src="Blue-Archive/images/Star_Icon.png"
-                          decoding="async"
-                          loading="lazy"
-                          width={15}
-                          height={14}
-                          className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Star Icon.png"
-                          data-image-key="Star_Icon.png"
-                          data-relevant="1"
-                          data-src="Blue-Archive/images/Star_Icon.png"
-                        />
-                      </a>
-                    </span>
-                    <span
-                      className="hidden"
-                      style={{ opacity: 0, width: "0px", position: "absolute" }}
-                    >
-                      Star IconCategory:test
-                    </span>
-                  </b>
-                </span>
-                <span
-                  style={{
-                    position: "absolute",
-                    top: "18px",
-                    right: 0,
-                    lineHeight: "10px",
-                    padding: "1px",
-                    background: "#FF6133",
-                    borderBottomLeftRadius: "3px",
-                    fontSize: "8px",
-                    color: "#000000",
-                    paddingLeft: "2%",
-                    paddingRight: "2%",
-                  }}
-                >
-                  <b>Striker</b>
-                </span>
-                <span
-                  style={{
-                    position: "absolute",
-                    bottom: "1.5px",
-                    right: "1px",
-                    lineHeight: "10px",
-                    paddingLeft: "2%",
-                    paddingRight: "2%",
-                    background: "none",
-                    borderRadius: "3px",
-                    textAlign: "center",
-                    textShadow:
-                      "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
-                  }}
-                >
-                  <a href="/wiki/Kikyou(Band_ver.)">
-                    <span
-                      style={{
-                        fontSize: "9.5px",
-                        color: "#000000",
-                      }}
-                    >
-                      <b>Kikyou</b>
+                      <b>Kikyou (Swimsuit)</b>
                     </span>
                   </a>
                 </span>
@@ -1784,19 +1194,307 @@ export const BlueArchiveHome = () => {
                         className="mw-file-description image"
                       >
                         <img
-                          src="Blue-Archive/images/Supporter.png"
+                          src="Blue-Archive/icons/Supporter.png"
                           decoding="async"
                           loading="lazy"
                           width={19}
                           height={19}
                           className="mw-file-element ls-is-cached lazyloaded"
-                          data-image-name="Supporter.png"
-                          data-image-key="Supporter.png"
+                          data-image-name="Attacker.png"
+                          data-image-key="Attacker.png"
                           data-relevant="0"
-                          data-src="Blue-Archive/images/Supporter.png"
+                          data-src="Blue-Archive/images/Attacker.png"
                         />
                       </a>
                     </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            {/* Kikyou */}
+            <div className="flex justify-center">
+              <div
+                style={{ display: "inline-block" }}
+                className="advanced-tooltip tooltips-init-complete"
+              >
+                <div
+                  style={{
+                    background: "#e05289",
+                    border: "2px solid #02D3FB",
+                    borderRadius: "5px",
+                    display: "inline-block",
+                    position: "relative",
+                    height: "100px",
+                    width: "115px",
+                    overflow: "hidden",
+                    verticalAlign: "middle",
+                    marginTop: "2px",
+                    marginBottom: "2px",
+                    transform: "skewX(-10deg)",
+                    marginLeft: "7px",
+                    marginRight: "-7px",
+                  }}
+                >
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-5px",
+                      left: "-5px",
+                      right: "-5px",
+                      bottom: "-5px",
+                      alignItems: "center",
+                      paddingTop: "5%",
+                      transform: "skewX(10deg)",
+                    }}
+                  >
+                    <span>
+                      <a href="/wiki/Kikyou(Band_ver.)">
+                        <img
+                          alt="Kikyou (Swimsuit ver.)"
+                          src="Blue-Archive/images/Renge_Swimsuit_Icon.png"
+                          decoding="async"
+                          loading="lazy"
+                          width={125}
+                          height={101}
+                          className="mw-file-element lazyloaded"
+                          data-image-name="Kikyou_Band Icon.png"
+                          data-image-key="Kikyou_Band_Icon.png"
+                          data-relevant="1"
+                          data-src="https://static.wikia.nocookie.net/blue-archive/images/7/7f/Kazusa_Band_Icon.png/revision/latest/scale-to-width-down/125?cb=20240424132857"
+                        />
+                      </a>
+                    </span>
+                  </span>
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      right: 0,
+                      display: "flex",
+                      flexDirection: "row",
+                      gap: "2px",
+                      lineHeight: "10px",
+                      padding: "1px",
+                      background: "#e68f16",
+                      borderBottomLeftRadius: "3px",
+                      fontSize: "8px",
+                      color: "#000000",
+                      paddingLeft: "2%",
+                      paddingRight: "2%",
+                    }}
+                  >
+                    <b
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        gap: "2px",
+                      }}
+                    >
+                      <span>
+                        <a href="#" className="mw-file-description image">
+                          <img
+                            src="Blue-Archive/images/Star_Icon.png"
+                            decoding="async"
+                            loading="lazy"
+                            width={15}
+                            height={14}
+                            className="mw-file-element ls-is-cached lazyloaded"
+                            data-image-name="Star Icon.png"
+                            data-image-key="Star_Icon.png"
+                            data-relevant="1"
+                            data-src="Blue-Archive/images/Star_Icon.png"
+                          />
+                        </a>
+                      </span>
+                      <span
+                        className="hidden"
+                        style={{
+                          opacity: 0,
+                          width: "0px",
+                          position: "absolute",
+                        }}
+                      >
+                        Star IconCategory:test
+                      </span>
+                      <span>
+                        <a
+                          href="https://static.wikia.nocookie.net/blue-archive/images/1/1f/Star_Icon.png/revision/latest?cb=20210224171150"
+                          className="mw-file-description image"
+                        >
+                          <img
+                            src="Blue-Archive/images/Star_Icon.png"
+                            decoding="async"
+                            loading="lazy"
+                            width={15}
+                            height={14}
+                            className="mw-file-element ls-is-cached lazyloaded"
+                            data-image-name="Star Icon.png"
+                            data-image-key="Star_Icon.png"
+                            data-relevant="1"
+                            data-src="Blue-Archive/images/Star_Icon.png"
+                          />
+                        </a>
+                      </span>
+                      <span
+                        className="hidden"
+                        style={{
+                          opacity: 0,
+                          width: "0px",
+                          position: "absolute",
+                        }}
+                      >
+                        Star IconCategory:test
+                      </span>
+
+                      <span
+                        className="hidden"
+                        style={{
+                          opacity: 0,
+                          width: "0px",
+                          position: "absolute",
+                        }}
+                      >
+                        Star IconCategory:test
+                      </span>
+                    </b>
+                  </span>
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "18px",
+                      right: 0,
+                      lineHeight: "10px",
+                      padding: "1px",
+                      background: "#FF6133",
+                      borderBottomLeftRadius: "3px",
+                      fontSize: "8px",
+                      color: "#000000",
+                      paddingLeft: "2%",
+                      paddingRight: "2%",
+                    }}
+                  >
+                    <b className="font-extrabold">Striker</b>
+                  </span>
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "1.5px",
+                      right: "1px",
+                      lineHeight: "10px",
+                      paddingLeft: "2%",
+                      paddingRight: "2%",
+                      background: "none",
+                      borderRadius: "3px",
+                      textAlign: "center",
+                      textShadow:
+                        "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+                    }}
+                  >
+                    <a href="/wiki/Kikyou(Band_ver.)">
+                      <span
+                        style={{
+                          fontSize: "9.5px",
+                          color: "#000000",
+                        }}
+                      >
+                        <b>Renge (Swimsuit)</b>
+                      </span>
+                    </a>
+                  </span>
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "2px",
+                      left: "2px",
+                      display: "inline-block",
+                    }}
+                  >
+                    <div
+                      style={{
+                        background: "#a17cb6",
+                        borderRadius: "5px",
+                        border: "2px solid #000000",
+                        fontSize: "10px",
+                      }}
+                    >
+                      <span>
+                        <a
+                          href="https://static.wikia.nocookie.net/blue-archive/images/3/3a/Offensive_Icon.png/revision/latest?cb=20210519154600"
+                          className="mw-file-description image"
+                        >
+                          <img
+                            src="Blue-Archive/images/Offensive_Icon.png"
+                            decoding="async"
+                            loading="lazy"
+                            width={19}
+                            height={19}
+                            className="mw-file-element ls-is-cached lazyloaded"
+                            data-image-name="Offensive Icon.png"
+                            data-image-key="Offensive_Icon.png"
+                            data-relevant="0"
+                            data-src="Blue-Archive/images/Offensive_Icon.png"
+                          />
+                        </a>
+                      </span>
+                    </div>
+                    <div
+                      style={{
+                        background: "#46adff",
+                        borderRadius: "5px",
+                        border: "2px solid #000000",
+                        fontSize: "10px",
+                      }}
+                    >
+                      <span>
+                        <a
+                          href="https://static.wikia.nocookie.net/blue-archive/images/5/50/Defensive_Icon.png/revision/latest?cb=20210519154625"
+                          className="mw-file-description image"
+                        >
+                          <img
+                            src="Blue-Archive/images/Defensive_Icon.png"
+                            decoding="async"
+                            loading="lazy"
+                            width={19}
+                            height={19}
+                            className="mw-file-element ls-is-cached lazyloaded"
+                            data-image-name="Defensive Icon.png"
+                            data-image-key="Defensive_Icon.png"
+                            data-relevant="0"
+                            data-src="Blue-Archive/images/Defensive_Icon.png"
+                          />
+                        </a>
+                      </span>
+                    </div>
+                    <div
+                      style={{
+                        background: "#e05289",
+                        borderRadius: "5px",
+                        border: "2px solid #000000",
+                        fontSize: "10px",
+                      }}
+                    >
+                      <span>
+                        <a
+                          href="https://static.wikia.nocookie.net/blue-archive/images/7/7e/Attacker.png/revision/latest?cb=20210714042101"
+                          className="mw-file-description image"
+                        >
+                          <img
+                            src="Blue-Archive/icons/Attacker (1).png"
+                            decoding="async"
+                            loading="lazy"
+                            width={19}
+                            height={19}
+                            className="mw-file-element ls-is-cached lazyloaded"
+                            data-image-name="Supporter.png"
+                            data-image-key="Supporter.png"
+                            data-relevant="0"
+                            data-src="Blue-Archive/images/Supporter.png"
+                          />
+                        </a>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
