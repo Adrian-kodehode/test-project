@@ -48,7 +48,7 @@ export const BlueArchiveHome = () => {
   return (
     <div
       style={{
-        backgroundImage: "url('/Blue-Archive/Event_46.png')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark (1).jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

@@ -1,5 +1,23 @@
-import React, { useEffect, useState } from "react";
-import hikariSkills from "./hikariskills";
+import React, { useEffect, useState, memo } from "react";
+
+const HikariLive2D = memo(() => (
+  <div className="flex flex-col space-y-2">
+    <img
+      src="Blue-Archive/live2d/Hikari_Icon_2.png"
+      alt="Hoshino Live2D"
+      className="w-full rounded-lg mx-auto "
+    />
+  </div>
+));
+const HikariEX = memo(() => (
+  <div className="flex flex-col space-y-2">
+    <img
+      src="Blue-Archive/icons/CIRCLE.png"
+      alt="Hoshino Live2D"
+      className="w-full rounded-lg mx-auto bg-[#63929c] "
+    />
+  </div>
+));
 
 export const Hikari = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -888,120 +906,1436 @@ export const Hikari = () => {
             Skills
           </h3>
           {/* Skills Tabbed Interface */}
-
-          <div className="mt-6">
-            {/* Tab Buttons */}
-            <div className="flex border-b border-[#63929C] mb-2">
-              {hikariSkills.map((tab) => (
+          <section id="skills" className="mt-8">
+            {/* Tabs */}
+            <div className="flex border-b border-[#63929c]">
+              {[
+                { key: "ex", label: "EX Skill" },
+                { key: "normal", label: "Normal Skill" },
+                { key: "passive", label: "Passive Skill" },
+                { key: "sub", label: "Sub Skill" },
+              ].map((tab) => (
                 <button
                   key={tab.key}
+                  onClick={() => setActiveSkillTab(tab.key)}
                   className={`px-4 py-2 text-sm font-bold transition-colors ${
                     activeSkillTab === tab.key
-                      ? "text-[#06bbfa] border-b-2 border-[#06bbfa] bg-[#232b36]"
-                      : "text-[#63929C] hover:text-[#06bbfa]"
+                      ? "text-[#4f86f7] border-b-2 border-[#63929c]"
+                      : "text-gray-400 hover:text-[#4f86f7]"
                   }`}
-                  onClick={() => setActiveSkillTab(tab.key)}
-                  type="button"
                 >
                   {tab.label}
                 </button>
               ))}
             </div>
-            {/* Tab Content */}
-            <div className="bg-[#232b36] w-[700px] rounded-b-lg border border-[#63929C] p-4">
-              {hikariSkills.map(
-                (tab) =>
-                  activeSkillTab === tab.key && (
-                    <div key={tab.key} className="flex items-start">
-                      {/* Image on the left */}
-                        <div className="mr-4 flex-shrink-0 flex items-center justify-start mt-14 h-20">
-                          <img src={tab.icon} alt={tab.label} className="" />
-                        </div>
-                      {/* Content on the right */}
-                      <div className="flex-1">
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="font-bold text-lg text-[#06bbfa]">{tab.name}</span>
-                          {tab.cost && (
-                            <span className="text-xs font-bold text-[#232b36] bg-[#63929C] px-2 py-1 rounded">
-                              Cost: {tab.cost}
-                            </span>
-                          )}
-                        </div>
-                        <ul className="list-disc ml-6 text-xs text-white space-y-1">
-                          {tab.description?.map((desc, i) => (
-                            <li key={i}>
-                              <b>{desc.level}</b> ~ {desc.text}
-                              <span className="text-[#63929C] font-bold">
-                                {desc.value}
-                              </span>
-                              {"extra" in desc &&
-                                desc.extra &&
-                                desc.extra.length > 0 && (
-                                  <span>{desc.extra}</span>
-                                )}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  )
-              )}
-            </div>
-          </div>
-          {/* EX-Skill Table Section */}
-          <div className="mt-10 flex flex-col items-start">
-            {/* Table Header */}
-            <div className="flex flex-row items-start">
-              {/* EX-Skill Image (left) */}
-              <div className="flex flex-col items-center mr-8">
-                <span className="font-bold text-[#06bbfa] mb-2">EX Skill</span>
-                <img
-                  src={hikariSkills.find((s) => s.key === "exskill")?.icon}
-                  alt="EX Skill"
-                  className="h-60 w-80 rounded-lg border-2 border-[#06bbfa] bg-[#232b36] p-1"
-                />
-              </div>
-              {/* Table Middle: Skill Name and Levels */}
-              <div className="flex flex-col">
-                <span className="font-bold text-lg text-[#06bbfa] mb-2 text-center">
-                  {hikariSkills.find((s) => s.key === "ex")?.name}
-                </span>
-                <div className="flex flex-row items-center">
-                  {/* Diagonal Level Labels */}
-                  <div className="flex flex-col justify-between h-60  mr-2">
-                    {["LV.02", "LV.03", "LV.04", "LV.05"].map((lv, i) => (
-                      <span
-                        key={lv}
-                        className="text-xs font-bold text-[#63929C] transform -rotate-45 origin-left"
-                        style={{ marginTop: i === 0 ? 0 : 12 }}
-                      >
-                        {lv}
-                      </span>
-                    ))}
-                  </div>
-                  {/* 5x4 Table with Images */}
-                  <div className="grid grid-cols-5 grid-rows-4 gap-1">
-                    {[...Array(4)].map((_, rowIdx) =>
-                      [...Array(5)].map((_, colIdx) => (
-                        <div
-                          key={`${rowIdx}-${colIdx}`}
-                          className="w-10 h-10 flex items-center justify-center bg-[#414360] rounded"
+
+            {/* Tab Contents */}
+            <div className="mt-4 space-y-6">
+              {/* EX Skill */}
+              {activeSkillTab === "ex" && (
+                <div className="overflow-x-auto rounded">
+                  <table className="w-[900px] border-2 border-[#63929c] rounded-lg">
+                    <thead>
+                      <tr>
+                        <th
+                          colSpan={2}
+                          className="relative bg-[#63929c] text-black px-4 py-3 text-sm font-bold"
                         >
+                          <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            New Year's Time
+                          </span>
+                          <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            Cost: 2
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="w-1/4 bg-[#63929c] p-2">
                           <img
-                            src="/Blue-Archive/images/Star_Icon.png"
-                            alt="Star"
-                            className="w-6 h-6"
+                            src="Blue-Archive/icons/HIKARI_EX-SKILL.png"
+                            alt="Sealess: Ishbóshet icon"
+                            className="w-full h-auto rounded"
                           />
-                        </div>
-                      ))
-                    )}
-                  </div>
+                        </td>
+                        <td className="w-3/4 border-l-2 border-[#63929c] p-4 text-xs">
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>
+                              <span className="font-bold">LV01</span> ~
+                              Increases Sonic Effectiveness by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                48.8%
+                              </span>{" "}
+                              for{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              ally exept selt (
+                              <span className="text-[#4f86f7] font-bold">
+                                32
+                              </span>{" "}
+                              sec). If the target's EX-Skill can expend
+                              additional Cost, reduces the additional Cost by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              (up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              time use).
+                            </li>
+                            <li>
+                              <span className="font-bold">LV02</span> ~
+                              Increases Sonic Effectiveness by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                56.1%
+                              </span>{" "}
+                              for{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              ally exept selt (
+                              <span className="text-[#4f86f7] font-bold">
+                                32
+                              </span>{" "}
+                              sec). If the target's EX-Skill can expend
+                              additional Cost, reduces the additional Cost by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              (up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              time use).
+                            </li>{" "}
+                            <li>
+                              <span className="font-bold">LV03</span> ~
+                              Increases Sonic Effectiveness by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                70.7%
+                              </span>{" "}
+                              for{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              ally exept selt (
+                              <span className="text-[#4f86f7] font-bold">
+                                32
+                              </span>{" "}
+                              sec). If the target's EX-Skill can expend
+                              additional Cost, reduces the additional Cost by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              (up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              time use).
+                            </li>{" "}
+                            <li>
+                              <span className="font-bold">LV04</span> ~
+                              Increases Sonic Effectiveness by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                78%
+                              </span>{" "}
+                              for{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              ally exept selt (
+                              <span className="text-[#4f86f7] font-bold">
+                                32
+                              </span>{" "}
+                              sec). If the target's EX-Skill can expend
+                              additional Cost, reduces the additional Cost by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              (up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              time use).
+                            </li>{" "}
+                            <li>
+                              <span className="font-bold">LV05</span> ~
+                              Increases Sonic Effectiveness by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                92.7%
+                              </span>{" "}
+                              for{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1
+                              </span>{" "}
+                              ally exept selt (
+                              <span className="text-[#4f86f7] font-bold">
+                                32
+                              </span>{" "}
+                              sec). If the target's EX-Skill can expend
+                              additional Cost, reduces the additional Cost by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              (up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                1{" "}
+                              </span>
+                              time use).
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+              )}
+
+              {/* Normal Skill */}
+              {activeSkillTab === "normal" && (
+                <div className="overflow-x-auto">
+                  <table className="w-[700px] border-2 border-[#63929c] rounded-lg">
+                    <thead>
+                      <tr>
+                        <th
+                          colSpan={2}
+                          className="relative bg-[#63929c] text-black px-4 py-3 text-sm font-bold"
+                        >
+                          <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            Let's have some fun!
+                          </span>
+                          <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            Skill Icons
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="w-1/4 bg-[#63929c] p-2">
+                          <img
+                            src="Blue-Archive/icons/WEAPON-BUFF.png"
+                            alt="Emergency First Aid icon"
+                            className="w-full h-auto rounded"
+                          />
+                        </td>
+                        <td className="w-3/4 border-l-2 border-[#63929c] p-4 text-xs">
+                          <ul className="list-disc list-inside space-y-1">
+                            {[
+                              18.4, 19.3, 20.3, 22.1, 23, 23.9, 25.8, 26.7,
+                              27.6, 29.5,
+                            ].map((dmg, idx) => {
+                              return (
+                                <li key={idx}>
+                                  <span className="font-bold">
+                                    LV{(idx + 1).toString().padStart(2, "0")}
+                                  </span>{" "}
+                                  ~ Increases ATK by{" "}
+                                  <span className="text-[#4f86f7] font-bold">
+                                    {dmg}%
+                                  </span>{" "}
+                                  every{" "}
+                                  <span className="text-[#4f86f7] font-bold">
+                                    35
+                                  </span>{" "}
+                                  sec (for{" "}
+                                  <span className="text-[#4f86f7] font-bold">
+                                    23
+                                  </span>{" "}
+                                  sec).
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {/* Passive Skill */}
+              {activeSkillTab === "passive" && (
+                <div className="overflow-x-auto">
+                  <table className="w-[600px] border-2 border-[#63929c] rounded-lg">
+                    <thead>
+                      <tr>
+                        <th
+                          colSpan={2}
+                          className="relative bg-[#63929c] text-black px-4 py-3 text-sm font-bold"
+                        >
+                          <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            Let's have some more fun!
+                          </span>
+                          <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            Skill Icons
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="w-1/4 bg-[#63929c] p-2">
+                          <img
+                            src="Blue-Archive/icons/STAT-BUFF.png"
+                            alt="Foreclosure Task Force President icon"
+                            className="w-full h-auto rounded"
+                          />
+                        </td>
+                        <td className="w-3/4 border-l-2 border-[#63929c] p-4 text-xs">
+                          <ul className="list-disc list-inside space-y-1">
+                            {[
+                              14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1,
+                              23.8, 26.6,
+                            ].map((def, i) => (
+                              <li key={i}>
+                                <span className="font-bold">
+                                  LV{(i + 1).toString().padStart(2, "0")}
+                                </span>{" "}
+                                ~ Increases MAX HP by{" "}
+                                <span className="text-[#63929c] font-bold">
+                                  {def}%
+                                </span>
+                                .
+                              </li>
+                            ))}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {/* Sub Skill */}
+              {activeSkillTab === "sub" && (
+                <div className="overflow-x-auto">
+                  <table className="w-[800px] border-2 border-[#63929c] rounded-lg">
+                    <thead>
+                      <tr>
+                        <th
+                          colSpan={2}
+                          className="relative bg-[#63929c] text-black px-4 py-3 text-sm font-bold"
+                        >
+                          <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            That's a bonus!
+                          </span>
+                          <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            Skill Icons
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="w-1/4 bg-[#63929c] p-2">
+                          <img
+                            src="Blue-Archive/icons/WEAPON-BUFF.png"
+                            alt="Expert Suppression icon"
+                            className="w-full h-auto rounded"
+                          />
+                        </td>
+                        <td className="w-3/4 border-l-2 border-[#63929c] p-4 text-xs">
+                          <ul className="list-disc list-inside space-y-1">
+                            {[
+                              20.1, 21.1, 22.1, 26.2, 27.2, 28.2, 32.2, 34.2,
+                              38.3,
+                            ].map((bar, i) => (
+                              <li key={i}>
+                                <span className="font-bold">
+                                  LV{(i + 1).toString().padStart(2, "0")}
+                                </span>{" "}
+                                ~ Increases ATK SPD by{" "}
+                                <span className="text-[#4f86f7] font-bold">
+                                  {bar}%
+                                </span>{" "}
+                                when using EX-Skills (
+                                <span className="text-[#4f86f7] font-bold">
+                                  30
+                                </span>{" "}
+                                sec).
+                              </li>
+                            ))}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {/* Skill Status Table (Tailwind) */}
+              <div className="overflow-x-auto mt-8">
+                <table className="w-full border-2 border-[#63929c] rounded-lg text-center">
+                  <thead>
+                    <tr>
+                      <th
+                        colSpan={5}
+                        className="bg-[#63929c] border border-[#63929c] text-black text-sm font-bold py-2 px-4 "
+                      >
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs">
+                            <a
+                              href="/wiki/Template:Skill_Status"
+                              className="hover:underline"
+                            >
+                              V
+                            </a>{" "}
+                            • T •{" "}
+                            <a
+                              href="https://bluearchive.fandom.com/wiki/Template:Skill_Status?action=edit"
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="hover:underline"
+                            >
+                              E
+                            </a>
+                          </span>
+                          <span>Skill Status (Hover Over)</span>
+                          <a
+                            href="/wiki/Status_Effect"
+                            className="text-xs text-yellow-300 hover:underline"
+                          >
+                            Status Effect
+                          </a>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      {["EX-Skill", "Normal", "Passive", "Sub", "UE"].map(
+                        (label) => (
+                          <th
+                            key={label}
+                            className="bg-[#63929c] text-black text-sm font-bold py-1"
+                          >
+                            {label}
+                          </th>
+                        )
+                      )}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-2 border-[#63929c] p-2 flex justify-center items-center">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_Enhance_Sonic.png"
+                          alt="Cross Icon"
+                          className="w-9 h-10 "
+                        />
+                        <img
+                          src="Blue-Archive/icons/Buff_-_Additional_Cost_Decrease.png"
+                          alt="Cross Icon"
+                          className="w-9 h-10 "
+                        />
+                      </td>
+                      <td className="border-2 border-[#63929c] p-2">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_Enhance_Sonic.png"
+                          alt="Cross Icon"
+                          className="w-9 h-10 mx-auto"
+                        />
+                      </td>
+                      <td className="border-2 border-[#63929c] p-2">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_HP.png"
+                          alt="Crit Buff Icon"
+                          className="w-9 h-10 mx-auto"
+                        />
+                      </td>
+                      <td className="border-2 border-[#63929c] p-2 flex justify-center items-center">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_ATK_SPD.png"
+                          alt="Crit Buff Icon"
+                          className="w-9 h-10 "
+                        />
+                        <img
+                          src="Blue-Archive/icons/Special_-_Departure_Signal_(Stage_1).png"
+                          alt="Red"
+                          className="w-9 h-10 "
+                        />
+                        <img
+                          src="Blue-Archive/icons/Special_-_Departure_Signal_(Stage_2).png"
+                          alt="Yellow"
+                          className="w-9 h-10 "
+                        />
+                        <img
+                          src="Blue-Archive/icons/Special_-_Departure_Signal_(Stage_3).png"
+                          alt="Green"
+                          className="w-9 h-10 "
+                        />
+                      </td>
+                      <td className="border-2 border-[#63929c] p-2">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_Buff_Duration_Extension.png"
+                          alt="Attack Buff Icon"
+                          className="w-9 h-10 mx-auto"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            {/* Other Skills Table */}
-           
+          </section>
+
+          {/* EX-Skill Table Section */}
+          <h3
+            className="text-[#3e7af2] text-xl font-bold ml-3 mt-8"
+            id="growth-material"
+          >
+            Growth Material
+          </h3>
+          <div className="mt-10">
+            {/* Table Header with tabs */}
+            <div className="flex w-full">
+              <button
+                className={`w-1/2 ${
+                  activeSkillTab === "ex"
+                    ? "bg-[#63929c] text-white"
+                    : "bg-gray-700 text-gray-300"
+                } text-center py-2 font-bold hover:bg-gray-600 transition-colors`}
+                onClick={() => setActiveSkillTab("ex")}
+              >
+                EX-Skill
+              </button>
+              <button
+                className={`w-1/2 ${
+                  activeSkillTab === "normal"
+                    ? "bg-[#63929c] text-white"
+                    : "bg-gray-700 text-gray-300"
+                } text-center py-2 font-bold hover:bg-gray-600 transition-colors`}
+                onClick={() => setActiveSkillTab("normal")}
+              >
+                Growth Material
+              </button>
+            </div>
+            {activeSkillTab === "normal" && (
+              <div className="wds-tab__content wds-is-current">
+                <table className="w-full text-center rounded-md border-2 border-[#63929c]">
+                  <thead>
+                    <tr className="bg-[#63929c] text-black">
+                      <th colSpan={7} className="font-bold py-2">
+                        Other-Skills (Normal / Passive / Sub)
+                        <span className="float-left text-xs ml-2">
+                          <a
+                            href="/wiki/Template:Detailed_Growth_Material"
+                            title="Template:Detailed Growth Material"
+                          >
+                            V • T •{" "}
+                          </a>
+                          <a
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="text"
+                            href="https://bluearchive.fandom.com/wiki/Detailed_Growth_Material?action=edit"
+                          >
+                            E
+                          </a>
+                        </span>
+                        <span className="float-right mr-2 text-yellow-300">
+                          <a
+                            href="/wiki/Growth_Material"
+                            className="mw-redirect"
+                            title="Growth Material"
+                          >
+                            Growth Material
+                          </a>
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th
+                        rowSpan={3}
+                        className="bg-[#63929c] text-black font-bold w-2/5"
+                      >
+                        <div className="relative inline-block">
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/WEAPON-BUFF.png"
+                              alt=""
+                              className="w-24 h-24"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                      <th className="bg-[#63929c] text-black font-bold w-1/12">
+                        LV02
+                      </th>
+                      <td className="border-2 border-[#63929c] w-1/12">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x5
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c] w-1/12"></td>
+                      <td className="border-2 border-[#63929c] w-1/12"></td>
+                      <td className="border-2 border-[#63929c] w-1/12"></td>
+                      <th className="bg-[#63929c] text-black font-bold w-1/12">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x5000
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        LV03
+                      </th>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x8
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x7500
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        LV04
+                      </th>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x5
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x12
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x3
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Rohonc_0.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x60K
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        rowSpan={3}
+                        className="bg-[#63929c] text-black font-bold"
+                      >
+                        <div className="relative inline-block">
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/STAT-BUFF.png"
+                              alt=""
+                              className="w-24 h-24"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        LV05
+                      </th>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x8
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x3
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Rohonc_1.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x14
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Nebra_0.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x90K
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        LV06
+                      </th>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x5
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x12
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x8
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Rohonc_1.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x20
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Nebra_0.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x300K
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        LV07
+                      </th>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x8
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x2
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Rohonc_2.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x19
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Nebra_1.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x450K
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        rowSpan={3}
+                        className="bg-[#63929c] text-black font-bold"
+                      >
+                        <div className="relative inline-block">
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/WEAPON-BUFF.png"
+                              alt=""
+                              className="w-24 h-24"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        LV08
+                      </th>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x8
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_3.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x12
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x6
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Rohonc_3.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x11
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Nebra_2.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x1.5M
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        LV09
+                      </th>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x12
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Millennium_Skill_Book_3.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x9
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Rohonc_3.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x14
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Nebra_2.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x2.4M
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        LV10
+                      </th>
+                      <td className="border-2 border-[#63929c]">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x1
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/icons/Ultimate_Skill_Book.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <td className="border-2 border-[#63929c]"></td>
+                      <th className="bg-[#63929c] text-black font-bold">
+                        <div className="relative inline-block">
+                          <div className="absolute right-0 bottom-0 text-white font-bold text-xs text-shadow">
+                            x4M
+                          </div>
+                          <div>
+                            <img
+                              src="Blue-Archive/Gold.png"
+                              alt=""
+                              className="w-12 h-10"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+            {/* Table Content */}
+            <div className="flex w-full">
+              {/* Right side - Material grid */}
+              <section className="mt-8 mb-8 overflow-x-auto">
+                <table className="w-[1250px] border-separate border-spacing-y-2 border-2 border-[#63929c] rounded-lg text-center">
+                  <thead>
+                    <tr>
+                      <th className="bg-[#63929c] text-black font-bold py-2 px-3">
+                        EX-Skill
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td
+                        rowSpan={7}
+                        className="border bg-[#63929c] border-[#63929c] rounded-lg  align-top"
+                      >
+                        <HikariEX />
+                      </td>
+                    </tr>
+                    <tr>
+                      {/* Growth‐Material Icons */}
+                      <td className="border bg-[#63929c] border-[#63929c] px-2 py-2">
+                        <span className="text-black font-bold">LV02</span>
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_0.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x12
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Rohonc_0.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x14
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img src="/" alt="" className="hidden w-14 h-8 mr-1" />
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img src="/" alt="" className="hidden w-14 h-8 mr-1" />
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/Gold.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x80K
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border bg-[#63929c] border-[#63929c] px-2 py-2">
+                        <span className="text-black font-bold">LV03</span>
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_1.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x12
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_0.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x18
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Rohonc_1.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x12
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Nebra_0.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x33
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/Gold.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x500K
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border bg-[#63929c] border-[#63929c] px-2 py-2">
+                        <span className="text-black font-bold">LV04</span>
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_2.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x12
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_1.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x18
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Rohonc_2.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x8
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Nebra_1.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x28
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/Gold.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x3M
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border bg-[#63929c] border-[#63929c] px-2 py-2">
+                        <span className="text-black font-bold">LV05</span>
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_3.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x8
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_2.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x18
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Rohonc_3.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x11
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/icons/Nebra_2.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x23
+                      </td>
+                      <td className="border border-[#63929c] px-2 py-2 font-extrabold">
+                        <img
+                          src="/Blue-Archive/Gold.png"
+                          alt=""
+                          className="inline w-14 h-12 mr-1 "
+                        />
+                        x10M
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </div>
           </div>
+
+          {/* Bond Section */}
+          <section id="bond" className="mt-8 ml-3">
+            <h3 className="text-[#3e7af2] text-xl font-bold">Bond</h3>
+
+            <table className="w-full border-2 border-[#63929c] rounded-lg text-center mt-4">
+              <thead>
+                <tr>
+                  <th
+                    colSpan={4}
+                    className="relative bg-[#63929c] text-black font-bold px-4 py-1 "
+                  >
+                    Affection Rank Bonus
+                    <span className="absolute left-4 top-2 text-xs">
+                      <a href="/wiki/Template:Bond">V</a> • T •{" "}
+                      <a
+                        href="https://bluearchive.fandom.com/wiki/Bond?action=edit"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        E
+                      </a>
+                    </span>
+                    <span className="absolute right-4 top-2 text-xs text-yellow-300">
+                      <a href="/wiki/Affection">Affection</a>
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-1">
+                    Bunny Bunny Carrot Carrot
+                  </th>
+                  <td colSpan={3} className="border border-[#63929c] px-2 py-1">
+                    <audio
+                      controls
+                      className="w-full max-w-xs mx-auto h-8"
+                      src="https://static.wikia.nocookie.net/blue-archive/images/5/59/Shooting_Stars.ogg/revision/latest?cb=20210309192025"
+                    >
+                      Your browser does not support the <code>audio</code>{" "}
+                      element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    Memorial Lobby
+                  </th>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    <div className="flex items-center justify-center space-x-1">
+                      <img
+                        src="/Blue-Archive/icons/Bond.png"
+                        alt="Bond"
+                        width={20}
+                        height={19}
+                      />
+                      <img
+                        src="/Blue-Archive/icons/Blue_Font_2.png"
+                        alt="Bond Level"
+                        width={18}
+                        height={17}
+                      />
+                    </div>
+                  </th>
+                  <th
+                    colSpan={2}
+                    className="bg-[#63929c] text-black font-bold px-2 py-2"
+                  >
+                    Total Stats ~ ATK+182 / HP+1190
+                  </th>
+                </tr>
+
+                {/* Live2D & Icon column */}
+                <tr>
+                  <td
+                    rowSpan={7}
+                    className="border border-[#63929c] rounded-lg p-2 align-top"
+                  >
+                    <HikariLive2D />
+                  </td>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    LV02 – 05
+                  </th>
+                  <td className="border border-[#63929c] text-left px-2 py-2">
+                    ATK+2
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    LV06 – 10
+                  </th>
+                  <td className="border border-[#63929c] text-left px-2 py-2">
+                    ATk+3
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    LV11 – 15
+                  </th>
+                  <td className="border border-[#63929c] text-left px-2 py-2">
+                    ATK+4 / HP+58
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    LV16 – 20
+                  </th>
+                  <td className="border border-[#63929c] text-left px-2 py-2">
+                    ATK+5 / HP+69
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    LV21 – 30
+                  </th>
+                  <td className="border border-[#63929c] text-left px-2 py-2">
+                    ATK+1 / HP+11
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    LV31 – 40
+                  </th>
+                  <td className="border border-[#63929c] text-left px-2 py-2">
+                    ATK+2 / HP+17
+                  </td>
+                </tr>
+                <tr>
+                  <th className="bg-[#63929c] text-black font-bold px-2 py-2">
+                    LV41 – 50
+                  </th>
+                  <td className="border border-[#63929c] text-left px-2 py-2">
+                    ATK+3 / HP+28
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </div>
       </main>
 

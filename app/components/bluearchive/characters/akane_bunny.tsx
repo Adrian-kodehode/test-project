@@ -320,9 +320,9 @@ export const AkaneBunny = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Toki has hip-length pale blonde hair with a crown-styled braid,
-                interspersed with random blue strands. She has sky blue eyes and
-                a big navy blue bow behind her head.
+                Akane is a well-endowed young woman. She has ash blonde hair
+                that is messy and reaches almost to her knees. Her eyes are the
+                same color as her hair.
               </p>
             </div>
             <h4
@@ -883,13 +883,14 @@ export const AkaneBunny = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
-              Akane wears a shiny black bunny suit with a white collar, sky blue
-              bow tie and shiny black bunny ears, along with matching white
-              sleeve cuffs and gloves. She also wears fishnet tights and black
-              high heels.
-            </p>
-            <p className="mt-5">
-              In addition, there's a "02" tattoo on Akane's left shoulder.
+              Akane wears a white velvet bunny outfit, the bunny outfit don't
+              have sleeves and its mostly opened at the upper part. she have
+              white elegant gloves and black glasses. Over the outfit she wears
+              a oversized, totally unbutton thin, brown plaid jacket, the
+              sleeves of the jacket reach just the elbow. Additionally as
+              accesories she wears a little blue ribbon at her detached collar
+              and she has a white headband with bunny-like white ears. She wears
+              white heels
             </p>
           </div>
           <h4
@@ -2176,7 +2177,7 @@ export const AkaneBunny = () => {
               <tbody>
                 <tr>
                   <th className="bg-[#4f86f7] text-black font-bold px-2 py-1">
-                    Shooting Stars
+                    Aira
                   </th>
                   <td colSpan={3} className="border border-[#4f86f7] px-2 py-1">
                     <audio
@@ -2202,7 +2203,7 @@ export const AkaneBunny = () => {
                         height={19}
                       />
                       <img
-                        src="/Blue-Archive/icons/Blue_Font_9.png"
+                        src="/Blue-Archive/icons/Blue_Font_6.png"
                         alt="Bond Level"
                         width={18}
                         height={17}
@@ -2245,7 +2246,7 @@ export const AkaneBunny = () => {
                     LV11 – 15
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+5 / HP+55
+                    ATK+6 / HP+37
                   </td>
                 </tr>
                 <tr>
@@ -2253,7 +2254,7 @@ export const AkaneBunny = () => {
                     LV16 – 20
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+7 / HP+67
+                    ATK+7 / HP+45
                   </td>
                 </tr>
                 <tr>
@@ -2261,7 +2262,7 @@ export const AkaneBunny = () => {
                     LV21 – 30
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+2 / HP+12
+                    ATK+2 / HP+8
                   </td>
                 </tr>
                 <tr>
@@ -2269,7 +2270,7 @@ export const AkaneBunny = () => {
                     LV31 – 40
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+3 / HP+17
+                    ATK+3 / HP+12
                   </td>
                 </tr>
                 <tr>
@@ -2277,7 +2278,7 @@ export const AkaneBunny = () => {
                     LV41 – 50
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+4 / HP+29
+                    ATK+5 / HP+20
                   </td>
                 </tr>
               </tbody>
