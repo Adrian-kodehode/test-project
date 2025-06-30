@@ -127,6 +127,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/bluearchivehome" &&
           location.pathname !== "/students" &&
           location.pathname !== "/hikari" &&
+          location.pathname !== "/nozomi" &&
           location.pathname !== "/toki_bunny" &&
           location.pathname !== "/hoshino" &&
           location.pathname !== "/hoshino_swimsuit" &&
@@ -231,6 +232,7 @@ export default function App() {
         location.pathname !== "/live" &&
         location.pathname !== "/students" &&
         location.pathname !== "/hikari" &&
+        location.pathname !== "/nozomi" &&
         location.pathname !== "/toki_bunny" &&
         location.pathname !== "/hoshino" &&
         location.pathname !== "/hoshino_swimsuit" &&

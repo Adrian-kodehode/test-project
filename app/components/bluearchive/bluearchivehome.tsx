@@ -322,14 +322,18 @@ export const BlueArchiveHome = () => {
             </section> */}
           {/* Fandom Slider - Improved Styling */}
           {/* Slideshow - replaces static fandom slider */}
-          <section className="w-full max-w-3xl mx-auto my-8">
-            <img
-              src="/Blue-Archive/images/1.5th_Anniversary_Illustration_1.png"
-              alt="Blue Archive Promo"
-              className="rounded-lg w-full"
-              style={{ display: "block" }}
-            />
-          </section>
+                <section className="max-w-full rounded-lg p-4 mb-2 flex flex-col items-center justify-center mx-auto">
+                <div className="w-full h-[450px] flex items-center justify-center">
+                  <Slideshow
+                  images={[
+                    "/Blue-Archive/images/【ブルアカ】5th_PV.jpg",
+                    "/Blue-Archive/images/【ブルアカTVアニメ】ティザー_PV.jpg",
+                    "/Blue-Archive/images/1.5th_Anniversary_Illustration_1.png",
+                    "/Blue-Archive/images/Arona_Room_2.png",
+                  ]}
+                  />
+                </div>
+                </section>
           {/* "/Blue-Archive/images/【ブルアカ】5th_PV.jpg",
           "/Blue-Archive/images/【ブルアカTVアニメ】ティザー_PV.jpg",
           "/Blue-Archive/images/1.5th_Anniversary_Illustration_1.png",

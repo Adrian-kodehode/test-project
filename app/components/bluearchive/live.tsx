@@ -2107,9 +2107,9 @@ export const Live = () => {
                           ) / 貝原 怜奈（ハレ役）
                         </li>
                         <li>
-                          Gotou Ayasa (O
+                          Gotou Ayasa (
                           <a href="#" className="text-[#357ff3]">
-                            ono Tsukuyo
+                            Oono Tsukuyo
                           </a>{" "}
                           ) / 後藤 彩佐（ツクヨ役）
                         </li>

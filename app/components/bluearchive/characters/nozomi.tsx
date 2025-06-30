@@ -1,15 +1,15 @@
 import React, { useEffect, useState, memo } from "react";
 
-const HikariLive2D = memo(() => (
+const NozomiLive2D = memo(() => (
   <div className="flex flex-col space-y-2">
     <img
-      src="Blue-Archive/live2d/Hikari_Icon_2.png"
+      src="Blue-Archive/live2d/Nozomi_Icon_2.png"
       alt="Hoshino Live2D"
       className="w-full rounded-lg mx-auto "
     />
   </div>
 ));
-const HikariEX = memo(() => (
+const NozomiEX = memo(() => (
   <div className="flex flex-col space-y-2">
     <img
       src="Blue-Archive/icons/CIRCLE.png"
@@ -19,7 +19,7 @@ const HikariEX = memo(() => (
   </div>
 ));
 
-export const Hikari = () => {
+export const Nozomi = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [selectedTab, setSelectedTab] = useState("icon");
   const [selectedTabStats, setSelectedTabStats] = useState("main");
@@ -81,7 +81,7 @@ export const Hikari = () => {
       </header>
       <main className="flex-1 mt-10 mb-10 w-[1200px] max-w-[98vw] bg-black bg-opacity-80 rounded-lg p-4 text-white shadow-lg mx-auto ">
         <h2 className="text-4xl mt-10 mb-10 ml-5 text-[#06bbfa]">
-          Tachibana Hikari
+          Tachibana Nozomi
         </h2>
         <div className="flex justify-center items-center scale-100 ">
           <a
@@ -118,17 +118,18 @@ export const Hikari = () => {
         <div className="flex flex-row gap-8">
           {/* Main content (left) */}
           <div className="flex-1 mt-5 ml-3">
-            <div className="bg-[#63929C] w-[400px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 rounded">
+            <div className="bg-[#63929C] w-[400px] left-20 text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 rounded">
               <span className="block text-center w-full italic">
-                “ Construction is smooth, but <br /> administration is... Meh. ”
+                “ Pyahaha~ Don't mind don't mind. We'll never meet the deadline!
+                Y'know what they say? Time is money. ”
               </span>
               <br />
               <span className="absolute right-10 bottom-1 text-xs italic">
-                ~ Tachibana Hikari
+                ~ Tachibana Nozomi
               </span>
             </div>
             <p className="mt-5 max-w-[600px]">
-              <strong>Tachibana Hikari</strong> (橘ヒカリ) is one of the{" "}
+              <strong>Tachibana Nozomi</strong> (橘ヒカリ)) is one of the{" "}
               <a href="#" className="text-[#357ff3] hover:underline">
                 students
               </a>{" "}
@@ -278,10 +279,10 @@ export const Hikari = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Hikari is a member of the Central Control Center, the student
+                Nozomi is a member of the Central Control Center, the student
                 council of Highlander. Despite her position, she tends not to
-                take her work seriously and is often causing trouble alongside
-                her twin sister{" "}
+                take her work seriously and is often causing trouble with her
+                twin sister{" "}
                 <a
                   href="/nozomi"
                   className="text-[#3e7af2] hover:hover:underline"
@@ -299,17 +300,16 @@ export const Hikari = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Hikari typically maintains a polite and calm demeanor, being
-                soft-spoken. She usually likes being with her sister,{" "}
+                Nozomi is the complete opposite of{" "}
                 <a
                   href="/nozomi"
                   className="text-[#3e7af2] hover:hover:underline"
                 >
                   Tachibana Nozomi
                 </a>
-                , who is her complete counterpart. Hikari doesn't really express
-                herself, sometimes trying her best to follow Nozomi's behavior,
-                mostly causing troubles.
+                . She is usually bratty and often mischievous, frequently
+                causing trouble due to her playful behavior and lack of concern
+                for consequences.
               </p>
             </div>
             <h3
@@ -320,14 +320,11 @@ export const Hikari = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Hikari is a petite young girl with hip-length, wavy light lime
-                colored hair, with two waist-length hair strands. She has golden
-                eyes and elf-like pointed ears. She has a black, heart-spaded
-                tail, similar to{" "}
-                <a href="#" className="text-[#3e7af2] hover:hover:underline">
-                  Tanga Ibuki
-                </a>
-                .
+                Nozomi is small in stature, she has white skin and pointed ears,
+                with a triangular golden earring on her left ear. Her eyes are
+                golden in color, with green hair tied to two pigtails that grow
+                more on the sides. She has bangs on the center of her forehead
+                and a thin black spaded tail.
               </p>
             </div>
             <h4
@@ -338,9 +335,9 @@ export const Hikari = () => {
             </h4>
             <div className="ml-3 mt-2">
               <p>
-                She has a circular halo with greenish color, featuring a
-                triangular tip on the left side and a hollow arrowhead partially
-                inside the circle on the right. Her halo is a flipped version of{" "}
+                She has a circular greenish halo with a triangular tips on the
+                right and a hollow arrowhead partially inside the circle on the
+                left. Her halo is a horizontally flipped version of{" "}
                 <a
                   href="/nozomi"
                   className="text-[#3e7af2] hover:hover:underline"
@@ -357,10 +354,10 @@ export const Hikari = () => {
           {/* Aside (right) */}
           <aside className="bg-[#63929C] border-2 border-[#357ff3] rounded-lg shadow-lg p-6 mt-5 w-full max-w-xs mb-8 mr-5">
             <h2 className="text-2xl font-bold text-[#414360] mb-2 text-center">
-              Tachibana Hikari
+              Tachibana Nozomi
             </h2>
             <div className="text-center text-sm text-[#414360] font-bold mb-4">
-              橘ヒカリ
+              橘ノゾミ
             </div>
             <section>
               <div className="flex justify-center">
@@ -395,16 +392,16 @@ export const Hikari = () => {
                     <img
                       src={
                         selectedTab === "icon"
-                          ? "/Blue-Archive/characters/Hikari_Icon.png"
+                          ? "/Blue-Archive/characters/Nozomi_Icon.png"
                           : selectedTab === "portrait"
-                          ? "/Blue-Archive/characters/Hikari_Portrait.png"
+                          ? "/Blue-Archive/characters/Nozomi_Portrait.png"
                           : selectedTab === "sprite"
-                          ? "/Blue-Archive/characters/Hikari_Sprite.png"
+                          ? "/Blue-Archive/characters/Nozomi_Sprite.png"
                           : selectedTab === "halo"
-                          ? "/Blue-Archive/characters/Hikari_Halo.png"
-                          : "/Blue-Archive/characters/Hikari_Icon.png"
+                          ? "/Blue-Archive/characters/Nozomi_Halo.png"
+                          : "/Blue-Archive/characters/Nozomi_Icon.png"
                       }
-                      alt={`Hikari ${
+                      alt={`Nozomi ${
                         selectedTab.charAt(0).toUpperCase() +
                         selectedTab.slice(1)
                       }`}
@@ -449,7 +446,7 @@ export const Hikari = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Blue_Font_6.png"
+                          src="/Blue-Archive/icons/Blue_Font_2.png"
                           alt="Bond Level"
                           width={16}
                           height={16}
@@ -484,8 +481,8 @@ export const Hikari = () => {
                     <td className="bg-[#414360] px-2 py-2  text-center align-middle w-1/3">
                       <div className="flex flex-col items-center justify-center">
                         <img
-                          src="/Blue-Archive/icons/Supporter.png"
-                          alt="Supporter"
+                          src="/Blue-Archive/icons/Attacker (1).png"
+                          alt="Attacker"
                           width={20}
                           height={20}
                           className="inline-block mb-1"
@@ -617,7 +614,7 @@ export const Hikari = () => {
                     {/* Equipment 1: Gloves */}
                     <td className="bg-[#414360] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Gloves_T1_Icon.png"
+                        src="/Blue-Archive/icons/Hat_T1_Icon.png"
                         alt="Gloves T1 Icon"
                         width={56}
                         height={44}
@@ -637,7 +634,7 @@ export const Hikari = () => {
                     {/* Equipment 3: Charm */}
                     <td className="bg-[#414360] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Charm_T1_Icon.png"
+                        src="/Blue-Archive/icons/Watch_T1_Icon.png"
                         alt="Charm T1 Icon"
                         width={56}
                         height={44}
@@ -691,11 +688,11 @@ export const Hikari = () => {
                   <div className="bg-[#414360] grid grid-cols-4 gap-2 pt-3 pb-2 mb-2">
                     <div className="flex flex-col items-center">
                       <span className="text-xs text-gray-200">HP</span>
-                      <span className="font-bold text-lg text-white">2068</span>
+                      <span className="font-bold text-lg text-white">2088</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs text-gray-200">ATK</span>
-                      <span className="font-bold text-lg text-white">291</span>
+                      <span className="font-bold text-lg text-white">360</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs text-gray-200">DEF</span>
@@ -703,7 +700,7 @@ export const Hikari = () => {
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs text-gray-200">HEAL</span>
-                      <span className="font-bold text-lg text-white">1416</span>
+                      <span className="font-bold text-lg text-white">1756</span>
                     </div>
                   </div>
                   {/* Level 100 Row 1 */}
@@ -718,16 +715,16 @@ export const Hikari = () => {
                   {/* Level 100 Stats 1 */}
                   <div className="bg-[#414360] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">23957</span>
+                      <span className="font-bold text-white">24181</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">2904</span>
+                      <span className="font-bold text-white">3599</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">96</span>
+                      <span className="font-bold text-white">97</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">4250</span>
+                      <span className="font-bold text-white">5269</span>
                     </div>
                   </div>
                   {/* Level 100 Row 2 (4 images) */}
@@ -751,16 +748,16 @@ export const Hikari = () => {
                   {/* Level 100 Stats 2 */}
                   <div className="bg-[#414360] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">25882</span>
+                      <span className="font-bold text-white">26124</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">3237</span>
+                      <span className="font-bold text-white">4013</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">96</span>
+                      <span className="font-bold text-white">97</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">4685</span>
+                      <span className="font-bold text-white">5907</span>
                     </div>
                   </div>
                   {/* Level 100 Row 3 (5 images) */}
@@ -784,16 +781,16 @@ export const Hikari = () => {
                   {/* Level 100 Stats 3 */}
                   <div className="bg-[#414360] grid grid-cols-4 gap-2 mb-4 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">28877</span>
+                      <span className="font-bold text-white">29147</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">3642</span>
+                      <span className="font-bold text-white">4514</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">96</span>
+                      <span className="font-bold text-white">97</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-white">5227</span>
+                      <span className="font-bold text-white">6480</span>
                     </div>
                   </div>
                   {/* Profile Dropdown */}
@@ -818,7 +815,7 @@ export const Hikari = () => {
                     <div className="mt-2 text-sm text-white">
                       {/* Profile content here */}
                       <p>
-                        Hikari is a student at Highlander Railroad Academy,
+                        Nozomi is a student at Highlander Railroad Academy,
                         known for her energetic personality and support role in
                         combat.
                       </p>
@@ -878,10 +875,10 @@ export const Hikari = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
-              Her outfit is a dark blue machinist's uniform, a dark blue skirt
-              with a blue stripe at its end tucked in, and a waist-attached
-              belt. She also wears a train conductor hat and white leggings,
-              mixed with dark blue boots and white gloves on both hands.
+              Her uniform is a dark blue machinist's uniform, the upper part of
+              the uniform exposes her abdomen and navel, a cap of the same color
+              with gold, white and blue tones, and white leggings. Dark blue
+              boots and white gloves on both hands.
             </p>
           </div>
           <h4
@@ -933,8 +930,8 @@ export const Hikari = () => {
             <div className="mt-4 space-y-6">
               {/* EX Skill */}
               {activeSkillTab === "ex" && (
-                <div className="overflow-x-auto rounded">
-                  <table className="w-[900px] border-2 border-[#63929c] rounded-lg">
+                <div className="flex overflow-x-auto rounded">
+                  <table className="w-[990px] border-2 border-[#63929c] rounded-lg">
                     <thead>
                       <tr>
                         <th
@@ -942,10 +939,10 @@ export const Hikari = () => {
                           className="relative bg-[#63929c] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            New Year's Time
+                            Booster, On!
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
-                            Cost: 2
+                            Cost: 4
                           </span>
                         </th>
                       </tr>
@@ -954,7 +951,7 @@ export const Hikari = () => {
                       <tr>
                         <td className="w-1/4 bg-[#63929c] p-2">
                           <img
-                            src="Blue-Archive/icons/HIKARI_EX-SKILL.png"
+                            src="Blue-Archive/icons/NOZOMI_EX-SKILL.png"
                             alt="Sealess: Ishbóshet icon"
                             className="w-full h-auto rounded"
                           />
@@ -962,129 +959,174 @@ export const Hikari = () => {
                         <td className="w-3/4 border-l-2 border-[#63929c] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             <li>
-                              <span className="font-bold">LV01</span> ~
-                              Increases Sonic Effectiveness by{" "}
+                              <span className="font-bold">LV01</span> ~ Deals{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                48.8%
+                                550%
                               </span>{" "}
-                              for{" "}
+                              of ATk AS DMG to{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 1
                               </span>{" "}
-                              ally exept selt (
+                              enemy and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                32
+                                77.7%
                               </span>{" "}
-                              sec). If the target's EX-Skill can expend
-                              additional Cost, reduces the additional Cost by{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                all other{" "}
+                              </span>
                               <span className="text-[#4f86f7] font-bold">
                                 1{" "}
                               </span>
-                              (up to{" "}
+                              enemies within a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                1{" "}
+                                straight-line
+                              </span>.{" "}
+                               Can be used by consuming up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                2{" "}
                               </span>
-                              time use).
+                              more Cost. DMG increases by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                25%
+                              </span>{" "}
+                              per Cost.
                             </li>
                             <li>
-                              <span className="font-bold">LV02</span> ~
-                              Increases Sonic Effectiveness by{" "}
+                              <span className="font-bold">LV02</span> ~ Deals{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                56.1%
+                                632%
                               </span>{" "}
-                              for{" "}
+                              of ATk AS DMG to{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 1
                               </span>{" "}
-                              ally exept selt (
+                              enemy and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                32
+                                89.4%
                               </span>{" "}
-                              sec). If the target's EX-Skill can expend
-                              additional Cost, reduces the additional Cost by{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                all other{" "}
+                              </span>
                               <span className="text-[#4f86f7] font-bold">
                                 1{" "}
                               </span>
-                              (up to{" "}
+                              enemies within a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                1{" "}
+                                straight-line{" "}
                               </span>
-                              time use).
-                            </li>{" "}
+                              . Can be used by consuming up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                2{" "}
+                              </span>
+                              more Cost. DMG increases by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                25%
+                              </span>{" "}
+                              per Cost.
+                            </li>
                             <li>
-                              <span className="font-bold">LV03</span> ~
-                              Increases Sonic Effectiveness by{" "}
+                              <span className="font-bold">LV03</span> ~ Deals{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                70.7%
+                                797%
                               </span>{" "}
-                              for{" "}
+                              of ATk AS DMG to{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 1
                               </span>{" "}
-                              ally exept selt (
+                              enemy and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                32
+                                112%
                               </span>{" "}
-                              sec). If the target's EX-Skill can expend
-                              additional Cost, reduces the additional Cost by{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                all other{" "}
+                              </span>
                               <span className="text-[#4f86f7] font-bold">
                                 1{" "}
                               </span>
-                              (up to{" "}
+                              enemies within a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                1{" "}
+                                straight-line{" "}
                               </span>
-                              time use).
-                            </li>{" "}
+                              . Can be used by consuming up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                2{" "}
+                              </span>
+                              more Cost. DMG increases by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                25%
+                              </span>{" "}
+                              per Cost.
+                            </li>
                             <li>
-                              <span className="font-bold">LV04</span> ~
-                              Increases Sonic Effectiveness by{" "}
+                              <span className="font-bold">LV04</span> ~ Deals{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                78%
+                                880%
                               </span>{" "}
-                              for{" "}
+                              of ATk AS DMG to{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 1
                               </span>{" "}
-                              ally exept selt (
+                              enemy and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                32
+                                124%
                               </span>{" "}
-                              sec). If the target's EX-Skill can expend
-                              additional Cost, reduces the additional Cost by{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                all other{" "}
+                              </span>
                               <span className="text-[#4f86f7] font-bold">
                                 1{" "}
                               </span>
-                              (up to{" "}
+                              enemies within a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                1{" "}
+                                straight-line{" "}
                               </span>
-                              time use).
-                            </li>{" "}
+                              . Can be used by consuming up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                2{" "}
+                              </span>
+                              more Cost. DMG increases by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                25%
+                              </span>{" "}
+                              per Cost.
+                            </li>
                             <li>
-                              <span className="font-bold">LV05</span> ~
-                              Increases Sonic Effectiveness by{" "}
+                              <span className="font-bold">LV05</span> ~ Deals{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                92.7%
+                                1045%
                               </span>{" "}
-                              for{" "}
+                              of ATk AS DMG to{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 1
                               </span>{" "}
-                              ally exept selt (
+                              enemy and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                32
+                                147%
                               </span>{" "}
-                              sec). If the target's EX-Skill can expend
-                              additional Cost, reduces the additional Cost by{" "}
+                              of ATK as DMG to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                all other{" "}
+                              </span>
                               <span className="text-[#4f86f7] font-bold">
                                 1{" "}
                               </span>
-                              (up to{" "}
+                              enemies within a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                1{" "}
+                                straight-line{" "}
                               </span>
-                              time use).
+                              . Can be used by consuming up to{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                2{" "}
+                              </span>
+                              more Cost. DMG increases by{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                25%
+                              </span>{" "}
+                              per Cost.
                             </li>
                           </ul>
                         </td>
@@ -1097,7 +1139,7 @@ export const Hikari = () => {
               {/* Normal Skill */}
               {activeSkillTab === "normal" && (
                 <div className="overflow-x-auto">
-                  <table className="w-[700px] border-2 border-[#63929c] rounded-lg">
+                  <table className="w-[800px] border-2 border-[#63929c] rounded-lg">
                     <thead>
                       <tr>
                         <th
@@ -1105,7 +1147,7 @@ export const Hikari = () => {
                           className="relative bg-[#63929c] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            Let's have some fun!
+                            Come This Way~
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1117,7 +1159,7 @@ export const Hikari = () => {
                       <tr>
                         <td className="w-1/4 bg-[#63929c] p-2">
                           <img
-                            src="Blue-Archive/icons/WEAPON-BUFF.png"
+                            src="Blue-Archive/icons/BULLET_TYPE_BUFF.png"
                             alt="Emergency First Aid icon"
                             className="w-full h-auto rounded"
                           />
@@ -1125,25 +1167,25 @@ export const Hikari = () => {
                         <td className="w-3/4 border-l-2 border-[#63929c] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              18.4, 19.3, 20.3, 22.1, 23, 23.9, 25.8, 26.7,
-                              27.6, 29.5,
+                              28.3, 29.8, 31.2, 36.9, 38.3, 39.7, 45.4, 46.8,
+                              48.2, 53.9,
                             ].map((dmg, idx) => {
                               return (
                                 <li key={idx}>
                                   <span className="font-bold">
                                     LV{(idx + 1).toString().padStart(2, "0")}
                                   </span>{" "}
-                                  ~ Increases ATK by{" "}
+                                  ~ Increases Sonic Effectiveness by{" "}
                                   <span className="text-[#4f86f7] font-bold">
                                     {dmg}%
                                   </span>{" "}
                                   every{" "}
                                   <span className="text-[#4f86f7] font-bold">
-                                    35
+                                    12
                                   </span>{" "}
-                                  sec (for{" "}
+                                  Normal Attacks (
                                   <span className="text-[#4f86f7] font-bold">
-                                    23
+                                    26
                                   </span>{" "}
                                   sec).
                                 </li>
@@ -1168,7 +1210,7 @@ export const Hikari = () => {
                           className="relative bg-[#63929c] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            Let's have some more fun!
+                            Rapid Preps
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1180,7 +1222,7 @@ export const Hikari = () => {
                       <tr>
                         <td className="w-1/4 bg-[#63929c] p-2">
                           <img
-                            src="Blue-Archive/icons/STAT-BUFF.png"
+                            src="Blue-Archive/icons/WEAPON-BUFF.png"
                             alt="Foreclosure Task Force President icon"
                             className="w-full h-auto rounded"
                           />
@@ -1195,7 +1237,7 @@ export const Hikari = () => {
                                 <span className="font-bold">
                                   LV{(i + 1).toString().padStart(2, "0")}
                                 </span>{" "}
-                                ~ Increases MAX HP by{" "}
+                                ~ Increases ATK by{" "}
                                 <span className="text-[#63929c] font-bold">
                                   {def}%
                                 </span>
@@ -1213,7 +1255,7 @@ export const Hikari = () => {
               {/* Sub Skill */}
               {activeSkillTab === "sub" && (
                 <div className="overflow-x-auto">
-                  <table className="w-[800px] border-2 border-[#63929c] rounded-lg">
+                  <table className="w-[950px] border-2 border-[#63929c] rounded-lg">
                     <thead>
                       <tr>
                         <th
@@ -1221,7 +1263,7 @@ export const Hikari = () => {
                           className="relative bg-[#63929c] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            That's a bonus!
+                            Departure Go!
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1233,7 +1275,7 @@ export const Hikari = () => {
                       <tr>
                         <td className="w-1/4 bg-[#63929c] p-2">
                           <img
-                            src="Blue-Archive/icons/WEAPON-BUFF.png"
+                            src="Blue-Archive/icons/NOZOMI_SUB-SKILL.png"
                             alt="Expert Suppression icon"
                             className="w-full h-auto rounded"
                           />
@@ -1241,18 +1283,19 @@ export const Hikari = () => {
                         <td className="w-3/4 border-l-2 border-[#63929c] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              20.1, 21.1, 22.1, 26.2, 27.2, 28.2, 32.2, 34.2,
-                              38.3,
-                            ].map((bar, i) => (
+                              13.4, 14.1, 14.7, 17.4, 18.1, 18.8, 21.5, 22.1,
+                              22.8, 25.5,
+                            ].map((dmg, i) => (
                               <li key={i}>
                                 <span className="font-bold">
                                   LV{(i + 1).toString().padStart(2, "0")}
                                 </span>{" "}
-                                ~ Increases ATK SPD by{" "}
+                                ~ Increases ATK SPD and CRIT.DMG by{" "}
                                 <span className="text-[#4f86f7] font-bold">
-                                  {bar}%
-                                </span>{" "}
-                                when using EX-Skills (
+                                  {dmg}%
+                                </span>
+                                . All attacks from this unit will always land a
+                                CRIT. (
                                 <span className="text-[#4f86f7] font-bold">
                                   30
                                 </span>{" "}
@@ -1456,7 +1499,7 @@ export const Hikari = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/WEAPON-BUFF.png"
+                              src="Blue-Archive/icons/BULLET_TYPE_BUFF.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1573,7 +1616,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_0.png"
+                              src="Blue-Archive/icons/Quimbaya_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1604,7 +1647,7 @@ export const Hikari = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/STAT-BUFF.png"
+                              src="Blue-Archive/icons/WEAPON-BUFF.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1635,7 +1678,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_1.png"
+                              src="Blue-Archive/icons/Quimbaya_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1649,7 +1692,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_0.png"
+                              src="Blue-Archive/icons/Disk_Pendant_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1711,7 +1754,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_1.png"
+                              src="Blue-Archive/icons/Quimbaya_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1725,7 +1768,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_0.png"
+                              src="Blue-Archive/icons/Disk_Pendant_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1772,7 +1815,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_2.png"
+                              src="Blue-Archive/icons/Quimbaya_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1786,7 +1829,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_1.png"
+                              src="Blue-Archive/icons/Disk_Pendant_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1817,7 +1860,7 @@ export const Hikari = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/WEAPON-BUFF.png"
+                              src="Blue-Archive/icons/NOZOMI_SUB-SKILL.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1862,7 +1905,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_3.png"
+                              src="Blue-Archive/icons/Quimbaya_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1876,7 +1919,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_2.png"
+                              src="Blue-Archive/icons/Disk_Pendant_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1923,7 +1966,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_3.png"
+                              src="Blue-Archive/icons/Quimbaya_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1937,7 +1980,7 @@ export const Hikari = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_2.png"
+                              src="Blue-Archive/icons/Disk_Pendant_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -2004,7 +2047,7 @@ export const Hikari = () => {
             <div className="flex w-full">
               {/* Right side - Material grid */}
               <section className="mt-8 mb-8 ml-2 overflow-x-auto">
-                <table className="w-[1100px] border-separate border-spacing-y-2 border-2 border-[#63929c] rounded-lg text-center">
+                <table className="w-[1000px] border-separate border-spacing-y-2 border-2 border-[#63929c] rounded-lg text-center">
                   <thead>
                     <tr>
                       <th className="bg-[#63929c] text-black font-bold py-2 px-3">
@@ -2018,7 +2061,7 @@ export const Hikari = () => {
                         rowSpan={7}
                         className="border bg-[#63929c] border-[#63929c] rounded-lg  align-top"
                       >
-                        <HikariEX />
+                        <NozomiEX />
                       </td>
                     </tr>
                     <tr>
@@ -2036,7 +2079,7 @@ export const Hikari = () => {
                       </td>
                       <td className="border border-[#63929c] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Rohonc_0.png"
+                          src="/Blue-Archive/icons/Quimbaya_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2079,7 +2122,7 @@ export const Hikari = () => {
                       </td>
                       <td className="border border-[#63929c] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Rohonc_1.png"
+                          src="/Blue-Archive/icons/Quimbaya_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2087,7 +2130,7 @@ export const Hikari = () => {
                       </td>
                       <td className="border border-[#63929c] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Nebra_0.png"
+                          src="/Blue-Archive/icons/Disk_Pendant_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2124,7 +2167,7 @@ export const Hikari = () => {
                       </td>
                       <td className="border border-[#63929c] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Rohonc_2.png"
+                          src="/Blue-Archive/icons/Quimbaya_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2132,7 +2175,7 @@ export const Hikari = () => {
                       </td>
                       <td className="border border-[#63929c] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Nebra_1.png"
+                          src="/Blue-Archive/icons/Disk_Pendant_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2169,7 +2212,7 @@ export const Hikari = () => {
                       </td>
                       <td className="border border-[#63929c] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Rohonc_3.png"
+                          src="/Blue-Archive/icons/Quimbaya_3.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2177,7 +2220,7 @@ export const Hikari = () => {
                       </td>
                       <td className="border border-[#63929c] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Nebra_2.png"
+                          src="/Blue-Archive/icons/Disk_Pendant_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2276,7 +2319,7 @@ export const Hikari = () => {
                     rowSpan={7}
                     className="border border-[#63929c] rounded-lg p-2 align-top"
                   >
-                    <HikariLive2D />
+                    <NozomiLive2D />
                   </td>
                   <th className="bg-[#63929c] text-black font-bold px-2 py-2">
                     LV02 – 05
