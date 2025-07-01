@@ -488,7 +488,7 @@ export const Nozomi = () => {
                           className="inline-block mb-1"
                         />
                         <span className="font-semibold text-white text-sm">
-                          Supporter
+                          Attacker
                         </span>
                       </div>
                     </td>
@@ -981,8 +981,8 @@ export const Nozomi = () => {
                               enemies within a{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 straight-line
-                              </span>.{" "}
-                               Can be used by consuming up to{" "}
+                              </span>
+                              . Can be used by consuming up to{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 2{" "}
                               </span>
@@ -1364,12 +1364,7 @@ export const Nozomi = () => {
                     <tr>
                       <td className="border-2 border-[#63929c] p-2 flex justify-center items-center">
                         <img
-                          src="Blue-Archive/icons/Buff_-_Enhance_Sonic.png"
-                          alt="Cross Icon"
-                          className="w-9 h-10 "
-                        />
-                        <img
-                          src="Blue-Archive/icons/Buff_-_Additional_Cost_Decrease.png"
+                          src="Blue-Archive/icons/Cross_2.png"
                           alt="Cross Icon"
                           className="w-9 h-10 "
                         />
@@ -1383,7 +1378,7 @@ export const Nozomi = () => {
                       </td>
                       <td className="border-2 border-[#63929c] p-2">
                         <img
-                          src="Blue-Archive/icons/Buff_-_HP.png"
+                          src="Blue-Archive/icons/Buff_-_ATK.png"
                           alt="Crit Buff Icon"
                           className="w-9 h-10 mx-auto"
                         />
@@ -1395,24 +1390,14 @@ export const Nozomi = () => {
                           className="w-9 h-10 "
                         />
                         <img
-                          src="Blue-Archive/icons/Special_-_Departure_Signal_(Stage_1).png"
+                          src="Blue-Archive/icons/Buff_-_CRIT.DMG.png"
                           alt="Red"
-                          className="w-9 h-10 "
-                        />
-                        <img
-                          src="Blue-Archive/icons/Special_-_Departure_Signal_(Stage_2).png"
-                          alt="Yellow"
-                          className="w-9 h-10 "
-                        />
-                        <img
-                          src="Blue-Archive/icons/Special_-_Departure_Signal_(Stage_3).png"
-                          alt="Green"
                           className="w-9 h-10 "
                         />
                       </td>
                       <td className="border-2 border-[#63929c] p-2">
                         <img
-                          src="Blue-Archive/icons/Buff_-_Buff_Duration_Extension.png"
+                          src="Blue-Archive/icons/Buff_-_CRIT.DMG.png"
                           alt="Attack Buff Icon"
                           className="w-9 h-10 mx-auto"
                         />
@@ -1494,7 +1479,7 @@ export const Nozomi = () => {
                     <tr>
                       <th
                         rowSpan={3}
-                        className="bg-[#63929c] text-black font-bold w-2/5"
+                        className="bg-[#63929c] text-black font-bold w-1/12"
                       >
                         <div className="relative inline-block">
                           <div>
@@ -1516,9 +1501,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_0.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1535,7 +1520,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1552,9 +1537,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_0.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1571,7 +1556,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1588,9 +1573,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_1.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1602,9 +1587,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_0.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1618,7 +1603,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Quimbaya_0.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1633,7 +1618,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1664,9 +1649,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_1.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1680,7 +1665,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Quimbaya_1.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1694,7 +1679,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Disk_Pendant_0.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1709,7 +1694,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1726,9 +1711,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_2.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1740,9 +1725,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_1.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1756,7 +1741,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Quimbaya_1.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1770,7 +1755,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Disk_Pendant_0.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1784,7 +1769,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1801,9 +1786,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_2.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1817,7 +1802,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Quimbaya_2.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1831,7 +1816,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Disk_Pendant_1.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1846,7 +1831,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1877,9 +1862,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_3.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_3.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1891,9 +1876,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_2.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1907,7 +1892,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Quimbaya_3.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1921,7 +1906,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Disk_Pendant_2.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1935,7 +1920,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1952,9 +1937,9 @@ export const Nozomi = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_3.png"
+                              src="Blue-Archive/icons/Highlander_Skill_Book_3.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1968,7 +1953,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Quimbaya_3.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1982,7 +1967,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Disk_Pendant_2.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -1997,7 +1982,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -2016,7 +2001,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/icons/Ultimate_Skill_Book.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -2033,7 +2018,7 @@ export const Nozomi = () => {
                             <img
                               src="Blue-Archive/Gold.png"
                               alt=""
-                              className="w-12 h-10"
+                              className="w-20 h-15"
                             />
                           </div>
                         </div>
@@ -2325,7 +2310,7 @@ export const Nozomi = () => {
                     LV02 – 05
                   </th>
                   <td className="border border-[#63929c] text-left px-2 py-2">
-                    ATK+2
+                    ATK+3
                   </td>
                 </tr>
                 <tr>
@@ -2333,7 +2318,7 @@ export const Nozomi = () => {
                     LV06 – 10
                   </th>
                   <td className="border border-[#63929c] text-left px-2 py-2">
-                    ATk+3
+                    ATk+4
                   </td>
                 </tr>
                 <tr>
@@ -2341,7 +2326,7 @@ export const Nozomi = () => {
                     LV11 – 15
                   </th>
                   <td className="border border-[#63929c] text-left px-2 py-2">
-                    ATK+4 / HP+58
+                    ATK+6 / HP+54
                   </td>
                 </tr>
                 <tr>
@@ -2349,7 +2334,7 @@ export const Nozomi = () => {
                     LV16 – 20
                   </th>
                   <td className="border border-[#63929c] text-left px-2 py-2">
-                    ATK+5 / HP+69
+                    ATK+7 / HP+65
                   </td>
                 </tr>
                 <tr>
@@ -2357,7 +2342,7 @@ export const Nozomi = () => {
                     LV21 – 30
                   </th>
                   <td className="border border-[#63929c] text-left px-2 py-2">
-                    ATK+1 / HP+11
+                    ATK+2 / HP+11
                   </td>
                 </tr>
                 <tr>
@@ -2365,7 +2350,7 @@ export const Nozomi = () => {
                     LV31 – 40
                   </th>
                   <td className="border border-[#63929c] text-left px-2 py-2">
-                    ATK+2 / HP+17
+                    ATK+3 / HP+16
                   </td>
                 </tr>
                 <tr>
@@ -2373,7 +2358,7 @@ export const Nozomi = () => {
                     LV41 – 50
                   </th>
                   <td className="border border-[#63929c] text-left px-2 py-2">
-                    ATK+3 / HP+28
+                    ATK+4 / HP+27
                   </td>
                 </tr>
               </tbody>
