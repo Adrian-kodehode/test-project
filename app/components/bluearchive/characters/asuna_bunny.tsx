@@ -37,7 +37,7 @@ export const AsunaBunny = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/Site-background-dark.jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark (3).jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -1052,24 +1052,25 @@ export const AsunaBunny = () => {
                               </span>
                               of ATK as DMG.
                             </li>
-                              <li>
-                              <span className="font-bold">LV05</span> ~ Decreases the DEF of enemies in a{" "}
+                            <li>
+                              <span className="font-bold">LV05</span> ~
+                              Decreases the DEF of enemies in a{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 round-shaped
                               </span>{" "}
-                             area by{" "}
+                              area by{" "}
                               <span className="text-[#4f86f7] font-bold">
                                 24.6%
                               </span>{" "}
                               (
                               <span className="text-[#4f86f7] font-bold">
-                                40 
+                                40
                               </span>{" "}
-                            sec.) Also deals{" "}
-                            <span className="text-[#4f86f7] font-bold">
+                              sec.) Also deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
                                 438%{" "}
-                            </span>
-                             of ATK as DMG.
+                              </span>
+                              of ATK as DMG.
                             </li>
                           </ul>
                         </td>
@@ -1113,7 +1114,6 @@ export const AsunaBunny = () => {
                               18.4, 19.3, 20.3, 22.1, 23, 23.9, 25.8, 26.7,
                               27.6, 29.5,
                             ].map((dmg, idx) => {
-                            
                               return (
                                 <li key={idx}>
                                   <span className="font-bold">
@@ -1123,17 +1123,17 @@ export const AsunaBunny = () => {
                                   <span className="text-[#4f86f7] font-bold">
                                     {dmg}%
                                   </span>{" "}
-                                 every{" "}
+                                  every{" "}
                                   <span className="text-[#4f86f7] font-bold">
-                                   35
+                                    35
                                   </span>{" "}
                                   sec (for{" "}
                                   <span className="text-[#4f86f7] font-bold">
                                     23
                                   </span>{" "}
-                                 sec).      
+                                  sec).
                                 </li>
-                                );
+                              );
                             })}
                           </ul>
                         </td>
@@ -1227,7 +1227,8 @@ export const AsunaBunny = () => {
                         <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              20.1, 21.1, 22.1, 26.2, 27.2, 28.2, 32.2, 34.2, 38.3,
+                              20.1, 21.1, 22.1, 26.2, 27.2, 28.2, 32.2, 34.2,
+                              38.3,
                             ].map((bar, i) => (
                               <li key={i}>
                                 <span className="font-bold">
@@ -1304,18 +1305,18 @@ export const AsunaBunny = () => {
                   </thead>
                   <tbody>
                     <tr>
-                     <td className="border-2 border-[#4f86f7] p-2 flex justify-center items-center">
-                         <img
-                            src="Blue-Archive/icons/Buff_-_ATK.png"
-                            alt="Cross Icon"
-                            className="w-9 h-10 "
-                          />
-                           <img
-                            src="Blue-Archive/icons/Debuff_-_DEF.png"
-                            alt="Cross Icon"
-                            className="w-9 h-10 "
-                          />
-                        </td>
+                      <td className="border-2 border-[#4f86f7] p-2 flex justify-center items-center">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_ATK.png"
+                          alt="Cross Icon"
+                          className="w-9 h-10 "
+                        />
+                        <img
+                          src="Blue-Archive/icons/Debuff_-_DEF.png"
+                          alt="Cross Icon"
+                          className="w-9 h-10 "
+                        />
+                      </td>
                       <td className="border-2 border-[#4f86f7] p-2">
                         <img
                           src="Blue-Archive/icons/Cross_2.png"
@@ -2199,7 +2200,7 @@ export const AsunaBunny = () => {
               <tbody>
                 <tr>
                   <th className="bg-[#4f86f7] text-black font-bold px-2 py-1">
-                  Bunny Bunny Carrot Carrot
+                    Bunny Bunny Carrot Carrot
                   </th>
                   <td colSpan={3} className="border border-[#4f86f7] px-2 py-1">
                     <audio

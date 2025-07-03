@@ -23,7 +23,7 @@ export const Live = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/bluearchive.jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark (2).jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",

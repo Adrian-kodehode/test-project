@@ -42,11 +42,11 @@ export const Elmi = () => {
       </td>
       <td className="py-2 px-2">
         <span className="  flex items-center justify-center mx-auto">
-          <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+          <img src="Blue-Archive/icons/Tank.png" alt="" />
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
-        BACK
+        FRONT
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img

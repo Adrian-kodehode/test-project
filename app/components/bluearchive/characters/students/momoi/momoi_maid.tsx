@@ -46,17 +46,13 @@ export const MomoiMaid = () => {
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
-        BACK
+        MIDDLE
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
-        <img
-          src="Blue-Archive/icons/Cross_1.png"
-          alt=""
-          className="w-14 h-14"
-        />
+        <img src="Blue-Archive/icons/Cover.png" alt="" className="w-14 h-14" />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
-        Explosion
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
+        Sonic
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
         Light Armor

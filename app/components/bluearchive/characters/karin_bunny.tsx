@@ -37,7 +37,7 @@ export const KarinBunny = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/Site-background-dark.jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark (3).jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -348,7 +348,7 @@ export const KarinBunny = () => {
               Kakudate Karin (Bunny Girl ver.)
             </h2>
             <div className="text-center text-sm text-[#ccccff] font-bold mb-4">
-             / 角楯カリン (バニーガール Ver.)
+              / 角楯カリン (バニーガール Ver.)
             </div>
             <section>
               <div className="flex justify-center">

@@ -15,7 +15,7 @@ import Contributors from "./components/Contributors";
 import List from "./components/List";
 import NewHeader from "./components/NewHeader";
 import Footer from "./components/Footer";
-import PlaybackBar from "./components/PlaybackBar";
+// import PlaybackBar from "./components/PlaybackBar";
 import CustomCursor from "./components/CustomCursor";
 
 export const links: LinksFunction = () => [
@@ -136,8 +136,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/akane_bunny" &&
           location.pathname !== "/asuna_bunny" &&
           location.pathname !== "/nemesis" && <NewHeader />}
-        <div className="pb-24">{children}</div>
-        {location.pathname !== "/home" && <PlaybackBar />}
+        <div>{children}</div>
+
         <ScrollRestoration />
         <Scripts />
       </body>

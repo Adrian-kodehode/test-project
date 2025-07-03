@@ -34,7 +34,7 @@ export const HoshinoSwimsuit = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/Site-background-dark.jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark (3).jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",

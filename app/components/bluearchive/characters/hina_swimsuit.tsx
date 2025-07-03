@@ -46,7 +46,7 @@ export const HinaSwimsuit = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/Site-background-dark.jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark (3).jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -1701,7 +1701,7 @@ export const HinaSwimsuit = () => {
                     LV21 – 30
                   </th>
                   <td className="border border-[#e34a45] text-left px-2 py-2">
-                   ATK+2 / HP+10
+                    ATK+2 / HP+10
                   </td>
                 </tr>
                 <tr>

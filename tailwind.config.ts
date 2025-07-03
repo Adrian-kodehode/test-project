@@ -30,6 +30,15 @@ export default {
           secondary: "#282828",
           hover: "#1ed760",
         },
+        blueArchive: {
+          striker: "#ff6133",
+          mystic: "#46adff",
+          sonic: "#9b57aa",
+          special: "#2185f6",
+          onestar: "#268acb",
+          twostar: "#e68f16",
+          threestar: "#9b85e6",
+        },
         brand: {
           50: "#eef2ff",
           100: "#e0e7ff",

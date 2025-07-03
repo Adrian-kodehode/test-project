@@ -27,12 +27,11 @@ export const Hoshino = () => {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-
   return (
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/Site-background-dark.jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark (3).jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -1342,9 +1341,7 @@ export const Hoshino = () => {
             {/* Table Content */}
             <div className="flex w-full">
               {/* Left side - EX Skill image */}
-              <div className="w-1/3 bg-black bg-opacity-50 p-4 flex items-center justify-center">
-              
-              </div>
+              <div className="w-1/3 bg-black bg-opacity-50 p-4 flex items-center justify-center"></div>
 
               {/* Right side - Material grid */}
               <div className="w-2/3 font-bold">
@@ -1450,7 +1447,6 @@ export const Hoshino = () => {
               </div>
             </div>
           </div>
-        
 
           {/* Unique Equipment Section */}
           <h3
@@ -1564,7 +1560,8 @@ export const Hoshino = () => {
                       className="w-full max-w-xs mx-auto h-8"
                       src="https://static.wikia.nocookie.net/blue-archive/images/5/59/Shooting_Stars.ogg/revision/latest?cb=20210309192025"
                     >
-                      Your browser does not support the <code>audio</code> element.
+                      Your browser does not support the <code>audio</code>{" "}
+                      element.
                     </audio>
                   </td>
                 </tr>
@@ -1602,7 +1599,7 @@ export const Hoshino = () => {
                     rowSpan={7}
                     className="border border-[#06bbfa] rounded-lg p-2 align-top"
                   >
-                  <HoshinoLive2D />
+                    <HoshinoLive2D />
                   </td>
                   <th className="bg-[#06bbfa] text-black font-bold px-2 py-2">
                     LV02 – 05

@@ -48,8 +48,8 @@ export const YuzuMaid = () => {
       <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
         Explosion
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
-        Light Armor
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-sonic">
+        Elastic Armor
       </td>
     </tr>
   );
