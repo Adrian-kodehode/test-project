@@ -1,9 +1,9 @@
-export const Akari = () => {
+export const Sakurako = () => {
   return (
-    <tr className="bg-[#e34a45] border-b border-gray-700">
+    <tr className="bg-[#fbb35a] border-b border-gray-700">
       <td className="py-2 px-2 flex items-center justify-center gap-2">
         <img
-          src="/Blue-Archive/characters/Akari_Icon.png"
+          src="/Blue-Archive/characters/Sakurako_Icon.png"
           alt=""
           className="w-40 h-30"
         />
@@ -13,26 +13,31 @@ export const Akari = () => {
             textShadow: "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
           }}
         >
-          Akari
+        Sakurako
         </span>
       </td>
-      <td className="py-2 px-6 bg-[#e68f16]">
+      <td className="py-2 px-6 bg-blueArchive-threestar">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
               src="Blue-Archive/images/Star_Icon.png"
               alt=""
               className="w-6 h-6"
-            />
+            />{" "}
             <img
               src="Blue-Archive/images/Star_Icon.png"
               alt=""
               className="w-6 h-6"
             />
-          </div>
+          </div>{" "}
+          <img
+            src="Blue-Archive/images/Star_Icon.png"
+            alt=""
+            className="w-6 h-6"
+          />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-[#FF6133]">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
         Striker
       </td>
       <td className="py-2 px-2">
@@ -44,13 +49,17 @@ export const Akari = () => {
         MIDDLE
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
-        <img src="Blue-Archive/icons/Cover.png" alt="" />
+        <img
+          src="Blue-Archive/icons/Cover.png"
+          alt=""
+          className="w-14 h-14"
+        />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[#ff0000]">
-        Explosion
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-mystic">
+        Mystic
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#ffa500]">
-        Heavy Armor
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+        Spacial Armor
       </td>
     </tr>
   );

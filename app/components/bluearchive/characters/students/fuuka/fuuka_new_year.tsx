@@ -59,7 +59,7 @@ export const FuukaNewYear = () => {
         Penetration
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#46adff]">
-        Heavy Armor
+        Special Armor
       </td>
     </tr>
   );

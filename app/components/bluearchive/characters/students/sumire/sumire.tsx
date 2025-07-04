@@ -59,7 +59,7 @@ export const Sumire = () => {
         Explosion
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[#46adff]">
-        Light Armor
+        Special Armor
       </td>
     </tr>
   );
