@@ -37,12 +37,12 @@ export const Niya = () => {
           />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
-        Striker
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-special">
+        Special
       </td>
       <td className="py-2 px-2">
         <span className="  flex items-center justify-center mx-auto">
-          <img src="Blue-Archive/icons/Supporter.png" alt="" />
+          <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">

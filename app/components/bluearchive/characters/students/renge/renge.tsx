@@ -50,7 +50,7 @@ export const Renge = () => {
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img
-          src="Blue-Archive/icons/Cross_1.png"
+          src="Blue-Archive/icons/Cover.png"
           alt=""
           className="w-14 h-14"
         />

@@ -16,7 +16,7 @@ export const Pina = () => {
           Pina
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-threestar">
+      <td className="py-2 px-6 bg-blueArchive-onestar">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -24,17 +24,7 @@ export const Pina = () => {
               alt=""
               className="w-6 h-6"
             />{" "}
-            <img
-              src="Blue-Archive/images/Star_Icon.png"
-              alt=""
-              className="w-6 h-6"
-            />
           </div>{" "}
-          <img
-            src="Blue-Archive/images/Star_Icon.png"
-            alt=""
-            className="w-6 h-6"
-          />
         </div>
       </td>
       <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
@@ -55,10 +45,10 @@ export const Pina = () => {
           className="w-14 h-14"
         />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
-        Sonic
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
+        Penetration
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
         Heavy Armor
       </td>
     </tr>

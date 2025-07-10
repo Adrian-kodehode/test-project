@@ -16,7 +16,7 @@ export const Tsubaki = () => {
           Tsubaki
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-threestar">
+      <td className="py-2 px-6 bg-blueArchive-twostar">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -30,11 +30,7 @@ export const Tsubaki = () => {
               className="w-6 h-6"
             />
           </div>{" "}
-          <img
-            src="Blue-Archive/images/Star_Icon.png"
-            alt=""
-            className="w-6 h-6"
-          />
+        
         </div>
       </td>
       <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
@@ -42,11 +38,11 @@ export const Tsubaki = () => {
       </td>
       <td className="py-2 px-2">
         <span className="  flex items-center justify-center mx-auto">
-          <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+          <img src="Blue-Archive/icons/Tank.png" alt="" />
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
-        BACK
+        FRONT
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img
@@ -55,11 +51,11 @@ export const Tsubaki = () => {
           className="w-14 h-14"
         />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
-        Sonic
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
+        Penetration
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
-        Heavy Armor
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+        Special Armor
       </td>
     </tr>
   );

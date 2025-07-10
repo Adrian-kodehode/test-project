@@ -42,7 +42,7 @@ export const Kikyou = () => {
       </td>
       <td className="py-2 px-2">
         <span className="  flex items-center justify-center mx-auto">
-          <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
+          <img src="Blue-Archive/icons/Supporter.png" alt="" />
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
@@ -50,7 +50,7 @@ export const Kikyou = () => {
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img
-          src="Blue-Archive/icons/Cross_1.png"
+          src="Blue-Archive/icons/Cover.png"
           alt=""
           className="w-14 h-14"
         />

@@ -16,7 +16,7 @@ export const RengeSwimsuit = () => {
           Renge <br /> (Swimsuit)
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-threestar">
+      <td className="py-2 px-6 bg-blueArchive-twostar">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -30,11 +30,6 @@ export const RengeSwimsuit = () => {
               className="w-6 h-6"
             />
           </div>{" "}
-          <img
-            src="Blue-Archive/images/Star_Icon.png"
-            alt=""
-            className="w-6 h-6"
-          />
         </div>
       </td>
       <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
@@ -50,7 +45,7 @@ export const RengeSwimsuit = () => {
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img
-          src="Blue-Archive/icons/Cross_1.png"
+          src="Blue-Archive/icons/Cover.png"
           alt=""
           className="w-14 h-14"
         />
@@ -58,8 +53,8 @@ export const RengeSwimsuit = () => {
       <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
         Sonic
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
-        Heavy Armor
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+        Special Armor
       </td>
     </tr>
   );

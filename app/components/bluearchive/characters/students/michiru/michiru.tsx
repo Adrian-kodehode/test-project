@@ -16,7 +16,7 @@ export const Michiru = () => {
           Michiru
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-threestar">
+      <td className="py-2 px-6 bg-blueArchive-onestar">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -24,17 +24,7 @@ export const Michiru = () => {
               alt=""
               className="w-6 h-6"
             />{" "}
-            <img
-              src="Blue-Archive/images/Star_Icon.png"
-              alt=""
-              className="w-6 h-6"
-            />
           </div>{" "}
-          <img
-            src="Blue-Archive/images/Star_Icon.png"
-            alt=""
-            className="w-6 h-6"
-          />
         </div>
       </td>
       <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
@@ -46,7 +36,7 @@ export const Michiru = () => {
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
-        BACK
+        FRONT
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img
@@ -55,11 +45,11 @@ export const Michiru = () => {
           className="w-14 h-14"
         />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
-        Sonic
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-mystic">
+        Mystic
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
-        Heavy Armor
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
+        Light Armor
       </td>
     </tr>
   );

@@ -46,7 +46,7 @@ export const Miku = () => {
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
-        FRONT
+     BACK
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img
@@ -56,7 +56,7 @@ export const Miku = () => {
         />
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
-        Exploation
+        Explosion
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
         Light Armor
