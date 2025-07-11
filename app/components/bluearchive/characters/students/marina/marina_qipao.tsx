@@ -13,7 +13,7 @@ export const MarinaQipao = () => {
             textShadow: "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
           }}
         >
-          Marina
+          Marina <br /> (Qipao)
         </span>
       </td>
       <td className="py-2 px-6 bg-blueArchive-threestar">
@@ -42,17 +42,17 @@ export const MarinaQipao = () => {
       </td>
       <td className="py-2 px-2">
         <span className="  flex items-center justify-center mx-auto">
-          <img src="Blue-Archive/icons/Supporter.png" alt="" />
+          <img src="Blue-Archive/icons/Tank.png" alt="" />
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
-        BACK
+        FRONT
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img src="Blue-Archive/icons/Cover.png" alt="" className="w-14 h-14" />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
-        Sonic
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
+        Penetration
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
         Heavy Armor

@@ -16,7 +16,7 @@ export const Hanae = () => {
           Hanae
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-twostar">
+      <td className="py-2 px-6 bg-blueArchive-yellow">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -33,7 +33,7 @@ export const Hanae = () => {
          
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-special">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-darkblue">
         Special
       </td>
       <td className="py-2 px-2">

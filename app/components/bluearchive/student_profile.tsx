@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as AllStudents from "./characters/students";
+import { Student } from "./characters/students/Student";
+import { a } from "node_modules/framer-motion/dist/types.d-DDSxwf0n";
 
 const studentComponents = [
   AllStudents.Hoshino,
@@ -199,7 +201,28 @@ const studentComponents = [
   AllStudents.NodokaHotSpring,
   AllStudents.Shigure,
   AllStudents.ShigureHotSpring,
-
+  AllStudents.Kanna,
+  AllStudents.KannaSwimsuit,
+  AllStudents.Kirino,
+  AllStudents.KirinoSwimsuit,
+  AllStudents.Fubuki,
+  AllStudents.FubukiSwimsuit,
+  AllStudents.Miyako,
+  AllStudents.MiyakoSwimsuit,
+  AllStudents.Saki,
+  AllStudents.SakiSwimsuit,
+  AllStudents.Miyu,
+  AllStudents.MiyuSwimsuit,
+  AllStudents.Moe,
+  AllStudents.MoeSwimsuit,
+  AllStudents.Saori,
+  AllStudents.SaoriSwimsuit,
+  AllStudents.SaoriDress,
+  AllStudents.ImashinoMisaki,
+  AllStudents.Hiyori,
+  AllStudents.HiyoriSwimsuit,
+  AllStudents.Atsoko,
+  AllStudents.AtsokoSwimsuit,
   AllStudents.Hikari,
   AllStudents.Nozomi,
   AllStudents.Aoba,
@@ -311,6 +334,18 @@ export const Students = () => {
               </tr>
             </thead>
             <tbody>
+              <Student
+                src="/Blue-Archive/characters/Nozomi_Icon.png"
+                href="/nozomi"
+                name="test"
+                role="Special"
+                classSrc="Blue-Archive/icons/Supporter.png"
+                position="FRONT"
+                cover=" Blue-Archive/icons/Cover.png"
+                atk="Sonic"
+                def="Light Armor"
+                numStars={3}
+              />
               {studentComponents.map((StudentComponent, index) => (
                 <StudentComponent key={index} />
               ))}

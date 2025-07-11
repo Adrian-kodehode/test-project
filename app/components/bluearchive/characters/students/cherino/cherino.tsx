@@ -42,20 +42,20 @@ export const Cherino = () => {
       </td>
       <td className="py-2 px-2">
         <span className="  flex items-center justify-center mx-auto">
-          <img src="Blue-Archive/icons/Supporter.png" alt="" />
+          <img src="Blue-Archive/icons/Attacker (1).png" alt="" />
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
-        BACK
+        MIDDLE
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
         <img src="Blue-Archive/icons/Cover.png" alt="" className="w-14 h-14" />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
-        Sonic
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
+        Penetration
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
-        Heavy Armor
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">
+        Light Armor
       </td>
     </tr>
   );

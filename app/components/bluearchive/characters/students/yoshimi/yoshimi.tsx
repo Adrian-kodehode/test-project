@@ -16,7 +16,7 @@ export const Yoshimi = () => {
           Yoshimi
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-onestar">
+      <td className="py-2 px-6 bg-blueArchive-azureblue">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -27,7 +27,7 @@ export const Yoshimi = () => {
           </div>
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-special">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-darkblue">
         Special
       </td>
       <td className="py-2 px-2">

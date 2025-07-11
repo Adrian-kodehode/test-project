@@ -16,7 +16,7 @@ export const YoshimiBand = () => {
           Yoshimi <br /> (Band)
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-threestar">
+      <td className="py-2 px-6 bg-blueArchive-purple">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -37,7 +37,7 @@ export const YoshimiBand = () => {
           />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-orange">
         Striker
       </td>
       <td className="py-2 px-2">
@@ -54,7 +54,7 @@ export const YoshimiBand = () => {
       <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
         Explosion
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-blue">
         Special Armor
       </td>
     </tr>

@@ -37,7 +37,7 @@ export const Mika = () => {
           />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-orange">
         Striker
       </td>
       <td className="py-2 px-2">

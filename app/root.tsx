@@ -37,9 +37,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
   // Choose favicon based on route
   // Map routes to favicons for easier extension
   const faviconMap: Record<string, string> = {
-    "/blue_archive": "public/Blue-Archive/MP_BA.png",
+    "/blue_archive": "Blue-Archive/MP_BA.png",
   };
-  const defaultFavicon = "public/To Love Ru/toloveruDarkness.png";
+  const defaultFavicon = "To Love Ru/toloveruDarkness.png";
   const favicon = faviconMap[location.pathname] || defaultFavicon;
 
   return (

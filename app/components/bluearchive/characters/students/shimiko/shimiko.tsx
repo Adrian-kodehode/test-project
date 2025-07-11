@@ -13,10 +13,10 @@ export const Shimiko = () => {
             textShadow: "2px 2px 6px #000, 0 0 2px #000, 0 1px 0 #000",
           }}
         >
-          Ui <br /> (Swimsuit)
+          Shimiko
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-onestar">
+      <td className="py-2 px-6 bg-blueArchive-azureblue">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -27,7 +27,7 @@ export const Shimiko = () => {
           </div>{" "}
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-special">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-darkblue">
        Special
       </td>
       <td className="py-2 px-2">

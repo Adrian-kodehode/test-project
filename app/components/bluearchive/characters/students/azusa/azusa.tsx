@@ -16,7 +16,7 @@ export const Azusa = () => {
           Azusa
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-threestar">
+      <td className="py-2 px-6 bg-blueArchive-purple">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -37,7 +37,7 @@ export const Azusa = () => {
           />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-orange">
         Striker
       </td>
       <td className="py-2 px-2">

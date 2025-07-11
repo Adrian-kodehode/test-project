@@ -16,7 +16,7 @@ export const AiriBand = () => {
           Airi <br /> (Band)
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-onestar">
+      <td className="py-2 px-6 bg-blueArchive-azureblue">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -27,7 +27,7 @@ export const AiriBand = () => {
           </div>
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-orange">
     Striker
       </td>
       <td className="py-2 px-2">
@@ -48,7 +48,7 @@ export const AiriBand = () => {
       <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
         Explosion
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-blue">
         Special Armor
       </td>
     </tr>

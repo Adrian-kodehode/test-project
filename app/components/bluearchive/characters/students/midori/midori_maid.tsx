@@ -55,7 +55,7 @@ export const MidoriMaid = () => {
           className="w-14 h-14"
         />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-darkpurple">
         Sonic
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">

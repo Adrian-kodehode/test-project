@@ -37,7 +37,7 @@ export const KazusaBand = () => {
           />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-orange">
         Striker
       </td>
       <td className="py-2 px-2">
@@ -54,7 +54,7 @@ export const KazusaBand = () => {
       <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[red]">
     Explosion
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-blue">
         Special Armor
       </td>
     </tr>

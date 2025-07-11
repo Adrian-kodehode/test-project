@@ -16,7 +16,7 @@ export const TsurugiSwimsuit = () => {
           Tsurugi <br /> [Swimsuit]
         </span>
       </td>
-      <td className="py-2 px-6 bg-blueArchive-onestar">
+      <td className="py-2 px-6 bg-blueArchive-azureblue">
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-1">
             <img
@@ -27,7 +27,7 @@ export const TsurugiSwimsuit = () => {
           </div> 
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-orange">
        Striker
       </td>
       <td className="py-2 px-2">
@@ -45,10 +45,10 @@ export const TsurugiSwimsuit = () => {
           className="w-14 h-14"
         />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-mystic">
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-blue">
         Mystic
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-blue">
         Special Armor
       </td>
     </tr>

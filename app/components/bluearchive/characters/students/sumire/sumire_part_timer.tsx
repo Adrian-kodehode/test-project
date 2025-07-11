@@ -37,7 +37,7 @@ export const SumirePartTimer = () => {
           />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-special">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-darkblue">
         Special
       </td>
       <td className="py-2 px-2">

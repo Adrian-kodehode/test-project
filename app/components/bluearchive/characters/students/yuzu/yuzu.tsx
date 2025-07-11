@@ -58,7 +58,7 @@ export const Yuzu = () => {
       <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
         Penetration
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-blue">
         Special Armor
       </td>
     </tr>

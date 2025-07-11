@@ -37,7 +37,7 @@ export const Natsu = () => {
           />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-orange">
         Striker
       </td>
       <td className="py-2 px-2">
@@ -55,7 +55,7 @@ export const Natsu = () => {
           className="w-14 h-14"
         />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-mystic">
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-blue">
         Mystic
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">

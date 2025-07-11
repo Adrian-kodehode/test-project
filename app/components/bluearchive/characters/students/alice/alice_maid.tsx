@@ -55,7 +55,7 @@ export const AliceMaid = () => {
           className="w-14 h-14"
         />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-mystic">
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-blue">
         Mystic
       </td>
       <td className="py-2 px-2 text-black text-xl font-extrabold bg-[red]">

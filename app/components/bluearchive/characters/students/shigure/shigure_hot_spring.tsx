@@ -37,25 +37,29 @@ export const ShigureHotSpring = () => {
           />
         </div>
       </td>
-      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-striker">
-        Striker
+      <td className="py-2 px-3 text-xl font-extrabold text-black bg-blueArchive-special">
+        Special
       </td>
       <td className="py-2 px-2">
         <span className="  flex items-center justify-center mx-auto">
-          <img src="Blue-Archive/icons/Supporter.png" alt="" />
+          <img src="Blue-Archive/icons/Healer (1).png" alt="" />
         </span>
       </td>
       <td className="py-2 px-2 text-xl font-extrabold text-black italic">
         BACK
       </td>
       <td className="py-2 px-2 text-2xl font-extrabold text-black">
-        <img src="Blue-Archive/icons/Cover.png" alt="" className="w-14 h-14" />
+        <img
+          src="Blue-Archive/icons/Cross_1.png"
+          alt=""
+          className="w-14 h-14"
+        />
       </td>
-      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-blueArchive-sonic">
-        Sonic
+      <td className="py-2 px-2 text-black text-xl  font-extrabold bg-[orange]">
+        Penetration
       </td>
-      <td className="py-2 px-2 text-black text-xl font-extrabold bg-[orange]">
-        Heavy Armor
+      <td className="py-2 px-2 text-black text-xl font-extrabold bg-blueArchive-mystic">
+        Special Armor
       </td>
     </tr>
   );
