@@ -5,12 +5,12 @@ import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
 
-import user1 from "../To Love Ru/lala.jpg";
-import user2 from "../To Love Ru/momo.jpg";
-import user3 from "../To Love Ru/nana.jpg";
-import user4 from "../To Love Ru/yami.jpg";
-import user5 from "../To Love Ru/yui.jpg";
-import user6 from "../To Love Ru/mikan.jpg";
+import user1 from "/To Love Ru/lala.jpg";
+import user2 from "/To Love Ru/momo.jpg";
+import user3 from "/To Love Ru/nana.jpg";
+import user4 from "/To Love Ru/yami.jpg";
+import user5 from "/To Love Ru/yui.jpg";
+import user6 from "/To Love Ru/mikan.jpg";
 
 export const navItems = [
   { label: "Features", href: "#" },

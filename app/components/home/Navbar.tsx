@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../public/To Love Ru/toloveruDarkness.png";
+import logo from "/To Love Ru/toloveruDarkness.png";
 import { navItems } from "app/constants";
 
 const Navbar = () => {
