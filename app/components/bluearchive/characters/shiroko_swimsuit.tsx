@@ -1420,7 +1420,7 @@ export const ShirokoSwimsuit = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/CIRCLE.png"
+                              src="Blue-Archive/icons/COST_DECREASE.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1437,7 +1437,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1473,7 +1473,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1509,7 +1509,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1523,7 +1523,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_0.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1568,7 +1568,7 @@ export const ShirokoSwimsuit = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/STAT-BUFF.png"
+                              src="Blue-Archive/icons/WEAPON-BUFF.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1585,7 +1585,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1613,7 +1613,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Phaistos_0.png"
+                              src="Blue-Archive/icons/Rohonc_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1647,7 +1647,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1661,7 +1661,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_1.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1689,7 +1689,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Phaistos_0.png"
+                              src="Blue-Archive/icons/Rohonc_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1722,7 +1722,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1750,7 +1750,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Phaistos_1.png"
+                              src="Blue-Archive/icons/Rohonc_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1781,7 +1781,7 @@ export const ShirokoSwimsuit = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/STAT-BUFF.png"
+                              src="Blue-Archive/icons/REGEN-COST.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1798,7 +1798,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_3.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1812,7 +1812,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_2.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1840,7 +1840,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Phaistos_2.png"
+                              src="Blue-Archive/icons/Rohonc_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1873,7 +1873,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Millennium_Skill_Book_3.png"
+                              src="Blue-Archive/icons/Abydos_Skill_Book_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1901,7 +1901,7 @@ export const ShirokoSwimsuit = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Phaistos_2.png"
+                              src="Blue-Archive/icons/Rohonc_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
