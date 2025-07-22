@@ -1171,7 +1171,7 @@
   },
   {
     "src": "/Blue-Archive/characters/Akane_Bunny_Girl_Icon.png",
-    "href": "/",
+    "href": "/akane_bunny",
     "name": "Akane",
     "altName": "(Bunny Girl)",
     "role": "Special",
@@ -1201,7 +1201,7 @@
   },
   {
     "src": "/Blue-Archive/characters/Asuna_Bunny_Girl_Icon.png",
-    "href": "/",
+    "href": "/asuna_bunny",
     "name": "Asuna",
     "altName": "(Bunny Girl)",
     "role": "Striker",
@@ -1216,7 +1216,7 @@
   },
   {
     "src": "/Blue-Archive/characters/Asuna_Schoolgirl_Icon.png",
-    "href": "/",
+    "href": "/asuna_schoolgirl",
     "name": "Asuna",
     "altName": "(Schoolgirl)",
     "role": "Striker",
@@ -2416,7 +2416,7 @@
   },
   {
     "src": "/Blue-Archive/characters/Kikyou_Swimsuit_Icon.png",
-    "href": "/",
+    "href": "/kikyou_swimsuit",
     "name": " Kikyou",
     "altName": "(Swimsuit)",
     "role": "Special",

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import * as AllStudents from "./characters/students";
 import { Student } from "./characters/students/Student";
 import { a } from "node_modules/framer-motion/dist/types.d-DDSxwf0n";
 import studentdata from "./characters/studentdata.json";

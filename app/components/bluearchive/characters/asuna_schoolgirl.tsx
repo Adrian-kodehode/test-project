@@ -1,25 +1,25 @@
 import React, { useEffect, useState, memo } from "react";
 
-const AliceLive2D = memo(() => (
+const AsunaScoolgirlLive2D = memo(() => (
   <div className="flex flex-col space-y-2">
     <img
-      src="Blue-Archive/live2d/Alice_Live2D.gif"
+      src="Blue-Archive/live2d/Asuna_Schoolgirl_Live2D.gif"
       alt="Hoshino Live2D"
       className="w-full rounded-lg mx-auto "
     />
   </div>
 ));
-const AliceEX = memo(() => (
+const AsunaScoolgirlEX = memo(() => (
   <div className="flex flex-col space-y-2">
     <img
-      src="Blue-Archive/live2d/Alice_EX.gif"
+      src="Blue-Archive/icons/CIRCLE.png"
       alt="Hoshino Live2D"
-      className="w-full rounded-lg mx-auto "
+      className="w-full rounded-lg mx-auto bg-[#4f86f7] "
     />
   </div>
 ));
 
-export const Alice = () => {
+export const AsunaScoolgirl = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [selectedTab, setSelectedTab] = useState("icon");
   const [selectedTabStats, setSelectedTabStats] = useState("main");
@@ -81,7 +81,7 @@ export const Alice = () => {
       </header>
       <main className="flex-1 mt-10 mb-10 w-[1300px] max-w-[98vw] bg-black bg-opacity-80 rounded-lg p-4 text-white shadow-lg mx-auto ">
         <h2 className="text-4xl mt-10 mb-10 ml-5 text-[#06bbfa]">
-          Tendou Alice
+          Ichinose Asuna (Schoolgirl ver.)
         </h2>
         <div className="flex justify-center items-center scale-100 ">
           <a
@@ -120,36 +120,37 @@ export const Alice = () => {
           <div className="flex-1 mt-5 ml-3">
             <div className="bg-[#4f86f7] w-[400px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 left-40 rounded">
               <span className="block text-center w-full italic">
-                “ Come on, let's have fun this year, shall we? ”
+                “ Hop, hop! Asuna the bunny is coming! ”
               </span>
               <br />
               <span className="absolute right-15 bottom-1 text-xs italic">
-                ~ Asagi Mutsuki (New Year ver.)
+                ~ Ichinose Asuna (Schoolgirl ver.)
               </span>
             </div>
             <p className="mt-5 max-w-[600px]">
-              <strong>Tendou Alice (天童アリス)</strong> is one of the{" "}
-              <a href="/students" className="text-[#357ff3]">
-                students
+              <strong>Ichinose Asuna (Bunny Girl ver.)</strong>{" "}
+              (一之瀬アスナ(バニーガール Ver.)) is the Bunny Girl Variant of{" "}
+              <a href="#" className="text-[#357ff3]">
+                Asuna
               </a>{" "}
+              and is one of the{" "}
+              <a href="#" className="text-[#357ff3]">
+                students{" "}
+              </a>
               studying in{" "}
-              <a href="" className="text-[#357ff3]">
+              <a href="#" className="text-[#357ff3]">
                 Millennium Science School
               </a>{" "}
               who wields a{" "}
-              <a href="" className="text-[#357ff3]">
-                Railgun
+              <a href="#" className="text-[#357ff3]">
+                Assult Rifle
               </a>
               .
             </p>
             <p className="mt-5">
               She is a member of the{" "}
-              <a href="" className="text-[#357ff3]">
-                Game Development Department
-              </a>
-              , and is the <br /> deuteragonist of{" "}
-              <a href="" className="text-[#357ff3]">
-                Volume 2
+              <a href="#" className="text-[#357ff3]">
+                Cleaning&Clearing
               </a>
               .
             </p>
@@ -289,22 +290,11 @@ export const Alice = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Originally named as AL-1S, Alice is a mysterious member of
-                Millennium's Game Development Dept. Found in an abandoned
-                munitions factory at <a href="#" className="text-[#3e7af2] hover:underline">the Ruins</a>, it's impossible to retrieve any
-                information about her origin nor her age.
-              </p>
-              <p className="mt-2">
-                She enjoys playing games with <a href="#" className="text-[#3e7af2] hover:underline">Yuzu</a>, <a href="#" className="text-[#3e7af2] hover:underline">Momoi</a> and <a href="#" className="text-[#3e7af2] hover:underline">Midori</a> and becomes
-                a serious game fanatic, resulting in most of her conversation
-                unnaturally taken from familiar lines from retro games.{" "}
-              </p>
-              <p className="mt-2">
-                Alice is later revealed to be a member of the <a href="#" className="te"></a>,
-                specifically the "<strong>Princess</strong>" (王女). Alice also has another side
-                to her known as Key (ケイ, formerly stylized as <strong>Key</strong> ), an AI
-                whose role was to guide Alice to carry out a genocidal campaign
-                in the name of the Nameless Priests.
+                This is Asuna from "C&C", disguised as a bunny girl for an
+                infiltration mission! As usual, she was very excited to change
+                from her maid outfit to a bunny outfit, and seemed to be
+                enjoying the new experience in a new place even more than
+                usual...
               </p>
             </div>
             <h3
@@ -317,7 +307,7 @@ export const Alice = () => {
               <p>
                 See{" "}
                 <a href="#" className="text-[#3e7af2] hover:underline">
-                  Tendou Alice
+                  Ichinose Asuna
                 </a>
               </p>
             </div>
@@ -329,10 +319,9 @@ export const Alice = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Mutsuki has white hair styled into a bun with a small ponytail,
-                adorned with pink flowers that surround the bun. She also has
-                bangs framing her face. Additionally, her eyes are a light
-                peach-pink color.
+                Asuna is a well-endowed young woman. She has ash blonde hair
+                that is messy and reaches almost to her knees. Her eyes are the
+                same color as her hair.
               </p>
             </div>
             <h4
@@ -345,7 +334,7 @@ export const Alice = () => {
               <p>
                 See{" "}
                 <a href="#" className="text-[#3e7af2] hover:underline">
-                  Tendou Alice
+                  Ichinose Asuna
                 </a>
               </p>
             </div>
@@ -356,10 +345,10 @@ export const Alice = () => {
           {/* Aside (right) */}
           <aside className="bg-[#4f86f7] border-2 border-[#357ff3] rounded-lg shadow-lg p-6 mt-5 w-full max-w-xs mb-8 mr-5">
             <h2 className="text-2xl font-bold text-[#ccccff] mb-2 text-center">
-              Tendou Alice
+              Murokasa Asuna (Schoolgirl)
             </h2>
             <div className="text-center text-sm text-[#ccccff] font-bold mb-4">
-              天童アリス
+             一之瀬アスナ (制服)
             </div>
             <section>
               <div className="flex justify-center">
@@ -394,14 +383,14 @@ export const Alice = () => {
                     <img
                       src={
                         selectedTab === "icon"
-                          ? "/Blue-Archive/characters/Alice_Icon.png"
+                          ? "/Blue-Archive/characters/Asuna_Schoolgirl_Icon.png"
                           : selectedTab === "portrait"
-                          ? "/Blue-Archive/characters/Alice_Portrait.png"
+                          ? "/Blue-Archive/characters/Asuna_Schoolgirl_Portrait.png"
                           : selectedTab === "sprite"
-                          ? "/Blue-Archive/characters/Alice_Sprite.png"
+                          ? "/Blue-Archive/characters/Asuna_Schoolgirl_Sprite.png"
                           : selectedTab === "halo"
-                          ? "/Blue-Archive/characters/Alice_Halo.png"
-                          : "/Blue-Archive/characters/Alice_Icon.png"
+                          ? "/Blue-Archive/characters/Asuna_Halo.png"
+                          : "/Blue-Archive/characters/Asuna_Schoolgirl_Icon.png"
                       }
                       alt={`Hikari ${
                         selectedTab.charAt(0).toUpperCase() +
@@ -459,7 +448,7 @@ export const Alice = () => {
                     {/* Cover */}
                     <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/icons/Cover.png"
+                        src="/Blue-Archive/icons/Cross_1.png"
                         alt="Cover"
                         width={18}
                         height={18}
@@ -483,22 +472,22 @@ export const Alice = () => {
                     <td className="bg-[#ccccff] px-2 py-2  text-center align-middle w-1/3">
                       <div className="flex flex-col items-center justify-center">
                         <img
-                          src="/Blue-Archive/icons/Attacker (1).png"
+                          src="/Blue-Archive/icons/Supporter.png"
                           alt="Attacker"
                           width={20}
                           height={20}
                           className="inline-block mb-1"
                         />
                         <span className="font-semibold text-black text-sm">
-                          Attacker
+                          Support
                         </span>
                       </div>
                     </td>
                     {/* Position */}
                     <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/icons/BACK.png"
-                        alt="BACK"
+                        src="/Blue-Archive/icons/MIDDLE.png"
+                        alt="MIDDLE"
                         width={50}
                         height={20}
                         className="inline-block"
@@ -520,7 +509,7 @@ export const Alice = () => {
                     {/* Firearm */}
                     <td className="bg-[#ccccff] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/weapons/RG_New_Icon.png"
+                        src="/Blue-Archive/weapons/AR_New_Icon.png"
                         alt="Handgun Icon"
                         width={80}
                         height={48}
@@ -562,8 +551,8 @@ export const Alice = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Terrible_Icon.png"
-                          alt="Terrible Icon"
+                          src="/Blue-Archive/icons/Excellent_Icon.png"
+                          alt="Excellent Icon"
                           width={24}
                           height={24}
                           className="absolute right-[-6px] bottom-[-6px] z-20"
@@ -581,8 +570,8 @@ export const Alice = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Excellent_Icon.png"
-                          alt="Excellent Icon"
+                          src="/Blue-Archive/icons/Terrible_Icon.png"
+                          alt="Terrible Icon"
                           width={24}
                           height={24}
                           className="absolute right-[-8px] bottom-[-8px] z-20"
@@ -594,25 +583,19 @@ export const Alice = () => {
                   <tr>
                     {/* Offensive Type */}
                     <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
-                      <img
-                        src="/Blue-Archive/images/Offensive_Icon.png"
-                        alt="Offensive Icon"
-                      />
-                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[#46adff]">
+                  
+                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[red]">
                         <b>
-                          <span className="text-black">Mystic</span>
+                          <span className="text-black">Explosion</span>
                         </b>
                       </div>
                     </td>
                     {/* Defensive Type */}
                     <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
-                      <img
-                        src="Blue-Archive/images/Defensive_Icon.png"
-                        alt=""
-                      />
-                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[#46adff]">
+                   
+                      <div className="border-2 border-[#02D3FB] rounded-md inline-flex h-5 w-[60px] overflow-hidden text-center justify-center items-center align-middle my-[2px] text-[10px] bg-[orange]">
                         <b>
-                          <span className="text-black">Special</span>
+                          <span className="text-black">Heavy</span>
                         </b>
                       </div>
                     </td>
@@ -634,8 +617,8 @@ export const Alice = () => {
                     {/* Equipment 2: Hairpin */}
                     <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Badge_T1_Icon.png"
-                        alt="Badge T1 Icon"
+                        src="/Blue-Archive/icons/Hairpin_T1_Icon.png"
+                        alt="Hairpin T1 Icon"
                         width={56}
                         height={44}
                         className="mx-auto"
@@ -644,7 +627,7 @@ export const Alice = () => {
                     {/* Equipment 3: Charm */}
                     <td className="bg-[#ccccff] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Watch_T1_Icon.png"
+                        src="/Blue-Archive/icons/Necklace_T1_Icon.png"
                         alt="Charm T1 Icon"
                         width={56}
                         height={44}
@@ -700,25 +683,25 @@ export const Alice = () => {
                       <span className="text-xs font-bold text-[#4f86f7]">
                         HP
                       </span>
-                      <span className="font-bold text-lg text-black">2395</span>
+                      <span className="font-bold text-lg text-black">2275</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#4f86f7]">
                         ATK
                       </span>
-                      <span className="font-bold text-lg text-black">454</span>
+                      <span className="font-bold text-lg text-black">248</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#4f86f7]">
                         DEF
                       </span>
-                      <span className="font-bold text-lg text-black">76</span>
+                      <span className="font-bold text-lg text-black">17</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#4f86f7]">
                         HEAL
                       </span>
-                      <span className="font-bold text-lg text-black">1727</span>
+                      <span className="font-bold text-lg text-black">1618</span>
                     </div>
                   </div>
                   {/* Level 100 Row 1 */}
@@ -733,16 +716,16 @@ export const Alice = () => {
                   {/* Level 100 Stats 1 */}
                   <div className="bg-[#ccccff] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">20765</span>
+                      <span className="font-bold text-black">22748</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">4545</span>
+                      <span className="font-bold text-black">2883</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">456</span>
+                      <span className="font-bold text-black">106</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5179</span>
+                      <span className="font-bold text-black">4857</span>
                     </div>
                   </div>
                   {/* Level 100 Row 2 (4 images) */}
@@ -766,16 +749,16 @@ export const Alice = () => {
                   {/* Level 100 Stats 2 */}
                   <div className="bg-[#ccccff] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">22434</span>
+                      <span className="font-bold text-black">24576</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5066</span>
+                      <span className="font-bold text-black">3214</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">456</span>
+                      <span className="font-bold text-black">106</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5708</span>
+                      <span className="font-bold text-black">5353</span>
                     </div>
                   </div>
                   {/* Level 100 Row 3 (5 images) */}
@@ -799,16 +782,16 @@ export const Alice = () => {
                   {/* Level 100 Stats 3 */}
                   <div className="bg-[#ccccff] grid grid-cols-4 gap-2 mb-4 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">25029</span>
+                      <span className="font-bold text-black">27419</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5700</span>
+                      <span className="font-bold text-black">3616</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">456</span>
+                      <span className="font-bold text-black">106</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">6369</span>
+                      <span className="font-bold text-black">5973</span>
                     </div>
                   </div>
                   {/* Profile Dropdown */}
@@ -893,15 +876,14 @@ export const Alice = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
-              She wears a standard Millennium high-school uniform, including a
-              white and blue hoodie, a tucked-in white shirt with blue tie
-              underneath, a pleated, black skirt, a pair of woolly socks, and
-              white sneakers with gray shoelaces.
-            </p>
-            <p className="mt-5">
-              It is noted that her Millennium access badge was artificially
-              crafted by the Veritas and her clothes were hand-me-downs from
-              Midori.
+              Asuna wears a white velvet bunny outfit, the bunny outfit don't
+              have sleeves and its mostly opened at the upper part. she have
+              white elegant gloves and black glasses. Over the outfit she wears
+              a oversized, totally unbutton thin, brown plaid jacket, the
+              sleeves of the jacket reach just the elbow. Additionally as
+              accesories she wears a little blue ribbon at her detached collar
+              and she has a white headband with bunny-like white ears. She wears
+              white heels
             </p>
           </div>
           <h4
@@ -913,9 +895,8 @@ export const Alice = () => {
           <div className="ml-3 mt-2">
             See{" "}
             <a href="#" className="text-[#3e7af2] hover:underline">
-              Tendou Alice
+              Ichinose Asuna
             </a>
-            .
           </div>
           <h2
             className="text-3xl font-bold text-[#06bbfa] ml-3 mt-5 border-b border-gray-700"
@@ -966,10 +947,10 @@ export const Alice = () => {
                           className="relative bg-[#4f86f7] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            New Year's Symphony
+                            Hey, hey, Look at this!
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
-                            Cost: 2
+                            Cost: 5
                           </span>
                         </th>
                       </tr>
@@ -978,7 +959,7 @@ export const Alice = () => {
                       <tr>
                         <td className="w-1/4 bg-[#4f86f7] p-2">
                           <img
-                            src="Blue-Archive/icons/DONUT.png"
+                            src="Blue-Archive/icons/CIRCLE.png"
                             alt="Sealess: Ishbóshet icon"
                             className="w-full h-auto rounded"
                           />
@@ -986,59 +967,104 @@ export const Alice = () => {
                         <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             <li>
-                              <span className="font-bold">LV01</span> ~ Deals{" "}
+                              <span className="font-bold">LV01</span> ~
+                              Decreases the DEF of enemies in a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                159%
+                                round-shaped
                               </span>{" "}
-                              of ATK as DMG to enemies in a{" "}
+                              area by{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                arched-shaped
+                                18.9%
                               </span>{" "}
-                              area.
+                              (
+                              <span className="text-[#4f86f7] font-bold">
+                                40
+                              </span>{" "}
+                              sec.) Also deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                274%{" "}
+                              </span>
+                              of ATK as DMG.
                             </li>
                             <li>
-                              <span className="font-bold">LV01</span> ~ Deals{" "}
+                              <span className="font-bold">LV02</span> ~
+                              Decreases the DEF of enemies in a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                183%
+                                round-shaped
                               </span>{" "}
-                              of ATK as DMG to enemies in a{" "}
+                              area by{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                arched-shaped
+                                18.9%
                               </span>{" "}
-                              area.
+                              (
+                              <span className="text-[#4f86f7] font-bold">
+                                40
+                              </span>{" "}
+                              sec.) Also deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                315%{" "}
+                              </span>
+                              of ATK as DMG.
                             </li>
                             <li>
-                              <span className="font-bold">LV01</span> ~ Deals{" "}
+                              <span className="font-bold">LV03</span> ~
+                              Decreases the DEF of enemies in a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                231%
+                                round-shaped
                               </span>{" "}
-                              of ATK as DMG to enemies in a{" "}
+                              area by{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                arched-shaped
+                                21.8%
                               </span>{" "}
-                              area.
+                              (
+                              <span className="text-[#4f86f7] font-bold">
+                                40
+                              </span>{" "}
+                              sec.) Also deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                356%{" "}
+                              </span>
+                              of ATK as DMG.
                             </li>
                             <li>
-                              <span className="font-bold">LV01</span> ~ Deals{" "}
+                              <span className="font-bold">LV04</span> ~
+                              Decreases the DEF of enemies in a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                255%
+                                round-shaped
                               </span>{" "}
-                              of ATK as DMG to enemies in a{" "}
+                              area by{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                arched-shaped
+                                21.8%
                               </span>{" "}
-                              area.
+                              (
+                              <span className="text-[#4f86f7] font-bold">
+                                40
+                              </span>{" "}
+                              sec.) Also deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                397%{" "}
+                              </span>
+                              of ATK as DMG.
                             </li>
                             <li>
-                              <span className="font-bold">LV01</span> ~ Deals{" "}
+                              <span className="font-bold">LV05</span> ~
+                              Decreases the DEF of enemies in a{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                302%
+                                round-shaped
                               </span>{" "}
-                              of ATK as DMG to enemies in a{" "}
+                              area by{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                arched-shaped
+                                24.6%
                               </span>{" "}
-                              area.
+                              (
+                              <span className="text-[#4f86f7] font-bold">
+                                40
+                              </span>{" "}
+                              sec.) Also deals{" "}
+                              <span className="text-[#4f86f7] font-bold">
+                                438%{" "}
+                              </span>
+                              of ATK as DMG.
                             </li>
                           </ul>
                         </td>
@@ -1051,7 +1077,7 @@ export const Alice = () => {
               {/* Normal Skill */}
               {activeSkillTab === "normal" && (
                 <div className="overflow-x-auto">
-                  <table className="w-[1000px] border-2 border-[#4f86f7] rounded-lg">
+                  <table className="w-[700px] border-2 border-[#4f86f7] rounded-lg">
                     <thead>
                       <tr>
                         <th
@@ -1059,7 +1085,7 @@ export const Alice = () => {
                           className="relative bg-[#4f86f7] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            Little Devil's Chorus
+                            Let's have some fun!
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1071,7 +1097,7 @@ export const Alice = () => {
                       <tr>
                         <td className="w-1/4 bg-[#4f86f7] p-2">
                           <img
-                            src="Blue-Archive/icons/LINE.png"
+                            src="Blue-Archive/icons/WEAPON-BUFF.png"
                             alt="Emergency First Aid icon"
                             className="w-full h-auto rounded"
                           />
@@ -1079,38 +1105,27 @@ export const Alice = () => {
                         <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              217, 222, 228, 250, 255, 260, 282, 288, 293, 315,
+                              18.4, 19.3, 20.3, 22.1, 23, 23.9, 25.8, 26.7,
+                              27.6, 29.5,
                             ].map((dmg, idx) => {
-                              const stunDurations = [
-                                117, 120, 122, 134, 137, 140, 152, 155, 158,
-                                169,
-                              ];
                               return (
                                 <li key={idx}>
                                   <span className="font-bold">
                                     LV{(idx + 1).toString().padStart(2, "0")}
                                   </span>{" "}
-                                  ~ Deals{" "}
+                                  ~ Increases ATK by{" "}
                                   <span className="text-[#4f86f7] font-bold">
                                     {dmg}%
                                   </span>{" "}
-                                  of ATK as DMG to enemies in a{" "}
-                                  <span className="text-[#4f86f7] font-bold">
-                                    straight-line
-                                  </span>{" "}
                                   every{" "}
                                   <span className="text-[#4f86f7] font-bold">
-                                    50
+                                    35
                                   </span>{" "}
-                                  sec. Deals an additional{" "}
+                                  sec (for{" "}
                                   <span className="text-[#4f86f7] font-bold">
-                                    {stunDurations[idx].toFixed(1)}%
+                                    23
                                   </span>{" "}
-                                  of ATK as DMG when{" "}
-                                  <span className="text-[#4f86f7] font-bold">
-                                    6
-                                  </span>{" "}
-                                  stacks imps are stacked.
+                                  sec).
                                 </li>
                               );
                             })}
@@ -1133,7 +1148,7 @@ export const Alice = () => {
                           className="relative bg-[#4f86f7] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            More fun ways to play
+                            Let's have some more fun!
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1145,7 +1160,7 @@ export const Alice = () => {
                       <tr>
                         <td className="w-1/4 bg-[#4f86f7] p-2">
                           <img
-                            src="Blue-Archive/icons/WEAPON-BUFF.png"
+                            src="Blue-Archive/icons/STAT-BUFF.png"
                             alt="Foreclosure Task Force President icon"
                             className="w-full h-auto rounded"
                           />
@@ -1160,7 +1175,7 @@ export const Alice = () => {
                                 <span className="font-bold">
                                   LV{(i + 1).toString().padStart(2, "0")}
                                 </span>{" "}
-                                ~ Increases ATK by{" "}
+                                ~ Increases MAX HP by{" "}
                                 <span className="text-[#4f86f7] font-bold">
                                   {def}%
                                 </span>
@@ -1186,7 +1201,7 @@ export const Alice = () => {
                           className="relative bg-[#4f86f7] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            Little Devil's Cute Scheme
+                            That's a bonus!
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1198,7 +1213,7 @@ export const Alice = () => {
                       <tr>
                         <td className="w-1/4 bg-[#4f86f7] p-2">
                           <img
-                            src="Blue-Archive/icons/Alice_SUB-SKILL.png"
+                            src="Blue-Archive/icons/WEAPON-BUFF.png"
                             alt="Expert Suppression icon"
                             className="w-full h-auto rounded"
                           />
@@ -1206,33 +1221,22 @@ export const Alice = () => {
                         <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              2.1, 2.2, 2.3, 2.8, 2.9, 3, 3.4, 3.5, 3.6, 4.1,
+                              20.1, 21.1, 22.1, 26.2, 27.2, 28.2, 32.2, 34.2,
+                              38.3,
                             ].map((bar, i) => (
                               <li key={i}>
                                 <span className="font-bold">
                                   LV{(i + 1).toString().padStart(2, "0")}
                                 </span>{" "}
-                                ~ Accumulates{" "}
-                                <span className="text-[#4f86f7] font-bold">
-                                  1
-                                </span>{" "}
-                                imp for every{" "}
-                                <span className="text-[#4f86f7] font-bold">
-                                  3
-                                </span>{" "}
-                                times the enemy takes DMG from EX-Skills (
-                                <span className="text-[#4f86f7] font-bold">
-                                  56
-                                </span>{" "}
-                                sec). Up to{" "}
-                                <span className="text-[#4f86f7] font-bold">
-                                  6
-                                </span>{" "}
-                                imps can be stacked, and each imp increasses
-                                CRIT.DMG by{" "}
+                                ~ Increases ATK SPD by{" "}
                                 <span className="text-[#4f86f7] font-bold">
                                   {bar}%
-                                </span>
+                                </span>{" "}
+                                when using EX-Skills (
+                                <span className="text-[#4f86f7] font-bold">
+                                  30
+                                </span>{" "}
+                                sec).
                               </li>
                             ))}
                           </ul>
@@ -1295,44 +1299,42 @@ export const Alice = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border-2 border-[#4f86f7] p-2">
-                        <img
-                          src="Blue-Archive/icons/Cross_2.png"
-                          alt="Cross Icon"
-                          className="w-9 h-10 mx-auto"
-                        />
-                      </td>
-                      <td className="border-2 border-[#4f86f7] p-2">
-                        <img
-                          src="Blue-Archive/icons/Cross_2.png"
-                          alt="Cross Icon"
-                          className="w-9 h-10 mx-auto"
-                        />
-                      </td>
-                      <td className="border-2 border-[#4f86f7] p-2">
+                      <td className="border-2 border-[#4f86f7] p-2 flex justify-center items-center">
                         <img
                           src="Blue-Archive/icons/Buff_-_ATK.png"
+                          alt="Cross Icon"
+                          className="w-9 h-10 "
+                        />
+                        <img
+                          src="Blue-Archive/icons/Debuff_-_DEF.png"
+                          alt="Cross Icon"
+                          className="w-9 h-10 "
+                        />
+                      </td>
+                      <td className="border-2 border-[#4f86f7] p-2">
+                        <img
+                          src="Blue-Archive/icons/Cross_2.png"
+                          alt="Cross Icon"
+                          className="w-9 h-10 mx-auto"
+                        />
+                      </td>
+                      <td className="border-2 border-[#4f86f7] p-2">
+                        <img
+                          src="Blue-Archive/icons/Buff_-_HP.png"
                           alt="Crit Buff Icon"
                           className="w-9 h-10 mx-auto"
                         />
                       </td>
                       <td className="border-2 border-[#4f86f7] p-2">
-                        <div className="flex items-center justify-center space-x-1">
-                          <img
-                            src="Blue-Archive/icons/Buff_-_CRIT.DMG.png"
-                            alt="Crit Buff Icon"
-                            className="w-9 h-10"
-                          />
-                          <img
-                            src="Blue-Archive/icons/Special_-_Little_Devil.png"
-                            alt="Crit Damage Buff Icon"
-                            className="w-9 h-10"
-                          />
-                        </div>
+                        <img
+                          src="Blue-Archive/icons/Buff_-_ATK_SPD.png"
+                          alt="Crit Buff Icon"
+                          className="w-9 h-10 mx-auto"
+                        />
                       </td>
                       <td className="border-2 border-[#4f86f7] p-2">
                         <img
-                          src="Blue-Archive/icons/Buff_-_Penetration.png"
+                          src="Blue-Archive/icons/Buff_-_HP.png"
                           alt="Attack Buff Icon"
                           className="w-9 h-10 mx-auto"
                         />
@@ -1419,7 +1421,7 @@ export const Alice = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/LINE.png"
+                              src="Blue-Archive/icons/WEAPON-BUFF.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1536,7 +1538,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Voynich_0.png"
+                              src="Blue-Archive/icons/Rohonc_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1567,7 +1569,7 @@ export const Alice = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/WEAPON-BUFF.png"
+                              src="Blue-Archive/icons/STAT-BUFF.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1598,7 +1600,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Voynich_1.png"
+                              src="Blue-Archive/icons/Rohonc_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1612,7 +1614,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Antikythera_0.png"
+                              src="Blue-Archive/icons/Nebra_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1674,7 +1676,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Voynich_1.png"
+                              src="Blue-Archive/icons/Rohonc_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1688,7 +1690,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Antikythera_0.png"
+                              src="Blue-Archive/icons/Nebra_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1735,7 +1737,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Voynich_2.png"
+                              src="Blue-Archive/icons/Rohonc_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1749,7 +1751,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Antikythera_1.png"
+                              src="Blue-Archive/icons/Nebra_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1780,7 +1782,7 @@ export const Alice = () => {
                         <div className="relative inline-block">
                           <div>
                             <img
-                              src="Blue-Archive/icons/Alice_SUB-SKILL.png"
+                              src="Blue-Archive/icons/WEAPON-BUFF.png"
                               alt=""
                               className="w-24 h-24"
                             />
@@ -1825,7 +1827,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Voynich_3.png"
+                              src="Blue-Archive/icons/Rohonc_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1839,7 +1841,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Antikythera_2.png"
+                              src="Blue-Archive/icons/Nebra_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1886,7 +1888,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Voynich_3.png"
+                              src="Blue-Archive/icons/Rohonc_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1900,7 +1902,7 @@ export const Alice = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Antikythera_2.png"
+                              src="Blue-Archive/icons/Nebra_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1979,9 +1981,9 @@ export const Alice = () => {
                     <tr>
                       <td
                         rowSpan={7}
-                        className="border border-[#4f86f7] rounded-lg  align-top"
+                        className="border bg-[#4f86f7] border-[#4f86f7] rounded-lg  align-top"
                       >
-                        <AliceEX />
+                        <AsunaScoolgirlEX />
                       </td>
                     </tr>
                     <tr>
@@ -1999,7 +2001,7 @@ export const Alice = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Voynich_0.png"
+                          src="/Blue-Archive/icons/Rohonc_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2042,7 +2044,7 @@ export const Alice = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Voynich_1.png"
+                          src="/Blue-Archive/icons/Rohonc_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2050,7 +2052,7 @@ export const Alice = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Antikythera_0.png"
+                          src="/Blue-Archive/icons/Nebra_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2087,7 +2089,7 @@ export const Alice = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Voynich_2.png"
+                          src="/Blue-Archive/icons/Rohonc_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2095,7 +2097,7 @@ export const Alice = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Antikythera_1.png"
+                          src="/Blue-Archive/icons/Nebra_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2132,7 +2134,7 @@ export const Alice = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Voynich_3.png"
+                          src="/Blue-Archive/icons/Rohonc_3.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2140,7 +2142,7 @@ export const Alice = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Antikythera_2.png"
+                          src="/Blue-Archive/icons/Nebra_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2192,7 +2194,7 @@ export const Alice = () => {
               <tbody>
                 <tr>
                   <th className="bg-[#4f86f7] text-black font-bold px-2 py-1">
-                    Shooting Stars
+                    Bunny Bunny Carrot Carrot
                   </th>
                   <td colSpan={3} className="border border-[#4f86f7] px-2 py-1">
                     <audio
@@ -2218,7 +2220,7 @@ export const Alice = () => {
                         height={19}
                       />
                       <img
-                        src="/Blue-Archive/icons/Blue_Font_5.png"
+                        src="/Blue-Archive/icons/Blue_Font_2.png"
                         alt="Bond Level"
                         width={18}
                         height={17}
@@ -2239,13 +2241,13 @@ export const Alice = () => {
                     rowSpan={7}
                     className="border border-[#4f86f7] rounded-lg p-2 align-top"
                   >
-                    <AliceLive2D />
+                    <AsunaScoolgirlLive2D />
                   </td>
                   <th className="bg-[#4f86f7] text-black font-bold px-2 py-2">
                     LV02 – 05
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+3
+                    ATK+2
                   </td>
                 </tr>
                 <tr>
@@ -2253,7 +2255,7 @@ export const Alice = () => {
                     LV06 – 10
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATk+4
+                    ATk+3
                   </td>
                 </tr>
                 <tr>
@@ -2261,7 +2263,7 @@ export const Alice = () => {
                     LV11 – 15
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+5 / HP+55
+                    ATK+4 / HP+58
                   </td>
                 </tr>
                 <tr>
@@ -2269,7 +2271,7 @@ export const Alice = () => {
                     LV16 – 20
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+7 / HP+67
+                    ATK+5 / HP+69
                   </td>
                 </tr>
                 <tr>
@@ -2277,7 +2279,7 @@ export const Alice = () => {
                     LV21 – 30
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+2 / HP+12
+                    ATK+1 / HP+11
                   </td>
                 </tr>
                 <tr>
@@ -2285,7 +2287,7 @@ export const Alice = () => {
                     LV31 – 40
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+3 / HP+17
+                    ATK+2 / HP+17
                   </td>
                 </tr>
                 <tr>
@@ -2293,7 +2295,7 @@ export const Alice = () => {
                     LV41 – 50
                   </th>
                   <td className="border border-[#4f86f7] text-left px-2 py-2">
-                    ATK+4 / HP+29
+                    ATK+3 / HP+28
                   </td>
                 </tr>
               </tbody>
