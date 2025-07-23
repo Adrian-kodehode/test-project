@@ -12,8 +12,8 @@ const AsunaScoolgirlLive2D = memo(() => (
 const AsunaScoolgirlEX = memo(() => (
   <div className="flex flex-col space-y-2">
     <img
-      src="Blue-Archive/icons/CIRCLE.png"
-      alt="Hoshino Live2D"
+      src="Blue-Archive/live2d/Asuna_Schoolgirl_EX.gif"
+      alt="Asuna Schoolgirl Live2D"
       className="w-full rounded-lg mx-auto bg-[#4f86f7] "
     />
   </div>
@@ -37,7 +37,7 @@ export const AsunaScoolgirl = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        backgroundImage: "url('/Blue-Archive/Site-background-dark (3).jpg')",
+        backgroundImage: "url('/Blue-Archive/Site-background-dark (4).jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -290,11 +290,7 @@ export const AsunaScoolgirl = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                This is Asuna from "C&C", disguised as a bunny girl for an
-                infiltration mission! As usual, she was very excited to change
-                from her maid outfit to a bunny outfit, and seemed to be
-                enjoying the new experience in a new place even more than
-                usual...
+                Asuna from C&C who is a member of the Millennium Science School will be serving as a guide for the Millennium EXPO. Apparently, she changes into a uniform to serve as a guide while also working as a bodyguard for important people. Combined with her natural cheerfulness, she seems to be gaining popularity!!
               </p>
             </div>
             <h3
@@ -319,9 +315,7 @@ export const AsunaScoolgirl = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Asuna is a well-endowed young woman. She has ash blonde hair
-                that is messy and reaches almost to her knees. Her eyes are the
-                same color as her hair.
+              Ichinose Asuna has floor-length ash-blonde hair with asymmetrical bangs that cover her right eye, while the other side is tucked near her ear, exposing part of her forehead. She wears a small blue ribbon in her hair and has green eyes.
               </p>
             </div>
             <h4
@@ -383,7 +377,7 @@ export const AsunaScoolgirl = () => {
                     <img
                       src={
                         selectedTab === "icon"
-                          ? "/Blue-Archive/characters/Asuna_Schoolgirl_Icon.png"
+                          ? "/Blue-Archive/characters/Asuna_Schoolgirl_Icon (1).png"
                           : selectedTab === "portrait"
                           ? "/Blue-Archive/characters/Asuna_Schoolgirl_Portrait.png"
                           : selectedTab === "sprite"
@@ -876,14 +870,7 @@ export const AsunaScoolgirl = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
-              Asuna wears a white velvet bunny outfit, the bunny outfit don't
-              have sleeves and its mostly opened at the upper part. she have
-              white elegant gloves and black glasses. Over the outfit she wears
-              a oversized, totally unbutton thin, brown plaid jacket, the
-              sleeves of the jacket reach just the elbow. Additionally as
-              accesories she wears a little blue ribbon at her detached collar
-              and she has a white headband with bunny-like white ears. She wears
-              white heels
+             Ichinose Asuna wears a white dress shirt with the top button undone. She also has a sky-blue bow above her chest. The dress shirt is tucked into a navy-blue mini-skirt. Additionally, she wears black shin-length socks with black loafers, a black choker with a small blue square, and a black messenger bag slung over her shoulder.
             </p>
           </div>
           <h4
@@ -950,7 +937,7 @@ export const AsunaScoolgirl = () => {
                             Hey, hey, Look at this!
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
-                            Cost: 5
+                            Cost: 3
                           </span>
                         </th>
                       </tr>
@@ -959,7 +946,7 @@ export const AsunaScoolgirl = () => {
                       <tr>
                         <td className="w-1/4 bg-[#4f86f7] p-2">
                           <img
-                            src="Blue-Archive/icons/CIRCLE.png"
+                            src="Blue-Archive/icons/WEAPON-BUFF.png"
                             alt="Sealess: Ishbóshet icon"
                             className="w-full h-auto rounded"
                           />
@@ -968,103 +955,88 @@ export const AsunaScoolgirl = () => {
                           <ul className="list-disc list-inside space-y-1">
                             <li>
                               <span className="font-bold">LV01</span> ~
-                              Decreases the DEF of enemies in a{" "}
+                              Increases ATK by{" "}
+                          
                               <span className="text-[#4f86f7] font-bold">
-                                round-shaped
+                                33.4%
                               </span>{" "}
-                              area by{" "}
+                              for self and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                18.9%
+                                all
                               </span>{" "}
-                              (
+                              Special students ({" "}
                               <span className="text-[#4f86f7] font-bold">
-                                40
-                              </span>{" "}
-                              sec.) Also deals{" "}
-                              <span className="text-[#4f86f7] font-bold">
-                                274%{" "}
+                                19{" "}
                               </span>
-                              of ATK as DMG.
+                              sec).
                             </li>
                             <li>
                               <span className="font-bold">LV02</span> ~
-                              Decreases the DEF of enemies in a{" "}
+                             Increases ATK by{" "}
+                          
                               <span className="text-[#4f86f7] font-bold">
-                                round-shaped
+                                38.4%
                               </span>{" "}
-                              area by{" "}
+                              for self and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                18.9%
+                                all
                               </span>{" "}
-                              (
+                              Special students ({" "}
                               <span className="text-[#4f86f7] font-bold">
-                                40
-                              </span>{" "}
-                              sec.) Also deals{" "}
-                              <span className="text-[#4f86f7] font-bold">
-                                315%{" "}
+                                19{" "}
                               </span>
-                              of ATK as DMG.
+                              sec).
                             </li>
                             <li>
                               <span className="font-bold">LV03</span> ~
-                              Decreases the DEF of enemies in a{" "}
+                              Increases ATK by{" "}
+                          
                               <span className="text-[#4f86f7] font-bold">
-                                round-shaped
+                                48.4%
                               </span>{" "}
-                              area by{" "}
+                              for self and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                21.8%
+                                all
                               </span>{" "}
-                              (
+                              Special students ({" "}
                               <span className="text-[#4f86f7] font-bold">
-                                40
-                              </span>{" "}
-                              sec.) Also deals{" "}
-                              <span className="text-[#4f86f7] font-bold">
-                                356%{" "}
+                                19{" "}
                               </span>
-                              of ATK as DMG.
+                              sec).
                             </li>
                             <li>
                               <span className="font-bold">LV04</span> ~
-                              Decreases the DEF of enemies in a{" "}
+                              Increases ATK by{" "}
+                          
                               <span className="text-[#4f86f7] font-bold">
-                                round-shaped
+                                53.5%
                               </span>{" "}
-                              area by{" "}
+                              for self and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                21.8%
+                                all
                               </span>{" "}
-                              (
+                              Special students ({" "}
                               <span className="text-[#4f86f7] font-bold">
-                                40
-                              </span>{" "}
-                              sec.) Also deals{" "}
-                              <span className="text-[#4f86f7] font-bold">
-                                397%{" "}
+                                19{" "}
                               </span>
-                              of ATK as DMG.
+                              sec).
                             </li>
                             <li>
                               <span className="font-bold">LV05</span> ~
-                              Decreases the DEF of enemies in a{" "}
+                            Increases ATK by{" "}
+                          
                               <span className="text-[#4f86f7] font-bold">
-                                round-shaped
+                                63.5%
                               </span>{" "}
-                              area by{" "}
+                              for self and{" "}
                               <span className="text-[#4f86f7] font-bold">
-                                24.6%
+                                all
                               </span>{" "}
-                              (
+                              Special students ({" "}
                               <span className="text-[#4f86f7] font-bold">
-                                40
-                              </span>{" "}
-                              sec.) Also deals{" "}
-                              <span className="text-[#4f86f7] font-bold">
-                                438%{" "}
+                                19{" "}
                               </span>
-                              of ATK as DMG.
+                              sec).
                             </li>
                           </ul>
                         </td>
@@ -1077,7 +1049,7 @@ export const AsunaScoolgirl = () => {
               {/* Normal Skill */}
               {activeSkillTab === "normal" && (
                 <div className="overflow-x-auto">
-                  <table className="w-[700px] border-2 border-[#4f86f7] rounded-lg">
+                  <table className="w-[900px] border-2 border-[#4f86f7] rounded-lg">
                     <thead>
                       <tr>
                         <th
@@ -1097,7 +1069,7 @@ export const AsunaScoolgirl = () => {
                       <tr>
                         <td className="w-1/4 bg-[#4f86f7] p-2">
                           <img
-                            src="Blue-Archive/icons/WEAPON-BUFF.png"
+                            src="Blue-Archive/icons/HEAL.png"
                             alt="Emergency First Aid icon"
                             className="w-full h-auto rounded"
                           />
@@ -1105,27 +1077,30 @@ export const AsunaScoolgirl = () => {
                         <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              18.4, 19.3, 20.3, 22.1, 23, 23.9, 25.8, 26.7,
-                              27.6, 29.5,
+                             51.7, 54.2, 56.8, 67.2, 69.7, 72.3, 82.7, 85.2, 87.8, 98.2
                             ].map((dmg, idx) => {
                               return (
                                 <li key={idx}>
                                   <span className="font-bold">
                                     LV{(idx + 1).toString().padStart(2, "0")}
                                   </span>{" "}
-                                  ~ Increases ATK by{" "}
+                                  ~ Recovers{" "}
                                   <span className="text-[#4f86f7] font-bold">
                                     {dmg}%
                                   </span>{" "}
-                                  every{" "}
+                                  of HEAL as HP for{" "}
                                   <span className="text-[#4f86f7] font-bold">
-                                    35
+                                   all
                                   </span>{" "}
-                                  sec (for{" "}
+                                  allies except self within a{" "}
                                   <span className="text-[#4f86f7] font-bold">
-                                    23
+                                    rounded-shaped
                                   </span>{" "}
-                                  sec).
+                                  area every{" "}
+                                  <span className="text-[#4f86f7] font-bold">
+                                    40
+                                  </span>{" "}
+                                  sec.
                                 </li>
                               );
                             })}
@@ -1175,7 +1150,7 @@ export const AsunaScoolgirl = () => {
                                 <span className="font-bold">
                                   LV{(i + 1).toString().padStart(2, "0")}
                                 </span>{" "}
-                                ~ Increases MAX HP by{" "}
+                                ~ Increases HEAL by{" "}
                                 <span className="text-[#4f86f7] font-bold">
                                   {def}%
                                 </span>
@@ -1221,22 +1196,22 @@ export const AsunaScoolgirl = () => {
                         <td className="w-3/4 border-l-2 border-[#4f86f7] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              20.1, 21.1, 22.1, 26.2, 27.2, 28.2, 32.2, 34.2,
-                              38.3,
+                              16.1, 16.9, 17.7, 20.9, 21.7, 22.5, 25.7,
+                              26.5, 27.3, 30.5,
                             ].map((bar, i) => (
                               <li key={i}>
                                 <span className="font-bold">
                                   LV{(i + 1).toString().padStart(2, "0")}
                                 </span>{" "}
-                                ~ Increases ATK SPD by{" "}
+                                ~ Increases ATK by{" "}
                                 <span className="text-[#4f86f7] font-bold">
                                   {bar}%
                                 </span>{" "}
-                                when using EX-Skills (
+                                for self and{" "}
                                 <span className="text-[#4f86f7] font-bold">
-                                  30
+                                  all
                                 </span>{" "}
-                                sec).
+                                Special students.
                               </li>
                             ))}
                           </ul>
@@ -1538,7 +1513,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_0.png"
+                              src="Blue-Archive/icons/Mystery_Stone_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1600,7 +1575,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_1.png"
+                              src="Blue-Archive/icons/Mystery_Stone_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1614,7 +1589,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_0.png"
+                              src="Blue-Archive/icons/Antikythera_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1676,7 +1651,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_1.png"
+                              src="Blue-Archive/icons/Mystery_Stone_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1690,7 +1665,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_0.png"
+                              src="Blue-Archive/icons/Antikythera_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1737,7 +1712,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_2.png"
+                              src="Blue-Archive/icons/Mystery_Stone_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1751,7 +1726,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_1.png"
+                              src="Blue-Archive/icons/Antikythera_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1827,7 +1802,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_3.png"
+                              src="Blue-Archive/icons/Mystery_Stone_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1841,7 +1816,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_2.png"
+                              src="Blue-Archive/icons/Antikythera_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1888,7 +1863,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Rohonc_3.png"
+                              src="Blue-Archive/icons/Mystery_Stone_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1902,7 +1877,7 @@ export const AsunaScoolgirl = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Nebra_2.png"
+                              src="Blue-Archive/icons/Antikythera_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1993,7 +1968,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_0.png"
+                          src="/Blue-Archive/icons/Millennium_EX-Skill_Disc_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2001,7 +1976,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Rohonc_0.png"
+                          src="/Blue-Archive/icons/Mystery_Stone_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2028,7 +2003,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_1.png"
+                          src="/Blue-Archive/icons/Millennium_EX-Skill_Disc_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2036,7 +2011,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_0.png"
+                          src="/Blue-Archive/icons/Millennium_EX-Skill_Disc_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2044,7 +2019,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Rohonc_1.png"
+                          src="/Blue-Archive/icons/Mystery_Stone_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2052,7 +2027,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Nebra_0.png"
+                          src="/Blue-Archive/icons/Antikythera_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2073,7 +2048,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_2.png"
+                          src="/Blue-Archive/icons/Millennium_EX-Skill_Disc_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2081,7 +2056,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_1.png"
+                          src="/Blue-Archive/icons/Millennium_EX-Skill_Disc_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2089,7 +2064,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Rohonc_2.png"
+                          src="/Blue-Archive/icons/Mystery_Stone_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2097,7 +2072,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Nebra_1.png"
+                          src="/Blue-Archive/icons/Antikythera_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2118,7 +2093,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_3.png"
+                          src="/Blue-Archive/icons/Millennium_EX-Skill_Disc_3.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2126,7 +2101,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Gehenna_EX-Skill_Disc_2.png"
+                          src="/Blue-Archive/icons/Millennium_EX-Skill_Disc_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2134,7 +2109,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Rohonc_3.png"
+                          src="/Blue-Archive/icons/Mystery_Stone_3.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2142,7 +2117,7 @@ export const AsunaScoolgirl = () => {
                       </td>
                       <td className="border border-[#4f86f7] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Nebra_2.png"
+                          src="/Blue-Archive/icons/Antikythera_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2220,7 +2195,7 @@ export const AsunaScoolgirl = () => {
                         height={19}
                       />
                       <img
-                        src="/Blue-Archive/icons/Blue_Font_2.png"
+                        src="/Blue-Archive/icons/Blue_Font_5.png"
                         alt="Bond Level"
                         width={18}
                         height={17}
