@@ -482,7 +482,7 @@ export const Seia = () => {
                           className="inline-block mb-1"
                         />
                         <span className="font-semibold text-black text-sm">
-                          Attacker
+                          Supporter
                         </span>
                       </div>
                     </td>
@@ -586,7 +586,7 @@ export const Seia = () => {
                   <tr>
                     {/* Offensive Type */}
                     <td className="bg-[#f7e69a] text-center align-middle w-1/3 px-2 py-2">
-                      <div className="inline-flex items-center justify-center h-5 w-[70px] border-2 border-[#02D3FB] rounded-md text-[10px] bg-orange-500">
+                      <div className="inline-flex items-center justify-center h-5 w-[70px] border-2 border-[#02D3FB] rounded-md text-[10px] bg-[orange]">
                         <b>
                           <span className="text-black">Penetration</span>
                         </b>
@@ -995,7 +995,7 @@ export const Seia = () => {
                               sec).
                             </li>
                             <li>
-                              <span className="font-bold">LV02</span> ~ Deals{" "}
+                              <span className="font-bold">LV02</span> ~{" "}
                               Decreasses{" "}
                               <span className="text-[#fbb35a] font-bold">
                                 1
@@ -1021,7 +1021,7 @@ export const Seia = () => {
                               sec).
                             </li>
                             <li>
-                              <span className="font-bold">LV03</span> ~ Deals{" "}
+                              <span className="font-bold">LV03</span> ~{" "}
                               Decreasses{" "}
                               <span className="text-[#fbb35a] font-bold">
                                 1
@@ -1047,7 +1047,7 @@ export const Seia = () => {
                               sec).
                             </li>
                             <li>
-                              <span className="font-bold">LV04</span> ~ Deals{" "}
+                              <span className="font-bold">LV04</span> ~{" "}
                               Decreasses{" "}
                               <span className="text-[#fbb35a] font-bold">
                                 1
@@ -1073,7 +1073,7 @@ export const Seia = () => {
                               sec).
                             </li>
                             <li>
-                              <span className="font-bold">LV05</span> ~ Deals{" "}
+                              <span className="font-bold">LV05</span> ~{" "}
                               Decreasses{" "}
                               <span className="text-[#fbb35a] font-bold">
                                 1
