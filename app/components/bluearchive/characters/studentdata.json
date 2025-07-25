@@ -1590,6 +1590,21 @@
     "bg": 4
   },
   {
+    "src": "/Blue-Archive/characters/Seia_Swimsuit_Icon.png",
+    "href": "/seia_swimsuit",
+    "name": "Seia",
+    "altName": "(Swimsuit)",
+    "role": "Striker",
+    "classSrc": "Blue-Archive/icons/Supporter.png",
+    "classSrc2": "",
+    "position": "MIDDLE",
+    "cover": "Blue-Archive/icons/Cross_1.png",
+    "atk": "Penetration",
+    "def": "Special Armor",
+    "numStars": 3,
+    "bg": 4
+  },
+  {
     "src": "/Blue-Archive/characters/Mika_Icon.png",
     "href": "/",
     "name": "Mika",

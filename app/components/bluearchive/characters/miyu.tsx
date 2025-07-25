@@ -1365,7 +1365,7 @@ export const Miyu = () => {
                       </td>
                       <td className="border-2 border-[#90abc9] p-2">
                         <img
-                          src="Blue-Archive/icons/Buff_-_Enhance_Penetration.png"
+                          src="Blue-Archive/icons/Debuff_-_Weakness.png"
                           alt="Cross Icon"
                           className="w-9 h-10 mx-auto"
                         />
@@ -2246,7 +2246,7 @@ export const Miyu = () => {
               <tbody>
                 <tr>
                   <th className="bg-[#90abc9] text-black font-bold px-2 py-1">
-                    Breaking Silence
+                  Cotton Candy Island
                   </th>
                   <td colSpan={3} className="border border-[#90abc9] px-2 py-1">
                     <audio
@@ -2272,7 +2272,7 @@ export const Miyu = () => {
                         height={19}
                       />
                       <img
-                        src="/Blue-Archive/icons/Blue_Font_2.png"
+                        src="/Blue-Archive/icons/Blue_Font_5.png"
                         alt="Bond Level"
                         width={18}
                         height={17}
@@ -2283,7 +2283,7 @@ export const Miyu = () => {
                     colSpan={2}
                     className="bg-[#90abc9] text-black font-bold px-2 py-2"
                   >
-                    Total Stats ~ HEAL+291 / HP+1145
+                    Total Stats ~ ATK+167 / HP+1005
                   </th>
                 </tr>
 
@@ -2299,7 +2299,7 @@ export const Miyu = () => {
                     LV02 – 05
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                    HEAL+3
+                    ATK+3
                   </td>
                 </tr>
                 <tr>
@@ -2307,7 +2307,7 @@ export const Miyu = () => {
                     LV06 – 10
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                    HEAL+7
+                   ATK+4
                   </td>
                 </tr>
                 <tr>
@@ -2315,7 +2315,7 @@ export const Miyu = () => {
                     LV11 – 15
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                    HEAL+9 / HP+55
+                    ATK+5 / HP+57
                   </td>
                 </tr>
                 <tr>
@@ -2323,7 +2323,7 @@ export const Miyu = () => {
                     LV16 – 20
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                    HEAL+11 / HP+66
+                   ATK+6 / HP+56
                   </td>
                 </tr>
                 <tr>
@@ -2331,7 +2331,7 @@ export const Miyu = () => {
                     LV21 – 30
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                    HEAL+3 / HP+11
+                    ATK+2 / HP+10
                   </td>
                 </tr>
                 <tr>
@@ -2339,7 +2339,7 @@ export const Miyu = () => {
                     LV31 – 40
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                    HEAL+4 / HP+16
+                    ATK+2 / HP+15
                   </td>
                 </tr>
                 <tr>
@@ -2347,7 +2347,7 @@ export const Miyu = () => {
                     LV41 – 50
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                    HEAL+7 / HP+27
+                    ATK+4 / HP+24
                   </td>
                 </tr>
               </tbody>

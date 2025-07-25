@@ -141,8 +141,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/kikyou_swimsuit" &&
           location.pathname !== "/asuna_schoolgirl" &&
           location.pathname !== "/seia" &&
+          location.pathname !== "/seia_swimsuit" &&
           location.pathname !== "/hanako_swimsuit" &&
           location.pathname !== "/miyu" &&
+          location.pathname !== "/miyu_swimsuit" &&
+          location.pathname !== "/fgo" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div>{children}</div>
 
@@ -160,7 +163,7 @@ export default function App() {
   const showCustomCursor = location.pathname !== "/home";
 
   return (
-    <div className={showCustomCursor ? "cursor-none" : ""}>
+     <div className={showCustomCursor ? "cursor-none" : ""}>
       {showCustomCursor && <CustomCursor gifSrc="guraDance-4x.gif" size={48} />}
       <Outlet />
       {location.pathname !== "/music" &&
@@ -254,8 +257,11 @@ export default function App() {
         location.pathname !== "/kikyou_swimsuit" &&
         location.pathname !== "/asuna_schoolgirl" &&
         location.pathname !== "/seia" &&
+        location.pathname !== "/seia_swimsuit" &&
         location.pathname !== "/hanako_swimsuit" &&
         location.pathname !== "/miyu" &&
+        location.pathname !== "/miyu_swimsuit" &&
+        location.pathname !== "/fgo" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );
