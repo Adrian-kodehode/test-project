@@ -134,7 +134,7 @@ export const KarinBunny = () => {
                 Karin
               </a>{" "}
               and is one of the{" "}
-              <a href="/students357ff3" className="text-[#357ff3]">
+              <a href="/students" className="text-[#357ff3]">
                 students
               </a>{" "}
               studying in{" "}

@@ -40,7 +40,7 @@ export const HeroSection = () => {
         </a>
       </div>
       <div className="flex mt-10 justify-center">
-        {/* <video
+        <video
           autoPlay
           loop
           muted
@@ -59,7 +59,7 @@ export const HeroSection = () => {
         >
           <source src={video2} type="video/mp4" />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
       </div>
     </div>
   );

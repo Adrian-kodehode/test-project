@@ -14,6 +14,52 @@ export const Students = () => {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
+  const [sortConfig, setSortConfig] = useState<{
+    key: string | null;
+    direction: string;
+    count: number;
+  }>({
+    key: null,
+    direction: "ascending",
+    count: 0,
+  });
+
+  const handleSort = (key: string) => {
+    let direction = "ascending";
+    let count = sortConfig.count;
+
+    if (sortConfig.key === key) {
+      count = (count + 1) % 3;
+      if (count === 0) {
+        // Reset to original order
+        setSortConfig({ key: null, direction: "ascending", count: 0 });
+        return;
+      } else if (sortConfig.direction === "ascending") {
+        direction = "descending";
+      }
+    } else {
+      count = 1; // Reset count when a new key is clicked
+    }
+
+    setSortConfig({ key, direction, count });
+  };
+
+  const sortedStudentData = React.useMemo(() => {
+    let sortableItems = [...studentdata];
+    if (sortConfig !== null && sortConfig.key !== null) {
+      sortableItems.sort((a: any, b: any) => {
+        if (sortConfig.key && a[sortConfig.key] < b[sortConfig.key]) {
+          return sortConfig.direction === "ascending" ? -1 : 1;
+        }
+        if (sortConfig.key && a[sortConfig.key] > b[sortConfig.key]) {
+          return sortConfig.direction === "ascending" ? 1 : -1;
+        }
+        return 0;
+      });
+    }
+    return sortableItems;
+  }, [studentdata, sortConfig]);
+
   return (
     <div
       className="min-h-screen flex flex-col"
@@ -94,18 +140,58 @@ export const Students = () => {
           <table className="w-full text-sm text-center text-white border border-gray-700 rounded-lg overflow-hidden">
             <thead className="bg-[#00bfff] text-black">
               <tr>
-                <th className="py-2 px-2 cursor-pointer">Student</th>
-                <th className="py-2 px-2 cursor-pointer">Rarity</th>
-                <th className="py-2 px-2 cursor-pointer">Role</th>
-                <th className="py-2 px-2 cursor-pointer">Class</th>
-                <th className="py-2 px-2 cursor-pointer">Position</th>
-                <th className="py-2 px-2 cursor-pointer">Cover</th>
-                <th className="py-2 px-2 cursor-pointer">ATK TYPE</th>
-                <th className="py-2 px-2 cursor-pointer">DEF TYPE</th>
+                <th
+                  className="py-2 px-2 cursor-pointer"
+                  onClick={() => handleSort("name")}
+                >
+                  Student
+                </th>
+                <th
+                  className="py-2 px-2 cursor-pointer"
+                  onClick={() => handleSort("numStars")}
+                >
+                  Rarity
+                </th>
+                <th
+                  className="py-2 px-2 cursor-pointer"
+                  onClick={() => handleSort("role")}
+                >
+                  Role
+                </th>
+                <th
+                  className="py-2 px-2 cursor-pointer"
+                  onClick={() => handleSort("class")}
+                >
+                  Class
+                </th>
+                <th
+                  className="py-2 px-2 cursor-pointer"
+                  onClick={() => handleSort("position")}
+                >
+                  Position
+                </th>
+                <th
+                  className="py-2 px-2 cursor-pointer"
+                  onClick={() => handleSort("cover")}
+                >
+                  Cover
+                </th>
+                <th
+                  className="py-2 px-2 cursor-pointer"
+                  onClick={() => handleSort("atk")}
+                >
+                  ATK TYPE
+                </th>
+                <th
+                  className="py-2 px-2 cursor-pointer"
+                  onClick={() => handleSort("def")}
+                >
+                  DEF TYPE
+                </th>
               </tr>
             </thead>
             <tbody>
-              {studentdata.map(
+              {sortedStudentData.map(
                 (
                   {
                     src,

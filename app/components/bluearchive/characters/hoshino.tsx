@@ -97,7 +97,7 @@ export const Hoshino = () => {
             Shorts
           </a>
           <a
-            href="#gallery"
+            href="/fgo"
             className="border-2 border-[#357ff3] text-[#357ff3] font-extrabold rounded px-4 py-1 text-base mr-2 hover:underline focus:outline-none"
           >
             Gallery
