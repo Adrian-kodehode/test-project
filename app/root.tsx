@@ -146,6 +146,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/miyu" &&
           location.pathname !== "/miyu_swimsuit" &&
           location.pathname !== "/neru_bunny" &&
+          location.pathname !== "/hasumi_swimsuit" &&
+          location.pathname !== "/moe" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div>{children}</div>
 
@@ -262,6 +264,8 @@ export default function App() {
         location.pathname !== "/miyu" &&
         location.pathname !== "/miyu_swimsuit" &&
         location.pathname !== "/neru_bunny" &&
+        location.pathname !== "/hasumi_swimsuit" &&
+        location.pathname !== "/moe" && 
         location.pathname !== "/video" && <Footer />}
     </div>
   );

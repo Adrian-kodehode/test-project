@@ -1830,6 +1830,21 @@
     "bg": 4
   },
   {
+      "src": "/Blue-Archive/characters/Hasumi_Swimsuit_Icon.png",
+      "href": "/hasumi_swimsuit",
+      "name": " Hasumi",
+      "altName": "(Swimsuit)",
+      "role": "Striker",
+      "classSrc": "Blue-Archive/icons/Attacker (1).png",
+      "classSrc2": "",
+      "position": "BACK",
+      "cover": "Blue-Archive/icons/Cover.png",
+      "atk": "Mystic",
+      "def": "Special Armor",
+      "numStars": 3,
+      "bg": 4
+  },
+  {
     "src": "/Blue-Archive/characters/Mashiro_Icon.png",
     "href": "/",
     "name": " Mashiro",
