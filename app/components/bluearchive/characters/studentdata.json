@@ -1575,6 +1575,21 @@
     "bg": 4
   },
   {
+    "src": "/Blue-Archive/characters/Nagisa_Swimsuit_Icon.png",
+    "href": "/nagisa_swimsuit",
+    "name": "Nagisa",
+    "altName": "(Swimsuit)",
+    "role": "Special",
+    "classSrc": "Blue-Archive/icons/Supporter.png",
+    "classSrc2": "",
+    "position": "BACK",
+    "cover": "Blue-Archive/icons/Cross_1.png",
+    "atk": "Sonic",
+    "def": "Elastic Armor",
+    "numStars": 3,
+    "bg": 4
+  },
+  {
     "src": "/Blue-Archive/characters/Seia_Icon.png",
     "href": "/seia",
     "name": "Seia",
@@ -1616,6 +1631,21 @@
     "cover": "Blue-Archive/icons/Cover.png",
     "atk": "Penetration",
     "def": "Light Armor",
+    "numStars": 3,
+    "bg": 4
+  },
+  {
+    "src": "/Blue-Archive/characters/Mika_Swimsuit_Icon.png",
+    "href": "/mika_swimsuit",
+    "name": "Mika",
+    "altName": "(Swimsuit)",
+    "role": "Striker",
+    "classSrc": "Blue-Archive/icons/Attacker (1).png",
+    "classSrc2": "",
+    "position": "FRONT",
+    "cover": "Blue-Archive/icons/Cover.png",
+    "atk": "Sonic",
+    "def": "Special Armor",
     "numStars": 3,
     "bg": 4
   },
@@ -1830,19 +1860,19 @@
     "bg": 4
   },
   {
-      "src": "/Blue-Archive/characters/Hasumi_Swimsuit_Icon.png",
-      "href": "/hasumi_swimsuit",
-      "name": " Hasumi",
-      "altName": "(Swimsuit)",
-      "role": "Striker",
-      "classSrc": "Blue-Archive/icons/Attacker (1).png",
-      "classSrc2": "",
-      "position": "BACK",
-      "cover": "Blue-Archive/icons/Cover.png",
-      "atk": "Mystic",
-      "def": "Special Armor",
-      "numStars": 3,
-      "bg": 4
+    "src": "/Blue-Archive/characters/Hasumi_Swimsuit_Icon.png",
+    "href": "/hasumi_swimsuit",
+    "name": " Hasumi",
+    "altName": "(Swimsuit)",
+    "role": "Striker",
+    "classSrc": "Blue-Archive/icons/Attacker (1).png",
+    "classSrc2": "",
+    "position": "BACK",
+    "cover": "Blue-Archive/icons/Cover.png",
+    "atk": "Mystic",
+    "def": "Special Armor",
+    "numStars": 3,
+    "bg": 4
   },
   {
     "src": "/Blue-Archive/characters/Mashiro_Icon.png",

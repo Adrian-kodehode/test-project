@@ -120,7 +120,7 @@ export const Moe = () => {
           <div className="flex-1 mt-5 ml-3">
             <div className="bg-[#90abc9] w-[350px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 left-20 right-20 rounded">
               <span className="block text-center w-full italic">
-                “ This is RABBIT 3, where is the next bombing site?	 ”
+                “ This is RABBIT 3, where is the next bombing site? ”
               </span>
               <br />
               <span className="absolute right-20 bottom-1 text-xs italic">
@@ -285,11 +285,11 @@ export const Moe = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Moe, a member of the RABBIT platoon, entered SRT because she
-                was recognized for her talent as a sniper. Now that the school
-                is closed, she spends her days living in a park with other
-                members of the platoon. Her presence is scarce and is useful as
-                a sniper, but she can be forgotten by her allies sometimes...
+                A member of the RABBIT Platoon of SRT Special School. She is a
+                dangerous girl who gets a thrill out of unleashing massive
+                firepower without regards to any short or/and long term
+                consequences. Her reason for not leaving SRT is due to her
+                wanting to use the most advanced high explosive weapons.
               </p>
             </div>
             <h3
@@ -300,13 +300,10 @@ export const Moe = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Despite Moe being a capable sniper, she is a very shy person
-                and has low self-esteem. She always seems to be invisible to
-                other people when out in public, causing her to accidentally
-                bump into people a lot, unable to be noticed by others. Not even
-                automatic doors can sense her virtually invisible presence. Her
-                biggest fear is her being forgotten by everyone, including her
-                own allies.
+                Moe has an addiction towards causing explosions and wreaking
+                havoc whenever she gets the chance to. She also loves causing
+                problems regardless of the consequences, including inflicting
+                pain onto herself to an extent.
               </p>
             </div>
             <h3
@@ -317,12 +314,9 @@ export const Moe = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Moe appears to be a shy petite girl, she is just 149 cm. She
-                has long hair stretched down to her elbow, she also has a bang
-                that covers all of her foreheads along two sides of her face,
-                Moe's eye color is light red. She also wears a small rabbit
-                headband with ears on top of her head along with that there are
-                usually leaves on her head and shoulders.
+                Moe has brown hair that's tied into low pigtails using hair ties
+                that have two white pom-poms. Her eyes are amber in color and
+                she wears a pair of circle glasses.
               </p>
             </div>
             <h4
@@ -333,10 +327,9 @@ export const Moe = () => {
             </h4>
             <div className="ml-3 mt-2">
               <p>
-                Moe's halo is a light grey colour formed with an inner little
-                circle, a middle circle split into four sides and four thick
-                outer semicircles, one in every side of the middle circle. In
-                addition it has three little drops scattered around it.
+                Her halo is a golden ring that's broken up by four small, evenly
+                spaced triangles that point inwards. There is another ring
+                inside it that's smaller in radius and slightly lower.
               </p>
             </div>
 
@@ -349,7 +342,7 @@ export const Moe = () => {
               Kazekura Moe
             </h2>
             <div className="text-center text-sm text-[#ebe8ef] font-bold mb-4">
-             風倉モエ
+              風倉モエ
             </div>
             <section>
               <div className="flex justify-center">
@@ -714,25 +707,25 @@ export const Moe = () => {
                       <span className="text-xs font-bold text-[#90abc9]">
                         HP
                       </span>
-                      <span className="font-bold text-lg text-black">2383</span>
+                      <span className="font-bold text-lg text-black">2491</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#90abc9]">
                         ATK
                       </span>
-                      <span className="font-bold text-lg text-black">323</span>
+                      <span className="font-bold text-lg text-black">243</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#90abc9]">
                         DEF
                       </span>
-                      <span className="font-bold text-lg text-black">18</span>
+                      <span className="font-bold text-lg text-black">19</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#90abc9]">
                         HEAL
                       </span>
-                      <span className="font-bold text-lg text-black">1734</span>
+                      <span className="font-bold text-lg text-black">1912</span>
                     </div>
                   </div>
                   {/* Level 100 Row 1 */}
@@ -747,16 +740,16 @@ export const Moe = () => {
                   {/* Level 100 Stats 1 */}
                   <div className="bg-[#ebe8ef] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">20665</span>
+                      <span className="font-bold text-black">18625</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">3227</span>
+                      <span className="font-bold text-black">2438</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">113</span>
+                      <span className="font-bold text-black">118</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5202</span>
+                      <span className="font-bold text-black">5738</span>
                     </div>
                   </div>
                   {/* Level 100 Row 2 (4 images) */}
@@ -780,16 +773,16 @@ export const Moe = () => {
                   {/* Level 100 Stats 2 */}
                   <div className="bg-[#ebe8ef] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">22325</span>
+                      <span className="font-bold text-black">20122</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">3598</span>
+                      <span className="font-bold text-black">2718</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">113</span>
+                      <span className="font-bold text-black">118</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5733</span>
+                      <span className="font-bold text-black">6324</span>
                     </div>
                   </div>
                   {/* Level 100 Row 3 (5 images) */}
@@ -813,16 +806,16 @@ export const Moe = () => {
                   {/* Level 100 Stats 3 */}
                   <div className="bg-[#ebe8ef] grid grid-cols-4 gap-2 mb-4 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">24908</span>
+                      <span className="font-bold text-black">22450</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">4047</span>
+                      <span className="font-bold text-black">3057</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">113</span>
+                      <span className="font-bold text-black">118</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">6398</span>
+                      <span className="font-bold text-black">7056</span>
                     </div>
                   </div>
                   {/* Profile Dropdown */}
@@ -907,8 +900,8 @@ export const Moe = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
-              Moe wears a japanese sailor style school uniform, that consist
-              of; A blue in color dress shirt with sailor collar, with a green
+              Moe wears a japanese sailor style school uniform, that consist of;
+              A blue in color dress shirt with sailor collar, with a green
               ribbon, with blue in color pleated skirt. She wears white tights
               and white shoes and she also has some accessories, like; ankle
               pads and elbow pads.
@@ -921,10 +914,10 @@ export const Moe = () => {
             Firearm
           </h4>
           <div className="ml-3 mt-2">
-            She uses a white Finnish model Mosin-Nagant M/39 "Ukko-Pekka" rifle
-            with a PU scope. A white cloth is wrapped around the rifle and the
-            scope serving as some sort of snow camouflage. The PU scope mount
-            offsets to the left to give way for the straight bolt.
+        <p>She uses a black MTE 224 pistol with light blue grips, hammer and flashlight mount. The barrel is painted white.</p>
+        <br />
+        <p>In her EX Skill, she pilots a blue Sikorsky MH-60L DAP Black Hawk helicopter with a payload of several AGM-114 Hellfire missiles and Hydra 70 rockets loaded from an M261 rocket pod.</p>
+
           </div>
           <h2
             className="text-3xl font-bold text-[#06bbfa] ml-3 mt-5 border-b border-gray-700"
@@ -967,7 +960,7 @@ export const Moe = () => {
               {/* EX Skill */}
               {activeSkillTab === "ex" && (
                 <div className="overflow-x-auto rounded">
-                  <table className="w-[800px] border-2 border-[#90abc9] rounded-lg">
+                  <table className="w-[900px] border-2 border-[#90abc9] rounded-lg">
                     <thead>
                       <tr>
                         <th
@@ -975,10 +968,10 @@ export const Moe = () => {
                           className="relative bg-[#90abc9] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            Garden of Drowsiness
+                           Copper iron Rain
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
-                            Cost: 3
+                            Cost: 4
                           </span>
                         </th>
                       </tr>
@@ -987,7 +980,7 @@ export const Moe = () => {
                       <tr>
                         <td className="w-1/4 bg-[#90abc9] p-2">
                           <img
-                            src="Blue-Archive/icons/DAMAGE_BY_HIT.png"
+                            src="Blue-Archive/icons/RECZONE.png"
                             alt="Sealess: Ishbóshet icon"
                             className="w-full h-auto rounded"
                           />
@@ -995,134 +988,29 @@ export const Moe = () => {
                         <td className="w-3/4 border-l-2 border-[#90abc9] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             <li>
-                              <span className="font-bold">LV01</span> ~ Applies
-                              the{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                WEAKNESS DETECTION
-                              </span>{" "}
-                              effect to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                1
-                              </span>{" "}
-                              enemy. Lasts for{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                10
-                              </span>{" "}
-                              sec. Deals{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                15.8%
-                              </span>{" "}
-                              of Moe's ATK as additional DMG every time an
-                              enemy with the effect is hit. This DMG will not
-                              trigger a CRIT. Apply up to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                120
-                              </span>{" "}
-                              times.
+                              <span className="font-bold">LV01</span> ~ Deals{" "}
+                               <span className="text-[#90abc9]">306%</span>{" "}of ATK as DMG to enemies line. Deals 50.9%
+                              of ATK as continuous BURN DMG.(20 sec).
                             </li>
                             <li>
-                              <span className="font-bold">LV02</span> ~ Applies
-                              the{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                WEAKNESS DETECTION
-                              </span>{" "}
-                              effect to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                1
-                              </span>{" "}
-                              enemy. Lasts for{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                10
-                              </span>{" "}
-                              sec. Deals{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                18.1%
-                              </span>{" "}
-                              of Moe's ATK as additional DMG every time an
-                              enemy with the effect is hit. This DMG will not
-                              trigger a CRIT. Apply up to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                120
-                              </span>{" "}
-                              times.
+                              <span className="font-bold">LV02</span> ~ Deals{" "}
+                              <span className="text-[#90abc9]">352%</span>{" "}of ATK as DMG to enemies line. Deals 50.9%
+                              of ATK as continuous BURN DMG.(20 sec).
                             </li>
                             <li>
-                              <span className="font-bold">LV03</span> ~ Applies
-                              the{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                WEAKNESS DETECTION
-                              </span>{" "}
-                              effect to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                1
-                              </span>{" "}
-                              enemy. Lasts for{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                10
-                              </span>{" "}
-                              sec. Deals{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                22.9%
-                              </span>{" "}
-                              of Moe's ATK as additional DMG every time an
-                              enemy with the effect is hit. This DMG will not
-                              trigger a CRIT. Apply up to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                120
-                              </span>{" "}
-                              times.
+                              <span className="font-bold">LV03</span> ~ Deals{" "}
+                               <span className="text-[#90abc9]">398%</span>{" "}of ATK as DMG to enemies line. Deals 58.5%
+                              of ATK as continuous BURN DMG.(20 sec).
                             </li>
                             <li>
-                              <span className="font-bold">LV04</span> ~ Applies
-                              the{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                WEAKNESS DETECTION
-                              </span>{" "}
-                              effect to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                1
-                              </span>{" "}
-                              enemy. Lasts for{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                10
-                              </span>{" "}
-                              sec. Deals{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                25.2%
-                              </span>{" "}
-                              of Moe's ATK as additional DMG every time an
-                              enemy with the effect is hit. This DMG will not
-                              trigger a CRIT. Apply up to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                120
-                              </span>{" "}
-                              times.
+                              <span className="font-bold">LV04</span> ~ Deals{" "}
+                              <span className="text-[#90abc9]">443%</span>{" "}of ATK as DMG to enemies line. Deals 58.5%
+                              of ATK as continuous BURN DMG.(20 sec).
                             </li>
                             <li>
-                              <span className="font-bold">LV05</span> ~ Applies
-                              the{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                WEAKNESS DETECTION
-                              </span>{" "}
-                              effect to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                1
-                              </span>{" "}
-                              enemy. Lasts for{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                10
-                              </span>{" "}
-                              sec. Deals{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                30%
-                              </span>{" "}
-                              of Moe's ATK as additional DMG every time an
-                              enemy with the effect is hit. This DMG will not
-                              trigger a CRIT. Apply up to{" "}
-                              <span className="text-[#90abc9] font-bold">
-                                120
-                              </span>{" "}
-                              times.
+                              <span className="font-bold">LV05</span> ~ Deals{" "}
+                              <span className="text-[#90abc9]">489%</span>{" "}of ATK as DMG to enemies line. Deals 66.2%
+                              of ATK as continuous BURN DMG.(20 sec).
                             </li>
                           </ul>
                         </td>
@@ -1143,7 +1031,7 @@ export const Moe = () => {
                           className="relative bg-[#90abc9] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            An Attack form an Unexoected Angle
+                          Concentrated Artillery Fire
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1155,7 +1043,7 @@ export const Moe = () => {
                       <tr>
                         <td className="w-1/4 bg-[#90abc9] p-2">
                           <img
-                            src="Blue-Archive/icons/TARGET.png"
+                            src="Blue-Archive/icons/STUNNED.png"
                             alt="Emergency First Aid icon"
                             className="w-full h-auto rounded"
                           />
@@ -1163,27 +1051,33 @@ export const Moe = () => {
                         <td className="w-3/4 border-l-2 border-[#90abc9] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              148, 156, 163, 193, 201, 208, 238, 245, 253, 283,
+                              100, 105, 110, 120, 125, 130, 140, 145, 150, 160,
                             ].map((dmg, idx) => {
+                              const stunDuration =
+                              idx < 3 ? 1.2 : idx < 6 ? 1.4 : idx < 9 ? 1.5 : 1.6;
                               return (
-                                <li key={idx}>
-                                  <span className="font-bold">
-                                    LV{(idx + 1).toString().padStart(2, "0")}
-                                  </span>{" "}
-                                  ~ Deals{" "}
-                                  <span className="text-[#90abc9] font-bold">
-                                    {dmg}%
-                                  </span>{" "}
-                                  of ATK as DMG to{" "}
-                                  <span className="text-[#90abc9] font-bold">
-                                    1
-                                  </span>{" "}
-                                  enemy every{" "}
-                                  <span className="text-[#90abc9] font-bold">
-                                    5
-                                  </span>{" "}
-                                  Normal Attacks.
-                                </li>
+                              <li key={idx}>
+                                <span className="font-bold">
+                                LV{(idx + 1).toString().padStart(2, "0")}
+                                </span>{" "}
+                                ~ Deals{" "}
+                                <span className="text-[#90abc9] font-bold">
+                                {dmg}%
+                                </span>{" "}
+                                of ATK as DMG to{" "}
+                                <span className="text-[#90abc9] font-bold">
+                                5
+                                </span>{" "}
+                                enemies every{" "}
+                                <span className="text-[#90abc9] font-bold">
+                                40
+                                </span>{" "}
+                                sec. Inflict STUN (
+                                <span className="text-[#90abc9] font-bold">
+                                {stunDuration}
+                                </span>{" "}
+                                sec).
+                              </li>
                               );
                             })}
                           </ul>
@@ -1205,7 +1099,7 @@ export const Moe = () => {
                           className="relative bg-[#90abc9] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            Deep Breathing
+                            Pleasure of Ruination
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1232,7 +1126,7 @@ export const Moe = () => {
                                 <span className="font-bold">
                                   LV{(i + 1).toString().padStart(2, "0")}
                                 </span>{" "}
-                                ~ Increases CRIT.DMG by{" "}
+                                ~ Increases ATK by{" "}
                                 <span className="text-[#90abc9] font-bold">
                                   {def}%
                                 </span>
@@ -1258,7 +1152,7 @@ export const Moe = () => {
                           className="relative bg-[#90abc9] text-black px-4 py-3 text-sm font-bold"
                         >
                           <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            Special Sniper Rounds
+                            Operation Support
                           </span>
                           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">
                             Skill Icons
@@ -1278,22 +1172,18 @@ export const Moe = () => {
                         <td className="w-3/4 border-l-2 border-[#90abc9] p-4 text-xs">
                           <ul className="list-disc list-inside space-y-1">
                             {[
-                              18.9, 19.9, 20.8, 24.6, 25.5, 26.5, 30.3, 31.2,
-                              32.2, 36,
-                            ].map((bar, i) => (
+                              9.1, 9.5, 10, 11.8, 12.3, 12.7, 14.5, 15, 15.5,
+                              17.3,
+                            ].map((atk, i) => (
                               <li key={i}>
-                                <span className="font-bold">
-                                  LV{(i + 1).toString().padStart(2, "0")}
-                                </span>{" "}
-                                ~ Increases CRIT.DMG by{" "}
-                                <span className="text-[#90abc9] font-bold">
-                                  {bar}%
-                                </span>{" "}
-                                upon reloading. Lasts for{" "}
-                                <span className="text-[#90abc9] font-bold">
-                                  13
-                                </span>{" "}
-                                sec.
+                              <span className="font-bold">
+                                LV{(i + 1).toString().padStart(2, "0")}
+                              </span>{" "}
+                              ~ Increases ally ATK by{" "}
+                              <span className="text-[#90abc9] font-bold">
+                                {atk}%
+                              </span>
+                              .
                               </li>
                             ))}
                           </ul>
@@ -1358,35 +1248,35 @@ export const Moe = () => {
                     <tr>
                       <td className="border-2 border-[#90abc9] p-2 ">
                         <img
-                          src="Blue-Archive/icons/Debuff_-_Weakness.png"
+                          src="Blue-Archive/icons/Debuff_-_Burn.png"
                           alt="Cross Icon"
                           className="w-9 h-10 mx-auto"
                         />
                       </td>
                       <td className="border-2 border-[#90abc9] p-2">
                         <img
-                          src="Blue-Archive/icons/Debuff_-_Weakness.png"
+                          src="Blue-Archive/icons/CC_-_Stunned.png"
                           alt="Cross Icon"
                           className="w-9 h-10 mx-auto"
                         />
                       </td>
                       <td className="border-2 border-[#90abc9] p-2">
                         <img
-                          src="Blue-Archive/icons/Buff_-_CRIT.DMG.png"
+                          src="Blue-Archive/icons/Buff_-_ATK.png"
                           alt="Crit Buff Icon"
                           className="w-9 h-10 mx-auto"
                         />
                       </td>
                       <td className="border-2 border-[#90abc9] p-2">
                         <img
-                          src="Blue-Archive/icons/Buff_-_CRIT.DMG.png"
+                          src="Blue-Archive/icons/Buff_-_ATK.png"
                           alt="Crit Buff Icon"
                           className="w-9 h-10 mx-auto"
                         />
                       </td>
                       <td className="border-2 border-[#90abc9] p-2">
                         <img
-                          src="Blue-Archive/icons/Buff_-_ATK_SPD.png"
+                          src="Blue-Archive/icons/Buff_-_ATK.png"
                           alt="Attack Buff Icon"
                           className="w-9 h-10 mx-auto"
                         />
@@ -1590,7 +1480,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Totem_0.png"
+                              src="Blue-Archive/icons/Ether_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1652,7 +1542,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Totem_1.png"
+                              src="Blue-Archive/icons/Ether_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1666,7 +1556,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Ether_0.png"
+                              src="Blue-Archive/icons/Nimrud_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1728,7 +1618,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Totem_1.png"
+                              src="Blue-Archive/icons/Ether_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1742,7 +1632,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Ether_0.png"
+                              src="Blue-Archive/icons/Nimrud_0.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1789,7 +1679,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Totem_2.png"
+                              src="Blue-Archive/icons/Ether_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1803,7 +1693,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Ether_1.png"
+                              src="Blue-Archive/icons/Nimrud_1.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1879,7 +1769,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Totem_3.png"
+                              src="Blue-Archive/icons/Ether_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1893,7 +1783,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Ether_2.png"
+                              src="Blue-Archive/icons/Nimrud_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1940,7 +1830,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Totem_3.png"
+                              src="Blue-Archive/icons/Ether_3.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -1954,7 +1844,7 @@ export const Moe = () => {
                           </div>
                           <div>
                             <img
-                              src="Blue-Archive/icons/Ether_2.png"
+                              src="Blue-Archive/icons/Nimrud_2.png"
                               alt=""
                               className="w-12 h-10"
                             />
@@ -2053,7 +1943,7 @@ export const Moe = () => {
                       </td>
                       <td className="border border-[#90abc9] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Totem_0.png"
+                          src="/Blue-Archive/icons/Ether_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2096,7 +1986,7 @@ export const Moe = () => {
                       </td>
                       <td className="border border-[#90abc9] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Totem_1.png"
+                          src="/Blue-Archive/icons/Ether_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2104,7 +1994,7 @@ export const Moe = () => {
                       </td>
                       <td className="border border-[#90abc9] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Ether_0.png"
+                          src="/Blue-Archive/icons/Nimrud_0.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2141,7 +2031,7 @@ export const Moe = () => {
                       </td>
                       <td className="border border-[#90abc9] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Totem_2.png"
+                          src="/Blue-Archive/icons/Ether_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2149,7 +2039,7 @@ export const Moe = () => {
                       </td>
                       <td className="border border-[#90abc9] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Ether_1.png"
+                          src="/Blue-Archive/icons/Nimrud_1.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2186,7 +2076,7 @@ export const Moe = () => {
                       </td>
                       <td className="border border-[#90abc9] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Totem_3.png"
+                          src="/Blue-Archive/icons/Ether_3.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2194,7 +2084,7 @@ export const Moe = () => {
                       </td>
                       <td className="border border-[#90abc9] px-2 py-2 font-extrabold">
                         <img
-                          src="/Blue-Archive/icons/Ether_2.png"
+                          src="/Blue-Archive/icons/Nimrud_2.png"
                           alt=""
                           className="inline w-14 h-12 mr-1 "
                         />
@@ -2246,7 +2136,7 @@ export const Moe = () => {
               <tbody>
                 <tr>
                   <th className="bg-[#90abc9] text-black font-bold px-2 py-1">
-                  Cotton Candy Island
+                    Midnight Trip
                   </th>
                   <td colSpan={3} className="border border-[#90abc9] px-2 py-1">
                     <audio
@@ -2272,7 +2162,7 @@ export const Moe = () => {
                         height={19}
                       />
                       <img
-                        src="/Blue-Archive/icons/Blue_Font_5.png"
+                        src="/Blue-Archive/icons/Blue_Font_6.png"
                         alt="Bond Level"
                         width={18}
                         height={17}
@@ -2283,7 +2173,7 @@ export const Moe = () => {
                     colSpan={2}
                     className="bg-[#90abc9] text-black font-bold px-2 py-2"
                   >
-                    Total Stats ~ ATK+167 / HP+1005
+                    Total Stats ~ ATK+128 / HP+900
                   </th>
                 </tr>
 
@@ -2307,7 +2197,7 @@ export const Moe = () => {
                     LV06 – 10
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                   ATK+4
+                    ATK+4
                   </td>
                 </tr>
                 <tr>
@@ -2323,7 +2213,7 @@ export const Moe = () => {
                     LV16 – 20
                   </th>
                   <td className="border border-[#90abc9] text-left px-2 py-2">
-                   ATK+6 / HP+56
+                    ATK+6 / HP+56
                   </td>
                 </tr>
                 <tr>
