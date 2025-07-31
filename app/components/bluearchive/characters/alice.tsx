@@ -12,9 +12,9 @@ const AliceLive2D = memo(() => (
 const AliceEX = memo(() => (
   <div className="flex flex-col space-y-2">
     <img
-      src="Blue-Archive/live2d/Alice_EX.gif"
+      src="Blue-Archive/icons/BEAM.png"
       alt="Hoshino Live2D"
-      className="w-full rounded-lg mx-auto "
+      className="w-full rounded-lg mx-auto bg-[#4f86f7] p-6"
     />
   </div>
 ));
@@ -118,15 +118,7 @@ export const Alice = () => {
         <div className="flex flex-row gap-8">
           {/* Main content (left) */}
           <div className="flex-1 mt-5 ml-3">
-            <div className="bg-[#4f86f7] w-[400px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 left-40 rounded">
-              <span className="block text-center w-full italic">
-                “ Come on, let's have fun this year, shall we? ”
-              </span>
-              <br />
-              <span className="absolute right-15 bottom-1 text-xs italic">
-                ~ Asagi Mutsuki (New Year ver.)
-              </span>
-            </div>
+          
             <p className="mt-5 max-w-[600px]">
               <strong>Tendou Alice (天童アリス)</strong> is one of the{" "}
               <a href="/students" className="text-[#357ff3]">
@@ -289,22 +281,40 @@ export const Alice = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Originally named as AL-1S, Alice is a mysterious member of
-                Millennium's Game Development Dept. Found in an abandoned
-                munitions factory at <a href="#" className="text-[#3e7af2] hover:underline">the Ruins</a>, it's impossible to retrieve any
-                information about her origin nor her age.
+                Originally named as <strong>AL-1S</strong>, Alice is a
+                mysterious member of Millennium's Game Development Dept. Found
+                in an abandoned munitions factory at{" "}
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  the Ruins
+                </a>
+                , it's impossible to retrieve any information about her origin
+                nor her age.
               </p>
               <p className="mt-2">
-                She enjoys playing games with <a href="#" className="text-[#3e7af2] hover:underline">Yuzu</a>, <a href="#" className="text-[#3e7af2] hover:underline">Momoi</a> and <a href="#" className="text-[#3e7af2] hover:underline">Midori</a> and becomes
-                a serious game fanatic, resulting in most of her conversation
-                unnaturally taken from familiar lines from retro games.{" "}
+                She enjoys playing games with{" "}
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  Yuzu
+                </a>
+                ,{" "}
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  Momoi
+                </a>{" "}
+                and{" "}
+                <a href="#" className="text-[#3e7af2] hover:underline">
+                  Midori
+                </a>{" "}
+                and becomes a serious game fanatic, resulting in most of her
+                conversation unnaturally taken from familiar lines from retro
+                games.{" "}
               </p>
               <p className="mt-2">
-                Alice is later revealed to be a member of the <a href="#" className="te"></a>,
-                specifically the "<strong>Princess</strong>" (王女). Alice also has another side
-                to her known as Key (ケイ, formerly stylized as <strong>Key</strong> ), an AI
-                whose role was to guide Alice to carry out a genocidal campaign
-                in the name of the Nameless Priests.
+                Alice is later revealed to be a member of the{" "}
+                <a href="#" className="te"></a>, specifically the "
+                <strong>Princess</strong>" (王女). Alice also has another side
+                to her known as Key (ケイ, formerly stylized as{" "}
+                <strong>Key</strong> ), an AI whose role was to guide Alice to
+                carry out a genocidal campaign in the name of the Nameless
+                Priests.
               </p>
             </div>
             <h3
@@ -315,10 +325,26 @@ export const Alice = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                See{" "}
-                <a href="#" className="text-[#3e7af2] hover:underline">
-                  Tendou Alice
-                </a>
+                Alice's personality was originally robotic when first
+                discovered, referring to systems, data files, and search queries
+                when talked to. It underwent a dramatic shift literally
+                overnight as a result of playing the JRPGs that the Game
+                Development Department had available, and as a result, she
+                experiences a variant of "chuunibyou syndrome" where she sees
+                herself as the hero of her own story. She often peppers her
+                speech with terms from JRPGs as well, referring to her friends
+                as her "party" and daily tasks as "quests". Aside from this, she
+                is often curious and sweet-natured, easily making friends and
+                eager to learn about the world around her. Her skill at arcade
+                games is only exceeded by <a href="#" className="text-[#3e7af2] hover:underline">
+                  Yuzu
+                </a>. Until <a href="#" className="text-[#3e7af2] hover:underline">
+                  relatively recent events
+                </a>,
+                she had a fear of maids due to a brutal confrontation against{" "}
+               <a href="#" className="text-[#3e7af2] hover:underline">
+                 Neru
+               </a>.
               </p>
             </div>
             <h3
@@ -329,10 +355,11 @@ export const Alice = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Mutsuki has white hair styled into a bun with a small ponytail,
-                adorned with pink flowers that surround the bun. She also has
-                bangs framing her face. Additionally, her eyes are a light
-                peach-pink color.
+                She has absurdly long glossy black hair reaching the floor and
+                tied to a headband and clip on her left side. A long bang is
+                running down between her eyes, joining the rest over her left
+                shoulder. She has pale skin and glowing blue eyes, which share
+                some similarity to camera lenses.
               </p>
             </div>
             <h4
@@ -343,10 +370,9 @@ export const Alice = () => {
             </h4>
             <div className="ml-3 mt-2">
               <p>
-                See{" "}
-                <a href="#" className="text-[#3e7af2] hover:underline">
-                  Tendou Alice
-                </a>
+                Alice's halo is an arrangement of randomly placed cyan blue
+                squares and rectangles, basically an artistically abstract set
+                of squares.
               </p>
             </div>
 
@@ -893,12 +919,17 @@ export const Alice = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
+              Alice's halo is an arrangement of randomly placed cyan blue
+              squares and rectangles, basically an artistically abstract set of
+              squares.
+            </p>
+            <p className="mt-5">
               She wears a standard Millennium high-school uniform, including a
               white and blue hoodie, a tucked-in white shirt with blue tie
               underneath, a pleated, black skirt, a pair of woolly socks, and
               white sneakers with gray shoelaces.
             </p>
-            <p className="mt-5">
+            <p>
               It is noted that her Millennium access badge was artificially
               crafted by the Veritas and her clothes were hand-me-downs from
               Midori.
@@ -911,11 +942,16 @@ export const Alice = () => {
             Firearm
           </h4>
           <div className="ml-3 mt-2">
-            See{" "}
-            <a href="#" className="text-[#3e7af2] hover:underline">
-              Tendou Alice
-            </a>
-            .
+            <p>
+              She uses a white railgun prototype provided by the Engineering
+              Department. It has a yellow "core", a blue receiver and
+              accelerator, and an LCD screen indicator located at the back of
+              the weapon. Two front covers are present possibly to protect the
+              accelerator barrel when on transport. It opens up when the weapon
+              is ready to be fired. A Millennium insignia is stamped on the
+              front housing. A Game Development Club logo is stickered below the
+              LCD screen.
+            </p>
           </div>
           <h2
             className="text-3xl font-bold text-[#06bbfa] ml-3 mt-5 border-b border-gray-700"
