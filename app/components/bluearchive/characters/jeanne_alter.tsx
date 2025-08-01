@@ -58,7 +58,7 @@ export const JeanneAlterCard = () => {
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-    const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="bg-slate-800 text-white p-6 rounded-lg max-w-6xl mx-auto">
@@ -256,7 +256,7 @@ export const JeanneAlterCard = () => {
         <div className="bg-[url('/Fgo/xsYKdkG.jpeg')] bg-center rounded-lg p-4 w-full h-100 flex items-center justify-center">
           <div className="text-center">
             <div className="w-48 h-64 bg-slate-700 rounded-lg mb-2 flex items-center justify-center">
-              <div 
+              <div
                 className="w-full h-full cursor-pointer transition-transform duration-200 hover:scale-105"
                 onClick={() => setShowModal(true)}
               >
@@ -279,14 +279,14 @@ export const JeanneAlterCard = () => {
 
               {/* Modal for expanded image */}
               {showModal && (
-                <div 
+                <div
                   className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-                  style={{ animation: 'fadeIn 0.3s ease-out' }}
+                  style={{ animation: "fadeIn 0.3s ease-out" }}
                   onClick={() => setShowModal(false)}
                 >
-                  <div 
+                  <div
                     className="relative max-w-4xl max-h-screen p-4"
-                    style={{ animation: 'scaleIn 0.3s ease-out' }}
+                    style={{ animation: "scaleIn 0.3s ease-out" }}
                   >
                     <img
                       src={selectedImage || stageButtons[0].src}
