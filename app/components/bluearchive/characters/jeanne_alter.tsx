@@ -49,7 +49,7 @@ export const JeanneAlterCard = () => {
   ];
 
   const cardTypes = [
-    { tyoe: "Quick", color: "#2bfb02" },
+    { type: "Quick", color: "#2bfb02" },
     { type: "Arts", color: "#0a60d1" },
     { type: "Buster", color: "#e34a45" },
   ];
