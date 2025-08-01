@@ -5,7 +5,6 @@ export const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
-        
         <span className="bg-gradient-to-r from-[#FF0080] to-[#7928CA] text-transparent bg-clip-text">
           {" "}
           Shop and Wikipage
@@ -21,22 +20,30 @@ export const HeroSection = () => {
           href="/shop"
           className="bg-gradient-to-r from-[#FF0080] to-[#7928CA] py-3 px-6 rounded-md text-white font-semibold shadow-lg hover:opacity-90 transition duration-300 flex items-center justify-center min-w-[120px] h-[56px] text-center"
         >
-          
           Shop
         </a>
-        <a href="/test" className="flex items-center justify-center min-w-[120px] h-[56px]">
+        <a
+          href="/test"
+          className="flex items-center justify-center min-w-[120px] h-[56px]"
+        >
           <img
-        src="/To Love Ru/Site-logo (2).png"
-        alt=""
-        className="object-contain h-50 w-70"
+            src="/To Love Ru/Site-logo (2).png"
+            alt=""
+            className="object-contain h-50 w-70"
           />
         </a>
-        <a href="/bluearchivehome" className="flex items-center justify-center min-w-[120px] h-[56px]">
+        <a
+          href="/bluearchivehome"
+          className="flex items-center justify-center min-w-[120px] h-[56px]"
+        >
           <img
-        src="Blue-Archive/bluearchivelogo.jpg"
-        alt=""
-        className="object-contain h-35 w-44"
+            src="Blue-Archive/bluearchivelogo.jpg"
+            alt=""
+            className="object-contain h-35 w-44"
           />
+          <a href="/fate_grand_order">
+            <img src="Fgo/Site-logo (6).png" alt="" className="ml-5" />
+          </a>
         </a>
       </div>
       <div className="flex mt-10 justify-center">
