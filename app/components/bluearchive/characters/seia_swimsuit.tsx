@@ -120,7 +120,8 @@ export const Seia_Swimsuit = () => {
           <div className="flex-1 mt-5 ml-3">
             <div className="bg-[#fbb35a] w-[400px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 left-20 right-20 rounded">
               <span className="block text-center w-full italic">
-                “ All things are constantly changing... and it's not just about appearances. ”
+                “ All things are constantly changing... and it's not just about
+                appearances. ”
               </span>
               <br />
               <span className="absolute left-20 bottom-1 text-xs italic">
@@ -128,9 +129,10 @@ export const Seia_Swimsuit = () => {
               </span>
             </div>
             <p className="mt-5 max-w-[600px]">
-              <strong>Yurizono Seia (Swimsuit ver.) (百合園セイア)</strong> is the Swimsuit Variant of{" "}
+              <strong>Yurizono Seia (Swimsuit ver.) (百合園セイア)</strong> is
+              the Swimsuit Variant of{" "}
               <a href="/seia" className="text-[#357ff3]">
-               Seia
+                Seia
               </a>{" "}
               and is one of the{" "}
               <a href="/students" className="text-[#357ff3]">
@@ -289,9 +291,10 @@ export const Seia_Swimsuit = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Seia-san, enjoying a carefree summer vacation♪ Switching to vacation mode,
-                she seems fully prepared to make the most of the summer. Her naturally
-                laid-back personality shows hints of an even more free-spirited side...
+                Seia-san, enjoying a carefree summer vacation♪ Switching to
+                vacation mode, she seems fully prepared to make the most of the
+                summer. Her naturally laid-back personality shows hints of an
+                even more free-spirited side...
               </p>
             </div>
             <h3
@@ -302,7 +305,13 @@ export const Seia_Swimsuit = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-          See <a href="/seia#personality" className="text-[#3e7af2] hover:underline">Yurizono Seia</a>
+                See{" "}
+                <a
+                  href="/seia#personality"
+                  className="text-[#3e7af2] hover:underline"
+                >
+                  Yurizono Seia
+                </a>
               </p>
             </div>
             <h3
@@ -313,7 +322,20 @@ export const Seia_Swimsuit = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-             See <a href="/seia#appearance" className="text-[#3e7af2] hover:underline">Yurizono Seia</a>
+                {" "}
+                Seia has champagne-yellow hair color, her hair is styled in a
+                side-ponytail to the right. She has side-swept bangs — the right
+                bang is covering her eye. She also has two longer strands of
+                hair on the sides of her face. Her hair have some little, white
+                star accessory in her hair. She has champagne-yellow fox tail,
+                that extend to the ground and it's tied at the edge with a
+                little star accessory.
+              </p>
+              <p className="mt-5">
+                She has a pair of large fox ears on top of her head, the same
+                champagne-yellow as her hair, with white inner fur. Her eyes
+                feature a vertical gradient — pink at the top, fading into
+                golden yellow at the bottom. She has fair, pale skin.
               </p>
             </div>
             <h4
@@ -324,7 +346,10 @@ export const Seia_Swimsuit = () => {
             </h4>
             <div className="ml-3 mt-2">
               <p>
-               See <a href="/seia#halo" className="text-[#3e7af2] hover:underline">Yurizono Seia</a>
+                See{" "}
+                <a href="/seia#halo" className="text-[#3e7af2] hover:underline">
+                  Yurizono Seia
+                </a>
               </p>
             </div>
 
@@ -594,8 +619,8 @@ export const Seia_Swimsuit = () => {
                     {/* Equipment 1: Gloves */}
                     <td className="bg-[#f7e69a] text-center align-middle w-1/3 px-2 py-2">
                       <img
-                        src="/Blue-Archive/icons/Shoe_T1_Icon.png"
-                        alt="Shoe T1 Icon"
+                        src="/Blue-Archive/icons/Gloves_T1_Icon.png"
+                        alt="Gloves T1 Icon"
                         width={56}
                         height={44}
                         className="mx-auto"
@@ -670,13 +695,13 @@ export const Seia_Swimsuit = () => {
                       <span className="text-xs font-bold text-[#fbb35a]">
                         HP
                       </span>
-                      <span className="font-bold text-lg text-black">2133</span>
+                      <span className="font-bold text-lg text-black">2130</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#fbb35a]">
                         ATK
                       </span>
-                      <span className="font-bold text-lg text-black">221</span>
+                      <span className="font-bold text-lg text-black">264</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#fbb35a]">
@@ -688,7 +713,7 @@ export const Seia_Swimsuit = () => {
                       <span className="text-xs font-bold text-[#fbb35a]">
                         HEAL
                       </span>
-                      <span className="font-bold text-lg text-black">1723</span>
+                      <span className="font-bold text-lg text-black">1381</span>
                     </div>
                   </div>
                   {/* Level 100 Row 1 */}
@@ -703,16 +728,16 @@ export const Seia_Swimsuit = () => {
                   {/* Level 100 Stats 1 */}
                   <div className="bg-[#f7e69a] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">24697</span>
+                      <span className="font-bold text-black">24663</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2209</span>
+                      <span className="font-bold text-black">2647</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="font-bold text-black">99</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5170</span>
+                      <span className="font-bold text-black">4142</span>
                     </div>
                   </div>
                   {/* Level 100 Row 2 (4 images) */}
@@ -736,16 +761,16 @@ export const Seia_Swimsuit = () => {
                   {/* Level 100 Stats 2 */}
                   <div className="bg-[#f7e69a] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">26681</span>
+                      <span className="font-bold text-black">26645</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2462</span>
+                      <span className="font-bold text-black">2950</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="font-bold text-black">99</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5698</span>
+                      <span className="font-bold text-black">4565</span>
                     </div>
                   </div>
                   {/* Level 100 Row 3 (5 images) */}
@@ -769,16 +794,16 @@ export const Seia_Swimsuit = () => {
                   {/* Level 100 Stats 3 */}
                   <div className="bg-[#f7e69a] grid grid-cols-4 gap-2 mb-4 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">29768</span>
+                      <span className="font-bold text-black">29728</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2770</span>
+                      <span className="font-bold text-black">3319</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="font-bold text-black">99</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">6358</span>
+                      <span className="font-bold text-black">5094</span>
                     </div>
                   </div>
                   {/* Profile Dropdown */}
@@ -863,7 +888,14 @@ export const Seia_Swimsuit = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
-            
+              Seia is wearing a white, high-neck one-piece swimsuit. The
+              swimsuit has a little ruby-like opening in the middle of the
+              collarbones. She wears a loose-fitting, oversized yellow jacket
+              over the swimsuit, hanging off her shoulders in a casual manner.
+              For footwear, she has on a pair of yellow platform sandals with
+              open toes and multiple translucent straps. Both of the sandals are
+              transparent. As accessories she wears red sunglasses and a orange,
+              transparent visor hat.
             </p>
           </div>
           <h4
@@ -873,9 +905,7 @@ export const Seia_Swimsuit = () => {
             Firearm
           </h4>
           <div className="ml-3 mt-2">
-            She uses a white Webley & Scott Mk. I Self-Loading Pistol with
-            dandelion grips, trigger guard, and barrel tip. The Trinity insignia
-            is imprinted on the grips.
+           <p>See <a href="#firearm-details" className="text-[#3e7af2]">Yurizono Seia</a></p>
           </div>
           <h2
             className="text-3xl font-bold text-[#06bbfa] ml-3 mt-5 border-b border-gray-700"

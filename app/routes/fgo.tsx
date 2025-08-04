@@ -1,4 +1,4 @@
-import { FGO } from "app/components/bluearchive/characters/fgo";
+import { FGO } from "app/components/fgo/fgo";
 
 export default function FGOPAGE() {
   return (

@@ -118,41 +118,20 @@ export const Nagisa_Swimsuit = () => {
         <div className="flex flex-row gap-8">
           {/* Main content (left) */}
           <div className="flex-1 mt-5 ml-3">
-            <div className="bg-[#fbb35a] w-[500px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 left-20 right-20 rounded">
+            <div className="bg-[#fbb35a] w-[300px] text-black flex flex-col items-center justify-center relative py-3 px-4 pt-5 left-20 right-20 rounded">
               <span className="block text-center w-full italic">
-                “ I ask that you neither turn your back nor advert your eyes...
-                that you watch carefully until the end. That is your duty,
-                Sensei... as one who has chosen the path ahead. ”
+                “ *sigh*… I just wanted to fully enjoy this vacation. ”
               </span>
               <br />
-              <span className="absolute right-20 bottom-1 text-xs italic">
-                ~ Yurizono Nagisa_Swimsuit, to{" "}
-                <a href="#" className="text-[#357ff3]">
-                  Sensei
-                </a>
+              <span className="absolute right-30 bottom-1 text-xs italic">
+                ~ Kirifuji Nagisa (Swimsuit ver.)
               </span>
             </div>
             <p className="mt-5 max-w-[600px]">
-              <strong>Yurizono Nagisa_Swimsuit (百合園セイア)</strong> is one of the{" "}
-              <a href="/students" className="text-[#357ff3]">
-                students
-              </a>{" "}
-              in{" "}
-              <a href="#" className="text-[#357ff3]">
-                Trinity General School
-              </a>{" "}
-              who wields a{" "}
-              <a href="#" className="text-[#357ff3]">
-                Handgun
-              </a>
-              .
+              <strong>Kirifuji Nagisa (Swimsuit ver.)</strong> (桐藤ナギサ (水着 Ver.)) is the Swimsuit Variant of <a href="#" className="text-[#357ff3]">Nagisa</a> and is one the
+              <a href="/students" className="text-[#357ff3]"> students</a>. studying in  <a href="/schools" className="text-[#357ff3]">Trinity General School</a> who wields a <a href="/weapons" className="text-[#357ff3]">Handgun</a>.
             </p>
-            <p className="mt-5">
-              She is one of the three presidents of the{" "}
-              <a href="#" className="text-[#357ff3]">
-                Tea Party
-              </a>
-              .
+            <p className="mt-5">She is one of the three presidents of the <a href="#" className="text-[#357ff3]">Tea Party</a>.
             </p>
             <nav className="w-56 mt-5 text-start border border-gray-700 rounded mb-6">
               <div className="flex items-center justify-between px-3 py-2 border-b border-gray-700">
@@ -290,12 +269,7 @@ export const Nagisa_Swimsuit = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Nagisa_Swimsuit is one of the three presidents of the Tea Party. Compared
-                to the other two presidents, Nagisa_Swimsuit has a distinctive way of
-                speaking as her choice of vocabulary differs from the others.
-                Nagisa_Swimsuit is also known to have prophetic dreams which can predict
-                the future accurately most of the the time. She can also talk to
-                other people through these dreams.
+                Nagisa-san, who was half-forced to come to the beach. Though she’s concerned about the work she left behind, deep down, she doesn’t seem entirely displeased with the situation...
               </p>
             </div>
             <h3
@@ -306,10 +280,7 @@ export const Nagisa_Swimsuit = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Nagisa_Swimsuit is rather philosophical when she talks. This is possibly
-                caused by her ability to see the future. Thanks to this ability
-                of hers, she often chooses to not do anything about the dreams
-                she sees as she believes that the future can't be changed.
+                See <a href="/bluearchive/characters/nagisa" className="text-[#357ff3]">KiriNagisa</a>
               </p>
             </div>
             <h3
@@ -320,13 +291,7 @@ export const Nagisa_Swimsuit = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Nagisa_Swimsuit has champagne yellow, straight hair, that reaches down
-                below her waist, as well tail that reaches to the ground,
-                decorated with white ribbons, and flowers near the end. Two
-                waist length bangs are found on the front. She has a pair of fox
-                ears matching her hair color, with white fluff inside. A white
-                flower crown can be found around her left ear. Her eyes are a
-                gradient of pink, and yellow (top to bottom). She has pale skin.
+                Kirifuji Nagisa has long ash-blonde hair with bangs that cover the right side of her forehead, while the bangs on the left are swept up to frame her face, slightly exposing her forehead. Her hair is styled into a wavy high ponytail that reaches down to her thighs, with two small locks falling over her chest. Nagisa has light brown eyes.
               </p>
             </div>
             <h4
@@ -337,8 +302,7 @@ export const Nagisa_Swimsuit = () => {
             </h4>
             <div className="ml-3 mt-2">
               <p>
-                Nagisa_Swimsuit's halo consists of two yellow lines, which resemble Roman
-                columns. They sit perpendicular to form an "x" shape.
+                See <a href="/bluearchive/characters/nagisa" className="text-[#357ff3]">KiriNagisa</a>
               </p>
             </div>
 
@@ -348,7 +312,7 @@ export const Nagisa_Swimsuit = () => {
           {/* Aside (right) */}
           <aside className="bg-[#fbb35a] border-2 border-[#357ff3] rounded-lg shadow-lg p-6 mt-5 w-full max-w-xs mb-8 mr-5">
             <h2 className="text-2xl font-bold text-[#f7e69a] mb-2 text-center">
-              Yurizuno Nagisa (Swimsuit ver.)
+              Kirifuji Nagisa (Swimsuit ver.)
             </h2>
             <div className="text-center text-sm text-[#f7e69a] font-bold mb-4">
               百合園セイア
@@ -440,7 +404,7 @@ export const Nagisa_Swimsuit = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Blue_Font_2.png"
+                          src="/Blue-Archive/icons/Blue_Font_3.png"
                           alt="Bond Level"
                           width={16}
                           height={16}
@@ -451,7 +415,7 @@ export const Nagisa_Swimsuit = () => {
                     {/* Cover */}
                     <td className="bg-[#f7e69a] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/icons/Cross_1.png"
+                        src="/Blue-Archive/icons/Cover.png"
                         alt="Cover"
                         width={18}
                         height={18}
@@ -464,7 +428,7 @@ export const Nagisa_Swimsuit = () => {
                     {/* Role */}
                     <td className="bg-[#f7e69a] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/icons/STRIKER.png"
+                        src="/Blue-Archive/icons/SPECIAL.png"
                         alt="STRIKER"
                         width={48}
                         height={12}
@@ -489,8 +453,8 @@ export const Nagisa_Swimsuit = () => {
                     {/* Position */}
                     <td className="bg-[#f7e69a] px-2 py-2 text-center align-middle w-1/3">
                       <img
-                        src="/Blue-Archive/icons/MIDDLE.png"
-                        alt="MIDDLE"
+                        src="/Blue-Archive/icons/BACK.png"
+                        alt="BACK"
                         width={50}
                         height={20}
                         className="inline-block"
@@ -535,8 +499,8 @@ export const Nagisa_Swimsuit = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Neutral_Icon.png"
-                          alt="Neutral Icon"
+                          src="/Blue-Archive/icons/Excellent_Icon.png"
+                          alt="Excellent Icon"
                           width={24}
                           height={24}
                           className="absolute right-[-6px] bottom-[-6px] z-20"
@@ -554,8 +518,8 @@ export const Nagisa_Swimsuit = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Terrible_Icon.png"
-                          alt="Terrible Icon"
+                          src="/Blue-Archive/icons/Good_Icon.png"
+                          alt="Good Icon"
                           width={24}
                           height={24}
                           className="absolute right-[-6px] bottom-[-6px] z-20"
@@ -573,8 +537,8 @@ export const Nagisa_Swimsuit = () => {
                           className="inline-block"
                         />
                         <img
-                          src="/Blue-Archive/icons/Excellent_Icon.png"
-                          alt="Excellent Icon"
+                          src="/Blue-Archive/icons/Terrible_Icon.png"
+                          alt="Terrible Icon"
                           width={24}
                           height={24}
                           className="absolute right-[-8px] bottom-[-8px] z-20"
@@ -684,25 +648,25 @@ export const Nagisa_Swimsuit = () => {
                       <span className="text-xs font-bold text-[#fbb35a]">
                         HP
                       </span>
-                      <span className="font-bold text-lg text-black">2133</span>
+                      <span className="font-bold text-lg text-black">3300</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#fbb35a]">
                         ATK
                       </span>
-                      <span className="font-bold text-lg text-black">221</span>
+                      <span className="font-bold text-lg text-black">297</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#fbb35a]">
                         DEF
                       </span>
-                      <span className="font-bold text-lg text-black">16</span>
+                      <span className="font-bold text-lg text-black">98</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-xs font-bold text-[#fbb35a]">
                         HEAL
                       </span>
-                      <span className="font-bold text-lg text-black">1723</span>
+                      <span className="font-bold text-lg text-black">2000</span>
                     </div>
                   </div>
                   {/* Level 100 Row 1 */}
@@ -717,16 +681,16 @@ export const Nagisa_Swimsuit = () => {
                   {/* Level 100 Stats 1 */}
                   <div className="bg-[#f7e69a] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">24697</span>
+                      <span className="font-bold text-black">24666</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2209</span>
+                      <span className="font-bold text-black">2974</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">99</span>
+                      <span className="font-bold text-black">589</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5170</span>
+                      <span className="font-bold text-black">6000</span>
                     </div>
                   </div>
                   {/* Level 100 Row 2 (4 images) */}
@@ -750,16 +714,16 @@ export const Nagisa_Swimsuit = () => {
                   {/* Level 100 Stats 2 */}
                   <div className="bg-[#f7e69a] grid grid-cols-4 gap-2 mb-2 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">26681</span>
+                      <span className="font-bold text-black">26648</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2462</span>
+                      <span className="font-bold text-black">3315</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">99</span>
+                      <span className="font-bold text-black">589</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">5698</span>
+                      <span className="font-bold text-black">6013</span>
                     </div>
                   </div>
                   {/* Level 100 Row 3 (5 images) */}
@@ -783,16 +747,16 @@ export const Nagisa_Swimsuit = () => {
                   {/* Level 100 Stats 3 */}
                   <div className="bg-[#f7e69a] grid grid-cols-4 gap-2 mb-4 pt-3 pb-2">
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">29768</span>
+                      <span className="font-bold text-black">29732</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">2770</span>
+                      <span className="font-bold text-black">3729</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">99</span>
+                      <span className="font-bold text-black">589</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="font-bold text-black">6358</span>
+                      <span className="font-bold text-black">7379</span>
                     </div>
                   </div>
                   {/* Profile Dropdown */}

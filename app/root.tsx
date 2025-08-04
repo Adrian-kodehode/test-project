@@ -156,6 +156,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/kirara" &&
           location.pathname !== "/fgotest" &&
           location.pathname !== "/jeanne_alter" &&
+          location.pathname !== "/fate_grand_order" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div>{children}</div>
 
@@ -173,7 +174,7 @@ export default function App() {
   const showCustomCursor = location.pathname !== "/home";
 
   return (
-     <div className={showCustomCursor ? "cursor-none" : ""}>
+    <div className={showCustomCursor ? "cursor-none" : ""}>
       {showCustomCursor && <CustomCursor gifSrc="guraDance-4x.gif" size={48} />}
       <Outlet />
       {location.pathname !== "/music" &&
@@ -282,6 +283,7 @@ export default function App() {
         location.pathname !== "/kirara" &&
         location.pathname !== "/fgotest" &&
         location.pathname !== "/jeanne_alter" &&
+        location.pathname !== "/fate_grand_order" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );
