@@ -154,6 +154,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/alice_maid" &&
           location.pathname !== "/hibiki_cheerleader" &&
           location.pathname !== "/kirara" &&
+          location.pathname !== "/hoshino_armed" &&
+          location.pathname !== "/koharu" &&
           location.pathname !== "/fgotest" &&
           location.pathname !== "/jeanne_alter" &&
           location.pathname !== "/fate_grand_order" &&
@@ -281,6 +283,8 @@ export default function App() {
         location.pathname !== "/alice_maid" &&
         location.pathname !== "/hibiki_cheerleader" &&
         location.pathname !== "/kirara" &&
+        location.pathname !== "/hoshino_armed" &&
+        location.pathname !== "/koharu" &&
         location.pathname !== "/fgotest" &&
         location.pathname !== "/jeanne_alter" &&
         location.pathname !== "/fate_grand_order" &&
