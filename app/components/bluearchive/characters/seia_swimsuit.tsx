@@ -394,24 +394,32 @@ export const Seia_Swimsuit = () => {
               <div className="flex justify-center">
                 <figure>
                   <a href="#">
-                    <img
-                      src={
-                        selectedTab === "icon"
-                          ? "/Blue-Archive/characters/Seia_Swimsuit_Icon.png"
-                          : selectedTab === "portrait"
-                          ? "/Blue-Archive/characters/Seia_Swimsuit_Portrait.png"
-                          : selectedTab === "sprite"
-                          ? "/Blue-Archive/characters/Seia_Swimsuit_Sprite.png"
-                          : selectedTab === "halo"
-                          ? "/Blue-Archive/characters/Seia_Halo.png"
-                          : "/Blue-Archive/characters/Seia_Swimsuit_Icon.png"
-                      }
-                      alt={`Hikari ${
-                        selectedTab.charAt(0).toUpperCase() +
-                        selectedTab.slice(1)
-                      }`}
-                      className="w-70 h-70 object-cover"
-                    />
+                    {selectedTab === "sprite" ? (
+                      <video
+                        src="/Blue-Archive/characters/Seia_(Swimsuit)_dangle.webm"
+                        className="w-70 h-70 object-cover"
+                        autoPlay
+                        loop
+                        muted
+                      />
+                    ) : (
+                      <img
+                        src={
+                          selectedTab === "icon"
+                            ? "/Blue-Archive/characters/Seia_Swimsuit_Icon.png"
+                            : selectedTab === "portrait"
+                            ? "/Blue-Archive/characters/Seia_Swimsuit_Portrait.png"
+                            : selectedTab === "halo"
+                            ? "/Blue-Archive/characters/Seia_Halo.png"
+                            : "/Blue-Archive/characters/Seia_Swimsuit_Icon.png"
+                        }
+                        alt={`Hikari ${
+                          selectedTab.charAt(0).toUpperCase() +
+                          selectedTab.slice(1)
+                        }`}
+                        className="w-70 h-70 object-cover"
+                      />
+                    )}
                   </a>
                 </figure>
               </div>

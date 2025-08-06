@@ -164,8 +164,8 @@ export const FateGrandOrder = () => {
           title: "SERVANTS",
           src: "/Fgo/icons/Servant_Button_Hover.png",
           srcHover: "/Fgo/icons/Servant_Button.png",
-          href: "/fgo/Servants",
-          external: false,
+          href: "/fgo",
+          external: true,
         },
         {
           title: "CLASS",

@@ -1,25 +1,25 @@
 import React, { useEffect, useState, memo } from "react";
 
-const KoharuLive2D = memo(() => (
+const Koharu_SwimuitLive2D = memo(() => (
   <div className="flex flex-col space-y-2">
     <img
-      src="Blue-Archive/live2d/Koharu_Live2D.gif"
-      alt="Koharu Live2D"
+      src="Blue-Archive/live2d/Koharu_Swimuit_Live2D.gif"
+      alt="Koharu_Swimuit Live2D"
       className="w-full rounded-lg mx-auto"
     />
   </div>
 ));
-const KoharuEX = memo(() => (
+const Koharu_SwimuitEX = memo(() => (
   <div className="flex flex-col space-y-2">
     <img
-      src="Blue-Archive/icons/KOHARU_EX-SKILL.png"
-      alt="Koharu EX Live2D"
+      src="Blue-Archive/icons/Koharu_Swimuit_EX-SKILL.png"
+      alt="Koharu_Swimuit EX Live2D"
       className="w-full rounded-lg mx-auto bg-[#fbb35a] p-5"
     />
   </div>
 ));
 
-export const Koharu = () => {
+export const Koharu_Swimuit = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [selectedTab, setSelectedTab] = useState("icon");
   const [selectedTabStats, setSelectedTabStats] = useState("main");
@@ -81,7 +81,7 @@ export const Koharu = () => {
       </header>
       <main className="flex-1 mt-10 mb-10 w-[1300px] max-w-[98vw] bg-black bg-opacity-80 rounded-lg p-4 text-white shadow-lg mx-auto ">
         <h2 className="text-4xl mt-10 mb-10 ml-5 text-[#06bbfa]">
-          Shimoe Koharu
+          Shimoe Koharu (Swimuit ver.)
         </h2>
         <div className="flex justify-center items-center scale-100 ">
           <a
@@ -124,11 +124,11 @@ export const Koharu = () => {
               </span>
               <br />
               <span className="absolute right-20 bottom-1 text-xs italic">
-                ~ Shimoe Koharu
+                ~ Shimoe Koharu_Swimuit
               </span>
             </div>
             <p className="mt-5 max-w-[600px]">
-              <strong> Shimoe Koharu</strong> (下江コハル) is one of the
+              <strong> Shimoe Koharu_Swimuit</strong> (下江コハル) is one of the
               <a href="#" className="text-[#357ff3]">
                 {" "}
                 students
@@ -313,7 +313,7 @@ export const Koharu = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Koharu is a naive and delusional young girl with a good heart,
+                Koharu_Swimuit is a naive and delusional young girl with a good heart,
                 while her skills allowed her to become a part of the Justice
                 Realization Committee. However, because of her poor intellect
                 and delusional behavior, she is often set back.
@@ -342,7 +342,7 @@ export const Koharu = () => {
             </h3>
             <div className="ml-3 mt-2">
               <p>
-                Koharu has pink eyes and pink hair with bangs that cover her
+                Koharu_Swimuit has pink eyes and pink hair with bangs that cover her
                 forehead. Her hair is styled into two chest-length twintails by
                 red ribbons, which also frames her face. She has crow-like wings
                 on her head and lower back.
@@ -356,7 +356,7 @@ export const Koharu = () => {
             </h4>
             <div className="ml-3 mt-2">
               <p>
-                Koharu's halo consists of two pink rings that fade into a
+                Koharu_Swimuit's halo consists of two pink rings that fade into a
                 lighter tone downwards, with a pair of wings on top and a pair
                 of bean-like shapes below.
               </p>
@@ -368,12 +368,12 @@ export const Koharu = () => {
           {/* Aside (right) */}
           <aside className="bg-[#fbb35a] border-2 border-[#357ff3] rounded-lg shadow-lg p-6 mt-5 w-full max-w-xs mb-8 mr-5">
             <h2 className="text-2xl font-bold text-[#f7e69a] mb-2 text-center">
-              Shimoe Koharu
+              Shimoe Koharu (Swimuit ver.)
             </h2>
             <div className="text-center text-sm text-[#f7e69a] font-bold mb-4">
             下江コハル
             </div>
-            <section>
+             <section>
               <div className="flex justify-center">
                 <ul className="flex justify-between">
                   {[
@@ -400,61 +400,36 @@ export const Koharu = () => {
                   ))}
                 </ul>
               </div>
-              <div className="flex justify-center ">
-                <ul className="flex w-full justify-between flex-wrap">
-                  {[
-                    { label: "Default", key: "default" },
-                    { label: "Gym", key: "gym" },
-                    { label: "School Swimsuit", key: "school_swimsuit" },
-                  ].map((tab) => (
-                    <li key={tab.key} className="flex-1 text-center">
-                      <button
-                        type="button"
-                        className={`w-full px-2 py-1 text-xs text-[#f7e69a] font-${
-                          tab.key === selectedTab ? "extrabold" : "semibold"
-                        } focus:outline-none`}
-                        onClick={() => setSelectedTab(tab.key)}
-                      >
-                        <span
-                          className={`block ${
-                            tab.key === selectedTab
-                              ? "border-b-2 border-[#357ff3] pb-1"
-                              : ""
-                          }`}
-                        >
-                          {tab.label}
-                        </span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
               <div className="flex justify-center">
                 <figure>
                   <a href="#">
-                    <img
-                      src={
-                        selectedTab === "portrait"
-                          ? "/Blue-Archive/characters/Koharu_Portrait.png"
-                          : selectedTab === "sprite"
-                          ? "/Blue-Archive/characters/Koharu_Sprite.png"
-                          : selectedTab === "halo"
-                          ? "/Blue-Archive/characters/Koharu_Halo.png"
-                          : selectedTab === "gym"
-                          ? "/Blue-Archive/characters/Koharu_Gym_Portrait.png"
-                          : selectedTab === "school_swimsuit"
-                          ? "/Blue-Archive/characters/Koharu_School_Swimsuit_Portrait.png"
-                          : selectedTab === "default" ||
-                            selectedTab === "Default"
-                          ? "/Blue-Archive/characters/Koharu_Portrait.png"
-                          : "/Blue-Archive/characters/Koharu_Icon.png"
-                      }
-                      alt={`Koharu ${
-                        selectedTab.charAt(0).toUpperCase() +
-                        selectedTab.slice(1)
-                      }`}
-                      className="w-70 h-70 object-cover"
-                    />
+                    {selectedTab === "sprite" ? (
+                      <video
+                        src="/Blue-Archive/characters/Koharu_(Swimsuit)_dangle.webm"
+                        className="w-full h-auto object-cover max-w-xs max-h-xs"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
+                    ) : (
+                      <img
+                        src={
+                          selectedTab === "icon"
+                            ? "/Blue-Archive/characters/Koharu_Swimsuit_Icon.png"
+                            : selectedTab === "portrait"
+                            ? "/Blue-Archive/characters/Koharu_(Swimsuit)_00.png"
+                            : selectedTab === "halo"
+                            ? "/Blue-Archive/characters/Koharu_Halo.png"
+                            : "/Blue-Archive/characters/Koharu_Swimsuit_Icon.png"
+                        }
+                        alt={`Koharu ${
+                          selectedTab.charAt(0).toUpperCase() +
+                          selectedTab.slice(1)
+                        }`}
+                        className="w-70 h-70 object-cover"
+                      />
+                    )}
                   </a>
                 </figure>
               </div>
@@ -931,7 +906,7 @@ export const Koharu = () => {
           </h4>
           <div className="ml-3 mt-2">
             <p>
-              Koharu wears a black Trinity school uniform consisting of a black
+              Koharu_Swimuit wears a black Trinity school uniform consisting of a black
               sailor-like sweater, a white and pink sailor collar, a pink
               sailor-like ribbon, a dark pink pleated skirt and white leg warmer
               socks. The sailor-like sweater is a bit loose on her left
@@ -1011,7 +986,7 @@ export const Koharu = () => {
                       <tr>
                         <td className="w-1/4 bg-[#fbb35a] p-2">
                           <img
-                            src="Blue-Archive/icons/KOHARU_EX-SKILL.png"
+                            src="Blue-Archive/icons/Koharu_Swimuit_EX-SKILL.png"
                             alt="Sealess: Ishbóshet icon"
                             className="w-full h-auto rounded"
                           />
@@ -2012,7 +1987,7 @@ export const Koharu = () => {
                         rowSpan={7}
                         className="border border-[#fbb35a] rounded-lg  align-top"
                       >
-                        <KoharuEX />
+                        <Koharu_SwimuitEX />
                       </td>
                     </tr>
                     <tr>
@@ -2270,7 +2245,7 @@ export const Koharu = () => {
                     rowSpan={7}
                     className="border border-[#fbb35a] rounded-lg p-2 align-top"
                   >
-                    <KoharuLive2D />
+                    <Koharu_SwimuitLive2D />
                   </td>
                   <th className="bg-[#fbb35a] text-black font-bold px-2 py-2">
                     LV02 – 05
