@@ -158,7 +158,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/koharu" &&
           location.pathname !== "/koharu_swimsuit" &&
           location.pathname !== "/shiroko" &&
+          location.pathname !== "/shiroko_riding" &&
           location.pathname !== "/fgo" &&
+          location.pathname !== "/servants" &&
           location.pathname !== "/jeanne_alter" &&
           location.pathname !== "/fate_grand_order" &&
           location.pathname !== "/cait_cu_cerpriestess" &&
@@ -291,7 +293,9 @@ export default function App() {
         location.pathname !== "/koharu" &&
         location.pathname !== "/koharu_swimsuit" &&
         location.pathname !== "/shiroko" &&
+        location.pathname !== "/shiroko_riding" &&
         location.pathname !== "/fgo" &&
+        location.pathname !== "/servants" &&
         location.pathname !== "/jeanne_alter" &&
         location.pathname !== "/fate_grand_order" &&
         location.pathname !== "/cait_cu_cerpriestess" &&
