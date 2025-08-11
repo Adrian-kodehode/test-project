@@ -9,7 +9,7 @@ interface ClassIconProps {
   isAvenger?: boolean;
 }
 
-const ClassIcon = ({ name, color = 'text-yellow-400', isSelected = false, isAvenger = false }: ClassIconProps) => {
+const ClassIcon = ({ name, color = 'text-yellow-400' }: ClassIconProps) => {
   const baseClasses = `
     w-16 h-16 rounded-lg  flex flex-col items-center justify-center
     cursor-pointer transition-all duration-200 hover:scale-105 hover:brightness-110
@@ -20,33 +20,33 @@ const ClassIcon = ({ name, color = 'text-yellow-400', isSelected = false, isAven
   const renderIcon = () => {
     switch(name.toLowerCase()) {
       case 'saber':
-        return <img src="Fgo/icons/Class-Saber-Gold.png" alt="" />
+        return <a href="/saber"><img src="Fgo/icons/Class-Saber-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'archer':
-        return <img src="Fgo/icons/Class-Archer-Gold.png" alt="" />
+        return <a href="/archer"><img src="Fgo/icons/Class-Archer-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'lancer':
-        return <img src="Fgo/icons/Class-Lancer-Gold.png" alt="" />
+        return <a href="/lancer"><img src="Fgo/icons/Class-Lancer-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'rider':
-        return <img src="Fgo/icons/Class-Rider-Gold.png" alt="" />  
+        return <a href="/rider"><img src="Fgo/icons/Class-Rider-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'caster':
-        return <img src="Fgo/icons/Class-Caster-Gold.png" alt="" />
+        return <a href="/caster"><img src="Fgo/icons/Class-Caster-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'assassin':
-        return <img src="Fgo/icons/Class-Assassin-Gold.png" alt="" />
+        return <a href="/assassin"><img src="Fgo/icons/Class-Assassin-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'berserker':
-        return <img src="Fgo/icons/Class-Berserker-Gold.png" alt="" />
+        return <a href="/berserker"><img src="Fgo/icons/Class-Berserker-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'ruler':
-        return <img src="Fgo/icons/Class-Ruler-Gold.png" alt="" />
+        return <a href="/ruler"><img src="Fgo/icons/Class-Ruler-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'avenger':
-        return <img src="Fgo/icons/Class-Avenger-Gold.png" alt="" />
+        return <a href="/avenger"><img src="Fgo/icons/Class-Avenger-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'moon cancer':
-        return <a href="/bb_dubai"><img src="Fgo/icons/Class-MoonCancer-Gold.png" alt="" /></a>
+        return <a href="/bb_dubai"><img src="Fgo/icons/Class-MoonCancer-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'alter ego':
-        return <img src="Fgo/icons/Class-Alterego-Gold.png" alt="" />
+        return <a href="/alter_ego"><img src="Fgo/icons/Class-Alterego-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'foreigner':
-        return <img src="Fgo/icons/Class-Foreigner-Gold.png" alt="" />
+        return <a href="/foreigner"><img src="Fgo/icons/Class-Foreigner-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'pretender':
-        return <a href="/cait_cu_cerpriestess"><img src="Fgo/icons/Class-Pretender-Gold.png" alt="" /></a>
+        return <a href="/cait_cu_cerpriestess"><img src="Fgo/icons/Class-Pretender-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'shielder':
-        return <img src="Fgo/icons/Class-Shielder-Gold.png" alt="" />
+        return <a href="/shielder"><img src="Fgo/icons/Class-Shielder-Gold.png" alt="" className='w-10 h-10' /></a>
       case 'beast':
         return (
         <div className="flex items-center justify-center space-x-1">
@@ -68,7 +68,7 @@ const ClassIcon = ({ name, color = 'text-yellow-400', isSelected = false, isAven
 };
 
 export default function Servants() {
-  const [selectedClass, setSelectedClass] = useState('Avenger');
+ 
 
   const classes = [
     { name: 'Saber', color: 'text-blue-400' },
@@ -93,7 +93,7 @@ export default function Servants() {
       <div className="max-w-4xl bg-gray-800 bg-opacity-80 mx-auto p-3">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-3xl font-bold text-white">Avenger</h1>
+          <h1 className="text-3xl font-bold text-white">Servants</h1>
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1 text-blue-400">
               <MessageSquare className="w-5 h-5" />
@@ -104,17 +104,6 @@ export default function Servants() {
           </div>
         </div>
 
-        {/* Passive Skill Note */}
-        <div className="mb-8">
-          <p className="text-gray-300 text-sm italic">
-            For the passive skill of the same name, see{' '}
-            <a href="#" className="text-blue-400 hover:text-blue-300 underline">
-              Avenger (Passive Skill)
-            </a>
-            .
-          </p>
-        </div>
-
         {/* Class Grid */}
         <div className="grid grid-cols-7 gap-4 mb-8">
           {classes.slice(0, 14).map((classItem, index) => (
@@ -122,8 +111,7 @@ export default function Servants() {
               <ClassIcon
                 name={classItem.name}
                 color={classItem.color}
-                isSelected={selectedClass === classItem.name}
-                isAvenger={classItem.name === 'Avenger'}
+             
               />
             </div>
           ))}
@@ -134,15 +122,8 @@ export default function Servants() {
           <ClassIcon
             name="Beast"
             color="text-red-500"
-            isSelected={selectedClass === 'Beast'}
+            
           />
-        </div>
-
-        {/* Selection Handler */}
-        <div className="mt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            Selected Class: <span className="text-yellow-400 font-semibold">{selectedClass}</span>
-          </p>
         </div>
       </div>
     </div>

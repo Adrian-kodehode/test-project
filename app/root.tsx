@@ -165,6 +165,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/fate_grand_order" &&
           location.pathname !== "/cait_cu_cerpriestess" &&
           location.pathname !== "/bb_dubai" &&
+          location.pathname !== "/saber" &&
+          location.pathname !== "/archer" &&
           location.pathname !== "/nemesis" && <NewHeader />}
         <div>{children}</div>
 
@@ -300,6 +302,8 @@ export default function App() {
         location.pathname !== "/fate_grand_order" &&
         location.pathname !== "/cait_cu_cerpriestess" &&
         location.pathname !== "/bb_dubai" &&
+        location.pathname !== "/saber" &&
+        location.pathname !== "/archer" &&
         location.pathname !== "/video" && <Footer />}
     </div>
   );
