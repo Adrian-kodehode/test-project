@@ -8,63 +8,92 @@ export const FateGrandOrder = () => {
 
     const japaneseEvents = [
       {
+        title:
+          "Fate/Grand Order ～10th Anniversary～ Destiny Order Summoning Campaign (Extra Classes)",
+        banner: "Fgo/jp_banner/10thAnniDestinyOrder2.png",
+        type: "current",
+      },
+      {
+        title:
+          "Fate/Grand Order ～10th Anniversary～ Destiny Order Summoning Campaign (Seven Classes)",
+           banner: "Fgo/jp_banner/10thAnniDestinyOrder1.png",
+        type: "current",
+      },
+      {
+        title:
+          "Fate/Grand Order ～10th Anniversary～ Lucky Bag Summoning Campaign",
+        banner: "Fgo/jp_banner/JP10thAnnivLuckyBag.png",
+        type: "current",
+      },
+      {
+        title: "Hollow ataraxia REMASTERED Release Commemoration Campaign",
+        banner: "Fgo/jp_banner/FHACampaignBanner.jpg",
+        type: "current",
+      },
+      {
+        title: "Grand Duel: Extra",
+        banner: "Fgo/jp_banner/Grand_Duel_Extra_Banner.png",
+        type: "current",
+      },
+      {
+        title: "Grand Duel Extra Summoning Campaign",
+        banner: "Fgo/jp_banner/Grand_duel_extra_pu.png",
+        type: "current",
+      },
+      {
         title: "Grand Duel Extra Pre-Release Campaign",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/8/81/Grand_Duel_Extra_Pre-Release_Campaign_Banner.png",
+        banner: "Fgo/jp_banner/Grand_Duel_Extra_Pre-Release_Campaign_Banner (1).png",
         type: "current",
       },
       {
         title: "Servant Strengthening Quests Part XIX",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/8/81/STQ19Banner.png",
+        banner: "Fgo/jp_banner/STQ19Banner.png",
         type: "current",
       },
       {
         title: "Fate/Grand Order ～10th Anniversary～ Summoning Campaign I",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/1/19/FGOFes2025Summon1.png",
+        banner: "Fgo/jp_banner/FGOFes2025Summon1.png",
         type: "current",
       },
       {
         title: "Fate/Grand Order ～10th Anniversary～",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/7/76/10th_anniversary.png",
+        banner: "Fgo/jp_banner/10th_anniversary.png",
         type: "current",
       },
       {
-        title: "OVER THE SAME SKY -JULY- Summoning Campaign",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/7/7b/Over_the_same_sky_july_pu.png",
-        type: "current",
-      },
-      {
-        title: "Fate/Grand Order 10th Anniversary: OVER THE SAME SKY",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/c/c7/OVER_THE_SAME_SKY_Banner.png",
+        title:
+          "Fate/Grand Order Fes. 2025 ～10th Anniversary～ Countdown Campaign",
+        banner: "Fgo/jp_banner/10th_anniversary_cp.png",
         type: "current",
       },
     ];
 
-    const upcomingJapaneseEvents = [
-      {
-        title: "Grand Duel: Extra",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/8/81/Grand_Duel_Extra_Pre-Release_Campaign_Banner.png",
-        type: "upcoming",
-      },
-    ];
+    // const upcomingJapaneseEvents = [
+    //   {
+    //     title: "Grand Duel: Extra",
+    //     banner:
+    //       "https://static.wikia.nocookie.net/fategrandorder/images/8/81/Grand_Duel_Extra_Pre-Release_Campaign_Banner.png",
+    //     type: "upcoming",
+    //   },
+    // ];
 
     const englishEvents = [
-      {
-        title: "FGO Summer 2024 Revival Summoning Campaign (US)",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/8/88/Summer2024RevivalSummonUS.png",
+    {
+        title:
+          "Fate/Hollow Ataraxia Remastered Release Campaign (US)",
+        banner: "Fgo/en_banner/FHACampaignUS.png",
+        type: "current",
+      },
+     {
+        title:
+          "Story Clear Support Campaign 2025 Part 2 (US)",
+        banner: "Fgo/en_banner/StoryClearCampaign2025Part2US.png",
         type: "current",
       },
       {
-        title: "FGO Summer 2025 Event (US)",
-        banner:
-          "https://static.wikia.nocookie.net/fategrandorder/images/c/c1/FGOSummer2025EventUS.png",
+        title:
+          "Hunting Quests Part XIII (US)",
+        banner: "Fgo/en_banner/HuntingQuestsPart13US.png",
         type: "current",
       },
     ];
@@ -119,30 +148,47 @@ export const FateGrandOrder = () => {
       },
     ];
 
-    const EventCard = ({ event }) => (
-      <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 mb-4">
-        <div className="aspect-[8/3] bg-gradient-to-r from-blue-100 to-purple-100 flex items-center justify-center">
-          <div className="text-center p-4">
-            <h3 className="font-bold text-gray-800 text-sm leading-tight">
-              {event.title}
-            </h3>
-          </div>
+    const EventCard = ({
+      event,
+    }: {
+      event: { title: string; banner: string; type: string };
+    }) => (
+      <div className=" shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 mb-4">
+        <div className="relative">
+          <img
+            src={event.banner}
+            alt={event.title}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+            }}
+          />
+          <div className="absolute inset-0  flex items-center justify-center p-4"></div>
+          <h3 className="font-bold text-blue-500 text-sm leading-tight text-center p-2">
+            {event.title}
+          </h3>
         </div>
       </div>
     );
 
-    const ServantIcon = ({ servant }) => (
+    interface Servant {
+      name: string;
+      icon: string;
+    }
+
+    const ServantIcon = ({ servant }: { servant: Servant }) => (
       <div className="group relative">
         <div className="w-full h-full  rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105">
           <div className="w-full h-full  flex items-center justify-center overflow-hidden">
             <img
               src={servant.icon}
               alt={servant.name}
-              className="w-full h- object-cover rounded"
-              onError={(e) => {
-                // Fallback to gradient if image fails to load
-                e.target.style.display = "none";
-                e.target.nextSibling.style.display = "block";
+              className="w-full h-full object-cover rounded"
+              onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+                const target = e.currentTarget;
+                target.style.display = "none";
+                const next = target.nextSibling as HTMLElement | null;
+                if (next) next.style.display = "block";
               }}
             />
             <div
@@ -566,13 +612,16 @@ export const FateGrandOrder = () => {
                         {/* Upcoming Events */}
                         <div>
                           <div className="flex items-center justify-center  py-3  mb-4">
-                           <img src="Fgo/icons/Upcoming-Events.png" alt="" />
+                            <img src="Fgo/icons/Upcoming-Events.png" alt="" />
                           </div>
-                          <div className="space-y-4">
+                           <div className=" p-8 text-center text-gray-500">
+                            None currently announced.
+                          </div>
+                          {/* <div className="space-y-4">
                             {upcomingJapaneseEvents.map((event, index) => (
                               <EventCard key={index} event={event} />
                             ))}
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -600,10 +649,11 @@ export const FateGrandOrder = () => {
                       <div className="grid lg:grid-cols-2 gap-8">
                         {/* Current Events */}
                         <div>
-                          <div className="bg-gradient-to-r from-green-500 to-blue-600 text-white text-center py-3 rounded-t-lg mb-4">
-                            <h3 className="font-bold text-lg">
-                              Current Events
-                            </h3>
+                          <div className="flex items-center justify-center  py-3  mb-4">
+                             <img
+                              src="Fgo/icons/CurrentEventsDivider.png"
+                              alt=""
+                            />
                           </div>
                           <div className="space-y-4">
                             {englishEvents.map((event, index) => (
@@ -614,12 +664,10 @@ export const FateGrandOrder = () => {
 
                         {/* Upcoming Events */}
                         <div>
-                          <div className="bg-gradient-to-r from-purple-500 to-pink-600 text-white text-center py-3 rounded-t-lg mb-4">
-                            <h3 className="font-bold text-lg">
-                              Upcoming Events
-                            </h3>
+                          <div className="flex items-center justify-center  py-3  mb-4">
+                            <img src="Fgo/icons/Upcoming-Events.png" alt="" />
                           </div>
-                          <div className="bg-white rounded-lg shadow-md p-8 text-center text-gray-500">
+                          <div className=" p-8 text-center text-gray-500">
                             None currently announced.
                           </div>
                         </div>
