@@ -1,0 +1,233 @@
+[
+  {
+    "name": "Medusa",
+    "image": "/Fgo/characters/rider/Ridercardborder1.png",
+    "locked": false
+  },
+  {
+    "name": "Georgios",
+    "image": "/Fgo/characters/rider/Ridercardborder2.png",
+    "locked": false
+  },
+  {
+    "name": "Edward Teach",
+    "image": "/Fgo/characters/rider/Ridercardborder3.png",
+    "locked": false
+  },
+  {
+    "name": "Boudica",
+    "image": "/Fgo/characters/rider/Ridercardborder4.png",
+    "locked": false
+  },
+  {
+    "name": "Ushiwakamaru",
+    "image": "/Fgo/characters/rider/Ridercardborder5.png",
+    "locked": false
+  },
+  {
+    "name": "Alexander",
+    "image": "/Fgo/characters/rider/Ridercardborder6.png",
+    "locked": false
+  },
+  {
+    "name": "Marie Antoinette",
+    "image": "/Fgo/characters/rider/Ridercardborder7.png",
+    "locked": false
+  },
+  {
+    "name": "Martha",
+    "image": "/Fgo/characters/rider/Ridercardborder8.png",
+    "locked": false
+  },
+  {
+    "name": "Francis Drake",
+    "image": "/Fgo/characters/rider/Ridercardborder9.png",
+    "locked": false
+  },
+  {
+    "name": "Anne Bonny & Mary Read",
+    "image": "/Fgo/characters/rider/Ridercardborder10.png",
+    "locked": false
+  },
+  {
+    "name": "Artoria Pendragon (Santa Alter)",
+    "image": "/Fgo/characters/rider/Ridercardborder11.png",
+    "locked": false
+  },
+  {
+    "name": "Astolfo",
+    "image": "/Fgo/characters/rider/Ridercardborder12.png",
+    "locked": false
+  },
+  {
+    "name": "Queen Medb",
+    "image": "/Fgo/characters/rider/Ridercardborder13.png",
+    "locked": false
+  },
+  {
+    "name": "Iskandar",
+    "image": "/Fgo/characters/rider/Ridercardborder14.png",
+    "locked": false
+  },
+  {
+    "name": "Sakata Kintoki",
+    "image": "/Fgo/characters/rider/Ridercardborder15.png",
+    "locked": false
+  },
+  {
+    "name": "Ozymandias",
+    "image": "/Fgo/characters/rider/Ridercardborder16.png",
+    "locked": false
+  },
+  {
+    "name": "Mordred (Rider)",
+    "image": "/Fgo/characters/rider/Ridercardborder17.png",
+    "locked": false
+  },
+  {
+    "name": "Quetzalcoatl",
+    "image": "/Fgo/characters/rider/Ridercardborder18.png",
+    "locked": false
+  },
+  {
+    "name": "Cristopher Columbus",
+    "image": "/Fgo/characters/rider/Ridercardborder19.png",
+    "locked": false
+  },
+  {
+    "name": "Artoria Pendragon (Rider Alter)",
+    "image": "/Fgo/characters/rider/Ridercardborder20.png",
+    "src": "/artoria_pendragon_rider_alter",
+    "locked": false
+  },
+  {
+    "name": "Ishtar (Rider)",
+    "image": "/Fgo/characters/rider/Ridercardborder21.png",
+    "locked": false
+  },
+  {
+    "name": "Ivan the Terrible",
+    "image": "/Fgo/characters/rider/Ridercardborder22.png",
+    "locked": false
+  },
+  {
+    "name": "Achilles",
+    "image": "/Fgo/characters/rider/Ridercardborder23.png",
+    "locked": false
+  },
+  {
+    "name": "Sakamoto Ryōma",
+    "image": "/Fgo/characters/rider/Ridercardborder24.png",
+    "locked": false
+  },
+  {
+    "name": "Red Hare",
+    "image": "/Fgo/characters/rider/Ridercardborder25.png",
+    "locked": false
+  },
+  {
+    "name": "Sima Yi (Reines)",
+    "image": "/Fgo/characters/rider/Ridercardborder26.png",
+    "locked": false
+  },
+  {
+    "name": "Leonardo da Vinci (Rider)",
+    "image": "/Fgo/characters/rider/Ridercardborder27.png",
+    "locked": false
+  },
+  {
+    "name": "Bartholomew Roberts",
+    "image": "/Fgo/characters/rider/Ridercardborder28.png",
+    "locked": false
+  },
+  {
+    "name": "Carmilla (Rider)",
+    "image": "/Fgo/characters/rider/Ridercardborder29.png",
+    "locked": false
+  },
+  {
+    "name": "Mandricardo",
+    "image": "/Fgo/characters/rider/Ridercardborder30.png",
+    "locked": false
+  },
+  {
+    "name": "Europa",
+    "image": "/Fgo/characters/rider/Ridercardborder31.png",
+    "locked": false
+  },
+  {
+    "name": "Odysseus",
+    "image": "/Fgo/characters/rider/Ridercardborder32.png",
+    "locked": false
+  },
+  {
+    "name": "Murasaki Shikibu (Rider)",
+    "image": "/Fgo/characters/rider/Ridercardborder33.png",
+    "locked": false
+  },
+  {
+    "name": "Nemo",
+    "image": "/Fgo/characters/rider/Ridercardborder34.png",
+    "locked": false
+  },
+  {
+    "name": "Habetrot",
+    "image": "/Fgo/characters/rider/Ridercardborder35.png",
+    "locked": false
+  },
+  {
+    "name": "Caenis (Rider)",
+    "image": "/Fgo/characters/rider/Ridercardborder36.png",
+    "locked": false
+  },
+  {
+    "name": "Elizabeth Báthory (Cinderella)",
+    "image": "/Fgo/characters/rider/Ridercardborder37.png",
+    "locked": false
+  },
+  {
+    "name": "Taigong Wang",
+    "image": "/Fgo/characters/rider/Ridercardborder38.png",
+    "locked": false
+  },
+  {
+    "name": "Dobrynya Nikitich",
+    "image": "/Fgo/characters/rider/Ridercardborder39.png",
+    "locked": false
+  },
+  {
+    "name": "Constantine XI",
+    "image": "/Fgo/characters/rider/Ridercardborder40.png",
+    "locked": false
+  },
+  {
+    "name": "Kyokutei Bakin",
+    "image": "/Fgo/characters/rider/Ridercardborder41.png",
+    "locked": false
+  },
+  {
+    "name": "Huang Feihu",
+    "image": "/Fgo/characters/rider/Ridercardborder42.png",
+    "locked": false
+  },
+  {
+    "name": "Suzuka Gozen (Vacay)",
+    "image": "/Fgo/characters/rider/Ridercardborder43.png",
+    "locked": false
+  },
+  {
+    "name": "Takeda Shingen",
+    "image": "/Fgo/characters/rider/Ridercardborder44.png",
+    "locked": false
+  },
+  {
+    "name": "Nemo (Santa)",
+    "image": "/Fgo/characters/rider/Ridercardborder45.png",
+    "locked": false
+  },
+  {
+    "name": "Andromeda (Rider)",
+    "image": "/Fgo/characters/rider/Ridercardborder46.png",
+    "locked": false
+  }
+]

@@ -161,13 +161,13 @@ export const Cait_Cú_Cerpriestess = () => {
           <div className="flex items-center gap-4 mb-6">
             <img
               src="/Fgo/icons/Class-Pretender-Gold.png"
-              alt="BB Icon"
+              alt="Pretender Icon"
               className="w-16 h-16"
             />
             <div>
               <h1 className="text-4xl font-bold text-white">Cait Cú Cerpriestess</h1>
               <div className="flex gap-1 mt-2">
-                {[1, 2, 3, 4, 5].map((star) => (
+                {[1, 2, 3, 4].map((star) => (
                   <Star
                     key={star}
                     className="w-6 h-6 fill-yellow-400 text-yellow-400"
@@ -376,10 +376,10 @@ export const Cait_Cú_Cerpriestess = () => {
         
 
           {/* Character Artwork */}
-          <div className="bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600 rounded-lg p-4 aspect-square flex items-end justify-center relative overflow-hidden">
+          <div className="ounded-lg p-4 aspect-square flex items-end justify-center relative overflow-hidden">
             {/* Ocean/Beach Background Effect */}
-            <div className="absolute inset-0 bg-gradient-to-t from-yellow-200 via-blue-300 to-blue-500 opacity-80"></div>
-            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-yellow-300 to-transparent opacity-60"></div>
+            <div className="absolute inset-0  opacity-80"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-1/3  to-transparent opacity-60"></div>
 
             {/* Character Placeholder */}
             <div className="relative z-10 text-center">
@@ -392,7 +392,7 @@ export const Cait_Cú_Cerpriestess = () => {
 
             {/* Decorative Elements */}
             <div className="absolute top-4 left-4 text-yellow-200 opacity-60">
-              {[...Array(5)].map((_, i) => (
+              {[...Array(4)].map((_, i) => (
                 <div
                   key={i}
                   className="inline-block animate-pulse"

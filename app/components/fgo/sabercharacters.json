@@ -1,327 +1,327 @@
 [
   {
     "name": "Artoria Pendragon",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder1.png",
     "locked": false
   },
   {
     "name": "Artoria Pendragon (Alter)",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder2.png",
     "locked": true
   },
   {
     "name": "Artoria Pendragon (Lily)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder3.png",
     "locked": false,
     "special": ["🛡️", "🎯"]
   },
   {
     "name": "Nero Claudius",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder4.png",
     "locked": true
   },
   {
     "name": "Siegfried",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder5.png",
     "locked": false
   },
   {
     "name": "Gaius Julius Caesar",
-    "rarity": 3,
+
     "image": "/Fgo/characters/saber/Sabercardborder6.png",
     "locked": false
   },
   {
     "name": "Altera",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder7.png",
     "locked": false
   },
   {
     "name": "Gilles de Rais (Saber)",
-    "rarity": 3,
+
     "image": "/Fgo/characters/saber/Sabercardborder8.png",
     "locked": false
   },
   {
     "name": "Chevalier d'Eon",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder9.png",
     "locked": false
   },
   {
     "name": "Okita Sōji",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder10.png",
     "locked": false,
     "special": ["⭐"]
   },
   {
     "name": "Fergus mac Róich",
-    "rarity": 3,
+
     "image": "/Fgo/characters/saber/Sabercardborder11.png",
     "locked": false
   },
   {
     "name": "Mordred",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder12.png",
     "locked": false
   },
   {
     "name": "Nero Claudius (Bride)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder13.png",
     "locked": false
   },
   {
     "name": "Ryōgi Shiki (Saber)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder14.png",
     "locked": false
   },
   {
     "name": "Rama",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder15.png",
     "locked": false
   },
   {
     "name": "Lancelot (Saber)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder16.png",
     "locked": false
   },
   {
     "name": "Gawain",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder17.png",
     "locked": false
   },
   {
     "name": "Bedivere",
-    "rarity": 3,
+
     "image": "/Fgo/characters/saber/Sabercardborder18.png",
     "locked": false
   },
   {
     "name": "Elizabeth Báthory (Brave)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder19.png",
     "locked": false
   },
   {
     "name": "Miyamoto Musashi",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder20.png",
     "locked": false
   },
   {
     "name": "Arthur Pendragon (Prototype)",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder21.png",
     "locked": false
   },
   {
     "name": "Suzaku Gozen",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder22.png",
     "locked": false
   },
   {
     "name": "Frankenstein (Saber)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder23.png",
     "locked": false
   },
   {
     "name": "Yagyū Munenori",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder24.webp",
     "locked": false
   },
   {
     "name": "Sigurd",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder25.png",
     "locked": false
   },
   {
     "name": "Queen Medb (Saber)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder26.png",
     "locked": false
   },
   {
     "name": "Diarmuid Ua Duibhne (Saber)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder27.png",
     "locked": false
   },
   {
     "name": "Lamling Wang",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder28.png",
     "locked": false
   },
   {
     "name": "Beni-Enma",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder29.png",
     "locked": false
   },
   {
     "name": "Lakshmibai",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder30.png",
     "locked": false
   },
   {
     "name": "Jason",
-    "rarity": 1,
+
     "image": "/Fgo/characters/saber/Sabercardborder31.png",
     "locked": false
   },
   {
     "name": "Katsushika Hokusai (Saber)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder32.png",
     "locked": false
   },
   {
     "name": "Astolfo (Saber)",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder33.png",
     "locked": false
   },
   {
     "name": "Dioscuri",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder34.png",
     "locked": false
   },
   {
     "name": "Tomoe Gozen (Saber)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder35.png",
     "locked": false
   },
   {
     "name": "Saitō Hajime",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder36.png",
     "locked": false
   },
   {
     "name": "Watanabe no Tsuna",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder37.png",
     "locked": false
   },
   {
     "name": "Ibuki Dōji",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder38.png",
     "locked": false
   },
   {
     "name": "Karna (Santa)",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder39.png",
     "locked": false
   },
   {
     "name": "Senji Muramasa",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder40.png",
     "locked": false
   },
   {
     "name": "Barghest",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder41.png",
     "locked": false
   },
   {
     "name": "Okita Sōji (Saber Alter)",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder42.png",
     "locked": false
   },
   {
     "name": "Trung Sisters",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder43.png",
     "locked": false
   },
   {
     "name": "Charlemagne ",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder44.png",
     "locked": false
   },
   {
     "name": "Roland ",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder45.png",
     "locked": false
   },
   {
     "name": "Gareth (Saber)",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder46.png",
     "locked": false
   },
   {
     "name": "Yamanami Keisuke",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder47.png",
     "locked": false
   },
   {
     "name": "Sétanta ",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder48.png",
     "locked": false
   },
   {
     "name": "Medusa (Saber) ",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder49.png",
     "locked": false
   },
   {
     "name": "Theseus",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder50.png",
     "locked": false
   },
   {
     "name": "Yamato Takeru",
-    "rarity": 5,
+
     "image": "/Fgo/characters/saber/Sabercardborder51.png",
     "locked": false
   },
   {
     "name": "Miyamoto Iori",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder52.png",
     "locked": false
   },
   {
     "name": "Richard I",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder53.png",
     "locked": false
   },
   {
     "name": "Kurohime",
-    "rarity": 4,
+
     "image": "/Fgo/characters/saber/Sabercardborder54.png",
     "locked": false
   },

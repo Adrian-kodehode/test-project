@@ -174,7 +174,7 @@ const ClassIcon = ({ name, color = "text-yellow-400" }: ClassIconProps) => {
         return <div className={`w-4 h-4 ${color} bg-current rounded-full`} />;
     }
   };
-  
+
   return (
     <div className={baseClasses}>
       {renderIcon()}
@@ -185,171 +185,739 @@ const ClassIcon = ({ name, color = "text-yellow-400" }: ClassIconProps) => {
 
 export default function Servants() {
   const classes = [
-    
-    { icon: <img
-      src="Fgo/icons/Class-Shielder-Gold.png"
-      alt=""
-      className="w-13 h-13"
-      /> },
-      
-      { icon:  <img
-                src="Fgo/icons/Class-Saber-Gold.png"
-                alt=""
-                className="w-13 h-13"
-              /> },
-    { icon:  <img
-              src="Fgo/icons/Class-Archer-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Lancer-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Rider-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Caster-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Assassin-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Berserker-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Ruler-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Avenger-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-MoonCancer-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Alterego-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Foreigner-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img
-              src="Fgo/icons/Class-Pretender-Gold.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-    { icon: <img src="Fgo/icons/S377A1Icon.png" alt="" className="w-full h-full" /> },
-    { icon: <img
-              src="Fgo/icons/S417A1Icon.png"
-              alt=""
-              className="w-full h-full"
-            /> },
-    { icon: <img src="Fgo/icons/Class-Beast.png" alt="" className="w-13 h-13" /> },
-    { icon: <img
-              src="Fgo/icons/Class-Beast.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-             { icon: <img
-              src="Fgo/icons/Class-Beast.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-          { icon: <img
-              src="Fgo/icons/Class-Beast.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-          { icon: <img
-              src="Fgo/icons/Class-Beast.png"
-              alt=""
-              className="w-13 h-13"
-            /> },
-       
+    { icon: <p className="bold">Base</p> },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Shielder-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
 
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Saber-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Archer-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Lancer-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Rider-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Caster-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Assassin-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Berserker-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Ruler-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Avenger-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-MoonCancer-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Alterego-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Foreigner-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img
+          src="Fgo/icons/Class-Pretender-Gold.png"
+          alt=""
+          className="w-13 h-13"
+        />
+      ),
+    },
+    {
+      icon: (
+        <img src="Fgo/icons/S377A1Icon.png" alt="" className="w-full h-full" />
+      ),
+    },
+    {
+      icon: (
+        <img src="Fgo/icons/S417A1Icon.png" alt="" className="w-full h-full" />
+      ),
+    },
+    {
+      icon: (
+        <img src="Fgo/icons/Class-Beast.png" alt="" className="w-13 h-13" />
+      ),
+    },
+    {
+      icon: (
+        <img src="Fgo/icons/Class-Beast.png" alt="" className="w-13 h-13" />
+      ),
+    },
+    {
+      icon: (
+        <img src="Fgo/icons/Class-Beast.png" alt="" className="w-13 h-13" />
+      ),
+    },
+    {
+      icon: (
+        <img src="Fgo/icons/Class-Beast.png" alt="" className="w-13 h-13" />
+      ),
+    },
+    {
+      icon: (
+        <img src="Fgo/icons/Class-Beast.png" alt="" className="w-13 h-13" />
+      ),
+    },
   ];
 
-    const multipliers = [
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+  const multipliers = [
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Saber row
-    ['1.0x', '1.0x', '1.0x', '0.5x', '2.0x', '1.0x', '1.0x', '1.0x', '2.0x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Archer row
-    ['1.0x', '1.0x', '2.0x', '1.0x', '0.5x', '1.0x', '1.0x', '1.0x', '2.0x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Lancer row
-    ['0.95x', '1.0x', '0.5x', '2.0x', '1.0x', '1.0x', '1.0x', '1.0x', '2.0x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "0.95x",
+      "1.0x",
+      "0.5x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Rider row
-    ['1.05x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '2.0x', '0.5x', '2.0x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.05x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Caster row
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '0.5x', '1.0x', '2.0x', '2.0x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "2.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Assassin row
-    ['0.9x', '1.0x', '1.0x', '1.0x', '1.0x', '2.0x', '0.5x', '1.0x', '2.0x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "0.9x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Berserker row
-    ['0.9x', '1.0x', '1.5x', '1.5x', '1.5x', '1.5x', '1.5x', '1.5x', '2.0x', '1.5x', '1.5x', '1.5x', '1.5x', '0.5x', '1.5x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "0.9x",
+      "1.0x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "2.0x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "0.5x",
+      "1.5x",
+      "0.5x",
+      "1.0x",
+      "1.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Ruler row
-    ['1.1x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '2.0x', '1.0x', '0.5x', '2.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.1x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "1.0x",
+      "0.5x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Avenger row
-    ['1.1x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '2.0x', '2.0x', '1.0x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.1x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "2.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Moon Cancer row
-    ['1.1x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '2.0x', '0.5x', '2.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.1x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.2x",
+      "1.0x",
+      "1.0x",
+    ],
     // Alter Ego row
-    ['1.0x', '1.0x', '0.5x', '0.5x', '0.5x', '1.5x', '1.5x', '1.5x', '2.0x', '1.0x', '1.0x', '2.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "0.5x",
+      "0.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.2x",
+      "1.2x",
+      "1.0x",
+    ],
     // Foreigner row
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '2.0x', '1.0x', '0.5x', '1.0x', '2.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "2.0x",
+      "2.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.2x",
+      "1.0x",
+    ],
     // Pretender row
-    ['1.0x', '1.0x', '1.5x', '1.5x', '1.5x', '0.5x', '0.5x', '0.5x', '2.0x', '1.0x', '1.5x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "0.5x",
+      "0.5x",
+      "0.5x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "2.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Beast I row
-    ['1.0x', '1.0x', '1.5x', '1.5x', '1.5x', '1.5x', '1.5x', '1.5x', '2.0x', '0.5x', '0.5x', '0.5x', '0.5x', '0.5x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "2.0x",
+      "0.5x",
+      "0.5x",
+      "0.5x",
+      "0.5x",
+      "0.5x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Beast II row
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.5x', '0.5x', '1.5x', '1.5x', '1.5x', '1.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.5x",
+      "0.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Beast III/R row
-    ['1.0x', '1.0x', '2.0x', '2.0x', '2.0x', '1.0x', '1.0x', '1.0x', '2.0x', '1.0x', '0.5x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "2.0x",
+      "2.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "2.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Beast III/L row
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
     // Beast IV row
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
 
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
 
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
 
-    ['1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x', '1.0x','1.0x'],
-
+    [
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "0.5x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+      "1.0x",
+    ],
   ];
 
   const getMultiplierColor = (multiplier) => {
-    if (multiplier === '0.5x') return 'bg-blue-900 text-white';
-    if (multiplier === '0.9x') return 'bg-gray-800 text-white';
-    if (multiplier === '0.95x') return 'bg-gray-800 text-white';
-    if (multiplier === '1.0x') return 'bg-gray-800 text-white';
-    if (multiplier === '1.05x') return 'bg-gray-800 text-white';
-    if (multiplier === '1.1x') return 'bg-gray-800 text-white';
-    if (multiplier === '1.5x') return 'bg-yellow-800 text-white';
-    if (multiplier === '2.0x') return 'bg-red-900 text-white';
-    return 'bg-blue-500 text-white';
+    if (multiplier === "0.5x") return "bg-[#191952] text-white";
+    if (multiplier === "0.9x") return "bg-black text-white";
+    if (multiplier === "0.95x") return "bg-black text-white";
+    if (multiplier === "1.0x") return "bg-black text-white";
+    if (multiplier === "1.05x") return "bg-black text-white";
+    if (multiplier === "1.1x") return "bg-black text-white";
+    if (multiplier === "1.2x") return "bg-[#535308] text-white";
+    if (multiplier === "1.5x") return "bg-[#5d3710] text-white";
+    if (multiplier === "2.0x") return "bg-[#5a0707] text-white";
+    return "bg-blue-500 text-white";
   };
 
   return (
     <div className="bg-[url('/Fgo/xsYKdkG.jpeg')] bg-cover bg-center h-full text-white p-6">
-      <div className="max-w-4xl bg-gray-800 bg-opacity-80 mx-auto p-3">
+      <div className="max-w-7xl bg-gray-800 bg-opacity-80 mx-auto p-3">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-3xl font-bold text-white">Servants</h1>
@@ -365,10 +933,8 @@ export default function Servants() {
 
         {/* Class Grid */}
         <div className="grid grid-cols-7 gap-4 mb-8">
-          {classes.slice(0, 14).map((classItem, index) => (
-            <div className="flex justify-center">
-             
-            </div>
+          {classes.slice(0, 14).map(() => (
+            <div className="flex justify-center"></div>
           ))}
         </div>
 
@@ -383,12 +949,11 @@ export default function Servants() {
           <ClassIcon name="Berserker" color="text-red-500" />
           <ClassIcon name="Ruler" color="text-red-500" />
           <ClassIcon name="Avenger" color="text-red-500" />
-          <ClassIcon name="Alter Ego" color="text-red-500" />
           <ClassIcon name="Moon Cancer" color="text-red-500" />
-          <ClassIcon name="Foreigner" color="text-red-500" />
           <ClassIcon name="Alter Ego" color="text-red-500" />
+          <ClassIcon name="Foreigner" color="text-red-500" />
+          <ClassIcon name="Pretender" color="text-red-500" />
           <ClassIcon name="Beast" color="text-red-500" />
-
         </div>
         <div className="bg-gray-900 text-gray-100 min-h-screen p-6">
           {/* Header Tabs */}
@@ -405,7 +970,7 @@ export default function Servants() {
           </div>
 
           {/* Main Content */}
-          <div className="max-w-4xl">
+          <div className="max-w-7xl">
             {/* Card Icon */}
             <div className="float-right ml-6 mb-4">
               <img src="/Fgo/icons/Servant.png" alt="Card Icon" />
@@ -658,103 +1223,141 @@ export default function Servants() {
               </p>
             </div>
 
-    <div className="p-6 bg-gray-900 text-white min-h-screen">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-8 text-blue-400">Servant Triangle</h1>
-        
-        {/* Legend */}
-        <div className="mb-6 p-4 bg-gray-800 rounded-lg">
-          <h2 className="text-lg font-semibold mb-3">Class Advantage System</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-            <div className="flex items-center gap-2">
-              <span className="w-12 h-6 bg-green-600 rounded text-xs flex items-center justify-center">2.0x</span>
-              <span>Strong Advantage</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-12 h-6 bg-green-400 rounded text-xs flex items-center justify-center">1.5x</span>
-              <span>Advantage</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-12 h-6 bg-blue-500 rounded text-xs flex items-center justify-center">1.0x</span>
-              <span>Neutral</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-12 h-6 bg-red-600 rounded text-xs flex items-center justify-center">0.5x</span>
-              <span>Disadvantage</span>
-            </div>
-          </div>
-        </div>
+            <div className="p-6 bg-gray-900 text-white min-h-screen">
+              <div className="max-w-7xl ">
+                <h1 className="text-3xl font-bold text-center mb-8 text-blue-400">
+                  Servant Triangle
+                </h1>
 
-        {/* Main Table */}
-        <div className="overflow-x-auto bg-gray-800 rounded-lg shadow-2xl">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="bg-gray-700">
-                <th className="border border-gray-600 p-2 text-center font-semibold">
-                  <div className="flex flex-col items-center">
-                    <span className="text-xs text-gray-300 mb-1">Attack</span>
-                    <span className="text-xs text-gray-300">↓</span>
-                    <span className="text-xs text-gray-300 mt-1">Defense →</span>
-                  </div>
-                </th>
-                {classes.map((cls, index) => (
-                  <th key={index} className="border border-gray-600 p-1 min-w-16">
-                    <div className="flex flex-col items-center">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-lg mb-1`}>
-                        {cls.icon}
-                      </div>
-                     
-                    </div>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {classes.map((attackClass, rowIndex) => (
-                <tr key={rowIndex} className="hover:bg-gray-750">
-                  <td className="border border-gray-600 p-2 bg-gray-700 font-semibold">
+                {/* Legend */}
+                <div className="mb-6 p-4 bg-gray-800 rounded-lg">
+                  <h2 className="text-lg font-semibold mb-3">
+                    Class Advantage System
+                  </h2>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                     <div className="flex items-center gap-2">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-lg`}>
-                        {attackClass.icon}
-                      </div>
-                     
+                      <span className="w-12 h-6 bg-green-600 rounded text-xs flex items-center justify-center">
+                        2.0x
+                      </span>
+                      <span>Strong Advantage</span>
                     </div>
-                  </td>
-                  {multipliers[rowIndex].map((multiplier, colIndex) => (
-                    <td key={colIndex} className="border border-gray-600 ">
-                      <div className={`text-xs font-bold text-center   ${getMultiplierColor(multiplier)} h-12 flex items-center justify-center`}>
-                        {multiplier}
-                      </div>
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+                    <div className="flex items-center gap-2">
+                      <span className="w-12 h-6 bg-green-400 rounded text-xs flex items-center justify-center">
+                        1.5x
+                      </span>
+                      <span>Advantage</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="w-12 h-6 bg-blue-500 rounded text-xs flex items-center justify-center">
+                        1.0x
+                      </span>
+                      <span>Neutral</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="w-12 h-6 bg-red-600 rounded text-xs flex items-center justify-center">
+                        0.5x
+                      </span>
+                      <span>Disadvantage</span>
+                    </div>
+                  </div>
+                </div>
 
-        {/* Notes */}
-        <div className="mt-6 p-4 bg-gray-800 rounded-lg">
-          <h3 className="text-lg font-semibold mb-3 text-blue-400">Special Notes:</h3>
-          <ul className="text-sm text-gray-300 space-y-1 list-disc list-inside">
-            <li><strong>Beast I</strong> is similar to Demon Pillar's 7-class system</li>
-            <li><strong>Beast II</strong> and Corrupted Ushiwakamaru's 7-class are similar to Shielder-class</li>
-            <li><strong>Beast III/L</strong> are similar to the Broken Archer Class</li>
-            <li><strong>Beast IV</strong> can change own class advantage/disadvantage by passive skill in battle</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+                {/* Main Table */}
+                <div className="overflow-x-auto bg-gray-800 rounded-lg shadow-2xl">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="bg-gray-700">
+                        <th className="border border-gray-600 p-2 text-center font-semibold">
+                          <div className="flex flex-col items-center">
+                            <span className="text-xs text-gray-300 mb-1">
+                              Defense
+                            </span>
+                            <span className="text-xs text-gray-300">→</span>
+                            <span className="text-xs text-gray-300 mt-1">
+                              Attack ↓
+                            </span>
+                          </div>
+                        </th>
+                        {classes.map((cls, index) => (
+                          <th
+                            key={index}
+                            className="border border-gray-600 p-1 min-w-16"
+                          >
+                            <div className="flex flex-col items-center">
+                              <div
+                                className={`w-10 h-10 rounded-full flex items-center justify-center text-lg mb-1`}
+                              >
+                                {cls.icon}
+                              </div>
+                            </div>
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {classes.map((attackClass, rowIndex) => (
+                        <tr key={rowIndex} className="hover:bg-gray-750">
+                          <td className="border border-gray-600 p-2 bg-gray-700 font-semibold">
+                            <div className="flex items-center gap-2">
+                              <div
+                                className={`w-8 h-8 rounded-full flex items-center justify-center text-lg`}
+                              >
+                                {attackClass.icon}
+                              </div>
+                            </div>
+                          </td>
+                          {multipliers[rowIndex].map((multiplier, colIndex) => (
+                            <td
+                              key={colIndex}
+                              className="border border-gray-600 "
+                            >
+                              <div
+                                className={`text-xs font-bold text-center   ${getMultiplierColor(
+                                  multiplier
+                                )} h-12 flex items-center justify-center`}
+                              >
+                                {multiplier}
+                              </div>
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Notes */}
+                <div className="mt-6 p-4 bg-gray-800 rounded-lg">
+                  <h3 className="text-lg font-semibold mb-3 text-blue-400">
+                    Special Notes:
+                  </h3>
+                  <ul className="text-sm text-gray-300 space-y-1 list-disc list-inside">
+                    <li>
+                      <strong>Beast I</strong> is similar to Demon Pillar's
+                      7-class system
+                    </li>
+                    <li>
+                      <strong>Beast II</strong> and Corrupted Ushiwakamaru's
+                      7-class are similar to Shielder-class
+                    </li>
+                    <li>
+                      <strong>Beast III/L</strong> are similar to the Broken
+                      Archer Class
+                    </li>
+                    <li>
+                      <strong>Beast IV</strong> can change own class
+                      advantage/disadvantage by passive skill in battle
+                    </li>
+                  </ul>
+                  <div>
+                    <img src="Fgo/Class_Meta_AvalonLeFae_Update.png" alt="" className="flex mx-auto mt-10" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-  
-
-
-
-
-
     </div>
   );
 }

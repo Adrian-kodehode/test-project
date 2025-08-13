@@ -6,7 +6,7 @@ import {
   MessageSquare,
   MoreVertical,
 } from "lucide-react";
-import archerCharacters from "./archerCharacters.json";
+import lancerCharacters from "./lancercharacters.json";
 
 // Small class icon component used by the Servants header
 type ClassIconProps = {
@@ -162,7 +162,7 @@ const ClassIcon = ({ name, color = "text-yellow-400" }: ClassIconProps) => {
             />
           </a>
         );
-        case "beast":
+      case "beast":
         return (
           <a
         href="/beast"
@@ -241,18 +241,18 @@ const ServantsHeader: React.FC = () => {
   );
 };
 
-export const Archer = () => {
+export const Lancer = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const archerData = {
+  const lancerData = {
     description:
-      "Knight of the Bow and Heroic Spirit of the Bow. Excellent scouts that excel in possessing powerful Noble Phantasms. Masters of long ranged warfare.",
+      "The Beasts of Calamity symbolizing the seven Evils of Man. The archetype of the Heroic Spirit Summoning System as well as the enemies of the Grand Servants.",
     stats: [
       {
         icon: (
           <img src="/Fgo/icons/Powerup.png" alt="Powerup" className="w-5 h-5" />
         ),
-        text: "Archers have a base damage multiplier of 0.95x.",
+        text: "Beasts have a base damage multiplier of 1.0x.",
       },
       {
         icon: (
@@ -262,7 +262,7 @@ export const Archer = () => {
             className="w-5 h-5"
           />
         ),
-        text: "Archers have a base star generation rate of 8%.",
+        text: "Beasts have a base star generation rate of 10%.",
       },
       {
         icon: (
@@ -272,7 +272,7 @@ export const Archer = () => {
             className="w-5 h-5"
           />
         ),
-        text: "Archers have a base star absorption of 150.",
+        text: "Beasts have a base star absorption of 150.",
       },
       {
         icon: (
@@ -282,10 +282,12 @@ export const Archer = () => {
             className="w-5 h-5"
           />
         ),
-        text: "Archers have a base death rate of 45%.",
+        text: "Beasts have a base death rate of 1%.",
       },
     ],
-    totalCount: "There are currently 49 playable Archer released in the game.",
+    totalCount2: "There are currently 3 playable Beast released in the game.",
+    totalCount:
+      "Class Advantage/Disadvantage for playable Beasts differ for each Servant.",
   };
 
   type Character = {
@@ -302,7 +304,7 @@ export const Archer = () => {
     return out;
   };
 
-  const characters: Character[][] = chunk(archerCharacters as Character[], 5);
+  const characters: Character[][] = chunk(lancerCharacters as Character[], 5);
 
   const CharacterCard: React.FC<{ character: Character }> = ({ character }) => (
     <div className="relative">
@@ -354,43 +356,47 @@ export const Archer = () => {
       <ServantsHeader />
 
       {/* Header with Class Icons */}
-      <div className="flex justify-between items-start mb-6">
-        <div>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="flex flex-col">
-              <div className="w-16 h-16 flex items-center justify-center">
-                <img
-                  src="Fgo/icons/Class-Archer-Gold (1).png"
-                  alt=""
-                  className="w-full h-full"
-                />
-              </div>
-             
-            </div>
-          </div>
-
-          {/* Class Description */}
-          <div className="max-w-2xl">
+    <div className="flex items-start mb-6 space-x-6">
+        {/* Images column */}
+        {/* Description column */}
+        <div className="flex-grow w-full">
             <p className="text-gray-300 italic mb-4 leading-relaxed">
-              —{archerData.description}—
+                —{lancerData.description}—
             </p>
 
-            {/* Stats */}
             <div className="space-y-2">
-              {archerData.stats.map((stat, index) => (
-                <div key={index} className="flex items-center gap-2 text-sm">
-                  <span className="text-lg">{stat.icon}</span>
-                  <span className="text-gray-300">{stat.text}</span>
-                </div>
-              ))}
+                {lancerData.stats.map((stat, idx) => (
+                    <div key={idx} className="flex items-center gap-2 text-sm">
+                        <span className="text-lg">{stat.icon}</span>
+                        <span className="text-gray-300">{stat.text}</span>
+                    </div>
+                ))}
             </div>
 
             <div className="mt-4 text-sm text-gray-400">
-              {archerData.totalCount}
+                {lancerData.totalCount}
+                <br />
+                {lancerData.totalCount2}
             </div>
-          </div>
         </div>
-      </div>
+        <div className="flex flex-col items-center space-y-2">
+            <div className="w-20 h-20 flex items-center justify-center">
+                <img
+                    src="Fgo/characters/lancer/Class-Lancer-Gold (1).png"
+                    alt=""
+                    className="w-full h-full object-cover"
+                />
+            </div>
+            <div className="w-20 h-20 flex items-center justify-center">
+                <img
+                    src="Fgo/characters/lancer/Class-Lancer-Grand.png"
+                    alt=""
+                    className="w-full h-full object-cover"
+                />
+            </div>
+        </div>
+
+    </div>
 
       {/* Advantage/Disadvantage Section */}
       <div className="bg-gray-800 rounded-lg p-4 mb-6">

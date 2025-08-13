@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Tiamat",
+    "image": "/Fgo/characters/beast/Beastcardborder1.png",
+    "locked": false
+  },
+  {
+    "name": "Goetia",
+    "image": "/Fgo/characters/beast/Beastcardborder2.png",
+    "locked": false
+  },
+  {
+    "name": "Beast III/R",
+    "image": "/Fgo/characters/beast/Beastcardborder3.png",
+    "locked": false
+  },
+  {
+    "name": "Beast III/L",
+    "image": "/Fgo/characters/beast/Beastcardborder4.png",
+    "locked": false
+  },
+  {
+    "name": "Beast IV",
+    "image": "/Fgo/characters/beast/Beastcardborder5.png",
+    "locked": false
+  },
+  {
+    "name": "Sodom's Beast/Draco",
+    "image": "/Fgo/characters/beast/Beastcardborder6.png",
+    "locked": false
+  },
+  {
+    "name": "E-Flare Marie",
+    "image": "/Fgo/characters/beast/Beastcardborder7.png",
+    "locked": false
+  },
+  {
+    "name": "E-Aqua Marie",
+    "image": "/Fgo/characters/beast/Beastcardborder8.png",
+    "locked": false
+  },
+  {
+    "name": "Space Ereshkigal",
+    "image": "/Fgo/characters/beast/Beastcardborder9.png",
+    "locked": false
+  },
+  {
+    "name": "E-Grand Marie",
+    "image": "/Fgo/characters/beast/Beastcardborder10.png",
+    "locked": false
+  },
+  {
+    "name": "E-Stellar Marie",
+    "image": "/Fgo/characters/beast/Beastcardborder11.png",
+    "locked": false
+  },
+  {
+    "name": "U-Olga Marie",
+    "image": "/Fgo/characters/beast/Beastcardborder12.png",
+    "locked": false
+  }
+]

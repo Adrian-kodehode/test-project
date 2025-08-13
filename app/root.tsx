@@ -167,7 +167,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/bb_dubai" &&
           location.pathname !== "/saber" &&
           location.pathname !== "/archer" &&
-          location.pathname !== "/nemesis" && <NewHeader />}
+          location.pathname !== "/lancer" &&
+          location.pathname !== "/rider" &&
+          location.pathname !== "/caster" &&
+          location.pathname !== "/assassin" &&
+          location.pathname !== "/berserker" &&
+          location.pathname !== "/ruler" &&
+          location.pathname !== "/avenger" &&
+          location.pathname !== "/moon_cancer" &&
+          location.pathname !== "/alter_ego" &&
+          location.pathname !== "/foreigner" &&
+          location.pathname !== "/pretender" &&
+          location.pathname !== "/shielder" &&
+          location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
         <ScrollRestoration />
@@ -304,7 +316,19 @@ export default function App() {
         location.pathname !== "/bb_dubai" &&
         location.pathname !== "/saber" &&
         location.pathname !== "/archer" &&
-        location.pathname !== "/video" && <Footer />}
+        location.pathname !== "/lancer" &&
+        location.pathname !== "/rider" &&
+        location.pathname !== "/caster" &&
+        location.pathname !== "/assassin" &&
+        location.pathname !== "/berserker" &&
+        location.pathname !== "/ruler" &&
+        location.pathname !== "/avenger" &&
+        location.pathname !== "/moon_cancer" &&
+        location.pathname !== "/alter_ego" &&
+        location.pathname !== "/foreigner" &&
+        location.pathname !== "/pretender" &&
+        location.pathname !== "/shielder" &&
+        location.pathname !== "/beast" && <Footer />}
     </div>
   );
 }

@@ -164,15 +164,23 @@ const ClassIcon = ({ name, color = "text-yellow-400" }: ClassIconProps) => {
         );
       case "beast":
         return (
-          <div className="flex items-center justify-center space-x-1">
-            <img src="Fgo/icons/Class-Beast.png" alt="" className="w-10 h-10" />
-            <img
-              src="Fgo/icons/Class-Beast-Gold.png"
-              alt=""
-              className="w-10 h-10"
-            />
-          </div>
+          <a
+        href="/beast"
+        className="flex items-center justify-center w-full h-full space-x-1"
+          >
+        <img
+          src="Fgo/icons/Class-Beast.png"
+          alt="Beast"
+          className="w-10 h-10"
+        />
+        <img
+          src="Fgo/icons/Class-Beast-Gold.png"
+          alt="Beast Gold"
+          className="w-10 h-10"
+        />
+          </a>
         );
+        
       default:
         return <div className={`w-4 h-4 ${color} bg-current rounded-full`} />;
     }
