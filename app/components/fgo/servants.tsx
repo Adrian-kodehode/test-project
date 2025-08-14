@@ -2,6 +2,23 @@ import React, { useState } from "react";
 import { Edit3, MessageSquare, MoreVertical } from "lucide-react";
 import { a } from "node_modules/framer-motion/dist/types.d-DDSxwf0n";
 
+const SERVANT_CLASSES: { name: string; color?: string }[] = [
+  { name: "Saber", color: "text-yellow-400" },
+  { name: "Archer", color: "text-yellow-400" },
+  { name: "Lancer", color: "text-yellow-400" },
+  { name: "Rider", color: "text-yellow-400" },
+  { name: "Caster", color: "text-yellow-400" },
+  { name: "Assassin", color: "text-yellow-400" },
+  { name: "Berserker", color: "text-yellow-400" },
+  { name: "Ruler", color: "text-yellow-400" },
+  { name: "Avenger", color: "text-yellow-400" },
+  { name: "Moon Cancer", color: "text-yellow-400" },
+  { name: "Alter Ego", color: "text-yellow-400" },
+  { name: "Foreigner", color: "text-yellow-400" },
+  { name: "Pretender", color: "text-yellow-400" },
+  { name: "Shielder", color: "text-yellow-400" },
+];
+
 interface ClassIconProps {
   name: string;
   color?: string;
@@ -915,20 +932,46 @@ export default function Servants() {
     return "bg-blue-500 text-white";
   };
 
+  const ServantsHeader: React.FC = () => {
+    return (
+      <div className="rounded-lg text-white p-6 mb-8">
+        <div className="max-w-5xl  mx-auto p-3 rounded">
+          <div className="flex items-center justify-between mb-6">
+            <h1 className="text-3xl font-bold text-white">Servants</h1>
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-1 text-blue-400">
+                <MessageSquare className="w-5 h-5" />
+                <span className="text-sm">104</span>
+              </div>
+              <Edit3 className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
+              <MoreVertical className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
+            </div>
+          </div>
+  
+          <div className="grid grid-cols-7 gap-4 mb-8">
+            {SERVANT_CLASSES.slice(0, 14).map((classItem) => (
+              <div key={classItem.name} className="flex justify-center">
+                <ClassIcon name={classItem.name} color={classItem.color} />
+              </div>
+            ))}
+          </div>
+  
+          <div className="flex justify-center">
+           <a href="/beast"> <ClassIcon name="Beast" color="text-yellow-400" /></a>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="bg-[url('/Fgo/xsYKdkG.jpeg')] bg-cover bg-center h-full text-white p-6">
-      <div className="max-w-7xl bg-gray-800 bg-opacity-80 mx-auto p-3">
+      <div className="max-w-7xl bg-gray-800 bg-opacity-80 rounded mx-auto p-3">
         {/* Header */}
+      <ServantsHeader />
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-3xl font-bold text-white">Servants</h1>
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-1 text-blue-400">
-              <MessageSquare className="w-5 h-5" />
-              <span className="text-sm">104</span>
-            </div>
-            <Edit3 className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
-            <MoreVertical className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
-          </div>
+         
+           
         </div>
 
         {/* Class Grid */}
@@ -938,23 +981,7 @@ export default function Servants() {
           ))}
         </div>
 
-        {/* Beast Class (centered) */}
-        <div className="flex justify-center">
-          <ClassIcon name="Saber" color="text-red-500" />
-          <ClassIcon name="Archer" color="text-red-500" />
-          <ClassIcon name="Lancer" color="text-red-500" />
-          <ClassIcon name="Rider" color="text-red-500" />
-          <ClassIcon name="Caster" color="text-red-500" />
-          <ClassIcon name="Assassin" color="text-red-500" />
-          <ClassIcon name="Berserker" color="text-red-500" />
-          <ClassIcon name="Ruler" color="text-red-500" />
-          <ClassIcon name="Avenger" color="text-red-500" />
-          <ClassIcon name="Moon Cancer" color="text-red-500" />
-          <ClassIcon name="Alter Ego" color="text-red-500" />
-          <ClassIcon name="Foreigner" color="text-red-500" />
-          <ClassIcon name="Pretender" color="text-red-500" />
-          <ClassIcon name="Beast" color="text-red-500" />
-        </div>
+      
         <div className="bg-gray-900 text-gray-100 min-h-screen p-6">
           {/* Header Tabs */}
           <div className="flex items-center justify-center mb-6 border-b border-gray-700">

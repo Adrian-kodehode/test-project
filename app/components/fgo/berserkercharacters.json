@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Hercules",
+    "image": "/Fgo/characters/berserker/Berserkercardborder1.png",
+    "locked": false
+  },
+  {
+    "name": "Lancelot",
+    "image": "/Fgo/characters/berserker/Berserkercardborder2.png",
+    "locked": false
+  },
+  {
+    "name": "Lu Bu Fengxian",
+    "image": "/Fgo/characters/berserker/Berserkercardborder3.png",
+    "locked": false
+  },
+  {
+    "name": "Spartacus",
+    "image": "/Fgo/characters/berserker/Berserkercardborder4.png",
+    "locked": false
+  },
+  {
+    "name": "Sakata Kintoki",
+    "image": "/Fgo/characters/berserker/Berserkercardborder5.png",
+    "locked": false
+  },
+  {
+    "name": "Vlad III",
+    "image": "/Fgo/characters/berserker/Berserkercardborder6.png",
+    "locked": false
+  },
+  {
+    "name": "Asterios",
+    "image": "/Fgo/characters/berserker/Berserkercardborder7.png",
+    "locked": false
+  },
+  {
+    "name": "caligula",
+    "image": "/Fgo/characters/berserker/Berserkercardborder8.png",
+    "locked": false
+  },
+  {
+    "name": "Darius III",
+    "image": "/Fgo/characters/berserker/Berserkercardborder9.png",
+    "locked": false
+  },
+  {
+    "name": "Kiyohime",
+    "image": "/Fgo/characters/berserker/Berserkercardborder10.png",
+    "locked": false
+  },
+  {
+    "name": "Eric Bloodaxe",
+    "image": "/Fgo/characters/berserker/Berserkercardborder11.png",
+    "locked": false
+  },
+  {
+    "name": "Tamamo Cat",
+    "image": "/Fgo/characters/berserker/Berserkercardborder12.png",
+    "locked": false
+  },
+  {
+    "name": "Frankenstein",
+    "image": "/Fgo/characters/berserker/Berserkercardborder13.png",
+    "locked": false
+  },
+  {
+    "name": "Beowulf",
+    "image": "/Fgo/characters/berserker/Berserkercardborder14.png",
+    "locked": false
+  },
+  {
+    "name": "Nightingale",
+    "image": "/Fgo/characters/berserker/Berserkercardborder15.png",
+    "locked": false
+  },
+  {
+    "name": "Cú Chulainn (Alter)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder16.png",
+    "locked": false
+  },
+  {
+    "name": "Minamoto no Raikō",
+    "image": "/Fgo/characters/berserker/Berserkercardborder17.png",
+    "locked": false
+  },
+  {
+    "name": "Ibaraki Dōji",
+    "image": "/Fgo/characters/berserker/Berserkercardborder18.png",
+    "locked": false
+  },
+  {
+    "name": "Mysterious Heroine X (Alter)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder19.png",
+    "locked": false
+  },
+  {
+    "name": "Hijikata Toshizō",
+    "image": "/Fgo/characters/berserker/Berserkercardborder20.png",
+    "locked": false
+  }
+]

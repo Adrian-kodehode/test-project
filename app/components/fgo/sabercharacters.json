@@ -325,5 +325,9 @@
     "image": "/Fgo/characters/saber/Sabercardborder54.png",
     "locked": false
   },
-  {}
+  {
+    "name": "Passionlip (Saber)",
+    "image": "/Fgo/characters/saber/Sabercardborder55.png",
+    "locked": false
+  }
 ]

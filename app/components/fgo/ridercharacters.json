@@ -229,5 +229,10 @@
     "name": "Andromeda (Rider)",
     "image": "/Fgo/characters/rider/Ridercardborder46.png",
     "locked": false
+  },
+  {
+    "name": "Kriemhild (Rider)",
+    "image": "/Fgo/characters/rider/Ridercardborder47.png",
+    "locked": false
   }
 ]
