@@ -98,5 +98,138 @@
     "name": "Hijikata Toshizō",
     "image": "/Fgo/characters/berserker/Berserkercardborder20.png",
     "locked": false
+  },
+  {
+    "name": "Chacha",
+    "image": "/Fgo/characters/berserker/Berserkercardborder21.png",
+    "locked": false
+  },
+  {
+    "name": "Penthesilea",
+    "image": "/Fgo/characters/berserker/Berserkercardborder22.png",
+    "locked": false
+  },
+  {
+    "name": "Paul Bunyan",
+    "image": "/Fgo/characters/berserker/Berserkercardborder23.png",
+    "locked": false
+  },
+  {
+    "name": "Oda Nobunaga (Berserker)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder24.png",
+    "locked": false
+  },
+  {
+    "name": "Atalanta (Alter)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder25.png",
+    "locked": false
+  },
+  {
+    "name": "Jeanne d'Arc (Berserker Alter)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder26.png",
+    "locked": false,
+    "url": "/jeanne-darc-alter-berserker"
+  },
+  {
+    "name": "Xiang Yu",
+    "image": "/Fgo/characters/berserker/Berserkercardborder27.png",
+    "locked": false
+  },
+  {
+    "name": "Arjuna (Alter)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder28.png",
+    "locked": false
+  },
+  {
+    "name": "Mori Nagayoshi",
+    "image": "/Fgo/characters/berserker/Berserkercardborder29.png",
+    "locked": false
+  },
+  {
+    "name": "Salome",
+    "image": "/Fgo/characters/berserker/Berserkercardborder30.png",
+    "locked": false
+  },
+  {
+    "name": "Miyamoto Musashi (Berserker)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder31.png",
+    "locked": false
+  },
+  {
+    "name": "Kijyo Kōyō",
+    "image": "/Fgo/characters/berserker/Berserkercardborder32.png",
+    "locked": false
+  },
+  {
+    "name": "Brynhilder (Berserker)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder33.png",
+    "locked": false
+  },
+  {
+    "name": "Galatea",
+    "image": "/Fgo/characters/berserker/Berserkercardborder34.png",
+    "locked": false
+  },
+  {
+    "name": "Morgan",
+    "image": "/Fgo/characters/berserker/Berserkercardborder35.png",
+    "locked": false,
+    "url": "/morgan"
+  },
+  {
+    "name": "Sei Shōnagon (Berserker)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder36.png",
+    "locked": false
+  },
+  {
+    "name": "Kriemhild",
+    "image": "/Fgo/characters/berserker/Berserkercardborder37.png",
+    "locked": false
+  },
+  {
+    "name": "Ibuki Dōji (Berserker)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder38.png",
+    "locked": false
+  },
+  {
+    "name": "Sen no Rikyū",
+    "image": "/Fgo/characters/berserker/Berserkercardborder39.png",
+    "locked": false
+  },
+  {
+    "name": "Duryodhana",
+    "image": "/Fgo/characters/berserker/Berserkercardborder40.png",
+    "locked": false
+  },
+  {
+    "name": "Artoria Caster (Berserker)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder41.png",
+    "locked": false,
+    "url": "/artoria-caster-berserker"
+  },
+  {
+    "name": "Nagakura Shinpachi",
+    "image": "/Fgo/characters/berserker/Berserkercardborder42.png",
+    "locked": false
+  },
+  {
+    "name": "Shizuki Sōjūrō",
+    "image": "/Fgo/characters/berserker/Berserkercardborder43.png",
+    "locked": false
+  },
+  {
+    "name": "Louhi",
+    "image": "/Fgo/characters/berserker/Berserkercardborder44.png",
+    "locked": false
+  },
+  {
+    "name": "Lilith",
+    "image": "/Fgo/characters/berserker/Berserkercardborder45.png",
+    "locked": false
+  },
+  {
+    "name": "Huyan Zhuo (Berserker)",
+    "image": "/Fgo/characters/berserker/Berserkercardborder46.png",
+    "locked": false
   }
 ]

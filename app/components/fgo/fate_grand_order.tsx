@@ -107,45 +107,38 @@ export const FateGrandOrder = () => {
 
     const englishServants = [
       {
-        name: "Scáthach-Skaði (Ruler)",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/4/4f/S357A1Icon.webp",
+          name: "Abigail Williams (Summer)",
+          icon: "Fgo/characters/Abigail_Williams_(Summer)/S289A3Icon.png",
       },
       {
-        name: "Wu Zetian (Caster)",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/4/41/S358A1Icon.webp",
+        name: "Tomoe Gozen (Saber)",
+        icon: "Fgo/icons/S290A1Icon.png",
       },
       {
-        name: "Ibuki Dōji (Berserker)",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/4/4d/S355A1Icon.webp",
+        name: "Murasaki Shikibu",
+        icon: "Fgo/icons/S237A1Icon.png ",
       },
       {
-        name: "Utsumi Erice (Avenger)",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/a/a4/S356A1Icon.webp",
+        name: "Sesshōin Kiara (Moon Cancer)",
+        icon: "Fgo/icons/S285A1Icon.png",
       },
       {
-        name: "Lady Avalon",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/5/59/S353A1Icon.webp",
+        name: "Illyasviel von Einzbern (Archer)",
+        icon: "Fgo/icons/S286A1Icon.png",
       },
       {
-        name: "Gareth (Saber)",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/2/2b/S354A1Icon.webp",
+        name: "Brynhilder (Berserker)",
+        icon: "Fgo/icons/S287A1Icon.png",
       },
       {
-        name: "Mélusine (Ruler)",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/2/27/S390A1Icon.webp",
+        name: "Kama (Avenger)",
+        icon: "Fgo/icons/S321A1Icon.png",
       },
       {
-        name: "UDK-Barghest",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/5/59/S391A1Icon.webp",
+        name: "Caenis (Rider)",
+        icon: "Fgo/icons/S322A1Icon.png",
       },
-      {
-        name: "Oberon",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/1/19/S316A1Icon.webp",
-      },
-      {
-        name: "Gawain",
-        icon: "https://static.wikia.nocookie.net/fategrandorder/images/7/7a/S123A1Icon.webp",
-      },
+     
     ];
 
     const EventCard = ({
@@ -635,9 +628,9 @@ export const FateGrandOrder = () => {
                           Current Rate-Up Servants
                         </h2>
                         <div className="flex justify-center">
-                          <div className="grid grid-cols-5 gap-3 max-w-md">
+                          <div className="grid grid-cols-4 gap-3 max-w-md">
                             {englishServants
-                              .slice(0, 10)
+                              .slice(0, 8)
                               .map((servant, index) => (
                                 <ServantIcon key={index} servant={servant} />
                               ))}

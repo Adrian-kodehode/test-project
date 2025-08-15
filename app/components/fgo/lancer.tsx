@@ -114,7 +114,7 @@ const ClassIcon = ({ name, color = "text-yellow-400" }: ClassIconProps) => {
         );
       case "moon cancer":
         return (
-          <a href="/bb_dubai">
+          <a href="/moon_cancer">
             <img
               src="Fgo/icons/Class-MoonCancer-Gold.png"
               alt=""
@@ -144,7 +144,7 @@ const ClassIcon = ({ name, color = "text-yellow-400" }: ClassIconProps) => {
         );
       case "pretender":
         return (
-          <a href="/cait_cu_cerpriestess">
+          <a href="/pretender">
             <img
               src="Fgo/icons/Class-Pretender-Gold.png"
               alt=""
@@ -246,13 +246,13 @@ export const Lancer = () => {
 
   const lancerData = {
     description:
-      "The Beasts of Calamity symbolizing the seven Evils of Man. The archetype of the Heroic Spirit Summoning System as well as the enemies of the Grand Servants.",
+      "The Lancers of Calamity symbolizing the seven Evils of Man. The archetype of the Heroic Spirit Summoning System as well as the enemies of the Grand Servants.",
     stats: [
       {
         icon: (
           <img src="/Fgo/icons/Powerup.png" alt="Powerup" className="w-5 h-5" />
         ),
-        text: "Beasts have a base damage multiplier of 1.0x.",
+        text: "Lancers have a base damage multiplier of 1.0x.",
       },
       {
         icon: (
@@ -262,7 +262,7 @@ export const Lancer = () => {
             className="w-5 h-5"
           />
         ),
-        text: "Beasts have a base star generation rate of 10%.",
+        text: "Lancers have a base star generation rate of 10%.",
       },
       {
         icon: (
@@ -272,7 +272,7 @@ export const Lancer = () => {
             className="w-5 h-5"
           />
         ),
-        text: "Beasts have a base star absorption of 150.",
+        text: "Lancers have a base star absorption of 150.",
       },
       {
         icon: (
@@ -282,12 +282,11 @@ export const Lancer = () => {
             className="w-5 h-5"
           />
         ),
-        text: "Beasts have a base death rate of 1%.",
+        text: "Lancers have a base death rate of 1%.",
       },
     ],
-    totalCount2: "There are currently 3 playable Beast released in the game.",
-    totalCount:
-      "Class Advantage/Disadvantage for playable Beasts differ for each Servant.",
+    totalCount: "There are currently 51 playable Lancers released in the game.",
+
   };
 
   type Character = {
@@ -375,8 +374,7 @@ export const Lancer = () => {
 
             <div className="mt-4 text-sm text-gray-400">
                 {lancerData.totalCount}
-                <br />
-                {lancerData.totalCount2}
+            
             </div>
         </div>
         <div className="flex flex-col items-center space-y-2">
