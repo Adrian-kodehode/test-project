@@ -292,5 +292,11 @@
    
     "image": "/Fgo/characters/archer/Archercardborder49.png",
     "locked": false
+  },
+  {
+    "name": "Larva/Tiamat (Archer)",
+    "image": "/Fgo/characters/archer/Archercardborder50.png",
+    "locked": false,
+    "url": "/fgo/larva_tiamat"
   }
 ]

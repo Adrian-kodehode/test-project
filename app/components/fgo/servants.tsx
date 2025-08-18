@@ -969,13 +969,13 @@ export default function Servants() {
       <div className="max-w-7xl bg-gray-800 bg-opacity-80 rounded mx-auto p-3">
         {/* Header */}
       <ServantsHeader />
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between">
          
            
         </div>
 
         {/* Class Grid */}
-        <div className="grid grid-cols-7 gap-4 mb-8">
+        <div className="grid grid-cols-7 ">
           {classes.slice(0, 14).map(() => (
             <div className="flex justify-center"></div>
           ))}

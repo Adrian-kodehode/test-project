@@ -179,6 +179,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/foreigner" &&
           location.pathname !== "/pretender" &&
           location.pathname !== "/shielder" &&
+          location.pathname !== "/artoria_pendragon" &&
+          location.pathname !== "/artoria_pendragon_alter" &&
+          location.pathname !== "/passionlip_saber" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -328,6 +331,9 @@ export default function App() {
         location.pathname !== "/foreigner" &&
         location.pathname !== "/pretender" &&
         location.pathname !== "/shielder" &&
+        location.pathname !== "/artoria_pendragon" &&
+        location.pathname !== "/artoria_pendragon_alter" &&
+        location.pathname !== "/passionlip_saber" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );

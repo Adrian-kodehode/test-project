@@ -1,12 +1,12 @@
 [
   {
     "name": "Artoria Pendragon",
-
     "image": "/Fgo/characters/saber/Sabercardborder1.png",
     "locked": false
+   
   },
   {
-    "name": "Artoria Pendragon (Alter)",
+    "name": "Artoria Pendragon Alter",
 
     "image": "/Fgo/characters/saber/Sabercardborder2.png",
     "locked": true
@@ -326,7 +326,7 @@
     "locked": false
   },
   {
-    "name": "Passionlip (Saber)",
+    "name": "Passionlip Saber",
     "image": "/Fgo/characters/saber/Sabercardborder55.png",
     "locked": false
   }

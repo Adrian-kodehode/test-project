@@ -253,5 +253,10 @@
     "name": "Indra",
     "image": "/Fgo/characters/lancer/Lancercardborder51.png",
     "locked": false
+  },
+  {
+    "name": "Miyu Edelfelt (Lancer)",
+    "image": "/Fgo/characters/lancer/Lancercardborder52.png",
+    "locked": false
   }
 ]

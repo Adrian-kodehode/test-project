@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Mash Kyrielight",
+    "image": "/Fgo/characters/shielder/Shieldercardborder1.png",
+    "locked": false
+  },
+  {
+    "name": "Mashu Kyrielight",
+    "image": "/Fgo/characters/shielder/Shieldercardborder1-2.png",
+    "locked": false
+  },
+  {
+    "name": "Mashu Kyrielight (Ortenaus) ",
+    "image": "/Fgo/characters/shielder/Shieldercardborder1-3.png",
+    "locked": false
+  },
+  {
+    "name": "Mashu Kyrielight (Paladin) ",
+    "image": "/Fgo/characters/shielder/Shieldercardborder1-4.png",
+    "locked": false
+  }
+]
