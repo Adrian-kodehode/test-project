@@ -90,7 +90,7 @@
     "locked": false
   },
   {
-    "name": "Artoria Pendragon (Archer)",
+    "name": "Artoria Pendragon Archer",
    
     "image": "/Fgo/characters/archer/Archercardborder16.png",
     "locked": false
@@ -162,7 +162,7 @@
     "locked": false
   },
   {
-    "name": "Jeanne d'Arc (Archer)",
+    "name": "Jeanne d'Arc Archer",
    
     "image": "/Fgo/characters/archer/Archercardborder28.png",
     "locked": false
@@ -294,9 +294,9 @@
     "locked": false
   },
   {
-    "name": "Larva/Tiamat (Archer)",
+    "name": "Larva Tiamat Archer",
     "image": "/Fgo/characters/archer/Archercardborder50.png",
-    "locked": false,
-    "url": "/fgo/larva_tiamat"
+    "locked": false
+  
   }
 ]

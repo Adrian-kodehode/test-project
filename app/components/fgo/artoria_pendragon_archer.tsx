@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
-export const NeroClaudius = () => {
+export const ArtoriaPendragonArcher = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
 
@@ -11,81 +11,49 @@ export const NeroClaudius = () => {
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/saber/nero_claudius/S005_Stage1.png",
+      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage1.png",
     },
     {
       id: 2,
       label: "Stage 2",
-      src: "/Fgo/characters/saber/nero_claudius/S005_Stage2.png",
+      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage2.png",
     },
     {
       id: 3,
       label: "Stage 3",
-      src: "/Fgo/characters/saber/nero_claudius/S005_Stage3.png",
+      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage3.png",
     },
     {
       id: 4,
       label: "Stage 4",
-      src: "/Fgo/characters/saber/nero_claudius/S005_Stage4.png",
+      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage4.png",
     },
   ];
 
-  const costumes = [
-    {
-      id: 1,
-      label: "Costume 1",
-      src: "/Fgo/characters/saber/nero_claudius/S005_Costume1.png",
-    },
-    {
-      id: 2,
-      label: "Costume 2",
-      src: "/Fgo/characters/saber/nero_claudius/S005_Costume2.png",
-    },
-    {
-      id: 3,
-      label: "Costume 3",
-      src: "/Fgo/characters/saber/nero_claudius/S005_Costume3.png",
-    },
-  ];
+
 
   const sprites = [
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/saber/nero_claudius/S005_Sprite_Ver2_Stage1.png",
+      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage1.png",
     },
     {
       id: 2,
       label: "Sprite 2",
-      src: "Fgo/characters/saber/nero_claudius/S005_Sprite_Ver2_Stage2.png",
+      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage2.png",
     },
     {
       id: 3,
       label: "Sprite 3",
-      src: "Fgo/characters/saber/nero_claudius/S005_Sprite_Ver2_Stage3.png",
+      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage3.png",
     },
   ];
 
-  const costumesSprite = [
-    {
-      id: 1,
-      label: "Costume 1 Sprite",
-      src: "Fgo/characters/saber/nero_claudius/S005_Sprite_Ver2_Costume1.png",
-    },
-    {
-      id: 2,
-      label: "Costume 2 Sprite",
-      src: "Fgo/characters/saber/nero_claudius/S005_Sprite_Ver2_Costume2.png",
-    },
-    {
-      id: 3,
-      label: "Costume 3 Sprite",
-      src: "Fgo/characters/saber/nero_claudius/S005_Sprite_Ver2_Costume3.png",
-    },
-  ];
+  
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/saber/nero_claudius/S005_Stage1.png"
+    "/Fgo/characters/archer/artoria_pendragon/S129_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -124,19 +92,21 @@ export const NeroClaudius = () => {
   };
 
   const cardTypes = [
-    { type: "quick, arts, buster", icon: "Fgo/icons/QAABB.png" },
+    { type: "quick, arts, buster", icon: "Fgo/QQAAB.png" },
   ];
 
   const traits = [
+    "Arthur",
     "Artoria Face",
-    "Costume-Owning",
+    "Dragon",
     "Hominidae Servant",
     "Humanoid",
     "King",
     "Riding",
-    "Roman",
+    "Round Table Knight",
     "Servant",
     "Seven Knights Servant",
+    "Summer Mode Servant",
     "Weak to Enuma Elish",
   ];
 
@@ -170,8 +140,8 @@ export const NeroClaudius = () => {
           </div>
           <p className="text-gray-300 text-sm">
             This Servant is <strong>LOCKED</strong> until you complete{" "}
-            <span className="text-blue-400 font-bold">Septem</span> and will be
-            added to the summoning pool once the quests are completed.
+            <span className="text-blue-400 font-bold">Fuyuki</span> and will be added to
+            the summoning pool once the quests are completed.
           </p>
         </div>
         <X className="w-5 h-5 text-gray-400 cursor-pointer self-start sm:self-auto" />
@@ -180,10 +150,10 @@ export const NeroClaudius = () => {
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 my-4">
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
-          This article is about the <span className="text-yellow-400">4★</span>{" "}
-          Nero Claudius. For the other variations, see{" "}
+          This article is about the <span className="text-yellow-400">5★</span>{" "}
+          Artoria Pendragon (Archer). For the other variations, see{" "}
           <a href="" className="text-blue-400">
-            Nero Claudius (Disambiguation)
+            Artoria (Disambiguation)
           </a>
           .
         </p>
@@ -214,16 +184,16 @@ export const NeroClaudius = () => {
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/icons/Class-Saber-Gold (1).png"
-              alt="Saber Icon"
+              src="/Fgo/icons/Class-Archer-Gold (1).png"
+              alt="Archer Icon"
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Nero Claudius
+                Artoria Pendragon (Archer)
               </h1>
               <div className="flex gap-1 mt-2">
-                {[1, 2, 3, 4].map((star) => (
+                {[1, 2, 3, 4, 5].map((star) => (
                   <Star
                     key={star}
                     className="w-5 h-5 sm:w-6 sm:h-6 fill-yellow-400 text-yellow-400"
@@ -237,58 +207,58 @@ export const NeroClaudius = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
               <p className="text-gray-400 mb-1">Japanese Name:</p>
-              <p className="text-white">ネロ・クラウディウス</p>
+              <p className="text-white">アルトリア・ペンドラゴン〔オルタ〕</p>
             </div>
             <div className="col-span-1 sm:col-span-2">
               <p className="text-gray-400 mb-1">AKA:</p>
               <p className="text-white">
-               <strong>Emperor of Roses</strong> (薔薇の皇帝, Bara no Kōtei), Nero, Red Saber, Nero Claudius Caesar Augustus Germanicus
+                Artoria, Archuria, Squirtoria, Altria Pendragon (Archer)
               </p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">ID:</p>
-              <p className="text-white">5</p>
+              <p className="text-white">129</p>
             </div>
 
             <div>
               <p className="text-gray-400 mb-1">Cost:</p>
-              <p className="text-blue-400 font-bold">12</p>
+              <p className="text-blue-400 font-bold">16</p>
             </div>
 
             <div>
               <p className="text-gray-400 mb-1">ATK:</p>
-              <p className="text-white">1,574/9,449</p>
+              <p className="text-white">1,742/11,276</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">HP:</p>
-              <p className="text-white">1,880/11,753</p>
+              <p className="text-white">2,134/14,553</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">11,441</p>
+              <p className="text-yellow-400 font-bold">12,343</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">14,250</p>
+              <p className="text-yellow-400 font-bold">15,943</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">13,433</p>
+              <p className="text-yellow-400 font-bold">14,488</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">16,748</p>
+              <p className="text-yellow-400 font-bold">18,738</p>
             </div>
 
             <div>
               <p className="text-gray-400 mb-1">Voice Actor:</p>
-              <p className="text-blue-400">Tange Sakura</p>
+              <p className="text-blue-400">Kawasumi Ayako</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Illustrator:</p>
-              <p className="text-blue-400">Wada Arco</p>
+              <p className="text-blue-400">Takeuchi Takashi</p>
             </div>
 
             <div>
@@ -297,7 +267,7 @@ export const NeroClaudius = () => {
             </div>
             <div>
               <p className="text-gray-400 mb-1">Growth Curve:</p>
-              <p className="text-white">Reverse S</p>
+              <p className="text-white">Linear</p>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -306,7 +276,7 @@ export const NeroClaudius = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Absorption:</span>
-              <span className="text-white">102</span>
+              <span className="text-white">153</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -314,7 +284,7 @@ export const NeroClaudius = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Generation:</span>
-              <span className="text-white">10.1%</span>
+              <span className="text-white">8%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -323,7 +293,7 @@ export const NeroClaudius = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">NP Charge ATK:</span>
-              <span className="text-white">0.84%</span>
+              <span className="text-white">0.59%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -340,11 +310,11 @@ export const NeroClaudius = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Death Rate:</span>
-              <span className="text-white">24.5%</span>
+              <span className="text-white">25.8%</span>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Alignments:</p>
-              <p className="text-white">Chaotic • Good</p>
+              <p className="text-white">Lawful • Good</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
@@ -411,7 +381,7 @@ export const NeroClaudius = () => {
                     src="/Fgo/icons/Extraicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>5</span>
+                  <span>3</span>
                 </span>
               </div>
             </div>
@@ -437,18 +407,7 @@ export const NeroClaudius = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 gap-2 mb-4">
-            {costumes.map((costume) => (
-              <button
-                key={costume.id}
-                onClick={() => handleCostumeClick(costume)}
-                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-              >
-                {costume.label}
-              </button>
-            ))}
-          </div>
-
+        
           {/* Sprite Controls */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
             {sprites.map((sprite) => (
@@ -461,38 +420,7 @@ export const NeroClaudius = () => {
               </button>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2 mb-6">
-            <button
-              key={costumesSprite[0].id}
-              onClick={() => {
-                setActiveImage(costumesSprite[0].src);
-                setImageType("costumeSprite");
-              }}
-              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-            >
-              Costume 1 Sprite
-            </button>
-            <button
-              key={costumesSprite[0].id}
-              onClick={() => {
-                setActiveImage(costumesSprite[1].src);
-                setImageType("costumeSprite");
-              }}
-              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-            >
-              Costume 2 Sprite
-            </button>
-            <button
-              key={costumesSprite[0].id}
-              onClick={() => {
-                setActiveImage(costumesSprite[2].src);
-                setImageType("costumeSprite");
-              }}
-              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-            >
-              Costume 3 Sprite
-            </button>
-          </div>
+       
 
           {/* Character Artwork */}
           <div className="rounded-lg p-4 flex items-end justify-center relative overflow-hidden min-h-[280px] sm:min-h-[320px]">
