@@ -187,6 +187,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/ishtar" &&
           location.pathname !== "/jeanne_d'arc_archer" &&
           location.pathname !== "/larva_tiamat_archer" &&
+          location.pathname !== "/ereshkigal" &&
+          location.pathname !== "/artoria_pendragon_rider_alter" &&
+          location.pathname !== "/nero_claudius_caster" &&
+          location.pathname !== "/artoria_caster" &&
+          location.pathname !== "/aesc_the_savior" &&
+          location.pathname !== "/morgan" &&
+          location.pathname !== "/artoria_caster_berserker" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -344,6 +351,13 @@ export default function App() {
         location.pathname !== "/ishtar" &&
         location.pathname !== "/jeanne_d'arc_archer" &&
         location.pathname !== "/larva_tiamat_archer" &&
+        location.pathname !== "/ereshkigal" &&
+        location.pathname !== "/artoria_pendragon_rider_alter" &&
+        location.pathname !== "/nero_claudius_caster" &&
+        location.pathname !== "/artoria_caster" &&
+        location.pathname !== "/aesc_the_savior" &&
+        location.pathname !== "/morgan" &&
+        location.pathname !== "/artoria_caster_berserker" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );

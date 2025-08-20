@@ -2,31 +2,40 @@
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
-export const ArtoriaPendragonArcher = () => {
+export const Morgan = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const tabs = ["Servant", "Dialogue", "Quest", "Gallery"];
   const stages = [
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage1.png",
+      src: "/Fgo/characters/berserker/morgan/S309_Stage1.png",
     },
     {
       id: 2,
       label: "Stage 2",
-      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage2.png",
+      src: "/Fgo/characters/berserker/morgan/S309_Stage2.png",
     },
     {
       id: 3,
       label: "Stage 3",
-      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage3.png",
+      src: "/Fgo/characters/berserker/morgan/S309_Stage3.png",
     },
     {
       id: 4,
       label: "Stage 4",
-      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage4.png",
+      src: "/Fgo/characters/berserker/morgan/S309_Stage4.png",
+    },
+  ];
+
+  const costumes = [
+    {
+      id: 1,
+      label: "Costume 1",
+      src: "/Fgo/characters/berserker/morgan/S309_Costume1.png",
     },
   ];
 
@@ -34,22 +43,30 @@ export const ArtoriaPendragonArcher = () => {
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage1.png",
+      src: "Fgo/characters/berserker/morgan/S309_Sprite_Ver1_Stage1.png",
     },
     {
       id: 2,
       label: "Sprite 2",
-      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage2.png",
+      src: "Fgo/characters/berserker/morgan/S309_Sprite_Ver1_Stage2.png",
     },
     {
       id: 3,
       label: "Sprite 3",
-      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage3.png",
+      src: "Fgo/characters/berserker/morgan/S309_Sprite_Ver1_Stage3.png",
+    },
+  ];
+
+  const costumesSprite = [
+    {
+      id: 1,
+      label: "Costume 1 Sprite",
+      src: "Fgo/characters/berserker/morgan/S309_Sprite_Ver1_Costume1.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/archer/artoria_pendragon/S129_Stage1.png"
+    "/Fgo/characters/berserker/morgan/S309_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -87,20 +104,20 @@ export const ArtoriaPendragonArcher = () => {
     setImageType("sprite");
   };
 
-  const cardTypes = [{ type: "quick, arts, buster", icon: "Fgo/QQAAB.png" }];
+  const cardTypes = [
+    { type: "quick, arts, buster", icon: "Fgo/icons/QAABB.png" },
+  ];
 
   const traits = [
     "Arthur",
     "Artoria Face",
-    "Dragon",
-    "Hominidae Servant",
+    "Costume-Owning",
+    "Fae",
     "Humanoid",
     "King",
-    "Riding",
-    "Round Table Knight",
+    "Non-Hominidae Servant",
     "Servant",
     "Seven Knights Servant",
-    "Summer Mode Servant",
     "Weak to Enuma Elish",
   ];
 
@@ -146,9 +163,20 @@ export const ArtoriaPendragonArcher = () => {
       <div className="px-0 sm:px-0 my-4">
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">5★</span>{" "}
-          Artoria Pendragon (Archer). For the other variations, see{" "}
-          <a href="" className="text-blue-400">
-            Artoria (Disambiguation)
+          <img
+            src="Fgo/characters/berserker/Class-Berserker-Gold (1).png"
+            alt=""
+            className="inline-block h-8 w-8 ml-1"
+          />{" "}
+          Morgan. For <span className="text-yellow-400">5★</span>{" "}
+          <img
+            src="Fgo/characters/caster/Class-Caster-Gold (1).png"
+            alt=""
+            className="inline-block h-8 w-8 ml-1"
+          />
+          , see{" "}
+          <a href="/aesc_the_savior" className="text-blue-400">
+            Aesc the Savior
           </a>
           .
         </p>
@@ -179,13 +207,13 @@ export const ArtoriaPendragonArcher = () => {
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/icons/Class-Archer-Gold (1).png"
-              alt="Archer Icon"
+              src="/Fgo/characters/berserker/Class-Berserker-Gold (1).png"
+              alt="berserker Icon"
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Artoria Pendragon (Archer)
+                Morgan
               </h1>
               <div className="flex gap-1 mt-2">
                 {[1, 2, 3, 4, 5].map((star) => (
@@ -202,17 +230,17 @@ export const ArtoriaPendragonArcher = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
               <p className="text-gray-400 mb-1">Japanese Name:</p>
-              <p className="text-white">アルトリア・ペンドラゴン〔オルタ〕</p>
+              <p className="text-white"> モルガン</p>
             </div>
             <div className="col-span-1 sm:col-span-2">
               <p className="text-gray-400 mb-1">AKA:</p>
               <p className="text-white">
-                Artoria, Archuria, Squirtoria, Altria Pendragon (Archer)
+                Morgana le Fae (モルガン・ル・フェ?), Morgan le Fay, Vivian
               </p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">ID:</p>
-              <p className="text-white">129</p>
+              <p className="text-white">309</p>
             </div>
 
             <div>
@@ -222,34 +250,34 @@ export const ArtoriaPendragonArcher = () => {
 
             <div>
               <p className="text-gray-400 mb-1">ATK:</p>
-              <p className="text-white">1,742/11,276</p>
+              <p className="text-white">1,884/12,193</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">HP:</p>
-              <p className="text-white">2,134/14,553</p>
+              <p className="text-white">1,824/12,440</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">12,343</p>
+              <p className="text-yellow-400 font-bold">13,347</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">15,943</p>
+              <p className="text-yellow-400 font-bold">13,628</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">14,488</p>
+              <p className="text-yellow-400 font-bold">15,667</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">18,738</p>
+              <p className="text-yellow-400 font-bold">16,017</p>
             </div>
 
             <div>
               <p className="text-gray-400 mb-1">Voice Actor:</p>
-              <p className="text-blue-400">Kawasumi Ayako</p>
+              <p className="text-blue-400">Ishikawa Yui</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Illustrator:</p>
@@ -258,11 +286,11 @@ export const ArtoriaPendragonArcher = () => {
 
             <div>
               <p className="text-gray-400 mb-1">Attribute:</p>
-              <p className="text-green-400">Man</p>
+              <p className="text-green-400">Earth</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Growth Curve:</p>
-              <p className="text-white">Linear</p>
+              <p className="text-white">Semi S</p>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -271,7 +299,7 @@ export const ArtoriaPendragonArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Absorption:</span>
-              <span className="text-white">153</span>
+              <span className="text-white">10</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -279,7 +307,7 @@ export const ArtoriaPendragonArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Generation:</span>
-              <span className="text-white">8%</span>
+              <span className="text-white">5%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -288,7 +316,7 @@ export const ArtoriaPendragonArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">NP Charge ATK:</span>
-              <span className="text-white">0.59%</span>
+              <span className="text-white">0.53%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -296,7 +324,7 @@ export const ArtoriaPendragonArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">NP Charge DEF:</span>
-              <span className="text-white">3%</span>
+              <span className="text-white">5%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -305,11 +333,11 @@ export const ArtoriaPendragonArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Death Rate:</span>
-              <span className="text-white">25.8%</span>
+              <span className="text-white">37.3%</span>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Alignments:</p>
-              <p className="text-white">Lawful • Good</p>
+              <p className="text-white">Lawful • Evil</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
@@ -352,7 +380,7 @@ export const ArtoriaPendragonArcher = () => {
                     src="/Fgo/icons/Quickicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>2</span>
+                  <span>4</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -360,7 +388,7 @@ export const ArtoriaPendragonArcher = () => {
                     src="/Fgo/icons/Artsicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>2</span>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -368,7 +396,7 @@ export const ArtoriaPendragonArcher = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>1</span>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -376,7 +404,7 @@ export const ArtoriaPendragonArcher = () => {
                     src="/Fgo/icons/Extraicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>5</span>
                 </span>
               </div>
             </div>
@@ -402,6 +430,18 @@ export const ArtoriaPendragonArcher = () => {
             ))}
           </div>
 
+          <div className="grid grid-cols-2 gap-2 mb-4">
+            {costumes.map((costume) => (
+              <button
+                key={costume.id}
+                onClick={() => handleCostumeClick(costume)}
+                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
+              >
+                {costume.label}
+              </button>
+            ))}
+          </div>
+
           {/* Sprite Controls */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
             {sprites.map((sprite) => (
@@ -414,6 +454,32 @@ export const ArtoriaPendragonArcher = () => {
               </button>
             ))}
           </div>
+          <div className="grid grid-cols-2 gap-2 mb-6">
+            <button
+              key={costumesSprite[0].id}
+              onClick={() => {
+                setActiveImage(costumesSprite[0].src);
+                setImageType("costumeSprite");
+              }}
+              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
+            >
+              Costume 1 Sprite
+            </button>
+          </div>
+
+          {/* Expanded Lightbox */}
+          {isExpanded && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+              onClick={() => setIsExpanded(false)}
+            >
+              <img
+                src={activeImage}
+                alt="Expanded artwork"
+                className="max-w-full max-h-full object-contain cursor-zoom-out"
+              />
+            </div>
+          )}
 
           {/* Character Artwork */}
           <div className="rounded-lg p-4 flex items-end justify-center relative overflow-hidden min-h-[280px] sm:min-h-[320px]">
@@ -426,7 +492,8 @@ export const ArtoriaPendragonArcher = () => {
               <img
                 src={activeImage}
                 alt="Artoria Pendragon Artwork"
-                className="max-w-full h-auto object-contain rounded-lg shadow-lg max-h-[60vh] sm:max-h-[50vh] md:max-h-[60vh]"
+                className="max-w-full h-auto object-contain rounded-lg shadow-lg max-h-[60vh] sm:max-h-[50vh] md:max-h-[60vh] cursor-zoom-in"
+                onClick={() => setIsExpanded(true)}
               />
             </div>
 
@@ -466,3 +533,4 @@ export const ArtoriaPendragonArcher = () => {
     </div>
   );
 };
+// ...existing code...

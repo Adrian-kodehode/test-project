@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
-export const ArtoriaPendragonArcher = () => {
+export const ArtoriaPendragonRiderAlter = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
 
@@ -11,22 +11,22 @@ export const ArtoriaPendragonArcher = () => {
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage1.png",
+      src: "/Fgo/characters/rider/artoria_pendragon_(alter)/S179_Stage1.png",
     },
     {
       id: 2,
       label: "Stage 2",
-      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage2.png",
+      src: "/Fgo/characters/rider/artoria_pendragon_(alter)/S179_Stage2.png",
     },
     {
       id: 3,
       label: "Stage 3",
-      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage3.png",
+      src: "/Fgo/characters/rider/artoria_pendragon_(alter)/S179_Stage3.png",
     },
     {
       id: 4,
       label: "Stage 4",
-      src: "/Fgo/characters/archer/artoria_pendragon/S129_Stage4.png",
+      src: "/Fgo/characters/rider/artoria_pendragon_(alter)/S179_Stage4.png",
     },
   ];
 
@@ -34,22 +34,22 @@ export const ArtoriaPendragonArcher = () => {
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage1.png",
+      src: "Fgo/characters/rider/artoria_pendragon_(alter)/S179_Sprite_Ver2_Stage1.png",
     },
     {
       id: 2,
       label: "Sprite 2",
-      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage2.png",
+      src: "Fgo/characters/rider/artoria_pendragon_(alter)/S179_Sprite_Ver2_Stage2.png",
     },
     {
       id: 3,
       label: "Sprite 3",
-      src: "Fgo/characters/archer/artoria_pendragon/S129_Sprite_Ver2_Stage3.png",
+      src: "Fgo/characters/rider/artoria_pendragon_(alter)/S179_Sprite_Ver2_Stage3.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/archer/artoria_pendragon/S129_Stage1.png"
+    "/Fgo/characters/rider/artoria_pendragon_(alter)/S179_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -87,7 +87,9 @@ export const ArtoriaPendragonArcher = () => {
     setImageType("sprite");
   };
 
-  const cardTypes = [{ type: "quick, arts, buster", icon: "Fgo/QQAAB.png" }];
+  const cardTypes = [
+    { type: "quick, arts, buster", icon: "Fgo/QQAAB.png" },
+  ];
 
   const traits = [
     "Arthur",
@@ -145,8 +147,8 @@ export const ArtoriaPendragonArcher = () => {
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 my-4">
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
-          This article is about the <span className="text-yellow-400">5★</span>{" "}
-          Artoria Pendragon (Archer). For the other variations, see{" "}
+          This article is about the <span className="text-yellow-400">4★</span>{" "}
+          Artoria Pendragon (Rider Alter). For the other variations, see{" "}
           <a href="" className="text-blue-400">
             Artoria (Disambiguation)
           </a>
@@ -179,13 +181,13 @@ export const ArtoriaPendragonArcher = () => {
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/icons/Class-Archer-Gold (1).png"
-              alt="Archer Icon"
+              src="/Fgo/icons/Class-Saber-Gold (1).png"
+              alt="Saber Icon"
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Artoria Pendragon (Archer)
+                Artoria Pendragon (Rider Alter)
               </h1>
               <div className="flex gap-1 mt-2">
                 {[1, 2, 3, 4, 5].map((star) => (
@@ -207,12 +209,12 @@ export const ArtoriaPendragonArcher = () => {
             <div className="col-span-1 sm:col-span-2">
               <p className="text-gray-400 mb-1">AKA:</p>
               <p className="text-white">
-                Artoria, Archuria, Squirtoria, Altria Pendragon (Archer)
+                 Altria Pendragon Alter (Rider), Maid Alter, Demonic Chief Maid, King of Maids
               </p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">ID:</p>
-              <p className="text-white">129</p>
+              <p className="text-white">179</p>
             </div>
 
             <div>
@@ -222,29 +224,29 @@ export const ArtoriaPendragonArcher = () => {
 
             <div>
               <p className="text-gray-400 mb-1">ATK:</p>
-              <p className="text-white">1,742/11,276</p>
+              <p className="text-white">1,665/10,776</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">HP:</p>
-              <p className="text-white">2,134/14,553</p>
+              <p className="text-white">2,090/14,256</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">12,343</p>
+              <p className="text-yellow-400 font-bold">11,796</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">15,943</p>
+              <p className="text-yellow-400 font-bold">15,618</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">14,488</p>
+              <p className="text-yellow-400 font-bold">13,846</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">18,738</p>
+              <p className="text-yellow-400 font-bold">18,355</p>
             </div>
 
             <div>
@@ -271,7 +273,7 @@ export const ArtoriaPendragonArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Absorption:</span>
-              <span className="text-white">153</span>
+              <span className="text-white">200</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -279,7 +281,7 @@ export const ArtoriaPendragonArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Generation:</span>
-              <span className="text-white">8%</span>
+              <span className="text-white">9%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -305,11 +307,11 @@ export const ArtoriaPendragonArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Death Rate:</span>
-              <span className="text-white">25.8%</span>
+              <span className="text-white">30%</span>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Alignments:</p>
-              <p className="text-white">Lawful • Good</p>
+              <p className="text-white">Lawful • Evil</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
@@ -352,7 +354,7 @@ export const ArtoriaPendragonArcher = () => {
                     src="/Fgo/icons/Quickicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>2</span>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -360,7 +362,7 @@ export const ArtoriaPendragonArcher = () => {
                     src="/Fgo/icons/Artsicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>2</span>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -368,7 +370,7 @@ export const ArtoriaPendragonArcher = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>1</span>
+                  <span>2</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -376,7 +378,7 @@ export const ArtoriaPendragonArcher = () => {
                     src="/Fgo/icons/Extraicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>5</span>
                 </span>
               </div>
             </div>
