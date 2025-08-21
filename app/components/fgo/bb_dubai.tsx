@@ -131,7 +131,7 @@ export const BB_Dubai = () => {
           This article is about the <span className="text-yellow-400">5★</span>{" "}
           BB Dubai. For the other <span className="text-yellow-400">5★</span>, see{" "}
           <span className="text-blue-400">
-            <a href="/fgo">BB (Summer)</a>
+            <a href="/bb_summer">BB (Summer)</a>
           </span>
           . For the <span className="text-yellow-400">4★</span>{" "}
           <a href="#" className="text-blue-400">BB</a>

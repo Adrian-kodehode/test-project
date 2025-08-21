@@ -3,40 +3,49 @@
     "name": "BB",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder1.png",
     "locked": false
-  },{
-    "name": "BB (Summer)",
+  },
+  {
+    "name": "BB Summer",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder2.png",
     "locked": false
-  },{
+  },
+  {
     "name": "Jinako Carigiri",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder3.png",
     "locked": false
-  },{
+  },
+  {
     "name": "Sesshōin Kiara (Moon Cancer)",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder4.png",
     "locked": false
-  },{
+  },
+  {
     "name": "Archetype: Earth",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder5.png",
     "locked": false
-  },{
+  },
+  {
     "name": "Mysterious Executor C.I.E.L",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder6.png",
     "locked": false
-  },{
+  },
+  {
     "name": "BB Dubai",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder7.png",
     "locked": false,
     "url": "/bb_dubai"
-  },{
+  },
+  {
     "name": "Tenochtitlan (Moon Cancer)",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder8.png",
     "locked": false
-  },{
+  },
+  {
     "name": "Kishinami Hakuno (Male)",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder9.png",
     "locked": false
-  },{
+  },
+  {
     "name": "Kishinami Hakuno (Female)",
     "image": "/Fgo/characters/moon_cancer/Mooncancercardborder10.png",
     "locked": false

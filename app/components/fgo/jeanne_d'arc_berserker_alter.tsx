@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
-export const ArtoriaCasterBerserker = () => {
+export const JeanneDArcBerserkerAlter = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,22 +12,12 @@ export const ArtoriaCasterBerserker = () => {
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/berserker/artoria_caster/S386_Stage1.png",
-    },
-    {
-      id: 2,
-      label: "Stage 2",
-      src: "/Fgo/characters/berserker/artoria_caster/S386_Stage2.png",
-    },
-    {
-      id: 3,
-      label: "Stage 3",
-      src: "/Fgo/characters/berserker/artoria_caster/S386_Stage3.png",
+      src: "/Fgo/characters/berserker/jeanne_darc_alter/S219_Stage1.png",
     },
     {
       id: 4,
       label: "Stage 4",
-      src: "/Fgo/characters/berserker/artoria_caster/S386_Stage4.png",
+      src: "/Fgo/characters/berserker/jeanne_darc_alter/S219_Stage4.png",
     },
   ];
 
@@ -35,22 +25,12 @@ export const ArtoriaCasterBerserker = () => {
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/berserker/artoria_caster/S386_Sprite_Ver1_Stage1.png",
-    },
-    {
-      id: 2,
-      label: "Sprite 2",
-      src: "Fgo/characters/berserker/artoria_caster/S386_Sprite_Ver1_Stage2.png",
-    },
-    {
-      id: 3,
-      label: "Sprite 3",
-      src: "Fgo/characters/berserker/artoria_caster/S386_Sprite_Ver1_Stage3.png",
+      src: "Fgo/characters/berserker/jeanne_darc_alter/S219_Sprite_Ver1_Stage1.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/berserker/artoria_caster/S386_Stage1.png"
+    "/Fgo/characters/berserker/jeanne_darc_alter/S219_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -88,22 +68,16 @@ export const ArtoriaCasterBerserker = () => {
     setImageType("sprite");
   };
 
-  const cardTypes = [
-    { type: "quick, arts, buster", icon: "Fgo/icons/QAABB.png" },
-  ];
+  const cardTypes = [{ type: "quick, arts, buster", icon: "Fgo/QABBB.png" }];
 
   const traits = [
-    "Arthur",
-    "Artoria Caster",
     "Artoria Face",
-    "Enuma Elish Nullification",
-    "Fae",
+    "Hominidae Servant",
     "Humanoid",
-    "Non-Hominidae Servant",
-    "Round Table Knight",
     "Servant",
     "Seven Knights Servant",
     "Summer Mode Servant",
+    "Weak to Enuma Elish",
   ];
 
   const bottomTabs = [
@@ -124,21 +98,26 @@ export const ArtoriaCasterBerserker = () => {
       {/* Header Warning */}
       <div className="bg-gray-800 border border-gray-600 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
         <img
-          src="/Fgo/icons/Bryn2.png"
+          src="/Fgo/icons/RiyoRiderBunny.png"
           alt="BB"
-          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex-none"
+          className="rounded-lg flex-none"
         />
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
             <h3 className="text-lg font-bold text-white">
-              This is a Limited Servant
+              This is a Event Servant
             </h3>
             <Star className="w-5 h-5 text-blue-400" />
           </div>
           <p className="text-gray-300 text-sm">
-            They are only available during special{" "}
-            <span className="text-blue-400">summoning campaigns</span>. When no
-            such campaigns are active, this Servant cannot be summoned.
+            It was only previously obtainable by participating in the
+            time-limited event{" "}
+            <span className="text-blue-400">Servant Summer Festival! 2018</span>
+            .
+          </p>
+          <p className="mt-3">
+            However, this Servant is now permanently available in the{" "}
+            <span className="text-blue-400">Evocation Leaf Exchange</span> Shop.
           </p>
         </div>
         <X className="w-5 h-5 text-gray-400 cursor-pointer self-start sm:self-auto" />
@@ -147,15 +126,15 @@ export const ArtoriaCasterBerserker = () => {
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 my-4">
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
-          This article is about the <span className="text-yellow-400">5★</span>{" "}
+          This article is about the <span className="text-yellow-400">4★</span>{" "}
           <img
             src="Fgo/characters/berserker/Class-Berserker-Gold (1).png"
             alt=""
             className="inline-block h-8 w-8 ml-1"
           />{" "}
-          Artoria Caster. For other variations, see{" "}
-          <a href="/morgan" className="text-blue-400">
-            Artoria (Disambiguation)
+          Jeanne D'Arc (Alter). For other variations, see{" "}
+          <a href="" className="text-blue-400">
+            Jeanne (Disambiguation)
           </a>
           .
         </p>
@@ -192,10 +171,10 @@ export const ArtoriaCasterBerserker = () => {
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Artoria Caster
+                Jeanne d'Arc (Alter)
               </h1>
               <div className="flex gap-1 mt-2">
-                {[1, 2, 3, 4, 5].map((star) => (
+                {[1, 2, 3, 4].map((star) => (
                   <Star
                     key={star}
                     className="w-5 h-5 sm:w-6 sm:h-6 fill-yellow-400 text-yellow-400"
@@ -209,47 +188,50 @@ export const ArtoriaCasterBerserker = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
               <p className="text-gray-400 mb-1">Japanese Name:</p>
-              <p className="text-white">アルトリア・キャスター</p>
+              <p className="text-white">ジャンヌ・ダルク〔オルタ〕</p>
             </div>
             <div className="col-span-1 sm:col-span-2">
               <p className="text-gray-400 mb-1">AKA:</p>
-              <p className="text-white">Artoria, Alcas</p>
+              <p className="text-white">
+                {" "}
+                Jeanne Alter, Jeanne d'Arc Alter (Berserker), Summer Jalter
+              </p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">ID:</p>
-              <p className="text-white">386</p>
+              <p className="text-white">219</p>
             </div>
 
             <div>
               <p className="text-gray-400 mb-1">Cost:</p>
-              <p className="text-blue-400 font-bold">16</p>
+              <p className="text-blue-400 font-bold">12</p>
             </div>
 
             <div>
               <p className="text-gray-400 mb-1">ATK:</p>
-              <p className="text-white">1,875/12,134</p>
+              <p className="text-white">1,716/10,298</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">HP:</p>
-              <p className="text-white">1,862/12,969</p>
+              <p className="text-white">1,862/9,922</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">13,283</p>
+              <p className="text-yellow-400 font-bold">12,469</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">13,909</p>
+              <p className="text-yellow-400 font-bold">12,030</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">15,591</p>
+              <p className="text-yellow-400 font-bold">15,640</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">16,347</p>
+              <p className="text-yellow-400 font-bold">14,139</p>
             </div>
 
             <div>
@@ -263,11 +245,11 @@ export const ArtoriaCasterBerserker = () => {
 
             <div>
               <p className="text-gray-400 mb-1">Attribute:</p>
-              <p className="text-green-400">Star</p>
+              <p className="text-green-400">Man</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Growth Curve:</p>
-              <p className="text-white">Semi S</p>
+              <p className="text-white">Linear</p>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -276,7 +258,7 @@ export const ArtoriaCasterBerserker = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Absorption:</span>
-              <span className="text-white">10</span>
+              <span className="text-white">9</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -293,7 +275,7 @@ export const ArtoriaCasterBerserker = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">NP Charge ATK:</span>
-              <span className="text-white">0.4%</span>
+              <span className="text-white">0.52%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -310,7 +292,7 @@ export const ArtoriaCasterBerserker = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Death Rate:</span>
-              <span className="text-white">39%</span>
+              <span className="text-white">45.5%</span>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Alignments:</p>
@@ -333,17 +315,6 @@ export const ArtoriaCasterBerserker = () => {
                   {index < traits.length - 1 ? ", " : ""}
                 </span>
               ))}
-            </div>
-            <div className="mt-1">
-              <span className="ml-2">
-                ┗ Stage 2: <span className="text-blue-400">Bunny Servant</span>
-              </span>
-            </div>
-            <div>
-              <span className="ml-2">
-                ┗ Stage 3:{" "}
-                <span className="text-blue-400">Levitating Servant</span>
-              </span>
             </div>
           </div>
 
@@ -368,7 +339,7 @@ export const ArtoriaCasterBerserker = () => {
                     src="/Fgo/icons/Quickicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>5</span>
+                  <span>4</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -384,7 +355,7 @@ export const ArtoriaCasterBerserker = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>4</span>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">

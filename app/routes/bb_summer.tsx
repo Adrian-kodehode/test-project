@@ -1,4 +1,4 @@
-import { FGO } from "app/components/fgo/fgo";
+import { FGO } from "app/components/fgo/bb_summer";
 
 export default function FGOPAGE() {
   return (

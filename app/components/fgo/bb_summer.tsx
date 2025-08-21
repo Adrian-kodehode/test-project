@@ -1,33 +1,33 @@
-
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
-export const ArtoriaCasterBerserker = () => {
+export const FGO = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
-  const [isExpanded, setIsExpanded] = useState(false);
 
   const tabs = ["Servant", "Dialogue", "Quest", "Gallery"];
   const stages = [
+    { id: 1, label: "Stage 1", src: "/Fgo/characters/BB/S220_Stage1.png" },
+    { id: 2, label: "Stage 2", src: "/Fgo/characters/BB/S220_Stage2.png" },
+    { id: 3, label: "Stage 3", src: "/Fgo/characters/BB/S220_Stage3.png" },
+    { id: 4, label: "Stage 4", src: "/Fgo/characters/BB/S220_Stage4.png" },
+  ];
+
+  const costumes = [
+    { id: 1, label: "Costume 1", src: "/Fgo/characters/BB/S220_Costume1.png" },
+    { id: 2, label: "Costume 2", src: "/Fgo/characters/BB/S220_Costume2.png" },
+  ];
+
+  const costumesSprite = [
     {
       id: 1,
-      label: "Stage 1",
-      src: "/Fgo/characters/berserker/artoria_caster/S386_Stage1.png",
+      label: "Costume 1",
+      src: "/Fgo/characters/BB/S220_Sprite_Ver2_Costume1.png",
     },
     {
       id: 2,
-      label: "Stage 2",
-      src: "/Fgo/characters/berserker/artoria_caster/S386_Stage2.png",
-    },
-    {
-      id: 3,
-      label: "Stage 3",
-      src: "/Fgo/characters/berserker/artoria_caster/S386_Stage3.png",
-    },
-    {
-      id: 4,
-      label: "Stage 4",
-      src: "/Fgo/characters/berserker/artoria_caster/S386_Stage4.png",
+      label: "Costume 2",
+      src: "/Fgo/characters/BB/S220_Sprite_Ver2_Costume2.png",
     },
   ];
 
@@ -35,22 +35,22 @@ export const ArtoriaCasterBerserker = () => {
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/berserker/artoria_caster/S386_Sprite_Ver1_Stage1.png",
+      src: "/Fgo/characters/BB/S220_Sprite_Ver2_Stage1.png",
     },
     {
       id: 2,
       label: "Sprite 2",
-      src: "Fgo/characters/berserker/artoria_caster/S386_Sprite_Ver1_Stage2.png",
+      src: "/Fgo/characters/BB/S220_Sprite_Ver2_Stage2.png",
     },
     {
       id: 3,
       label: "Sprite 3",
-      src: "Fgo/characters/berserker/artoria_caster/S386_Sprite_Ver1_Stage3.png",
+      src: "/Fgo/characters/BB/S220_Sprite_Ver2_Stage3.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/berserker/artoria_caster/S386_Stage1.png"
+    "/Fgo/characters/BB/S220_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -93,17 +93,20 @@ export const ArtoriaCasterBerserker = () => {
   ];
 
   const traits = [
-    "Arthur",
-    "Artoria Caster",
-    "Artoria Face",
-    "Enuma Elish Nullification",
-    "Fae",
-    "Humanoid",
+    "Costume-Owning",
+    "Divine Spirit",
+    "Divinity",
+    "Existence Outside the Domain",
+    "Giant",
+    "Goddess Servant",
+    "Immune to Pigify",
+    "Mechanical",
     "Non-Hominidae Servant",
-    "Round Table Knight",
+    "Sakura Series",
     "Servant",
-    "Seven Knights Servant",
     "Summer Mode Servant",
+    "Super Large",
+    "Weak to Enuma Elish",
   ];
 
   const bottomTabs = [
@@ -120,13 +123,13 @@ export const ArtoriaCasterBerserker = () => {
   ];
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen font-sans px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-900 text-white min-h-screen font-sans">
       {/* Header Warning */}
-      <div className="bg-gray-800 border border-gray-600 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+      <div className="bg-gray-800 border border-gray-600 rounded-lg p-4  flex items-start gap-3">
         <img
           src="/Fgo/icons/Bryn2.png"
           alt="BB"
-          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex-none"
+          className="w-16 h-16 rounded-lg"
         />
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
@@ -141,64 +144,59 @@ export const ArtoriaCasterBerserker = () => {
             such campaigns are active, this Servant cannot be summoned.
           </p>
         </div>
-        <X className="w-5 h-5 text-gray-400 cursor-pointer self-start sm:self-auto" />
+        <X className="w-5 h-5 text-gray-400 cursor-pointer" />
       </div>
 
       {/* Article Navigation */}
-      <div className="px-0 sm:px-0 my-4">
-        <p className="text-sm text-gray-400 italic text-center sm:text-left">
+      <div className="px-4 mb-4">
+        <p className="text-sm text-gray-400 italic">
           This article is about the <span className="text-yellow-400">5★</span>{" "}
-          <img
-            src="Fgo/characters/berserker/Class-Berserker-Gold (1).png"
-            alt=""
-            className="inline-block h-8 w-8 ml-1"
-          />{" "}
-          Artoria Caster. For other variations, see{" "}
-          <a href="/morgan" className="text-blue-400">
-            Artoria (Disambiguation)
-          </a>
+          BB. For the <span className="text-yellow-400">4★</span>, see{" "}
+          <span className="text-blue-400">
+            <a href="/bb">BB</a>
+          </span>
+          . For the other <span className="text-yellow-400">5★</span>, see{" "}
+          <span className="text-blue-400">
+            <a href="/bb_dubai">BB Dubai</a>
+          </span>
           .
         </p>
       </div>
 
       {/* Main Tabs */}
-      <div className="flex border-b border-gray-700 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
-        <div className="flex w-full">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab.toLowerCase())}
-              className={`flex-shrink-0 min-w-[110px] sm:flex-1 px-4 py-3 font-medium ${
-                activeTab === tab.toLowerCase()
-                  ? "bg-blue-600 text-white border-b-2 border-blue-400"
-                  : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
+      <div className="flex border-b border-gray-700">
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab.toLowerCase())}
+            className={`flex-1 px-4 py-3 font-medium ${
+              activeTab === tab.toLowerCase()
+                ? "bg-blue-600 text-white border-b-2 border-blue-400"
+                : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+            }`}
+          >
+            {tab}
+          </button>
+        ))}
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6 p-4 sm:p-6">
+      <div className="flex gap-6 p-6">
         {/* Left Panel - Character Info */}
-        <div className="w-full lg:w-1/2 space-y-6">
+        <div className="w-1/2 space-y-6">
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/characters/berserker/Class-Berserker-Gold (1).png"
-              alt="berserker Icon"
-              className="w-12 h-12 sm:w-16 sm:h-16"
+              src="/Fgo/icons/Class-MoonCancer-Gold.png"
+              alt="BB Icon"
+              className="w-16 h-16"
             />
             <div>
-              <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Artoria Caster
-              </h1>
+              <h1 className="text-4xl font-bold text-white">BB</h1>
               <div className="flex gap-1 mt-2">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Star
                     key={star}
-                    className="w-5 h-5 sm:w-6 sm:h-6 fill-yellow-400 text-yellow-400"
+                    className="w-6 h-6 fill-yellow-400 text-yellow-400"
                   />
                 ))}
               </div>
@@ -206,18 +204,20 @@ export const ArtoriaCasterBerserker = () => {
           </div>
 
           {/* Character Details */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+          <div className="grid grid-cols-2 gap-4 text-sm">
             <div>
               <p className="text-gray-400 mb-1">Japanese Name:</p>
-              <p className="text-white">アルトリア・キャスター</p>
+              <p className="text-white">B B</p>
             </div>
-            <div className="col-span-1 sm:col-span-2">
+            <div className="col-span-2">
               <p className="text-gray-400 mb-1">AKA:</p>
-              <p className="text-white">Artoria, Alcas</p>
+              <p className="text-white">
+                BB (SSR), BB (Pele), BB-thotep, Nyarlathotep
+              </p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">ID:</p>
-              <p className="text-white">386</p>
+              <p className="text-white">220</p>
             </div>
 
             <div>
@@ -227,97 +227,82 @@ export const ArtoriaCasterBerserker = () => {
 
             <div>
               <p className="text-gray-400 mb-1">ATK:</p>
-              <p className="text-white">1,875/12,134</p>
+              <p className="text-white">1,728/11,482</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">HP:</p>
-              <p className="text-white">1,862/12,969</p>
+              <p className="text-white">2,172/14,812</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">13,283</p>
+              <p className="text-yellow-400 font-bold">12,240</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">13,909</p>
+              <p className="text-yellow-400 font-bold">16,227</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">15,591</p>
+              <p className="text-yellow-400 font-bold">14,367</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">16,347</p>
+              <p className="text-yellow-400 font-bold">19,071</p>
             </div>
 
             <div>
               <p className="text-gray-400 mb-1">Voice Actor:</p>
-              <p className="text-blue-400">Kawasumi Ayako</p>
+              <p className="text-blue-400">Shitaya Noriko</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Illustrator:</p>
-              <p className="text-blue-400">Takeuchi Takashi</p>
+              <p className="text-blue-400">Wada Arco</p>
             </div>
 
             <div>
               <p className="text-gray-400 mb-1">Attribute:</p>
-              <p className="text-green-400">Star</p>
+              <p className="text-green-400">Earth</p>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Growth Curve:</p>
-              <p className="text-white">Semi S</p>
+              <p className="text-white">S</p>
             </div>
 
-            <div className="flex items-center gap-2 col-span-1">
-              <img
-                src="/Fgo/icons/Critabsup.png"
-                className="w-6 h-6 sm:w-7 sm:h-7"
-              />
+            <div className="flex items-center gap-2">
+              <img src="/Fgo/icons/Critabsup.png" className="w-7 h-7" />
               <span className="text-gray-400">Star Absorption:</span>
-              <span className="text-white">10</span>
+              <span className="text-white">52</span>
             </div>
-            <div className="flex items-center gap-2 col-span-1">
-              <img
-                src="/Fgo/icons/Stargainup.png"
-                className="w-6 h-6 sm:w-7 sm:h-7"
-              />
+            <div className="flex items-center gap-2">
+              <img src="/Fgo/icons/Stargainup.png" className="w-7 h-7" />
               <span className="text-gray-400">Star Generation:</span>
-              <span className="text-white">5%</span>
+              <span className="text-white">14.8%</span>
             </div>
 
-            <div className="flex items-center gap-2 col-span-1">
-              <img
-                src="/Fgo/icons/Npchargeup.png"
-                className="w-6 h-6 sm:w-7 sm:h-7"
-              />
+            <div className="flex items-center gap-2">
+              <img src="/Fgo/icons/Npchargeup.png" className="w-7 h-7" />
               <span className="text-gray-400">NP Charge ATK:</span>
-              <span className="text-white">0.4%</span>
+              <span className="text-white">0.61%</span>
             </div>
-            <div className="flex items-center gap-2 col-span-1">
-              <img
-                src="/Fgo/icons/NPGainUpDmg.png"
-                className="w-6 h-6 sm:w-7 sm:h-7"
-              />
+            <div className="flex items-center gap-2">
+              <img src="/Fgo/icons/NPGainUpDmg.png" className="w-7 h-7" />
               <span className="text-gray-400">NP Charge DEF:</span>
-              <span className="text-white">5%</span>
+              <span className="text-white">3%</span>
             </div>
 
-            <div className="flex items-center gap-2 col-span-1">
-              <img
-                src="/Fgo/icons/Instapowerup.png"
-                className="w-6 h-6 sm:w-7 sm:h-7"
-              />
+            <div className="flex items-center gap-2">
+              <img src="/Fgo/icons/Instapowerup.png" className="w-7 h-7" />
               <span className="text-gray-400">Death Rate:</span>
-              <span className="text-white">39%</span>
+              <span className="text-white">0.5%</span>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Alignments:</p>
-              <p className="text-blue-400">Neutral • Good</p>
+              <p className="text-white">Chaotic • Evil</p>
             </div>
 
-            <div className="col-span-1 sm:col-span-2">
+            <div className="col-span-2">
               <p className="text-gray-400 mb-1">Gender:</p>
               <p className="text-white">Female</p>
             </div>
@@ -334,65 +319,45 @@ export const ArtoriaCasterBerserker = () => {
                 </span>
               ))}
             </div>
-            <div className="mt-1">
-              <span className="ml-2">
-                ┗ Stage 2: <span className="text-blue-400">Bunny Servant</span>
-              </span>
-            </div>
-            <div>
-              <span className="ml-2">
-                ┗ Stage 3:{" "}
-                <span className="text-blue-400">Levitating Servant</span>
-              </span>
-            </div>
           </div>
 
           {/* Command Cards */}
           <div>
             <div className="flex gap-1 mb-2">
               {cardTypes.map((card, index) => (
-                <div key={index} className="w-full h-full">
+                <div key={index}>
                   <img
                     src={card.icon}
                     alt={card.type}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full"
                   />
                 </div>
               ))}
             </div>
-            <div className="flex items-center gap-4 text-sm flex-wrap">
+            <div className="flex items-center gap-4 text-sm">
               <span className="text-gray-400">Hits:</span>
               <div className="flex items-center gap-2">
                 <span className="flex items-center gap-1">
-                  <img
-                    src="/Fgo/icons/Quickicon.png"
-                    className="w-6 h-6 sm:w-7 sm:h-7"
-                  />
-                  <span>5</span>
+                  <img src="/Fgo/icons/Quickicon.png" className="w-7 h-7"></img>
+                  <span>4</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
-                  <img
-                    src="/Fgo/icons/Artsicon.png"
-                    className="w-6 h-6 sm:w-7 sm:h-7"
-                  />
-                  <span>4</span>
+                  <img src="/Fgo/icons/Artsicon.png" className="w-7 h-7"></img>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
                   <img
                     src="/Fgo/icons/Bustericon.png"
-                    className="w-6 h-6 sm:w-7 sm:h-7"
-                  />
-                  <span>4</span>
+                    className="w-7 h-7"
+                  ></img>
+                  <span>5</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
-                  <img
-                    src="/Fgo/icons/Extraicon.png"
-                    className="w-6 h-6 sm:w-7 sm:h-7"
-                  />
-                  <span>5</span>
+                  <img src="/Fgo/icons/Extraicon.png" className="w-7 h-7" />
+                  <span>4</span>
                 </span>
               </div>
             </div>
@@ -400,11 +365,9 @@ export const ArtoriaCasterBerserker = () => {
         </div>
 
         {/* Right Panel - Image and Controls */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-1/2">
           {/* Stage/Costume Controls */}
-
-          {/* Stage/Costume Controls */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-4">
+          <div className="grid grid-cols-3 gap-2 mb-4">
             {stages.map((stage) => (
               <button
                 key={stage.id}
@@ -420,8 +383,21 @@ export const ArtoriaCasterBerserker = () => {
             ))}
           </div>
 
+          {/* Costume Controls */}
+          <div className="grid grid-cols-2 gap-2 mb-4">
+            {costumes.map((costume) => (
+              <button
+                key={costume.id}
+                onClick={() => handleCostumeClick(costume)}
+                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
+              >
+                {costume.label}
+              </button>
+            ))}
+          </div>
+
           {/* Sprite Controls */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
+          <div className="grid grid-cols-3 gap-2 mb-6">
             {sprites.map((sprite) => (
               <button
                 key={sprite.id}
@@ -433,38 +409,47 @@ export const ArtoriaCasterBerserker = () => {
             ))}
           </div>
 
-          {/* Expanded Lightbox */}
-          {isExpanded && (
-            <div
-              className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-              onClick={() => setIsExpanded(false)}
+          {/* Costume Sprite Controls */}
+          <div className="grid grid-cols-2 gap-2 mb-6">
+            <button
+              key={costumesSprite[0].id}
+              onClick={() => {
+                setActiveImage(costumesSprite[0].src);
+                setImageType("costumeSprite");
+              }}
+              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
             >
-              <img
-                src={activeImage}
-                alt="Expanded artwork"
-                className="max-w-full max-h-full object-contain cursor-zoom-out"
-              />
-            </div>
-          )}
+              Costume 1 Sprite
+            </button>
+            <button
+              key={costumesSprite[1].id}
+              onClick={() => {
+                setActiveImage(costumesSprite[1].src);
+                setImageType("costumeSprite");
+              }}
+              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
+            >
+              Costume 2 Sprite
+            </button>
+          </div>
 
           {/* Character Artwork */}
-          <div className="rounded-lg p-4 flex items-end justify-center relative overflow-hidden min-h-[280px] sm:min-h-[320px]">
+          <div className="bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600 rounded-lg p-4 aspect-square flex items-end justify-center relative overflow-hidden">
             {/* Ocean/Beach Background Effect */}
-            <div className="absolute inset-0 opacity-80"></div>
-            <div className="absolute bottom-0 left-0 right-0 h-1/3 to-transparent opacity-60"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-yellow-200 via-blue-300 to-blue-500 opacity-80"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-yellow-300 to-transparent opacity-60"></div>
 
-            {/* Clickable Artwork */}
-            <div className="relative z-10 text-center w-full flex justify-center">
+            {/* Character Placeholder */}
+            <div className="relative z-10 text-center">
               <img
                 src={activeImage}
-                alt="Artoria Pendragon Artwork"
-                className="max-w-full h-auto object-contain rounded-lg shadow-lg max-h-[60vh] sm:max-h-[50vh] md:max-h-[60vh] cursor-zoom-in"
-                onClick={() => setIsExpanded(true)}
+                alt="Cait Cú Cerpriestess Artwork"
+                className="w-fit h-fit object-cover max-w-xs max-h-xs rounded-lg shadow-lg"
               />
             </div>
 
             {/* Decorative Elements */}
-            <div className="hidden sm:block absolute top-4 left-4 text-yellow-200 opacity-60">
+            <div className="absolute top-4 left-4 text-yellow-200 opacity-60">
               {[...Array(5)].map((_, i) => (
                 <div
                   key={i}
@@ -481,11 +466,11 @@ export const ArtoriaCasterBerserker = () => {
 
       {/* Bottom Navigation */}
       <div className="border-t border-gray-700 bg-gray-800">
-        <div className="flex gap-1 p-2 overflow-x-auto">
+        <div className="flex flex-wrap gap-1 p-2">
           {bottomTabs.map((tab, index) => (
             <button
               key={tab}
-              className={`px-3 py-2 rounded text-sm font-medium transition-colors whitespace-nowrap ${
+              className={`px-3 py-2 rounded text-sm font-medium transition-colors ${
                 index === 0
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"

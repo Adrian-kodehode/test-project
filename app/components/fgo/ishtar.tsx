@@ -1,4 +1,4 @@
-// ...existing code...
+
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
@@ -149,11 +149,11 @@ export const Ishtar = () => {
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">5★</span>{" "}
           Ishtar. For <span className="text-yellow-400">4★</span>{" "}
-          <a href="" className="text-blue-400">
+          <a href="/ishtar_rider" className="text-blue-400">
             Ishtar (Rider)
           </a>
           . For <span className="text-yellow-400">5★</span> see{" "}
-          <a href="" className="text-blue-400">
+          <a href="/space_ishtar" className="text-blue-400">
             Space Ishtar
           </a>
           .

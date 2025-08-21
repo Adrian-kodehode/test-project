@@ -1,4 +1,4 @@
-// ...existing code...
+
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 

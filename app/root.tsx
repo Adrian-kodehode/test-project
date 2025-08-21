@@ -159,7 +159,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/koharu_swimsuit" &&
           location.pathname !== "/shiroko" &&
           location.pathname !== "/shiroko_riding" &&
-          location.pathname !== "/fgo" &&
+          location.pathname !== "/bb_summer" &&
           location.pathname !== "/servants" &&
           location.pathname !== "/jeanne_alter" &&
           location.pathname !== "/fate_grand_order" &&
@@ -194,6 +194,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/aesc_the_savior" &&
           location.pathname !== "/morgan" &&
           location.pathname !== "/artoria_caster_berserker" &&
+          location.pathname !== "/jeanne_d'arc_berserker_alter" &&
+          location.pathname !== "/jeanne_d'arc" &&
+          location.pathname !== "/jeanne_d'arc_alter" &&
+          location.pathname !== "/space_ishtar" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -323,7 +327,7 @@ export default function App() {
         location.pathname !== "/koharu_swimsuit" &&
         location.pathname !== "/shiroko" &&
         location.pathname !== "/shiroko_riding" &&
-        location.pathname !== "/fgo" &&
+        location.pathname !== "/bb_summer" &&
         location.pathname !== "/servants" &&
         location.pathname !== "/jeanne_alter" &&
         location.pathname !== "/fate_grand_order" &&
@@ -358,6 +362,10 @@ export default function App() {
         location.pathname !== "/aesc_the_savior" &&
         location.pathname !== "/morgan" &&
         location.pathname !== "/artoria_caster_berserker" &&
+        location.pathname !== "/jeanne_d'arc_berserker_alter" &&
+        location.pathname !== "/jeanne_d'arc" &&
+        location.pathname !== "/jeanne_d'arc_alter" &&
+        location.pathname !== "/space_ishtar" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );
