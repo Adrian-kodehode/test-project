@@ -353,7 +353,7 @@ export const Avenger = () => {
           {character.name}
         </div>
       </div>
-    </a>
+  </a>
   );
 
   return (
