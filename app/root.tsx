@@ -207,6 +207,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/abigail_williams_summer" &&
           location.pathname !== "/katsushika_hokusai" &&
           location.pathname !== "/yang_guifei" &&
+          location.pathname !== "/lady_avalon" &&
+          location.pathname !== "/okita_soji" &&
+          location.pathname !== "/nero_claudius_bride" &&
+          location.pathname !== "/ibuki_doji" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -384,6 +388,10 @@ export default function App() {
         location.pathname !== "/abigail_williams_summer" &&
         location.pathname !== "/katsushika_hokusai" &&
         location.pathname !== "/yang_guifei" &&
+        location.pathname !== "/lady_avalon" &&
+        location.pathname !== "/okita_soji" &&
+        location.pathname !== "/nero_claudius_bride" &&
+        location.pathname !== "/ibuki_doji" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );

@@ -158,7 +158,7 @@ const ClassIcon = ({ name, color = "text-yellow-400" }: ClassIconProps) => {
         );
       case "pretender":
         return (
-          <a href="/cait_cu_cerpriestess">
+          <a href="/pretender">
             <img
               src="Fgo/icons/Class-Pretender-Gold.png"
               alt=""
