@@ -16,7 +16,7 @@ export const FateGrandOrder = () => {
       {
         title:
           "Fate/Grand Order ～10th Anniversary～ Destiny Order Summoning Campaign (Seven Classes)",
-           banner: "Fgo/jp_banner/10thAnniDestinyOrder1.png",
+        banner: "Fgo/jp_banner/10thAnniDestinyOrder1.png",
         type: "current",
       },
       {
@@ -42,7 +42,8 @@ export const FateGrandOrder = () => {
       },
       {
         title: "Grand Duel Extra Pre-Release Campaign",
-        banner: "Fgo/jp_banner/Grand_Duel_Extra_Pre-Release_Campaign_Banner (1).png",
+        banner:
+          "Fgo/jp_banner/Grand_Duel_Extra_Pre-Release_Campaign_Banner (1).png",
         type: "current",
       },
       {
@@ -78,21 +79,18 @@ export const FateGrandOrder = () => {
     // ];
 
     const englishEvents = [
-    {
-        title:
-          "Fate/Hollow Ataraxia Remastered Release Campaign (US)",
+      {
+        title: "Fate/Hollow Ataraxia Remastered Release Campaign (US)",
         banner: "Fgo/en_banner/FHACampaignUS.png",
         type: "current",
       },
-     {
-        title:
-          "Story Clear Support Campaign 2025 Part 2 (US)",
+      {
+        title: "Story Clear Support Campaign 2025 Part 2 (US)",
         banner: "Fgo/en_banner/StoryClearCampaign2025Part2US.png",
         type: "current",
       },
       {
-        title:
-          "Hunting Quests Part XIII (US)",
+        title: "Hunting Quests Part XIII (US)",
         banner: "Fgo/en_banner/HuntingQuestsPart13US.png",
         type: "current",
       },
@@ -107,8 +105,8 @@ export const FateGrandOrder = () => {
 
     const englishServants = [
       {
-          name: "Abigail Williams (Summer)",
-          icon: "Fgo/characters/Abigail_Williams_(Summer)/S289A3Icon.png",
+        name: "Abigail Williams (Summer)",
+        icon: "Fgo/characters/Abigail_Williams_(Summer)/S289A3Icon.png",
       },
       {
         name: "Tomoe Gozen (Saber)",
@@ -138,7 +136,6 @@ export const FateGrandOrder = () => {
         name: "Caenis (Rider)",
         icon: "Fgo/icons/S322A1Icon.png",
       },
-     
     ];
 
     const EventCard = ({
@@ -146,7 +143,7 @@ export const FateGrandOrder = () => {
     }: {
       event: { title: string; banner: string; type: string };
     }) => (
-      <div className=" shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 mb-4">
+      <div className=" shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 mb-4 ">
         <div className="relative">
           <img
             src={event.banner}
@@ -447,8 +444,16 @@ export const FateGrandOrder = () => {
     };
 
     return (
-      <div className="bg-[url('/Fgo/xsYKdkG.jpeg')] bg-center bg-cover min-h-screen">
-        <div className="w-[900px] max-w-6xl mx-auto p-4 bg-gradient-to-b from-slate-800 to-slate-900">
+      <div
+        className="
+          bg-[url('/Fgo/xsYKdkG.jpeg')]
+          bg-fixed
+          bg-center
+          bg-cover
+          min-h-screen
+        "
+      >
+        <div className="w-[900px]  max-w-6xl mx-auto p-4 bg-gradient-to-b from-slate-800 to-slate-900">
           <div className="grid grid-cols-6 gap-3">
             {navItems.map((row, rowIndex) =>
               row.map((item, colIndex) => {
@@ -607,7 +612,7 @@ export const FateGrandOrder = () => {
                           <div className="flex items-center justify-center  py-3  mb-4">
                             <img src="Fgo/icons/Upcoming-Events.png" alt="" />
                           </div>
-                           <div className=" p-8 text-center text-gray-500">
+                          <div className=" p-8 text-center text-gray-500">
                             None currently announced.
                           </div>
                           {/* <div className="space-y-4">
@@ -643,7 +648,7 @@ export const FateGrandOrder = () => {
                         {/* Current Events */}
                         <div>
                           <div className="flex items-center justify-center  py-3  mb-4">
-                             <img
+                            <img
                               src="Fgo/icons/CurrentEventsDivider.png"
                               alt=""
                             />

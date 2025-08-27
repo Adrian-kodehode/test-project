@@ -28,6 +28,7 @@ export const LarvaTiamatArcher = () => {
   const [activeTab, setActiveTab] = useState<SkillKey>("First Skill");
   const [activeStage, setActiveStage] = useState(1);
   const tabs: SkillKey[] = ["First Skill", "Second Skill", "Third Skill"];
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const stages = [
     {
@@ -167,23 +168,23 @@ export const LarvaTiamatArcher = () => {
   // currentSkill selected from skillsData (activeTab is SkillKey)
   const currentSkill = skillsData[activeTab];
 
-  // const sprites = [
-  //   {
-  //     id: 1,
-  //     label: "Sprite 1",
-  //     src: "Fgo/characters/archer/ishtar/S142_Sprite_Ver2_Stage1.png",
-  //   },
-  //   {
-  //     id: 2,
-  //     label: "Sprite 2",
-  //     src: "Fgo/characters/archer/ishtar/S142_Sprite_Ver2_Stage2.png",
-  //   },
-  //   {
-  //     id: 3,
-  //     label: "Sprite 3",
-  //     src: "Fgo/characters/archer/ishtar/S142_Sprite_Ver2_Stage3.png",
-  //   },
-  // ];
+  const sprites = [
+    {
+      id: 1,
+      label: "Sprite 1",
+      src: "Fgo/characters/archer/larva_tiamat/S450_Sprite_Ver1_Stage1.png",
+    },
+    {
+      id: 2,
+      label: "Sprite 2",
+      src: "Fgo/characters/archer/larva_tiamat/S450_Sprite_Ver1_Stage2.png",
+    },
+    {
+      id: 3,
+      label: "Sprite 3",
+      src: "Fgo/characters/archer/larva_tiamat/S450_Sprite_Ver1_Stage3.png",
+    },
+  ];
 
   const [activeImage, setActiveImage] = useState(
     "/Fgo/characters/archer/larva_tiamat/S450_Stage1.png"
@@ -546,7 +547,7 @@ export const LarvaTiamatArcher = () => {
           </div>
 
           {/* Sprite Controls */}
-          {/* <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
             {sprites.map((sprite) => (
               <button
                 key={sprite.id}
@@ -556,7 +557,20 @@ export const LarvaTiamatArcher = () => {
                 {sprite.label}
               </button>
             ))}
-          </div> */}
+          </div>
+
+            {isExpanded && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+              onClick={() => setIsExpanded(false)}
+            >
+              <img
+                src={activeImage}
+                alt="Expanded artwork"
+                className="max-w-full max-h-full object-contain cursor-zoom-out"
+              />
+            </div>
+          )}
 
           {/* Character Artwork */}
           <div className="rounded-lg p-4 flex items-end justify-center relative overflow-hidden min-h-[280px] sm:min-h-[320px]">
@@ -568,6 +582,7 @@ export const LarvaTiamatArcher = () => {
                 src={activeImage}
                 alt="Artoria Pendragon Artwork"
                 className="max-w-full h-auto object-contain rounded-lg shadow-lg max-h-[60vh] sm:max-h-[50vh] md:max-h-[60vh]"
+                 onClick={() => setIsExpanded(true)}
               />
             </div>
 
