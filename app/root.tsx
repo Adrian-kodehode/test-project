@@ -214,6 +214,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/okita_soji_saber_alter" &&
           location.pathname !== "/melusine" &&
           location.pathname !== "/murasaki_shikibu" &&
+          location.pathname !== "/kuonji_alice" &&
+          location.pathname !== "/sei_shonagon_berserker" &&
+          location.pathname !== "/metatron_jeanne" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -398,6 +401,9 @@ export default function App() {
         location.pathname !== "/okita_soji_saber_alter" &&
         location.pathname !== "/melusine" &&
         location.pathname !== "/murasaki_shikibu" &&
+        location.pathname !== "/kuonji_alice" &&
+        location.pathname !== "/sei_shonagon_berserker" &&
+        location.pathname !== "/metatron_jeanne" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );
