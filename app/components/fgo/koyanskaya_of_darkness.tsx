@@ -30,8 +30,6 @@ export const KoyanskayaOfDarkness = () => {
     },
   ];
 
- 
-
   const sprites = [
     {
       id: 1,
@@ -49,8 +47,6 @@ export const KoyanskayaOfDarkness = () => {
       src: "Fgo/characters/foreigner/koyanskaya_of_darknress/S334_Sprite_Ver1_Stage3.png",
     },
   ];
-
- 
 
   const [activeImage, setActiveImage] = useState(
     "/Fgo/characters/foreigner/koyanskaya_of_darknress/S334_Stage1.png"
@@ -95,7 +91,7 @@ export const KoyanskayaOfDarkness = () => {
     { type: "quick, arts, buster", icon: "Fgo/icons/QAABB.png" },
   ];
 
-const traits = [
+  const traits = [
     "Animal Characteristics Servant",
     "Demonic",
     "Demonic Beast Servant",
@@ -106,7 +102,7 @@ const traits = [
     "Servant",
     "Weak to Enuma Elish",
     "Wild Beast",
-];
+  ];
 
   const bottomTabs = [
     "Active Skills",
@@ -154,7 +150,8 @@ const traits = [
             alt=""
             className="inline-block h-8 w-8 ml-1"
           />{" "}
-          Koyanskaya of Darkness. For <span className="text-yellow-400">5★</span>
+          Koyanskaya of Darkness. For{" "}
+          <span className="text-yellow-400">5★</span>
           <img
             src="Fgo/characters/assassin/Class-Assassin-Gold (1).png"
             alt=""
@@ -424,8 +421,6 @@ const traits = [
             ))}
           </div>
 
-       
-
           {/* Sprite Controls */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
             {sprites.map((sprite) => (
@@ -438,7 +433,6 @@ const traits = [
               </button>
             ))}
           </div>
-         
 
           {/* Expanded Lightbox */}
           {isExpanded && (
