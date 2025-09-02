@@ -24,7 +24,7 @@ interface SkillEntry {
   stats: StatRow[];
 }
 
-export const LarvaTiamatArcher = () => {
+export const Beast_III_R = () => {
   const [activeTab, setActiveTab] = useState<SkillKey>("First Skill");
   const [activeStage, setActiveStage] = useState(1);
   const tabs: SkillKey[] = ["First Skill", "Second Skill", "Third Skill"];
@@ -34,22 +34,7 @@ export const LarvaTiamatArcher = () => {
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/archer/larva_tiamat/S450_Stage1.png",
-    },
-    {
-      id: 2,
-      label: "Stage 2",
-      src: "/Fgo/characters/archer/larva_tiamat/S450_Stage2.png",
-    },
-    {
-      id: 3,
-      label: "Stage 3",
-      src: "/Fgo/characters/archer/larva_tiamat/S450_Stage3.png",
-    },
-    {
-      id: 4,
-      label: "Stage 4",
-      src: "/Fgo/characters/archer/larva_tiamat/S450_Stage4.png",
+      src: "/Fgo/characters/beast/beast_iii_r/S168_Stage1.png",
     },
   ];
 
@@ -172,22 +157,12 @@ export const LarvaTiamatArcher = () => {
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/archer/larva_tiamat/S450_Sprite_Ver1_Stage1.png",
-    },
-    {
-      id: 2,
-      label: "Sprite 2",
-      src: "Fgo/characters/archer/larva_tiamat/S450_Sprite_Ver1_Stage2.png",
-    },
-    {
-      id: 3,
-      label: "Sprite 3",
-      src: "Fgo/characters/archer/larva_tiamat/S450_Sprite_Ver1_Stage3.png",
+      src: "Fgo/characters/beast/beast_iii_r/Beast_III-R_Sprite_Ver1.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/archer/larva_tiamat/S450_Stage1.png"
+    "/Fgo/characters/beast/beast_iii_r/S168_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -225,24 +200,11 @@ export const LarvaTiamatArcher = () => {
     setImageType("sprite");
   };
 
-  const cardTypes = [{ type: "quick, arts, buster", icon: "Fgo/QQAAB.png" }];
-
-  const traits = [
-    "Animal Characteristics Servant",
-    "Demonic Beast Servant",
-    "Divinity",
-    "Dragon",
-    "Enuma Elish Nullification",
-    "Goddess Servant",
-    "Humanoid",
-    "Immune to Pigify",
-    "Non-Hominidae Servant",
-    "Obstacle Maker",
-    "Servant",
-    "Seven Knights Servant",
-    "Summer Mode Servant",
-    "Super Large",
+  const cardTypes = [
+    { type: "quick, arts, buster", icon: "Fgo/icons/QAABB.png" },
   ];
+
+  const traits = ["Enuma Elish Nullification", "Humanoid"];
 
   const bottomTabs = [
     "Active Skills",
@@ -262,22 +224,19 @@ export const LarvaTiamatArcher = () => {
       {/* Header Warning */}
       <div className="bg-gray-800 border border-gray-600 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
         <img
-          src="/Fgo/icons/Bryn2.png"
+          src="/Fgo/icons/BBSlotBBQSadist.png"
           alt="Bryn2"
           className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex-none"
         />
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
             <h3 className="text-lg font-bold text-white">
-              This is a Limited Servant{" "}
-              <Star className="inline-block w-5 h-5 fill-blue-400 text-blue-400 mb-1" />
+              This is an Enemy-only Servant{" "}
+              <X className="inline-block w-5 h-5 fill-red-500 text-red-500 mb-1" />
             </h3>
           </div>
           <p className="text-gray-300 text-sm">
-            They are only available during special{" "}
-            <span className="text-blue-400 font-bold">summoning campaigns</span>
-            . When no such campaigns are active, this Servant cannot be
-            summoned.
+            It cannot be obtained as a playable-Servant through any means.
           </p>
         </div>
         <X className="w-5 h-5 text-white cursor-pointer self-start sm:self-auto" />
@@ -286,31 +245,33 @@ export const LarvaTiamatArcher = () => {
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 my-4">
         <p className="text-sm text-white italic text-center sm:text-left">
-          This article is about the <span className="text-yellow-400">5★</span>
-          <img
-            src="Fgo/icons/Class-Archer-Gold (1).png"
-            alt=""
-            className="inline-block h-8 w-8 ml-1 mr-1"
-          />
-          Larva/Tiamat. For <span className="text-yellow-400">5★</span>
-          <img
-            src="Fgo/characters/alter_ego/Class-Alterego-Gold (1).png"
-            alt=""
-            className="inline-block h-8 w-8 ml-1"
-          />
-          , see{" "}
-          <a href="/larva_tiamat" className="text-blue-400">
-            Larva/Tiamat
-          </a>
-          . For the
-          <img
+          This article is about  <img
             src="Fgo/characters/beast/Class-Beast (1).png"
             alt=""
-            className="inline-block h-8 w-8 ml-1"
-          />
-          Beast II, see{" "}
-          <a href="/tiamat" className="text-blue-400">
-            Tiamat
+            className="inline-block h-8 w-8 ml-1 mr-1"
+          /> Beast III Beast III/R Heaven's Hole. For  <img
+            src="Fgo/characters/beast/Class-Beast (1).png"
+            alt=""
+            className="inline-block h-8 w-8 ml-1 mr-1"
+          /> Beast III Demonic Bodhisattva, see{" "}
+          <a href="#" className="text-blue-400">
+            Demonic Bodhisattva (Enemy)
+          </a>
+          . For <span className="text-yellow-400">5★</span>  <img
+            src="Fgo/characters/alter_ego/Class-Alterego-Gold (1).png"
+            alt=""
+            className="inline-block h-8 w-8 ml-1 mr-1"
+          />, see{" "}
+          <a href="/sesshoin_kiara" className="text-blue-400">
+            Sesshōin Kiara
+          </a>
+          . For another  <img
+            src="Fgo/characters/beast/Class-Beast (1).png"
+            alt=""
+            className="inline-block h-8 w-8 ml-1 mr-1"
+          /> Beast III Beast III, see{" "}
+          <a href="/beast_iii_l" className="text-blue-400">
+            Beast III/L
           </a>
           .
         </p>
@@ -324,13 +285,13 @@ export const LarvaTiamatArcher = () => {
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/icons/Class-Archer-Gold (1).png"
+              src="/Fgo/characters/beast/Class-Beast (1).png"
               alt="Archer Icon"
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Larva/Tiamat
+                Beast III/R
               </h1>
               <div className="flex gap-1 mt-2">
                 {[1, 2, 3, 4, 5].map((star: number) => (
@@ -347,12 +308,17 @@ export const LarvaTiamatArcher = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
               <p className="text-white mb-1">Japanese Name:</p>
-              <p className="text-white">ラーヴァ／ティアマト</p>
+              <p className="text-white"> ビーストⅢ／Ｒ; 殺生院キアラ; ヘブンズホール</p>
             </div>
-            <div className="col-span-1 sm:col-span-2"></div>
+            <div className="col-span-1 sm:col-span-2">
+              <p className="text-gray-400 mb-1">AKA:</p>
+              <p className="text-white">
+              Heaven's Hole, Sesshōin Kiara, Demonic Bodhisattva, Pleasure Deva, Rapture
+              </p>
+            </div>
             <div>
               <p className="text-white mb-1">ID:</p>
-              <p className="text-white">450</p>
+              <p className="text-white">168</p>
             </div>
 
             <div>
@@ -362,47 +328,47 @@ export const LarvaTiamatArcher = () => {
 
             <div>
               <p className="text-white mb-1">ATK:</p>
-              <p className="text-white">1,857/12,016</p>
+              <p className="text-white">13,728</p>
             </div>
             <div>
               <p className="text-white mb-1">HP:</p>
-              <p className="text-white">2,027/13,825</p>
+              <p className="text-white">18,720</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">13,153</p>
+              <p className="text-yellow-400 font-bold">15,027</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">15,146</p>
+              <p className="text-yellow-400 font-bold">20,509</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">15,539</p>
+              <p className="text-yellow-400 font-bold">?? / ??</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">17,800</p>
+              <p className="text-yellow-400 font-bold">?? / ??</p>
             </div>
 
             <div>
               <p className="text-blue-400 mb-1">Voice Actor:</p>
-              <p className="text-blue-500">Yūki Aoi</p>
+              <p className="text-blue-500">Tanaka Rie</p>
             </div>
             <div>
               <p className="text-blue-400 mb-1">Illustrator:</p>
-              <p className="text-blue-500">Yamanaka Kotetsu</p>
+              <p className="text-blue-500">Wada Arco</p>
             </div>
 
             <div>
               <p className="text-blue-400 mb-1">Attribute:</p>
-              <p className="text-blue-500">Star</p>
+              <p className="text-blue-500">Beast</p>
             </div>
             <div>
               <p className="text-blue-400 mb-1">Growth Curve:</p>
-              <p className="text-white">Semi Reverse S</p>
+              <p className="text-white">Semi S</p>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -411,7 +377,7 @@ export const LarvaTiamatArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-white">Star Absorption:</span>
-              <span className="text-white">156</span>
+              <span className="text-white">102</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -419,7 +385,7 @@ export const LarvaTiamatArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-white">Star Generation:</span>
-              <span className="text-white">8%</span>
+              <span className="text-white">10%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -428,7 +394,7 @@ export const LarvaTiamatArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-white">NP Charge ATK:</span>
-              <span className="text-white">0.59%</span>
+              <span className="text-white">0.55%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -445,11 +411,11 @@ export const LarvaTiamatArcher = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-white">Death Rate:</span>
-              <span className="text-white">27%</span>
+              <span className="text-white">0%</span>
             </div>
             <div>
               <p className="text-blue-400 mb-1">Alignments:</p>
-              <p className="text-blue-500">Chaotic • Summer</p>
+              <p className="text-blue-500">Chaotic • Evil</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
@@ -469,10 +435,6 @@ export const LarvaTiamatArcher = () => {
                 </span>
               ))}
             </div>
-            <p className="mt-2 ml-2">
-              <strong>┗ Stage 3</strong>:{" "}
-              <span className="text-blue-400"> Levitating Servant</span>
-            </p>
           </div>
 
           {/* Command Cards */}
@@ -496,7 +458,7 @@ export const LarvaTiamatArcher = () => {
                     src="/Fgo/icons/Quickicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>5</span>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -504,7 +466,7 @@ export const LarvaTiamatArcher = () => {
                     src="/Fgo/icons/Artsicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>1</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -512,7 +474,7 @@ export const LarvaTiamatArcher = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>4</span>
+                  <span>2</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -520,7 +482,7 @@ export const LarvaTiamatArcher = () => {
                     src="/Fgo/icons/Extraicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>5</span>
+                  <span>3</span>
                 </span>
               </div>
             </div>
@@ -559,7 +521,7 @@ export const LarvaTiamatArcher = () => {
             ))}
           </div>
 
-            {isExpanded && (
+          {isExpanded && (
             <div
               className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
               onClick={() => setIsExpanded(false)}
@@ -582,7 +544,7 @@ export const LarvaTiamatArcher = () => {
                 src={activeImage}
                 alt="Artoria Pendragon Artwork"
                 className="max-w-full h-auto object-contain rounded-lg shadow-lg max-h-[60vh] sm:max-h-[50vh] md:max-h-[60vh]"
-                 onClick={() => setIsExpanded(true)}
+                onClick={() => setIsExpanded(true)}
               />
             </div>
 

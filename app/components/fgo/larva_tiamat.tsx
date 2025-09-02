@@ -169,7 +169,7 @@ export const LarvaTiamat = () => {
             className="inline-block h-8 w-8 ml-1"
           />{" "}
           Beast II, see{" "}
-          <a href="/larva_tiamat_beast" className="text-blue-400">
+          <a href="/tiamat" className="text-blue-400">
             Tiamat
           </a>
           . For the Arcade-exclusive <span className="text-yellow-400">5★</span>{" "}

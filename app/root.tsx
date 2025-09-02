@@ -223,6 +223,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/okita_j_soji" &&
           location.pathname !== "/koyanskaya_of_light" &&
           location.pathname !== "/koyanskaya_of_darkness" &&
+          location.pathname !== "/tiamat" &&
+          location.pathname !== "/goetia" &&
+          location.pathname !== "/beast_iii_r" &&
+          location.pathname !== "/beast_iii_l" &&
+          location.pathname !== "/sodom's_beast_draco" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -416,6 +421,11 @@ export default function App() {
         location.pathname !== "/okita_j_soji" &&
         location.pathname !== "/koyanskaya_of_light" &&
         location.pathname !== "/koyanskaya_of_darkness" &&
+        location.pathname !== "/tiamat" &&
+        location.pathname !== "/goetia" &&
+        location.pathname !== "/beast_iii_r" &&
+        location.pathname !== "/beast_iii_l" &&
+        location.pathname !== "/sodom's_beast_draco" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );

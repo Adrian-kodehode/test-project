@@ -165,19 +165,19 @@ const ClassIcon = ({ name, color = "text-yellow-400" }: ClassIconProps) => {
       case "beast":
         return (
           <a
-        href="/beast"
-        className="flex items-center justify-center w-full h-full space-x-1"
+            href="/beast"
+            className="flex items-center justify-center w-full h-full space-x-1"
           >
-        <img
-          src="Fgo/icons/Class-Beast.png"
-          alt="Beast"
-          className="w-10 h-10"
-        />
-        <img
-          src="Fgo/icons/Class-Beast-Gold.png"
-          alt="Beast Gold"
-          className="w-10 h-10"
-        />
+            <img
+              src="Fgo/icons/Class-Beast.png"
+              alt="Beast"
+              className="w-10 h-10"
+            />
+            <img
+              src="Fgo/icons/Class-Beast-Gold.png"
+              alt="Beast Gold"
+              className="w-10 h-10"
+            />
           </a>
         );
     }
@@ -298,56 +298,66 @@ export const Beast = () => {
     special?: string[];
   };
 
-  const chunk = <T,>(arr: T[], size: number): T[][] => {
+  function chunk<T>(arr: T[], size: number): T[][] {
     const out: T[][] = [];
     for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
     return out;
-  };
+  }
 
-  const characters: Character[][] = chunk(beastCharacters as Character[], 5);
+  const characters: (Character & { url: string })[][] = chunk(
+    (beastCharacters as Character[]).map((character) => ({
+      ...character,
+      url: `${character.name.toLowerCase().replace(/\s+/g, "_")}`,
+    })),
+    5
+  );
 
-  const CharacterCard: React.FC<{ character: Character }> = ({ character }) => (
-    <div className="relative">
-      <div>
-        {/* Character Image */}
-        <div className="h-full relative overflow-hidden">
-          <img
-            src={character.image}
-            alt={character.name}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 " />
-        </div>
-
-        {/* Stars */}
-        <div className="absolute top-1 left-1 text-yellow-400 text-xs">
-          {character.rarity}
-        </div>
-
-        {/* Lock Icon */}
-        {character.locked && (
-          <div className="absolute top-1 right-1 text-white text-sm">🔒</div>
-        )}
-
-        {/* Special Icons */}
-        {character.special && (
-          <div className="absolute top-6 right-1 flex flex-col gap-1">
-            {character.special.map((icon, idx) => (
-              <span key={idx} className="text-sm">
-                {icon}
-              </span>
-            ))}
+  const CharacterCard: React.FC<{ character: Character & { url: string } }> = ({
+    character,
+  }) => (
+    <a href={character.url} className="block">
+      <div className="relative cursor-pointer">
+        <div>
+          {/* Character Image */}
+          <div className="h-full relative overflow-hidden">
+            <img
+              src={character.image}
+              alt={character.name}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 " />
           </div>
-        )}
 
-        {/* Class Symbol */}
-      </div>
+          {/* Stars */}
+          <div className="absolute top-1 left-1 text-yellow-400 text-xs">
+            {character.rarity}
+          </div>
 
-      {/* Character Name */}
-      <div className="text-center mt-2 text-blue-300 text-sm font-medium">
-        {character.name}
+          {/* Lock Icon */}
+          {character.locked && (
+            <div className="absolute top-1 right-1 text-white text-sm">🔒</div>
+          )}
+
+          {/* Special Icons */}
+          {character.special && (
+            <div className="absolute top-6 right-1 flex flex-col gap-1">
+              {character.special.map((icon, idx) => (
+                <span key={idx} className="text-sm">
+                  {icon}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* Class Symbol */}
+        </div>
+
+        {/* Character Name */}
+        <div className="text-center mt-2 text-blue-300 text-sm font-medium">
+          {character.name}
+        </div>
       </div>
-    </div>
+    </a>
   );
 
   return (
@@ -356,54 +366,53 @@ export const Beast = () => {
       <ServantsHeader />
 
       {/* Header with Class Icons */}
-    <div className="flex items-start mb-6 space-x-6">
+      <div className="flex items-start mb-6 space-x-6">
         {/* Images column */}
         {/* Description column */}
         <div className="flex-grow w-full">
-            <p className="text-gray-300 italic mb-4 leading-relaxed">
-                —{beastData.description}—
-            </p>
+          <p className="text-gray-300 italic mb-4 leading-relaxed">
+            —{beastData.description}—
+          </p>
 
-            <div className="space-y-2">
-                {beastData.stats.map((stat, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-sm">
-                        <span className="text-lg">{stat.icon}</span>
-                        <span className="text-gray-300">{stat.text}</span>
-                    </div>
-                ))}
-            </div>
+          <div className="space-y-2">
+            {beastData.stats.map((stat, idx) => (
+              <div key={idx} className="flex items-center gap-2 text-sm">
+                <span className="text-lg">{stat.icon}</span>
+                <span className="text-gray-300">{stat.text}</span>
+              </div>
+            ))}
+          </div>
 
-            <div className="mt-4 text-sm text-gray-400">
-                {beastData.totalCount}
-                <br />
-                {beastData.totalCount2}
-            </div>
+          <div className="mt-4 text-sm text-gray-400">
+            {beastData.totalCount}
+            <br />
+            {beastData.totalCount2}
+          </div>
         </div>
         <div className="flex flex-col items-center space-y-2">
-            <div className="w-20 h-20 flex items-center justify-center">
-                <img
-                    src="Fgo/characters/beast/Class-Beast (1).png"
-                    alt=""
-                    className="w-full h-full object-cover"
-                />
-            </div>
-            <div className="w-20 h-20 flex items-center justify-center">
-                <img
-                    src="Fgo/characters/beast/Class-Beast-Gold (1).png"
-                    alt=""
-                    className="w-full h-full object-cover"
-                />
-            </div>
-            <div className="w-20 h-20 flex items-center justify-center">
-                <img
-                    src="Fgo/characters/beast/Class-Beast-Grand.png"
-                    alt=""
-                    className="w-full h-full object-cover"
-                />
-            </div>
+          <div className="w-20 h-20 flex items-center justify-center">
+            <img
+              src="Fgo/characters/beast/Class-Beast (1).png"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-20 h-20 flex items-center justify-center">
+            <img
+              src="Fgo/characters/beast/Class-Beast-Gold (1).png"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-20 h-20 flex items-center justify-center">
+            <img
+              src="Fgo/characters/beast/Class-Beast-Grand.png"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
-
-    </div>
+      </div>
 
       {/* Advantage/Disadvantage Section */}
       <div className="bg-gray-800 rounded-lg p-4 mb-6">
