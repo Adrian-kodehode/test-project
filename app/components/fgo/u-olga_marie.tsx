@@ -24,7 +24,7 @@ interface SkillEntry {
   stats: StatRow[];
 }
 
-export const BeastDraco = () => {
+export const UOlgaMarie = () => {
   const [activeTab, setActiveTab] = useState<SkillKey>("First Skill");
   const [activeStage, setActiveStage] = useState(1);
   const tabs: SkillKey[] = ["First Skill", "Second Skill", "Third Skill"];
@@ -34,22 +34,22 @@ export const BeastDraco = () => {
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/beast/draco/S377_Stage1.png",
+      src: "/Fgo/characters/beast/u-olga_marie/S444_Stage1.png",
     },
     {
       id: 2,
       label: "Stage 2",
-      src: "/Fgo/characters/beast/draco/S377_Stage2.png",
+      src: "/Fgo/characters/beast/u-olga_marie/S444_Stage2.png",
     },
     {
       id: 3,
       label: "Stage 3",
-      src: "/Fgo/characters/beast/draco/S377_Stage3.png",
+      src: "/Fgo/characters/beast/u-olga_marie/S444_Stage3.png",
     },
     {
       id: 4,
       label: "Stage 4",
-      src: "/Fgo/characters/beast/draco/S377_Stage4.png",
+      src: "/Fgo/characters/beast/u-olga_marie/S444_Stage4.png",
     },
   ];
 
@@ -172,22 +172,22 @@ export const BeastDraco = () => {
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/beast/draco/S377_Sprite_Ver1_Stage1.png",
+      src: "Fgo/characters/beast/u-olga_marie/S444_Sprite_Ver1_Stage1.png",
     },
     {
       id: 2,
       label: "Sprite 2",
-      src: "Fgo/characters/beast/draco/S377_Sprite_Ver1_Stage2.png",
+      src: "Fgo/characters/beast/u-olga_marie/S444_Sprite_Ver1_Stage2.png",
     },
     {
       id: 3,
       label: "Sprite 3",
-      src: "Fgo/characters/beast/draco/S377_Sprite_Ver1_Stage3.png",
+      src: "Fgo/characters/beast/u-olga_marie/S444_Sprite_Ver1_Stage3.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/beast/draco/S377_Stage1.png"
+    "/Fgo/characters/beast/u-olga_marie/S444_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -225,23 +225,15 @@ export const BeastDraco = () => {
     setImageType("sprite");
   };
 
-  const cardTypes = [{ type: "quick, arts, buster", icon: "Fgo/QABBB.png" }];
+  const cardTypes = [
+    { type: "quick, arts, buster", icon: "Fgo/icons/QAABB.png" },
+  ];
 
   const traits = [
-    "Animal Characteristics Servant",
-    "Demonic Beast Servant",
     "Divinity",
-    "Dragon",
     "Enuma Elish Nullification",
-    "Goddess Servant",
     "Humanoid",
-    "Immune to Pigify",
-    "Non-Hominidae Servant",
-    "Obstacle Maker",
     "Servant",
-    "Seven Knights Servant",
-    "Summer Mode Servant",
-    "Super Large",
   ];
 
   const bottomTabs = [
@@ -292,10 +284,25 @@ export const BeastDraco = () => {
             alt=""
             className="inline-block h-8 w-8 ml-1 mr-1"
           />
-          Sodom's Beast/Draco. For other variations, see{" "}
-          <a href="/sodom's_beast_draco" className="text-blue-400">
-            Nero Claudius (Dissimulation)
+          UnBeast U-Olga Marie. For{" "}
+          <img
+            src="Fgo/characters/beast/Class-Beast (1).png"
+            alt=""
+            className="inline-block h-8 w-8 ml-1 mr-1"
+          />
+          Beast VII, see{" "}
+          <a href="/sodom's_draco" className="text-blue-400">
+            U-Olga Marie (Beast VII)
           </a>
+          . For Chaldea's former director, see{" "}
+          <a href="/sodom's_draco" className="text-blue-400">
+            Olga Marie Animusphere
+          </a>
+          . For Enemy variations, see{" "}
+          <a href="/e-olga_marie" className="text-blue-400">
+            E-Olga Marie
+          </a>
+          .
         </p>
       </div>
 
@@ -313,7 +320,7 @@ export const BeastDraco = () => {
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Sodom's Beast/Draco
+                U-Olga Marie
               </h1>
               <div className="flex gap-1 mt-2">
                 {[1, 2, 3, 4, 5].map((star: number) => (
@@ -335,8 +342,8 @@ export const BeastDraco = () => {
             <div className="col-span-1 sm:col-span-2">
               <p className="text-gray-400 mb-1">AKA:</p>
               <p className="text-white">
-                Beast VI/S, <strong>Draco, Nero Draco</strong> (ネロ・ドラコー),
-                Beast of 666
+                Beast VI/S, <strong>u-olga_marie, Nero u-olga_marie</strong>{" "}
+                (ネロ・ドラコー), Beast of 666
               </p>
             </div>
             <div>
@@ -460,7 +467,16 @@ export const BeastDraco = () => {
             </div>
             <p className="mt-2 ml-2">
               <strong>┗ Stage 1-2</strong>:{" "}
-              <span className="text-blue-400"> Child Servant</span>
+              <span className="text-blue-400">
+                {" "}
+                Giant, Spaceflight-able. Super Large
+              </span>
+            </p>
+            <p className="mt-2 ml-2">
+              <strong>┗ Stage 3</strong>:{" "}
+              <span className="text-blue-400">
+                Defender, Hominidae Servant, Living Human
+              </span>
             </p>
           </div>
 
@@ -501,7 +517,7 @@ export const BeastDraco = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>5</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">

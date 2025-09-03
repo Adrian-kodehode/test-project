@@ -24,7 +24,7 @@ interface SkillEntry {
   stats: StatRow[];
 }
 
-export const BeastDraco = () => {
+export const Gilgamesh = () => {
   const [activeTab, setActiveTab] = useState<SkillKey>("First Skill");
   const [activeStage, setActiveStage] = useState(1);
   const tabs: SkillKey[] = ["First Skill", "Second Skill", "Third Skill"];
@@ -34,22 +34,22 @@ export const BeastDraco = () => {
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/beast/draco/S377_Stage1.png",
+      src: "/Fgo/characters/archer/gilgamesh/S012_Stage1.png",
     },
     {
       id: 2,
       label: "Stage 2",
-      src: "/Fgo/characters/beast/draco/S377_Stage2.png",
+      src: "/Fgo/characters/archer/gilgamesh/S012_Stage2.png",
     },
     {
       id: 3,
       label: "Stage 3",
-      src: "/Fgo/characters/beast/draco/S377_Stage3.png",
+      src: "/Fgo/characters/archer/gilgamesh/S012_Stage3.png",
     },
     {
       id: 4,
       label: "Stage 4",
-      src: "/Fgo/characters/beast/draco/S377_Stage4.png",
+      src: "/Fgo/characters/archer/gilgamesh/S012_Stage4.png",
     },
   ];
 
@@ -172,22 +172,22 @@ export const BeastDraco = () => {
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/beast/draco/S377_Sprite_Ver1_Stage1.png",
+      src: "Fgo/characters/archer/gilgamesh/S012_Sprite_Ver3_Stage1.png",
     },
     {
       id: 2,
       label: "Sprite 2",
-      src: "Fgo/characters/beast/draco/S377_Sprite_Ver1_Stage2.png",
+      src: "Fgo/characters/archer/gilgamesh/S012_Sprite_Ver3_Stage2.png",
     },
     {
       id: 3,
       label: "Sprite 3",
-      src: "Fgo/characters/beast/draco/S377_Sprite_Ver1_Stage3.png",
+      src: "Fgo/characters/archer/gilgamesh/S012_Sprite_Ver3_Stage3.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/beast/draco/S377_Stage1.png"
+    "/Fgo/characters/archer/gilgamesh/S012_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -225,23 +225,19 @@ export const BeastDraco = () => {
     setImageType("sprite");
   };
 
-  const cardTypes = [{ type: "quick, arts, buster", icon: "Fgo/QABBB.png" }];
+  const cardTypes = [
+    { type: "quick, arts, buster", icon: "Fgo/icons/QAABB.png" },
+  ];
 
   const traits = [
-    "Animal Characteristics Servant",
-    "Demonic Beast Servant",
     "Divinity",
-    "Dragon",
-    "Enuma Elish Nullification",
-    "Goddess Servant",
+    "Fate/stay night Servant",
+    "Hominidae Servant",
     "Humanoid",
-    "Immune to Pigify",
-    "Non-Hominidae Servant",
-    "Obstacle Maker",
+    "King",
     "Servant",
     "Seven Knights Servant",
-    "Summer Mode Servant",
-    "Super Large",
+    "Weak to Enuma Elish",
   ];
 
   const bottomTabs = [
@@ -288,14 +284,31 @@ export const BeastDraco = () => {
         <p className="text-sm text-white italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">5★</span>
           <img
-            src="Fgo/characters/beast/Class-Beast-Gold (1).png"
+            src="Fgo/icons/Class-Archer-Gold (1).png"
             alt=""
             className="inline-block h-8 w-8 ml-1 mr-1"
           />
-          Sodom's Beast/Draco. For other variations, see{" "}
-          <a href="/sodom's_beast_draco" className="text-blue-400">
-            Nero Claudius (Dissimulation)
+          Gilgamesh. For <span className="text-yellow-400">3★</span>
+          <img
+            src="Fgo/icons/Class-Archer-Silver.png"
+            alt=""
+            className="inline-block h-8 w-8 ml-1"
+          />
+          , see{" "}
+          <a href="" className="text-blue-400">
+            Kid Gil
           </a>
+          . For <span className="text-yellow-400">4★</span>
+          <img
+            src="Fgo/icons/Class-Archer-Gold (1).png"
+            alt=""
+            className="inline-block h-8 w-8 ml-1"
+          />{" "}
+          see{" "}
+          <a href="/tiamat" className="text-blue-400">
+            Gilgamesh (Caster)
+          </a>
+          .
         </p>
       </div>
 
@@ -307,13 +320,13 @@ export const BeastDraco = () => {
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/characters/beast/Class-Beast-Gold (1).png"
-              alt="beast Icon"
+              src="/Fgo/icons/Class-Archer-Gold (1).png"
+              alt="Archer Icon"
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Sodom's Beast/Draco
+                Gilgamesh
               </h1>
               <div className="flex gap-1 mt-2">
                 {[1, 2, 3, 4, 5].map((star: number) => (
@@ -330,18 +343,18 @@ export const BeastDraco = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
               <p className="text-white mb-1">Japanese Name:</p>
-              <p className="text-white">ソドムズビースト／ドラコー; ドラコー</p>
+              <p className="text-white">ギルガメッシュ</p>
             </div>
             <div className="col-span-1 sm:col-span-2">
+              {" "}
               <p className="text-gray-400 mb-1">AKA:</p>
               <p className="text-white">
-                Beast VI/S, <strong>Draco, Nero Draco</strong> (ネロ・ドラコー),
-                Beast of 666
+                <strong>King of Heroes</strong> (英雄王, Eiyū-ō), A U O
               </p>
             </div>
             <div>
               <p className="text-white mb-1">ID:</p>
-              <p className="text-white">377</p>
+              <p className="text-white">12</p>
             </div>
 
             <div>
@@ -351,47 +364,47 @@ export const BeastDraco = () => {
 
             <div>
               <p className="text-white mb-1">ATK:</p>
-              <p className="text-white">1,964/12,712</p>
+              <p className="text-white">1,897/12,280</p>
             </div>
             <div>
               <p className="text-white mb-1">HP:</p>
-              <p className="text-white">1,930/13,160</p>
+              <p className="text-white">1,920/13,097</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">13,915</p>
+              <p className="text-yellow-400 font-bold">13,442</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">14,417</p>
+              <p className="text-yellow-400 font-bold">14,348</p>
             </div>
 
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">16,334</p>
+              <p className="text-yellow-400 font-bold">15,779</p>
             </div>
             <div>
               <p className="text-yellow-400 text-xs">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">16,944</p>
+              <p className="text-yellow-400 font-bold">16,863</p>
             </div>
 
             <div>
               <p className="text-blue-400 mb-1">Voice Actor:</p>
-              <p className="text-blue-500">Tange Sakura</p>
+              <p className="text-blue-500">Seki Tomokazu</p>
             </div>
             <div>
               <p className="text-blue-400 mb-1">Illustrator:</p>
-              <p className="text-blue-500">Wada Arco</p>
+              <p className="text-blue-500">Takeuchi Takashi</p>
             </div>
 
             <div>
               <p className="text-blue-400 mb-1">Attribute:</p>
-              <p className="text-blue-500">Beast</p>
+              <p className="text-blue-500">Sky</p>
             </div>
             <div>
               <p className="text-blue-400 mb-1">Growth Curve:</p>
-              <p className="text-white">Semi Reverse S</p>
+              <p className="text-white">Reverse S</p>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -400,7 +413,7 @@ export const BeastDraco = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-white">Star Absorption:</span>
-              <span className="text-white">147</span>
+              <span className="text-white">153</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -408,7 +421,7 @@ export const BeastDraco = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-white">Star Generation:</span>
-              <span className="text-white">10.2%</span>
+              <span className="text-white">7.9%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -417,7 +430,7 @@ export const BeastDraco = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-white">NP Charge ATK:</span>
-              <span className="text-white">0.57%</span>
+              <span className="text-white">0.34%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -434,16 +447,16 @@ export const BeastDraco = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-white">Death Rate:</span>
-              <span className="text-white">0.6%</span>
+              <span className="text-white">31.5%</span>
             </div>
             <div>
               <p className="text-blue-400 mb-1">Alignments:</p>
-              <p className="text-blue-500">Chaotic • Evil</p>
+              <p className="text-blue-500">Chaotic • Good</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
               <p className="text-white mb-1">Gender:</p>
-              <p className="text-blue-500">Female</p>
+              <p className="text-blue-500">Male</p>
             </div>
           </div>
 
@@ -458,10 +471,6 @@ export const BeastDraco = () => {
                 </span>
               ))}
             </div>
-            <p className="mt-2 ml-2">
-              <strong>┗ Stage 1-2</strong>:{" "}
-              <span className="text-blue-400"> Child Servant</span>
-            </p>
           </div>
 
           {/* Command Cards */}
@@ -493,7 +502,7 @@ export const BeastDraco = () => {
                     src="/Fgo/icons/Artsicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>4</span>
+                  <span>5</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -501,7 +510,7 @@ export const BeastDraco = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>5</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -509,7 +518,7 @@ export const BeastDraco = () => {
                     src="/Fgo/icons/Extraicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>5</span>
+                  <span>8</span>
                 </span>
               </div>
             </div>

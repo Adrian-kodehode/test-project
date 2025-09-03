@@ -227,7 +227,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/goetia" &&
           location.pathname !== "/beast_iii_r" &&
           location.pathname !== "/beast_iii_l" &&
-          location.pathname !== "/sodom's_beast_draco" &&
+          location.pathname !== "/u-olga_marie" &&
+          location.pathname !== "/e-olga_marie" &&
+          location.pathname !== "/flare_marie" &&
+          location.pathname !== "/aqua_marie" &&
+          location.pathname !== "/grand_marie" &&
+          location.pathname !== "/stellar_marie" &&
+          location.pathname !== "/gilgamesh" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -426,6 +432,13 @@ export default function App() {
         location.pathname !== "/beast_iii_r" &&
         location.pathname !== "/beast_iii_l" &&
         location.pathname !== "/sodom's_beast_draco" &&
+        location.pathname !== "/u-olga_marie" &&
+        location.pathname !== "/e-olga_marie" &&
+        location.pathname !== "/aqua_marie" &&
+        location.pathname !== "/grand_marie" &&
+        location.pathname !== "/flare_marie" &&
+        location.pathname !== "/stellar_marie" &&
+        location.pathname !== "/gilgamesh" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );
