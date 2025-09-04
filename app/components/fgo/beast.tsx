@@ -361,7 +361,7 @@ export const Beast = () => {
   );
 
   return (
-    <div className="bg-gray-900 text-white p-6 min-h-screen">
+    <div className="bg-gray-950 text-white p-6 min-h-screen">
       {/* Class selection header (inserted above Saber content) */}
       <ServantsHeader />
 
@@ -407,6 +407,13 @@ export const Beast = () => {
           <div className="w-20 h-20 flex items-center justify-center">
             <img
               src="Fgo/characters/beast/Class-Beast-Grand.png"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-20 h-20 flex items-center justify-center">
+            <img
+              src="Fgo/characters/beast/Class-Beast-GrandRainbow.png"
               alt=""
               className="w-full h-full object-cover"
             />

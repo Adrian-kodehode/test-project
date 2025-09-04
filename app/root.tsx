@@ -234,6 +234,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/grand_marie" &&
           location.pathname !== "/stellar_marie" &&
           location.pathname !== "/gilgamesh" &&
+          location.pathname !== "/senji_muramasa" &&
+          location.pathname !== "/katsushika_hokusai_saber" &&
+          location.pathname !== "/okita_soji_alter" &&
+          location.pathname !== "/nine-tattoo_dragon_eliza" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -439,6 +443,10 @@ export default function App() {
         location.pathname !== "/flare_marie" &&
         location.pathname !== "/stellar_marie" &&
         location.pathname !== "/gilgamesh" &&
+        location.pathname !== "/senji_muramasa" &&
+        location.pathname !== "/katsushika_hokusai_saber" &&
+        location.pathname !== "/okita_soji_alter" &&
+        location.pathname !== "/nine-tattoo_dragon_eliza" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );
