@@ -166,7 +166,7 @@ export const ArtoriaPendragon = () => {
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">5★</span>{" "}
           Artoria Pendragon. For the other variations, see{" "}
-          <a href="" className="text-blue-400">
+          <a href="/artoria_disambiguation" className="text-blue-400">
             Artoria (Disambiguation)
           </a>
           .

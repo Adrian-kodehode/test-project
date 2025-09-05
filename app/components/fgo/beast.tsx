@@ -361,7 +361,7 @@ export const Beast = () => {
   );
 
   return (
-    <div className="bg-gray-950 text-white p-6 min-h-screen">
+    <div className="bg-gray-900 text-white p-6 min-h-screen">
       {/* Class selection header (inserted above Saber content) */}
       <ServantsHeader />
 

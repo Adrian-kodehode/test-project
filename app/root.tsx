@@ -238,6 +238,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/katsushika_hokusai_saber" &&
           location.pathname !== "/okita_soji_alter" &&
           location.pathname !== "/nine-tattoo_dragon_eliza" &&
+          location.pathname !== "/sodom's_beast_draco" &&
+          location.pathname !== "/u-olga_marie_beast_vii" &&
+          location.pathname !== "/space_ereshkigal" &&
+          location.pathname !== "/kama_avenger" &&
+          location.pathname !== "/artoria_disambiguation" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -447,6 +452,10 @@ export default function App() {
         location.pathname !== "/katsushika_hokusai_saber" &&
         location.pathname !== "/okita_soji_alter" &&
         location.pathname !== "/nine-tattoo_dragon_eliza" &&
+        location.pathname !== "/u-olga_marie_beast_vii" &&
+        location.pathname !== "/space_ereshkigal" &&
+        location.pathname !== "/kama_avenger" &&
+        location.pathname !== "/artoria_disambiguation" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );

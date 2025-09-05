@@ -46,7 +46,7 @@ const EOlgaMarie = () => {
       },
       {
         rarity: "5★",
-        href: "",
+        href: "u-olga_marie_beast_vii",
         icon: "Fgo/characters/beast/e-olga_marie/U-OlgaMarieIcon.png",
         link: "U-Olga Marie (Beast VII)",
         description: "The original form of the E-Olga Marie(s).",
