@@ -107,27 +107,24 @@ export const GrandMarie = () => {
     <div className="bg-gray-900 text-white min-h-screen font-sans px-4 sm:px-6 lg:px-8">
       {/* Header Warning */}
       <div className="bg-gray-800 border border-gray-600 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-        <img
-          src="/Fgo/icons/Bryn2.png"
-          alt="Bryn2"
-          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex-none"
-        />
-        <div className="flex-1">
-          <div className="flex items-center gap-2 mb-2">
-            <h3 className="text-lg font-bold text-white">
-              This is a Limited Servant{" "}
-              <Star className="inline-block w-5 h-5 fill-blue-400 text-blue-400 mb-1" />
-            </h3>
-          </div>
-          <p className="text-gray-300 text-sm">
-            They are only available during special{" "}
-            <span className="text-blue-400 font-bold">summoning campaigns</span>
-            . When no such campaigns are active, this Servant cannot be
-            summoned.
-          </p>
-        </div>
-        <X className="w-5 h-5 text-white cursor-pointer self-start sm:self-auto" />
-      </div>
+             <img
+               src="/Fgo/icons/BBSlotBBQSadist.png"
+               alt="Bryn2"
+               className="w-24 h-28 rounded-lg flex-none"
+             />
+             <div className="flex-1">
+               <div className="flex items-center gap-2 mb-2">
+                 <h3 className="text-lg font-bold text-white">
+                   This is an Enemy-only Servant{" "}
+                   <X className="inline-block w-5 h-5 fill-red-500 text-red-500 mb-1" />
+                 </h3>
+               </div>
+               <p className="text-gray-300 text-sm">
+                 It cannot be obtained as a playable-Servant through any means.
+               </p>
+             </div>
+             <X className="w-5 h-5 text-white cursor-pointer self-start sm:self-auto" />
+           </div>
 
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 my-4">

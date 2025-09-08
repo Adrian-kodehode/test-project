@@ -150,7 +150,7 @@ export const NeroClaudiusBride = () => {
             className="inline-block h-8 w-8 ml-1"
           />{" "}
           Nero Claudius (Bride). For other variations, see{" "}
-          <a href="/nero_claudius" className="text-blue-400">
+          <a href="/nero_claudius_disambiguation" className="text-blue-400">
             Nero Claudius (Disambiguation)
           </a>
           .

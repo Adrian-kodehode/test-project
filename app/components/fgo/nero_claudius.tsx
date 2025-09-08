@@ -182,7 +182,7 @@ export const NeroClaudius = () => {
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">4★</span>{" "}
           Nero Claudius. For the other variations, see{" "}
-          <a href="" className="text-blue-400">
+          <a href="nero_claudius_disambiguation" className="text-blue-400">
             Nero Claudius (Disambiguation)
           </a>
           .

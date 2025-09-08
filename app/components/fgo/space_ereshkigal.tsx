@@ -510,7 +510,7 @@ const traits = [
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>4</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
