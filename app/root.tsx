@@ -246,6 +246,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/jeanne_disambiguation" &&
           location.pathname !== "/nero_claudius_disambiguation" &&
           location.pathname !== "/beast_vi_s_arcade" &&
+          location.pathname !== "/elizabeth_disambiguation" &&
+          location.pathname !== "/elizabeth_bathory" &&
+          location.pathname !== "/elizabeth_bathory_halloween" &&
+          location.pathname !== "/elizabeth_bathory_brave" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -462,6 +466,10 @@ export default function App() {
         location.pathname !== "/jeanne_disambiguation" &&
         location.pathname !== "/nero_claudius_disambiguation" &&
         location.pathname !== "/beast_vi_s_arcade" &&
+        location.pathname !== "/elizabeth_disambiguation" &&
+        location.pathname !== "/elizabeth_bathory" &&
+        location.pathname !== "/elizabeth_bathory_halloween" &&
+        location.pathname !== "/elizabeth_bathory_brave" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );
