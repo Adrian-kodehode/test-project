@@ -145,7 +145,7 @@ export const JeanneDArcArcher = () => {
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">5★</span>{" "}
           Jeanne d'Arc.{" "} For other variations, see{" "}
-          <a href="" className="text-blue-400">
+          <a href="jeanne_disambiguation" className="text-blue-400">
             Jeanne (disambiguation)
           </a>
           .

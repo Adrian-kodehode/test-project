@@ -179,7 +179,7 @@ export const KoyanskayaOfLight = () => {
             Koyanskaya of Darkness
           </a>
           . For Tamamo variations, see{" "}
-          <a href="" className="text-blue-400">
+          <a href="/tamamo_disambiguation" className="text-blue-400">
             Tamamo (Disambiguation)
           </a>
           .

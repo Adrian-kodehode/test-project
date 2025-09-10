@@ -1,35 +1,54 @@
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
-export const UOlgaMarieBeastVII = () => {
+export const TamamoNoMaeLancer = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
-  const [isExpanded, setIsExpanded] = useState(false);
 
   const tabs = ["Servant", "Dialogue", "Quest", "Gallery"];
   const stages = [
     {
       id: 1,
-      label: "Portrait",
-      src: "/Fgo/characters/beast/U-Olga Marie (Beast VII)/U-Olga_Marie_Portrait.png",
+      label: "Stage 1",
+      src: "/Fgo/characters/lancer/tamamo_no_mae/S128_Stage1.png",
+    },
+    {
+      id: 2,
+      label: "Stage 2",
+      src: "/Fgo/characters/lancer/tamamo_no_mae/S128_Stage2.png",
+    },
+    {
+      id: 3,
+      label: "Stage 3",
+      src: "/Fgo/characters/lancer/tamamo_no_mae/S128_Stage3.png",
+    },
+    {
+      id: 4,
+      label: "Stage 4",
+      src: "/Fgo/characters/lancer/tamamo_no_mae/S128_Stage4.png",
     },
   ];
 
   const sprites = [
     {
       id: 1,
-      label: "Enemy Sprite",
-      src: "Fgo/characters/beast/U-Olga Marie (Beast VII)/U-OlgaMarie_Sprite_Enemy_Ver1.png",
+      label: "Sprite 1",
+      src: "Fgo/characters/lancer/tamamo_no_mae/S128_Sprite_Ver1_Stage1.png",
     },
     {
       id: 2,
-      label: "Playable Sprite",
-      src: "Fgo/characters/beast/U-Olga Marie (Beast VII)/U-OlgaMarie_Sprite_Playable_Ver1.png",
+      label: "Sprite 2",
+      src: "Fgo/characters/lancer/tamamo_no_mae/S128_Sprite_Ver1_Stage2.png",
+    },
+    {
+      id: 3,
+      label: "Sprite 3",
+      src: "Fgo/characters/lancer/tamamo_no_mae/S128_Sprite_Ver1_Stage3.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/beast/U-Olga Marie (Beast VII)/U-Olga_Marie_Portrait.png"
+    "/Fgo/characters/lancer/tamamo_no_mae/S128_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -68,14 +87,22 @@ export const UOlgaMarieBeastVII = () => {
   };
 
   const cardTypes = [
-    { type: "quick, arts, buster", icon: "Fgo/icons/QAAAB.png" },
+    { type: "quick, arts, buster", icon: "Fgo/icons/QQABB.png" },
   ];
 
   const traits = [
-    "Enuma Elish Nullification",
+    "Animal Characteristics Servant",
+    "Demonic Beast Servant",
+    "Divine Spirit",
+    "Divinity",
+    "Goddess Servant",
     "Humanoid",
-    "Levitating Servant",
+    "Non-Hominidae Servant",
+    "Riding",
     "Servant",
+    "Seven Knights Servant",
+    "Summer Mode Servant",
+    "Weak to Enuma Elish",
   ];
 
   const bottomTabs = [
@@ -96,51 +123,39 @@ export const UOlgaMarieBeastVII = () => {
       {/* Header Warning */}
       <div className="bg-gray-800 border border-gray-600 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
         <img
-          src="/Fgo/characters/beast/U-Olga Marie (Beast VII)/RiyoMeuniere.png"
+          src="/Fgo/icons/Bryn2.png"
           alt="BB"
           className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex-none"
         />
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
             <h3 className="text-lg font-bold text-white">
-              This is an NPC-only Servant{" "}
-              <X className="inline-block w-5 h-5 fill-red-500 text-red-500 mb-1" />
+              This is a Limited Servant{" "}
+              <Star className="inline-block w-5 h-5 fill-blue-400 text-blue-400 mb-1" />
             </h3>
           </div>
-          <p className="text-white-300 text-sm">
-            It cannot be obtained as a playable-Servant through any means.
+          <p className="text-gray-300 text-sm">
+            They are only available during special{" "}
+            <span className="text-blue-400 font-bold">summoning campaigns</span>
+            . When no such campaigns are active, this Servant cannot be
+            summoned.
           </p>
         </div>
-        <X className="w-5 h-5 text-white-400 cursor-pointer self-start sm:self-auto" />
+        <X className="w-5 h-5 text-gray-400 cursor-pointer self-start sm:self-auto" />
       </div>
 
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 my-4">
-        <p className="text-sm text-white italic text-center sm:text-left">
+        <p className="text-sm text-gray-400 italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">5★</span>
           <img
-            src="Fgo/characters/beast/Class-Beast (1).png"
+            src="Fgo/characters/lancer/Class-Lancer-Gold (1).png"
             alt=""
-            className="inline-block h-8 w-8 ml-1 mr-1"
-          />
-          Beast VII U-Olga Marie. For the playable{" "}
-          <span className="text-yellow-400">5★</span>{" "}
-          <img
-            src="Fgo/characters/beast/Class-Beast-Gold (1).png"
-            alt=""
-            className="inline-block h-8 w-8 ml-1 mr-1"
-          />
-          UnBeast, see{" "}
-          <a href="/u-olga_marie" className="text-blue-400">
-            U-Olga Marie
-          </a>
-          . For Chaldea's former director, see{" "}
-          <a href="/" className="text-blue-400">
-            Olga Marie Animusphere
-          </a>
-          . For Enemy variations, see{" "}
-          <a href="/e-olga_marie" className="text-blue-400">
-            E-Olga Marie
+            className="inline-block h-8 w-8 ml-1"
+          />{" "}
+          Tamamo no Mae. For other variations, see{" "}
+          <a href="tamamo_disambiguation" className="text-blue-400">
+            Tamamo (disambiguation)
           </a>
           .
         </p>
@@ -156,7 +171,7 @@ export const UOlgaMarieBeastVII = () => {
               className={`flex-shrink-0 min-w-[110px] sm:flex-1 px-4 py-3 font-medium ${
                 activeTab === tab.toLowerCase()
                   ? "bg-blue-600 text-white border-b-2 border-blue-400"
-                  : "bg-gray-800 text-white-300 hover:bg-gray-700"
+                  : "bg-gray-800 text-gray-300 hover:bg-gray-700"
               }`}
             >
               {tab}
@@ -171,18 +186,13 @@ export const UOlgaMarieBeastVII = () => {
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/characters/beast/U-Olga Marie (Beast VII)/Class-Unknown-Rainbow.png"
-              alt="Archer Icon"
-              className="w-12 h-12 sm:w-16 sm:h-16"
-            />
-            <img
-              src="/Fgo/characters/beast/Class-Beast-GrandRainbow.png"
-              alt="Archer Icon"
+              src="/Fgo/characters/lancer/Class-Lancer-Gold (1).png"
+              alt="lancer Icon"
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                U-Olga Marie
+                Tamamo no Mae
               </h1>
               <div className="flex gap-1 mt-2">
                 {[1, 2, 3, 4, 5].map((star) => (
@@ -198,108 +208,68 @@ export const UOlgaMarieBeastVII = () => {
           {/* Character Details */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
-              <p className="text-white-400 mb-1">Japanese Name:</p>
-              <p className="text-white">Ｕ－オルガマリー</p>
+              <p className="text-gray-400 mb-1">Japanese Name:</p>
+              <p className="text-white">玉藻の前; タマモちゃんサマー</p>
             </div>
             <div className="col-span-1 sm:col-span-2">
-              <p className="text-white-400 mb-1">AKA:</p>
+              <p className="text-gray-400 mb-1">AKA:</p>
               <p className="text-white">
-                Ultra-Olga Marie, <strong>Beast VII, Alien God</strong>{" "}
-                (異星の神?), Foreign God, The Seventh Apostle of the Alien
-                World, <strong>U-Planet Olga Marie</strong>
-                (Ｕ－プラネット・オルガマリー)
+                Tamamo-chan Summer, Tamamo Shark, Tamamo-no-Mae (Lancer)
               </p>
             </div>
             <div>
-              <p className="text-white-400 mb-1 font-bold">ID:</p>
-              <p className="text-white font-bold">??</p>
+              <p className="text-gray-400 mb-1">ID:</p>
+              <p className="text-white">128</p>
             </div>
 
             <div>
-              <p className="text-white-400 mb-1 font-bold">Cost:</p>
-              <p className="text-blue-400 font-bold ">0</p>
+              <p className="text-gray-400 mb-1">Cost:</p>
+              <p className="text-blue-400 font-bold">16</p>
             </div>
 
             <div>
-              <p className="text-white-400 mb-1 font-bold">ATK:</p>
-              <p className="text-white font-bold">2,101/13,596</p>
+              <p className="text-gray-400 mb-1">ATK:</p>
+              <p className="text-white">1,657/10,726</p>
             </div>
             <div>
-              <p className="text-white-400 mb-1 font-bold">HP:</p>
-              <p className="text-white font-bold">2,745/18,720</p>
-            </div>
-
-            <div>
-              <p className="text-yellow-400  font-bold">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">14,883</p>
-            </div>
-            <div>
-              <p className="text-yellow-400  font-bold">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">20,509</p>
+              <p className="text-gray-400 mb-1">HP:</p>
+              <p className="text-white">2,221/15,147</p>
             </div>
 
             <div>
-              <p className="text-yellow-400  font-bold">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">17,469</p>
+              <p className="text-yellow-400 text-xs">Lv.100 Grail ATK:</p>
+              <p className="text-yellow-400 font-bold">11,741</p>
             </div>
             <div>
-              <p className="text-yellow-400  font-bold">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">24,103</p>
-            </div>
-
-            <style>{`
-              @keyframes rainbow {
-              0% { background-position: 0% 50%; }
-              100% { background-position: 200% 50%; } /* move forward only */
-              }
-              .rainbow-text {
-              background: linear-gradient(90deg, #ff004c, #ff7b00, #ffd500, #00c853, #0091ea, #6a1b9a, #ff004c, #ff7b00, #ffd500, #00c853, #0091ea, #6a1b9a, #ff004c);
-              background-size: 200% 100%;
-              -webkit-background-clip: text;
-              background-clip: text;
-              color: transparent;
-              -webkit-text-fill-color: transparent;
-              animation: rainbow 5s linear infinite;
-              animation-direction: normal;
-              }
-            `}</style>
-
-            <div>
-              <p className="text-yellow-400 rainbow-text font-bold">
-                Lv.150 Grail ATK:
-              </p>
-              <p className="rainbow-text font-bold">21,343</p>
-            </div>
-            <div>
-              <p className="text-yellow-400 rainbow-text font-bold">
-                Lv.150 Grail HP:
-              </p>
-              <p className="rainbow-text font-bold">29,487</p>
+              <p className="text-yellow-400 text-xs">Lv.100 Grail HP:</p>
+              <p className="text-yellow-400 font-bold">16,594</p>
             </div>
 
             <div>
-              <p className="text-blue-400 mb-1 font-bold">Voice Actor:</p>
-              <p className="text-blue-400">Yonezawa Madoka</p>
+              <p className="text-yellow-400 text-xs">Lv.120 Grail ATK:</p>
+              <p className="text-yellow-400 font-bold">13,782</p>
             </div>
             <div>
-              <p className="text-blue-400 mb-1 font-bold">Illustrator:</p>
-              <p className="text-blue-400">Takeuchi Takashi</p>
+              <p className="text-yellow-400 text-xs">Lv.120 Grail HP:</p>
+              <p className="text-yellow-400 font-bold">19,503</p>
             </div>
 
             <div>
-              <span className="text-blue-400 mb-1 font-bold">
-                Attribute:{" "}
-                <span className="text-blue-400 font-normal">Beast</span>
-              </span>
-              <br />
-              <span>
-                ┗ <span className="text-blue-400">Star </span>(
-                <span className="text-blue-400">Grand Duel: Extra</span>)
-              </span>
+              <p className="text-gray-400 mb-1">Voice Actor:</p>
+              <p className="text-blue-400">Saitō Chiwa</p>
             </div>
             <div>
-              <p className="text-blue-400 mb-1 font-bold">Growth Curve:</p>
-              <p className="text-white">Semi S</p>
+              <p className="text-gray-400 mb-1">Illustrator:</p>
+              <p className="text-blue-400">Wada Arco</p>
+            </div>
+
+            <div>
+              <p className="text-gray-400 mb-1">Attribute:</p>
+              <p className="text-green-400">Sky</p>
+            </div>
+            <div>
+              <p className="text-gray-400 mb-1">Growth Curve:</p>
+              <p className="text-white">Linear</p>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -307,16 +277,16 @@ export const UOlgaMarieBeastVII = () => {
                 src="/Fgo/icons/Critabsup.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-blue-400">Star Absorption:</span>
-              <span className="text-white">95</span>
+              <span className="text-gray-400">Star Absorption:</span>
+              <span className="text-white">91</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
                 src="/Fgo/icons/Stargainup.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-blue-400">Star Generation:</span>
-              <span className="text-white">9.9%</span>
+              <span className="text-gray-400">Star Generation:</span>
+              <span className="text-white">12.2%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -324,16 +294,16 @@ export const UOlgaMarieBeastVII = () => {
                 src="/Fgo/icons/Npchargeup.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-blue-400">NP Charge ATK:</span>
-              <span className="text-white">0.33%</span>
+              <span className="text-gray-400">NP Charge ATK:</span>
+              <span className="text-white">1.05%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
                 src="/Fgo/icons/NPGainUpDmg.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-blue-400">NP Charge DEF:</span>
-              <span className="text-white">3%</span>
+              <span className="text-gray-400">NP Charge DEF:</span>
+              <span className="text-white">4%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -341,28 +311,23 @@ export const UOlgaMarieBeastVII = () => {
                 src="/Fgo/icons/Instapowerup.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-blue-400">Death Rate:</span>
-              <span className="text-white">11%</span>
+              <span className="text-gray-400">Death Rate:</span>
+              <span className="text-white">40%</span>
             </div>
             <div>
-              <p className="text-blue-400 mb-1">Alignments:</p>
-              <p className="text-white">Lawful • Good</p>
-              <span>
-                ┗ <span className="text-blue-400">Lawful • Evil </span>(
-                <span className="text-blue-400">Grand Duel: Extra</span>)
-              </span>
+              <p className="text-gray-400 mb-1">Alignments:</p>
+              <p className="text-white">Neutral • Summer</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
-              <span className="text-white mb-1">
-                Gender: <span className="text-blue-400">Female</span>
-              </span>
+              <p className="text-gray-400 mb-1">Gender:</p>
+              <p className="text-white">Female</p>
             </div>
           </div>
 
           {/* Traits */}
           <div>
-            <p className="text-white-400 mb-2">Basic Traits:</p>
+            <p className="text-gray-400 mb-2">Basic Traits:</p>
             <div className="flex flex-wrap gap-1">
               {traits.map((trait, index) => (
                 <span key={index} className="text-blue-400 text-sm">
@@ -371,16 +336,6 @@ export const UOlgaMarieBeastVII = () => {
                 </span>
               ))}
             </div>
-            <span>
-              ┗{" "}
-              <span className="text-blue-400 font-bold">Grand Duel Extra</span>:
-              <span className="text-blue-400">
-                {" "}
-                Divinity<span className="text-white">,</span> Giant
-                <span className="text-white">,</span> Immune to Pigify
-                <span className="text-white">,</span> Super Large
-              </span>
-            </span>
           </div>
 
           {/* Command Cards */}
@@ -397,7 +352,7 @@ export const UOlgaMarieBeastVII = () => {
               ))}
             </div>
             <div className="flex items-center gap-4 text-sm flex-wrap">
-              <span className="text-white-400">Hits:</span>
+              <span className="text-gray-400">Hits:</span>
               <div className="flex items-center gap-2">
                 <span className="flex items-center gap-1">
                   <img
@@ -412,7 +367,7 @@ export const UOlgaMarieBeastVII = () => {
                     src="/Fgo/icons/Artsicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>2</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -420,7 +375,7 @@ export const UOlgaMarieBeastVII = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3 AoE</span>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -428,7 +383,7 @@ export const UOlgaMarieBeastVII = () => {
                     src="/Fgo/icons/Extraicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>5 AoE</span>
+                  <span>4</span>
                 </span>
               </div>
             </div>
@@ -446,7 +401,7 @@ export const UOlgaMarieBeastVII = () => {
                 className={`px-3 py-2 rounded text-sm font-medium ${
                   activeStage === stage.id
                     ? "bg-blue-600 text-white"
-                    : "bg-gray-700 text-white-300 hover:bg-gray-600"
+                    : "bg-gray-700 text-gray-300 hover:bg-gray-600"
                 }`}
               >
                 {stage.label}
@@ -460,26 +415,12 @@ export const UOlgaMarieBeastVII = () => {
               <button
                 key={sprite.id}
                 onClick={() => handleSpriteClick(sprite)}
-                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-white-300 hover:bg-gray-600"
+                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
               >
                 {sprite.label}
               </button>
             ))}
           </div>
-
-          {/* Expanded Lightbox */}
-          {isExpanded && (
-            <div
-              className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-              onClick={() => setIsExpanded(false)}
-            >
-              <img
-                src={activeImage}
-                alt="Expanded artwork"
-                className="max-w-full max-h-full object-contain cursor-zoom-out"
-              />
-            </div>
-          )}
 
           {/* Character Artwork */}
           <div className="rounded-lg p-4 flex items-end justify-center relative overflow-hidden min-h-[280px] sm:min-h-[320px]">
@@ -493,7 +434,6 @@ export const UOlgaMarieBeastVII = () => {
                 src={activeImage}
                 alt="Artoria Pendragon Artwork"
                 className="max-w-full h-auto object-contain rounded-lg shadow-lg max-h-[60vh] sm:max-h-[50vh] md:max-h-[60vh]"
-                onClick={() => setIsExpanded(true)}
               />
             </div>
 
@@ -522,7 +462,7 @@ export const UOlgaMarieBeastVII = () => {
               className={`px-3 py-2 rounded text-sm font-medium transition-colors whitespace-nowrap ${
                 index === 0
                   ? "bg-blue-600 text-white"
-                  : "bg-gray-700 text-white-300 hover:bg-gray-600"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
               }`}
             >
               {tab}

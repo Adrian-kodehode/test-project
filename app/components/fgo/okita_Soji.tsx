@@ -165,7 +165,7 @@ export const OkitaSouji = () => {
             className="inline-block h-8 w-8 ml-1"
           />{" "}
           Okita Sōji. For other variations, see{" "}
-          <a href="/okita_soji" className="text-blue-400">
+          <a href="/okita_soji_disambiguation" className="text-blue-400">
             Okita Sōji (Disambiguation)
           </a>.
         </p>
