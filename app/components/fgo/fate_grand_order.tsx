@@ -80,18 +80,24 @@ export const FateGrandOrder = () => {
 
     const englishEvents = [
       {
-        title: "Fate/Hollow Ataraxia Remastered Release Campaign (US)",
-        banner: "Fgo/en_banner/FHACampaignUS.png",
+        title: "3000 Days Anniversary (US)",
+        banner: "Fgo/DaysAnniversaryUS/3000DaysAnniversaryUS.png",
+        href: "/DaysAnniversaryUS",
         type: "current",
       },
       {
-        title: "Story Clear Support Campaign 2025 Part 2 (US)",
-        banner: "Fgo/en_banner/StoryClearCampaign2025Part2US.png",
+        title: "The Great Spirit's World Tour (US)",
+        banner: "Fgo/DaysAnniversaryUS/WandjinaEventBannerUS.png",
         type: "current",
       },
       {
-        title: "Hunting Quests Part XIII (US)",
-        banner: "Fgo/en_banner/HuntingQuestsPart13US.png",
+        title: "Back to School Campaign 2025 (US)",
+        banner: "Fgo/DaysAnniversaryUS/Back2School2025US.png",
+        type: "current",
+      },
+      {
+        title: "Ordeal Call New Duties Unlocked: Part 2 (US)",
+        banner: "Fgo/DaysAnniversaryUS/OrdealCallNewDutiesUnlockedPart2US.png",
         type: "current",
       },
     ];
@@ -105,36 +111,40 @@ export const FateGrandOrder = () => {
 
     const englishServants = [
       {
-        name: "Abigail Williams (Summer)",
-        icon: "Fgo/characters/Abigail_Williams_(Summer)/S289A3Icon.png",
+        name: "Wandjina",
+        icon: "Fgo/DaysAnniversaryUS/S393A1Icon.png",
       },
       {
-        name: "Tomoe Gozen (Saber)",
-        icon: "Fgo/icons/S290A1Icon.png",
+        name: "Kriemhild",
+        icon: "Fgo/DaysAnniversaryUS/S345A1Icon.png",
       },
       {
-        name: "Murasaki Shikibu",
-        icon: "Fgo/icons/S237A1Icon.png ",
+        name: "Morgan",
+        icon: "Fgo/DaysAnniversaryUS/S309A3Icon.png ",
       },
       {
-        name: "Sesshōin Kiara (Moon Cancer)",
-        icon: "Fgo/icons/S285A1Icon.png",
+        name: "Cleopatra",
+        icon: "Fgo/DaysAnniversaryUS/S139A1Icon.png",
       },
       {
-        name: "Illyasviel von Einzbern (Archer)",
-        icon: "Fgo/icons/S286A1Icon.png",
+        name: "Nitocris (Assassin)",
+        icon: "Fgo/DaysAnniversaryUS/S177A1Icon.png",
       },
       {
-        name: "Brynhilder (Berserker)",
-        icon: "Fgo/icons/S287A1Icon.png",
+        name: "Ozymandias",
+        icon: "Fgo/DaysAnniversaryUS/S118A1Icon.png",
       },
       {
-        name: "Kama (Avenger)",
-        icon: "Fgo/icons/S321A1Icon.png",
+        name: "Nitocris (Assassin)",
+        icon: "Fgo/DaysAnniversaryUS/S177A1Icon.png",
       },
       {
-        name: "Caenis (Rider)",
-        icon: "Fgo/icons/S322A1Icon.png",
+        name: "Voyager",
+        icon: "Fgo/DaysAnniversaryUS/S281A1Icon.png",
+      },
+      {
+        name: "Yagyū Tajima no Kami Munenori",
+        icon: "Fgo/DaysAnniversaryUS/S187A1Icon.png",
       },
     ];
 
@@ -633,12 +643,12 @@ export const FateGrandOrder = () => {
                           Current Rate-Up Servants
                         </h2>
                         <div className="flex justify-center">
-                          <div className="grid grid-cols-4 gap-3 max-w-md">
-                            {englishServants
-                              .slice(0, 8)
-                              .map((servant, index) => (
-                                <ServantIcon key={index} servant={servant} />
-                              ))}
+                          <div className="grid grid-cols-5 gap-3 max-w-lg">
+                          {englishServants
+                            .slice(0, 9)
+                            .map((servant, index) => (
+                            <ServantIcon key={index} servant={servant} />
+                            ))}
                           </div>
                         </div>
                       </div>
@@ -655,7 +665,9 @@ export const FateGrandOrder = () => {
                           </div>
                           <div className="space-y-4">
                             {englishEvents.map((event, index) => (
-                              <EventCard key={index} event={event} />
+                              <a key={index} href={event.href}>
+                                <EventCard event={event} />
+                              </a>
                             ))}
                           </div>
                         </div>

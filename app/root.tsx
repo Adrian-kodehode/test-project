@@ -259,6 +259,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/tamamo_no_mae_lancer" &&
           location.pathname !== "/tamamo_cat" &&
           location.pathname !== "/beast_iv_l" &&
+          location.pathname !== "/DaysAnniversaryUS" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -488,6 +489,7 @@ export default function App() {
         location.pathname !== "/tamamo_no_mae_lancer" &&
         location.pathname !== "/tamamo_cat" &&
         location.pathname !== "/beast_iv_l" &&
+        location.pathname !== "/DaysAnniversaryUS" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );
