@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
-export const KamaAvenger = () => {
+export const Kama = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,22 +11,22 @@ export const KamaAvenger = () => {
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/avenger/kama/S321_Stage1.png",
+      src: "/Fgo/characters/assassin/kama/S239_Stage1.png",
     },
     {
       id: 2,
       label: "Stage 2",
-      src: "/Fgo/characters/avenger/kama/S321_Stage2.png",
+      src: "/Fgo/characters/assassin/kama/S239_Stage2.png",
     },
     {
       id: 3,
       label: "Stage 3",
-      src: "/Fgo/characters/avenger/kama/S321_Stage3.png",
+      src: "/Fgo/characters/assassin/kama/S239_Stage3.png",
     },
     {
       id: 4,
       label: "Stage 4",
-      src: "/Fgo/characters/avenger/kama/S321_Stage4.png",
+      src: "/Fgo/characters/assassin/kama/S239_Stage4.png",
     },
   ];
 
@@ -34,22 +34,22 @@ export const KamaAvenger = () => {
     {
       id: 1,
       label: "Sprite 1",
-      src: "Fgo/characters/avenger/kama/S321_Sprite_Ver1_Stage1.png",
+      src: "Fgo/characters/assassin/kama/S239_Sprite_Ver1_Stage1.png",
     },
     {
       id: 2,
       label: "Sprite 2",
-      src: "Fgo/characters/avenger/kama/S321_Sprite_Ver1_Stage2.png",
+      src: "Fgo/characters/assassin/kama/S239_Sprite_Ver1_Stage2.png",
     },
     {
       id: 3,
       label: "Sprite 3",
-      src: "Fgo/characters/avenger/kama/S321_Sprite_Ver1_Stage3.png",
+      src: "Fgo/characters/assassin/kama/S239_Sprite_Ver1_Stage3.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/avenger/kama/S321_Stage1.png"
+    "/Fgo/characters/assassin/kama/S239_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -87,14 +87,19 @@ export const KamaAvenger = () => {
     setImageType("sprite");
   };
 
-  const cardTypes = [{ type: "quick, arts, buster", icon: "Fgo/QQAAB.png" }];
+  const cardTypes = [
+    { type: "quick, arts, buster", icon: "Fgo/icons/QQABB.png" },
+  ];
 
   const traits = [
-    "Artoria Face",
-    "Costume-Owning",
+    "Divinity",
     "Hominidae Servant",
     "Humanoid",
+    "Immune to Pigify",
+    "Pseudo-Servant",
+    "Riding",
     "Servant",
+    "Seven Knights Servant",
     "Weak to Enuma Elish",
   ];
 
@@ -140,7 +145,7 @@ export const KamaAvenger = () => {
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">5★</span>{" "}
           <img
-            src="Fgo/icons/Class-Avenger-Gold.png"
+            src="Fgo/characters/assassin/Class-Assassin-Gold (1).png"
             alt=""
             className="inline-block h-8 w-8 ml-1"
           />{" "}
@@ -177,8 +182,8 @@ export const KamaAvenger = () => {
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/characters/avenger/Class-Avenger-Gold (2).png"
-              alt="avenger Icon"
+              src="/Fgo/characters/assassin/Class-Assassin-Gold (1).png"
+              alt="assassin Icon"
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div>
@@ -205,12 +210,20 @@ export const KamaAvenger = () => {
             <div className="col-span-1 sm:col-span-2">
               <p className="text-gray-400 mb-1">AKA:</p>
               <p className="text-white">
-                <strong>Mara</strong> (マーラ?)
+                <strong>Kamadeva</strong> (カーマデーヴァ),{" "}
+                <a href="" className="text-blue-400 font-bold">
+                  Matou Sakura
+                </a>{" "}
+                (間桐桜, Matō Sakura),
+                <strong>Dark Sakura</strong> (黒桜),{" "}
+                <a href="beast_iii_l" className="text-blue-400">
+                  Beast III/L
+                </a>
               </p>
             </div>
             <div>
               <p className="text-white mb-1 font-bold">ID:</p>
-              <p className="text-white">321</p>
+              <p className="text-white">239</p>
             </div>
 
             <div>
@@ -220,29 +233,29 @@ export const KamaAvenger = () => {
 
             <div>
               <p className="text-white mb-1 font-bold">ATK:</p>
-              <p className="text-white">2,042/13,213</p>
+              <p className="text-white">1,781/11,528</p>
             </div>
             <div>
               <p className="text-white mb-1 font-bold">HP:</p>
-              <p className="text-white">1,729/11,790</p>
+              <p className="text-white">1,890/12,889</p>
             </div>
 
             <div>
               <p className="text-yellow-400 font-bold">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">14,464</p>
+              <p className="text-yellow-400 font-bold">12,619</p>
             </div>
             <div>
               <p className="text-yellow-400 font-bold">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">12,916</p>
+              <p className="text-yellow-400 font-bold">14,120</p>
             </div>
 
             <div>
               <p className="text-yellow-400 font-bold">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">16,977</p>
+              <p className="text-yellow-400 font-bold">14,812</p>
             </div>
             <div>
               <p className="text-yellow-400 font-bold">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">15,180</p>
+              <p className="text-yellow-400 font-bold">16,595</p>
             </div>
 
             <div>
@@ -260,7 +273,7 @@ export const KamaAvenger = () => {
             </div>
             <div>
               <p className="text-white mb-1 font-bold">Growth Curve:</p>
-              <p className="text-white">Reverse S</p>
+              <p className="text-white">Semi S</p>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -269,7 +282,7 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Absorption:</span>
-              <span className="text-white">29</span>
+              <span className="text-white">100</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -277,7 +290,7 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Generation:</span>
-              <span className="text-white">6.1%</span>
+              <span className="text-white">25%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -286,7 +299,7 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">NP Charge ATK:</span>
-              <span className="text-white">0.52%</span>
+              <span className="text-white">0.74%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -294,7 +307,7 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">NP Charge DEF:</span>
-              <span className="text-white">5%</span>
+              <span className="text-white">4%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -303,11 +316,11 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Death Rate:</span>
-              <span className="text-white">5%</span>
+              <span className="text-white">31.6%</span>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Alignments:</p>
-              <p className="text-white">Neutral • Evil</p>
+              <p className="text-white">Chaotic • Evil</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
@@ -376,7 +389,7 @@ export const KamaAvenger = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>4</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">

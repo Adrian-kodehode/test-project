@@ -260,6 +260,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           location.pathname !== "/tamamo_cat" &&
           location.pathname !== "/beast_iv_l" &&
           location.pathname !== "/DaysAnniversaryUS" &&
+          location.pathname !== "/artoria_pendragon_santa_alter" &&
+          location.pathname !== "/kama" &&
+          location.pathname !== "/kama_mara" &&
+          location.pathname !== "/kama_mistake_arcade" &&
+          location.pathname !== "/uesugi_kenshin" &&
           location.pathname !== "/beast" && <NewHeader />}
         <div>{children}</div>
 
@@ -490,6 +495,11 @@ export default function App() {
         location.pathname !== "/tamamo_cat" &&
         location.pathname !== "/beast_iv_l" &&
         location.pathname !== "/DaysAnniversaryUS" &&
+        location.pathname !== "/artoria_pendragon_santa_alter" &&
+        location.pathname !== "/kama" &&
+        location.pathname !== "/kama_mara" &&
+        location.pathname !== "/kama_mistake_arcade" &&
+        location.pathname !== "/uesugi_kenshin" &&
         location.pathname !== "/beast" && <Footer />}
     </div>
   );

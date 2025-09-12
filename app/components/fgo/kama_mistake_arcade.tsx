@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
-export const KamaAvenger = () => {
+export const KamaMistakeArcade = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,45 +11,27 @@ export const KamaAvenger = () => {
     {
       id: 1,
       label: "Stage 1",
-      src: "/Fgo/characters/avenger/kama/S321_Stage1.png",
+      src: "/Fgo/characters/archer/kama_mistake_arcade/KamaMistakeArcade_Stage1.png",
     },
     {
       id: 2,
       label: "Stage 2",
-      src: "/Fgo/characters/avenger/kama/S321_Stage2.png",
+      src: "/Fgo/characters/archer/kama_mistake_arcade/KamaMistakeArcade_Stage2.png",
     },
     {
       id: 3,
       label: "Stage 3",
-      src: "/Fgo/characters/avenger/kama/S321_Stage3.png",
+      src: "/Fgo/characters/archer/kama_mistake_arcade/KamaMistakeArcade_Stage3.png",
     },
     {
       id: 4,
       label: "Stage 4",
-      src: "/Fgo/characters/avenger/kama/S321_Stage4.png",
-    },
-  ];
-
-  const sprites = [
-    {
-      id: 1,
-      label: "Sprite 1",
-      src: "Fgo/characters/avenger/kama/S321_Sprite_Ver1_Stage1.png",
-    },
-    {
-      id: 2,
-      label: "Sprite 2",
-      src: "Fgo/characters/avenger/kama/S321_Sprite_Ver1_Stage2.png",
-    },
-    {
-      id: 3,
-      label: "Sprite 3",
-      src: "Fgo/characters/avenger/kama/S321_Sprite_Ver1_Stage3.png",
+      src: "/Fgo/characters/archer/kama_mistake_arcade/KamaMistakeArcade_Stage4.png",
     },
   ];
 
   const [activeImage, setActiveImage] = useState(
-    "/Fgo/characters/avenger/kama/S321_Stage1.png"
+    "/Fgo/characters/archer/kama_mistake_arcade/KamaMistakeArcade_Stage1.png"
   );
   const [imageType, setImageType] = useState("stage");
 
@@ -90,11 +72,14 @@ export const KamaAvenger = () => {
   const cardTypes = [{ type: "quick, arts, buster", icon: "Fgo/QQAAB.png" }];
 
   const traits = [
-    "Artoria Face",
-    "Costume-Owning",
+    "Child Servant",
+    "Divinity",
     "Hominidae Servant",
     "Humanoid",
+    "Pseudo-Servant",
+    "Riding",
     "Servant",
+    "Seven Knights Servant",
     "Weak to Enuma Elish",
   ];
 
@@ -116,14 +101,18 @@ export const KamaAvenger = () => {
       {/* Header Warning */}
       <div className="bg-gray-800 border border-gray-600 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
         <img
-          src="/Fgo/icons/Bryn2.png"
+          src="/Fgo/icons/DantesNotice.png"
           alt="Bryn2"
           className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex-none"
         />
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
             <h3 className="text-lg font-bold text-white">
-              This is a Limited Servant
+              This is a{" "}
+              <a href="" className="text-blue-400">
+                F/GO Arcade
+              </a>
+              -exclusive Servant
             </h3>
             <Star className="w-5 h-5 text-blue-400" />
           </div>
@@ -138,9 +127,10 @@ export const KamaAvenger = () => {
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 mb-2 mt-2">
         <p className="text-sm text-gray-400 italic text-center sm:text-left">
-          This article is about the <span className="text-yellow-400">5★</span>{" "}
+          This article is about the Arcade-exclusive{" "}
+          <span className="text-yellow-400">5★</span>{" "}
           <img
-            src="Fgo/icons/Class-Avenger-Gold.png"
+            src="Fgo/icons/Class-Archer-Gold (1).png"
             alt=""
             className="inline-block h-8 w-8 ml-1"
           />{" "}
@@ -177,13 +167,13 @@ export const KamaAvenger = () => {
           {/* Character Header */}
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/Fgo/characters/avenger/Class-Avenger-Gold (2).png"
-              alt="avenger Icon"
+              src="/Fgo/icons/Class-Archer-Gold (1).png"
+              alt="archer Icon"
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Kama
+                Kama (Mistake)
               </h1>
               <div className="flex gap-1 mt-2">
                 {[1, 2, 3, 4, 5].map((star) => (
@@ -200,17 +190,14 @@ export const KamaAvenger = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
               <p className="text-gray-400 mb-1">Japanese Name:</p>
-              <p className="text-white">カーマ</p>
+              <p className="text-white"> カーマ（ミステイク）</p>
             </div>
             <div className="col-span-1 sm:col-span-2">
-              <p className="text-gray-400 mb-1">AKA:</p>
-              <p className="text-white">
-                <strong>Mara</strong> (マーラ?)
-              </p>
+            
             </div>
             <div>
               <p className="text-white mb-1 font-bold">ID:</p>
-              <p className="text-white">321</p>
+              <p className="text-white">118</p>
             </div>
 
             <div>
@@ -219,30 +206,30 @@ export const KamaAvenger = () => {
             </div>
 
             <div>
-              <p className="text-white mb-1 font-bold">ATK:</p>
-              <p className="text-white">2,042/13,213</p>
+              <p className="text-white mb-1 font-bold">ATK: /13,296</p>
+             
             </div>
             <div>
-              <p className="text-white mb-1 font-bold">HP:</p>
-              <p className="text-white">1,729/11,790</p>
+              <p className="text-white mb-1 font-bold">HP: /12,372</p>
+              
             </div>
 
             <div>
               <p className="text-yellow-400 font-bold">Lv.100 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">14,464</p>
+             
             </div>
             <div>
               <p className="text-yellow-400 font-bold">Lv.100 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">12,916</p>
+             
             </div>
 
             <div>
               <p className="text-yellow-400 font-bold">Lv.120 Grail ATK:</p>
-              <p className="text-yellow-400 font-bold">16,977</p>
+             
             </div>
             <div>
               <p className="text-yellow-400 font-bold">Lv.120 Grail HP:</p>
-              <p className="text-yellow-400 font-bold">15,180</p>
+             
             </div>
 
             <div>
@@ -255,12 +242,12 @@ export const KamaAvenger = () => {
             </div>
 
             <div>
-              <p className="text-white mb-1 font-bold">Attribute:</p>
-              <p className="text-green-400">Sky</p>
+              <p className="text-white mb-1 font-bold">Attribute: <span className="text-green-400">Sky</span></p>
+
             </div>
             <div>
               <p className="text-white mb-1 font-bold">Growth Curve:</p>
-              <p className="text-white">Reverse S</p>
+              <p className="text-white"></p>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -269,7 +256,7 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Absorption:</span>
-              <span className="text-white">29</span>
+              
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -277,7 +264,7 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Star Generation:</span>
-              <span className="text-white">6.1%</span>
+              <span className="text-white">%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -286,7 +273,7 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">NP Charge ATK:</span>
-              <span className="text-white">0.52%</span>
+              <span className="text-white">%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
               <img
@@ -294,7 +281,7 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">NP Charge DEF:</span>
-              <span className="text-white">5%</span>
+              <span className="text-white">%</span>
             </div>
 
             <div className="flex items-center gap-2 col-span-1">
@@ -303,11 +290,11 @@ export const KamaAvenger = () => {
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
               <span className="text-gray-400">Death Rate:</span>
-              <span className="text-white">5%</span>
+              <span className="text-white">%</span>
             </div>
             <div>
               <p className="text-gray-400 mb-1">Alignments:</p>
-              <p className="text-white">Neutral • Evil</p>
+              <p className="text-white">Chaotic • Evil</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
@@ -327,16 +314,7 @@ export const KamaAvenger = () => {
                 </span>
               ))}
             </div>
-            <span>
-              ┗ Stage 1: <span className="text-blue-400">Child Servant</span>
-            </span>
-            <br />
-            <span>
-              ┗ Stage 3:{" "}
-              <span className="text-blue-400">
-                Levitating Servant, Spaceflight-able Servant
-              </span>
-            </span>
+            
           </div>
 
           {/* Command Cards */}
@@ -360,7 +338,7 @@ export const KamaAvenger = () => {
                     src="/Fgo/icons/Quickicon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>4</span>
+                  <span>3</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -376,7 +354,7 @@ export const KamaAvenger = () => {
                     src="/Fgo/icons/Bustericon.png"
                     className="w-6 h-6 sm:w-7 sm:h-7"
                   />
-                  <span>3</span>
+                  <span>4</span>
                 </span>
                 <span>|</span>
                 <span className="flex items-center gap-1">
@@ -406,19 +384,6 @@ export const KamaAvenger = () => {
                 }`}
               >
                 {stage.label}
-              </button>
-            ))}
-          </div>
-
-          {/* Sprite Controls */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
-            {sprites.map((sprite) => (
-              <button
-                key={sprite.id}
-                onClick={() => handleSpriteClick(sprite)}
-                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-              >
-                {sprite.label}
               </button>
             ))}
           </div>

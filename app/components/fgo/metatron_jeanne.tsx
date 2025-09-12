@@ -91,7 +91,7 @@ export const MetatronJeanne = () => {
     { type: "quick, arts, buster", icon: "Fgo/icons/QAABB.png" },
   ];
 
-const traits = [
+  const traits = [
     "Artoria Face",
     "Divine Spirit",
     "Divinity",
@@ -103,7 +103,7 @@ const traits = [
     "Servant",
     "Super Large",
     "Weak to Enuma Elish",
-];
+  ];
 
   const bottomTabs = [
     "Active Skills",
@@ -140,11 +140,11 @@ const traits = [
             such campaigns are active, this Servant cannot be summoned.
           </p>
         </div>
-        <X className="w-5 h-5 text-gray-400 cursor-pointer self-start sm:self-auto" />
+        <X className="w-5 h-5 text-white cursor-pointer self-start sm:self-auto" />
       </div>
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 mb-2 mt-2">
-        <p className="text-sm text-gray-400 italic text-center sm:text-left">
+        <p className="text-sm text-white italic text-center sm:text-left">
           This article is about the <span className="text-yellow-400">4★</span>{" "}
           <img
             src="Fgo/characters/ruler/Class-Ruler-Gold (1).png"
@@ -160,23 +160,6 @@ const traits = [
       </div>
 
       {/* Main Tabs */}
-      <div className="flex border-b border-gray-700 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
-        <div className="flex w-full">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab.toLowerCase())}
-              className={`flex-shrink-0 min-w-[110px] sm:flex-1 px-4 py-3 font-medium ${
-                activeTab === tab.toLowerCase()
-                  ? "bg-blue-600 text-white border-b-2 border-blue-400"
-                  : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-      </div>
 
       <div className="flex flex-col lg:flex-row gap-6 p-4 sm:p-6">
         {/* Left Panel - Character Info */}
@@ -206,32 +189,33 @@ const traits = [
           {/* Character Details */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
-              <p className="text-gray-400 mb-1">Japanese Name:</p>
+              <p className="text-white mb-1">Japanese Name:</p>
               <p className="text-white">メタトロン・ジャンヌ; メタトロン</p>
             </div>
             <div className="col-span-1 sm:col-span-2">
-              <p className="text-gray-400 mb-1">AKA:</p>
-              <p className="text-white">
-                
+              <p className="text-white mb-1">AKA:</p>
+              <p className="text-white"></p>
+            </div>
+            <div>
+              <p className="text-white mb-1 font-bold">ID: 438</p>
+            </div>
+
+            <div>
+              <p className="text-white mb-1 font-bold">
+                Cost: <span className="text-blue-400 font-bold">16</span>
+              </p>
+            </div>
+
+            <div>
+              <p className="text-white mb-1 font-bold">
+                ATK:{" "}
+                <span className="text-white font-normal">1,847/11,954</span>
               </p>
             </div>
             <div>
-              <p className="text-white mb-1 font-bold">ID:</p>
-              <p className="text-white">438</p>
-            </div>
-
-            <div>
-              <p className="text-white mb-1 font-bold">Cost:</p>
-              <p className="text-blue-400 font-bold">16</p>
-            </div>
-
-            <div>
-              <p className="text-white mb-1 font-bold">ATK:</p>
-              <p className="text-white">1,847/11,954</p>
-            </div>
-            <div>
-              <p className="text-white mb-1 font-bold">HP:</p>
-              <p className="text-white">2,019/13,770</p>
+              <p className="text-white mb-1 font-bold">
+                HP: <span className="text-white font-normal">2,019/13,770</span>
+              </p>
             </div>
 
             <div>
@@ -276,7 +260,7 @@ const traits = [
                 src="/Fgo/icons/Critabsup.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-gray-400">Star Absorption:</span>
+              <span className="text-white">Star Absorption:</span>
               <span className="text-white">104</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
@@ -284,7 +268,7 @@ const traits = [
                 src="/Fgo/icons/Stargainup.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-gray-400">Star Generation:</span>
+              <span className="text-white">Star Generation:</span>
               <span className="text-white">9.7%</span>
             </div>
 
@@ -293,7 +277,7 @@ const traits = [
                 src="/Fgo/icons/Npchargeup.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-gray-400">NP Charge ATK:</span>
+              <span className="text-white">NP Charge ATK:</span>
               <span className="text-white">0.53%</span>
             </div>
             <div className="flex items-center gap-2 col-span-1">
@@ -301,7 +285,7 @@ const traits = [
                 src="/Fgo/icons/NPGainUpDmg.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-gray-400">NP Charge DEF:</span>
+              <span className="text-white">NP Charge DEF:</span>
               <span className="text-white">3%</span>
             </div>
 
@@ -310,23 +294,23 @@ const traits = [
                 src="/Fgo/icons/Instapowerup.png"
                 className="w-6 h-6 sm:w-7 sm:h-7"
               />
-              <span className="text-gray-400">Death Rate:</span>
+              <span className="text-white">Death Rate:</span>
               <span className="text-white">17.5%</span>
             </div>
             <div>
-              <p className="text-gray-400 mb-1">Alignments:</p>
+              <p className="text-white mb-1">Alignments:</p>
               <p className="text-white">Lawful • Good</p>
             </div>
 
             <div className="col-span-1 sm:col-span-2">
-              <p className="text-gray-400 mb-1">Gender:</p>
+              <p className="text-white mb-1">Gender:</p>
               <p className="text-white">Female</p>
             </div>
           </div>
 
           {/* Traits */}
           <div>
-            <p className="text-gray-400 mb-2">Basic Traits:</p>
+            <p className="text-white mb-2">Basic Traits:</p>
             <div className="flex flex-wrap gap-1">
               {traits.map((trait, index) => (
                 <span key={index} className="text-blue-400 text-sm">
@@ -351,7 +335,7 @@ const traits = [
               ))}
             </div>
             <div className="flex items-center gap-4 text-sm flex-wrap">
-              <span className="text-gray-400">Hits:</span>
+              <span className="text-white">Hits:</span>
               <div className="flex items-center gap-2">
                 <span className="flex items-center gap-1">
                   <img

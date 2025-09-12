@@ -251,18 +251,34 @@ export const Beast_III_L = () => {
       {/* Article Navigation */}
       <div className="px-0 sm:px-0 my-4">
         <p className="text-sm text-white italic text-center sm:text-left">
-          This article is about
+          This article is about the Beast III
           <img
             src="Fgo/characters/beast/Class-Beast (1).png"
-            alt=""
-            className="inline-block h-8 w-8 ml-1 mr-1"
+            alt="Beast Class Icon"
+            className="inline-block h-8 w-8 mx-1"
           />
           Beast III/L. For the 1st form, see{" "}
-          <a href="" className="text-blue-400">
+          <a href="kama_mara" className="text-blue-400 hover:underline">
             Kama/Mara
           </a>
-          . For the <span className="text-yellow-400">5★</span>
-        
+          . For other variations, see{" "}
+          <a
+            href="kama_disambiguation"
+            className="text-blue-400 hover:underline"
+          >
+            Kama (Disambiguation)
+          </a>
+          . For another
+          <img
+            src="Fgo/characters/beast/Class-Beast (1).png"
+            alt="Beast Class Icon"
+            className="inline-block h-8 w-8 mx-1"
+          />
+          Beast III, see{" "}
+          <a href="beast_iii_r" className="text-blue-400 hover:underline">
+            Beast III/R
+          </a>
+          .
         </p>
       </div>
 
@@ -302,7 +318,8 @@ export const Beast_III_L = () => {
             <div className="col-span-1 sm:col-span-2">
               <p className="text-gray-400 mb-1">AKA:</p>
               <p className="text-white">
-               Kama/Mara (カーマ／マーラ?), Kama, Demon Lord of Lust (愛欲の魔王?), Lapse
+                Kama/Mara (カーマ／マーラ?), Kama, Demon Lord of Lust
+                (愛欲の魔王?), Lapse
               </p>
             </div>
             <div>
