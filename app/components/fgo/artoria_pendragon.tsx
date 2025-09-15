@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
 
@@ -508,7 +507,997 @@ export const ArtoriaPendragon = () => {
           ))}
         </div>
       </div>
+
+      <h2 className="text-xl font-semibold mt-5 ml-8">Ascension</h2>
+      <div className="overflow-x-auto mt-4 flex justify-center">
+        <table className="w-[1000px] text-sm text-left text-gray-300">
+          <thead className="text-gray-400 bg-gray-700">
+            <tr>
+              <th scope="col" className="px-6 py-3 text-center">
+                n°
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                Item 1
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                Item 2
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                Item 3
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                Item 4
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                QP
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                1st
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Saber_piece.png"
+                    alt="Saber Piece"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    100,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                2nd
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Saber_piece.png"
+                    alt="Saber Piece"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    12
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Dragon_fang.png"
+                    alt="Dragon Fang"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    18
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    300,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                3rd
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Saber_monument.png"
+                    alt="Saber Monument"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Heros_proof.png"
+                    alt="Hero's Proof"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    29
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Phoenix_plume.png"
+                    alt="Dragon's Reverse Scale"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    4
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    1,000,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                4th
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Saber_monument.png"
+                    alt="Saber Monument"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    12
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Phoenix_plume.png"
+                    alt="Dragon's Reverse Scale"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    8
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Dragons_reverse_scale.png"
+                    alt="Heart of the Foreign God"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    3,000,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td
+                colSpan={2}
+                className="px-4 py-4 text-center border-r border-gray-700"
+              >
+                <div className="text-center">
+                  Invisible Air:
+                  <br />
+                  Barrier of the Wind King
+                </div>
+                <div className="text-center mt-2">
+                  騎士王の纏う風の宝具
+                  <br />
+                  主に聖剣の不可視化に用いられる
+                </div>
+              </td>
+              <td colSpan={4} className="px-6 py-4 text-left align-middle">
+                The King of Knights' Noble Phantasm of the wind. Mostly used to
+                make the sacred sword invisible.
+              </td>
+            </tr>
+            <tr className="bg-gray-800">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                <img
+                  src="/Fgo/characters/artoria_disambiguation/S002A1Icon.png"
+                  alt="Invisible Air"
+                  className="w-28 h-auto mx-auto"
+                />
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Heros_proof.png"
+                    alt="Hero's Proof"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    10
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Medal_of_Great_Knight.png"
+                    alt="Medal of Great Knight"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Phoenix_plume.png"
+                    alt="Dragon's Reverse Scale"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Dragons_reverse_scale.png"
+                    alt="Heart of the Foreign God"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    3,000,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 className="text-xl font-semibold mt-5 ml-8">Skill Reinforcement</h2>
+      <div className="overflow-x-auto mt-4 flex justify-center">
+        <table className="w-[1000px] text-sm text-left text-gray-300">
+          <thead className="text-gray-400 bg-gray-700">
+            <tr>
+              <th scope="col" className="px-6 py-3 text-center">
+                n°
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                Item 1
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                Item 2
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                Item 3
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                Item 4
+              </th>
+              <th scope="col" className="px-6 py-3 text-center">
+                QP
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                1st
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Shiningsaber.png"
+                    alt="Shining Gem"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    200,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                2nd
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Shiningsaber.png"
+                    alt="Shining Gem"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    12
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    400,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                3rd
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Magicsaber.png"
+                    alt="Magic Gem"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    1,200,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                4th
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Magicsaber.png"
+                    alt="Magic Gem"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    12
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Heros_proof.png"
+                    alt="Hero's Proof"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    15
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    1,600,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                5th
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Secretsaber.png"
+                    alt="Secret Gem"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    5
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Heros_proof.png"
+                    alt="Hero's Proof"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    29
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    4,000,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                6th
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Secretsaber.png"
+                    alt="Secret Gem"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    12
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Dragon_fang.png"
+                    alt="Dragon Fang"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    12
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    5,000,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                7th
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Dragon_fang.png"
+                    alt="Dragon Fang"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    24
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Talon_of_chaos.png"
+                    alt="Talon of Chaos"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    4
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    10,000,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800 border-b border-gray-700">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                8th
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Talon_of_chaos.png"
+                    alt="Talon of Chaos"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    11
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Dragons_reverse_scale.png"
+                    alt="Dragon's Reverse Scale"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    10
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    12,000,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr className="bg-gray-800">
+              <td className="px-4 py-4 text-center border-r border-gray-700">
+                9th
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Crystallized_lore.png"
+                    alt="Crystallized Lore"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white">
+                    1
+                  </span>
+                </div>
+              </td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 border-r border-gray-700"></td>
+              <td className="px-6 py-4 text-center">
+                <div className="relative w-24 mx-auto">
+                  <img
+                    src="/Fgo/characters/saber/artoria_pendragon/Qp.png"
+                    alt="QP"
+                    className="w-full h-auto"
+                  />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 px-2 text-white">
+                    20,000,000
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 className="text-xl font-bold mt-5">Stats</h2>
+      <div className="bg-gray-800 border border-gray-700 rounded-lg mt-4 ml-14 max-w-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          {[
+            { name: "Strength", rank: "B", value: 4 },
+            { name: "Endurance", rank: "B", value: 4 },
+            { name: "Agility", rank: "B", value: 4 },
+            { name: "Mana", rank: "A", value: 5 },
+            { name: "Luck", rank: "A+", value: 5 },
+            { name: "NP", rank: "A++", value: 5 },
+          ].map((stat, index) => (
+            <div
+              key={stat.name}
+              className={`p-4 text-center ${
+                index < 4 ? "border-b border-gray-700" : ""
+              } ${index % 2 === 0 ? "md:border-r border-gray-700" : ""}`}
+            >
+              <p className="font-bold text-white mb-3">
+                {stat.name}:{" "}
+                <span className="border-b-2 border-dotted border-gray-500">
+                  {stat.rank}
+                </span>
+              </p>
+              <div className="flex h-5 rounded-full overflow-hidden bg-gray-600">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className={`w-1/5 ${
+                      i < stat.value ? "bg-orange-500" : "bg-gray-600"
+                    } ${i < 4 ? "border-r-2 border-gray-900" : ""}`}
+                  ></div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Bond Level*/}
+      <h2 className="text-xl font-semibold mt-5 ml-8">Bond Level</h2>
+      <div className="overflow-x-auto mt-4 flex justify-center">
+        <div className="w-full max-w-7xl mx-auto">
+          <table className="w-full text-sm text-left text-gray-300 border-collapse">
+            <thead className="text-gray-400 bg-gray-700">
+              <tr>
+                <th
+                  scope="col"
+                  className="px-4 py-3 text-center border border-gray-600"
+                >
+                  Bond Level
+                </th>
+                {[...Array(10)].map((_, i) => (
+                  <th
+                    key={i}
+                    scope="col"
+                    className="px-4 py-3 text-center border border-gray-600"
+                  >
+                    <div className="flex items-center justify-center gap-1 text-white">
+                      <img
+                        src={`/Fgo/icons/BondLevel${i + 1}.png`}
+                        alt="Bond"
+                        className="w-5 h-5"
+                      />
+                      <span>{i + 1}</span>
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="bg-gray-800">
+                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                  Bond Required
+                </td>
+                {[
+                  "3,000",
+                  "6,125",
+                  "6,125",
+                  "6,125",
+                  "6,125",
+                  "282,500",
+                  "300,000",
+                  "320,000",
+                  "340,000",
+                  "370,000",
+                ].map((val, i) => (
+                  <td
+                    key={i}
+                    className="px-4 py-4 text-center border border-gray-600"
+                  >
+                    {val}
+                  </td>
+                ))}
+              </tr>
+              <tr className="bg-gray-800">
+                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                  Total Bond
+                </td>
+                {[
+                  "3,000",
+                  "9,125",
+                  "15,250",
+                  "21,375",
+                  "27,500",
+                  "310,000",
+                  "610,000",
+                  "930,000",
+                  "1,270,000",
+                  "1,640,000",
+                ].map((val, i) => (
+                  <td
+                    key={i}
+                    className="px-4 py-4 text-center border border-gray-600"
+                  >
+                    {val}
+                  </td>
+                ))}
+              </tr>
+              <tr className="bg-gray-800 align-top">
+                <td className="px-4 py-4 text-center font-semibold border border-gray-600 align-middle">
+                  Rewards
+                </td>
+                {[...Array(10)].map((_, i) => (
+                  <td
+                    key={i}
+                    className="px-4 py-4 border border-gray-600 align-middle"
+                  >
+                    <div className="flex flex-col items-center justify-center gap-2 h-full">
+                      <div className="relative w-16">
+                        <img
+                          src="/Fgo/icons/ServantCoin2.png"
+                          alt="Servant Coin"
+                          className="w-full h-auto"
+                        />
+                        <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white text-xs">
+                          {i < 5 ? 5 : i < 9 ? 20 : 40}
+                        </span>
+                      </div>
+                      {i >= 5 && i < 9 && (
+                        <div className="relative w-16">
+                          <img
+                            src="/Fgo/icons/Saintquartz.png"
+                            alt="Saint Quartz"
+                            className="w-full h-auto"
+                          />
+                          <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white text-xs">
+                            3
+                          </span>
+                        </div>
+                      )}
+                      {i === 9 && (
+                        <div className="relative w-16">
+                          <img
+                            src="/Fgo/icons/MaxbondCEIcon.png"
+                            alt="Bond CE"
+                            className="mx-auto"
+                          />
+                          <span className="font-bold text-blue-400">
+                            Bond CE
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </td>
+                ))}
+              </tr>
+              <tr className="bg-gray-800">
+                <td
+                  className="px-4 py-4 text-center font-semibold border border-gray-600 align-middle"
+                  colSpan={2}
+                >
+                  Bond 10 Craft Essence
+                </td>
+                <td className="px-4 py-4 border border-gray-600" colSpan={3}>
+                  <img
+                    src="/Fgo/icons/CEIcon191.png"
+                    alt="Crown of the Star"
+                    className="w-24 mx-auto"
+                  />
+                </td>
+                <td
+                  className="px-4 py-4 border border-gray-600 text-center"
+                  colSpan={6}
+                >
+                  <p className="font-bold text-blue-400">Crown of the Star</p>
+                  <p className="text-sm">When equipped on Artoria Pendragon:</p>
+                  <p className="text-sm flex items-center justify-center gap-1">
+                    <img
+                      src="/Fgo/icons/Attackup.png"
+                      alt="Attack Up"
+                      className="w-auto h-auto"
+                    />
+                    <span className="">
+                      Increases party's attack by 15% while self is on the
+                      field.
+                    </span>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table className="w-full text-sm text-left text-gray-300 border-collapse mt-8">
+            <thead className="text-gray-400 bg-gray-700">
+              <tr>
+                <th
+                  scope="col"
+                  className="px-4 py-3 text-center border border-gray-600"
+                >
+                  Chaldean Visionary Flames
+                </th>
+                {[11, 12, 13, 14, 15].map((level) => (
+                  <th
+                    key={level}
+                    scope="col"
+                    className="px-4 py-3 text-center border border-gray-600"
+                  >
+                    <div className="flex items-center justify-center gap-1 text-white">
+                      <img
+                        src={`/Fgo/icons/BondLevel${level}.png`}
+                        alt="Bond"
+                        className="w-5 h-5"
+                      />
+                      <span>{level}</span>
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="bg-gray-800">
+                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                  Bond Required
+                </td>
+                {[
+                  "1,090,000",
+                  "1,230,000",
+                  "1,360,000",
+                  "1,500,000",
+                  "1,640,000",
+                ].map((val, i) => (
+                  <td
+                    key={i}
+                    className="px-4 py-4 text-center border border-gray-600"
+                  >
+                    {val}
+                  </td>
+                ))}
+              </tr>
+              <tr className="bg-gray-800">
+                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                  Total Bond
+                </td>
+                {[
+                  "2,730,000",
+                  "3,960,000",
+                  "5,320,000",
+                  "6,820,000",
+                  "8,460,000",
+                ].map((val, i) => (
+                  <td
+                    key={i}
+                    className="px-4 py-4 text-center border border-gray-600"
+                  >
+                    {val}
+                  </td>
+                ))}
+              </tr>
+              <tr className="bg-gray-800 align-top">
+                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                  Rewards
+                </td>
+                {[...Array(5)].map((_, i) => (
+                  <td key={i} className="px-4 py-4 border border-gray-600">
+                    <div className="flex flex-col items-center justify-center gap-2 h-full">
+                      <div className="relative w-16">
+                        <img
+                          src="/Fgo/icons/ServantCoin2.png"
+                          alt="Servant Coin"
+                          className="w-full h-auto"
+                        />
+                        <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white text-xs">
+                          {i === 0 ? 50 : 60}
+                        </span>
+                      </div>
+                      <div className="relative w-16">
+                        <img
+                          src="/Fgo/icons/Saintquartz.png"
+                          alt="Saint Quartz"
+                          className="w-full h-auto"
+                        />
+                        <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white text-xs">
+                          30
+                        </span>
+                      </div>
+                      {i === 4 && (
+                        <div className="relative w-16 mt-2">
+                          <img
+                            src="/Fgo/icons/SkillIconMini.png"
+                            alt="New Passive Skill"
+                            className="w-auto h-auto"
+                          />
+                          <p className="text-center text-blue-400 text-xs mt-1">
+                            New Passive Skill
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 };
-
