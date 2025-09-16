@@ -508,7 +508,188 @@ export const ArtoriaPendragon = () => {
         </div>
       </div>
 
-      <h2 className="text-xl font-semibold mt-5 ml-8">Ascension</h2>
+      {/* Noble Phantasm */}
+      <h2 className="text-xl font-bold mt-5 ml-8">Noble Phantasm</h2>
+      <div className="mt-4 mx-auto w-[1000px] bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
+        {/* Tabs */}
+        <div className="flex justify-center p-2 bg-gray-900">
+          <div className="flex gap-1">
+            <button className="px-4 py-2 text-sm font-bold text-white bg-blue-600 rounded">
+              Rank A++
+            </button>
+            <button className="px-4 py-2 text-sm font-bold text-gray-300 bg-gray-700 rounded hover:bg-gray-600">
+              Rank A
+            </button>
+            <button className="px-4 py-2 text-sm font-bold text-gray-300 bg-gray-700 rounded hover:bg-gray-600">
+              Videos
+            </button>
+          </div>
+        </div>
+
+        {/* Upgrade Banner */}
+        <div className="bg-gray-700 text-center py-2 text-sm font-bold">
+          Upgrades after{" "}
+          <a href="#" className="text-blue-400">
+            Interlude 2
+          </a>
+        </div>
+
+        {/* NP Title */}
+        <div className="bg-gray-900 text-center py-3">
+          <p className="text-lg font-bold">Excalibur</p>
+          <p className="text-sm text-blue-400">Sword of Promised Victory</p>
+        </div>
+
+        {/* Main NP Table */}
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-gray-700">
+          {/* Left Side - Buster Card */}
+          <div className="md:col-span-1 bg-[#541225] flex flex-col items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+            <img
+              src="/Fgo/icons/Buster.png"
+              alt="Buster"
+              className="w-24 h-24"
+            />
+            <p className="mt-2 font-bold text-pink-300 text-sm">Base Damage: x1.5</p>
+          </div>
+
+          {/* Right Side - Details */}
+          <div className="md:col-span-2">
+            <table className="w-full text-sm font-bold text-center">
+              <tbody>
+                <tr className="bg-gray-700">
+                  <td className="p-2.5 font-bold border-b border-r border-gray-700 w-1/2">
+                    Rank
+                  </td>
+                  <td className="p-2.5 border-b border-gray-700 w-1/2">
+                    Noble Phantasm Type
+                  </td>
+                </tr>
+                <tr className="bg-gray-900">
+                  <td className="p-2 border-b border-r border-gray-700">A++</td>
+                  <td className="p-2 border-b border-gray-700">
+                    Anti-Fortress
+                  </td>
+                </tr>
+                <tr className="bg-gray-700">
+                  <td className="p-2.5 font-bold border-b border-r border-gray-700">
+                    Hits
+                  </td>
+                  <td className="p-2.5 border-b border-gray-700">
+                    Per Hit Percentage
+                  </td>
+                </tr>
+                <tr className="bg-gray-900">
+                  <td className="p-2 border-r border-gray-700">1</td>
+                  <td className="p-2">100%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Effect */}
+        <table className="w-full text-sm text-center border-t border-gray-700">
+          <tbody>
+            <tr className="bg-gray-900">
+              <td className="bg-gray-700 p-2 font-bold border-r border-gray-700 w-1/3">
+                Effect
+              </td>
+              <td className="p-2">Deals damage to all enemies. ⚠️</td>
+            </tr>
+          </tbody>
+        </table>
+
+        {/* NP Level */}
+        <table className="w-full text-sm text-center border-t border-gray-700">
+          <tbody>
+            <tr className="bg-gray-700">
+              <td className="p-2 font-bold border-r border-gray-700 w-[16.66%]">
+                NP Level
+              </td>
+              <td className="p-2 font-bold border-r border-gray-700 w-[16.66%]">
+                1
+              </td>
+              <td className="p-2 font-bold border-r border-gray-700 w-[16.66%]">
+                2
+              </td>
+              <td className="p-2 font-bold border-r border-gray-700 w-[16.66%]">
+                3
+              </td>
+              <td className="p-2 font-bold border-r border-gray-700 w-[16.66%]">
+                4
+              </td>
+              <td className="p-2 font-bold w-[16.66%]">5</td>
+            </tr>
+            <tr className="bg-gray-800 font-bold">
+              <td className="p-2 border-r border-gray-700 flex items-center justify-center gap-1">
+                <img
+                  src="/Fgo/icons/Powerup.png"
+                  alt="Damage"
+                  className="w-5 h-5"
+                />{" "}
+                Damage +
+              </td>
+              <td className="p-2 border-r border-gray-700">400%</td>
+              <td className="p-2 border-r border-gray-700">500%</td>
+              <td className="p-2 border-r border-gray-700">550%</td>
+              <td className="p-2 border-r border-gray-700">575%</td>
+              <td className="p-2">600%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        {/* Overcharge Effect */}
+        <table className="w-full text-sm text-center border-t border-gray-700">
+          <tbody>
+            <tr>
+              <td className="p-2 font-bold bg-[#53103e] border-r border-gray-700 w-1/3">
+                Overcharge Effect
+              </td>
+              <td className="bg-[#290315] p-2">Charges own NP gauge.</td>
+            </tr>
+          </tbody>
+        </table>
+        <table className="w-full text-sm font-bold text-center border-t border-gray-700">
+          <tbody>
+            <tr className="bg-[#53103e]">
+              <td className="p-2 border-r border-gray-700 w-[16.66%]">
+                Charge
+              </td>
+              <td className="p-2 border-r border-gray-700 w-[16.66%]">
+                100%
+              </td>
+              <td className="p-2 border-r border-gray-700 w-[16.66%]">
+                200%
+              </td>
+              <td className="p-2 border-r border-gray-700 w-[16.66%]">
+                300%
+              </td>
+              <td className="p-2 border-r border-gray-700 w-[16.66%]">
+                400%
+              </td>
+              <td className="p-2 w-[16.66%]">500%</td>
+            </tr>
+            <tr className="bg-[#290315]">
+              <td className="p-2 bg-[#53103e] border-r border-gray-700 flex items-center justify-center gap-1">
+                <img
+                  src="/Fgo/icons/NpCharge.png"
+                  alt="NP"
+                  className="w-5 h-5"
+                />{" "}
+                NP +
+              </td>
+              <td className="p-2 border-r border-gray-700">20%</td>
+              <td className="p-2 border-r border-gray-700">27.5%</td>
+              <td className="p-2 border-r border-gray-700">35%</td>
+              <td className="p-2 border-r border-gray-700">42.5%</td>
+              <td className="p-2">50%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* Ascension Table */}
+      <h2 className="text-xl font-bold mt-5 ml-8">Ascension</h2>
       <div className="overflow-x-auto mt-4 flex justify-center">
         <table className="w-[1000px] text-sm text-left text-gray-300">
           <thead className="text-gray-400 bg-gray-700">
@@ -811,7 +992,7 @@ export const ArtoriaPendragon = () => {
         </table>
       </div>
 
-      <h2 className="text-xl font-semibold mt-5 ml-8">Skill Reinforcement</h2>
+      <h2 className="text-xl font-bold mt-5 ml-8">Skill Reinforcement</h2>
       <div className="overflow-x-auto mt-4 flex justify-center">
         <table className="w-[1000px] text-sm text-left text-gray-300">
           <thead className="text-gray-400 bg-gray-700">
@@ -1222,7 +1403,7 @@ export const ArtoriaPendragon = () => {
       </div>
 
       {/* Bond Level*/}
-      <h2 className="text-xl font-semibold mt-5 ml-8">Bond Level</h2>
+      <h2 className="text-xl font-bold mt-5 ml-8">Bond Level</h2>
       <div className="overflow-x-auto mt-4 flex justify-center">
         <div className="w-full max-w-7xl mx-auto">
           <table className="w-full text-sm text-left text-gray-300 border-collapse">
@@ -1254,7 +1435,7 @@ export const ArtoriaPendragon = () => {
             </thead>
             <tbody>
               <tr className="bg-gray-800">
-                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                <td className="px-4 py-4 text-center font-bold border border-gray-600">
                   Bond Required
                 </td>
                 {[
@@ -1278,7 +1459,7 @@ export const ArtoriaPendragon = () => {
                 ))}
               </tr>
               <tr className="bg-gray-800">
-                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                <td className="px-4 py-4 text-center font-bold border border-gray-600">
                   Total Bond
                 </td>
                 {[
@@ -1302,7 +1483,7 @@ export const ArtoriaPendragon = () => {
                 ))}
               </tr>
               <tr className="bg-gray-800 align-top">
-                <td className="px-4 py-4 text-center font-semibold border border-gray-600 align-middle">
+                <td className="px-4 py-4 text-center font-bold border border-gray-600 align-middle">
                   Rewards
                 </td>
                 {[...Array(10)].map((_, i) => (
@@ -1351,7 +1532,7 @@ export const ArtoriaPendragon = () => {
               </tr>
               <tr className="bg-gray-800">
                 <td
-                  className="px-4 py-4 text-center font-semibold border border-gray-600 align-middle"
+                  className="px-4 py-4 text-center font-bold border border-gray-600 align-middle"
                   colSpan={2}
                 >
                   Bond 10 Craft Essence
@@ -1402,7 +1583,7 @@ export const ArtoriaPendragon = () => {
                   >
                     <div className="flex items-center justify-center gap-1 text-white">
                       <img
-                        src={`/Fgo/icons/BondLevel${level}.png`}
+                        src={`/Fgo/icons/BondLevel${level - 10}.png`}
                         alt="Bond"
                         className="w-5 h-5"
                       />
@@ -1414,7 +1595,7 @@ export const ArtoriaPendragon = () => {
             </thead>
             <tbody>
               <tr className="bg-gray-800">
-                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                <td className="px-4 py-4 text-center font-bold border border-gray-600">
                   Bond Required
                 </td>
                 {[
@@ -1433,7 +1614,7 @@ export const ArtoriaPendragon = () => {
                 ))}
               </tr>
               <tr className="bg-gray-800">
-                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                <td className="px-4 py-4 text-center font-bold border border-gray-600">
                   Total Bond
                 </td>
                 {[
@@ -1452,42 +1633,44 @@ export const ArtoriaPendragon = () => {
                 ))}
               </tr>
               <tr className="bg-gray-800 align-top">
-                <td className="px-4 py-4 text-center font-semibold border border-gray-600">
+                <td className="px-4 py-4 text-center font-bold border border-gray-600">
                   Rewards
                 </td>
                 {[...Array(5)].map((_, i) => (
                   <td key={i} className="px-4 py-4 border border-gray-600">
                     <div className="flex flex-col items-center justify-center gap-2 h-full">
-                      <div className="relative w-16">
-                        <img
-                          src="/Fgo/icons/ServantCoin2.png"
-                          alt="Servant Coin"
-                          className="w-full h-auto"
-                        />
-                        <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white text-xs">
-                          {i === 0 ? 50 : 60}
-                        </span>
-                      </div>
-                      <div className="relative w-16">
-                        <img
-                          src="/Fgo/icons/Saintquartz.png"
-                          alt="Saint Quartz"
-                          className="w-full h-auto"
-                        />
-                        <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white text-xs">
-                          30
-                        </span>
+                      <div className="flex gap-2 justify-center">
+                        <div className="relative w-16">
+                          <img
+                            src="/Fgo/icons/ServantCoin2.png"
+                            alt="Servant Coin"
+                            className="w-full h-auto"
+                          />
+                          <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white text-xs">
+                            {i === 0 ? 50 : 60}
+                          </span>
+                        </div>
+                        <div className="relative w-16">
+                          <img
+                            src="/Fgo/icons/Saintquartz.png"
+                            alt="Saint Quartz"
+                            className="w-full h-auto"
+                          />
+                          <span className="absolute bottom-0 right-0 bg-black bg-opacity-75 px-1 text-white text-xs">
+                            30
+                          </span>
+                        </div>
                       </div>
                       {i === 4 && (
-                        <div className="relative w-16 mt-2">
+                        <div className="relative w-16">
                           <img
                             src="/Fgo/icons/SkillIconMini.png"
                             alt="New Passive Skill"
                             className="w-auto h-auto"
                           />
-                          <p className="text-center text-blue-400 text-xs mt-1">
+                          <span className="text-center text-blue-400 text-xs mt-1 block">
                             New Passive Skill
-                          </p>
+                          </span>
                         </div>
                       )}
                     </div>
