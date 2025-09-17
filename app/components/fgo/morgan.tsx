@@ -2833,7 +2833,7 @@ export const Morgan = () => {
                     <img
                       src="/Fgo/icons/Powerup.png"
                       alt="Attack Up"
-                      className="w-auto h-auto mb-6 ml-3"
+                      className="w-auto h-auto mb-6 "
                     />
                     <span className="text-white">
                       Increases party's damage against enemies with{" "}
