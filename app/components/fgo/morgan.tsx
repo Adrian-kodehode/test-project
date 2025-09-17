@@ -6,6 +6,9 @@ export const Morgan = () => {
   const [activeTab, setActiveTab] = useState("servant");
   const [activeStage, setActiveStage] = useState(1);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [activeSkillTab, setActiveSkillTab] = useState("first");
+  const [appendSkillTab, setAppendSkillTab] = useState("first");
+  const [npTab, setNpTab] = useState("rank");
 
   const tabs = ["Servant", "Dialogue", "Quest", "Gallery"];
   const stages = [
@@ -543,6 +546,1195 @@ export const Morgan = () => {
           ))}
         </div>
       </div>
+
+      {/* Active Skills*/}
+      <h2 className="text-xl font-bold mt-5 ml-8">Active Skills</h2>
+
+      <div className="mt-4 mx-auto w-[1000px] bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+        <div className="flex justify-center p-2 bg-[#0a273f] border-b border-gray-700">
+          <div className="flex gap-1">
+            <button
+              onClick={() => setActiveSkillTab("first")}
+              className={`px-4 py-2 text-sm font-bold rounded ${
+                activeSkillTab === "first"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              }`}
+            >
+              First Skill
+            </button>
+            <button
+              onClick={() => setActiveSkillTab("second")}
+              className={`px-4 py-2 text-sm font-bold rounded ${
+                activeSkillTab === "second"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              }`}
+            >
+              Second Skill
+            </button>
+            <button
+              onClick={() => setActiveSkillTab("third")}
+              className={`px-4 py-2 text-sm font-bold rounded ${
+                activeSkillTab === "third"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              }`}
+            >
+              Third Skill
+            </button>
+          </div>
+        </div>
+
+        {activeSkillTab === "first" && (
+          <div>
+            <div className="bg-gray-700 text-center py-2 border-b border-gray-700">
+              <p className="text-sm font-bold text-gray-300">
+                Available from the start
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 border-b border-gray-700">
+              <div className="md:col-span-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+                <img
+                  src="/Fgo/icons/Atk_up.png"
+                  alt="Charisma of Desire"
+                  className="w-20 h-20"
+                />
+              </div>
+              <div className="md:col-span-3 p-4 text-center md:text-center">
+                <p className="text-lg font-bold text-blue-400 mb-2">
+                  Charisma of Desire B
+                </p>
+                <p className="text-sm">Increases party's attack for 3 turns.</p>
+                <p className="text-sm">Charges own NP gauge.</p>
+                <p className="text-sm">
+                  Reduces all enemies' defense for 3 turns.
+                </p>
+              </div>
+            </div>
+
+            <table className="w-full text-sm text-center">
+              <thead className="bg-gray-700">
+                <tr>
+                  <th className="p-2 border-r border-gray-600 w-1/12">Level</th>
+                  {[...Array(10)].map((_, i) => (
+                    <th
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      } w-[8.88%]`}
+                    >
+                      {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="bg-gray-900 font-bold">
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1">
+                    <img
+                      src="/Fgo/icons/Attackup.png"
+                      alt="Attack"
+                      className="w-5 h-5"
+                    />
+                    Attack +
+                  </td>
+                  {[
+                    "10%",
+                    "11%",
+                    "12%",
+                    "13%",
+                    "14%",
+                    "15%",
+                    "16%",
+                    "17%",
+                    "18%",
+                    "20%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1">
+                    <img
+                      src="/Fgo/icons/NpCharge.png"
+                      alt="NP"
+                      className="w-5 h-5"
+                    />
+                    NP +
+                  </td>
+                  {[
+                    "20%",
+                    "21%",
+                    "22%",
+                    "23%",
+                    "24%",
+                    "25%",
+                    "26%",
+                    "27%",
+                    "28%",
+                    "30%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1">
+                    <img
+                      src="/Fgo/icons/Defensedown.png"
+                      alt="Defense"
+                      className="w-5 h-5"
+                    />
+                    Defense -
+                  </td>
+                  {[
+                    "20%",
+                    "21%",
+                    "22%",
+                    "23%",
+                    "24%",
+                    "25%",
+                    "26%",
+                    "27%",
+                    "28%",
+                    "30%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+                <tr>
+                  <td className="bg-gray-700 p-2 border-r border-gray-600">
+                    Cooldown
+                  </td>
+                  <td colSpan={5} className="p-2 border-r border-gray-600">
+                    8
+                  </td>
+                  <td colSpan={3} className="p-2 border-r border-gray-600">
+                    7
+                  </td>
+                  <td colSpan={2} className="p-2">
+                    6
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        {activeSkillTab === "second" && (
+          <div>
+            <div className="bg-gray-700 text-center py-2 border-b border-gray-700">
+              <p className="text-sm font-bold text-gray-300">
+                Unlocks after 1st Ascension
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4">
+              <div className="md:col-span-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+                <img
+                  src="/Fgo/icons/Startnp.png"
+                  alt="Protection of the Lake"
+                  className="w-20 h-20"
+                />
+              </div>
+              <div className="md:col-span-3 p-4 text-center">
+                <div className="flex justify-center gap-1 mb-3">
+                  <button className="px-4 py-1 text-sm font-bold rounded bg-blue-600 text-white">
+                    Default
+                  </button>
+                  <button className="px-4 py-1 text-sm font-bold rounded bg-gray-800 text-gray-400 hover:bg-gray-700">
+                    After Clearing Avalon le Fae
+                  </button>
+                </div>
+                <p className="text-lg font-bold text-blue-400 mb-2">
+                  Protection of the Lake C
+                </p>
+                <p className="text-sm">Charges one ally's NP gauge.</p>
+                <p className="text-sm">
+                  Increases party's NP generation rate for 3 turns.
+                </p>
+              </div>
+            </div>
+
+            <table className="w-full text-sm text-center border-t border-gray-700">
+              <thead className="bg-gray-700">
+                <tr>
+                  <th className="p-2 border-r border-gray-600 w-1/12">Level</th>
+                  {[...Array(10)].map((_, i) => (
+                    <th
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      } w-[8.88%]`}
+                    >
+                      {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="bg-gray-900 font-bold">
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1 h-full">
+                    <img
+                      src="/Fgo/icons/NpCharge.png"
+                      alt="NP"
+                      className="w-5 h-5"
+                    />
+                    NP +
+                  </td>
+                  {[
+                    "10%",
+                    "11%",
+                    "12%",
+                    "13%",
+                    "14%",
+                    "15%",
+                    "16%",
+                    "17%",
+                    "18%",
+                    "20%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1 h-full">
+                    <img
+                      src="/Fgo/icons/Npchargeup.png"
+                      alt="NP Rate"
+                      className="w-5 h-5"
+                    />
+                    NP Rate +
+                  </td>
+                  {[
+                    "15%",
+                    "16%",
+                    "17%",
+                    "18%",
+                    "19%",
+                    "20%",
+                    "21%",
+                    "22%",
+                    "23%",
+                    "25%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+                <tr>
+                  <td className="bg-gray-700 p-2 border-r border-gray-600">
+                    Cooldown
+                  </td>
+                  <td colSpan={5} className="p-2 border-r border-gray-600">
+                    7
+                  </td>
+                  <td colSpan={4} className="p-2 border-r border-gray-600">
+                    6
+                  </td>
+                  <td colSpan={1} className="p-2">
+                    5
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+        {activeSkillTab === "third" && (
+          <div>
+            <div className="bg-gray-700 text-center py-2 border-b border-gray-700">
+              <p className="text-sm font-bold text-gray-300">
+                Unlocks after 3rd Ascension
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4">
+              <div className="md:col-span-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+                <img
+                  src="/Fgo/icons/Guts.png"
+                  alt="Witch's Casket"
+                  className="w-20 h-20"
+                />
+              </div>
+              <div className="md:col-span-3 p-4 text-center">
+                <p className="text-lg font-bold text-blue-400 mb-2">
+                  Beyond the Furthest End A
+                </p>
+                <p className="text-sm">
+                  Grants self Guts status for 1 time, 3 turns.
+                </p>
+                <p className="text-sm mt-1">
+                  Increases own critical star absorption for 3 turns.
+                </p>
+                <p className="text-sm mt-1">
+                  Increases own critical damage for 3 turns.
+                </p>
+                <p className="text-sm mt-1">
+                  <img
+                    src="/Fgo/icons/Buffregen.png"
+                    alt=""
+                    className="inline"
+                  />{" "}
+                  Grants self Regeneration buff for 3 turns.
+                </p>
+                <p className="text-sm">
+                  (Reduces all enemies' attack(1 turn) every turn for 3 turns.)
+                </p>
+                <p className="text-sm mt-1">
+                  Reduces their critical attack chance (1 turn) every turn for 3
+                  turns.
+                </p>
+                <p className="text-sm mt-1">Gains critical stars.</p>
+              </div>
+            </div>
+            <table className="w-full text-sm text-center border-t border-gray-700">
+              <thead className="bg-gray-700">
+                <tr>
+                  <th className="p-2 border-r border-gray-600">Level</th>
+                  {[...Array(10)].map((_, i) => (
+                    <th
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      } w-[8.88%]`}
+                    >
+                      {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="bg-gray-900 font-bold">
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1 h-full">
+                    <img
+                      src="/Fgo/icons/Gutsstatus.png"
+                      alt="Heal"
+                      className="w-5 h-5"
+                    />
+                    Revives with
+                  </td>
+                  {[
+                    "1000 HP",
+                    "1200 HP",
+                    "1400 HP",
+                    "1600 HP",
+                    "1800 HP",
+                    "2000 HP",
+                    "2200 HP",
+                    "2400 HP",
+                    "2600 HP",
+                    "3000 HP",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1 h-full">
+                    <img
+                      src="/Fgo/icons/Critabsup.png"
+                      alt="Crit Absorption"
+                      className="w-5 h-5"
+                    />
+                    Absorption +
+                  </td>
+                  {[
+                    "3000 %",
+                    "3200 %",
+                    "3400 %",
+                    "3600 %",
+                    "3800 %",
+                    "4000 %",
+                    "4200 %",
+                    "4400 %",
+                    "4600 %",
+                    "5000 %",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>{" "}
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1 h-full">
+                    <img
+                      src="/Fgo/icons/Critdmgup.png"
+                      alt="Crit Damage Up"
+                      className="w-5 h-5"
+                    />
+                    Crit Damage +
+                  </td>
+                  {[
+                    "20%",
+                    "21%",
+                    "22%",
+                    "23%",
+                    "24%",
+                    "25%",
+                    "26%",
+                    "27%",
+                    "28%",
+                    "30%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>{" "}
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1 h-full">
+                    <img
+                      src="/Fgo/icons/Attackdown.png"
+                      alt="Attack Down"
+                      className="w-5 h-5"
+                    />
+                    Attack -
+                  </td>
+                  {[
+                    "10%",
+                    "11%",
+                    "12%",
+                    "13%",
+                    "14%",
+                    "15%",
+                    "16%",
+                    "17%",
+                    "18%",
+                    "20%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>{" "}
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1 h-full">
+                    <img
+                      src="/Fgo/icons/Critchndown.png"
+                      alt="Crit Chance Down"
+                      className="w-5 h-5"
+                    />
+                    Crit Chance -
+                  </td>
+                  {[
+                    "10%",
+                    "11%",
+                    "12%",
+                    "13%",
+                    "14%",
+                    "15%",
+                    "16%",
+                    "17%",
+                    "18%",
+                    "20%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>{" "}
+                <tr className="border-b border-gray-600">
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1 h-full">
+                    <img
+                      src="/Fgo/icons/GainStars.png"
+                      alt="Stars"
+                      className="w-5 h-5"
+                    />
+                    Stars +
+                  </td>
+                  {["5", "6", "7", "8", "9", "10", "11", "12", "13", "15"].map(
+                    (val, i) => (
+                      <td
+                        key={i}
+                        className={`p-2 ${
+                          i < 9 ? "border-r border-gray-600" : ""
+                        }`}
+                      >
+                        {val}
+                      </td>
+                    )
+                  )}
+                </tr>
+                <tr>
+                  <td className="bg-gray-700 p-2 border-r border-gray-600">
+                    Cooldown
+                  </td>
+                  <td colSpan={5} className="p-2 border-r border-gray-600">
+                    9
+                  </td>
+                  <td colSpan={3} className="p-2 border-r border-gray-600">
+                    8
+                  </td>
+                  <td colSpan={2} className="p-2">
+                    7
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+
+      {/* Passive Skills */}
+      <h2 className="text-xl font-bold mt-5 ml-8">Passive Skills</h2>
+      <div className="mt-4 mx-auto w-[1000px] bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+        <div className="divide-y divide-gray-700">
+          {/* Skill 1 */}
+          <div className="grid grid-cols-12 items-center p-4">
+            <div className="col-span-1 text-center font-bold">1</div>
+            <div className="col-span-2 flex justify-center">
+              <img
+                src="/Fgo/icons/Madness.png"
+                alt="Mad Enhancement"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="col-span-9 pl-4">
+              <span className="font-bold text-blue-400">Mad Enhancement</span> B
+              <p className="text-sm flex items-center gap-1">
+                <img
+                  src="/Fgo/icons/Busterupstatus.png"
+                  alt="Buster Up"
+                  className="w-5 h-5"
+                />
+                Increases own Buster performance by 8%.
+              </p>
+            </div>
+          </div>
+
+          {/* Skill 2 */}
+          <div className="grid grid-cols-12 items-center p-4">
+            <div className="col-span-1 text-center font-bold">2</div>
+            <div className="col-span-2 flex justify-center">
+              <img
+                src="/Fgo/icons/Anti_magic.png"
+                alt="Magic Resistance"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="col-span-9 pl-4">
+              <span className="font-bold text-blue-400">Magic Resistance</span>{" "}
+              A
+              <p className="text-sm flex items-center gap-1">
+                <img
+                  src="/Fgo/icons/Resistanceup.png"
+                  alt="Debuff Resistance"
+                  className="w-5 h-5"
+                />
+                Increases own debuff resistance by 20%.
+              </p>
+            </div>
+          </div>
+
+          {/* Skill 3 */}
+          <div className="grid grid-cols-12 items-center p-4">
+            <div className="col-span-1 text-center font-bold">3</div>
+            <div className="col-span-2 flex justify-center">
+              <img
+                src="/Fgo/icons/Item_construction.png"
+                alt="Item Construction"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="col-span-9 pl-4">
+              <span className="font-bold text-blue-400">Item Construction</span>{" "}
+              EX
+              <p className="text-sm flex items-center gap-1">
+                <img
+                  src="/Fgo/icons/Statusup.png"
+                  alt="Debuff Success Rate"
+                  className="w-5 h-5"
+                />
+                Increases own debuff success rate by 12%.
+              </p>
+            </div>
+          </div>
+
+          {/* Skill 4 */}
+          <div className="grid grid-cols-12 items-center p-4">
+            <div className="col-span-1 text-center font-bold">4</div>
+            <div className="col-span-2 flex justify-center">
+              <img
+                src="/Fgo/icons/Territory_creation.png"
+                alt="Territory Creation"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="col-span-9 pl-4">
+              <span className="font-bold text-blue-400">
+                Territory Creation{" "}
+              </span>{" "}
+              B
+              <p className="text-sm flex items-center gap-1">
+                <img
+                  src="/Fgo/icons/Artsupstatus.png"
+                  alt="Arts Up"
+                  className="w-5 h-5"
+                />
+                Increases own Arts performance by 8%.
+              </p>
+            </div>
+          </div>
+
+          {/* Skill 5 */}
+          <div className="grid grid-cols-12 items-center p-4">
+            <div className="col-span-1 text-center font-bold">5</div>
+            <div className="col-span-2 flex justify-center">
+              <img
+                src="/Fgo/icons/Criticalchanceresup.png"
+                alt="Fae Eyes"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="col-span-9 pl-4">
+              <span className="font-bold text-blue-400">Fae Eyes </span> A
+              <p className="text-sm flex items-center gap-1">
+                <img
+                  src="/Fgo/icons/Critchanceresup.png"
+                  alt="Crit Attack Resistance"
+                  className="w-5 h-5"
+                />
+                Increases own critical attack chance resistance by 20%.
+              </p>
+            </div>
+          </div>
+
+          {/* Bond 15 Skill */}
+          <div className="bg-gray-700 text-center py-2">
+            <p className="text-sm font-bold text-gray-300">
+              Reach <span className="text-blue-400">Bond Level </span>
+              15
+            </p>
+          </div>
+          <div className="grid grid-cols-12 items-center p-4">
+            <div className="col-span-1 text-center font-bold">-</div>
+            <div className="col-span-2 flex justify-center">
+              <img
+                src="/Fgo/icons/Bondskill.png"
+                alt=""
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="col-span-9 pl-4">
+              <p className="font-bold text-blue-400">
+                Guidance of the Visionary Flames
+              </p>
+              <p className="text-sm flex items-start gap-1">
+                <img
+                  src="/Fgo/icons/BondExp.png"
+                  alt="Bond Points Up"
+                  className="w-5 h-5 mt-0.5"
+                />
+                <span>
+                  Increases party's Bond Points gained by 25%. (Including sub
+                  members)
+                  <br />
+                  (Stackable, This passive will not trigger if the owner is a
+                  Support Servant.)
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Append Skills */}
+      <h2 className="text-xl font-bold mt-5 ml-8">Append Skills</h2>
+      <div className="mt-4 mx-auto w-[1000px] bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+        <div className="flex justify-center p-2 bg-[#0a273f] border-b border-gray-700">
+          <div className="flex gap-1">
+            <button
+              onClick={() => setAppendSkillTab("first")}
+              className={`px-4 py-2 text-sm font-bold rounded ${
+                appendSkillTab === "first"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              }`}
+            >
+              First Skill
+            </button>
+            <button
+              onClick={() => setAppendSkillTab("second")}
+              className={`px-4 py-2 text-sm font-bold rounded ${
+                appendSkillTab === "second"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              }`}
+            >
+              Second Skill
+            </button>
+            <button
+              onClick={() => setAppendSkillTab("third")}
+              className={`px-4 py-2 text-sm font-bold rounded ${
+                appendSkillTab === "third"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              }`}
+            >
+              Third Skill
+            </button>{" "}
+            <button
+              onClick={() => setAppendSkillTab("fourth")}
+              className={`px-4 py-2 text-sm font-bold rounded ${
+                appendSkillTab === "fourth"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              }`}
+            >
+              Fourth Skill
+            </button>{" "}
+            <button
+              onClick={() => setAppendSkillTab("fifth")}
+              className={`px-4 py-2 text-sm font-bold rounded ${
+                appendSkillTab === "fifth"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              }`}
+            >
+              Fifth Skill
+            </button>
+          </div>
+        </div>
+        {appendSkillTab === "first" && (
+          <div>
+            <div className="bg-gray-700 text-center py-2 border-b border-gray-700">
+              <p className="text-sm font-bold text-gray-300">
+                Unlocks by consuming{" "}
+                <span className="text-blue-400">Servant Coins</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 border-b border-gray-700">
+              <div className="md:col-span-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+                <img
+                  src="/Fgo/icons/Damageup.png"
+                  alt="Extra Attack Finesse Improvement"
+                />
+              </div>
+              <div className="md:col-span-3 p-4 text-center md:text-center">
+                <p className="text-lg font-bold text-blue-400 mb-2">
+                  Extra Attack Finesse Improvement
+                </p>
+                <p className="text-sm">
+                  Increases own Extra Attack performance.
+                </p>
+              </div>
+            </div>
+
+            <table className="w-full text-sm text-center">
+              <thead className="bg-gray-700">
+                <tr>
+                  <th className="p-2 border-r border-gray-600 ">Level</th>
+                  {[...Array(10)].map((_, i) => (
+                    <th
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      } w-[8.88%]`}
+                    >
+                      {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="bg-gray-900 font-bold">
+                <tr>
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1">
+                    <img
+                      src="/Fgo/icons/Extraattackup.png"
+                      alt="Extra Attack"
+                    />
+                    Extra Attack +
+                  </td>
+                  {[
+                    "30%",
+                    "32%",
+                    "34%",
+                    "36%",
+                    "38%",
+                    "40%",
+                    "42%",
+                    "44%",
+                    "46%",
+                    "50%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+        {appendSkillTab === "second" && (
+          <div>
+            <div className="bg-gray-700 text-center py-2 border-b border-gray-700">
+              <p className="text-sm font-bold text-gray-300">
+                Unlocks by consuming{" "}
+                <span className="text-blue-400">Servant Coins</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 border-b border-gray-700">
+              <div className="md:col-span-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+                <img
+                  src="/Fgo/icons/Startnp.png"
+                  alt="Extra Attack Finesse Improvement"
+                />
+              </div>
+              <div className="md:col-span-3 p-4 text-center md:text-center">
+                <p className="text-lg font-bold text-blue-400 mb-2">
+                  Mana Loading
+                </p>
+                <p className="text-sm">Starts battle with NP gauge charged.</p>
+              </div>
+            </div>
+
+            <table className="w-full text-sm text-center">
+              <thead className="bg-gray-700">
+                <tr>
+                  <th className="p-2 border-r border-gray-600 w-1/12">Level</th>
+                  {[...Array(10)].map((_, i) => (
+                    <th
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      } w-[8.88%]`}
+                    >
+                      {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="bg-gray-900 font-bold">
+                <tr>
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1">
+                    <img src="/Fgo/icons/NpCharge.png" alt="" />
+                    NP +
+                  </td>
+                  {[
+                    "10%",
+                    "11%",
+                    "12%",
+                    "13%",
+                    "14%",
+                    "15%",
+                    "16%",
+                    "17%",
+                    "18%",
+                    "20%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+        {appendSkillTab === "third" && (
+          <div>
+            <div className="bg-gray-700 text-center py-2 border-b border-gray-700">
+              <p className="text-sm font-bold text-gray-300">
+                Unlocks by consuming{" "}
+                <span className="text-blue-400">Servant Coins</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 border-b border-gray-700">
+              <div className="md:col-span-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+                <img
+                  src="/Fgo/icons/Criticalchanceresup.png"
+                  alt="Extra Attack Finesse Improvement"
+                />
+              </div>
+              <div className="md:col-span-3 p-4 text-center md:text-center">
+                <p className="text-lg font-bold text-blue-400 mb-2">
+                  Anti-Saber Critical Attack Chance Resistance
+                </p>
+                <p className="text-sm">
+                  Increases own critical attack chance resistance against{" "}
+                  <img
+                    src="/Fgo/icons/Class-Saber-Gold (1).png"
+                    alt=""
+                    className="inline h-8"
+                  />{" "}
+                  <a href="/saber" className="text-blue-400">
+                    Saber
+                  </a>{" "}
+                  enemies.
+                </p>
+              </div>
+            </div>
+
+            <table className="w-full text-sm text-center">
+              <thead className="bg-gray-700">
+                <tr>
+                  <th className="p-2 border-r border-gray-600 ">Level</th>
+                  {[...Array(10)].map((_, i) => (
+                    <th
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      } w-[8.88%]`}
+                    >
+                      {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="bg-gray-900 font-bold">
+                <tr>
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1">
+                    <img src="/Fgo/icons/Critchanceresup.png" alt="" />
+                    <p>
+                      vs.{" "}
+                      <a href="/saber" className="text-blue-400">
+                        Saber
+                      </a>{" "}
+                      Crit Chance Res +
+                    </p>
+                  </td>
+                  {[
+                    "20%",
+                    "21%",
+                    "22%",
+                    "23%",
+                    "24%",
+                    "25%",
+                    "26%",
+                    "27%",
+                    "28%",
+                    "30%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+        {appendSkillTab === "fourth" && (
+          <div>
+            <div className="bg-gray-700 text-center py-2 border-b border-gray-700">
+              <p className="text-sm font-bold text-gray-300">
+                Unlocks by consuming{" "}
+                <span className="text-blue-400">Servant Coins</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 border-b border-gray-700">
+              <div className="md:col-span-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+                <img
+                  src="/Fgo/icons/Critdmg.png"
+                  alt="Extra Attack Finesse Improvement"
+                />
+              </div>
+              <div className="md:col-span-3 p-4 text-center md:text-center">
+                <p className="text-lg font-bold text-blue-400 mb-2">
+                  Special Attack Finesse Improvement
+                </p>
+                <p className="text-sm">Increases own critical damage.</p>
+              </div>
+            </div>
+
+            <table className="w-full text-sm text-center">
+              <thead className="bg-gray-700">
+                <tr>
+                  <th className="p-2 border-r border-gray-600 ">Level</th>
+                  {[...Array(10)].map((_, i) => (
+                    <th
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      } w-[8.88%]`}
+                    >
+                      {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="bg-gray-900 font-bold">
+                <tr>
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1">
+                    <img src="/Fgo/icons/Critdmgup.png" alt="" />
+                    <span> Crit Damage +</span>
+                  </td>
+                  {[
+                    "20%",
+                    "21%",
+                    "22%",
+                    "23%",
+                    "24%",
+                    "25%",
+                    "26%",
+                    "27%",
+                    "28%",
+                    "30%",
+                  ].map((val, i) => (
+                    <td
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      }`}
+                    >
+                      {val}
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}{" "}
+        {appendSkillTab === "fifth" && (
+          <div>
+            <div className="bg-gray-700 text-center py-2 border-b border-gray-700">
+              <p className="text-sm font-bold text-gray-300">
+                Unlocks by consuming{" "}
+                <span className="text-blue-400">Servant Coins</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 border-b border-gray-700">
+              <div className="md:col-span-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-gray-700">
+                <img
+                  src="/Fgo/icons/Skillreloading.png"
+                  alt="Extra Attack Finesse Improvement"
+                />
+              </div>
+              <div className="md:col-span-3 p-4 text-center md:text-center">
+                <p className="text-lg font-bold text-blue-400 mb-2">
+                  Skill Reloading
+                </p>
+                <p className="text-sm">
+                  Reduces activated skill cooldown by 1 for N times. (Only once
+                  per skill).
+                </p>
+                <p>(N: Based on Skill Level.)</p>
+              </div>
+            </div>
+
+            <table className="w-full text-sm text-center">
+              <thead className="bg-gray-700">
+                <tr>
+                  <th className="p-2 border-r border-gray-600 ">Level</th>
+                  {[...Array(10)].map((_, i) => (
+                    <th
+                      key={i}
+                      className={`p-2 ${
+                        i < 9 ? "border-r border-gray-600" : ""
+                      } w-[8.88%]`}
+                    >
+                      {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="bg-gray-900 font-bold">
+                <tr>
+                  <td className="bg-gray-700 p-2 border-r border-gray-600 flex items-center justify-center gap-1">
+                    <img src="/Fgo/icons/Skillcooldown.png" alt="" />
+                    <span> Reduction Available Count +</span>
+                  </td>
+                  {["1", "1", "1", "1", "1", "2", "2", "2", "2", "3"].map(
+                    (val, i) => (
+                      <td
+                        key={i}
+                        className={`p-2 ${
+                          i < 9 ? "border-r border-gray-600" : ""
+                        }`}
+                      >
+                        {val}
+                      </td>
+                    )
+                  )}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+
       {/* Noble Phantasm */}
       <h2 className="text-xl font-bold mt-5 ml-8">Noble Phantasm</h2>
       <div className="mt-4 mx-auto w-[1000px] bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
@@ -550,9 +1742,9 @@ export const Morgan = () => {
         <div className="flex justify-center p-2 bg-[#0a273f] border-b border-gray-700">
           <div className="flex gap-1">
             <button
-              onClick={() => setActiveTab("rank")}
+              onClick={() => setNpTab("rank")}
               className={`px-4 py-2 text-sm font-bold rounded ${
-                activeTab === "rank"
+                npTab === "rank"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
               }`}
@@ -560,9 +1752,9 @@ export const Morgan = () => {
               Rank EX
             </button>
             <button
-              onClick={() => setActiveTab("videos")}
+              onClick={() => setNpTab("videos")}
               className={`px-4 py-2 text-sm font-bold rounded ${
-                activeTab === "videos"
+                npTab === "videos"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
               }`}
@@ -1424,7 +2616,7 @@ export const Morgan = () => {
           </tbody>
         </table>
       </div>
-      <h2 className="text-xl font-bold mt-5">Stats</h2>
+      <h2 className="text-xl font-bold mt-5 ml-8">Stats</h2>
       <div className="bg-gray-900 border border-gray-700 rounded-lg mt-4 ml-14 max-w-2xl">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {[
@@ -1777,6 +2969,7 @@ export const Morgan = () => {
           </table>
         </div>
       </div>
+      <h2 className="text-xl mt-5 font-bold ">Biography</h2>
     </div>
   );
 };
