@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { Star, Zap, Shield, Heart, Users, Crown, X } from "lucide-react";
+import { JeanneDArcAlterActiveSkill } from "./jeanne_d'arc_alter_active_skill";
+import { JeanneDArcAlterPassiveSkills } from "./jeanne_d'arc_alter_passive_skills";
+import { JeanneDArcAlterAppendSkills } from "./jeanne_d'arc_alter_append_skills";
+import { JeanneDArcAlterNoblePhantasm } from "./jeanne_d'arc_alter_noble_phantasm";
 
 export const JeanneDArcAlter = () => {
   const [activeTab, setActiveTab] = useState("servant");
@@ -169,26 +173,7 @@ export const JeanneDArcAlter = () => {
           .
         </p>
       </div>
-
-      {/* Main Tabs */}
-      <div className="flex border-b border-gray-700 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
-        <div className="flex w-full">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab.toLowerCase())}
-              className={`flex-shrink-0 min-w-[110px] sm:flex-1 px-4 py-3 font-medium ${
-                activeTab === tab.toLowerCase()
-                  ? "bg-blue-600 text-white border-b-2 border-blue-400"
-                  : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-      </div>
-
+      {/* Top Navigation Tabs */}
       <div className="flex flex-col lg:flex-row gap-6 p-4 sm:p-6">
         {/* Left Panel - Character Info */}
         <div className="w-full lg:w-1/2 space-y-6">
@@ -352,7 +337,7 @@ export const JeanneDArcAlter = () => {
           <div>
             <div className="flex gap-1 mb-2">
               {cardTypes.map((card, index) => (
-                <div key={index} className="w-full h-full">
+                <div key={index} className="w-auto h-auto">
                   <img
                     src={card.icon}
                     alt={card.type}
@@ -401,7 +386,7 @@ export const JeanneDArcAlter = () => {
         </div>
 
         {/* Right Panel - Image and Controls */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/3">
           {/* Stage/Costume Controls */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-4">
             {stages.map((stage) => (
@@ -412,8 +397,7 @@ export const JeanneDArcAlter = () => {
                   activeStage === stage.id
                     ? "bg-blue-600 text-white"
                     : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-                }`}
-              >
+                }`}>
                 {stage.label}
               </button>
             ))}
@@ -424,8 +408,7 @@ export const JeanneDArcAlter = () => {
               <button
                 key={costume.id}
                 onClick={() => handleCostumeClick(costume)}
-                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-              >
+                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600">
                 {costume.label}
               </button>
             ))}
@@ -437,8 +420,7 @@ export const JeanneDArcAlter = () => {
               <button
                 key={sprite.id}
                 onClick={() => handleSpriteClick(sprite)}
-                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-              >
+                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600">
                 {sprite.label}
               </button>
             ))}
@@ -450,8 +432,7 @@ export const JeanneDArcAlter = () => {
                 setActiveImage(costumesSprite[0].src);
                 setImageType("costumeSprite");
               }}
-              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-            >
+              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600">
               Costume 1 Sprite
             </button>
           </div>
@@ -460,8 +441,7 @@ export const JeanneDArcAlter = () => {
           {isExpanded && (
             <div
               className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-              onClick={() => setIsExpanded(false)}
-            >
+              onClick={() => setIsExpanded(false)}>
               <img
                 src={activeImage}
                 alt="Expanded artwork"
@@ -492,8 +472,7 @@ export const JeanneDArcAlter = () => {
                 <div
                   key={i}
                   className="inline-block animate-pulse"
-                  style={{ animationDelay: `${i * 0.2}s` }}
-                >
+                  style={{ animationDelay: `${i * 0.2}s` }}>
                   ✦
                 </div>
               ))}
@@ -512,13 +491,19 @@ export const JeanneDArcAlter = () => {
                 index === 0
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               {tab}
             </button>
           ))}
         </div>
       </div>
+      <JeanneDArcAlterActiveSkill />
+      <br />
+      <JeanneDArcAlterPassiveSkills />
+      <br />
+      <JeanneDArcAlterAppendSkills />
+      <br />
+      <JeanneDArcAlterNoblePhantasm />
     </div>
   );
 };

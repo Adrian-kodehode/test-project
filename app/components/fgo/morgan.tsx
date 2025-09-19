@@ -379,7 +379,7 @@ export const Morgan = () => {
           <div>
             <div className="flex gap-1 mb-2">
               {cardTypes.map((card, index) => (
-                <div key={index} className="w-full h-full">
+                <div key={index} className="w-auto h-auto">
                   <img
                     src={card.icon}
                     alt={card.type}
@@ -428,7 +428,7 @@ export const Morgan = () => {
         </div>
 
         {/* Right Panel - Image and Controls */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/3">
           {/* Stage/Costume Controls */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-4">
             {stages.map((stage) => (
@@ -439,8 +439,7 @@ export const Morgan = () => {
                   activeStage === stage.id
                     ? "bg-blue-600 text-white"
                     : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-                }`}
-              >
+                }`}>
                 {stage.label}
               </button>
             ))}
@@ -451,8 +450,7 @@ export const Morgan = () => {
               <button
                 key={costume.id}
                 onClick={() => handleCostumeClick(costume)}
-                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-              >
+                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600">
                 {costume.label}
               </button>
             ))}
@@ -464,8 +462,7 @@ export const Morgan = () => {
               <button
                 key={sprite.id}
                 onClick={() => handleSpriteClick(sprite)}
-                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-              >
+                className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600">
                 {sprite.label}
               </button>
             ))}
@@ -477,8 +474,7 @@ export const Morgan = () => {
                 setActiveImage(costumesSprite[0].src);
                 setImageType("costumeSprite");
               }}
-              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600"
-            >
+              className="px-3 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600">
               Costume 1 Sprite
             </button>
           </div>
@@ -487,8 +483,7 @@ export const Morgan = () => {
           {isExpanded && (
             <div
               className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-              onClick={() => setIsExpanded(false)}
-            >
+              onClick={() => setIsExpanded(false)}>
               <img
                 src={activeImage}
                 alt="Expanded artwork"
@@ -519,8 +514,7 @@ export const Morgan = () => {
                 <div
                   key={i}
                   className="inline-block animate-pulse"
-                  style={{ animationDelay: `${i * 0.2}s` }}
-                >
+                  style={{ animationDelay: `${i * 0.2}s` }}>
                   ✦
                 </div>
               ))}
@@ -539,8 +533,7 @@ export const Morgan = () => {
                 index === 0
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               {tab}
             </button>
           ))}
@@ -548,9 +541,9 @@ export const Morgan = () => {
       </div>
 
       {/* Active Skills*/}
-      <h2 className="text-xl font-bold mt-5 ml-8">Active Skills</h2>
 
       <div className="mt-4 mx-auto w-[1000px] bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+        <h2 className="text-[25px] font-bold mt-3 mb-3 ml-8">Active Skills</h2>
         <div className="flex justify-center p-2 bg-[#0a273f] border-b border-gray-700">
           <div className="flex gap-1">
             <button
@@ -559,8 +552,7 @@ export const Morgan = () => {
                 activeSkillTab === "first"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               First Skill
             </button>
             <button
@@ -569,8 +561,7 @@ export const Morgan = () => {
                 activeSkillTab === "second"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               Second Skill
             </button>
             <button
@@ -579,8 +570,7 @@ export const Morgan = () => {
                 activeSkillTab === "third"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               Third Skill
             </button>
           </div>
@@ -623,8 +613,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      } w-[8.88%]`}
-                    >
+                      } w-[8.88%]`}>
                       {i + 1}
                     </th>
                   ))}
@@ -656,8 +645,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -687,8 +675,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -718,8 +705,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -787,8 +773,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      } w-[8.88%]`}
-                    >
+                      } w-[8.88%]`}>
                       {i + 1}
                     </th>
                   ))}
@@ -820,8 +805,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -851,8 +835,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -931,8 +914,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      } w-[8.88%]`}
-                    >
+                      } w-[8.88%]`}>
                       {i + 1}
                     </th>
                   ))}
@@ -964,8 +946,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -995,8 +976,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -1026,8 +1006,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -1057,8 +1036,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -1088,8 +1066,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -1109,8 +1086,7 @@ export const Morgan = () => {
                         key={i}
                         className={`p-2 ${
                           i < 9 ? "border-r border-gray-600" : ""
-                        }`}
-                      >
+                        }`}>
                         {val}
                       </td>
                     )
@@ -1137,8 +1113,8 @@ export const Morgan = () => {
       </div>
 
       {/* Passive Skills */}
-      <h2 className="text-xl font-bold mt-5 ml-8">Passive Skills</h2>
       <div className="mt-4 mx-auto w-[1000px] bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+        <h2 className="text-[25px] font-bold mt-3 mb-3 ml-8">Passive Skills</h2>
         <div className="divide-y divide-gray-700">
           {/* Skill 1 */}
           <div className="grid grid-cols-12 items-center p-4">
@@ -1300,8 +1276,8 @@ export const Morgan = () => {
       </div>
 
       {/* Append Skills */}
-      <h2 className="text-xl font-bold mt-5 ml-8">Append Skills</h2>
       <div className="mt-4 mx-auto w-[1000px] bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+        <h2 className="text-[25px] font-bold mt-3 mb-3 ml-8">Append Skills</h2>
         <div className="flex justify-center p-2 bg-[#0a273f] border-b border-gray-700">
           <div className="flex gap-1">
             <button
@@ -1310,8 +1286,7 @@ export const Morgan = () => {
                 appendSkillTab === "first"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               First Skill
             </button>
             <button
@@ -1320,8 +1295,7 @@ export const Morgan = () => {
                 appendSkillTab === "second"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               Second Skill
             </button>
             <button
@@ -1330,8 +1304,7 @@ export const Morgan = () => {
                 appendSkillTab === "third"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               Third Skill
             </button>{" "}
             <button
@@ -1340,8 +1313,7 @@ export const Morgan = () => {
                 appendSkillTab === "fourth"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               Fourth Skill
             </button>{" "}
             <button
@@ -1350,8 +1322,7 @@ export const Morgan = () => {
                 appendSkillTab === "fifth"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               Fifth Skill
             </button>
           </div>
@@ -1391,8 +1362,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      } w-[8.88%]`}
-                    >
+                      } w-[8.88%]`}>
                       {i + 1}
                     </th>
                   ))}
@@ -1423,8 +1393,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -1466,8 +1435,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      } w-[8.88%]`}
-                    >
+                      } w-[8.88%]`}>
                       {i + 1}
                     </th>
                   ))}
@@ -1495,8 +1463,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -1549,8 +1516,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      } w-[8.88%]`}
-                    >
+                      } w-[8.88%]`}>
                       {i + 1}
                     </th>
                   ))}
@@ -1584,8 +1550,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -1627,8 +1592,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      } w-[8.88%]`}
-                    >
+                      } w-[8.88%]`}>
                       {i + 1}
                     </th>
                   ))}
@@ -1656,8 +1620,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      }`}
-                    >
+                      }`}>
                       {val}
                     </td>
                   ))}
@@ -1703,8 +1666,7 @@ export const Morgan = () => {
                       key={i}
                       className={`p-2 ${
                         i < 9 ? "border-r border-gray-600" : ""
-                      } w-[8.88%]`}
-                    >
+                      } w-[8.88%]`}>
                       {i + 1}
                     </th>
                   ))}
@@ -1722,8 +1684,7 @@ export const Morgan = () => {
                         key={i}
                         className={`p-2 ${
                           i < 9 ? "border-r border-gray-600" : ""
-                        }`}
-                      >
+                        }`}>
                         {val}
                       </td>
                     )
@@ -1736,8 +1697,8 @@ export const Morgan = () => {
       </div>
 
       {/* Noble Phantasm */}
-      <h2 className="text-xl font-bold mt-5 ml-8">Noble Phantasm</h2>
       <div className="mt-4 mx-auto w-[1000px] bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+        <h2 className="text-[25px] font-bold mt-3 mb-3 ml-8">Noble Phantasm</h2>
         {/* Tabs */}
         <div className="flex justify-center p-2 bg-[#0a273f] border-b border-gray-700">
           <div className="flex gap-1">
@@ -1747,8 +1708,7 @@ export const Morgan = () => {
                 npTab === "rank"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               Rank EX
             </button>
             <button
@@ -1757,8 +1717,7 @@ export const Morgan = () => {
                 npTab === "videos"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              }`}
-            >
+              }`}>
               Videos
             </button>
           </div>
@@ -1947,11 +1906,13 @@ export const Morgan = () => {
       </div>
 
       {/* Ascension Table */}
-      <h2 className="text-xl font-bold mt-5 ml-8">Ascension</h2>
       <div className="overflow-x-auto mt-4 flex justify-center">
         <table className="w-[1000px] text-sm text-left text-gray-300">
-          <thead className="text-gray-400 bg-gray-700">
-            <tr>
+          <thead className="text-gray-400 ">
+            <h2 className="bg-none text-white text-[25px] font-bold mt-3 mb-3 ml-8">
+              Ascension
+            </h2>
+            <tr className="bg-gray-700">
               <th scope="col" className="px-6 py-3 text-center">
                 n°
               </th>
@@ -2159,14 +2120,12 @@ export const Morgan = () => {
             <tr className="bg-gray-900 border-b border-gray-700">
               <td
                 colSpan={2}
-                className="px-4 py-4 text-center border-r border-l border-gray-700"
-              >
+                className="px-4 py-4 text-center border-r border-l border-gray-700">
                 <div className="text-center text-blue-400">Queen of Winter</div>
               </td>
               <td
                 colSpan={4}
-                className="px-6 py-4 border-r border-gray-700 text-left align-middle"
-              >
+                className="px-6 py-4 border-r border-gray-700 text-left align-middle">
                 The King of Knights' Noble Phantasm of the wind. Mostly used to
                 make the sacred sword invisible.
               </td>
@@ -2617,7 +2576,7 @@ export const Morgan = () => {
         </table>
       </div>
       <h2 className="text-xl font-bold mt-5 ml-8">Stats</h2>
-      <div className="bg-gray-900 border border-gray-700 rounded-lg mt-4 ml-14 max-w-2xl">
+      <div className="bg-gray-900 border border-gray-700 rounded-lg mt-4 mx-auto max-w-2xl">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {[
             { name: "Strength", rank: "C", value: 3 },
@@ -2631,8 +2590,7 @@ export const Morgan = () => {
               key={stat.name}
               className={`p-4 text-center ${
                 index < 4 ? "border-b border-gray-700" : ""
-              } ${index % 2 === 0 ? "md:border-r border-gray-700" : ""}`}
-            >
+              } ${index % 2 === 0 ? "md:border-r border-gray-700" : ""}`}>
               <p className="font-bold text-white mb-3">
                 {stat.name}:{" "}
                 <span
@@ -2640,8 +2598,7 @@ export const Morgan = () => {
                     stat.rank === "EX"
                       ? "text-yellow-400 border-yellow-400"
                       : "border-gray-500"
-                  }`}
-                >
+                  }`}>
                   {stat.rank}
                 </span>
               </p>
@@ -2655,8 +2612,7 @@ export const Morgan = () => {
                           ? "bg-yellow-400"
                           : "bg-orange-500"
                         : "bg-gray-600"
-                    } ${i < 4 ? "border-r-2 border-gray-900" : ""}`}
-                  ></div>
+                    } ${i < 4 ? "border-r-2 border-gray-900" : ""}`}></div>
                 ))}
               </div>
             </div>
@@ -2673,16 +2629,14 @@ export const Morgan = () => {
               <tr>
                 <th
                   scope="col"
-                  className="px-4 py-3 text-center border border-gray-600 text-blue-400"
-                >
+                  className="px-4 py-3 text-center border border-gray-600 text-blue-400">
                   Bond Level
                 </th>
                 {[...Array(10)].map((_, i) => (
                   <th
                     key={i}
                     scope="col"
-                    className="px-4 py-3 text-center border border-gray-600"
-                  >
+                    className="px-4 py-3 text-center border border-gray-600">
                     <div className="flex items-center justify-center gap-1 text-white">
                       <img
                         src={`/Fgo/icons/BondLevel${i + 1}.png`}
@@ -2714,8 +2668,7 @@ export const Morgan = () => {
                 ].map((val, i) => (
                   <td
                     key={i}
-                    className="px-4 py-4 text-center border border-gray-600"
-                  >
+                    className="px-4 py-4 text-center border border-gray-600">
                     {val}
                   </td>
                 ))}
@@ -2738,8 +2691,7 @@ export const Morgan = () => {
                 ].map((val, i) => (
                   <td
                     key={i}
-                    className="px-4 py-4 text-center border border-gray-600"
-                  >
+                    className="px-4 py-4 text-center border border-gray-600">
                     {val}
                   </td>
                 ))}
@@ -2751,8 +2703,7 @@ export const Morgan = () => {
                 {[...Array(10)].map((_, i) => (
                   <td
                     key={i}
-                    className="px-4 py-4 border border-gray-600 align-middle"
-                  >
+                    className="px-4 py-4 border border-gray-600 align-middle">
                     <div className="flex flex-col items-center justify-center gap-2 h-full">
                       <div className="relative w-16">
                         <img
@@ -2795,8 +2746,7 @@ export const Morgan = () => {
               <tr className="bg-gray-900 text-white">
                 <td
                   className="px-4 py-4 text-center font-bold border border-gray-600 align-middle"
-                  colSpan={2}
-                >
+                  colSpan={2}>
                   Bond 10 Craft Essence
                 </td>
                 <td className="px-4 py-4 border border-gray-600" colSpan={3}>
@@ -2808,8 +2758,7 @@ export const Morgan = () => {
                 </td>
                 <td
                   className="px-4 py-4 border border-gray-600 text-center"
-                  colSpan={6}
-                >
+                  colSpan={6}>
                   <p className="font-bold text-blue-400">
                     At the Furthest Ends
                   </p>
@@ -2851,8 +2800,7 @@ export const Morgan = () => {
               <tr>
                 <th
                   scope="col"
-                  className="px-4 py-3 text-center border text-blue-400 border-gray-600"
-                >
+                  className="px-4 py-3 text-center border text-blue-400 border-gray-600">
                   <div className="flex flex-col items-center justify-center gap-2">
                     <img
                       src="/Fgo/characters/berserker/morgan/BoundLevel15.png"
@@ -2867,8 +2815,7 @@ export const Morgan = () => {
                   <th
                     key={level}
                     scope="col"
-                    className="px-4 py-3 text-center border border-gray-600"
-                  >
+                    className="px-4 py-3 text-center border border-gray-600">
                     <div className="flex items-center justify-center gap-1 text-white">
                       <img
                         src={`/Fgo/icons/BondLevel${level - 10}.png`}
@@ -2895,8 +2842,7 @@ export const Morgan = () => {
                 ].map((val, i) => (
                   <td
                     key={i}
-                    className="px-4 py-4 text-center border border-gray-600"
-                  >
+                    className="px-4 py-4 text-center border border-gray-600">
                     {val}
                   </td>
                 ))}
@@ -2914,8 +2860,7 @@ export const Morgan = () => {
                 ].map((val, i) => (
                   <td
                     key={i}
-                    className="px-4 py-4 text-center border border-gray-600"
-                  >
+                    className="px-4 py-4 text-center border border-gray-600">
                     {val}
                   </td>
                 ))}
